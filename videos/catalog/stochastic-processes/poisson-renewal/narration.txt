@@ -1,0 +1,7 @@
+A Poisson process counts random arrivals at a constant rate with independent increments over disjoint time intervals. At rate two per hour, the expected count in one hour is two. This is an average, not a promise of exactly two events.
+
+The count in one hour has a Poisson distribution. Its first four probabilities correspond to zero, one, two, and three arrivals, with more possible counts beyond those shown. The chance of zero arrivals is e to the negative two.
+
+The waiting time to the first arrival exceeds t exactly when no arrivals occur by t. That gives exponential survival and mean waiting time one half hour. Independent exponential interarrival times are one way to construct this Poisson process.
+
+Exponential waiting is memoryless: elapsed waiting does not change the remaining-time distribution. A general renewal process only assumes identically distributed independent interarrival times. Fixed half-hour intervals have the same average rate but are not memoryless and do not form a Poisson process.

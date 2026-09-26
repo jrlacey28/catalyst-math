@@ -1,0 +1,17 @@
+{
+  "id": "4B-05",
+  "unit": "4b",
+  "course": "Statistics Basics",
+  "index": 5,
+  "total": 6,
+  "slug": "correlation",
+  "title": "Correlation and its limits",
+  "objective": "Interpret direction and linear strength without inferring causation.",
+  "prerequisites": "Coordinate plane and distributions.",
+  "formulas": [
+    "r in [-1,1]",
+    "r approx 1 quad r approx -1",
+    "r approx 0",
+    "\"association\" != \"causation\""
+  ]
+}

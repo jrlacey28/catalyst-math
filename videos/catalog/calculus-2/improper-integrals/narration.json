@@ -1,0 +1,129 @@
+[
+  {
+    "formula": "integral_1^infinity frac(1,x^2) dif x",
+    "text": "An infinite interval does not fit directly into an ordinary bounded integral. Replace infinity with a finite endpoint R, compute the area up to R, and then ask whether those accumulated areas approach a finite limit.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0.8,
+        8
+      ],
+      "y": [
+        0,
+        1.3
+      ],
+      "curves": [
+        {
+          "f": "1/(x*x)",
+          "color": "blue",
+          "domain": [
+            1,
+            8
+          ]
+        }
+      ],
+      "shade": [
+        1,
+        6
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "integral_1^R frac(1,x^2) dif x=1-frac(1,R)",
+    "text": "The antiderivative is negative one over x. Subtracting endpoint values gives one minus one over R. As R grows, the missing amount approaches zero, so this infinite tail has finite total area equal to one.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        0.5,
+        0.6666666667,
+        0.75,
+        0.8,
+        0.8333333333,
+        0.8571428571
+      ],
+      "limit": 1
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "integral_1^R frac(1,x) dif x=log(R)",
+    "text": "A shrinking height does not guarantee a finite total. For one over x, the accumulated area is the natural logarithm of R, which grows without bound. Both curves approach zero, but their tails accumulate at different rates.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        1,
+        8
+      ],
+      "y": [
+        0,
+        1.2
+      ],
+      "curves": [
+        {
+          "f": "1/x",
+          "color": "gold",
+          "domain": [
+            1,
+            8
+          ]
+        },
+        {
+          "f": "1/(x*x)",
+          "color": "blue",
+          "domain": [
+            1,
+            8
+          ]
+        }
+      ],
+      "shade": [
+        1,
+        7
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "lim_(epsilon arrow.r 0^+) integral_epsilon^1 frac(1,sqrt(x)) dif x=2",
+    "text": "Improper behavior can also occur at a finite endpoint. One over square root of x becomes unbounded near zero, yet its integral from epsilon to one is two minus twice square root of epsilon. The limit is finite.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.2
+      ],
+      "y": [
+        0,
+        5
+      ],
+      "curves": [
+        {
+          "f": "1/sqrt(x)",
+          "color": "pink",
+          "domain": [
+            0.05,
+            1
+          ]
+        }
+      ],
+      "shade": [
+        0.05,
+        1
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

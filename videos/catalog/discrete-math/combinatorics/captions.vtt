@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.476
+Counting becomes easier when we organize choices
+
+00:00:03.476 --> 00:00:11.387
+Three shirt choices and two trouser choices create six outfits because every shirt can pair with every trouser
+
+00:00:11.387 --> 00:00:17.100
+The grid represents the independent stages of the choice, not probabilities by itself.
+
+00:00:18.400 --> 00:00:23.922
+Now choose a first and second person from four distinct people, without repetition
+
+00:00:23.922 --> 00:00:27.321
+There are four possibilities first and three afterward
+
+00:00:27.321 --> 00:00:34.967
+The twelve ordered selections distinguish who was chosen first, so swapping the same two people creates another outcome.
+
+00:00:36.267 --> 00:00:40.865
+If we only want a two-person committee, order no longer matters
+
+00:00:40.865 --> 00:00:46.717
+Each unordered pair was counted twice, once in each order, so divide by two
+
+00:00:46.717 --> 00:00:51.733
+The six edges connecting four labeled people represent the six distinct committees.
+
+00:00:53.033 --> 00:00:55.570
+Allowing repetition changes the count again
+
+00:00:55.570 --> 00:01:01.912
+A two-position code with four symbols has four choices at each position, making sixteen possibilities
+
+00:01:01.912 --> 00:01:09.100
+Before choosing a formula, decide whether order matters and whether a chosen object can be used again.

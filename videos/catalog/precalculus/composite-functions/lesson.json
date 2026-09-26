@@ -1,0 +1,153 @@
+{
+  "id": "precalculus.composite-functions",
+  "beats": [
+    {
+      "formula": "f(u)=u^2 quad g(x)=x+2",
+      "text": "Composition feeds one output into another function. Let g add two, and let f square its input. In f of g of x, g acts first, so its entire output becomes the input to the squaring rule.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "x",
+          "add 2",
+          "square"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "directed": true
+      }
+    },
+    {
+      "formula": "f(g(3))=f(5)=25",
+      "text": "For input three, the inner function produces five, then the outer function squares five to produce twenty five. Replacing the whole input gives f of g of x equals the square of x plus two, including its cross term.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "3",
+          "5",
+          "25"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "weights": [
+          "+2",
+          "square"
+        ],
+        "directed": true,
+        "active": [
+          2
+        ]
+      }
+    },
+    {
+      "formula": "g(f(3))=g(9)=11",
+      "text": "Reverse the order and the same starting input now produces eleven. Squaring three gives nine before adding two. Because the operations do different things, composition generally depends on order and cannot be replaced by multiplying the two functions.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "3",
+          "9",
+          "11"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "weights": [
+          "square",
+          "+2"
+        ],
+        "directed": true,
+        "active": [
+          2
+        ]
+      }
+    },
+    {
+      "formula": "h(g(x))=sqrt(x+2) quad x>=-2",
+      "text": "A composition must satisfy every stage of its domain. If the outer function is instead a real square root, the inner output x plus two must be nonnegative. This restricts the original input to negative two or larger.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          7
+        ],
+        "y": [
+          -1,
+          4
+        ],
+        "curves": [
+          {
+            "f": "sqrt(x+2)",
+            "color": "blue",
+            "domain": [
+              -2,
+              7
+            ]
+          }
+        ],
+        "points": [
+          [
+            -2,
+            0
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Let f(u)=u−5 and g(x)=4x. Find f(g(2)) with both stages shown.",
+      "answer": "g(2)=8, thenf(8)=3.",
+      "id": "precalculus.composite-functions.video-practice-1"
+    },
+    {
+      "prompt": "Using those functions, find g(f(2)) and compare.",
+      "answer": "f(2)=−3, theng(−3)=−12; the order changes the result.",
+      "id": "precalculus.composite-functions.video-practice-2"
+    },
+    {
+      "prompt": "Let r(u)=1/u and s(x)=x²−16. State the domain of r(s(x)) and explain both stages.",
+      "answer": "s accepts every real x, but its output must not be zero. Thus x≠−4 andx≠4.",
+      "id": "precalculus.composite-functions.video-practice-3"
+    }
+  ],
+  "takeaway": "Compose from the inside out and check that every intermediate output is allowed.",
+  "scope": "Function order, evaluation, whole-expression substitution, and composite domains.",
+  "course": "Precalculus",
+  "course_id": "precalculus",
+  "title": "Composite functions",
+  "objective": "Track inner and outer inputs and determine a composite function domain.",
+  "index": 2,
+  "total": 8,
+  "prerequisites": [
+    "pre-algebra.basic-functions",
+    "algebra-1.polynomials",
+    "algebra-2.radicals"
+  ]
+}

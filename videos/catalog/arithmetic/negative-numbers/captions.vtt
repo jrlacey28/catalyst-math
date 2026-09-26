@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.850
+A signed number locates a position relative to zero
+
+00:00:03.850 --> 00:00:09.600
+Starting at negative four and adding seven means moving seven units right, finishing at three
+
+00:00:09.600 --> 00:00:14.967
+The sign tells direction, while the magnitude tells how far away the number is.
+
+00:00:16.267 --> 00:00:18.678
+Subtraction adds the opposite movement
+
+00:00:18.678 --> 00:00:24.948
+Subtracting seven from three moves seven units left and returns to negative four
+
+00:00:24.948 --> 00:00:31.700
+This rule works even when subtraction crosses zero; negative answers still describe meaningful positions.
+
+00:00:33.000 --> 00:00:37.578
+Subtracting a negative reverses a leftward movement, so it moves right
+
+00:00:37.578 --> 00:00:40.908
+Three minus negative two becomes three plus two
+
+00:00:40.908 --> 00:00:47.567
+Read which minus sign performs subtraction and which belongs to a signed number before combining them.
+
+00:00:48.867 --> 00:00:52.450
+The sign rule for multiplication also preserves distribution
+
+00:00:52.450 --> 00:00:57.826
+Negative two times the zero quantity three minus three must equal zero
+
+00:00:57.826 --> 00:01:07.233
+Expanding gives negative six plus the product of negative two and negative three, forcing that second product to be positive six.

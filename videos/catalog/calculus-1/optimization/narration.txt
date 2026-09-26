@@ -1,0 +1,7 @@
+Optimization starts by translating constraints. A rectangle with perimeter twenty has side lengths whose sum is ten. Naming one side x makes the other ten minus x, so one variable now determines the entire area.
+
+The area is x times ten minus x, with nonnegative side lengths restricting x between zero and ten. Expanding gives ten x minus x squared. Its graph shows that increasing one side eventually sacrifices too much of the other.
+
+Differentiate to locate the interior stationary point. Ten minus two x equals zero when x is five. That produces a five by five square with area twenty-five, while either endpoint gives a degenerate rectangle with zero area.
+
+Completing the square explains why this is the global maximum: a square is never negative, so subtracting it cannot exceed twenty-five. A zero derivative only suggests a candidate; the domain and comparison establish what kind of optimum it is.

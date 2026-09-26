@@ -1,0 +1,163 @@
+{
+  "id": "arithmetic.roots",
+  "beats": [
+    {
+      "formula": "sqrt(25)=5",
+      "text": "A square root reverses squaring, with one important convention: the square-root symbol chooses the nonnegative answer. A square with twenty five unit cells has side length five, so the principal square root of twenty five is five.",
+      "visual": {
+        "kind": "grid",
+        "rows": 5,
+        "cols": 5,
+        "filled": 25
+      }
+    },
+    {
+      "formula": "x^2=25 arrow.r x=5 \"or\" x=-5",
+      "text": "Solving a squared equation asks a different question. Both positive five and negative five produce twenty five when squared. The graph crosses the height twenty five twice, so the equation has two real solutions although the principal root has one value.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -6,
+          6
+        ],
+        "y": [
+          0,
+          30
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              -5.4,
+              5.4
+            ]
+          },
+          {
+            "f": "25",
+            "color": "gold",
+            "domain": [
+              -6,
+              6
+            ]
+          }
+        ],
+        "points": [
+          [
+            -5,
+            25
+          ],
+          [
+            5,
+            25
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "sqrt(18)=sqrt(9 times 2)=3sqrt(2)",
+      "text": "To simplify a radical, extract a perfect-square factor. Eighteen is nine times two, so its square root is three times the square root of two. Splitting a product this way is valid for nonnegative factors.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          5
+        ],
+        "y": [
+          0,
+          20
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              0,
+              4.4
+            ]
+          },
+          {
+            "f": "18",
+            "color": "gold",
+            "domain": [
+              0,
+              5
+            ]
+          }
+        ],
+        "points": [
+          [
+            4.242640687119285,
+            18
+          ]
+        ],
+        "labels": [
+          "3 sqrt(2)"
+        ]
+      }
+    },
+    {
+      "formula": "sqrt(x^2)=abs(x)",
+      "text": "The principal root must stay nonnegative even when its input was formed by squaring a negative number. Therefore the square root of x squared is the absolute value of x, not always x itself. Negative radicands have no real square root.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -4,
+          4
+        ],
+        "y": [
+          -1,
+          5
+        ],
+        "curves": [
+          {
+            "f": "abs(x)",
+            "color": "blue",
+            "domain": [
+              -4,
+              4
+            ]
+          }
+        ],
+        "points": [
+          [
+            -3,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Evaluate √169 and state why its sign is fixed.",
+      "answer": "The principal square root is thirteen, the nonnegative number whose square is 169.",
+      "id": "arithmetic.roots.video-practice-1"
+    },
+    {
+      "prompt": "Simplify √27 by identifying a perfect-square factor.",
+      "answer": "√27=√(9×3)=3√3.",
+      "id": "arithmetic.roots.video-practice-2"
+    },
+    {
+      "prompt": "For t=−8, compare √(t²) with t. Explain the general rule.",
+      "answer": "√64=8, whereas t=−8. In general √(t²)=|t|.",
+      "id": "arithmetic.roots.video-practice-3"
+    }
+  ],
+  "takeaway": "Principal square roots are nonnegative; squared equations may have two solutions.",
+  "scope": "Principal roots, equation solutions, product simplification, and absolute value.",
+  "course": "Arithmetic",
+  "course_id": "arithmetic",
+  "title": "Roots",
+  "objective": "Connect roots to powers and distinguish principal roots from equation solutions.",
+  "index": 8,
+  "total": 8,
+  "prerequisites": [
+    "arithmetic.exponents"
+  ]
+}

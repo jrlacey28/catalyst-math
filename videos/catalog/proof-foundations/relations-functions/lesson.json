@@ -1,0 +1,162 @@
+{
+  "id": "proof-foundations.relations-functions",
+  "beats": [
+    {
+      "formula": "f:RR arrow.r RR, quad f(x)=2x+3",
+      "text": "A function assigns each input exactly one output, but different questions concern how outputs are covered. Injective means no two distinct inputs collide. Surjective means every member of the stated target set receives an input.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          2
+        ],
+        "y": [
+          -2,
+          8
+        ],
+        "curves": [
+          {
+            "f": "2*x+3",
+            "color": "blue",
+            "domain": [
+              -2,
+              2
+            ]
+          }
+        ],
+        "points": [
+          [
+            -1,
+            1
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "2a+3=2b+3 arrow.r a=b",
+      "text": "To prove this linear rule injective, suppose two outputs are equal. Subtract three and divide by the nonzero coefficient two. The inputs must be equal. This checks all potential collisions, not just the two points shown.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -2,
+          5
+        ],
+        "points": [
+          1,
+          5
+        ],
+        "labels": [
+          "f(-1)",
+          "f(1)"
+        ]
+      }
+    },
+    {
+      "formula": "y=2x+3 arrow.r x=frac(y-3,2)",
+      "text": "To prove surjectivity onto the real numbers, start with any desired real output y. Solving gives input y minus three, divided by two. That input is real and substitution produces precisely the requested output.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "desired y",
+          "(y-3)/2",
+          "output y"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "weights": [
+          "solve",
+          "apply f"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "formula": "g(-2)=g(2)=4",
+      "text": "The square function has a collision at negative two and two, so it is not injective on all reals. Its surjectivity changes with the target: nonnegative reals are covered, while negative real targets are impossible.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          3
+        ],
+        "y": [
+          -1,
+          9
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "gold",
+            "domain": [
+              -3,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            -2,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "segments": [
+          [
+            [
+              -2,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Prove f(x)=5x−7 is injective on the reals.",
+      "answer": "If 5a−7=5b−7, adding seven then dividing by five gives a=b.",
+      "id": "proof-foundations.relations-functions.video-practice-1"
+    },
+    {
+      "prompt": "Find a real input yielding output 11 under f(x)=5x−7, then explain why any real output is possible.",
+      "answer": "x=18/5. For any real y, x=(y+7)/5 is real and f(x)=y; hence surjective onto R.",
+      "id": "proof-foundations.relations-functions.video-practice-2"
+    },
+    {
+      "prompt": "Describe domain and target choices that make x² bijective, and justify both properties.",
+      "answer": "Use domain [0,∞) and target [0,∞). Each target y has the unique nonnegative input √y; equality of nonnegative squares forces equality of inputs.",
+      "id": "proof-foundations.relations-functions.video-practice-3"
+    }
+  ],
+  "takeaway": "Injectivity concerns collisions; surjectivity depends on the declared target.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Proof writing and mathematical foundations",
+  "course_id": "proof-foundations",
+  "title": "Relations and functions",
+  "objective": "Prove injectivity, surjectivity, equivalence relations, and order properties.",
+  "index": 3,
+  "total": 3,
+  "prerequisites": [
+    "proof-foundations.mathematical-language",
+    "algebra-1.functions"
+  ]
+}

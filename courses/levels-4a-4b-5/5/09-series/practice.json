@@ -1,0 +1,34 @@
+{
+  "lesson_id": "5-09",
+  "batches": [
+    [
+      {
+        "id": "5-09-P1",
+        "prompt": "For 2,4,6,8,... find a\u2084 and S\u2084."
+      },
+      {
+        "id": "5-09-P2",
+        "prompt": "Find 1+2+...+20."
+      },
+      {
+        "id": "5-09-P3",
+        "prompt": "Find the sum of the first 6 terms of 3,6,9,..."
+      }
+    ],
+    [
+      {
+        "id": "5-09-P4",
+        "prompt": "Find the sum of the first 4 terms of 2,6,18,..."
+      },
+      {
+        "id": "5-09-P5",
+        "prompt": "Find 3+3/2+3/4+... to infinity, stating the condition used."
+      },
+      {
+        "id": "5-09-P6",
+        "prompt": "Can the infinite formula be used for 1+2+4+8+...? Explain."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

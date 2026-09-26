@@ -1,0 +1,54 @@
+[
+  {
+    "beat": 1,
+    "start": 0.0,
+    "duration": 14.999999999999986,
+    "formula": "forall x in RR, exists y in RR: y > x",
+    "visual": "numberline",
+    "bounds": [
+      -5.60043945,
+      5.60043945,
+      -1.0039022228311383,
+      0.00390222283113828
+    ]
+  },
+  {
+    "beat": 2,
+    "start": 14.999999999999986,
+    "duration": 16.233333333333626,
+    "formula": "y=x+1 arrow.r y>x",
+    "visual": "graph",
+    "bounds": [
+      -5.7278320250000005,
+      5.7278320250000005,
+      -2.9939453000000005,
+      1.9939453000000005
+    ]
+  },
+  {
+    "beat": 3,
+    "start": 31.23333333333361,
+    "duration": 15.733333333333022,
+    "formula": "exists y in RR, forall x in RR: y>x",
+    "visual": "numberline",
+    "bounds": [
+      -5.602050775,
+      5.602050775,
+      -1.4124023499999998,
+      0.41240235000000003
+    ]
+  },
+  {
+    "beat": 4,
+    "start": 46.96666666666663,
+    "duration": 17.5666666666665,
+    "formula": "not (forall x: P(x)) equiv (exists x: not P(x))",
+    "visual": "sets",
+    "bounds": [
+      -2.6,
+      2.6,
+      -2.4479492488418577,
+      1.4479492488418577
+    ]
+  }
+]

@@ -1,0 +1,188 @@
+{
+  "id": "algebra-1.functions",
+  "beats": [
+    {
+      "formula": "f(x)=x^2",
+      "text": "A function gives exactly one output for each allowed input. Squaring is a function even though two different inputs can produce the same output. Negative two and positive two both give four, without violating the one-output requirement.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          3
+        ],
+        "y": [
+          -1,
+          9
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              -3,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            -2,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "\"domain\"=RR quad \"range\"=[0,infinity)",
+      "text": "The domain lists allowed inputs, while the range lists outputs actually reached. For the real squaring function, every real input is allowed, but no negative output occurs. Reading the horizontal and vertical coverage keeps these two ideas distinct.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          3
+        ],
+        "y": [
+          -2,
+          9
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              -3,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            0
+          ]
+        ],
+        "sweep": true
+      }
+    },
+    {
+      "formula": "g(x)=frac(1,x-2) quad x!=2",
+      "text": "A formula can restrict its own domain. The reciprocal rule excludes input two because its denominator would vanish. The two branches belong to one function, but there is no output at the excluded input, regardless of the visible graph window.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          6
+        ],
+        "y": [
+          -5,
+          5
+        ],
+        "curves": [
+          {
+            "f": "1/(x-2)",
+            "color": "blue",
+            "domain": [
+              -2,
+              1.8
+            ]
+          },
+          {
+            "f": "1/(x-2)",
+            "color": "blue",
+            "domain": [
+              2.2,
+              6
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "formula": "y^2=x quad x=4 arrow.r y=2 \"or\" y=-2",
+      "text": "Not every relation defines y as a function of x. In this sideways parabola, input four is paired with both two and negative two. A vertical line meets the relation twice, exposing the failure of the one-output condition.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          5
+        ],
+        "y": [
+          -3,
+          3
+        ],
+        "curves": [
+          {
+            "f": "sqrt(x)",
+            "color": "blue",
+            "domain": [
+              0,
+              5
+            ]
+          },
+          {
+            "f": "-sqrt(x)",
+            "color": "gold",
+            "domain": [
+              0,
+              5
+            ]
+          }
+        ],
+        "points": [
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            -2
+          ]
+        ],
+        "segments": [
+          [
+            [
+              4,
+              -3
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For f(x)=(x−2)², can two different real inputs share an output? Give an example.",
+      "answer": "Yes. Inputs one and three both produce one; each input still has just one output.",
+      "id": "algebra-1.functions.video-practice-1"
+    },
+    {
+      "prompt": "State the real domain of h(x)=1/(x+7), with a reason.",
+      "answer": "All real x except−7, because the denominator must be nonzero.",
+      "id": "algebra-1.functions.video-practice-2"
+    },
+    {
+      "prompt": "Does x=y²+1 define y as a function of x over its full relation? Justify with one input.",
+      "answer": "No. At x=5, both y=2 and y=−2 satisfy the relation.",
+      "id": "algebra-1.functions.video-practice-3"
+    }
+  ],
+  "takeaway": "A function needs one output per allowed input; domain and range play different roles.",
+  "scope": "Function criteria, domains, ranges, and the vertical-line test.",
+  "course": "Algebra I",
+  "course_id": "algebra-1",
+  "title": "Functions",
+  "objective": "Connect domains, ranges, tables, formulas, and graphs.",
+  "index": 4,
+  "total": 10,
+  "prerequisites": [
+    "pre-algebra.basic-functions"
+  ]
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "formula": "u=(1,2), quad v=(2,-1)",
+    "text": "A vector records a directed change, not merely the location of its drawn tip. One, two means one unit right and two up. Two, negative one means two right and one down; moving an arrow without changing its displacement preserves the vector.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          -1
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "u+v=(3,1)",
+    "text": "Add vectors component by component because horizontal and vertical changes combine independently. The total horizontal change is three and the total vertical change is one. Placing the second movement after the first would reach the same resulting displacement.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "2u=(2,4), quad norm(2u)=2norm(u)",
+    "text": "Scalar multiplication changes every component by the same factor. Doubling this vector doubles its length while keeping its direction. A negative multiplier reverses direction as well; in general the new length uses the absolute value of the scalar.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          -1,
+          -2
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "u dot.op v=1 times 2+2 times (-1)=0",
+    "text": "The dot product measures alignment by adding products of matching components. These two contributions cancel to zero. Since both vectors are nonzero, zero dot product means the vectors are perpendicular, connecting coordinate arithmetic with a geometric right angle.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          -1
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

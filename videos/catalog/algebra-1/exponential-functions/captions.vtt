@@ -1,0 +1,43 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.867
+Exponential change repeats multiplication by a fixed factor
+
+00:00:03.867 --> 00:00:07.333
+Label the starting amount three as term one
+
+00:00:07.333 --> 00:00:11.667
+Doubling gives six, twelve, and twenty four as later terms
+
+00:00:11.667 --> 00:00:16.433
+The amounts added grow, but neighboring terms always have ratio two.
+
+00:00:17.733 --> 00:00:21.447
+Let x now count elapsed steps, beginning at zero
+
+00:00:21.447 --> 00:00:25.573
+The continuous graph extends our doubling rule to real inputs
+
+00:00:25.573 --> 00:00:30.112
+At zero the factor is one, preserving the initial amount three
+
+00:00:30.112 --> 00:00:33.000
+Every additional input unit doubles the output.
+
+00:00:34.300 --> 00:00:38.627
+A linear comparison instead adds a fixed amount at each step
+
+00:00:38.627 --> 00:00:48.460
+Both rules begin at three and agree again at input one, yet then separate because equal starting values do not determine the type of change
+
+00:00:48.460 --> 00:00:50.033
+Compare differences and ratios.
+
+00:00:51.333 --> 00:00:54.911
+A positive factor below one gives exponential decay
+
+00:00:54.911 --> 00:01:02.514
+Each step retains half of the previous amount, approaching zero while staying positive for finite real inputs
+
+00:01:02.514 --> 00:01:07.433
+The base must be positive for this standard real exponential function.

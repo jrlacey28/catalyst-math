@@ -1,0 +1,7 @@
+Regression models how a response tends to vary with an explanatory input. A fitted line predicts a response for each input, while observations can sit above or below it. Those vertical differences are residuals, not necessarily recording errors.
+
+For these points, the line one half plus one point five x predicts one half, two, and three point five. Subtracting predictions from observed responses gives residuals one half, negative one, and one half. Their signs record which side of the line each point occupies.
+
+Ordinary least squares chooses the intercept and slope that minimize the sum of squared residuals. Squaring prevents positive and negative residuals from cancelling and emphasizes larger deviations. For these three points, this line achieves the minimum total of one point five.
+
+Predicting at five extends beyond the observed input range of zero to two. The line can produce that number without evidence that the relationship remains linear there. A fitted association also does not establish that changing the input causes the response to change.

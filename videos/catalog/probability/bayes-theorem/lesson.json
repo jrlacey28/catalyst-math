@@ -1,0 +1,97 @@
+{
+  "id": "probability.bayes-theorem",
+  "beats": [
+    {
+      "formula": "P(A)=frac(20,100), quad P(B)=frac(80,100)",
+      "text": "Bayes' theorem reverses a conditional probability by accounting for how common each group is. Imagine one hundred objects: twenty are type A and eighty are type B. A screening rule flags some objects from either group.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          20,
+          80
+        ],
+        "labels": [
+          "type A",
+          "type B"
+        ]
+      }
+    },
+    {
+      "formula": "P(\"flag\"|A)=0.9, quad P(\"flag\"|B)=0.1",
+      "text": "The rule flags ninety percent of type A and ten percent of type B. In this frequency model, that means eighteen flagged A objects and eight flagged B objects. The remaining objects are not part of the flagged comparison group.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          18,
+          2,
+          8,
+          72
+        ],
+        "labels": [
+          "A flag",
+          "A clear",
+          "B flag",
+          "B clear"
+        ]
+      }
+    },
+    {
+      "formula": "P(A|\"flag\")=frac(18,18+8)=frac(9,13)",
+      "text": "Once a flag is observed, compare only the twenty-six flagged objects. Eighteen are type A, giving nine thirteenths, or about sixty-nine percent. The original ninety percent described flags within type A, not type A within flags.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          18,
+          8
+        ],
+        "labels": [
+          "flagged A",
+          "flagged B"
+        ]
+      }
+    },
+    {
+      "formula": "P(A|\"flag\")=frac(9,9+99)=frac(1,12)",
+      "text": "Now make type A rarer: ten of a thousand objects, with the same flagging rates. There are nine flagged A objects and ninety-nine flagged B objects. The posterior falls to one twelfth, showing why base rates cannot be ignored.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          9,
+          99
+        ],
+        "labels": [
+          "flagged A",
+          "flagged B"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Type A accounts for 30% of objects. A rule flags 80% of A and 10% of non-A. Find P(A|flag) using frequencies out of 1,000.",
+      "answer": "There are 300 A, of which 240 are flagged, and 700 non-A, of which 70 are flagged. P(A|flag)=240/310=24/31≈0.7742.",
+      "id": "probability.bayes-theorem.video-practice-1"
+    },
+    {
+      "prompt": "Repeat the calculation when A accounts for only 10%, the A flagging rate is 80%, and the non-A flagging rate is 20%.",
+      "answer": "Out of 1,000, 80 A and 180 non-A are flagged. P(A|flag)=80/260=4/13≈0.3077.",
+      "id": "probability.bayes-theorem.video-practice-2"
+    },
+    {
+      "prompt": "Explain why '80% of A objects get flagged' does not by itself tell us the percentage of flagged objects that are A. Identify the missing information.",
+      "answer": "It describes P(flag|A), not P(A|flag). We also need the base rate P(A) and the flagging rate among non-A, which determine the full flagged group.",
+      "id": "probability.bayes-theorem.video-practice-3"
+    }
+  ],
+  "takeaway": "To reverse a conditional probability, combine the relevant likelihoods with the base rates and normalize within the observed group.",
+  "scope": "Bayes' theorem through a transparent frequency model and a base-rate change.",
+  "course": "Probability",
+  "course_id": "probability",
+  "title": "Bayes theorem",
+  "objective": "Reverse a conditional probability using base rates and total probability.",
+  "index": 3,
+  "total": 6,
+  "prerequisites": [
+    "probability.conditional-probability"
+  ]
+}

@@ -1,0 +1,7 @@
+An estimator is a rule that uses sample data to estimate a population quantity. The sample mean averages the observed values. For eight, ten, and twelve, the estimate is ten, but the unknown population mean need not equal that particular result.
+
+A different sample usually produces a different mean. This variation is part of the estimation problem, not necessarily a calculation mistake. We judge an estimator by how it behaves across repeated samples under a stated sampling model.
+
+For independent observations with a common population variance, the sample mean's standard error is population standard deviation divided by square root of sample size. With standard deviation six, nine observations give standard error two, while thirty-six give standard error one.
+
+Precision and bias describe different features. Estimates can cluster tightly around the wrong target if the sampling method systematically favors certain observations. Increasing the sample size may shrink random error while leaving that systematic shift untouched; design must address the bias.

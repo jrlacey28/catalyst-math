@@ -1,0 +1,7 @@
+In the Euclidean plane, a straight segment gives the shortest route between two points. A geodesic generalizes the idea of continuing straight while constrained to a curved space. Its meaning depends on the metric used to measure lengths.
+
+On a sphere, great circles supply geodesics. The circle shown is a cross-section through the sphere's center. Along it, arc length equals radius times angle in radians, so a radius-two sphere and angle pi over three give length two pi over three.
+
+Traveling the other way along the same great circle reaches the same endpoint by a much longer arc. That arc is still part of a geodesic, but it is not globally shortest. A geodesic guarantees only local straightness, with short segments minimizing length.
+
+The sphere's Gaussian curvature is one divided by radius squared. Do not confuse it with the ordinary curvature of a circular path, which is one divided by radius. The cross-section illustrates the sphere's geometry; the surface-curvature formula requires its own derivation.

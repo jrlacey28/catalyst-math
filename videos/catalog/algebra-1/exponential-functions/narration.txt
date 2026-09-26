@@ -1,0 +1,7 @@
+Exponential change repeats multiplication by a fixed factor. Label the starting amount three as term one. Doubling gives six, twelve, and twenty four as later terms. The amounts added grow, but neighboring terms always have ratio two.
+
+Let x now count elapsed steps, beginning at zero. The continuous graph extends our doubling rule to real inputs. At zero the factor is one, preserving the initial amount three. Every additional input unit doubles the output.
+
+A linear comparison instead adds a fixed amount at each step. Both rules begin at three and agree again at input one, yet then separate because equal starting values do not determine the type of change. Compare differences and ratios.
+
+A positive factor below one gives exponential decay. Each step retains half of the previous amount, approaching zero while staying positive for finite real inputs. The base must be positive for this standard real exponential function.

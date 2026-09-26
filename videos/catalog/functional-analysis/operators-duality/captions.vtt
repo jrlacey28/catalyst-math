@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.730
+A linear operator preserves addition and scalar multiplication
+
+00:00:03.730 --> 00:00:10.390
+On the plane, stretching the first coordinate by two while leaving the second unchanged is linear
+
+00:00:10.390 --> 00:00:17.467
+The operator norm measures the largest possible output size for an input of norm at most one.
+
+00:00:18.767 --> 00:00:24.838
+For Euclidean length, this transformation enlarges no vector by more than a factor of two
+
+00:00:24.838 --> 00:00:30.910
+The first coordinate unit vector achieves exactly that factor, so the operator norm is two
+
+00:00:30.910 --> 00:00:35.767
+A single successful vector supplies the lower bound, not the upper bound.
+
+00:00:37.067 --> 00:00:42.360
+A continuous linear functional outputs a scalar and belongs to the dual space
+
+00:00:42.360 --> 00:00:46.024
+This functional is the dot product with one, two
+
+00:00:46.024 --> 00:00:54.167
+Cauchy Schwarz bounds its magnitude by square root five times the input norm, and a parallel unit vector attains equality.
+
+00:00:55.467 --> 00:00:58.195
+Linearity alone does not imply boundedness
+
+00:00:58.195 --> 00:01:10.474
+On continuously differentiable functions over zero to two pi, using the uniform norm for inputs and outputs, differentiation sends these shrinking functions to derivatives of size one
+
+00:01:10.474 --> 00:01:14.567
+No fixed amplification bound can work for every n.

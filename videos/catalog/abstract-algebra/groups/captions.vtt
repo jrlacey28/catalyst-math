@@ -1,0 +1,40 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.846
+A group records reversible operations and how they combine
+
+00:00:03.846 --> 00:00:08.058
+Consider the four rotations of a square that preserve its position
+
+00:00:08.058 --> 00:00:14.567
+Doing a quarter turn and then another quarter turn has the same effect as one half turn.
+
+00:00:15.867 --> 00:00:20.130
+Label those rotations zero, one, two, and three quarter turns
+
+00:00:20.130 --> 00:00:22.261
+Composition becomes addition modulo four
+
+00:00:22.261 --> 00:00:24.393
+Zero acts as the identity
+
+00:00:24.393 --> 00:00:32.067
+Three quarter turns undo one quarter turn, because together they make a full turn back to the start.
+
+00:00:33.367 --> 00:00:38.778
+The group axioms require closure, an identity, inverses, and associativity
+
+00:00:38.778 --> 00:00:42.567
+Associativity changes parentheses while keeping operation order
+
+00:00:42.567 --> 00:00:51.767
+It follows here from composing rotations, or from integer addition before reducing the resulting remainder modulo four.
+
+00:00:53.067 --> 00:00:56.081
+A half turn is its own inverse
+
+00:00:56.081 --> 00:01:01.679
+These four rotations also commute, but commutativity is not a general group axiom
+
+00:01:01.679 --> 00:01:09.000
+Rotations and reflections together form a larger symmetry group where swapping operation order can change the result.

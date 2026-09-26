@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:09.084
+A quadratic function has a squared term with nonzero coefficient, so its graph bends instead of maintaining a constant rate
+
+00:00:09.084 --> 00:00:10.821
+This parabola opens upward
+
+00:00:10.821 --> 00:00:16.900
+We will rewrite the same function to reveal different features without changing its outputs.
+
+00:00:18.200 --> 00:00:20.691
+The factored form makes zeros visible
+
+00:00:20.691 --> 00:00:27.333
+Setting the output equal to zero means one factor must vanish, giving inputs one and three
+
+00:00:27.333 --> 00:00:31.900
+Those roots locate the two horizontal intercepts of the same parabola.
+
+00:00:33.200 --> 00:00:36.086
+Completing the square reveals the turning point
+
+00:00:36.086 --> 00:00:44.744
+Squaring x minus two creates x squared minus four x plus four, so subtract one to recover the original constant three
+
+00:00:44.744 --> 00:00:48.867
+The minimum occurs at input two with output negative one.
+
+00:00:50.167 --> 00:00:53.149
+A different target output can produce different solutions
+
+00:00:53.149 --> 00:01:00.605
+To reach height three, the square must equal four, so x minus two can be positive two or negative two
+
+00:01:00.605 --> 00:01:04.333
+Keep both signs when reversing a square in an equation.

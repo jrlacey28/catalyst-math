@@ -1,0 +1,115 @@
+{
+  "id": "discrete-math.logic",
+  "beats": [
+    {
+      "formula": "\"divisible by 4\" arrow.r \"even\"",
+      "text": "An implication says that whenever its premise is true, its conclusion must also be true. For integers, being divisible by four implies being even. The arrow is a logical guarantee, not a claim that the two properties are identical.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "divisible by 4",
+          "even"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "weights": [
+          "implies"
+        ],
+        "directed": true,
+        "active": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "formula": "n=4k=2(2k)",
+      "text": "The algebra explains the guarantee for every integer k. A multiple of four can be written as two times the integer two k, which is the definition of even. The example eight illustrates this reasoning but does not replace the general argument.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          4,
+          4
+        ],
+        "labels": [
+          "4",
+          "4"
+        ]
+      }
+    },
+    {
+      "formula": "6 \"is even but not divisible by 4\"",
+      "text": "Reversing an implication produces its converse, which may fail. Six is even, yet not divisible by four. One counterexample is enough to disprove the converse because the proposed rule claimed to work for every integer.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          2,
+          2,
+          2
+        ],
+        "labels": [
+          "pair",
+          "pair",
+          "pair"
+        ]
+      }
+    },
+    {
+      "formula": "\"not even\" arrow.r \"not divisible by 4\"",
+      "text": "The contrapositive reverses the arrow and negates both properties. It is logically equivalent to the original implication. If an integer is not even, it cannot be divisible by four, because divisibility by four would force evenness.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "not even",
+          "not divisible by 4"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "weights": [
+          "contrapositive"
+        ],
+        "directed": true,
+        "active": [
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Prove that an integer divisible by 6 is divisible by 3. Use an arbitrary integer rather than only an example.",
+      "answer": "If n=6k for integer k, then n=3(2k), and 2k is an integer. Thus 3 divides n.",
+      "id": "discrete-math.logic.video-practice-1"
+    },
+    {
+      "prompt": "Is the converse, 'divisible by 3 implies divisible by 6,' valid? Supply a counterexample if not.",
+      "answer": "No. The integer 3 is divisible by 3 but not by 6.",
+      "id": "discrete-math.logic.video-practice-2"
+    },
+    {
+      "prompt": "Negate the statement 'For every integer n, n²≥0.' Explain why changing 'every' matters, and state whether the negation is true.",
+      "answer": "Its negation is 'There exists an integer n with n²<0.' Negating a universal statement requires an existential counterexample, not another universal statement. This negation is false over the integers.",
+      "id": "discrete-math.logic.video-practice-3"
+    }
+  ],
+  "takeaway": "Distinguish an implication, its converse, and its equivalent contrapositive; a universal claim can be defeated by one counterexample.",
+  "scope": "Implication and quantifiers through integer divisibility.",
+  "course": "Discrete mathematics",
+  "course_id": "discrete-math",
+  "title": "Logic",
+  "objective": "Use propositions, connectives, quantifiers, and truth conditions precisely.",
+  "index": 1,
+  "total": 6,
+  "prerequisites": [
+    "pre-algebra.inequalities"
+  ]
+}

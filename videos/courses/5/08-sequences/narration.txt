@@ -1,0 +1,11 @@
+phase_0
+A sequence is an ordered list, and its index tells us which term we mean. In this lesson the first term has index one. Writing a few terms is a useful check before trusting a formula.
+
+phase_1
+An arithmetic sequence adds a fixed difference. Starting at three and adding four gives three, seven, eleven, fifteen. To reach term n, take n minus one steps from the first term.
+
+phase_2
+A geometric sequence multiplies by a fixed ratio. Starting at three and doubling gives three, six, twelve, twenty four. Again there are n minus one steps, now multiplications rather than additions.
+
+phase_3
+An explicit rule gives a term directly from its index. A recursive rule gives a starting value and a way to get the next term from the previous one. A recursion without its initial value does not specify this sequence.

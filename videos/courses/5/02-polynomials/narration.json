@@ -1,0 +1,26 @@
+[
+  {
+    "title": "phase_0",
+    "text": "A polynomial is a sum of constant multiples of nonnegative whole-number powers of x. The largest power with a nonzero coefficient is its degree. At large positive or negative inputs, the leading term controls end behavior.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_1",
+    "text": "A factored expression makes zeros visible. This function is zero at negative two and at one. The factor at negative two appears once, while the factor at one appears twice.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_2",
+    "text": "Near a zero, an odd multiplicity usually looks like crossing the axis: the sign changes. An even multiplicity touches the axis and returns to the same side. Here the double factor makes the graph bounce at one.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_3",
+    "text": "The product has degree three and positive leading coefficient. Its left end goes down and its right end goes up. Zeros and end behavior constrain the graph, but they do not determine every feature without the rest of the function.",
+    "min_duration": 17,
+    "tail": 1.0
+  }
+]

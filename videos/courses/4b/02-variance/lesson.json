@@ -1,0 +1,17 @@
+{
+  "id": "4B-02",
+  "unit": "4b",
+  "course": "Statistics Basics",
+  "index": 2,
+  "total": 6,
+  "slug": "variance",
+  "title": "Variance: squared distance from the mean",
+  "objective": "Calculate population variance and distinguish it from sample variance.",
+  "prerequisites": "Mean, signed differences, squares.",
+  "formulas": [
+    "2,4,6 quad overline(x)=4",
+    "(-2)^2+0^2+2^2=8",
+    "sigma^2=(sum (x_i-mu)^2)/N=8/3",
+    "s^2=(sum (x_i-overline(x))^2)/(n-1)"
+  ]
+}

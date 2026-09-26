@@ -1,0 +1,7 @@
+Bayes' theorem reverses a conditional probability by accounting for how common each group is. Imagine one hundred objects: twenty are type A and eighty are type B. A screening rule flags some objects from either group.
+
+The rule flags ninety percent of type A and ten percent of type B. In this frequency model, that means eighteen flagged A objects and eight flagged B objects. The remaining objects are not part of the flagged comparison group.
+
+Once a flag is observed, compare only the twenty-six flagged objects. Eighteen are type A, giving nine thirteenths, or about sixty-nine percent. The original ninety percent described flags within type A, not type A within flags.
+
+Now make type A rarer: ten of a thousand objects, with the same flagging rates. There are nine flagged A objects and ninety-nine flagged B objects. The posterior falls to one twelfth, showing why base rates cannot be ignored.

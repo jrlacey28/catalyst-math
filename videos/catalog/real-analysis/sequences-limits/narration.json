@@ -1,0 +1,140 @@
+[
+  {
+    "formula": "a_n=frac(1,n)",
+    "text": "The sequence one over n appears to approach zero. A convergence proof turns that picture into a promise: for every positive error tolerance, eventually every remaining term lies within that distance of the proposed limit.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        1,
+        0.5,
+        0.333333,
+        0.25,
+        0.2,
+        0.166667,
+        0.142857,
+        0.125
+      ],
+      "limit": 0
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "abs(a_n-0)<epsilon",
+    "text": "Choose a tolerance of one tenth. Starting at n equals eleven, every term is smaller than one tenth because increasing the positive denominator decreases the fraction. Checking one small term alone would not control the whole remaining tail.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        10.5,
+        16.5
+      ],
+      "y": [
+        0,
+        0.12
+      ],
+      "curves": [
+        {
+          "f": "1/x",
+          "color": "blue",
+          "domain": [
+            11,
+            16
+          ]
+        },
+        {
+          "f": "0.1",
+          "color": "gold",
+          "domain": [
+            11,
+            16
+          ]
+        }
+      ],
+      "points": [
+        [
+          11,
+          0.09090909090909091
+        ],
+        [
+          12,
+          0.08333333333333333
+        ],
+        [
+          13,
+          0.07692307692307693
+        ],
+        [
+          14,
+          0.07142857142857142
+        ],
+        [
+          15,
+          0.06666666666666667
+        ],
+        [
+          16,
+          0.0625
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "N>frac(1,epsilon), quad n>=N arrow.r frac(1,n)<epsilon",
+    "text": "For an arbitrary positive epsilon, choose an integer N larger than its reciprocal. Whenever n is at least N, one over n is at most one over N, which is smaller than epsilon. That proves convergence.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        0.3
+      ],
+      "points": [
+        0,
+        0.05,
+        0.1
+      ],
+      "interval": [
+        0,
+        0.1
+      ],
+      "open": [
+        0.1
+      ],
+      "labels": [
+        "limit",
+        "tail term",
+        "epsilon"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "b_n=(-1)^n",
+    "text": "Boundedness alone is weaker than convergence. Alternating positive and negative one stays bounded, yet its two subsequences settle at different values. No single small neighborhood can contain the entire tail, so this sequence does not converge.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

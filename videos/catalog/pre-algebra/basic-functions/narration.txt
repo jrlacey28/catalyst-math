@@ -1,0 +1,7 @@
+A function pairs each allowed input with exactly one output. This rule triples the input and then subtracts two. The letter x marks an input position; it does not mean that we must solve for x immediately.
+
+Evaluating the function means supply an input and follow its rule. Replacing x by two gives output four, represented by the point two, four. The first coordinate records the supplied input and the second records the result.
+
+An entire expression can enter the input slot. Replace every x with the whole quantity t plus one, using parentheses to protect its grouping. Distributing three then gives three t plus one, an output expression rather than a solved input.
+
+Solving reverses what is known. Specifying output seven asks which input reaches that height; here the input is three. Evaluation, symbolic substitution, and solving are related tasks, but their requested answers are different kinds of objects.

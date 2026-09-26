@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4A-02",
+  "batches": [
+    [
+      {
+        "id": "4A-02-P1",
+        "prompt": "Triangle angles are 42\u00b0, 68\u00b0, and x\u00b0. Find x."
+      },
+      {
+        "id": "4A-02-P2",
+        "prompt": "Can lengths 4, 5, and 10 make a triangle? Explain."
+      },
+      {
+        "id": "4A-02-P3",
+        "prompt": "A right triangle has legs 9 and 12. Find its hypotenuse."
+      }
+    ],
+    [
+      {
+        "id": "4A-02-P4",
+        "prompt": "A right triangle has hypotenuse 17 and a leg of 8. Find the other leg."
+      },
+      {
+        "id": "4A-02-P5",
+        "prompt": "Is a triangle with sides 6, 8, and 11 right? Explain."
+      },
+      {
+        "id": "4A-02-P6",
+        "prompt": "Explain how to identify the hypotenuse before choosing an equation."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

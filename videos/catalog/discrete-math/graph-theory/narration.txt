@@ -1,0 +1,7 @@
+A graph describes relationships through vertices and edges. These four vertices might represent places, with an edge whenever a direct connection exists. The geometry of the drawing is optional; which pairs are connected is the essential information.
+
+A vertex's degree counts the edges touching it. The degrees here are one, three, two, and two. Adding them counts every undirected edge twice, once at each endpoint, which explains the degree-sum identity.
+
+A path follows connected edges. Without weights, a shortest path minimizes the number of edges, so reaching D from A through B takes two steps. A disconnected graph would not guarantee a path between every pair of vertices.
+
+Weights change the goal. If the direct B-to-D edge costs four, then the two-edge route from A costs five. The three-edge route through C costs only three. Fewest edges and least total cost are different optimization questions.

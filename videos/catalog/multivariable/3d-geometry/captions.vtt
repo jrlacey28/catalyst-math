@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.338
+Three-dimensional coordinates locate a point using three perpendicular directions
+
+00:00:04.338 --> 00:00:07.839
+A surface equation restricts which triples are allowed
+
+00:00:07.839 --> 00:00:17.467
+On the plane z equals x plus y, the first two coordinates determine the third; one and one therefore require height two.
+
+00:00:18.767 --> 00:00:20.737
+Distance extends the Pythagorean theorem
+
+00:00:20.737 --> 00:00:26.647
+From the origin to one, one, two, the squared contributions are one, one, and four
+
+00:00:26.647 --> 00:00:34.133
+Their sum is six, so the straight-line distance is square root of six, not the sum of the components.
+
+00:00:35.433 --> 00:00:41.158
+Rearranging the plane equation reveals a normal vector: negative one, negative one, one
+
+00:00:41.158 --> 00:00:46.882
+Every displacement lying in the plane has dot product zero with this normal
+
+00:00:46.882 --> 00:00:52.167
+The normal encodes orientation rather than a particular point on the plane.
+
+00:00:53.467 --> 00:00:56.892
+A slice helps us understand a curved surface
+
+00:00:56.892 --> 00:01:05.028
+Hold y equal to one on the paraboloid, and the remaining cross-section is z equals x squared plus one
+
+00:01:05.028 --> 00:01:10.167
+Fixing a coordinate reduces a three-dimensional question to a familiar two-dimensional graph.

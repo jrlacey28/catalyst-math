@@ -1,0 +1,7 @@
+A manifold looks locally like a Euclidean space even when its overall shape is different. The circle is one-dimensional: a sufficiently short open arc can be described by one real coordinate, despite the circle sitting in a two-dimensional plane.
+
+Angle gives a coordinate after removing the circle's leftmost point. Restricting the angle avoids repeated representations. The missing point needs another chart. No single chart is a homeomorphism from the whole circle onto an open real interval: inverse continuity matters.
+
+A second angle chart covers the missing point by cutting elsewhere. On each part of the overlap, the two coordinate descriptions differ by a constant full turn. These transition functions are smooth, which is the key compatibility required in a smooth atlas.
+
+For a two-dimensional example, the paraboloid has coordinates u and v everywhere. Projection back to the first two coordinates gives the inverse chart. Coordinates describe the surface; they are not additional physical dimensions or proof that every surface admits one global chart.

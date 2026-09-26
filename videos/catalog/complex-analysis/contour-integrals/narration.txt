@@ -1,0 +1,7 @@
+A contour integral adds changes along a directed path. Parameterize the path by a real variable t. Multiply the function value by the complex velocity of the path, then integrate in t; both path shape and orientation are accounted for.
+
+For the function z, an antiderivative is z squared divided by two. Every piecewise smooth path from zero to one plus i therefore gives i. The endpoint formula follows because this antiderivative exists throughout the region containing the path.
+
+Now travel counterclockwise around the unit circle while integrating one over z. The path velocity is i times z, so the product simplifies to i. Integrating from zero to two pi gives two pi i, not zero.
+
+There is no contradiction with Cauchy's theorem: one over z is undefined at the enclosed origin. A holomorphic function on an open region containing the whole disk has zero integral around its boundary. Enclosed singularities change the situation.

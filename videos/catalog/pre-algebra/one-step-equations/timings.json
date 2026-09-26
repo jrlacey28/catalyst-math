@@ -1,0 +1,180 @@
+[
+  {
+    "formula": "x+4=9",
+    "text": "An equation asserts that two quantities are equal. Here we seek the input whose output under the rule x plus four is nine. On the graph, that means locating the intersection with the horizontal level nine.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        8
+      ],
+      "y": [
+        0,
+        12
+      ],
+      "curves": [
+        {
+          "f": "x+4",
+          "color": "blue",
+          "domain": [
+            0,
+            8
+          ]
+        },
+        {
+          "f": "9",
+          "color": "gold",
+          "domain": [
+            0,
+            8
+          ]
+        }
+      ],
+      "points": [
+        [
+          5,
+          9
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "x+4-4=9-4 arrow.r x=5",
+    "text": "Subtracting four from both sides preserves equality and reverses the addition. The unknown is therefore five. Substituting five into the original equation confirms the result: five plus four really does equal nine.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        8
+      ],
+      "y": [
+        0,
+        8
+      ],
+      "curves": [
+        {
+          "f": "x",
+          "color": "blue",
+          "domain": [
+            0,
+            8
+          ]
+        },
+        {
+          "f": "5",
+          "color": "gold",
+          "domain": [
+            0,
+            8
+          ]
+        }
+      ],
+      "points": [
+        [
+          5,
+          5
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.0,
+    "duration": 16.266666666666666,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "3x=12 arrow.r x=4",
+    "text": "For a multiplication equation, divide both sides by the same nonzero multiplier. Three x equals twelve becomes x equals four. The original graph also places the intersection at input four, connecting the algebra with the picture.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        6
+      ],
+      "y": [
+        0,
+        18
+      ],
+      "curves": [
+        {
+          "f": "3*x",
+          "color": "blue",
+          "domain": [
+            0,
+            6
+          ]
+        },
+        {
+          "f": "12",
+          "color": "gold",
+          "domain": [
+            0,
+            6
+          ]
+        }
+      ],
+      "points": [
+        [
+          4,
+          12
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 31.266666666666666,
+    "duration": 17.166666666666668,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "0x=5 quad \"no solution\"",
+    "text": "Division by zero cannot be used as an inverse step. Zero times any real input stays zero, so it never reaches five. This equation has no solution because its two sides cannot agree, not because the answer is zero.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -1,
+        6
+      ],
+      "curves": [
+        {
+          "f": "0",
+          "color": "blue",
+          "domain": [
+            -3,
+            3
+          ]
+        },
+        {
+          "f": "5",
+          "color": "gold",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 48.43333333333334,
+    "duration": 16.566666666666666,
+    "audio": "audio_parts/04.wav"
+  }
+]

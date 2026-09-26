@@ -1,0 +1,173 @@
+{
+  "id": "algebra-1.exponential-functions",
+  "beats": [
+    {
+      "formula": "a_n=3 times 2^(n-1) quad n=1,2,3,...",
+      "text": "Exponential change repeats multiplication by a fixed factor. Label the starting amount three as term one. Doubling gives six, twelve, and twenty four as later terms. The amounts added grow, but neighboring terms always have ratio two.",
+      "visual": {
+        "kind": "sequence",
+        "values": [
+          3,
+          6,
+          12,
+          24
+        ],
+        "bars": true
+      }
+    },
+    {
+      "formula": "y=3 times 2^x",
+      "text": "Let x now count elapsed steps, beginning at zero. The continuous graph extends our doubling rule to real inputs. At zero the factor is one, preserving the initial amount three. Every additional input unit doubles the output.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          3
+        ],
+        "y": [
+          0,
+          25
+        ],
+        "curves": [
+          {
+            "f": "3*2**x",
+            "color": "blue",
+            "domain": [
+              -2,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "y=3+3x",
+      "text": "A linear comparison instead adds a fixed amount at each step. Both rules begin at three and agree again at input one, yet then separate because equal starting values do not determine the type of change. Compare differences and ratios.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          3
+        ],
+        "y": [
+          0,
+          25
+        ],
+        "curves": [
+          {
+            "f": "3*2**x",
+            "color": "blue",
+            "domain": [
+              0,
+              3
+            ]
+          },
+          {
+            "f": "3+3*x",
+            "color": "gold",
+            "domain": [
+              0,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "y=12(0.5)^x",
+      "text": "A positive factor below one gives exponential decay. Each step retains half of the previous amount, approaching zero while staying positive for finite real inputs. The base must be positive for this standard real exponential function.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          5
+        ],
+        "y": [
+          0,
+          13
+        ],
+        "curves": [
+          {
+            "f": "12*0.5**x",
+            "color": "pink",
+            "domain": [
+              0,
+              5
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            12
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            1.5
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Start with five and triple twice. List the starting value and both later values.",
+      "answer": "Five, fifteen, forty five.",
+      "id": "algebra-1.exponential-functions.video-practice-1"
+    },
+    {
+      "prompt": "A quantity follows y=80(0.75)^t. Find its value after two steps and describe the percentage retained each step.",
+      "answer": "80×0.75²=45; each step retains75%, a25% decrease.",
+      "id": "algebra-1.exponential-functions.video-practice-2"
+    },
+    {
+      "prompt": "Compare sequences 4,8,12,16 and 4,8,16,32. Explain which is linear and which is exponential.",
+      "answer": "The first adds four each step and is linear; the second multiplies by two and is exponential.",
+      "id": "algebra-1.exponential-functions.video-practice-3"
+    }
+  ],
+  "takeaway": "Exponential models have a constant ratio; linear models have a constant difference.",
+  "scope": "Repeated multiplication, initial values, linear comparison, and positive decay bases.",
+  "course": "Algebra I",
+  "course_id": "algebra-1",
+  "title": "Exponential functions",
+  "objective": "Recognize constant ratios and compare exponential with linear growth.",
+  "index": 10,
+  "total": 10,
+  "prerequisites": [
+    "arithmetic.exponents",
+    "algebra-1.functions"
+  ]
+}

@@ -1,0 +1,7 @@
+Quadrature replaces an integral with a computable weighted sum. For the square function from zero to two, the exact area is eight thirds. We can use that known value to examine how a numerical approximation improves with refinement.
+
+One trapezoid joins the endpoint heights by a straight line. Its area is interval width times the average height, giving four. The chord lies above this convex graph, so the estimate is too large for a geometrically understandable reason.
+
+Split the interval into two equal pieces. The smaller trapezoids give one half plus two and a half, totaling three. The approximation is closer, and we can measure the remaining error rather than assuming more pieces automatically make it negligible.
+
+For this quadratic and equal subdivisions, direct summation gives the exact error four divided by three n squared. Doubling the number of pieces quarters the error. General error bounds require assumptions such as bounded derivatives; this exact formula is specific to our example.

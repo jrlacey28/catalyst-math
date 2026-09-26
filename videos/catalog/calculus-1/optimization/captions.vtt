@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:02.557
+Optimization starts by translating constraints
+
+00:00:02.557 --> 00:00:07.734
+A rectangle with perimeter twenty has side lengths whose sum is ten
+
+00:00:07.734 --> 00:00:15.500
+Naming one side x makes the other ten minus x, so one variable now determines the entire area.
+
+00:00:16.800 --> 00:00:24.323
+The area is x times ten minus x, with nonnegative side lengths restricting x between zero and ten
+
+00:00:24.323 --> 00:00:27.249
+Expanding gives ten x minus x squared
+
+00:00:27.249 --> 00:00:33.100
+Its graph shows that increasing one side eventually sacrifices too much of the other.
+
+00:00:34.400 --> 00:00:37.402
+Differentiate to locate the interior stationary point
+
+00:00:37.402 --> 00:00:41.690
+Ten minus two x equals zero when x is five
+
+00:00:41.690 --> 00:00:50.267
+That produces a five by five square with area twenty-five, while either endpoint gives a degenerate rectangle with zero area.
+
+00:00:51.567 --> 00:01:00.379
+Completing the square explains why this is the global maximum: a square is never negative, so subtracting it cannot exceed twenty-five
+
+00:01:00.379 --> 00:01:07.933
+A zero derivative only suggests a candidate; the domain and comparison establish what kind of optimum it is.

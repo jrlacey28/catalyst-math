@@ -1,0 +1,155 @@
+[
+  {
+    "formula": "f(x)=(x-2)^2, quad f'(x)=2(x-2)",
+    "text": "Unconstrained optimization searches without an additional feasible-set restriction. For this quadratic, the derivative points uphill. Moving a small distance opposite its sign moves toward the minimum at two, where the derivative is zero.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        4
+      ],
+      "y": [
+        0,
+        9
+      ],
+      "curves": [
+        {
+          "f": "(x-2)**2",
+          "color": "blue",
+          "domain": [
+            -1,
+            4
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.6,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "x_(n+1)=x_n-frac(1,4)2(x_n-2)",
+    "text": "Gradient descent subtracts a step size times the derivative. With step size one quarter and starting point zero, the next input is one. Repeating gives one and a half, then one and three quarters: the error halves each time.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -0.5,
+        3
+      ],
+      "y": [
+        0,
+        6.5
+      ],
+      "curves": [
+        {
+          "f": "(x-2)**2",
+          "color": "blue",
+          "domain": [
+            -0.5,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1.5,
+          0.25
+        ],
+        [
+          1.75,
+          0.0625
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.6,
+    "duration": 15.666666666666666,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "x_(n+1)-2=(1-2alpha)(x_n-2)",
+    "text": "The error formula explains the step-size requirement for this example. Its magnitude contracts only when the absolute value of one minus twice alpha is below one. Thus alpha between zero and one converges; larger choices can make the iterates diverge.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        -2,
+        -1,
+        -0.5,
+        -0.25,
+        -0.125,
+        -0.0625
+      ],
+      "limit": 0
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 32.266666666666666,
+    "duration": 18.7,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "g(x)=x^3, quad g'(0)=0",
+    "text": "A zero derivative is a candidate condition, not a universal minimum certificate. The cubic has derivative zero at the origin but takes smaller values immediately to its left. Use additional curvature or structural arguments to decide what a stationary point represents.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1.5,
+        1.5
+      ],
+      "y": [
+        -3.5,
+        3.5
+      ],
+      "curves": [
+        {
+          "f": "x**3",
+          "color": "pink",
+          "domain": [
+            -1.5,
+            1.5
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 50.96666666666667,
+    "duration": 19.266666666666666,
+    "audio": "audio_parts/04.wav"
+  }
+]

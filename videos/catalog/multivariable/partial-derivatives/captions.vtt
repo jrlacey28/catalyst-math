@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.895
+A function of two inputs can change in more than one direction
+
+00:00:04.895 --> 00:00:10.513
+A partial derivative asks what happens when one input moves while the other stays fixed
+
+00:00:10.513 --> 00:00:14.633
+On this bowl, each coordinate direction gives its own local slope.
+
+00:00:15.933 --> 00:00:19.226
+Fix y equal to one and move only x
+
+00:00:19.226 --> 00:00:23.982
+The cross-section becomes x squared plus one, so its slope is two x
+
+00:00:23.982 --> 00:00:30.567
+At x equal to one, the partial slope is two; the frozen y contribution behaves like a constant.
+
+00:00:31.867 --> 00:00:39.322
+At the point one, negative one, increasing x initially raises the surface, while increasing y initially lowers it
+
+00:00:39.322 --> 00:00:43.049
+The two partial derivatives are two and negative two
+
+00:00:43.049 --> 00:00:48.433
+A single height does not determine how the surface tilts in every direction.
+
+00:00:49.733 --> 00:00:55.874
+If both coordinates move along a path, neither partial derivative alone is the full rate
+
+00:00:55.874 --> 00:01:02.015
+Along x equals t and y equals two t, the height is five t squared
+
+00:01:02.015 --> 00:01:05.700
+Its derivative is ten t, combining both coordinate contributions.

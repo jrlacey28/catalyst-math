@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.357
+A hypothesis test compares data with a specified null model
+
+00:00:04.357 --> 00:00:11.874
+Suppose ten independent tosses produce nine heads, and the planned alternative is a head probability greater than one half
+
+00:00:11.874 --> 00:00:18.600
+The null model is a fair coin, not an assertion that the data must look exactly balanced.
+
+00:00:19.900 --> 00:00:25.344
+Under the fair-coin model, all one thousand twenty-four ordered sequences are equally likely
+
+00:00:25.344 --> 00:00:29.532
+Ten have exactly nine heads and one has ten heads
+
+00:00:29.532 --> 00:00:36.233
+This one-sided p-value counts results at least as extreme in the direction of the planned alternative.
+
+00:00:37.533 --> 00:00:45.411
+The p-value is about one percent, below a preselected five-percent significance threshold, so this test rejects the fair-coin null
+
+00:00:45.411 --> 00:00:54.533
+The threshold is part of a procedure for controlling false positives under the model, not proof that a rejection is always correct.
+
+00:00:55.833 --> 00:01:00.941
+A p-value is not the probability that the null hypothesis is true
+
+00:01:00.941 --> 00:01:03.921
+It also does not measure practical importance
+
+00:01:03.921 --> 00:01:12.433
+Report the observed effect and its uncertainty, and keep the test's assumptions and chosen alternative visible when interpreting the result.

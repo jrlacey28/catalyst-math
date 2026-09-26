@@ -1,0 +1,7 @@
+A composition feeds one function's output into another. First x becomes two x plus three; then that entire result is squared. A change in x therefore passes through two layers before changing y.
+
+The outer derivative is two u, but it measures change per unit of u. Multiply by the inner derivative, two, to measure change per unit of x. At zero the resulting tangent slope is twelve.
+
+Now use a square root outside four plus x squared. Its derivative is one over twice the square root, multiplied by two x from the inside. Cancelling the constant two gives x over the square root.
+
+The chain rule keeps the original function's domain. For the natural logarithm of two x plus three, the inside must be positive. The derivative formula alone also accepts some negative denominators, but those inputs never belonged to the original real function.

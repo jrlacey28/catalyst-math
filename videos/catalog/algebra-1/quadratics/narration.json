@@ -1,0 +1,156 @@
+[
+  {
+    "formula": "y=x^2-4x+3",
+    "text": "A quadratic function has a squared term with nonzero coefficient, so its graph bends instead of maintaining a constant rate. This parabola opens upward. We will rewrite the same function to reveal different features without changing its outputs.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        5
+      ],
+      "y": [
+        -2,
+        9
+      ],
+      "curves": [
+        {
+          "f": "x*x-4*x+3",
+          "color": "blue",
+          "domain": [
+            -1,
+            5
+          ]
+        }
+      ],
+      "sweep": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "x^2-4x+3=(x-1)(x-3)",
+    "text": "The factored form makes zeros visible. Setting the output equal to zero means one factor must vanish, giving inputs one and three. Those roots locate the two horizontal intercepts of the same parabola.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        5
+      ],
+      "y": [
+        -2,
+        9
+      ],
+      "curves": [
+        {
+          "f": "(x-1)*(x-3)",
+          "color": "blue",
+          "domain": [
+            -1,
+            5
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "x^2-4x+3=(x-2)^2-1",
+    "text": "Completing the square reveals the turning point. Squaring x minus two creates x squared minus four x plus four, so subtract one to recover the original constant three. The minimum occurs at input two with output negative one.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        5
+      ],
+      "y": [
+        -2,
+        9
+      ],
+      "curves": [
+        {
+          "f": "(x-2)**2-1",
+          "color": "blue",
+          "domain": [
+            -1,
+            5
+          ]
+        }
+      ],
+      "points": [
+        [
+          2,
+          -1
+        ]
+      ],
+      "labels": [
+        "vertex"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "(x-2)^2-1=3 arrow.r x=0 \"or\" x=4",
+    "text": "A different target output can produce different solutions. To reach height three, the square must equal four, so x minus two can be positive two or negative two. Keep both signs when reversing a square in an equation.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        5
+      ],
+      "y": [
+        -2,
+        9
+      ],
+      "curves": [
+        {
+          "f": "(x-2)**2-1",
+          "color": "blue",
+          "domain": [
+            -1,
+            5
+          ]
+        },
+        {
+          "f": "3",
+          "color": "gold",
+          "domain": [
+            -1,
+            5
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "id": "pre-algebra.inequalities",
+  "beats": [
+    {
+      "formula": "x+2<5 arrow.r x<3",
+      "text": "An inequality describes a set of allowed inputs rather than necessarily one solution. If x plus two must stay below five, subtracting two from both sides shows that every input below three works.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -4,
+          6
+        ],
+        "points": [
+          3
+        ],
+        "interval": [
+          -4,
+          3
+        ],
+        "open": [
+          3
+        ],
+        "labels": [
+          "3"
+        ]
+      }
+    },
+    {
+      "formula": "x+2<=5 arrow.r x<=3",
+      "text": "Including equality changes the boundary. When the condition says at most five, input three is allowed because it produces exactly five. A filled boundary point includes that input, whereas an open boundary point excludes it.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -4,
+          6
+        ],
+        "points": [
+          3
+        ],
+        "interval": [
+          -4,
+          3
+        ],
+        "labels": [
+          "3"
+        ]
+      }
+    },
+    {
+      "formula": "-2x<6 arrow.r x> -3",
+      "text": "Multiplying or dividing by a negative number reverses order. Dividing negative two x less than six by negative two gives x greater than negative three. Reflection across zero explains why the direction of the comparison must switch.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -6,
+          6
+        ],
+        "points": [
+          -3
+        ],
+        "interval": [
+          -3,
+          6
+        ],
+        "open": [
+          -3
+        ],
+        "labels": [
+          "-3"
+        ]
+      }
+    },
+    {
+      "formula": "x=0: -2 times 0<6",
+      "text": "Always test a value from the proposed interval. Zero is greater than negative three, and its original left side is zero, which is less than six. Checking a value outside the interval also helps detect a reversed inequality.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -6,
+          6
+        ],
+        "points": [
+          -4,
+          -3,
+          0
+        ],
+        "interval": [
+          -3,
+          6
+        ],
+        "open": [
+          -3
+        ],
+        "labels": [
+          "fails",
+          "boundary",
+          "works"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Solve y+7≤11 and describe the boundary point.",
+      "answer": "y≤4; the boundary four is included.",
+      "id": "pre-algebra.inequalities.video-practice-1"
+    },
+    {
+      "prompt": "Solve −3u≥12 and explain the changed sign.",
+      "answer": "Divide by negative three and reverse the comparison: u≤−4.",
+      "id": "pre-algebra.inequalities.video-practice-2"
+    },
+    {
+      "prompt": "Test one allowed and one excluded value for 2t−1>9.",
+      "answer": "t>5. For example, t=6 gives11>9; t=5 gives9>9, which is false.",
+      "id": "pre-algebra.inequalities.video-practice-3"
+    }
+  ],
+  "takeaway": "Inequalities describe sets; negative scaling reverses their order.",
+  "scope": "Strict and inclusive boundaries, interval meaning, and negative division.",
+  "course": "Pre-algebra",
+  "course_id": "pre-algebra",
+  "title": "Inequalities",
+  "objective": "Represent comparison, solve one-variable inequalities, and interpret boundary points.",
+  "index": 5,
+  "total": 8,
+  "prerequisites": [
+    "pre-algebra.one-step-equations",
+    "arithmetic.negative-numbers"
+  ]
+}

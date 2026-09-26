@@ -1,0 +1,127 @@
+[
+  {
+    "formula": "x+2<5 arrow.r x<3",
+    "text": "An inequality describes a set of allowed inputs rather than necessarily one solution. If x plus two must stay below five, subtracting two from both sides shows that every input below three works.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        -4,
+        6
+      ],
+      "points": [
+        3
+      ],
+      "interval": [
+        -4,
+        3
+      ],
+      "open": [
+        3
+      ],
+      "labels": [
+        "3"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.133333333333333,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "x+2<=5 arrow.r x<=3",
+    "text": "Including equality changes the boundary. When the condition says at most five, input three is allowed because it produces exactly five. A filled boundary point includes that input, whereas an open boundary point excludes it.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        -4,
+        6
+      ],
+      "points": [
+        3
+      ],
+      "interval": [
+        -4,
+        3
+      ],
+      "labels": [
+        "3"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.133333333333333,
+    "duration": 16.133333333333333,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "-2x<6 arrow.r x> -3",
+    "text": "Multiplying or dividing by a negative number reverses order. Dividing negative two x less than six by negative two gives x greater than negative three. Reflection across zero explains why the direction of the comparison must switch.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        -6,
+        6
+      ],
+      "points": [
+        -3
+      ],
+      "interval": [
+        -3,
+        6
+      ],
+      "open": [
+        -3
+      ],
+      "labels": [
+        "-3"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 31.266666666666666,
+    "duration": 17.833333333333332,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "x=0: -2 times 0<6",
+    "text": "Always test a value from the proposed interval. Zero is greater than negative three, and its original left side is zero, which is less than six. Checking a value outside the interval also helps detect a reversed inequality.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        -6,
+        6
+      ],
+      "points": [
+        -4,
+        -3,
+        0
+      ],
+      "interval": [
+        -3,
+        6
+      ],
+      "open": [
+        -3
+      ],
+      "labels": [
+        "fails",
+        "boundary",
+        "works"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 49.099999999999994,
+    "duration": 16.466666666666665,
+    "audio": "audio_parts/04.wav"
+  }
+]

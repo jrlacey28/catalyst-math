@@ -1,0 +1,92 @@
+[
+  {
+    "formula": "E(X)=sum_x x P(X=x)",
+    "text": "Expectation is a probability-weighted average, not a promise about one trial. Suppose the possible payoffs are zero, four, and ten with probabilities one half, three tenths, and one fifth. More likely values receive more weight in the average.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "labels": [
+        "payoff 0",
+        "payoff 4",
+        "payoff 10"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "E(X)=0(0.5)+4(0.3)+10(0.2)=3.2",
+    "text": "Multiply each payoff by its probability, then add the contributions. The result is three point two, even though that value is not a possible payoff. For repeated independent trials of this model, sample averages settle near this expected value in the long run.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        0,
+        1.2,
+        2
+      ],
+      "labels": [
+        "X=0",
+        "X=4",
+        "X=10"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "E(2X+1)=2E(X)+1=7.4",
+    "text": "Expectation respects addition and scaling when the relevant expectations exist. Doubling every payoff and adding one therefore doubles the old expectation and adds one. This linearity does not require independence between quantities; even adding X to itself follows the rule.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        0.5,
+        2.7,
+        4.2
+      ],
+      "labels": [
+        "1 × 0.5",
+        "9 × 0.3",
+        "21 × 0.2"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "E(X-3.2)=0",
+    "text": "Paying three point two to play gives zero expected net payoff, but an individual outcome can still lose or gain money. Expected value summarizes an average; it does not describe variability, guarantee fairness in every trial, or eliminate the possibility of a loss.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        -4,
+        8
+      ],
+      "points": [
+        -3.2,
+        0,
+        0.8,
+        6.8
+      ],
+      "labels": [
+        "loss",
+        "mean",
+        "small gain",
+        "large gain"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

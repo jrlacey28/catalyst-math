@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "duration_seconds": 61.1,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "audio_sample_rate": 48000,
+  "audio_channels": 2,
+  "audio_mean_dbfs": -15.9,
+  "audio_peak_dbfs": -1.2,
+  "frames_decoded": 1833,
+  "sha256": "9294b5fbb3a93520147b7545ef028f28e245890bc58ec4225d1ebc22f6e0e5dd",
+  "bytes": 7295796,
+  "hyperframes_version": "0.8.78",
+  "checks": {
+    "runtime_errors": 0,
+    "layout_errors": 0,
+    "motion_errors": 0,
+    "contrast_passed": 28,
+    "contrast_total": 28,
+    "lint_errors": 0,
+    "lint_warnings": 1,
+    "lint_warning": "Six timed results share a timeline track.",
+    "layout_notes": "Five intentional screenshot crop/pan observations."
+  },
+  "inspection": "All seven scene snapshots inspected; opening overlap fixed; final encoded opening and application frames inspected. Full audio/video decode passed.",
+  "caption_timing": "Scene-aligned sentence cues with proportional word timing, not forced alignment."
+}

@@ -1,0 +1,191 @@
+{
+  "id": "calculus-1.product-quotient-rule",
+  "beats": [
+    {
+      "formula": "(u v)'=u' v+u v'",
+      "text": "When two factors change, the product has two first-order contributions. One changes the first factor while retaining the second; the other changes the second while retaining the first. Multiplying derivatives alone misses both contributions.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          2
+        ],
+        "y": [
+          -1,
+          8
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              -1,
+              2
+            ]
+          },
+          {
+            "f": "x+3",
+            "color": "gold",
+            "domain": [
+              -1,
+              2
+            ]
+          }
+        ],
+        "points": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "(x^2(x+3))'=2x(x+3)+x^2=3x^2+6x",
+      "text": "For x squared times x plus three, the product rule gives two x times x plus three, plus x squared. Now distribute and collect like terms. The calculus rule comes first; ordinary algebra simplifies its result.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          2
+        ],
+        "y": [
+          -4,
+          26
+        ],
+        "curves": [
+          {
+            "f": "x*x*(x+3)",
+            "color": "blue",
+            "domain": [
+              -1,
+              2
+            ]
+          },
+          {
+            "f": "3*x*x+6*x",
+            "color": "gold",
+            "domain": [
+              -1,
+              2
+            ]
+          }
+        ],
+        "points": [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "(frac(x+1,x+4))'=frac(3,(x+4)^2), quad x != -4",
+      "text": "For a quotient, differentiate the top times the bottom, then subtract the top times the differentiated bottom. Divide by the original bottom squared. Here the numerator becomes x plus four minus x minus one, leaving three.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          3
+        ],
+        "y": [
+          -3,
+          4
+        ],
+        "curves": [
+          {
+            "f": "(x+1)/(x+4)",
+            "color": "blue",
+            "domain": [
+              -3,
+              3
+            ]
+          },
+          {
+            "f": "3/((x+4)**2)",
+            "color": "gold",
+            "domain": [
+              -3,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            0.25
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "frac(x^2-16,x-4)=x+4, quad x != 4",
+      "text": "Sometimes factoring first is easier than using the quotient rule. This expression equals x plus four except at four, so its derivative is one on its original domain. The cancelled factor still leaves an excluded input.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          6
+        ],
+        "y": [
+          0,
+          11
+        ],
+        "curves": [
+          {
+            "f": "x+4",
+            "color": "blue",
+            "domain": [
+              0,
+              6
+            ]
+          }
+        ],
+        "holes": [
+          [
+            4,
+            8
+          ]
+        ],
+        "sweep": true
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Differentiate y=x²(x−5), then expand and collect like terms. Name the rule you used.",
+      "answer": "Product rule: y′=2x(x−5)+x²=3x²−10x.",
+      "id": "calculus-1.product-quotient-rule.video-practice-1"
+    },
+    {
+      "prompt": "Differentiate q(x)=(x+4)/(x+2). Show the subtraction in the numerator and state the domain.",
+      "answer": "q′=[(x+2)−(x+4)]/(x+2)²=−2/(x+2)², for x≠−2.",
+      "id": "calculus-1.product-quotient-rule.video-practice-2"
+    },
+    {
+      "prompt": "At one point, u=1, u′=2, v=3, and v′=−1. Find both (uv)′ and (u/v)′, explaining why their rules differ.",
+      "answer": "(uv)′=2·3+1·(−1)=5. (u/v)′=[2·3−1·(−1)]/3²=7/9. A quotient includes the denominator's inverse, producing subtraction and a squared denominator.",
+      "id": "calculus-1.product-quotient-rule.video-practice-3"
+    }
+  ],
+  "takeaway": "Differentiate the expression's structure, then use algebra to simplify while retaining original exclusions.",
+  "scope": "The product rule, quotient rule, and a legal simplification shortcut.",
+  "course": "Calculus I",
+  "course_id": "calculus-1",
+  "title": "Product and quotient rules",
+  "objective": "Differentiate products and quotients while tracking signs and domain restrictions.",
+  "index": 4,
+  "total": 8,
+  "prerequisites": [
+    "calculus-1.derivatives",
+    "algebra-1.polynomials"
+  ]
+}

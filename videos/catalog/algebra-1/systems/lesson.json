@@ -1,0 +1,194 @@
+{
+  "id": "algebra-1.systems",
+  "beats": [
+    {
+      "formula": "y=2x+1 quad y=-x+7",
+      "text": "A system asks for inputs that satisfy several equations at the same time. These lines represent two different rules, and their shared point has coordinates that make both equalities true simultaneously. Nearby points on just one line do not qualify.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          5
+        ],
+        "y": [
+          -1,
+          10
+        ],
+        "curves": [
+          {
+            "f": "2*x+1",
+            "color": "blue",
+            "domain": [
+              -1,
+              4.5
+            ]
+          },
+          {
+            "f": "-x+7",
+            "color": "gold",
+            "domain": [
+              -1,
+              5
+            ]
+          }
+        ],
+        "points": [
+          [
+            2,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "2x+1=-x+7 arrow.r 3x=6 arrow.r x=2",
+      "text": "Because both expressions equal y at the intersection, set them equal to each other. Add x and subtract one to get three x equals six, then find x equals two. Substituting back gives y equals five.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          4
+        ],
+        "y": [
+          0,
+          9
+        ],
+        "curves": [
+          {
+            "f": "2*x+1",
+            "color": "blue",
+            "domain": [
+              0,
+              4
+            ]
+          },
+          {
+            "f": "-x+7",
+            "color": "gold",
+            "domain": [
+              0,
+              4
+            ]
+          }
+        ],
+        "points": [
+          [
+            2,
+            5
+          ]
+        ],
+        "labels": [
+          "2,5"
+        ]
+      }
+    },
+    {
+      "formula": "y=2x+1 quad y=2x+4",
+      "text": "Different systems can have no solution. These lines have equal rates but different vertical starting values, so they remain separated. Setting their expressions equal cancels the x terms and leaves the impossible statement one equals four.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          3
+        ],
+        "y": [
+          -4,
+          11
+        ],
+        "curves": [
+          {
+            "f": "2*x+1",
+            "color": "blue",
+            "domain": [
+              -2,
+              3
+            ]
+          },
+          {
+            "f": "2*x+4",
+            "color": "gold",
+            "domain": [
+              -2,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "formula": "y=2x+1 quad 2y=4x+2",
+      "text": "If one equation is simply a nonzero multiple of the other, both describe the same line. Every point on that line satisfies the system. Thus two linear equations can have one solution, no solutions, or infinitely many.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          3
+        ],
+        "y": [
+          -4,
+          8
+        ],
+        "curves": [
+          {
+            "f": "2*x+1",
+            "color": "blue",
+            "domain": [
+              -2,
+              3
+            ]
+          },
+          {
+            "f": "(4*x+2)/2",
+            "color": "gold",
+            "domain": [
+              -2,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            -1,
+            -1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Solve y=x+2 and y=4x−7, then check both.",
+      "answer": "x+2=4x−7 gives x=3, y=5; both rules give five.",
+      "id": "algebra-1.systems.video-practice-1"
+    },
+    {
+      "prompt": "Solve x+y=11 and x−y=3 using addition.",
+      "answer": "Add equations to get2x=14, sox=7; theny=4.",
+      "id": "algebra-1.systems.video-practice-2"
+    },
+    {
+      "prompt": "Classify y=−3x+2 and 2y=−6x+4. Explain the geometry.",
+      "answer": "Infinitely many solutions; dividing the second equation by two gives the first, so both describe one line.",
+      "id": "algebra-1.systems.video-practice-3"
+    }
+  ],
+  "takeaway": "A system requires simultaneous truth; intersections determine its solution set.",
+  "scope": "Substitution, shared solutions, parallel lines, and dependent equations.",
+  "course": "Algebra I",
+  "course_id": "algebra-1",
+  "title": "Systems of equations",
+  "objective": "Solve simultaneous equations by intersection, substitution, and elimination.",
+  "index": 3,
+  "total": 10,
+  "prerequisites": [
+    "algebra-1.linear-equations"
+  ]
+}

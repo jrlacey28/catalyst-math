@@ -1,0 +1,190 @@
+[
+  {
+    "formula": "y=-2x+3",
+    "text": "A graph collects all input-output pairs of a rule. Begin with a few easy inputs for y equals negative two x plus three. When x is zero, one, and two, the corresponding outputs are three, one, and negative one.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        4
+      ],
+      "y": [
+        -5,
+        5
+      ],
+      "curves": [],
+      "points": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "labels": [
+        "0,3",
+        "1,1",
+        "2,-1"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.766666666666666,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "m=-2 quad b=3",
+    "text": "The constant rate shows that these points belong to one straight line. Starting at the vertical intercept three, each step right goes two units down. Drawing the line extends the relationship beyond the few sampled inputs.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        4
+      ],
+      "y": [
+        -5,
+        5
+      ],
+      "curves": [
+        {
+          "f": "-2*x+3",
+          "color": "blue",
+          "domain": [
+            -1,
+            4
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.766666666666666,
+    "duration": 15.333333333333334,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "0=-2x+3 arrow.r x=frac(3,2)",
+    "text": "The horizontal intercept is found by setting the output to zero, not by guessing a plotted point. Solving gives input three halves. This is where the line crosses the horizontal axis, while its vertical intercept remains three.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        4
+      ],
+      "y": [
+        -5,
+        5
+      ],
+      "curves": [
+        {
+          "f": "-2*x+3",
+          "color": "blue",
+          "domain": [
+            -1,
+            4
+          ]
+        }
+      ],
+      "points": [
+        [
+          1.5,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "labels": [
+        "x intercept",
+        "y intercept"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 32.1,
+    "duration": 16.4,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "y=x^2",
+    "text": "Graphing from samples also has limits. These values come from a quadratic rule, so connecting them with a single straight line would invent a different relationship. Use the formula, its structure, and enough points to determine the appropriate shape.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -1,
+        9
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "gold",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          -2,
+          4
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 48.5,
+    "duration": 17.1,
+    "audio": "audio_parts/04.wav"
+  }
+]

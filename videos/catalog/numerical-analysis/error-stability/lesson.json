@@ -1,0 +1,142 @@
+{
+  "id": "numerical-analysis.error-stability",
+  "beats": [
+    {
+      "formula": "f(x)=frac(1,x-1)",
+      "text": "Numerical error has two different sources. Conditioning describes sensitivity built into the mathematical problem. Near input one, the reciprocal of x minus one changes sharply: moving from one point zero one to one point zero two halves the output.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          1.005,
+          1.05
+        ],
+        "y": [
+          0,
+          210
+        ],
+        "curves": [
+          {
+            "f": "1/(x-1)",
+            "color": "blue",
+            "domain": [
+              1.005,
+              1.05
+            ]
+          }
+        ],
+        "points": [
+          [
+            1.01,
+            100
+          ],
+          [
+            1.02,
+            50
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "sqrt(10001)-100 approx 0.004999875",
+      "text": "Algorithmic stability concerns additional error introduced by the computation. Subtracting nearly equal rounded values can erase meaningful digits. If this square root is first rounded to two decimal places, the subtraction becomes zero even though the true difference is positive.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          99.999,
+          100.011
+        ],
+        "points": [
+          100,
+          100.004999875
+        ],
+        "labels": [
+          "100",
+          "sqrt(10001)"
+        ],
+        "arrows": [
+          [
+            100,
+            100.004999875
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "sqrt(10001)-100=frac(1,sqrt(10001)+100)",
+      "text": "Multiplying by the conjugate gives an equivalent quotient with numerator one and denominator about two hundred. This avoids subtracting two nearly equal intermediate values. The rewrite changes the computational route while preserving the exact mathematical quantity being requested.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          2
+        ],
+        "y": [
+          -0.011,
+          0.011
+        ],
+        "curves": [
+          {
+            "f": "x/(sqrt(10000+x)+100)",
+            "color": "green",
+            "domain": [
+              -2,
+              2
+            ]
+          }
+        ],
+        "points": [
+          [
+            1,
+            0.004999875
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "\"relative error\"=frac(abs(\"approximate\"-\"true\"),abs(\"true\"))",
+      "text": "Relative error compares the absolute error with the size of a nonzero true answer. A tiny absolute error can be enormous relative to a tiny result. Improving an algorithm cannot remove sensitivity intrinsic to uncertain input data.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0.004999875,
+          0,
+          0.005
+        ],
+        "labels": [
+          "true",
+          "subtract",
+          "rewrite"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "A nonzero true answer is 0.002 and the approximation is 0.0022. Compute absolute and relative error.",
+      "answer": "Absolute error=0.0002; relative error=0.0002/0.002=0.1, or 10%.",
+      "id": "numerical-analysis.error-stability.video-practice-1"
+    },
+    {
+      "prompt": "Rewrite sqrt(2501)−50 without subtracting nearly equal numbers.",
+      "answer": "Multiply numerator and denominator by sqrt(2501)+50 to obtain 1/(sqrt(2501)+50).",
+      "id": "numerical-analysis.error-stability.video-practice-2"
+    },
+    {
+      "prompt": "Explain whether an unstable implementation and an ill-conditioned problem are the same thing.",
+      "answer": "No. Conditioning describes sensitivity of the exact output to input perturbations. Stability describes extra error produced by the algorithm. A stable algorithm can still give uncertain answers for an ill-conditioned problem with uncertain inputs.",
+      "id": "numerical-analysis.error-stability.video-practice-3"
+    }
+  ],
+  "takeaway": "Conditioning belongs to the problem; stability belongs to the computational method.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Numerical analysis",
+  "course_id": "numerical-analysis",
+  "title": "Error and stability",
+  "objective": "Distinguish conditioning from algorithmic stability and quantify approximation error.",
+  "index": 1,
+  "total": 4,
+  "prerequisites": [
+    "number-sense.estimation",
+    "calculus-1.derivatives"
+  ]
+}

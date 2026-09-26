@@ -1,0 +1,194 @@
+{
+  "brief.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "3a1ed842eac3f5ec0444d7af9a3c4ae689b6324dd162c8b3f206755fa6fd52bc"
+  },
+  "check.png": {
+    "width": 1387,
+    "height": 1272,
+    "format": "JPEG",
+    "sha256": "794ecee4870199c6f18802a1c7e96ff5b574191527687fa93ea002da8f5995a4"
+  },
+  "compare-1.png": {
+    "width": 1387,
+    "height": 1272,
+    "format": "JPEG",
+    "sha256": "446ec40e45da4dd6ffd3749564ad20e6ae4d749d637b59496818a962c2b9dc71"
+  },
+  "compare-2.png": {
+    "width": 1387,
+    "height": 1272,
+    "format": "JPEG",
+    "sha256": "463d3b27dd8db0c37355d0ee2642a67317f52198c952f3b4309e30c4f526ba52"
+  },
+  "course.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "1aed7821aed840cb8b051fbd572229caaec273e1710ac94f71acb016e8058d1c"
+  },
+  "courses.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "526ae3089439a84fbdde75a5a71b0d49dce2068b6d0c721602816029d3410c69"
+  },
+  "feedback-revision.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "016b01b6a1301c851cee2da173cb9141e56145e6237aba30aeafe64d3a598384"
+  },
+  "feedback.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "7c69e76c87563cea3524538a26c832701375358537e2c2e821baa5926e9b86e0"
+  },
+  "function-1.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "93473f1463dda767f463aafeefc7ea784e7f4f80f7e7cfc1b70bdbdb7f06e35f"
+  },
+  "function-2.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "13d5d3d927bd7be0f7bba72ff3d43978e9742df04977e96e8f5b574bf3de4a7a"
+  },
+  "function-3.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "da3a88dba32a13445b076d27a912ebf4ef4f9727061ad679c1ae676923a370ef"
+  },
+  "function-4.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "8aeacc56282cf462a3bab2525f3c0d2cfdcfe2add6809db18c81d1303bed3685"
+  },
+  "guide.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "29bf9c114c6ee82bb435b5bccaa16c25f6d0f53db281ab20a2b23e57444d56c7"
+  },
+  "home.png": {
+    "width": 1387,
+    "height": 1272,
+    "format": "JPEG",
+    "sha256": "00ecd88a3ccb664836b985536dfb282afd0991566ee2d09a10468e066bf89582"
+  },
+  "homework.png": {
+    "width": 1387,
+    "height": 1272,
+    "format": "JPEG",
+    "sha256": "2317a8b1f65d994a9496f083b0140b40d758e671d8cca422cbacc725bbd0512c"
+  },
+  "motion-changed.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "5b9e97b1e46550f418e44e510a75012c5a5e08ddfbfab32ef2de9aeb697bd3de"
+  },
+  "motion-predict.png": {
+    "width": 1387,
+    "height": 1272,
+    "format": "JPEG",
+    "sha256": "05717df8fb7747525df2a9d687d13a7fc874b48699b931267a96b4cc3b7a85ae"
+  },
+  "motion.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "5451a86010f670fbb7c0a6fd7076ab2caf973de031e492be3522400d8c2b6df7"
+  },
+  "placement-question.png": {
+    "width": 1387,
+    "height": 1272,
+    "format": "JPEG",
+    "sha256": "eef650fc0c2c175da1eacfee9322c1641135cec7341155d405842747d6f7c21e"
+  },
+  "placement.png": {
+    "width": 1387,
+    "height": 1272,
+    "format": "JPEG",
+    "sha256": "88869e9a29bd27562a7f30ee535c1aff1a115faefdaaf1aa9b367c8427eecc34"
+  },
+  "playground-search.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "2b5fe57c0786ec611304f53d2f1989a9d2c725210504f764b67a94ae7c58ec7c"
+  },
+  "playground.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "2504b38f969fda6c0aa6d852d1062b977dee0c82c20fd04c32ea8348376751b6"
+  },
+  "practice-feedback.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "7d85a04cab8349d48898f185d1fb65f6d24ce15ff9c4e521a185e53a4c7ea3f3"
+  },
+  "practice-menu.png": {
+    "width": 1387,
+    "height": 1272,
+    "format": "JPEG",
+    "sha256": "8f54845681850b1b55913f6c1befa63947f126da5a57be9971a5df0a6c7ef245"
+  },
+  "practice.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "d8359ad48d0bcb54a113542a5b10ec919278e02b56e771478daf72d67108c27d"
+  },
+  "profiles.png": {
+    "width": 1265,
+    "height": 712,
+    "format": "JPEG",
+    "sha256": "77089c0d2bfa3c092b479c9bb233747fb190e60635a957e73dfd1f1424161485"
+  },
+  "reasoning-final.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "b7459e12c7335020f8bcc3ee0c7da0969f00652582483c807846ec1d5d48e8ad"
+  },
+  "reasoning.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "cdc07ddb7f0d930297a617b5cc46df040c8fe26378470d842e6163d2ca066e98"
+  },
+  "review.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "659e1f00cd158a7ecb51eafb6366272ffed3a73dd99d51aec6fae189823b60f3"
+  },
+  "tailor.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "61e9e7c7278c44e0d12f83e3619e3303deaaee5a4dab14c2ec6413f3ac1c70b8"
+  },
+  "watch.png": {
+    "width": 1372,
+    "height": 1259,
+    "format": "JPEG",
+    "sha256": "9526af3c90527f554dcc936a4d499aaaa46eabbf1a5c26b83cd7e39c0286d7b6"
+  },
+  "writing.png": {
+    "width": 1387,
+    "height": 1272,
+    "format": "JPEG",
+    "sha256": "db421aa149da37c9767fd7f5fbe663dfe591a8054199173a69650d1b840d3d1a"
+  }
+}

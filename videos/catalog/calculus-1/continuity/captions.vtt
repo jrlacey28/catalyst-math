@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.669
+Continuity means the output at an input matches the height approached nearby
+
+00:00:05.669 --> 00:00:12.254
+Three things are needed: a defined value, an existing two-sided limit, and agreement between them
+
+00:00:12.254 --> 00:00:15.767
+A graph without a break illustrates this relationship.
+
+00:00:17.067 --> 00:00:22.972
+Now keep the nearby line but move only the value at one up to five
+
+00:00:22.972 --> 00:00:25.728
+The approaching outputs still converge to two
+
+00:00:25.728 --> 00:00:31.633
+A single misplaced value makes the function discontinuous even though its nearby behavior is unchanged.
+
+00:00:32.933 --> 00:00:37.962
+Setting the value at one equal to two repairs this removable discontinuity
+
+00:00:37.962 --> 00:00:42.152
+This works because both sides already have the same limit
+
+00:00:42.152 --> 00:00:47.600
+Merely defining a value would not repair a jump with unequal one-sided limits.
+
+00:00:48.900 --> 00:00:51.223
+Continuity also respects the domain
+
+00:00:51.223 --> 00:00:55.405
+The square root function accepts only nonnegative real inputs
+
+00:00:55.405 --> 00:01:04.233
+At its endpoint zero, continuity uses approach from within that domain, so only the right-hand approach is relevant there.

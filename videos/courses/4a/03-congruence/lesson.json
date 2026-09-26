@@ -1,0 +1,17 @@
+{
+  "id": "4A-03",
+  "unit": "4a",
+  "course": "Geometry",
+  "index": 3,
+  "total": 9,
+  "slug": "congruence",
+  "title": "Congruence and rigid motion",
+  "objective": "Match vertices and justify triangle congruence with valid criteria.",
+  "prerequisites": "Triangles and angle relationships.",
+  "formulas": [
+    "triangle A B C \u2245 triangle D E F",
+    "A B = D E",
+    "\"SSS\" quad \"SAS\"",
+    "\"ASA / AAS\" quad \"AAA: shape only\""
+  ]
+}

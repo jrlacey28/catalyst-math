@@ -1,0 +1,218 @@
+{
+  "id": "measure-theory.lp-spaces",
+  "beats": [
+    {
+      "formula": "norm(f)_2=(integral_0^1 abs(f(x))^2 d x)^(1/2)",
+      "text": "An L two norm measures a function's size by integrating its squared magnitude and taking a square root. It treats the entire function as one vector. For the function x on the unit interval, the norm is one over square root three.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1.1
+        ],
+        "y": [
+          0,
+          1.1
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "formula": "f=1 \" on \" [0,1/4], quad norm(f)_2=frac(1,2)",
+      "text": "A function equal to one on an interval of width one quarter and zero elsewhere has squared integral one quarter. Its L two norm is therefore one half. Both height and the measure of the supporting region determine the norm.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1
+        ],
+        "y": [
+          0,
+          1.2
+        ],
+        "curves": [
+          {
+            "f": "1",
+            "color": "gold",
+            "domain": [
+              0,
+              0.25
+            ]
+          },
+          {
+            "f": "0",
+            "color": "blue",
+            "domain": [
+              0.250001,
+              1
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          0.25
+        ]
+      }
+    },
+    {
+      "formula": "f_n=sqrt(n) \" on \" (0,1/n), quad norm(f_n)_2=1",
+      "text": "Shrinking support alone need not shrink the norm. Set the height to square root n on the open interval zero to one over n, and zero elsewhere. Squared area remains one, yet every fixed input eventually has value zero.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          0.5
+        ],
+        "y": [
+          0,
+          4.5
+        ],
+        "curves": [
+          {
+            "f": "2",
+            "color": "blue",
+            "domain": [
+              0,
+              0.25
+            ]
+          },
+          {
+            "f": "4",
+            "color": "pink",
+            "domain": [
+              0,
+              0.0625
+            ]
+          },
+          {
+            "f": "0",
+            "color": "blue",
+            "domain": [
+              0.25,
+              0.5
+            ]
+          },
+          {
+            "f": "0",
+            "color": "pink",
+            "domain": [
+              0.0625,
+              0.5
+            ]
+          }
+        ],
+        "holes": [
+          [
+            0,
+            2
+          ],
+          [
+            0.25,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0.0625,
+            4
+          ]
+        ],
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            0.25,
+            0
+          ],
+          [
+            0.0625,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "f=g \" almost everywhere\" arrow.r norm(f-g)_2=0",
+      "text": "Functions that differ only on a measure-zero set have zero L two distance. The space therefore identifies them as the same vector. A spike at just one point changes a drawn value but not the corresponding equivalence class or norm.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1
+        ],
+        "y": [
+          0,
+          3.5
+        ],
+        "curves": [
+          {
+            "f": "0",
+            "color": "blue",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "points": [
+          [
+            0.5,
+            3
+          ]
+        ],
+        "holes": [
+          [
+            0.5,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "On [0,1], find the L1 and L2 norms of the indicator of [0,1/9].",
+      "answer": "L1=1/9. L2=sqrt(1/9)=1/3.",
+      "id": "measure-theory.lp-spaces.video-practice-1"
+    },
+    {
+      "prompt": "On [0,1], a function equals five on (0,1/25) and zero elsewhere. Find its L2 norm.",
+      "answer": "The squared integral is 25·(1/25)=1, so the L2 norm is 1.",
+      "id": "measure-theory.lp-spaces.video-practice-2"
+    },
+    {
+      "prompt": "Two measurable functions on [0,1] differ only at the three points 0,1/2,1. Are they different elements of L2 if both have finite L2 norm? Explain.",
+      "answer": "No. The finite exceptional set has measure zero, so the functions agree almost everywhere and define the same L2 equivalence class.",
+      "id": "measure-theory.lp-spaces.video-practice-3"
+    }
+  ],
+  "takeaway": "Lp norm convergence differs from pointwise convergence, and functions equal almost everywhere are identified.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Measure theory",
+  "course_id": "measure-theory",
+  "title": "Lp spaces",
+  "objective": "Study normed spaces of functions and convergence almost everywhere or in norm.",
+  "index": 3,
+  "total": 3,
+  "prerequisites": [
+    "measure-theory.lebesgue-integration",
+    "linear-algebra.vector-spaces"
+  ]
+}

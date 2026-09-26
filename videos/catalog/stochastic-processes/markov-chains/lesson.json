@@ -1,0 +1,163 @@
+{
+  "id": "stochastic-processes.markov-chains",
+  "beats": [
+    {
+      "formula": "P(S \" next\" | S \" now\")=0.8",
+      "text": "A Markov chain models changes between states. The next-state distribution depends on the present state, conditional on the observed past. Suppose sunny weather stays sunny with probability point eight, while rainy weather changes to sunny with probability point four.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "sun now",
+          "sun next",
+          "rain now",
+          "rain next"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": [
+          "0.8",
+          "0.2",
+          "0.4",
+          "0.6"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "formula": "P(S \" after two\" | S \" now\")=0.8^2+0.2*0.4=0.72",
+      "text": "Starting sunny, sunshine two steps later can arise by two disjoint paths: sunny then sunny, or rainy then sunny. Multiply conditional probabilities along each path and add across the alternatives. That gives point seven two, not simply point eight squared.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "sun start",
+          "sun 1",
+          "sun 2",
+          "rain 1"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "weights": [
+          "0.8",
+          "0.2",
+          "0.8",
+          "0.4"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "formula": "p=0.8p+0.4(1-p) arrow.r p=frac(2,3)",
+      "text": "A stationary distribution is unchanged by a transition. If its sunny probability is p, then the next sunny probability is point eight p plus point four times one minus p. Solving gives two thirds sunny and one third rainy.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0.666666666667,
+          0.333333333333
+        ],
+        "labels": [
+          "sunny",
+          "rainy"
+        ]
+      }
+    },
+    {
+      "formula": "frac(2,3)0.8+frac(1,3)0.4=frac(2,3)",
+      "text": "Stationary does not mean the weather stops changing; it means the distribution remains unchanged. This finite chain has positive transition probabilities, so it converges to its unique stationary distribution. Other chains can be periodic or disconnected, and need separate analysis.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "S 2/3",
+          "next S",
+          "R 1/3",
+          "next R"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": [
+          "0.8",
+          "0.2",
+          "0.4",
+          "0.6"
+        ],
+        "directed": true
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "A two-state chain has P(A→A)=0.7 and P(B→A)=0.2. Starting at A, find the probability of A after two transitions.",
+      "answer": "It is 0.7·0.7+0.3·0.2=0.55, adding the two disjoint intermediate-state paths.",
+      "id": "stochastic-processes.markov-chains.video-practice-1"
+    },
+    {
+      "prompt": "Find its stationary probability of state A by solving one equation.",
+      "answer": "p=0.7p+0.2(1−p), so 0.5p=0.2 and p=0.4; the stationary probability of B is 0.6.",
+      "id": "stochastic-processes.markov-chains.video-practice-2"
+    },
+    {
+      "prompt": "A chain switches deterministically between A and B. It has stationary distribution (1/2,1/2). Does starting at A converge to that distribution? Explain.",
+      "answer": "No. The distributions alternate between (1,0) and(0,1). The chain is periodic, showing that existence of a stationary distribution alone does not guarantee convergence from every initial state.",
+      "id": "stochastic-processes.markov-chains.video-practice-3"
+    }
+  ],
+  "takeaway": "Multiply along conditional paths, add disjoint paths, and distinguish stationary distributions from convergence.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Stochastic processes",
+  "course_id": "stochastic-processes",
+  "title": "Markov chains",
+  "objective": "Use transition matrices and analyze communicating classes and stationary behavior.",
+  "index": 1,
+  "total": 3,
+  "prerequisites": [
+    "probability.conditional-probability",
+    "linear-algebra.matrices"
+  ]
+}

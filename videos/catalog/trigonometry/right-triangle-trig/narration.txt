@@ -1,0 +1,7 @@
+Similar right triangles preserve ratios of corresponding sides, even when their sizes change. Fix an acute angle and compare the side opposite it with the hypotenuse. That consistent ratio is called the sine of the chosen angle.
+
+Suppose the original triangle has opposite side three, adjacent side four, and hypotenuse five. Dividing every length by five normalizes the hypotenuse to one. Its vertical and horizontal legs then have lengths three fifths and four fifths.
+
+Enlarge the triangle by a factor of two. The opposite side becomes six and the hypotenuse ten, leaving the same sine ratio. This is why an angle determines trigonometric ratios independently of the scale of the triangle.
+
+To recover a side, multiply the hypotenuse by the known ratio. Ten times three fifths gives six. First check that the triangle is right and identify sides relative to the marked angle; the hypotenuse always faces the right angle.

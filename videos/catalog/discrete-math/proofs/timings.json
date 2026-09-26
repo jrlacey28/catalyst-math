@@ -1,0 +1,75 @@
+[
+  {
+    "formula": "\"even\"+\"even\"=\"even\"",
+    "text": "A proof explains why a claim holds for every object meeting its assumptions. Four plus six equals ten is evidence for the even-plus-even claim, but testing examples can never cover all integers. We need a general reason.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        4,
+        6
+      ],
+      "labels": [
+        "even",
+        "even"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.2,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "2a+2b=2(a+b)",
+    "text": "Represent arbitrary even integers as two a and two b, where a and b are integers. Their sum factors as two times the integer a plus b. That matches the definition of even and completes a direct proof.",
+    "visual": {
+      "kind": "grid",
+      "rows": 2,
+      "cols": 5,
+      "filled": 10
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.2,
+    "duration": 15.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "1=frac(1(1+1),2)",
+    "text": "Mathematical induction uses a different structure: a starting case and a step that passes truth forward. For the sum of the first n positive integers, the claimed formula works at n equal to one, establishing the base case.",
+    "visual": {
+      "kind": "grid",
+      "rows": 1,
+      "cols": 2,
+      "filled": 1
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 31.2,
+    "duration": 16.2,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "frac(n(n+1),2)+(n+1)=frac((n+1)(n+2),2)",
+    "text": "Assume the formula holds for a particular positive integer n, then add the next term. Factoring n plus one produces exactly the formula for n plus one. Combined with the base case, this implication establishes every positive integer case.",
+    "visual": {
+      "kind": "grid",
+      "rows": 4,
+      "cols": 5,
+      "filled": 10
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 47.4,
+    "duration": 17.966666666666665,
+    "audio": "audio_parts/04.wav"
+  }
+]

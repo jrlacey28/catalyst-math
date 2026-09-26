@@ -1,0 +1,91 @@
+{
+  "unit": "4b",
+  "form": "A",
+  "instructions": "Independent work. No hints or answer key during testing. Ask for clarification; substantive teaching makes the item assisted and requires a fresh replacement. Three questions per batch. Calculator allowed for arithmetic after writing the exact setup; no solver or answer lookup.",
+  "items": [
+    {
+      "id": "4B-TA-01",
+      "lesson_id": "4B-01",
+      "objective": "Choose and calculate measures of center; explain outlier sensitivity.",
+      "prompt": "For 2, 3, 3, 6, 11, find mean, median, and mode.",
+      "points": 2
+    },
+    {
+      "id": "4B-TA-02",
+      "lesson_id": "4B-01",
+      "objective": "Choose and calculate measures of center; explain outlier sensitivity.",
+      "prompt": "Replace 11 by 51 in that data. Which changes, the mean or median, and why?",
+      "points": 2
+    },
+    {
+      "id": "4B-TA-03",
+      "lesson_id": "4B-02",
+      "objective": "Calculate population variance and distinguish it from sample variance.",
+      "prompt": "Treat 0, 3, 6 as a population. Calculate its variance with working.",
+      "points": 2
+    },
+    {
+      "id": "4B-TA-04",
+      "lesson_id": "4B-02",
+      "objective": "Calculate population variance and distinguish it from sample variance.",
+      "prompt": "Treat those same observations as a sample. Calculate the usual sample variance and explain the denominator.",
+      "points": 2
+    },
+    {
+      "id": "4B-TA-05",
+      "lesson_id": "4B-03",
+      "objective": "Recover the data\u2019s units and interpret spread without assuming normality.",
+      "prompt": "A population has variance 36 m\u00b2. What is its standard deviation and unit?",
+      "points": 2
+    },
+    {
+      "id": "4B-TA-06",
+      "lesson_id": "4B-03",
+      "objective": "Recover the data\u2019s units and interpret spread without assuming normality.",
+      "prompt": "A data set has standard deviation 4. Transform every value by y=3x+7. Find the new standard deviation and explain.",
+      "points": 2
+    },
+    {
+      "id": "4B-TA-07",
+      "lesson_id": "4B-04",
+      "objective": "Read frequency displays and describe center, spread, skew, and extremes.",
+      "prompt": "Histogram bins [0,10), [10,20), [20,30) have counts 3, 9, 6. Find total count and the fraction below 20.",
+      "points": 2
+    },
+    {
+      "id": "4B-TA-08",
+      "lesson_id": "4B-04",
+      "objective": "Read frequency displays and describe center, spread, skew, and extremes.",
+      "prompt": "A distribution has a long tail toward low values. Name the skew and explain why the tail matters.",
+      "points": 2
+    },
+    {
+      "id": "4B-TA-09",
+      "lesson_id": "4B-05",
+      "objective": "Interpret direction and linear strength without inferring causation.",
+      "prompt": "Interpret r=-0.92 in terms of direction and linear strength.",
+      "points": 2
+    },
+    {
+      "id": "4B-TA-10",
+      "lesson_id": "4B-05",
+      "objective": "Interpret direction and linear strength without inferring causation.",
+      "prompt": "A study finds a positive correlation between shoe size and reading ability in children. Does larger shoe size cause better reading? Give a plausible alternative.",
+      "points": 2
+    },
+    {
+      "id": "4B-TA-11",
+      "lesson_id": "4B-06",
+      "objective": "Distinguish both, either, and at least one; use changing counts and complements.",
+      "prompt": "A bag has 5 red and 3 blue balls. Draw two without replacement. Find P(two red).",
+      "points": 2
+    },
+    {
+      "id": "4B-TA-12",
+      "lesson_id": "4B-06",
+      "objective": "Distinguish both, either, and at least one; use changing counts and complements.",
+      "prompt": "For that bag, find P(at least one red), naming the event you exclude.",
+      "points": 2
+    }
+  ]
+}

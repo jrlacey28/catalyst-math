@@ -1,0 +1,170 @@
+{
+  "id": "calculus-1.related-rates",
+  "beats": [
+    {
+      "formula": "A=pi r^2",
+      "text": "Related rates connect quantities that change together in time. As a circular ripple expands, both radius and area change. Start with the geometric relationship between them before inserting the numerical information for one particular instant.",
+      "visual": {
+        "kind": "circle",
+        "angle": 6.283185307179586,
+        "radius": 2,
+        "arc": true
+      }
+    },
+    {
+      "formula": "frac(dif A,dif t)=2pi r frac(dif r,dif t)",
+      "text": "Differentiate the area equation with respect to time. The chain rule contributes the radius's rate of change. When the radius is two and grows at half a unit per second, the area grows at two pi square units per second.",
+      "visual": {
+        "kind": "circle",
+        "angle": 6.283185307179586,
+        "radius": 2,
+        "arc": true
+      }
+    },
+    {
+      "formula": "x^2+y^2=25 quad arrow.r quad x x'+y y'=0",
+      "text": "For a sliding ladder of length five, horizontal and vertical distances satisfy the Pythagorean theorem. Differentiate first, then cancel the nonzero constant two. One distance increasing can force the other to decrease because the ladder length stays fixed.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          5
+        ],
+        "y": [
+          0,
+          5
+        ],
+        "curves": [
+          {
+            "f": "4-4*x/3",
+            "color": "blue",
+            "domain": [
+              0,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            4
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "segments": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        ],
+        "equal": true
+      }
+    },
+    {
+      "formula": "x=3, y=4, x'=1 quad arrow.r quad y'=-frac(3,4)",
+      "text": "At horizontal distance three and height four, an outward speed of one gives a downward speed of three quarters. The negative sign describes direction. Substituting fixed positions before differentiating would incorrectly erase their time dependence.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          5
+        ],
+        "y": [
+          0,
+          5
+        ],
+        "curves": [
+          {
+            "f": "4-4*x/3",
+            "color": "blue",
+            "domain": [
+              0,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            4
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "segments": [
+          [
+            [
+              3,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              3.25
+            ]
+          ]
+        ],
+        "equal": true
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "A circle's radius is 5 cm and increases at 0.2 cm/s. Find the instantaneous area growth rate, including units.",
+      "answer": "dA/dt=2πr dr/dt=2π·5·0.2=2π cm²/s.",
+      "id": "calculus-1.related-rates.video-practice-1"
+    },
+    {
+      "prompt": "A 13 m ladder has its foot 5 m from a wall and its top 12 m high. Its foot moves outward at 3 m/s. Find the top's vertical velocity.",
+      "answer": "x x′+y y′=0 gives y′=−5·3/12=−5/4 m/s. The negative sign means downward.",
+      "id": "calculus-1.related-rates.video-practice-2"
+    },
+    {
+      "prompt": "A sphere has V=(4/3)πr³. At r=2 m, dr/dt=0.1 m/s. Derive and calculate dV/dt; explain why r stays a function until differentiation is finished.",
+      "answer": "dV/dt=4πr² dr/dt=4π·4·0.1=1.6π m³/s. r changes with time; replacing it by the instant's value before differentiating would lose that dependence.",
+      "id": "calculus-1.related-rates.video-practice-3"
+    }
+  ],
+  "takeaway": "Differentiate the relationship with respect to time before substituting a particular instant; signs and units explain the answer.",
+  "scope": "Area growth and a sliding ladder as two concrete related-rates models.",
+  "course": "Calculus I",
+  "course_id": "calculus-1",
+  "title": "Related rates",
+  "objective": "Connect rates through a shared equation and substitute at the correct stage.",
+  "index": 8,
+  "total": 8,
+  "prerequisites": [
+    "calculus-1.implicit-differentiation",
+    "geometry.volume"
+  ]
+}

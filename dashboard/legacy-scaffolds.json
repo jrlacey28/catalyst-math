@@ -1,0 +1,622 @@
+{
+  "version": 1,
+  "topics": [
+    {
+      "id": "geometry.angles",
+      "intuition": "An angle measures a turn. A straight turn is 180°, so adjacent pieces of that turn must add to 180°. Parallel lines let a transversal repeat equal angle patterns, but that equality needs the parallel-line condition, not just a convincing drawing.",
+      "examples": [
+        {
+          "title": "Recover the missing part of a straight turn",
+          "steps": [
+            {"expression": "67° + θ = 180°", "reason": "The two adjacent angles form a straight line, so together they make a half-turn."},
+            {"expression": "θ = 180° − 67°", "reason": "Subtract the known angle from both sides to isolate the missing turn."},
+            {"expression": "θ = 113°", "reason": "The remaining part is obtuse, consistent with subtracting an acute angle from a straight angle."},
+            {"expression": "67° + 113° = 180°", "reason": "Check that the two pieces rebuild the given straight turn."}
+          ],
+          "note": "An angle opposite the 67° angle at this intersection is also 67° by the vertical-angle theorem. An adjacent angle is 113° instead."
+        },
+        {
+          "title": "Use the parallel condition before solving",
+          "steps": [
+            {"expression": "Corresponding angles: (3x+8)° and (5x−26)°", "reason": "A transversal crosses two lines stated to be parallel; corresponding angles are equal under that condition."},
+            {"expression": "3x + 8 = 5x − 26", "reason": "Translate equality of angle measures into an equation."},
+            {"expression": "34 = 2x, so x = 17", "reason": "Subtract 3x and add 26 on both sides, then divide both sides by 2."},
+            {"expression": "3(17)+8 = 5(17)−26 = 59", "reason": "Substitute in both original measures to verify that both are 59°."},
+            {"expression": "Adjacent angle = 180° − 59° = 121°", "reason": "The adjacent linear-pair angle uses the straight-line rule, not the corresponding-angle rule."}
+          ],
+          "note": "Without parallel lines, the two marked angles need not be equal. State the geometric reason before writing the algebra."
+        }
+      ],
+      "misconception": "Angles that look similar in a sketch are not automatically equal. Name the relationship and check its hypotheses."
+    },
+    {
+      "id": "geometry.triangles",
+      "intuition": "A triangle's interior angles total 180°. Its side lengths must close into a shape: any two must sum to more than the third. A right triangle has an additional square-area relationship, with the hypotenuse opposite the right angle.",
+      "examples": [
+        {
+          "title": "Find three angles with one equation",
+          "steps": [
+            {"expression": "Angles: (2x+10)°, (3x−5)°, (x+25)°", "reason": "These are the three interior angles of a nondegenerate Euclidean triangle."},
+            {"expression": "(2x+10)+(3x−5)+(x+25)=180", "reason": "Use the triangle angle sum; keep each angle's whole expression."},
+            {"expression": "6x+30=180, so x=25", "reason": "Collect like terms, subtract 30, then divide by 6."},
+            {"expression": "Angles = 60°, 70°, 50°", "reason": "Substitute x=25 in all three expressions. Each angle is positive and their sum is 180°."}
+          ],
+          "note": "The value x=25 is a parameter, not one of the requested angle measures. Substitution finishes the problem."
+        },
+        {
+          "title": "Find a missing leg and check the shape",
+          "steps": [
+            {"expression": "A right triangle has hypotenuse 17 cm and one leg 15 cm", "reason": "The hypotenuse is opposite the right angle and is the longest side; the unknown side is a leg."},
+            {"expression": "a²+15²=17²", "reason": "The Pythagorean theorem applies because a right angle is given."},
+            {"expression": "a²=289−225=64", "reason": "Subtract the known leg's square from the hypotenuse's square."},
+            {"expression": "a=8 cm", "reason": "A side length is positive, so use the positive square root of 64."},
+            {"expression": "8²+15²=17² and 8+15>17", "reason": "The square relationship checks the calculation; the longest-side triangle inequality checks that the lengths form a nondegenerate triangle."}
+          ],
+          "note": "For positive sorted side lengths, checking that the two smaller sum to more than the largest is enough to verify all three triangle inequalities."
+        }
+      ],
+      "misconception": "The Pythagorean theorem is a right-triangle rule. Do not assign the largest-looking drawn side as a hypotenuse without a right-angle condition."
+    },
+    {
+      "id": "geometry.congruence",
+      "intuition": "Congruent triangles can be matched by a rigid motion, so all corresponding lengths and angles agree. A congruence criterion provides enough information to establish that match; the order of the vertex names records which parts correspond.",
+      "examples": [
+        {
+          "title": "Match three side pairs in the correct order",
+          "steps": [
+            {"expression": "AB=DE=6, BC=EF=9, AC=DF=11", "reason": "All three side pairs are given equal. The lengths satisfy the triangle inequality."},
+            {"expression": "A↔D, B↔E, C↔F", "reason": "Match vertices by the two equal-side pairs that meet at each one."},
+            {"expression": "△ABC ≅ △DEF by SSS", "reason": "Three corresponding side lengths determine a triangle up to rigid motion or reflection."},
+            {"expression": "∠B=∠E and ∠C=∠F", "reason": "Once congruence is established, corresponding angles are equal."}
+          ],
+          "note": "Writing △ABC ≅ △DFE would claim a different correspondence and would not match the given side pairs."
+        },
+        {
+          "title": "Check that the equal angle is included",
+          "steps": [
+            {"expression": "AB=DE=5, AC=DF=8, ∠BAC=∠EDF=60°", "reason": "In each triangle the stated angle lies between the two stated sides."},
+            {"expression": "AB↔DE, ∠A↔∠D, AC↔DF", "reason": "Keep the side-angle-side correspondence together; the shared endpoint of the two sides is the included angle."},
+            {"expression": "△ABC ≅ △DEF by SAS", "reason": "Two sides and the included angle fix the triangle's shape and size."},
+            {"expression": "If BC=7, then EF=7", "reason": "BC and EF are corresponding sides of triangles already proved congruent."}
+          ],
+          "note": "Two sides and a nonincluded angle are not a general congruence criterion. Replacing the included-angle condition by an unrelated angle would break this justification."
+        }
+      ],
+      "misconception": "AAA establishes the same shape, not the same size. Similar triangles can have different side lengths and therefore fail congruence."
+    },
+    {
+      "id": "geometry.similarity",
+      "intuition": "Similar figures have equal corresponding angles and one common length scale factor. A length uses that factor once, an area twice, and a volume three times because they measure one, two, and three dimensions.",
+      "examples": [
+        {
+          "title": "Keep the direction of the scale factor fixed",
+          "steps": [
+            {"expression": "Small triangle sides: 3, 4, 5; large triangle sides: 7.5, 10, 12.5", "reason": "Each large side is paired with its corresponding small side."},
+            {"expression": "k=7.5/3=10/4=12.5/5=2.5", "reason": "The common large-to-small ratio is the length scale factor; all three ratios agree."},
+            {"expression": "Small area = (3×4)/2 = 6", "reason": "The small 3–4–5 triangle is right, so its perpendicular legs can serve as base and height."},
+            {"expression": "Large area = k²×6 = 6.25×6 = 37.5", "reason": "Both base and perpendicular height grow by k, giving an area factor k²."},
+            {"expression": "(7.5×10)/2=37.5", "reason": "Direct area calculation checks the scaling result."}
+          ],
+          "note": "If the direction is reversed, the length factor is 1/2.5=0.4 and the area factor is 0.16."
+        },
+        {
+          "title": "Shrink a similar solid without mixing dimensions",
+          "steps": [
+            {"expression": "Length scale k=0.6; original length 20 cm, area 125 cm², volume 375 cm³", "reason": "The new solid is similar to the original and every length is 60% of its previous size."},
+            {"expression": "New length = 20×0.6 = 12 cm", "reason": "A one-dimensional measurement uses k once."},
+            {"expression": "New area = 125×0.6² = 45 cm²", "reason": "A two-dimensional surface uses the squared length factor."},
+            {"expression": "New volume = 375×0.6³ = 81 cm³", "reason": "All three spatial dimensions shrink, so volume uses k³."}
+          ],
+          "note": "These laws require similarity: stretching only the height does not apply one common k to every dimension."
+        }
+      ],
+      "misconception": "An area ratio is not a length ratio. If areas are in a ratio of 9, corresponding lengths are in a ratio of 3 for similar figures."
+    },
+    {
+      "id": "geometry.circles",
+      "intuition": "The radius sets the size of a circle. A central angle selects a fraction of the whole turn, so the same fraction selects an arc from the circumference and a sector from the disk's area. Length and area still have different units.",
+      "examples": [
+        {
+          "title": "Take a fraction of the circumference",
+          "steps": [
+            {"expression": "r=9 cm, central angle θ=80°", "reason": "The angle is measured at the center and selects the minor arc."},
+            {"expression": "Fraction of a turn = 80/360 = 2/9", "reason": "One full degree-measured turn is 360°."},
+            {"expression": "Circumference = 2πr = 18π cm", "reason": "The radius is half the diameter, so the full boundary length is 2π times the radius."},
+            {"expression": "Arc length = (2/9)(18π) = 4π cm", "reason": "Take the same fraction of the full boundary that the central angle takes of a full turn."}
+          ],
+          "note": "Arc length is distance along the curved boundary, not the straight chord joining the endpoints."
+        },
+        {
+          "title": "Separate sector area from sector perimeter",
+          "steps": [
+            {"expression": "r=12 cm, θ=150°, fraction=150/360=5/12", "reason": "The same sector fraction will be used once for area and once for arc length."},
+            {"expression": "Sector area = (5/12)π(12²) = 60π cm²", "reason": "Take the selected fraction of the full disk's area."},
+            {"expression": "Arc length = (5/12)(2π×12) = 10π cm", "reason": "For the curved boundary, take the fraction of the circumference instead."},
+            {"expression": "Sector perimeter = 12+12+10π = 24+10π cm", "reason": "The sector's boundary also contains two straight radii; an arc alone is not the entire perimeter."}
+          ],
+          "note": "If using s=rθ or A=r²θ/2, θ must be in radians. A degree value cannot be substituted into those forms unchanged."
+        }
+      ],
+      "misconception": "Circumference, arc length, area, and perimeter describe different objects. Decide which boundary or region is being measured before choosing a formula."
+    },
+    {
+      "id": "geometry.area",
+      "intuition": "Area counts the amount of flat region. Rearranging pieces without overlap preserves that amount, which is why parallelogram and trapezoid formulas can be explained through rectangles and triangles. Height is always perpendicular to the chosen base.",
+      "examples": [
+        {
+          "title": "A slanted side is not the perpendicular height",
+          "steps": [
+            {"expression": "Parallelogram base=11 cm, perpendicular height=4 cm, slanted side=5 cm", "reason": "The base and the perpendicular distance between parallel sides identify the rectangle that can be made by rearrangement."},
+            {"expression": "Cut an end triangle and move it to the opposite end", "reason": "This produces an 11-by-4 rectangle without changing the total region."},
+            {"expression": "Area = base×height = 11×4 = 44 cm²", "reason": "The rearranged rectangle and original parallelogram have the same area."},
+            {"expression": "11×5 is not the area", "reason": "The slanted side's length is not the perpendicular separation between the bases."}
+          ],
+          "note": "You may choose another side as the base, but then you must use the height perpendicular to that new base."
+        },
+        {
+          "title": "Build a trapezoid formula from pieces",
+          "steps": [
+            {"expression": "Right trapezoid: parallel bases 7 cm and 13 cm, height 6 cm", "reason": "One nonparallel side is perpendicular to the bases, so a rectangle and one right triangle fit directly."},
+            {"expression": "Rectangle area = 7×6 = 42 cm²", "reason": "The shorter base identifies the rectangle shared by the full height."},
+            {"expression": "Triangle area = (13−7)×6/2 = 18 cm²", "reason": "The leftover base is 6 cm; the triangular part occupies half a rectangle with that base and height."},
+            {"expression": "Total area = 42+18 = 60 cm²", "reason": "The nonoverlapping pieces cover the trapezoid exactly."},
+            {"expression": "((7+13)/2)×6 = 60 cm²", "reason": "The usual average-of-parallel-bases formula gives the same result and also applies to oblique trapezoids."}
+          ],
+          "note": "Only the two parallel bases belong in this average. Averaging arbitrary side lengths would not describe the region."
+        }
+      ],
+      "misconception": "Multiplying two side lengths works directly for a rectangle; a general parallelogram needs the perpendicular height, not a slanted edge."
+    },
+    {
+      "id": "geometry.volume",
+      "intuition": "Volume measures enclosed space; surface area measures its boundary. Stacking congruent cross-sections gives volume as base area times height. Surface area instead adds the exposed faces, including or excluding a lid according to the actual object.",
+      "examples": [
+        {
+          "title": "Separate the inside from the boundary of a cylinder",
+          "steps": [
+            {"expression": "Closed right circular cylinder: r=3 cm, h=10 cm", "reason": "Closed means both circular end faces count toward surface area."},
+            {"expression": "Base area = πr² = 9π cm²", "reason": "Each horizontal cross-section is the same disk."},
+            {"expression": "Volume = 9π×10 = 90π cm³", "reason": "Stack the base area through the full height; the units acquire a third length factor."},
+            {"expression": "Lateral area = (2πr)h = 6π×10 = 60π cm²", "reason": "Unrolling the curved wall makes a rectangle with width equal to the circumference."},
+            {"expression": "Total surface area = 60π+2(9π) = 78π cm²", "reason": "Add the curved wall and both end disks, counting each boundary piece once."}
+          ],
+          "note": "An open-top container would omit one 9π cm² disk from its surface area, but its interior capacity would stay 90π cm³."
+        },
+        {
+          "title": "Why doubling all dimensions has two different effects",
+          "steps": [
+            {"expression": "Closed rectangular box: 6 cm × 4 cm × 3 cm", "reason": "The three dimensions determine three pairs of equal rectangular faces."},
+            {"expression": "V=6×4×3=72 cm³; A=2(24+18+12)=108 cm²", "reason": "Volume multiplies three lengths; surface area adds two of each face area."},
+            {"expression": "Doubled dimensions: 12 cm × 8 cm × 6 cm", "reason": "Every length, including the height, is multiplied by 2."},
+            {"expression": "New V=576 cm³=8×72; new A=432 cm²=4×108", "reason": "Each volume product gains three factors of 2, while each face area gains two."}
+          ],
+          "note": "Capacity does not double when every dimension doubles. Distinguish changing one dimension from scaling the whole solid."
+        }
+      ],
+      "misconception": "Square units describe surfaces and cubic units describe space. A numerical answer with the wrong unit may come from the wrong measurement entirely."
+    },
+    {
+      "id": "geometry.coordinate-geometry",
+      "intuition": "Coordinates turn geometric claims into quantities you can check. Differences measure displacement, squared differences give distance through the Pythagorean theorem, and averages find a midpoint. Slope can establish direction relationships when the relevant slopes exist.",
+      "examples": [
+        {
+          "title": "Use differences for distance and averages for midpoint",
+          "steps": [
+            {"expression": "A=(−2,1), B=(4,9)", "reason": "Keep each point's x and y coordinates paired before computing."},
+            {"expression": "Δx=4−(−2)=6, Δy=9−1=8", "reason": "These are the perpendicular horizontal and vertical legs connecting the points."},
+            {"expression": "AB=√(6²+8²)=√100=10", "reason": "Apply the Pythagorean theorem to the coordinate displacement."},
+            {"expression": "Midpoint=((−2+4)/2,(1+9)/2)=(1,5)", "reason": "Averaging each coordinate moves halfway along the segment."},
+            {"expression": "A to midpoint has displacement (3,4), half of (6,8)", "reason": "This checks that the midpoint is halfway in both coordinate directions."}
+          ],
+          "note": "Distance subtracts coordinates to measure change. Midpoint adds and averages coordinates to locate a halfway point."
+        },
+        {
+          "title": "Prove a triangle is right and isosceles",
+          "steps": [
+            {"expression": "A=(−1,2), B=(3,4), C=(5,0)", "reason": "We need two claims: a right angle and two equal side lengths."},
+            {"expression": "m_AB=(4−2)/(3+1)=1/2; m_BC=(0−4)/(5−3)=−2", "reason": "Both denominators are nonzero, so both slopes are defined."},
+            {"expression": "m_AB×m_BC=−1, so AB⊥BC", "reason": "Defined slopes that are negative reciprocals establish a right angle at B."},
+            {"expression": "AB²=4²+2²=20; BC²=2²+(−4)²=20", "reason": "Equal squared distances imply equal nonnegative distances, so AB=BC."},
+            {"expression": "△ABC is right isosceles at B", "reason": "The two independently established properties together justify the classification."}
+          ],
+          "note": "For a vertical and horizontal pair, justify perpendicularity directly; a vertical slope is undefined and cannot be multiplied in the negative-reciprocal test."
+        }
+      ],
+      "misconception": "A sketch is evidence for a guess, not a proof of perpendicularity or equal length. Compute the quantities that establish the claim."
+    },
+    {
+      "id": "geometry.proof-basics",
+      "intuition": "A proof is a chain of claims with reasons. Start from the actual givens, connect them through definitions and established theorems, and stop only when the desired conclusion follows. A labeled picture helps organize that chain but cannot supply an unstated equality.",
+      "examples": [
+        {
+          "title": "A median in an isosceles triangle is perpendicular to the base",
+          "steps": [
+            {"expression": "Given AB=AC and M is the midpoint of BC", "reason": "These are hypotheses. Because M is a midpoint, B, M, C are collinear and BM=CM."},
+            {"expression": "AB=AC, BM=CM, AM=AM", "reason": "The first equality is given, the second is the midpoint definition, and the third is the shared-side property."},
+            {"expression": "△ABM ≅ △ACM by SSS", "reason": "All three pairs of corresponding sides are equal."},
+            {"expression": "∠BMA=∠CMA and ∠BMA+∠CMA=180°", "reason": "Congruence gives the equality. Collinearity of B, M, C makes the angles a linear pair."},
+            {"expression": "∠BMA=∠CMA=90°, hence AM⊥BC", "reason": "Two equal angles that sum to 180° each measure 90°, which is the definition of perpendicular lines."}
+          ],
+          "note": "Do not assume AM is perpendicular because it looks vertical. That is the conclusion the proof establishes."
+        },
+        {
+          "title": "Prove the vertical-angle relationship",
+          "steps": [
+            {"expression": "Two lines intersect; α and γ are opposite angles, with β adjacent to each", "reason": "Choose the common adjacent angle so each opposite angle participates in a straight turn."},
+            {"expression": "α+β=180° and β+γ=180°", "reason": "Each pair is a linear pair formed by the intersecting lines."},
+            {"expression": "α=180°−β and γ=180°−β", "reason": "Subtract the same adjacent angle measure from each equality."},
+            {"expression": "α=γ", "reason": "Both quantities equal the same expression; equality is transitive."}
+          ],
+          "note": "This proof covers every pair of intersecting lines. Measuring one diagram would verify only that particular drawing."
+        }
+      ],
+      "misconception": "Using the desired conclusion as a reason makes an argument circular. Label which statements are given and which still need proof."
+    },
+    {
+      "id": "statistics-basics.center",
+      "intuition": "Different centers answer different questions: the mean balances the total, the median locates the middle ordered observation, and a mode is a most frequent value. Extreme values can move the balance point a great deal while leaving the middle rank unchanged.",
+      "examples": [
+        {
+          "title": "Compare centers before and after an extreme value",
+          "steps": [
+            {"expression": "Data: 2, 5, 5, 8, 15", "reason": "The values are ordered, so the middle position and repeated values can be read reliably."},
+            {"expression": "Mean=(2+5+5+8+15)/5=7", "reason": "Distribute the total of 35 evenly across five observations."},
+            {"expression": "Median=5; mode=5", "reason": "The third ordered value is the middle, and 5 occurs more often than any other value."},
+            {"expression": "Replace 15 by 50: mean=70/5=14, median=5, mode=5", "reason": "The total changes, but the middle position and most frequent value stay the same."}
+          ],
+          "note": "Neither center is automatically best. Explain whether balancing all values or representing a typical middle observation fits the question."
+        },
+        {
+          "title": "Read centers from a frequency table",
+          "steps": [
+            {"expression": "Value 2 occurs once; 4 occurs three times; 9 occurs twice", "reason": "Frequencies count observations, not additional values to average separately."},
+            {"expression": "n=1+3+2=6; total=2×1+4×3+9×2=32", "reason": "Count every observation and weight each value by how often it occurs."},
+            {"expression": "Mean=32/6=16/3", "reason": "Divide the weighted total by the number of observations, not the number of distinct values."},
+            {"expression": "Ordered data: 2,4,4,4,9,9; median=(4+4)/2=4", "reason": "With an even count, average the two middle ordered observations."},
+            {"expression": "Mode=4", "reason": "The frequency 3 is largest; the mode is its associated value 4, not the frequency itself."}
+          ],
+          "note": "A dataset can have multiple modes, or no repeated value. State your convention when no value occurs more often than another."
+        }
+      ],
+      "misconception": "The mean of distinct values ignores frequency. Reconstruct the total or use frequency weights before dividing."
+    },
+    {
+      "id": "statistics-basics.variance",
+      "intuition": "Variance measures spread by squaring distances from the mean. Squaring prevents positive and negative deviations from canceling. Dividing by the population count describes that complete population; dividing sample squared deviations by n−1 supports an unbiased variance estimate under an independent, identically distributed sampling model with finite variance.",
+      "examples": [
+        {
+          "title": "Describe a complete small population",
+          "steps": [
+            {"expression": "Complete population: 2,4,9; mean μ=(2+4+9)/3=5", "reason": "All three members of the population are included, and their mean is computed from the full total."},
+            {"expression": "Deviations: −3,−1,4", "reason": "Subtract the same mean from each observation. The deviations sum to zero."},
+            {"expression": "Squared deviations: 9,1,16; total=26", "reason": "Squaring retains the size of each deviation while removing its sign."},
+            {"expression": "Population variance σ²=26/3", "reason": "Average the squared deviations over all three population members."}
+          ],
+          "note": "If the observations were measured in meters, the variance would have units of square meters."
+        },
+        {
+          "title": "Estimate variance from a sample",
+          "steps": [
+            {"expression": "Independent identically distributed sample: 3,5,7,9; sample mean=6", "reason": "These four observations are being used to estimate a larger population's variance, assumed finite."},
+            {"expression": "Deviations: −3,−1,1,3; squared sum=9+1+1+9=20", "reason": "The same sample mean centers all observations."},
+            {"expression": "Sample variance s²=20/(4−1)=20/3", "reason": "Estimating the mean from the data leaves n−1 free deviations; this divisor corrects the downward bias of dividing by n in this sampling model."},
+            {"expression": "If these four were the entire population: σ²=20/4=5", "reason": "Changing what the data represent changes the variance question and therefore the divisor."}
+          ],
+          "note": "The symbols s² and σ² record which quantity is being calculated. A formula alone cannot tell whether the data constitute a whole population or a sample."
+        }
+      ],
+      "misconception": "The deviations themselves average to zero; that is why variance averages squared deviations. Do not square their total after adding."
+    },
+    {
+      "id": "statistics-basics.standard-deviation",
+      "intuition": "Standard deviation is the square root of variance, restoring the original units. It summarizes spread around the mean but does not reveal every detail of a distribution. Shifting every value moves the mean while leaving spread unchanged; scaling every value scales standard deviation by the absolute scale factor.",
+      "examples": [
+        {
+          "title": "Translate all values without changing spread",
+          "steps": [
+            {"expression": "Complete population of times: 4,4,10,10 minutes; mean=7", "reason": "These four times are the entire population being described."},
+            {"expression": "σ²=[(−3)²+(−3)²+3²+3²]/4=9 min²", "reason": "Every time is three minutes from the mean, giving four squared deviations of nine."},
+            {"expression": "σ=√9=3 minutes", "reason": "The square root returns the spread measurement to minutes."},
+            {"expression": "Add 10 minutes to each time: 14,14,20,20; new mean=17, new σ=3", "reason": "The observations and mean shift together, so every deviation remains unchanged."}
+          ],
+          "note": "A higher mean does not necessarily imply a greater standard deviation. Location and spread are separate properties."
+        },
+        {
+          "title": "Convert units without changing the underlying data",
+          "steps": [
+            {"expression": "Distances have standard deviation 2.5 m and variance 6.25 m²", "reason": "Variance is the square of standard deviation."},
+            {"expression": "Convert every distance using centimeters=100×meters", "reason": "The observations and their mean both acquire a factor of 100."},
+            {"expression": "New standard deviation=100×2.5=250 cm", "reason": "Every distance from the mean is multiplied by 100, so standard deviation is also multiplied by 100."},
+            {"expression": "New variance=100²×6.25=62,500 cm²", "reason": "Squared deviations acquire the square of the unit-conversion factor."}
+          ],
+          "note": "A numerical standard deviation can grow just because the unit got smaller. Compare measurements only after putting them in compatible units."
+        }
+      ],
+      "misconception": "Standard deviation is not a guaranteed maximum distance from the mean, and a fixed percentage-within-one-standard-deviation rule requires additional distribution assumptions."
+    },
+    {
+      "id": "statistics-basics.distributions",
+      "intuition": "A distribution describes which values occur and how often. Read both the values and frequencies, then describe center, spread, shape and unusual observations. A single summary number cannot reconstruct the whole pattern.",
+      "examples": [
+        {
+          "title": "Recover the observations behind a frequency display",
+          "steps": [
+            {"expression": "Value 0: frequency 2; 1: frequency 4; 2: frequency 3; 3: frequency 1", "reason": "The horizontal value and its count are different quantities."},
+            {"expression": "n=2+4+3+1=10; total=0×2+1×4+2×3+3×1=13", "reason": "Sum frequencies for the count and value-times-frequency for the total."},
+            {"expression": "Mean=13/10=1.3; median=1; mode=1", "reason": "The fifth and sixth ordered observations are both 1, which also has the greatest frequency."},
+            {"expression": "Range=3−0=3; 9 of the 10 observations lie from 0 through 2", "reason": "Describe the extent and concentration directly from the counts, instead of relying only on the mean."}
+          ],
+          "note": "For a histogram of intervals, the bar identifies an interval rather than one exact observation value. Exact means may no longer be recoverable from those grouped counts alone."
+        },
+        {
+          "title": "Same center, different spread",
+          "steps": [
+            {"expression": "Population A: 4,4,6,6; population B: 1,1,9,9", "reason": "Both datasets have four observations and symmetric pairs around 5."},
+            {"expression": "Both means=(20/4)=5; both medians=5", "reason": "The balancing point and average of the middle pair are identical."},
+            {"expression": "Range A=2; range B=8", "reason": "The second dataset extends much farther from its center."},
+            {"expression": "Population σ_A=1; population σ_B=4", "reason": "All observations in A are one unit from 5, while all observations in B are four units from 5."}
+          ],
+          "note": "Even matching mean and standard deviation would not guarantee matching shapes. Retain a display of the observations when shape matters."
+        }
+      ],
+      "misconception": "A high-frequency bar does not necessarily represent a high data value. Read the axis label and the count separately."
+    },
+    {
+      "id": "statistics-basics.correlation",
+      "intuition": "Pearson correlation summarizes the direction and strength of linear association between paired numerical observations. It has no units, does not capture every nonlinear pattern, and cannot by itself establish which variable causes the other.",
+      "examples": [
+        {
+          "title": "Recognize a perfect increasing linear relationship",
+          "steps": [
+            {"expression": "Paired observations: (1,3),(2,5),(3,7),(4,9)", "reason": "Each x must stay paired with its own y; sorting the two variables separately would change the data."},
+            {"expression": "Every pair satisfies y=2x+1", "reason": "For every one-unit increase in x, y increases by exactly two units."},
+            {"expression": "r=1", "reason": "Both variables vary and all points lie on one line with positive slope, so Pearson correlation is perfectly positive."},
+            {"expression": "Slope=2; correlation=1", "reason": "Slope measures output change per input unit. Correlation is a unitless standardized measure and is not the slope."}
+          ],
+          "note": "A perfect observed relationship still does not establish causation without an appropriate study design and causal assumptions."
+        },
+        {
+          "title": "A clear nonlinear relationship can have zero correlation",
+          "steps": [
+            {"expression": "Pairs: (−2,4),(−1,1),(0,0),(1,1),(2,4)", "reason": "These observations satisfy y=x², a deterministic curved relationship."},
+            {"expression": "Mean x=0; mean y=2", "reason": "Center each variable at its own mean before computing the correlation numerator."},
+            {"expression": "Σ(x−0)(y−2)=−4+1+0−1+4=0", "reason": "Products from the left and right halves cancel exactly."},
+            {"expression": "r=0", "reason": "The centered-product numerator is zero and both variables have positive spread, so the correlation is defined and equals zero."},
+            {"expression": "Zero linear correlation does not mean no relationship", "reason": "The curved rule y=x² remains exact even though the linear summary is zero."}
+          ],
+          "note": "Correlation is undefined if either variable is constant. A zero numerator alone is insufficient unless the denominator is nonzero."
+        }
+      ],
+      "misconception": "Association can reflect confounding, reverse causation or chance. A numerical correlation coefficient cannot settle a causal question."
+    },
+    {
+      "id": "statistics-basics.basic-probability",
+      "intuition": "Probability depends on the event and the experiment. For sequential draws, update the possibilities after the first outcome. For an either-event, avoid counting overlap twice. A complement can turn an at-least-one question into one simpler no-occurrence calculation.",
+      "examples": [
+        {
+          "title": "Use the complement with sampling without replacement",
+          "steps": [
+            {"expression": "Bag: 4 green and 3 purple objects; draw two uniformly without replacement", "reason": "Removing an object changes both the total and possibly the color count for the second draw."},
+            {"expression": "P(first green)=4/7; P(second green | first green)=3/6", "reason": "After a green is removed, only three green objects remain among six objects."},
+            {"expression": "P(two green)=(4/7)(3/6)=2/7", "reason": "Multiply the first probability by the conditional second probability to represent both events."},
+            {"expression": "P(at least one purple)=1−2/7=5/7", "reason": "The only way to get no purple in two draws is to get two green."}
+          ],
+          "note": "Using 4/7 again for the second green would model replacement or independence that this experiment does not have."
+        },
+        {
+          "title": "Subtract an overlap when an either-event can happen twice",
+          "steps": [
+            {"expression": "Fair die: A={2,4,6} is even; B={5,6} is greater than 4", "reason": "List the equally likely outcomes for each event before choosing an operation."},
+            {"expression": "A∩B={6}; A∪B={2,4,5,6}", "reason": "Outcome 6 belongs to both lists and must be counted only once in the union."},
+            {"expression": "P(A or B)=3/6+2/6−1/6=4/6=2/3", "reason": "Inclusion-exclusion adds the two probabilities then removes the duplicate overlap."},
+            {"expression": "P(A and B)=1/6", "reason": "The intersection is a different event with only one favorable outcome."}
+          ],
+          "note": "The word 'or' here includes the possibility of both. Disjoint events have no overlap term, but these events are not disjoint."
+        }
+      ],
+      "misconception": "Choose addition or multiplication from the event structure, not from the presence of fractions. Denominators count possibilities under the relevant condition."
+    },
+    {
+      "id": "algebra-2.advanced-quadratics",
+      "intuition": "Completing the square reorganizes a quadratic into a translated square. That exposes the vertex and gives a direct route to roots. Every number added inside a scaled bracket must be balanced outside it, and the two square-root branches matter when solving.",
+      "examples": [
+        {
+          "title": "Complete a square to find two real roots",
+          "steps": [
+            {"expression": "x²−8x+11=0, so x²−8x=−11", "reason": "Move the constant first so the quadratic and linear terms can become a square."},
+            {"expression": "x²−8x+16=−11+16", "reason": "Half of −8 is −4, and (−4)²=16. Add 16 to both sides to preserve equality."},
+            {"expression": "(x−4)²=5", "reason": "Expanding the square recovers x²−8x+16 exactly."},
+            {"expression": "x−4=±√5, so x=4±√5", "reason": "Both positive and negative values square to 5."},
+            {"expression": "x²−8x+11=(x−4)²−5", "reason": "The same reorganization shows that the graph has vertex (4,−5)."}
+          ],
+          "note": "Substituting either root into the vertex form gives 5−5=0, an exact check without decimal rounding."
+        },
+        {
+          "title": "A positive minimum rules out real roots",
+          "steps": [
+            {"expression": "f(x)=2x²+12x+23=2(x²+6x)+23", "reason": "Factor the leading coefficient from the variable terms before completing their square."},
+            {"expression": "f(x)=2[(x+3)²−9]+23", "reason": "Adding 9 inside the square also requires subtracting 9 inside the same bracket."},
+            {"expression": "f(x)=2(x+3)²+5", "reason": "The outer factor multiplies the correction: −18+23=5."},
+            {"expression": "Minimum value=5 at x=−3", "reason": "A real square is nonnegative, and its minimum zero occurs when x+3=0."},
+            {"expression": "No real roots; discriminant=12²−4(2)(23)=−40", "reason": "The graph never reaches zero; the negative discriminant gives the same real-root conclusion."}
+          ],
+          "note": "The conclusion concerns real roots. A quadratic with no real roots still has roots when the number system is extended to complex numbers."
+        }
+      ],
+      "misconception": "Completing the square is an equality-preserving rewrite. Adding a number inside a bracket with an outside factor changes more than that number alone."
+    },
+    {
+      "id": "algebra-2.polynomial-functions",
+      "intuition": "A polynomial's factors explain its zeros, while its degree and leading coefficient explain its far-end behavior. Near a real zero, an odd power changes sign and an even power does not; this distinguishes crossing the axis from touching it.",
+      "examples": [
+        {
+          "title": "Read behavior from a factored cubic",
+          "steps": [
+            {"expression": "p(x)=(x+2)²(x−3)", "reason": "The product is zero exactly when one of its factors is zero."},
+            {"expression": "Zeros: x=−2 with multiplicity 2; x=3 with multiplicity 1", "reason": "The exponent of each repeated linear factor records that root's multiplicity."},
+            {"expression": "Near −2: (x+2)²≥0 and x−3<0", "reason": "The sign is negative on both nearby sides, so the graph touches the axis at −2 without crossing there."},
+            {"expression": "Near 3: (x+2)²>0 and x−3 changes sign", "reason": "The product changes from negative to positive, so the graph crosses at 3."},
+            {"expression": "Leading term x³: p(x)→−∞ as x→−∞ and p(x)→∞ as x→∞", "reason": "For large magnitudes, the positive odd-degree leading term determines end behavior."}
+          ],
+          "note": "Multiplicity alone identifies crossing versus touching, but not every detail of the curve between roots."
+        },
+        {
+          "title": "Factor a quartic before predicting its graph",
+          "steps": [
+            {"expression": "q(x)=−2x⁴+8x²=−2x²(x²−4)", "reason": "Factor the common power and coefficient from the whole expression."},
+            {"expression": "q(x)=−2x²(x−2)(x+2)", "reason": "Factor the remaining difference of squares."},
+            {"expression": "Zeros: −2 and 2 are simple; 0 has multiplicity 2", "reason": "Every zero and its multiplicity is visible in the factored product."},
+            {"expression": "Cross at ±2; touch at 0 from above", "reason": "The simple factors change sign. Near zero, x² is positive away from zero and x²−4 is negative, making −2x²(x²−4) positive on both sides."},
+            {"expression": "Leading term −2x⁴: both ends go to −∞", "reason": "An even power is positive at both far ends, and the negative leading coefficient reverses its sign."}
+          ],
+          "note": "There are three distinct real zeros but degree four. Multiplicity counts the repeated zero twice."
+        }
+      ],
+      "misconception": "A zero's multiplicity is not its numerical size. It counts repetitions of a factor, and an even multiplicity need not cross the axis."
+    },
+    {
+      "id": "algebra-2.complex-numbers",
+      "intuition": "Complex arithmetic extends the familiar distributive rules with i²=−1. Keep real and imaginary parts separate when collecting terms. A conjugate turns a nonzero complex denominator into a positive real sum of squares without changing the quotient.",
+      "examples": [
+        {
+          "title": "Distribute first, then use i²=−1",
+          "steps": [
+            {"expression": "(3+2i)(1−4i)", "reason": "Treat each complex number as a two-term expression and multiply all four term pairs."},
+            {"expression": "3−12i+2i−8i²", "reason": "Each sign belongs to its term; the product (2i)(−4i) is −8i²."},
+            {"expression": "3−10i+8", "reason": "Replace i² by −1, so −8i² becomes +8."},
+            {"expression": "11−10i", "reason": "Collect the real terms and the imaginary terms separately."}
+          ],
+          "note": "Geometrically, multiplication by i sends a+bi to −b+ai: the point (a,b) turns 90° counterclockwise without changing its distance from the origin."
+        },
+        {
+          "title": "Make a complex denominator real",
+          "steps": [
+            {"expression": "(5+i)/(2−i)", "reason": "The denominator is nonzero. Its conjugate is 2+i."},
+            {"expression": "[(5+i)(2+i)]/[(2−i)(2+i)]", "reason": "Multiply numerator and denominator by the same nonzero quantity, which multiplies the fraction by 1."},
+            {"expression": "Numerator=10+7i+i²=9+7i; denominator=4−i²=5", "reason": "Distribution and i²=−1 simplify both products; conjugate imaginary cross-terms cancel in the denominator."},
+            {"expression": "(9+7i)/5=9/5+(7/5)i", "reason": "Divide each numerator term by the real denominator to obtain a+bi form."},
+            {"expression": "(2−i)(9/5+(7/5)i)=5+i", "reason": "Multiplying the result by the original denominator recovers the original numerator."}
+          ],
+          "note": "The conjugate changes the sign of the imaginary part only. The complex modulus squared is (2−i)(2+i)=2²+1²."
+        }
+      ],
+      "misconception": "The symbol i behaves algebraically but is not an ordinary real variable: replacing i² by −1 changes the sign of that term."
+    },
+    {
+      "id": "algebra-2.exponentials",
+      "intuition": "An exponential model repeats the same multiplicative factor over equal steps. A percent increase uses 1+r; a percent decrease uses 1−r. The exponent counts how many times the factor acts, and the starting amount belongs at exponent zero.",
+      "examples": [
+        {
+          "title": "Turn repeated growth into a power",
+          "steps": [
+            {"expression": "Initial amount 80; growth 25% per period", "reason": "The same proportion of the current amount is added each period, so the changes are not constant additions."},
+            {"expression": "Growth factor=1+0.25=1.25", "reason": "Keep the current 100% and add another 25% of that current amount."},
+            {"expression": "A(n)=80(1.25)ⁿ for whole periods n≥0", "reason": "Multiply by the factor n times; A(0)=80 because no growth steps have occurred."},
+            {"expression": "A(1)=100, A(2)=125, A(3)=156.25", "reason": "Each new amount is 1.25 times the preceding one."},
+            {"expression": "Additions: 20,25,31.25", "reason": "The percentage is constant, but the amount being multiplied grows, so the absolute increases grow too."}
+          ],
+          "note": "The model assumes a constant percentage and equal-length periods. Extending it between whole periods requires a choice of interpolation or continuous-time model."
+        },
+        {
+          "title": "A percentage lost differs from a percentage retained",
+          "steps": [
+            {"expression": "Initial value $2,400; loses 15% of current value each year", "reason": "The percentage loss is calculated from each year's remaining value."},
+            {"expression": "Retention factor=1−0.15=0.85", "reason": "After the loss, 85% of the previous amount remains."},
+            {"expression": "V(n)=2400(0.85)ⁿ, n=0,1,2,…", "reason": "Repeat the retention factor once for each whole year."},
+            {"expression": "V(1)=2040; V(2)=1734", "reason": "The second year's 15% loss acts on $2,040, not on the original $2,400."},
+            {"expression": "Total two-year loss=2400−1734=$666", "reason": "The repeated percentage model determines the remaining amount; subtraction then gives the cumulative loss."}
+          ],
+          "note": "A 25% increase followed by a 25% decrease multiplies by 1.25×0.75=0.9375, so it does not restore the original amount."
+        }
+      ],
+      "misconception": "Use the retained or accumulated fraction as the factor. A 15% loss uses 0.85, not 0.15 and not subtracting the same fixed amount every year."
+    },
+    {
+      "id": "algebra-2.logarithms",
+      "intuition": "A logarithm asks which exponent produces an input. For real logarithms the argument must be positive, and the base must be positive and different from 1. Product and quotient laws are consequences of exponent laws, but their original argument restrictions must remain in force.",
+      "examples": [
+        {
+          "title": "Translate a logarithm into an exponent question",
+          "steps": [
+            {"expression": "log₃(2x−1)=3; domain 2x−1>0, so x>1/2", "reason": "A real logarithm requires a positive input; record this before any algebra."},
+            {"expression": "2x−1=3³=27", "reason": "log₃(y)=3 means that raising base 3 to exponent 3 gives y."},
+            {"expression": "2x=28, so x=14", "reason": "Add 1 to both sides, then divide both sides by 2."},
+            {"expression": "2(14)−1=27>0 and log₃(27)=3", "reason": "The candidate is in the original domain and satisfies the original equation."}
+          ],
+          "note": "The logarithm is an inverse operation, not a coefficient that can be divided away from its argument."
+        },
+        {
+          "title": "Keep both original log arguments positive",
+          "steps": [
+            {"expression": "log₂(x−1)+log₂(x−3)=3; domain x>3", "reason": "Both x−1 and x−3 must be positive simultaneously."},
+            {"expression": "log₂[(x−1)(x−3)]=3", "reason": "The product law combines logs on the original positive-argument domain."},
+            {"expression": "(x−1)(x−3)=8, so x²−4x−5=0", "reason": "Convert the logarithm to 2³=8, expand the product, and subtract 8."},
+            {"expression": "(x−5)(x+1)=0, so candidates are 5 and −1", "reason": "The zero-product property gives the candidates of the transformed quadratic."},
+            {"expression": "Keep x=5; reject x=−1", "reason": "Only 5 lies in the original domain x>3. A positive product alone does not make both original factors positive."},
+            {"expression": "log₂(4)+log₂(2)=2+1=3", "reason": "Check the retained candidate in the original two-log equation."}
+          ],
+          "note": "Combining logarithms can hide restrictions. The rejected candidate makes both original arguments negative even though their product is positive."
+        }
+      ],
+      "misconception": "log(a+b) is not log(a)+log(b). Logarithm addition corresponds to multiplication of positive arguments, not addition of arguments."
+    },
+    {
+      "id": "algebra-2.sequences",
+      "intuition": "A sequence attaches a value to each integer position. A recursive rule moves from the previous value; an explicit rule goes directly from the position to its value. Arithmetic sequences repeat an addition, while geometric sequences repeat multiplication.",
+      "examples": [
+        {
+          "title": "Count the gaps between the first term and the nth term",
+          "steps": [
+            {"expression": "Arithmetic sequence: 7,4,1,−2,…", "reason": "Every consecutive difference is −3, so the repeated operation is subtraction of 3."},
+            {"expression": "a₁=7; aₙ=aₙ₋₁−3 for n≥2", "reason": "A recursive definition needs a starting value and a rule for later terms."},
+            {"expression": "aₙ=7−3(n−1) for n≥1", "reason": "Moving from position 1 to position n crosses n−1 gaps, each contributing −3."},
+            {"expression": "a₅=7−3(4)=−5", "reason": "The fifth term is four steps after the first, not five steps after it."},
+            {"expression": "a₁=7−3(0)=7", "reason": "Checking the first index catches an off-by-one error in the explicit formula."}
+          ],
+          "note": "The simplified explicit form 10−3n is equivalent. Its constant 10 is not the first term because indexing starts at n=1."
+        },
+        {
+          "title": "Repeat a ratio instead of a difference",
+          "steps": [
+            {"expression": "Geometric sequence: 160,80,40,20,…", "reason": "Each term is one-half of the previous term; the successive differences are not constant."},
+            {"expression": "b₁=160; bₙ=(1/2)bₙ₋₁ for n≥2", "reason": "State both the initial value and the repeated multiplication."},
+            {"expression": "bₙ=160(1/2)ⁿ⁻¹ for n≥1", "reason": "The ratio acts once per gap, so it acts n−1 times."},
+            {"expression": "b₆=160(1/2)⁵=160/32=5", "reason": "Five halvings take the first value to the sixth value."},
+            {"expression": "160,80,40,20,10,5", "reason": "Recursive enumeration checks the explicit calculation for this short list."}
+          ],
+          "note": "A decreasing geometric sequence with ratio between 0 and 1 can stay positive forever; it does not have to reach zero after a finite number of terms."
+        }
+      ],
+      "misconception": "An index counts a position, not the number of operations already applied. With first index 1, there are n−1 gaps to position n."
+    },
+    {
+      "id": "algebra-2.series",
+      "intuition": "A series adds sequence terms. A finite sum can often be organized into equal pairs or a geometric cancellation. An infinite series is defined through the limit of its partial sums, so its value requires convergence rather than simply substituting an infinity symbol into a finite formula.",
+      "examples": [
+        {
+          "title": "Count the terms before pairing an arithmetic sum",
+          "steps": [
+            {"expression": "6+10+14+…+42", "reason": "The common difference is 4; identify the first and last terms before choosing a summation formula."},
+            {"expression": "42=6+4(n−1), so n=10", "reason": "Nine equal gaps connect the first term to the last, giving ten terms."},
+            {"expression": "6+42=10+38=14+34=…=48", "reason": "Pairing from opposite ends makes every pair have the same sum."},
+            {"expression": "Sum=5×48=240", "reason": "Ten terms form five pairs."},
+            {"expression": "Sₙ=n(a₁+aₙ)/2=10(6+42)/2=240", "reason": "The formula packages the same equal-pair argument."}
+          ],
+          "note": "Using the number of gaps, nine, as the number of terms would produce an incorrect total."
+        },
+        {
+          "title": "Connect a finite geometric sum to its infinite limit",
+          "steps": [
+            {"expression": "18+6+2+2/3+…; ratio r=1/3", "reason": "Each term is one-third of the preceding term, so the finite geometric-sum formula applies."},
+            {"expression": "Sₙ=18[1−(1/3)ⁿ]/(1−1/3)=27(1−3⁻ⁿ)", "reason": "Subtracting rSₙ from Sₙ cancels the middle terms, leaving the first term and a final remainder."},
+            {"expression": "As n→∞, 3⁻ⁿ→0 because |r|<1", "reason": "The geometric tail shrinks to zero; this is the convergence condition that justifies a finite limiting sum."},
+            {"expression": "Infinite sum=27", "reason": "Take the limit of the partial-sum expression rather than treating infinitely many terms as a finite count."},
+            {"expression": "S₄=18+6+2+2/3=26⅔; remaining tail=27−26⅔=1/3", "reason": "A finite partial sum stays below the limit here, and the tail is the positive difference."}
+          ],
+          "note": "The formula a/(1−r) for an infinite geometric series requires |r|<1. For example, a nonzero constant-term series with r=1 does not have a finite sum."
+        }
+      ],
+      "misconception": "Terms approaching zero are necessary but not sufficient for an infinite series to converge. The geometric formula has a specific ratio condition."
+    }
+  ]
+}

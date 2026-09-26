@@ -1,0 +1,191 @@
+[
+  {
+    "formula": "y=2x+1 quad y=-x+7",
+    "text": "A system asks for inputs that satisfy several equations at the same time. These lines represent two different rules, and their shared point has coordinates that make both equalities true simultaneously. Nearby points on just one line do not qualify.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        5
+      ],
+      "y": [
+        -1,
+        10
+      ],
+      "curves": [
+        {
+          "f": "2*x+1",
+          "color": "blue",
+          "domain": [
+            -1,
+            4.5
+          ]
+        },
+        {
+          "f": "-x+7",
+          "color": "gold",
+          "domain": [
+            -1,
+            5
+          ]
+        }
+      ],
+      "points": [
+        [
+          2,
+          5
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 17.966666666666665,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "2x+1=-x+7 arrow.r 3x=6 arrow.r x=2",
+    "text": "Because both expressions equal y at the intersection, set them equal to each other. Add x and subtract one to get three x equals six, then find x equals two. Substituting back gives y equals five.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        4
+      ],
+      "y": [
+        0,
+        9
+      ],
+      "curves": [
+        {
+          "f": "2*x+1",
+          "color": "blue",
+          "domain": [
+            0,
+            4
+          ]
+        },
+        {
+          "f": "-x+7",
+          "color": "gold",
+          "domain": [
+            0,
+            4
+          ]
+        }
+      ],
+      "points": [
+        [
+          2,
+          5
+        ]
+      ],
+      "labels": [
+        "2,5"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 17.966666666666665,
+    "duration": 15.2,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "y=2x+1 quad y=2x+4",
+    "text": "Different systems can have no solution. These lines have equal rates but different vertical starting values, so they remain separated. Setting their expressions equal cancels the x terms and leaves the impossible statement one equals four.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        3
+      ],
+      "y": [
+        -4,
+        11
+      ],
+      "curves": [
+        {
+          "f": "2*x+1",
+          "color": "blue",
+          "domain": [
+            -2,
+            3
+          ]
+        },
+        {
+          "f": "2*x+4",
+          "color": "gold",
+          "domain": [
+            -2,
+            3
+          ]
+        }
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 33.166666666666664,
+    "duration": 16.866666666666667,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "y=2x+1 quad 2y=4x+2",
+    "text": "If one equation is simply a nonzero multiple of the other, both describe the same line. Every point on that line satisfies the system. Thus two linear equations can have one solution, no solutions, or infinitely many.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        3
+      ],
+      "y": [
+        -4,
+        8
+      ],
+      "curves": [
+        {
+          "f": "2*x+1",
+          "color": "blue",
+          "domain": [
+            -2,
+            3
+          ]
+        },
+        {
+          "f": "(4*x+2)/2",
+          "color": "gold",
+          "domain": [
+            -2,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 50.03333333333333,
+    "duration": 16.433333333333334,
+    "audio": "audio_parts/04.wav"
+  }
+]

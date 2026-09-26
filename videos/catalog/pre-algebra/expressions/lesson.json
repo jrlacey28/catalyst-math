@@ -1,0 +1,154 @@
+{
+  "id": "pre-algebra.expressions",
+  "beats": [
+    {
+      "formula": "2(x+3)",
+      "text": "An expression describes a quantity without necessarily asserting an equation to solve. Two copies of the quantity x plus three means that both the variable part and the three additional units are repeated twice.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          2,
+          3,
+          2,
+          3
+        ],
+        "labels": [
+          "x",
+          "3",
+          "x",
+          "3"
+        ]
+      }
+    },
+    {
+      "formula": "2(x+3)=2x+6",
+      "text": "Distribution accounts for those repeated parts separately. Two copies of x contribute two x, and two copies of three contribute six. The rewritten expression gives the same output for every real input, as the overlapping graphs illustrate.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          3
+        ],
+        "y": [
+          0,
+          12
+        ],
+        "curves": [
+          {
+            "f": "2*(x+3)",
+            "color": "blue",
+            "domain": [
+              -3,
+              3
+            ]
+          },
+          {
+            "f": "2*x+6",
+            "color": "gold",
+            "domain": [
+              -3,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "formula": "2(x+3)+x=3x+6",
+      "text": "Like terms count the same variable quantity, so two x plus another x becomes three x. The six remains a separate constant. Adding coefficients is justified because the repeated units are identical, not because all symbols look similar.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          3
+        ],
+        "y": [
+          0,
+          15
+        ],
+        "curves": [
+          {
+            "f": "3*x+6",
+            "color": "blue",
+            "domain": [
+              -2,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            6
+          ],
+          [
+            2,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "-(x-4)=-x+4",
+      "text": "A leading minus means multiplication by negative one, and it affects every term inside the parentheses. The two sides again represent one function. Simplifying preserves all inputs; solving for a particular input requires an additional condition.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          5
+        ],
+        "y": [
+          -1,
+          6
+        ],
+        "curves": [
+          {
+            "f": "-(x-4)",
+            "color": "blue",
+            "domain": [
+              -2,
+              5
+            ]
+          },
+          {
+            "f": "-x+4",
+            "color": "gold",
+            "domain": [
+              -2,
+              5
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Expand 4(t+5), explaining each product.",
+      "answer": "4t+20; four multiplies both t and five.",
+      "id": "pre-algebra.expressions.video-practice-1"
+    },
+    {
+      "prompt": "Simplify 3(2x+1)+2x and name the like terms.",
+      "answer": "6x+3+2x=8x+3; 6x and 2x are like terms.",
+      "id": "pre-algebra.expressions.video-practice-2"
+    },
+    {
+      "prompt": "Explain why 8−(y−2) becomes 10−y rather than 6−y.",
+      "answer": "The negative sign distributes: 8−y+2=10−y.",
+      "id": "pre-algebra.expressions.video-practice-3"
+    }
+  ],
+  "takeaway": "Rewrite structure with distribution and like terms; expressions need not be equations.",
+  "scope": "Expressions, distribution, like terms, and a leading negative sign.",
+  "course": "Pre-algebra",
+  "course_id": "pre-algebra",
+  "title": "Expressions and the distributive property",
+  "objective": "Identify terms and factors; distribute and combine like terms without changing value.",
+  "index": 2,
+  "total": 8,
+  "prerequisites": [
+    "pre-algebra.variables",
+    "number-sense.order-of-operations"
+  ]
+}

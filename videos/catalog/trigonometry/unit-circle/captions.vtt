@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.146
+The unit circle extends trigonometry beyond acute triangle angles
+
+00:00:04.146 --> 00:00:09.557
+A point reached by turning through an angle has coordinates cosine and sine
+
+00:00:09.557 --> 00:00:15.800
+Because its distance from the origin is one, the coordinate squares always add to one.
+
+00:00:17.100 --> 00:00:19.250
+Turn into the second quadrant
+
+00:00:19.250 --> 00:00:29.568
+At one hundred twenty degrees, the horizontal coordinate is negative one half and the vertical coordinate is positive square root of three over two
+
+00:00:29.568 --> 00:00:33.867
+Quadrant signs come from actual coordinate directions, not memorized exceptions.
+
+00:00:35.167 --> 00:00:43.450
+Continuing to two hundred forty degrees keeps the horizontal coordinate negative but moves the point below the horizontal axis
+
+00:00:43.450 --> 00:00:46.066
+Sine is now negative as well
+
+00:00:46.066 --> 00:00:51.733
+A related reference triangle gives the magnitudes, while the quadrant supplies each sign.
+
+00:00:53.033 --> 00:00:56.818
+One full additional turn returns to the same point
+
+00:00:56.818 --> 00:01:03.967
+Sine and cosine therefore repeat after two pi radians, and many angles can share the same coordinates
+
+00:01:03.967 --> 00:01:09.433
+Angle size records the turning history, while the point records its final position.

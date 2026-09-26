@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.849
+An inequality describes a set of allowed inputs rather than necessarily one solution
+
+00:00:05.849 --> 00:00:14.233
+If x plus two must stay below five, subtracting two from both sides shows that every input below three works.
+
+00:00:15.533 --> 00:00:17.652
+Including equality changes the boundary
+
+00:00:17.652 --> 00:00:24.433
+When the condition says at most five, input three is allowed because it produces exactly five
+
+00:00:24.433 --> 00:00:30.367
+A filled boundary point includes that input, whereas an open boundary point excludes it.
+
+00:00:31.667 --> 00:00:35.688
+Multiplying or dividing by a negative number reverses order
+
+00:00:35.688 --> 00:00:42.838
+Dividing negative two x less than six by negative two gives x greater than negative three
+
+00:00:42.838 --> 00:00:48.200
+Reflection across zero explains why the direction of the comparison must switch.
+
+00:00:49.500 --> 00:00:52.693
+Always test a value from the proposed interval
+
+00:00:52.693 --> 00:00:59.877
+Zero is greater than negative three, and its original left side is zero, which is less than six
+
+00:00:59.877 --> 00:01:04.667
+Checking a value outside the interval also helps detect a reversed inequality.

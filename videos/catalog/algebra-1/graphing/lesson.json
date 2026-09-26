@@ -1,0 +1,194 @@
+{
+  "id": "algebra-1.graphing",
+  "beats": [
+    {
+      "formula": "y=-2x+3",
+      "text": "A graph collects all input-output pairs of a rule. Begin with a few easy inputs for y equals negative two x plus three. When x is zero, one, and two, the corresponding outputs are three, one, and negative one.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          4
+        ],
+        "y": [
+          -5,
+          5
+        ],
+        "curves": [],
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            -1
+          ]
+        ],
+        "labels": [
+          "0,3",
+          "1,1",
+          "2,-1"
+        ]
+      }
+    },
+    {
+      "formula": "m=-2 quad b=3",
+      "text": "The constant rate shows that these points belong to one straight line. Starting at the vertical intercept three, each step right goes two units down. Drawing the line extends the relationship beyond the few sampled inputs.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          4
+        ],
+        "y": [
+          -5,
+          5
+        ],
+        "curves": [
+          {
+            "f": "-2*x+3",
+            "color": "blue",
+            "domain": [
+              -1,
+              4
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "0=-2x+3 arrow.r x=frac(3,2)",
+      "text": "The horizontal intercept is found by setting the output to zero, not by guessing a plotted point. Solving gives input three halves. This is where the line crosses the horizontal axis, while its vertical intercept remains three.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          4
+        ],
+        "y": [
+          -5,
+          5
+        ],
+        "curves": [
+          {
+            "f": "-2*x+3",
+            "color": "blue",
+            "domain": [
+              -1,
+              4
+            ]
+          }
+        ],
+        "points": [
+          [
+            1.5,
+            0
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "labels": [
+          "x intercept",
+          "y intercept"
+        ]
+      }
+    },
+    {
+      "formula": "y=x^2",
+      "text": "Graphing from samples also has limits. These values come from a quadratic rule, so connecting them with a single straight line would invent a different relationship. Use the formula, its structure, and enough points to determine the appropriate shape.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          3
+        ],
+        "y": [
+          -1,
+          9
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "gold",
+            "domain": [
+              -3,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            -2,
+            4
+          ],
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Make a three-point table and sketch y=3x−2 using inputs zero, one, and two.",
+      "answer": "The points are(0,−2),(1,1),(2,4); draw the straight line through them.",
+      "id": "algebra-1.graphing.video-practice-1"
+    },
+    {
+      "prompt": "Find both intercepts of y=−4x+8.",
+      "answer": "Vertical intercept(0,8); horizontal intercept(2,0).",
+      "id": "algebra-1.graphing.video-practice-2"
+    },
+    {
+      "prompt": "Why do three points from y=x² not justify replacing the whole graph with a straight line?",
+      "answer": "The rule is nonlinear: slopes change with x. Samples must be interpreted using the equation, which defines a parabola.",
+      "id": "algebra-1.graphing.video-practice-3"
+    }
+  ],
+  "takeaway": "A graph represents every valid pair, not just a table of sampled points.",
+  "scope": "Tables, linear graphs, intercepts, and recognizing nonlinear structure.",
+  "course": "Algebra I",
+  "course_id": "algebra-1",
+  "title": "Graphing",
+  "objective": "Translate linear relationships between equations, tables, and graphs.",
+  "index": 6,
+  "total": 10,
+  "prerequisites": [
+    "algebra-1.slope",
+    "algebra-1.functions"
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "id": "trigonometry.trig-graphs",
+  "beats": [
+    {
+      "formula": "y=sin(x)",
+      "text": "Unwrap the unit-circle vertical coordinate as a function of angle. Sine starts at zero, rises to one, returns through zero, reaches negative one, and completes its cycle at two pi. The input axis here is measured in radians.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          6.283185307179586
+        ],
+        "y": [
+          -2,
+          2
+        ],
+        "curves": [
+          {
+            "f": "sin(x)",
+            "color": "blue",
+            "domain": [
+              0,
+              6.283185307179586
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1.5707963267948966,
+            1
+          ],
+          [
+            3.141592653589793,
+            0
+          ],
+          [
+            4.71238898038469,
+            -1
+          ],
+          [
+            6.283185307179586,
+            0
+          ]
+        ],
+        "sweep": true
+      }
+    },
+    {
+      "formula": "y=2sin(x)",
+      "text": "Multiplying the output by two doubles every height without changing the input values where a cycle begins and ends. The amplitude becomes two, while the period stays two pi. Amplitude measures distance from the midline, not total peak-to-trough height.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          6.283185307179586
+        ],
+        "y": [
+          -3,
+          3
+        ],
+        "curves": [
+          {
+            "f": "sin(x)",
+            "color": "blue",
+            "domain": [
+              0,
+              6.283185307179586
+            ]
+          },
+          {
+            "f": "2*sin(x)",
+            "color": "gold",
+            "domain": [
+              0,
+              6.283185307179586
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "formula": "y=2sin(2x) quad \"period\"=pi",
+      "text": "Multiplying the input by two makes the circular phase advance twice as quickly. A full cycle now occurs while x advances only pi, so two cycles fit where one used to. Input scaling changes period rather than amplitude.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          6.283185307179586
+        ],
+        "y": [
+          -3,
+          3
+        ],
+        "curves": [
+          {
+            "f": "2*sin(2*x)",
+            "color": "gold",
+            "domain": [
+              0,
+              6.283185307179586
+            ]
+          }
+        ],
+        "sweep": true
+      }
+    },
+    {
+      "formula": "y=2sin(2x)+1 quad \"midline\"=1",
+      "text": "Adding one shifts every output upward, placing the midline at one. The peaks are three and the troughs negative one, while amplitude and period stay unchanged. Read vertical scale, input scale, and vertical shift as separate transformations.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          6.283185307179586
+        ],
+        "y": [
+          -2,
+          4
+        ],
+        "curves": [
+          {
+            "f": "2*sin(2*x)+1",
+            "color": "gold",
+            "domain": [
+              0,
+              6.283185307179586
+            ]
+          },
+          {
+            "f": "1",
+            "color": "blue",
+            "domain": [
+              0,
+              6.283185307179586
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "State the amplitude and period of y=3cos(x).",
+      "answer": "Amplitude3 and period2π.",
+      "id": "trigonometry.trig-graphs.video-practice-1"
+    },
+    {
+      "prompt": "Find the amplitude, period, and midline of y=4sin(3x)−2.",
+      "answer": "Amplitude4, period2π/3, midline y=−2.",
+      "id": "trigonometry.trig-graphs.video-practice-2"
+    },
+    {
+      "prompt": "A wave ranges from −5 to seven. Find its midline and amplitude, explaining the difference from its full height.",
+      "answer": "Midline1 and amplitude6; peak-to-trough height is12, twice the amplitude.",
+      "id": "trigonometry.trig-graphs.video-practice-3"
+    }
+  ],
+  "takeaway": "Output scale changes amplitude; input scale changes period; addition moves the midline.",
+  "scope": "Sine cycles, amplitude, period, and vertical shifts.",
+  "course": "Trigonometry",
+  "course_id": "trigonometry",
+  "title": "Trigonometric graphs",
+  "objective": "Read amplitude, period, phase, and vertical shifts from periodic graphs.",
+  "index": 5,
+  "total": 7,
+  "prerequisites": [
+    "trigonometry.unit-circle",
+    "trigonometry.radians",
+    "algebra-1.functions"
+  ]
+}

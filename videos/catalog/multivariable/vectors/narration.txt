@@ -1,0 +1,7 @@
+A vector in three dimensions records three directed components. For one, two, two, the length comes from adding the squares of all three components. These bars display the squared contributions, whose sum is nine and whose square root is three.
+
+Addition combines corresponding coordinates. Add the first components, then the second, then the third. The drawn arrows show the horizontal projection, while the formula retains the height component; a two-dimensional picture cannot show every coordinate of the three-dimensional movement.
+
+The dot product adds products of matching components and produces a scalar. Here the first contribution is two, the second is negative two, and the third is two. Including the hidden third coordinate changes the alignment calculation.
+
+Dividing this nonzero vector by its length preserves its direction and produces a unit vector. Each component is scaled by one third, so each squared contribution scales by one ninth. The new squared contributions add to one.

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.558
+A sequence assigns an output to each positive integer index
+
+00:00:04.558 --> 00:00:10.379
+For one over n, the terms get closer to zero as the index grows
+
+00:00:10.379 --> 00:00:16.200
+Convergence means eventually staying within any chosen positive distance of a single limiting value.
+
+00:00:17.500 --> 00:00:19.793
+Being bounded is not enough
+
+00:00:19.793 --> 00:00:27.589
+These terms alternate between negative one and positive one, so they never settle near a single value
+
+00:00:27.589 --> 00:00:32.633
+Different subsequences approach different destinations, preventing convergence of the complete sequence.
+
+00:00:33.933 --> 00:00:38.429
+This sequence increases toward three and never rises above it
+
+00:00:38.429 --> 00:00:43.373
+A monotone sequence bounded in the direction of its movement converges
+
+00:00:43.373 --> 00:00:49.667
+Here the explicit formula also identifies the limit, because one over n approaches zero.
+
+00:00:50.967 --> 00:00:55.004
+A recurrence can define a sequence without an explicit formula
+
+00:00:55.004 --> 00:00:59.041
+Starting at zero, repeatedly average the current term with two
+
+00:00:59.041 --> 00:01:05.500
+The gap from two halves at every step, which both explains convergence and identifies its limit.

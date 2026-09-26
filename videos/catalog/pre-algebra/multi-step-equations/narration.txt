@@ -1,0 +1,7 @@
+A multi-step equation still asks where two quantities agree. These two lines meet at one input. Rather than guessing from the picture, we will transform the equality through steps that preserve exactly the same solution.
+
+First distribute the factor two to every term in its parentheses. Two copies of x contribute two x and two copies of three contribute six. This rewrite changes only the notation, so the graphed relationship remains unchanged.
+
+Now subtract x from both sides. One x remains on the left, while the right becomes eleven. Both graphs have changed, but their equality still occurs at the same horizontal position because the identical quantity was removed from each.
+
+Subtract six from both sides to isolate the input five, then check it in the original equation. Both original sides become sixteen. A term does not change sign by traveling; subtraction from both sides explains that familiar shortcut.

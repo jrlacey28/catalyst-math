@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "An angle measures a turn, not the length of its arms. A quarter turn is ninety degrees. A half turn makes a straight line and measures one hundred eighty degrees. Watch the ray rotate while the angle changes.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "These adjacent angles fill a straight turn. If one is fifty five degrees, the other must be one hundred twenty five. Their sum is one hundred eighty. The diagram gives an equation, rather than a number to memorize.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.0,
+    "duration": 17.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "When two lines cross, the opposite, or vertical, angles are equal. Each is supplementary to the same neighboring angle. This gives a reason for their equality, not just a visual guess.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.0,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "For two parallel lines cut by a transversal, corresponding angles match, and alternate interior angles match. The parallel condition matters. Without it, similar-looking positions do not guarantee equal angles.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.0,
+    "duration": 17.0,
+    "audio": "audio_parts/04.wav"
+  }
+]

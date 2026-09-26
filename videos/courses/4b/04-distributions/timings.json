@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "A distribution shows how observations are spread across possible values. In a histogram, each bar counts observations inside an interval. The horizontal axis gives values or bins; the vertical axis gives frequency.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "A symmetric distribution has similar left and right sides. A right-skewed distribution has a longer tail toward larger values. The tail names the direction of skew; it does not mean most observations are on that side.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.0,
+    "duration": 17.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "When describing a distribution, consider center, spread, shape, and unusual observations together. Two distributions with the same mean can have very different shapes. One number cannot describe everything.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.0,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "The counts in all bins add to the total number of observations. Dividing each count by that total gives relative frequency. Be careful when changing bin widths: a different display can suggest a different visual impression.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.0,
+    "duration": 17.0,
+    "audio": "audio_parts/04.wav"
+  }
+]

@@ -1,0 +1,7 @@
+A system asks for inputs that satisfy several equations at the same time. These lines represent two different rules, and their shared point has coordinates that make both equalities true simultaneously. Nearby points on just one line do not qualify.
+
+Because both expressions equal y at the intersection, set them equal to each other. Add x and subtract one to get three x equals six, then find x equals two. Substituting back gives y equals five.
+
+Different systems can have no solution. These lines have equal rates but different vertical starting values, so they remain separated. Setting their expressions equal cancels the x terms and leaves the impossible statement one equals four.
+
+If one equation is simply a nonzero multiple of the other, both describe the same line. Every point on that line satisfies the system. Thus two linear equations can have one solution, no solutions, or infinitely many.

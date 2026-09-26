@@ -1,0 +1,152 @@
+[
+  {
+    "formula": "u_t=u_(x x), quad 0<=x<=pi",
+    "text": "A partial differential equation relates changes in several variables. In the heat equation, u is temperature departure, x is position, and t is time. The time rate equals spatial curvature in these chosen units, which describes the smoothing of temperature profiles.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3.14159265359
+      ],
+      "y": [
+        -1.1,
+        1.1
+      ],
+      "curves": [
+        {
+          "f": "sin(x)",
+          "color": "blue",
+          "domain": [
+            0,
+            3.14159265359
+          ]
+        }
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "u(x,t)=e^(-t)sin(x)",
+    "text": "Try a sine-shaped profile whose amplitude decays exponentially. Differentiating with respect to time gives negative u. Differentiating twice with respect to position also gives negative u. The proposed formula therefore satisfies the equation at every interior position. The gold curve shows time one.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3.14159265359
+      ],
+      "y": [
+        -1.1,
+        1.1
+      ],
+      "curves": [
+        {
+          "f": "sin(x)",
+          "color": "blue",
+          "domain": [
+            0,
+            3.14159265359
+          ]
+        },
+        {
+          "f": "exp(-1)*sin(x)",
+          "color": "gold",
+          "domain": [
+            0,
+            3.14159265359
+          ]
+        }
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "v(x,t)=e^(-4t)sin(2x)",
+    "text": "Doubling the spatial frequency introduces a factor of negative four after two spatial derivatives. The amplitude must therefore decay as e to negative four t. At time one, the gold profile is nearly flat: finer temperature variations smooth away faster.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3.14159265359
+      ],
+      "y": [
+        -1.1,
+        1.1
+      ],
+      "curves": [
+        {
+          "f": "sin(2*x)",
+          "color": "pink",
+          "domain": [
+            0,
+            3.14159265359
+          ]
+        },
+        {
+          "f": "exp(-4)*sin(2*x)",
+          "color": "gold",
+          "domain": [
+            0,
+            3.14159265359
+          ]
+        }
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "u(0,t)=u(pi,t)=0, quad u(x,0)=sin(x)",
+    "text": "An equation alone does not select a unique temperature history. Our sine solution also meets zero temperature departure at both ends and the specified initial profile. Always state the spatial region, boundary conditions, and initial data before claiming a model is solved.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3.14159265359
+      ],
+      "y": [
+        0,
+        1.1
+      ],
+      "curves": [
+        {
+          "f": "sin(x)",
+          "color": "blue",
+          "domain": [
+            0,
+            3.14159265359
+          ]
+        },
+        {
+          "f": "exp(-2)*sin(x)",
+          "color": "green",
+          "domain": [
+            0,
+            3.14159265359
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          3.14159265359,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

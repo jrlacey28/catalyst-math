@@ -1,0 +1,11 @@
+phase_0
+The square root symbol denotes the nonnegative principal square root. The square root of nine is three. But solving x squared equals nine asks for every input whose square is nine, so both three and negative three work.
+
+phase_1
+To simplify the square root of seventy two, separate a perfect-square factor. Seventy two is thirty six times two, so its root is six root two. For real nonnegative factors, square roots split across multiplication.
+
+phase_2
+Squaring an equation can introduce an extra candidate. In square root of x plus one equals x minus one, the right side must be nonnegative. Squaring gives candidates zero and three, but only three can satisfy that sign requirement.
+
+phase_3
+Check each candidate in the original equation. At zero, the two sides are one and negative one, so it fails. At three, both sides are two. A candidate from a transformed equation is not automatically a solution.

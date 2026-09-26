@@ -1,0 +1,54 @@
+[
+  {
+    "beat": 1,
+    "start": 0.0,
+    "duration": 16.4,
+    "formula": "sum_(n=1)^infinity frac(1,2^n)",
+    "visual": "sequence",
+    "bounds": [
+      -6.039541012500001,
+      6.039541012500001,
+      -2.9000000000000004,
+      1.9000000000000004
+    ]
+  },
+  {
+    "beat": 2,
+    "start": 16.4,
+    "duration": 14.966666666666818,
+    "formula": "S_N=1-frac(1,2^N), quad S_N arrow.r 1",
+    "visual": "grid",
+    "bounds": [
+      -3.2,
+      3.2,
+      -2.1,
+      1.1
+    ]
+  },
+  {
+    "beat": 3,
+    "start": 31.366666666666816,
+    "duration": 15.899999999999892,
+    "formula": "sum_(n=1)^infinity frac(1,n) \"diverges\"",
+    "visual": "bars",
+    "bounds": [
+      -5.7,
+      5.7,
+      -2.7635381377717394,
+      1.7635381377717394
+    ]
+  },
+  {
+    "beat": 4,
+    "start": 47.26666666666671,
+    "duration": 18.49999999999983,
+    "formula": "abs(\"alternating-series error\")<=frac(1,N+1)",
+    "visual": "sequence",
+    "bounds": [
+      -6.039541012500001,
+      6.039541012500001,
+      -2.9000000000000004,
+      1.9000000000000004
+    ]
+  }
+]

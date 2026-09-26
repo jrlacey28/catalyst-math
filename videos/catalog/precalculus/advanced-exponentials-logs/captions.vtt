@@ -1,0 +1,31 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.607
+An exponential equation asks which input produces a target output
+
+00:00:04.607 --> 00:00:11.759
+Six lies between the outputs four and eight, so the needed exponent lies between two and three
+
+00:00:11.759 --> 00:00:15.967
+Graphing gives this estimate, while logarithms give an exact expression.
+
+00:00:17.267 --> 00:00:22.217
+A logarithm names the exponent rather than approximating by trial and error
+
+00:00:22.217 --> 00:00:33.767
+Taking natural logarithms of both sides and using the power rule gives x times natural log of two equals natural log of six, leading to the change-of-base formula.
+
+00:00:35.067 --> 00:00:37.846
+Logarithm laws also depend on domains
+
+00:00:37.846 --> 00:00:47.111
+Combining the sum into a product requires both original arguments to be positive, which means x is greater than one
+
+00:00:47.111 --> 00:00:53.133
+Simplifying their product must not introduce negative inputs excluded by either original logarithm.
+
+00:00:54.433 --> 00:01:01.465
+Equating the combined logarithm with natural log of four gives x squared minus one equals four
+
+00:01:01.465 --> 00:01:11.133
+Algebra suggests positive or negative square root of five, but the original condition x greater than one keeps only the positive candidate.

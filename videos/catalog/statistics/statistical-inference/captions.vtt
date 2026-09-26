@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.222
+Statistical inference uses sample evidence to learn beyond the observed data
+
+00:00:05.222 --> 00:00:11.797
+If thirty of fifty sampled people support a proposal, the sample proportion is sixty percent
+
+00:00:11.797 --> 00:00:17.933
+Whether that estimates a wider population depends on how those people entered the sample.
+
+00:00:19.233 --> 00:00:26.771
+Under independent binary sampling with a common success probability, we can estimate how a sample proportion varies
+
+00:00:26.771 --> 00:00:32.092
+Here the estimated standard error is about zero point zero six nine
+
+00:00:32.092 --> 00:00:38.300
+The model supplies an uncertainty scale; the observed proportion alone cannot show its precision.
+
+00:00:39.600 --> 00:00:44.300
+Random assignment answers a different question from random sampling
+
+00:00:44.300 --> 00:00:51.089
+Assigning volunteers randomly to treatments helps separate treatment effects from preexisting group differences
+
+00:00:51.089 --> 00:00:59.967
+An observed success-rate difference of three tenths still carries sampling uncertainty; assignment does not eliminate random variation.
+
+00:01:01.267 --> 00:01:09.083
+Random sampling supports population generalization, while random assignment supports causal comparison under suitable implementation
+
+00:01:09.083 --> 00:01:12.992
+Neither is replaced by a complicated formula
+
+00:01:12.992 --> 00:01:23.600
+State the population, design, assumptions, effect estimate, and uncertainty so the conclusion remains matched to the evidence actually collected.

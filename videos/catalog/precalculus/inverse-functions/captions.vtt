@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.220
+An inverse function reverses an input-output pairing
+
+00:00:03.220 --> 00:00:06.443
+This line sends input one to output five
+
+00:00:06.443 --> 00:00:14.500
+If it has an inverse, that inverse must send five back to one, undoing the operations in the reverse order.
+
+00:00:15.800 --> 00:00:21.411
+To undo the rule, first subtract three from the output, then divide by two
+
+00:00:21.411 --> 00:00:25.820
+Solving the original equation for its input gives this reverse instruction
+
+00:00:25.820 --> 00:00:32.233
+Renaming the new input variable leads to inverse of x equals x minus three over two.
+
+00:00:33.533 --> 00:00:38.722
+Swapping input and output reflects the graph across the line y equals x
+
+00:00:38.722 --> 00:00:41.516
+The point one, five becomes five, one
+
+00:00:41.516 --> 00:00:49.100
+The inverse symbol means reversing a function; it does not mean the reciprocal one divided by the function value.
+
+00:00:50.400 --> 00:00:54.956
+A function needs unique reverse outputs to have an inverse
+
+00:00:54.956 --> 00:01:00.878
+Squaring over all real numbers fails because positive and negative inputs share outputs
+
+00:01:00.878 --> 00:01:08.167
+Restricting its input to nonnegative values makes the reverse unambiguous and gives the principal square-root function.

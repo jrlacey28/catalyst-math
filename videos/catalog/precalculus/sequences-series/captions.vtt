@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.732
+A sequence lists individual terms in an indexed order
+
+00:00:03.732 --> 00:00:11.138
+Here the terms are one half, one fourth, one eighth, and so on, with each term half the previous one
+
+00:00:11.138 --> 00:00:14.100
+Their values approach zero as the index grows.
+
+00:00:15.400 --> 00:00:20.333
+A series instead adds terms, and its partial sums form another sequence
+
+00:00:20.333 --> 00:00:24.856
+The first sums are one half, three fourths, and seven eighths
+
+00:00:24.856 --> 00:00:31.433
+Those sums increase even while the individual terms decrease, because each newly added term is positive.
+
+00:00:32.733 --> 00:00:36.959
+The gap from the partial sum to one halves each time
+
+00:00:36.959 --> 00:00:43.490
+After n terms that gap is one over two to the n, giving this exact finite-sum formula
+
+00:00:43.490 --> 00:00:48.100
+Since the gap approaches zero, the infinite geometric series converges to one.
+
+00:00:49.400 --> 00:00:53.667
+The harmonic terms also approach zero, but their sum diverges
+
+00:00:53.667 --> 00:01:01.773
+Four terms from one fifth through one eighth each exceed or equal one eighth, totaling at least one half
+
+00:01:01.773 --> 00:01:06.467
+Every doubled block repeats this lower bound, forcing unbounded partial sums.

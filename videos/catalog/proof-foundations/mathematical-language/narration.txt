@@ -1,0 +1,7 @@
+Quantifiers say who gets chosen first. For every real number x, there exists a larger real number y. The choice of y may depend on x; it need not be one number that works for everybody.
+
+Choose an arbitrary real x, then define y as x plus one. Subtracting x leaves the true inequality one greater than zero. This single argument covers every x, rather than merely checking the displayed examples.
+
+Now reverse the order. One fixed y would have to exceed every real x. After that y is chosen, choose x equal to y plus one. The proposed universal inequality fails, so the reversed statement is false.
+
+Negating an all statement requires one counterexample. Negating a some statement requires that every candidate fail. Keep the allowed universe fixed: changing from integers to positive integers can change whether the same sentence is true.

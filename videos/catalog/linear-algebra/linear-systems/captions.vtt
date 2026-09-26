@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.903
+A linear system asks for an input satisfying several constraints at once
+
+00:00:05.903 --> 00:00:08.655
+Each equation here describes a line
+
+00:00:08.655 --> 00:00:15.533
+Their shared solution is the intersection point, where both equations return the required values simultaneously.
+
+00:00:16.833 --> 00:00:21.938
+Adding the equations cancels y and produces two x equals four
+
+00:00:21.938 --> 00:00:26.579
+Keep one original equation to recover y equal to one
+
+00:00:26.579 --> 00:00:34.933
+These elimination steps preserve solutions because the equation replacements are reversible; we are not arbitrarily discarding a constraint.
+
+00:00:36.233 --> 00:00:41.467
+The matrix viewpoint asks which vector is transformed into the target vector
+
+00:00:41.467 --> 00:00:47.136
+The determinant here is negative two, not zero, so the transformation is invertible
+
+00:00:47.136 --> 00:00:51.933
+Every target has one preimage, matching the unique intersection we found.
+
+00:00:53.233 --> 00:00:56.447
+Dependent left-hand sides can produce a different outcome
+
+00:00:56.447 --> 00:01:02.472
+Doubling the first equation would require the second right-hand side to be six, not eight
+
+00:01:02.472 --> 00:01:09.300
+These parallel lines never meet; if it were six instead, the constraints would describe the same line.

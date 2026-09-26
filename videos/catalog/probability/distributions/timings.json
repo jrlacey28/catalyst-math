@@ -1,0 +1,124 @@
+[
+  {
+    "formula": "P(X=0)=0.2, quad P(X=1)=0.3, quad P(X=2)=0.5",
+    "text": "A probability distribution specifies how probability is allocated across possible values. In a discrete distribution, probabilities are nonnegative and add to one. These three bars assign one fifth, three tenths, and one half to zero, one, and two.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        0.2,
+        0.3,
+        0.5
+      ],
+      "labels": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 18.333333333333332,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "P(X=1)=frac(3,8) \"for three fair coin tosses\"",
+    "text": "A binomial model counts successes across a fixed number of independent trials with the same success probability. For three fair tosses, exactly one head can occur in three positions, each with probability one eighth, giving three eighths altogether.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        0.125,
+        0.375,
+        0.375,
+        0.125
+      ],
+      "labels": [
+        "0 heads",
+        "1 head",
+        "2 heads",
+        "3 heads"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 18.333333333333332,
+    "duration": 17.566666666666666,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "f(x)=frac(1,2), quad 0<=x<=2",
+    "text": "A continuous distribution uses density, whose area gives probability. Uniform density one half from zero to two has total area one. An interval of length one inside this range has probability one half, regardless of where it lies.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -0.2,
+        2.3
+      ],
+      "y": [
+        0,
+        1
+      ],
+      "curves": [
+        {
+          "f": "0.5",
+          "color": "blue",
+          "domain": [
+            0,
+            2
+          ]
+        }
+      ],
+      "shade": [
+        0.5,
+        1.5
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 35.9,
+    "duration": 17.566666666666666,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "4 times frac(1,4)=1",
+    "text": "Density is not a point probability and may exceed one. Uniform density four on an interval of length one quarter still has total probability one. Any single exact point has probability zero in this continuous model because its interval width is zero.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        0.5
+      ],
+      "y": [
+        0,
+        5
+      ],
+      "curves": [
+        {
+          "f": "4",
+          "color": "gold",
+          "domain": [
+            0,
+            0.25
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        0.25
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 53.46666666666667,
+    "duration": 18.433333333333334,
+    "audio": "audio_parts/04.wav"
+  }
+]

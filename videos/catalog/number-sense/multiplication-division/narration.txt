@@ -1,0 +1,7 @@
+Multiplication counts equal groups efficiently. Three groups containing four dots each give twelve altogether. The groups must be equal for this repeated addition model; three unequal groups would require adding their actual sizes.
+
+Division asks the reverse question. Sharing these twelve dots equally among three groups puts four in each group. We can also group by fours and ask how many groups fit; that version gives three groups.
+
+Not every whole-number division comes out evenly. Seventeen objects make three full groups of five with two left over. The remainder must be smaller than five, or another complete group would still fit.
+
+The story decides what to do with a remainder. If seventeen people need five-seat vehicles, three vehicles are insufficient, so we need four. If we are counting complete packs, however, only three packs are full.

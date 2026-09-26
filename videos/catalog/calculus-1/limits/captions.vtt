@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.353
+A limit describes nearby outputs, even when the input itself is missing
+
+00:00:05.353 --> 00:00:09.893
+This quotient is undefined at one because its denominator is zero
+
+00:00:09.893 --> 00:00:14.433
+The graph can still approach a definite height from both sides.
+
+00:00:15.733 --> 00:00:20.863
+Factor the entire numerator as x minus one times x plus one
+
+00:00:20.863 --> 00:00:27.702
+For nearby inputs other than one, the shared factor is nonzero, so its ratio equals one
+
+00:00:27.702 --> 00:00:30.267
+Cancelling factors preserves these nearby values.
+
+00:00:31.567 --> 00:00:35.193
+The simpler expression approaches two as x approaches one
+
+00:00:35.193 --> 00:00:40.834
+Therefore the original quotient has limit two, although it has no value at one
+
+00:00:40.834 --> 00:00:45.267
+Taking a limit and assigning a function value are different operations.
+
+00:00:46.567 --> 00:00:49.820
+Both sides must agree for a two-sided limit
+
+00:00:49.820 --> 00:00:56.733
+Absolute x divided by x equals negative one on the left and positive one on the right
+
+00:00:56.733 --> 00:01:00.800
+These different destination heights prevent a two-sided limit at zero.

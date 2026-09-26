@@ -1,0 +1,7 @@
+A function assigns each input exactly one output, but different questions concern how outputs are covered. Injective means no two distinct inputs collide. Surjective means every member of the stated target set receives an input.
+
+To prove this linear rule injective, suppose two outputs are equal. Subtract three and divide by the nonzero coefficient two. The inputs must be equal. This checks all potential collisions, not just the two points shown.
+
+To prove surjectivity onto the real numbers, start with any desired real output y. Solving gives input y minus three, divided by two. That input is real and substitution produces precisely the requested output.
+
+The square function has a collision at negative two and two, so it is not injective on all reals. Its surjectivity changes with the target: nonnegative reals are covered, while negative real targets are impossible.

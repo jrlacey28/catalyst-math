@@ -1,0 +1,98 @@
+[
+  {
+    "formula": "x'=-x, quad y'=-4y",
+    "text": "A linear system can contain quantities changing at different speeds. Here the y component decays four times as quickly as x. A time-stepping method must respect that faster scale even when the exact solutions themselves behave smoothly.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          2,
+          2
+        ]
+      ],
+      "points": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "y_(n+1)=(1-4h)y_n",
+    "text": "Forward Euler uses the current derivative to predict the next value. With step size one quarter, the fast component is multiplied by zero. This is an approximation, not the exact decay; the slow component is multiplied by three quarters.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          2,
+          2
+        ]
+      ],
+      "matrix": [
+        [
+          0.75,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "h=0.75 arrow.r 1-4h=-2",
+    "text": "Choose a step size of three quarters instead. The fast component now changes sign and doubles in magnitude at each update. The true solution decays, but the numerical solution grows. Stability requires the magnitude of its update factor to stay below one.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        2,
+        -4,
+        8,
+        -16,
+        32,
+        -64
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "(1+4h)y_(n+1)=y_n",
+    "text": "Backward Euler evaluates the derivative at the unknown next value, producing a linear equation to solve. The fast component is multiplied by one divided by one plus four h, which contracts for every positive h. Stability still does not guarantee a desired accuracy.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          2,
+          2
+        ]
+      ],
+      "matrix": [
+        [
+          0.571428571429,
+          0
+        ],
+        [
+          0,
+          0.25
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

@@ -1,0 +1,103 @@
+{
+  "id": "trigonometry.identities",
+  "beats": [
+    {
+      "formula": "sin(theta)^2+cos(theta)^2=1",
+      "text": "A trigonometric identity is a relationship that holds at every input where both sides are defined. The unit-circle equation gives sine squared plus cosine squared equals one because the two coordinates always lie one unit from the origin.",
+      "visual": {
+        "kind": "circle",
+        "angle": 0.6283185307179586,
+        "radius": 2.4,
+        "triangle": true
+      }
+    },
+    {
+      "formula": "1-cos(theta)^2=sin(theta)^2",
+      "text": "Rearrange the circle identity to replace one expression with an equal one. One minus cosine squared becomes sine squared. This substitution is useful because it can reveal a factor that was hidden in the original form.",
+      "visual": {
+        "kind": "circle",
+        "angle": 1.0471975511965976,
+        "radius": 2.4,
+        "triangle": true
+      }
+    },
+    {
+      "formula": "frac(1-cos(theta)^2,sin(theta))=sin(theta) quad sin(theta)!=0",
+      "text": "After replacement, the numerator is sine squared. Dividing by sine cancels one common factor, leaving sine, but only when sine is nonzero. The simplified graph must retain the inputs excluded by the original denominator.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -0.5,
+          6.7
+        ],
+        "y": [
+          -1.5,
+          1.5
+        ],
+        "curves": [
+          {
+            "f": "sin(x)",
+            "color": "blue",
+            "domain": [
+              -0.5,
+              6.7
+            ]
+          }
+        ],
+        "holes": [
+          [
+            0,
+            0
+          ],
+          [
+            3.141592653589793,
+            0
+          ],
+          [
+            6.283185307179586,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "cos(theta)=plus.minus sqrt(1-sin(theta)^2)",
+      "text": "Solving a squared relationship introduces a sign choice. If sine is known, the magnitude of cosine follows from the identity, but the quadrant decides whether cosine is positive or negative. Choosing only the positive root would discard valid angles.",
+      "visual": {
+        "kind": "circle",
+        "angle": 2.0943951023931953,
+        "radius": 2.4,
+        "triangle": true
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "If cos θ=7/25, find sin²θ using an identity.",
+      "answer": "sin²θ=1−49/625=576/625.",
+      "id": "trigonometry.identities.video-practice-1"
+    },
+    {
+      "prompt": "Simplify cos²θ/(1−sin²θ), stating its restriction.",
+      "answer": "It equals1 where cos θ≠0, since the denominator equals cos²θ.",
+      "id": "trigonometry.identities.video-practice-2"
+    },
+    {
+      "prompt": "If sin θ=8/17 and θ lies in quadrant II, find cos θ and justify the sign.",
+      "answer": "cos²θ=225/289, so cos θ=−15/17 because quadrant II has negative horizontal coordinates.",
+      "id": "trigonometry.identities.video-practice-3"
+    }
+  ],
+  "takeaway": "Identities preserve values on valid domains; cancellation and square roots need conditions.",
+  "scope": "Pythagorean identity, structural substitution, cancellations, and quadrant signs.",
+  "course": "Trigonometry",
+  "course_id": "trigonometry",
+  "title": "Trigonometric identities",
+  "objective": "Derive and use identities while preserving domains and every solution.",
+  "index": 6,
+  "total": 7,
+  "prerequisites": [
+    "trigonometry.unit-circle",
+    "algebra-1.polynomials"
+  ]
+}

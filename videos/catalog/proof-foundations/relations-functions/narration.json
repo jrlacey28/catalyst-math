@@ -1,0 +1,146 @@
+[
+  {
+    "formula": "f:RR arrow.r RR, quad f(x)=2x+3",
+    "text": "A function assigns each input exactly one output, but different questions concern how outputs are covered. Injective means no two distinct inputs collide. Surjective means every member of the stated target set receives an input.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        2
+      ],
+      "y": [
+        -2,
+        8
+      ],
+      "curves": [
+        {
+          "f": "2*x+3",
+          "color": "blue",
+          "domain": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "points": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "2a+3=2b+3 arrow.r a=b",
+    "text": "To prove this linear rule injective, suppose two outputs are equal. Subtract three and divide by the nonzero coefficient two. The inputs must be equal. This checks all potential collisions, not just the two points shown.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        -2,
+        5
+      ],
+      "points": [
+        1,
+        5
+      ],
+      "labels": [
+        "f(-1)",
+        "f(1)"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "y=2x+3 arrow.r x=frac(y-3,2)",
+    "text": "To prove surjectivity onto the real numbers, start with any desired real output y. Solving gives input y minus three, divided by two. That input is real and substitution produces precisely the requested output.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "desired y",
+        "(y-3)/2",
+        "output y"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "weights": [
+        "solve",
+        "apply f"
+      ],
+      "directed": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "g(-2)=g(2)=4",
+    "text": "The square function has a collision at negative two and two, so it is not injective on all reals. Its surjectivity changes with the target: nonnegative reals are covered, while negative real targets are impossible.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -1,
+        9
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "gold",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          -2,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "segments": [
+        [
+          [
+            -2,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

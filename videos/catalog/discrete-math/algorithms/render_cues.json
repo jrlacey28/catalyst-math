@@ -1,0 +1,54 @@
+[
+  {
+    "beat": 1,
+    "start": 0.0,
+    "duration": 15.0,
+    "formula": "2,4,6,8,10,12,14,16",
+    "visual": "bars",
+    "bounds": [
+      -5.7,
+      5.7,
+      -2.7645635277717395,
+      1.7645635277717395
+    ]
+  },
+  {
+    "beat": 2,
+    "start": 15.0,
+    "duration": 17.266666666666765,
+    "formula": "10>8 quad arrow.r quad \"keep the right half\"",
+    "visual": "bars",
+    "bounds": [
+      -5.7,
+      5.7,
+      -2.7645635277717395,
+      1.7645635277717395
+    ]
+  },
+  {
+    "beat": 3,
+    "start": 32.266666666666765,
+    "duration": 17.966666666666498,
+    "formula": "10<12 quad arrow.r quad \"then test 10\"",
+    "visual": "bars",
+    "bounds": [
+      -5.7,
+      5.7,
+      -2.767395552771739,
+      1.767395552771739
+    ]
+  },
+  {
+    "beat": 4,
+    "start": 50.23333333333326,
+    "duration": 18.63333333333317,
+    "formula": "T(n)=O(log(n))",
+    "visual": "network",
+    "bounds": [
+      -2.65,
+      2.65,
+      -3.15,
+      2.15
+    ]
+  }
+]

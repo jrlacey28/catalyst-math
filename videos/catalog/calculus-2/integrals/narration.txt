@@ -1,0 +1,7 @@
+An integral accumulates small contributions. If a rate stays at three units per second for two seconds, the total is six units. The graph shows a rectangle whose height is rate and whose width is elapsed time.
+
+When the rate changes, narrow rectangles approximate the accumulation, and a limit gives the exact integral. For a rate equal to time between zero and two, the region is a triangle with base two and height two.
+
+Integrals count signed accumulation. This velocity is negative before time one and positive afterward. Equal areas cancel, giving zero displacement. Total distance instead adds their magnitudes, producing one unit rather than zero for this journey.
+
+An indefinite integral describes all antiderivatives. Every vertical shift of x squared has derivative two x, so a constant must remain. A definite integral is a number between bounds; an indefinite integral is a family of functions.

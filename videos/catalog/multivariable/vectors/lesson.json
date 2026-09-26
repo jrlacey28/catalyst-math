@@ -1,0 +1,122 @@
+{
+  "id": "multivariable.vectors",
+  "beats": [
+    {
+      "formula": "v=(1,2,2), quad norm(v)=sqrt(1+4+4)=3",
+      "text": "A vector in three dimensions records three directed components. For one, two, two, the length comes from adding the squares of all three components. These bars display the squared contributions, whose sum is nine and whose square root is three.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          1,
+          4,
+          4
+        ],
+        "labels": [
+          "x²",
+          "y²",
+          "z²"
+        ]
+      }
+    },
+    {
+      "formula": "(1,2,2)+(2,-1,1)=(3,1,3)",
+      "text": "Addition combines corresponding coordinates. Add the first components, then the second, then the third. The drawn arrows show the horizontal projection, while the formula retains the height component; a two-dimensional picture cannot show every coordinate of the three-dimensional movement.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "1 times 2+2 times (-1)+2 times 1=2",
+      "text": "The dot product adds products of matching components and produces a scalar. Here the first contribution is two, the second is negative two, and the third is two. Including the hidden third coordinate changes the alignment calculation.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -1,
+          4
+        ],
+        "points": [
+          0,
+          2
+        ],
+        "labels": [
+          "zero",
+          "dot product"
+        ],
+        "arrows": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "hat(v)=frac(v,3), quad norm(hat(v))=1",
+      "text": "Dividing this nonzero vector by its length preserves its direction and produces a unit vector. Each component is scaled by one third, so each squared contribution scales by one ninth. The new squared contributions add to one.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0.1111111111,
+          0.4444444444,
+          0.4444444444
+        ],
+        "labels": [
+          "x²",
+          "y²",
+          "z²"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find the length of v=(2,−1,2), then write a unit vector in the same direction.",
+      "answer": "The length is √(4+1+4)=3. The unit vector is (2/3,−1/3,2/3). Normalization requires a nonzero vector.",
+      "id": "multivariable.vectors.video-practice-1"
+    },
+    {
+      "prompt": "Add u=(2,0,1) and v=(−1,3,2). Explain why a drawing of only the first two coordinates is incomplete.",
+      "answer": "u+v=(1,3,3). Its planar projection is (1,3), but that does not include the third component 3.",
+      "id": "multivariable.vectors.video-practice-2"
+    },
+    {
+      "prompt": "Compute the dot product of (1,2,−1) and (2,−1,3). Describe the role of the third coordinates.",
+      "answer": "The dot product is 1·2+2·(−1)+(−1)·3=−3. The first two contributions cancel, but the third contributes −3.",
+      "id": "multivariable.vectors.video-practice-3"
+    }
+  ],
+  "takeaway": "Coordinate rules extend to any finite dimension, but projections must not erase components from calculations.",
+  "scope": "Three-dimensional components, length, addition, dot product, and normalization.",
+  "course": "Multivariable calculus",
+  "course_id": "multivariable",
+  "title": "Vectors in several dimensions",
+  "objective": "Use dot and cross products to describe length, projection, and orientation.",
+  "index": 1,
+  "total": 7,
+  "prerequisites": [
+    "linear-algebra.vectors",
+    "geometry.coordinate-geometry"
+  ]
+}

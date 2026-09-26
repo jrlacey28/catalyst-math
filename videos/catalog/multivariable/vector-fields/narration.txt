@@ -1,0 +1,7 @@
+A vector field assigns a vector to every point in a region. In this radial field, the output repeats the position coordinates, so arrows point away from the origin and become longer farther from it. Position and assigned vector are different roles.
+
+Evaluate a field by substituting the location into both component functions. At two, one, the vector is two, one; at negative one, two, it changes accordingly. These outputs describe local direction and magnitude rather than another scalar height.
+
+Swapping the coordinates and negating the first creates a rotational field. At two, zero, its arrow points upward. Around a circle, the field is tangent to the path, contrasting with the radial field's perpendicular arrows.
+
+A constant field assigns the same vector everywhere, so every arrow points right with the same length. Fields may model force or velocity, but the interpretation and units must come from the model; arrows alone do not specify them.

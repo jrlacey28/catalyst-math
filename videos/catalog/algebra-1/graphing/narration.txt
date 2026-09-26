@@ -1,0 +1,7 @@
+A graph collects all input-output pairs of a rule. Begin with a few easy inputs for y equals negative two x plus three. When x is zero, one, and two, the corresponding outputs are three, one, and negative one.
+
+The constant rate shows that these points belong to one straight line. Starting at the vertical intercept three, each step right goes two units down. Drawing the line extends the relationship beyond the few sampled inputs.
+
+The horizontal intercept is found by setting the output to zero, not by guessing a plotted point. Solving gives input three halves. This is where the line crosses the horizontal axis, while its vertical intercept remains three.
+
+Graphing from samples also has limits. These values come from a quadratic rule, so connecting them with a single straight line would invent a different relationship. Use the formula, its structure, and enough points to determine the appropriate shape.

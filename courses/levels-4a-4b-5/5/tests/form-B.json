@@ -1,0 +1,133 @@
+{
+  "unit": "5",
+  "form": "B",
+  "instructions": "Independent work. No hints or answer key during testing. Ask for clarification; substantive teaching makes the item assisted and requires a fresh replacement. Three questions per batch. Calculator allowed for arithmetic after writing the exact setup; no solver or answer lookup.",
+  "items": [
+    {
+      "id": "5-TB-01",
+      "lesson_id": "5-01",
+      "objective": "Connect completing the square, vertex form, discriminant, and solving.",
+      "prompt": "Solve x\u00b2+4x-5=0, showing both roots.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-02",
+      "lesson_id": "5-01",
+      "objective": "Connect completing the square, vertex form, discriminant, and solving.",
+      "prompt": "For y=3x\u00b2-6x+3, determine the number of distinct real zeros.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-03",
+      "lesson_id": "5-02",
+      "objective": "Read degree, leading behavior, zeros, and repeated factors.",
+      "prompt": "For p(x)=(x+4)\u00b3(x-1)\u00b2, list zeros, multiplicities, and crossing/touching behavior.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-04",
+      "lesson_id": "5-02",
+      "objective": "Read degree, leading behavior, zeros, and repeated factors.",
+      "prompt": "State the degree, leading coefficient, and end behavior of 2x\u2076-x.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-05",
+      "lesson_id": "5-03",
+      "objective": "Simplify with restrictions, distinguish holes from poles, and check solutions.",
+      "prompt": "Simplify (x\u00b2-25)/(x+5), state its restriction, and locate the hole.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-06",
+      "lesson_id": "5-03",
+      "objective": "Simplify with restrictions, distinguish holes from poles, and check solutions.",
+      "prompt": "Solve 5/(x+1)=2, checking the candidate.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-07",
+      "lesson_id": "5-04",
+      "objective": "Use principal roots, simplify radicals, and check squared equations.",
+      "prompt": "Simplify \u221a75 and explain the factor used.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-08",
+      "lesson_id": "5-04",
+      "objective": "Use principal roots, simplify radicals, and check squared equations.",
+      "prompt": "Solve \u221a(x+12)=x, checking candidates.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-09",
+      "lesson_id": "5-05",
+      "objective": "Represent a+bi and perform addition and multiplication with i\u00b2=-1.",
+      "prompt": "Compute (2-3i)(1+2i), showing work.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-10",
+      "lesson_id": "5-05",
+      "objective": "Represent a+bi and perform addition and multiplication with i\u00b2=-1.",
+      "prompt": "Represent 1-4i as a point, then multiply it by i and give the new point.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-11",
+      "lesson_id": "5-06",
+      "objective": "Distinguish repeated multiplication from addition and interpret growth factors.",
+      "prompt": "An amount starts at 80 and grows 50% per step. Write a model and find the amount after two steps.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-12",
+      "lesson_id": "5-06",
+      "objective": "Distinguish repeated multiplication from addition and interpret growth factors.",
+      "prompt": "A model is 500(0.9)^t. Interpret the constants and initial value.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-13",
+      "lesson_id": "5-07",
+      "objective": "Translate exponential/log forms, use log laws with valid domains, and solve.",
+      "prompt": "Solve log\u2082(x+1)=3 and check its real domain.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-14",
+      "lesson_id": "5-07",
+      "objective": "Translate exponential/log forms, use log laws with valid domains, and solve.",
+      "prompt": "Combine log\u208510+log\u2085(5/2) into one logarithm and evaluate.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-15",
+      "lesson_id": "5-08",
+      "objective": "Use explicit and recursive rules with correct indexing.",
+      "prompt": "An arithmetic sequence has a\u2081=4 and d=5. Find a\u2087 and an explicit rule.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-16",
+      "lesson_id": "5-08",
+      "objective": "Use explicit and recursive rules with correct indexing.",
+      "prompt": "A geometric sequence has a\u2081=16 and r=1/2. Find a\u2085 and give its recursion.",
+      "points": 2
+    },
+    {
+      "id": "5-TB-17",
+      "lesson_id": "5-09",
+      "objective": "Distinguish terms and sums; use finite sums and basic geometric convergence.",
+      "prompt": "Find the sum of the first 8 terms of 2,6,10,...",
+      "points": 2
+    },
+    {
+      "id": "5-TB-18",
+      "lesson_id": "5-09",
+      "objective": "Distinguish terms and sums; use finite sums and basic geometric convergence.",
+      "prompt": "Find 4+1+1/4+... to infinity and state the condition.",
+      "points": 2
+    }
+  ]
+}

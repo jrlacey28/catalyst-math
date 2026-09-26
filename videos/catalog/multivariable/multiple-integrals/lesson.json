@@ -1,0 +1,141 @@
+{
+  "id": "multivariable.multiple-integrals",
+  "beats": [
+    {
+      "formula": "V=integral_0^1 integral_0^1 (x+y) dif x dif y",
+      "text": "A double integral accumulates tiny contributions over a region in two input dimensions. For the surface z equals x plus y above the unit square, each small base rectangle contributes its area times the surface height.",
+      "visual": {
+        "kind": "surface",
+        "mode": "plane"
+      }
+    },
+    {
+      "formula": "integral_0^1 (x+y) dif x=frac(1,2)+y",
+      "text": "Integrate one coordinate at a time. During the inner integration with respect to x, y stays constant. The result is one half plus y, representing the cross-sectional accumulation for each fixed value of the outer coordinate.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1.2
+        ],
+        "y": [
+          0,
+          2
+        ],
+        "curves": [
+          {
+            "f": "x+0.5",
+            "color": "blue",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "formula": "integral_0^1 (frac(1,2)+y) dif y=1",
+      "text": "Now add those cross-sectional accumulations over y from zero to one. One half y plus one half y squared increases by one. Continuity on this rectangle justifies the iterated integration and also permits reversing the order.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1.2
+        ],
+        "y": [
+          0,
+          2
+        ],
+        "curves": [
+          {
+            "f": "0.5+x",
+            "color": "gold",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "formula": "integral_0^1 integral_0^x 1 dif y dif x=frac(1,2)",
+      "text": "Bounds encode geometry. Over the triangle below y equals x in the unit square, the upper y bound depends on x. Integrating one over that triangle returns its area, one half; using constant square bounds would describe a different region.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1.2
+        ],
+        "y": [
+          0,
+          1.2
+        ],
+        "curves": [
+          {
+            "f": "x",
+            "color": "blue",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          1
+        ],
+        "segments": [
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Evaluate ∫₀²∫₀¹(x+2y) dy dx. Show the inner integral before using the outer one.",
+      "answer": "The inner integral is [xy+y²]₀¹=x+1. Integrating from x=0 to 2 gives [x²/2+x]₀²=4.",
+      "id": "multivariable.multiple-integrals.video-practice-1"
+    },
+    {
+      "prompt": "A rectangle has side lengths 2 and 4 with constant density 3 kg per square meter. Express its mass as a double integral and evaluate it.",
+      "answer": "M=∫₀²∫₀⁴3 dy dx=3·8=24 kg.",
+      "id": "multivariable.multiple-integrals.video-practice-2"
+    },
+    {
+      "prompt": "Write and evaluate a double integral for the area of 0≤y≤x≤2. Explain why the upper inner bound is variable.",
+      "answer": "Area=∫₀²∫₀ˣ1 dy dx=∫₀²x dx=2. For each x, the vertical slice stops at y=x, so its bound changes with x.",
+      "id": "multivariable.multiple-integrals.video-practice-3"
+    }
+  ],
+  "takeaway": "Integrate small contributions over a stated region; inner variables move while outer variables temporarily remain fixed.",
+  "scope": "Iterated integrals over a rectangle and a triangle, with bounds tied to geometry.",
+  "course": "Multivariable calculus",
+  "course_id": "multivariable",
+  "title": "Multiple integrals",
+  "objective": "Integrate over regions using bounds, changes of variables, and Jacobians.",
+  "index": 4,
+  "total": 7,
+  "prerequisites": [
+    "calculus-2.integration-techniques",
+    "multivariable.3d-geometry"
+  ]
+}

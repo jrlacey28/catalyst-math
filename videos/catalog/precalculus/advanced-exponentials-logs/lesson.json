@@ -1,0 +1,163 @@
+{
+  "id": "precalculus.advanced-exponentials-logs",
+  "beats": [
+    {
+      "formula": "2^x=6",
+      "text": "An exponential equation asks which input produces a target output. Six lies between the outputs four and eight, so the needed exponent lies between two and three. Graphing gives this estimate, while logarithms give an exact expression.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          4
+        ],
+        "y": [
+          0,
+          17
+        ],
+        "curves": [
+          {
+            "f": "2**x",
+            "color": "blue",
+            "domain": [
+              0,
+              4
+            ]
+          },
+          {
+            "f": "6",
+            "color": "gold",
+            "domain": [
+              0,
+              4
+            ]
+          }
+        ],
+        "points": [
+          [
+            2.584962500721156,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "x=log_2(6)=frac(log(6),log(2))",
+      "text": "A logarithm names the exponent rather than approximating by trial and error. Taking natural logarithms of both sides and using the power rule gives x times natural log of two equals natural log of six, leading to the change-of-base formula.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0.2,
+          8
+        ],
+        "y": [
+          -3,
+          4
+        ],
+        "curves": [
+          {
+            "f": "log(x)/log(2)",
+            "color": "gold",
+            "domain": [
+              0.2,
+              8
+            ]
+          }
+        ],
+        "points": [
+          [
+            6,
+            2.584962500721156
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "log(x-1)+log(x+1)=log(x^2-1) quad x>1",
+      "text": "Logarithm laws also depend on domains. Combining the sum into a product requires both original arguments to be positive, which means x is greater than one. Simplifying their product must not introduce negative inputs excluded by either original logarithm.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -4,
+          4
+        ],
+        "y": [
+          -4,
+          4
+        ],
+        "curves": [
+          {
+            "f": "log(x*x-1)",
+            "color": "blue",
+            "domain": [
+              1.02,
+              4
+            ]
+          }
+        ],
+        "points": [
+          [
+            2.23606797749979,
+            1.3862943611198906
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "log(x^2-1)=log(4) arrow.r x=sqrt(5)",
+      "text": "Equating the combined logarithm with natural log of four gives x squared minus one equals four. Algebra suggests positive or negative square root of five, but the original condition x greater than one keeps only the positive candidate.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -3,
+          4
+        ],
+        "points": [
+          -2.23606797749979,
+          1,
+          2.23606797749979
+        ],
+        "interval": [
+          1,
+          4
+        ],
+        "open": [
+          1
+        ],
+        "labels": [
+          "rejected",
+          "boundary",
+          "valid"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Solve 3ˣ=11 using logarithms; an exact expression is sufficient.",
+      "answer": "x=ln(11)/ln(3).",
+      "id": "precalculus.advanced-exponentials-logs.video-practice-1"
+    },
+    {
+      "prompt": "State the real domain before simplifying ln(x−2)+ln(x+2).",
+      "answer": "Both arguments must be positive, sox>2. The sum becomesln(x²−4) only on that original domain.",
+      "id": "precalculus.advanced-exponentials-logs.video-practice-2"
+    },
+    {
+      "prompt": "Solve ln(x−2)+ln(x+2)=ln(5), checking candidates against the original domain.",
+      "answer": "x²−4=5 givesx=±3; onlyx=3 lies inx>2.",
+      "id": "precalculus.advanced-exponentials-logs.video-practice-3"
+    }
+  ],
+  "takeaway": "Logarithms invert positive-base exponentials; log laws retain every original argument restriction.",
+  "scope": "Change of base, exponential solving, logarithm laws, and domain checks.",
+  "course": "Precalculus",
+  "course_id": "precalculus",
+  "title": "Advanced exponentials and logs",
+  "objective": "Solve exponential and logarithmic models with valid bases and domains.",
+  "index": 4,
+  "total": 8,
+  "prerequisites": [
+    "algebra-2.exponentials",
+    "algebra-2.logarithms"
+  ]
+}

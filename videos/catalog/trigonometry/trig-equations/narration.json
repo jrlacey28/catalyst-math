@@ -1,0 +1,152 @@
+[
+  {
+    "formula": "sin(x)=frac(1,2)",
+    "text": "A trigonometric equation asks which angles produce a specified coordinate. On one full turn, the height one half occurs twice: once in the first quadrant and once in the second. Reading only the first crossing would miss another solution.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        6.283185307179586
+      ],
+      "y": [
+        -1.5,
+        1.5
+      ],
+      "curves": [
+        {
+          "f": "sin(x)",
+          "color": "blue",
+          "domain": [
+            0,
+            6.283185307179586
+          ]
+        },
+        {
+          "f": "0.5",
+          "color": "gold",
+          "domain": [
+            0,
+            6.283185307179586
+          ]
+        }
+      ],
+      "points": [
+        [
+          0.5235987755982988,
+          0.5
+        ],
+        [
+          2.6179938779914944,
+          0.5
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "x=frac(pi,6) \"or\" x=frac(5pi,6) quad 0<=x<2pi",
+    "text": "Within the interval from zero inclusive to two pi exclusive, the solutions are pi over six and five pi over six. The second angle shares the reference angle but lies in the second quadrant, where sine remains positive.",
+    "visual": {
+      "kind": "circle",
+      "angle": 2.6179938779914944,
+      "radius": 2.4,
+      "triangle": true,
+      "arc": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "x=frac(pi,6)+2k pi \"or\" x=frac(5pi,6)+2k pi",
+    "text": "Without an interval restriction, full turns produce infinitely many solutions. Add any integer multiple of two pi to each base angle. The integer may be positive, zero, or negative, because turning backward also returns to the same coordinates.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -6.283185307179586,
+        12.566370614359172
+      ],
+      "y": [
+        -1.5,
+        1.5
+      ],
+      "curves": [
+        {
+          "f": "sin(x)",
+          "color": "blue",
+          "domain": [
+            -6.283185307179586,
+            12.566370614359172
+          ]
+        },
+        {
+          "f": "0.5",
+          "color": "gold",
+          "domain": [
+            -6.283185307179586,
+            12.566370614359172
+          ]
+        }
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "sin(x)cos(x)=0",
+    "text": "Factoring a trigonometric equation can reveal several solution families. This product vanishes when sine is zero or cosine is zero. Dividing by one factor without checking when it vanishes would erase an entire family of valid solutions.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        6.283185307179586
+      ],
+      "y": [
+        -0.7,
+        0.7
+      ],
+      "curves": [
+        {
+          "f": "sin(x)*cos(x)",
+          "color": "pink",
+          "domain": [
+            0,
+            6.283185307179586
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1.5707963267948966,
+          0
+        ],
+        [
+          3.141592653589793,
+          0
+        ],
+        [
+          4.71238898038469,
+          0
+        ],
+        [
+          6.283185307179586,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

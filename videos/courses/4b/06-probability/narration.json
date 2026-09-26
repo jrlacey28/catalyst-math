@@ -1,0 +1,26 @@
+[
+  {
+    "title": "phase_0",
+    "text": "For equally likely outcomes, probability is favorable outcomes divided by all outcomes. The equally likely condition matters. A fair die has six equally likely faces, so three even faces give probability one half.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_1",
+    "text": "For successive events, multiply the first probability by the conditional probability of the second. In a bag with three red and two blue balls, drawing two reds without replacement has probability three fifths times two fourths.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_2",
+    "text": "At least one red includes exactly one red and two reds. It is often easier to exclude the opposite event: no red. Two blues have probability two fifths times one fourth. Subtract this from one.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_3",
+    "text": "Add probabilities for disjoint alternatives. If alternatives overlap, subtract the overlap once. Multiplication and addition are chosen from the event structure, not from keywords alone. Name the event before calculating.",
+    "min_duration": 17,
+    "tail": 1.0
+  }
+]

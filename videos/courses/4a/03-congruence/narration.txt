@@ -1,0 +1,11 @@
+phase_0
+Congruent figures have the same size and shape. We can slide, rotate, or reflect one onto the other. These rigid motions preserve lengths and angles. Orientation may change; size does not.
+
+phase_1
+The order of the letters records which vertices correspond. If A matches D, B matches E, and C matches F, then side A B matches D E. Matching the wrong sides can spoil an otherwise correct argument.
+
+phase_2
+Three matching side lengths determine a triangle up to rigid motion: side, side, side. Two sides and their included angle also work: side, angle, side. The angle must lie between the matched sides.
+
+phase_3
+Two matched angles and a matched side also establish congruence. Three angles alone establish shape, but not size. A larger triangle can have exactly the same three angles, so angle, angle, angle is not a congruence test.

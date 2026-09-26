@@ -1,0 +1,82 @@
+[
+  {
+    "formula": "frac(1,3)=frac(4,12)",
+    "text": "A fraction counts equal-sized pieces of one whole. Splitting each third into four smaller pieces creates twelfths without changing the shaded amount. One third and four twelfths therefore describe the same quantity in different units.",
+    "visual": {
+      "kind": "grid",
+      "rows": 3,
+      "cols": 4,
+      "filled": 4
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "frac(1,3)+frac(1,4)=frac(4,12)+frac(3,12)=frac(7,12)",
+    "text": "To add fractions, first give their pieces a common size. One third contributes four twelfths and one fourth contributes three twelfths. We add the piece counts, while twelve remains the name of the unit.",
+    "visual": {
+      "kind": "grid",
+      "rows": 3,
+      "cols": 4,
+      "filled": 4,
+      "secondary": 3
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "frac(2,3) times frac(3,4)=frac(6,12)=frac(1,2)",
+    "text": "Multiplication asks for a fraction of another amount. Two thirds of three fourths covers six of twelve equal cells. Here we multiply the fractions; we are not combining two separate amounts, so a common denominator is unnecessary.",
+    "visual": {
+      "kind": "grid",
+      "rows": 3,
+      "cols": 4,
+      "filled": 6,
+      "fill_rows": 2,
+      "fill_cols": 3
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "frac(3,2) div frac(3,4)=2",
+    "text": "Division asks how many divisor-sized units fit. A length of one and a half contains two lengths of three fourths. Multiplying by the reciprocal gives the same count, provided the divisor is not zero.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        2
+      ],
+      "points": [
+        0,
+        0.75,
+        1.5
+      ],
+      "arrows": [
+        [
+          0,
+          0.75
+        ],
+        [
+          0.75,
+          1.5
+        ]
+      ],
+      "labels": [
+        "0",
+        "3/4",
+        "3/2"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

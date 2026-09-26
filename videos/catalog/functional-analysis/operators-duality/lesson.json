@@ -1,0 +1,140 @@
+{
+  "id": "functional-analysis.operators-duality",
+  "beats": [
+    {
+      "formula": "T(a u+b v)=a T(u)+b T(v)",
+      "text": "A linear operator preserves addition and scalar multiplication. On the plane, stretching the first coordinate by two while leaving the second unchanged is linear. The operator norm measures the largest possible output size for an input of norm at most one.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "T(x,y)=(2x,y), quad norm(T)=2",
+      "text": "For Euclidean length, this transformation enlarges no vector by more than a factor of two. The first coordinate unit vector achieves exactly that factor, so the operator norm is two. A single successful vector supplies the lower bound, not the upper bound.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "phi(x,y)=x+2y, quad norm(phi)=sqrt(5)",
+      "text": "A continuous linear functional outputs a scalar and belongs to the dual space. This functional is the dot product with one, two. Cauchy Schwarz bounds its magnitude by square root five times the input norm, and a parallel unit vector attains equality.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            2
+          ]
+        ],
+        "points": [
+          [
+            0.4472135955,
+            0.894427191
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "f_n(x)=frac(sin(n x),n), quad f_n'(x)=cos(n x)",
+      "text": "Linearity alone does not imply boundedness. On continuously differentiable functions over zero to two pi, using the uniform norm for inputs and outputs, differentiation sends these shrinking functions to derivatives of size one. No fixed amplification bound can work for every n.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          6.28318530718
+        ],
+        "y": [
+          -1.1,
+          1.1
+        ],
+        "curves": [
+          {
+            "f": "sin(6*x)/6",
+            "color": "blue",
+            "domain": [
+              0,
+              6.28318530718
+            ]
+          },
+          {
+            "f": "cos(6*x)",
+            "color": "pink",
+            "domain": [
+              0,
+              6.28318530718
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find the Euclidean operator norm of T(x,y)=(3x,−2y), giving an upper bound and an attaining input.",
+      "answer": "||T(x,y)||²=9x²+4y²≤9(x²+y²), so ||T||≤3. At (1,0), the ratio is 3; hence ||T||=3.",
+      "id": "functional-analysis.operators-duality.video-practice-1"
+    },
+    {
+      "prompt": "Find the norm of the Euclidean linear functional phi(x,y)=2x−y and a unit vector attaining it.",
+      "answer": "The norm is √5 by Cauchy Schwarz. The unit vector (2/√5,−1/√5) gives phi=√5.",
+      "id": "functional-analysis.operators-duality.video-practice-2"
+    },
+    {
+      "prompt": "Why does differentiation fail to be bounded under the uniform norm in the example f_n=sin(nx)/n on [0,2π]?",
+      "answer": "The input norm is 1/n and derivative norm is 1. The amplification ratio is n, which is unbounded, so no constant C can satisfy ||f′||∞≤C||f||∞ for every C1 function.",
+      "id": "functional-analysis.operators-duality.video-practice-3"
+    }
+  ],
+  "takeaway": "Bounded linear operators have a uniform amplification bound; linearity alone does not supply one.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Functional analysis",
+  "course_id": "functional-analysis",
+  "title": "Operators and duality",
+  "objective": "Analyze bounded linear operators, continuous functionals, and dual spaces.",
+  "index": 2,
+  "total": 3,
+  "prerequisites": [
+    "functional-analysis.banach-hilbert",
+    "linear-algebra.vector-spaces"
+  ]
+}

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.277
+Function transformations change inputs or outputs in controlled ways
+
+00:00:04.277 --> 00:00:09.015
+Start with the squaring graph, whose vertex is at the origin
+
+00:00:09.015 --> 00:00:17.200
+Keeping track of a recognizable point, such as this vertex, makes each later change easier to explain and verify.
+
+00:00:18.500 --> 00:00:23.742
+Replacing the input by x minus two shifts the graph right by two
+
+00:00:23.742 --> 00:00:29.791
+To deliver the old input zero into the rule, the new x must be two
+
+00:00:29.791 --> 00:00:35.033
+This input-solving explanation is more reliable than memorizing that inside signs look reversed.
+
+00:00:36.333 --> 00:00:40.515
+Multiplying outside the function doubles its outputs while leaving inputs fixed
+
+00:00:40.515 --> 00:00:48.499
+The vertex remains at two, zero, but a point one unit from the vertex now has height two instead of one
+
+00:00:48.499 --> 00:00:50.400
+This is a vertical stretch.
+
+00:00:51.700 --> 00:00:56.534
+Subtracting three after the function evaluation shifts every output down three
+
+00:00:56.534 --> 00:01:03.566
+The vertex becomes two, negative three, and the point at input three drops to negative one
+
+00:01:03.566 --> 00:01:08.400
+Read the operations in their actual order to combine transformations correctly.

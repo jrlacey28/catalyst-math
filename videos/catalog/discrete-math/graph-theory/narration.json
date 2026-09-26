@@ -1,0 +1,162 @@
+[
+  {
+    "formula": "V={A,B,C,D}, quad abs(E)=4",
+    "text": "A graph describes relationships through vertices and edges. These four vertices might represent places, with an edge whenever a direct connection exists. The geometry of the drawing is optional; which pairs are connected is the essential information.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "1+3+2+2=2 times 4",
+    "text": "A vertex's degree counts the edges touching it. The degrees here are one, three, two, and two. Adding them counts every undirected edge twice, once at each endpoint, which explains the degree-sum identity.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "A:1",
+        "B:3",
+        "C:2",
+        "D:2"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "active": [
+        1
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "A arrow.r B arrow.r D: quad \"2 edges\"",
+    "text": "A path follows connected edges. Without weights, a shortest path minimizes the number of edges, so reaching D from A through B takes two steps. A disconnected graph would not guarantee a path between every pair of vertices.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "active": [
+        0,
+        1,
+        3
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "A arrow.r B arrow.r C arrow.r D: quad 1+1+1=3",
+    "text": "Weights change the goal. If the direct B-to-D edge costs four, then the two-edge route from A costs five. The three-edge route through C costs only three. Fewest edges and least total cost are different optimization questions.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "weights": [
+        "1",
+        "1",
+        "4",
+        "1"
+      ],
+      "active": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

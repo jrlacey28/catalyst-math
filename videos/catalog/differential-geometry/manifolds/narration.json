@@ -1,0 +1,86 @@
+[
+  {
+    "formula": "S^1={(x,y):x^2+y^2=1}",
+    "text": "A manifold looks locally like a Euclidean space even when its overall shape is different. The circle is one-dimensional: a sufficiently short open arc can be described by one real coordinate, despite the circle sitting in a two-dimensional plane.",
+    "visual": {
+      "kind": "circle",
+      "angle": 1.0471975512,
+      "radius": 1,
+      "arc": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "(x,y)=(cos(theta),sin(theta)), quad -pi<theta<pi",
+    "text": "Angle gives a coordinate after removing the circle's leftmost point. Restricting the angle avoids repeated representations. The missing point needs another chart. No single chart is a homeomorphism from the whole circle onto an open real interval: inverse continuity matters.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1.3,
+        1.3
+      ],
+      "y": [
+        -1.3,
+        1.3
+      ],
+      "curves": [
+        {
+          "f": "sqrt(1-x*x)",
+          "color": "blue",
+          "domain": [
+            -1,
+            1
+          ]
+        },
+        {
+          "f": "-sqrt(1-x*x)",
+          "color": "blue",
+          "domain": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "holes": [
+        [
+          -1,
+          0
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "eta=theta \" or \" theta+2pi",
+    "text": "A second angle chart covers the missing point by cutting elsewhere. On each part of the overlap, the two coordinate descriptions differ by a constant full turn. These transition functions are smooth, which is the key compatibility required in a smooth atlas.",
+    "visual": {
+      "kind": "circle",
+      "angle": -1.5707963267948966,
+      "radius": 1,
+      "arc": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "(u,v) arrow.r (u,v,u^2+v^2)",
+    "text": "For a two-dimensional example, the paraboloid has coordinates u and v everywhere. Projection back to the first two coordinates gives the inverse chart. Coordinates describe the surface; they are not additional physical dimensions or proof that every surface admits one global chart.",
+    "visual": {
+      "kind": "surface",
+      "mode": "paraboloid"
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

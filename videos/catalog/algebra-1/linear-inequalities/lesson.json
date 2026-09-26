@@ -1,0 +1,122 @@
+{
+  "id": "algebra-1.linear-inequalities",
+  "beats": [
+    {
+      "formula": "3x+2<=17 arrow.r x<=5",
+      "text": "A linear inequality can represent a limit on resources. If each item costs three dollars plus a fixed two-dollar charge, staying within seventeen dollars requires three x plus two at most seventeen. Solving gives at most five items.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          8
+        ],
+        "points": [
+          5
+        ],
+        "interval": [
+          0,
+          5
+        ],
+        "labels": [
+          "5"
+        ]
+      }
+    },
+    {
+      "formula": "x>=2",
+      "text": "Now add another requirement: buy at least two items. This produces a second interval, extending rightward from two. Meeting one requirement is not sufficient; a valid purchase must satisfy the budget and the minimum quantity together.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          8
+        ],
+        "points": [
+          2
+        ],
+        "interval": [
+          2,
+          8
+        ],
+        "labels": [
+          "2"
+        ]
+      }
+    },
+    {
+      "formula": "2<=x<=5",
+      "text": "The overlap of the two solution sets runs from two through five, including both endpoints. This compound inequality is an intersection: every value inside meets both restrictions, while a value outside fails at least one of them.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          8
+        ],
+        "points": [
+          2,
+          5
+        ],
+        "interval": [
+          2,
+          5
+        ],
+        "labels": [
+          "2",
+          "5"
+        ]
+      }
+    },
+    {
+      "formula": "x in {2,3,4,5}",
+      "text": "Finally restore the context of whole items. Three and a half lies inside the real interval but is not a permitted whole-item count. The feasible answers are two, three, four, and five, after combining algebraic and contextual restrictions.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          7
+        ],
+        "points": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "labels": [
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Solve 5x+4≤29 over the real numbers.",
+      "answer": "Subtract four and divide by five: x≤5.",
+      "id": "algebra-1.linear-inequalities.video-practice-1"
+    },
+    {
+      "prompt": "Combine x>−1 with x≤6 and describe both endpoints.",
+      "answer": "−1<x≤6; negative one is excluded and six is included.",
+      "id": "algebra-1.linear-inequalities.video-practice-2"
+    },
+    {
+      "prompt": "A club needs at least three vans. Each van costs forty dollars and the budget is two hundred ten. List feasible whole van counts.",
+      "answer": "n≥3 and40n≤210 give3≤n≤5.25; whole feasible counts are3,4,5.",
+      "id": "algebra-1.linear-inequalities.video-practice-3"
+    }
+  ],
+  "takeaway": "Combine constraints by intersecting their solution sets, then apply the context.",
+  "scope": "Compound linear constraints, endpoints, and discrete feasible values.",
+  "course": "Algebra I",
+  "course_id": "algebra-1",
+  "title": "Linear inequalities",
+  "objective": "Solve and graph linear constraints, reversing order when multiplying by negatives.",
+  "index": 2,
+  "total": 10,
+  "prerequisites": [
+    "pre-algebra.inequalities",
+    "algebra-1.linear-equations"
+  ]
+}

@@ -1,0 +1,7 @@
+The sequence one over n appears to approach zero. A convergence proof turns that picture into a promise: for every positive error tolerance, eventually every remaining term lies within that distance of the proposed limit.
+
+Choose a tolerance of one tenth. Starting at n equals eleven, every term is smaller than one tenth because increasing the positive denominator decreases the fraction. Checking one small term alone would not control the whole remaining tail.
+
+For an arbitrary positive epsilon, choose an integer N larger than its reciprocal. Whenever n is at least N, one over n is at most one over N, which is smaller than epsilon. That proves convergence.
+
+Boundedness alone is weaker than convergence. Alternating positive and negative one stays bounded, yet its two subsequences settle at different values. No single small neighborhood can contain the entire tail, so this sequence does not converge.

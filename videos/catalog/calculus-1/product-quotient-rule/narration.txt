@@ -1,0 +1,7 @@
+When two factors change, the product has two first-order contributions. One changes the first factor while retaining the second; the other changes the second while retaining the first. Multiplying derivatives alone misses both contributions.
+
+For x squared times x plus three, the product rule gives two x times x plus three, plus x squared. Now distribute and collect like terms. The calculus rule comes first; ordinary algebra simplifies its result.
+
+For a quotient, differentiate the top times the bottom, then subtract the top times the differentiated bottom. Divide by the original bottom squared. Here the numerator becomes x plus four minus x minus one, leaving three.
+
+Sometimes factoring first is easier than using the quotient rule. This expression equals x plus four except at four, so its derivative is one on its original domain. The cancelled factor still leaves an excluded input.

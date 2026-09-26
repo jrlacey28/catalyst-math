@@ -1,0 +1,9 @@
+[
+  {"title":"Make it click","text":"What if math stopped feeling like a wall of symbols? Meet Catalyst. See the idea. Try it. Make it click.","lead":0.3,"tail":0.4},
+  {"title":"Start your copy","text":"Install Python, extract the offline ZIP, and open Start Catalyst on Windows. On Mac or Linux, run python three start dot py. Open the local address in your browser.","lead":0.25,"tail":0.5},
+  {"title":"Find your starting point","text":"Start with a placement check, or choose a course. Explore narrated lessons from counting to college mathematics, one idea at a time.","lead":0.25,"tail":0.5},
+  {"title":"Learn by doing","text":"Watch, then try three problems right below. Stuck? See an example, reveal why a step works, or open the calculator.","lead":0.25,"tail":0.5},
+  {"title":"Make it real","text":"Now make it real. Change an orbit. Test a gear ratio. Train a tiny model. Move the controls and see what your math actually does.","lead":0.25,"tail":0.5},
+  {"title":"Keep your progress","text":"Fresh independent checks earn stars on your skill tree. Your work saves automatically. Come back, review, and keep growing.","lead":0.25,"tail":0.5},
+  {"title":"Start one idea","text":"Free, open source, and yours to explore. Start with one idea. Build from there. Catalyst.","lead":0.25,"tail":1.1}
+]

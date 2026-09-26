@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.485
+Counting gives probabilities only after we identify equally likely outcomes
+
+00:00:04.485 --> 00:00:08.162
+Two independent fair dice produce thirty-six ordered face pairs
+
+00:00:08.162 --> 00:00:17.967
+The first die and second die have separate positions, so a two followed by a five differs from a five followed by a two.
+
+00:00:19.267 --> 00:00:26.557
+Six ordered pairs add to seven: one and six, two and five, three and four, and their reversals
+
+00:00:26.557 --> 00:00:31.012
+Divide those six favorable outcomes by the thirty-six equally likely pairs
+
+00:00:31.012 --> 00:00:35.467
+We count the underlying outcomes before grouping them by their sum.
+
+00:00:36.767 --> 00:00:40.090
+The possible sums themselves are not equally likely
+
+00:00:40.090 --> 00:00:44.244
+Only one ordered pair produces two, while six produce seven
+
+00:00:44.244 --> 00:00:52.967
+This histogram shows how many pairs belong to each sum, preventing the mistake of assigning every possible sum the same probability.
+
+00:00:54.267 --> 00:00:56.356
+Without replacement, later counts change
+
+00:00:56.356 --> 00:01:04.715
+From four marked objects and two plain objects, the probability of two marked draws is four sixths times three fifths
+
+00:01:04.715 --> 00:01:10.567
+After the first marked object stays out, only three marked objects remain among five.

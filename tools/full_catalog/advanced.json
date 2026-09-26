@@ -1,0 +1,5542 @@
+[
+  {
+    "id": "proof-foundations.mathematical-language",
+    "beats": [
+      {
+        "formula": "forall x in RR, exists y in RR: y > x",
+        "text": "Quantifiers say who gets chosen first. For every real number x, there exists a larger real number y. The choice of y may depend on x; it need not be one number that works for everybody.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -3,
+            5
+          ],
+          "points": [
+            -2,
+            -1,
+            2,
+            3
+          ],
+          "arrows": [
+            [
+              -2,
+              -1
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "y=x+1 arrow.r y>x",
+        "text": "Choose an arbitrary real x, then define y as x plus one. Subtracting x leaves the true inequality one greater than zero. This single argument covers every x, rather than merely checking the displayed examples.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -3,
+            4
+          ],
+          "curves": [
+            {
+              "f": "x+1",
+              "color": "gold",
+              "domain": [
+                -3,
+                3
+              ]
+            },
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "exists y in RR, forall x in RR: y>x",
+        "text": "Now reverse the order. One fixed y would have to exceed every real x. After that y is chosen, choose x equal to y plus one. The proposed universal inequality fails, so the reversed statement is false.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -2,
+            5
+          ],
+          "points": [
+            2,
+            3
+          ],
+          "labels": [
+            "y",
+            "x=y+1"
+          ],
+          "arrows": [
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "not (forall x: P(x)) equiv (exists x: not P(x))",
+        "text": "Negating an all statement requires one counterexample. Negating a some statement requires that every candidate fail. Keep the allowed universe fixed: changing from integers to positive integers can change whether the same sentence is true.",
+        "visual": {
+          "kind": "sets",
+          "left": [
+            "-2",
+            "-1"
+          ],
+          "right": [
+            "1",
+            "2"
+          ],
+          "both": [
+            "0"
+          ],
+          "highlight": "union"
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Write a true forall-exists statement saying every integer has a smaller integer, and give a formula for the witness.",
+        "answer": "For every integer n there exists an integer m<n. Choose m=n−1; it is an integer and m<n."
+      },
+      {
+        "prompt": "Is there a real c greater than every real x? Justify without listing examples.",
+        "answer": "No. For any proposed c, the real x=c+1 is larger, contradicting the requirement."
+      },
+      {
+        "prompt": "Negate: For every real x there is a real y with y²=x. Explain why the original is false.",
+        "answer": "There exists a real x such that for every real y, y²≠x. Take x=−1, since real squares are nonnegative."
+      }
+    ],
+    "takeaway": "Quantifier order controls whether later choices may depend on earlier ones.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "proof-foundations.proof-strategies",
+    "beats": [
+      {
+        "formula": "1+3+5=9=3^2",
+        "text": "A few odd-number sums suggest a square pattern, but examples cannot establish infinitely many cases. Induction separates the job into a starting case and a rule that carries an arbitrary successful case to the next.",
+        "visual": {
+          "kind": "grid",
+          "rows": 3,
+          "cols": 3,
+          "filled": 9
+        }
+      },
+      {
+        "formula": "1=1^2",
+        "text": "For the sum of the first n positive odd integers, the first case is n equals one. Both sides equal one. This supplies an actual starting point; the later implication alone would not guarantee any case begins.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            1
+          ],
+          "labels": [
+            "first odd number"
+          ]
+        }
+      },
+      {
+        "formula": "n^2+(2n+1)=(n+1)^2",
+        "text": "Assume the first n odd integers sum to n squared. The next odd integer is two n plus one. Adding it gives n squared plus two n plus one, exactly the expansion of the next square.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            9,
+            7,
+            16
+          ],
+          "labels": [
+            "old sum",
+            "next odd",
+            "new sum"
+          ]
+        }
+      },
+      {
+        "formula": "sum_(k=1)^n (2k-1)=n^2",
+        "text": "Because n was arbitrary, the step applies repeatedly from the verified first case. The picture of sixteen squares illustrates n equals four; the algebraic implication proves the entire chain for every positive integer n.",
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 4,
+          "filled": 16
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Verify the first four odd-number sum explicitly and compare with a square.",
+        "answer": "1+3+5+7=16=4². This verifies one case, not the general statement."
+      },
+      {
+        "prompt": "Assuming the first n positive odd integers sum to n², prove the claim for n+1.",
+        "answer": "Add the next odd number 2n+1. The result n²+2n+1=(n+1)² establishes the induction step."
+      },
+      {
+        "prompt": "Why would proving only the implication P(n) implies P(n+1) be insufficient? Give a false sequence of statements with that implication.",
+        "answer": "There may be no true starting case. P(n): n=n+1 is false for every n; each implication from a false premise is true, yet no case holds. A base case is essential."
+      }
+    ],
+    "takeaway": "An induction proof needs both a verified base case and an arbitrary-case propagation step.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "proof-foundations.relations-functions",
+    "beats": [
+      {
+        "formula": "f:RR arrow.r RR, quad f(x)=2x+3",
+        "text": "A function assigns each input exactly one output, but different questions concern how outputs are covered. Injective means no two distinct inputs collide. Surjective means every member of the stated target set receives an input.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            2
+          ],
+          "y": [
+            -2,
+            8
+          ],
+          "curves": [
+            {
+              "f": "2*x+3",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "2a+3=2b+3 arrow.r a=b",
+        "text": "To prove this linear rule injective, suppose two outputs are equal. Subtract three and divide by the nonzero coefficient two. The inputs must be equal. This checks all potential collisions, not just the two points shown.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -2,
+            5
+          ],
+          "points": [
+            1,
+            5
+          ],
+          "labels": [
+            "f(-1)",
+            "f(1)"
+          ]
+        }
+      },
+      {
+        "formula": "y=2x+3 arrow.r x=frac(y-3,2)",
+        "text": "To prove surjectivity onto the real numbers, start with any desired real output y. Solving gives input y minus three, divided by two. That input is real and substitution produces precisely the requested output.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "desired y",
+            "(y-3)/2",
+            "output y"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "weights": [
+            "solve",
+            "apply f"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "g(-2)=g(2)=4",
+        "text": "The square function has a collision at negative two and two, so it is not injective on all reals. Its surjectivity changes with the target: nonnegative reals are covered, while negative real targets are impossible.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -1,
+            9
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "gold",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              -2,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "segments": [
+            [
+              [
+                -2,
+                4
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Prove f(x)=5x−7 is injective on the reals.",
+        "answer": "If 5a−7=5b−7, adding seven then dividing by five gives a=b."
+      },
+      {
+        "prompt": "Find a real input yielding output 11 under f(x)=5x−7, then explain why any real output is possible.",
+        "answer": "x=18/5. For any real y, x=(y+7)/5 is real and f(x)=y; hence surjective onto R."
+      },
+      {
+        "prompt": "Describe domain and target choices that make x² bijective, and justify both properties.",
+        "answer": "Use domain [0,∞) and target [0,∞). Each target y has the unique nonnegative input √y; equality of nonnegative squares forces equality of inputs."
+      }
+    ],
+    "takeaway": "Injectivity concerns collisions; surjectivity depends on the declared target.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "real-analysis.real-numbers",
+    "beats": [
+      {
+        "formula": "S=(0,2), quad sup S=2",
+        "text": "An upper bound sits at or above every member of a set. For the open interval from zero to two, two is an upper bound even though it is not a member. A supremum is the least upper bound.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -1,
+            4
+          ],
+          "interval": [
+            0,
+            2
+          ],
+          "points": [
+            0,
+            2,
+            3
+          ],
+          "open": [
+            0,
+            2
+          ],
+          "labels": [
+            "0",
+            "least bound",
+            "another bound"
+          ]
+        }
+      },
+      {
+        "formula": "b<2 arrow.r frac(b+2,2)>b",
+        "text": "Why can no smaller number be an upper bound? If b lies between zero and two, its midpoint with two still belongs to the interval and exceeds b. For b at most zero, the member one already defeats it.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            3
+          ],
+          "points": [
+            1,
+            1.5,
+            2
+          ],
+          "arrows": [
+            [
+              1,
+              1.5
+            ]
+          ],
+          "labels": [
+            "b",
+            "(b+2)/2",
+            "2"
+          ]
+        }
+      },
+      {
+        "formula": "q>=0, quad q^2<2",
+        "text": "Now consider nonnegative rational numbers whose squares are below two. They form a nonempty set bounded above by two. Real completeness guarantees a real supremum. Further algebra shows this boundary squares to two, although it is not rational.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            1,
+            2
+          ],
+          "points": [
+            1.41421356237,
+            1,
+            1.4,
+            1.41,
+            1.4142
+          ],
+          "labels": [
+            "sqrt(2)",
+            "1"
+          ]
+        }
+      },
+      {
+        "formula": "sqrt(2) in.not QQ",
+        "text": "This illustrates the difference between approximation and existence. More decimal digits alone do not prove a limit exists in the chosen number system. Completeness supplies real least upper bounds; the rationals lack the required boundary in this example.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            1,
+            1.4,
+            1.41,
+            1.414,
+            1.4142
+          ],
+          "limit": 1.41421356237
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the supremum and maximum, if any, of the interval [−3,5). Explain the distinction.",
+        "answer": "The supremum is five. There is no maximum because five is excluded and every smaller member has a larger member still below five."
+      },
+      {
+        "prompt": "Prove that one is the supremum of {1−1/n:n is a positive integer}.",
+        "answer": "Every term is below one. Given b<1, choose n>1/(1−b); then 1−1/n>b. Thus no b<1 is an upper bound."
+      },
+      {
+        "prompt": "Why does a bounded increasing rational sequence need not converge to a rational number? Give an example.",
+        "answer": "The rational numbers are not complete. Increasing rational decimal truncations of √3 are bounded and converge in R to irrational √3, so there is no rational limit."
+      }
+    ],
+    "takeaway": "Real completeness guarantees a real supremum for each nonempty set bounded above.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "real-analysis.sequences-limits",
+    "beats": [
+      {
+        "formula": "a_n=frac(1,n)",
+        "text": "The sequence one over n appears to approach zero. A convergence proof turns that picture into a promise: for every positive error tolerance, eventually every remaining term lies within that distance of the proposed limit.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            1,
+            0.5,
+            0.333333,
+            0.25,
+            0.2,
+            0.166667,
+            0.142857,
+            0.125
+          ],
+          "limit": 0
+        }
+      },
+      {
+        "formula": "abs(a_n-0)<epsilon",
+        "text": "Choose a tolerance of one tenth. Starting at n equals eleven, every term is smaller than one tenth because increasing the positive denominator decreases the fraction. Checking one small term alone would not control the whole remaining tail.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            10.5,
+            16.5
+          ],
+          "y": [
+            0,
+            0.12
+          ],
+          "curves": [
+            {
+              "f": "1/x",
+              "color": "blue",
+              "domain": [
+                11,
+                16
+              ]
+            },
+            {
+              "f": "0.1",
+              "color": "gold",
+              "domain": [
+                11,
+                16
+              ]
+            }
+          ],
+          "points": [
+            [
+              11,
+              0.09090909090909091
+            ],
+            [
+              12,
+              0.08333333333333333
+            ],
+            [
+              13,
+              0.07692307692307693
+            ],
+            [
+              14,
+              0.07142857142857142
+            ],
+            [
+              15,
+              0.06666666666666667
+            ],
+            [
+              16,
+              0.0625
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "N>frac(1,epsilon), quad n>=N arrow.r frac(1,n)<epsilon",
+        "text": "For an arbitrary positive epsilon, choose an integer N larger than its reciprocal. Whenever n is at least N, one over n is at most one over N, which is smaller than epsilon. That proves convergence.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            0.3
+          ],
+          "points": [
+            0,
+            0.05,
+            0.1
+          ],
+          "interval": [
+            0,
+            0.1
+          ],
+          "open": [
+            0.1
+          ],
+          "labels": [
+            "limit",
+            "tail term",
+            "epsilon"
+          ]
+        }
+      },
+      {
+        "formula": "b_n=(-1)^n",
+        "text": "Boundedness alone is weaker than convergence. Alternating positive and negative one stays bounded, yet its two subsequences settle at different values. No single small neighborhood can contain the entire tail, so this sequence does not converge.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            1
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For a_n=3/n, choose an integer N guaranteeing |a_n|<0.02 for every n≥N.",
+        "answer": "We need 3/n<0.02, or n>150. N=151 works for every later index."
+      },
+      {
+        "prompt": "Prove (2n+1)/n converges to two using an arbitrary positive epsilon.",
+        "answer": "The difference from two is 1/n. Choose N>1/epsilon; for n≥N the error is below epsilon."
+      },
+      {
+        "prompt": "Give a bounded sequence that fails to converge and explain why a bounded plot is insufficient.",
+        "answer": "For example (−1)^n alternates between −1 and 1. Even and odd subsequences have different limits, so the full sequence has no single limit. Boundedness supplies only a containing interval."
+      }
+    ],
+    "takeaway": "Convergence controls every sufficiently late term for every positive tolerance.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "real-analysis.continuity-differentiation",
+    "beats": [
+      {
+        "formula": "f(x)=x^2, quad x in [1,3]",
+        "text": "The mean value theorem links an average change to an instantaneous rate. Its hypotheses matter: the function must be continuous on the closed interval and differentiable throughout the interior. Our square function satisfies both requirements.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            4
+          ],
+          "y": [
+            0,
+            10
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                3.1
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              9
+            ]
+          ],
+          "segments": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                9
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "frac(f(3)-f(1),3-1)=4",
+        "text": "The secant slope is nine minus one divided by three minus one, giving four. The theorem guarantees some interior input where the tangent slope is also four. It does not usually claim that input is the midpoint.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            4
+          ],
+          "y": [
+            0,
+            10
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                3.1
+              ]
+            },
+            {
+              "f": "4*x-3",
+              "color": "gold",
+              "domain": [
+                1,
+                3
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "f'(c)=2c=4 arrow.r c=2",
+        "text": "Here the derivative is two x, so solving for slope four gives c equals two. The tangent line through two, four is four x minus four. Its parallel direction makes the average and local rates visually comparable.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0.5,
+            3.5
+          ],
+          "y": [
+            0,
+            10
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0.5,
+                3.1
+              ]
+            },
+            {
+              "f": "4*x-4",
+              "color": "pink",
+              "domain": [
+                1,
+                3
+              ]
+            },
+            {
+              "f": "4*x-3",
+              "color": "gold",
+              "domain": [
+                1,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              4
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "f(x)=abs(x), quad x in [-1,1]",
+        "text": "Absolute value is continuous, but the corner at zero is not differentiable. Its endpoint secant slope is zero, while its existing interior derivatives are negative or positive one. Dropping a hypothesis destroys the promised conclusion.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1.5,
+            1.5
+          ],
+          "y": [
+            -0.2,
+            1.5
+          ],
+          "curves": [
+            {
+              "f": "abs(x)",
+              "color": "blue",
+              "domain": [
+                -1.5,
+                1.5
+              ]
+            }
+          ],
+          "segments": [
+            [
+              [
+                -1,
+                1
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "points": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Apply the mean value theorem to f(x)=x² on [2,6]. Find the promised c.",
+        "answer": "The average slope is (36−4)/4=8. Solve 2c=8, obtaining c=4 in (2,6). The polynomial meets both hypotheses."
+      },
+      {
+        "prompt": "For f(x)=x³ on [0,3], find all interior c satisfying the theorem's equation.",
+        "answer": "The secant slope is 27/3=9. Since f′(c)=3c², c=√3 is the only solution in (0,3)."
+      },
+      {
+        "prompt": "Explain why the theorem cannot be applied to 1/x on [−1,1], even though endpoint values exist.",
+        "answer": "The function is undefined at zero, so it is not continuous on the closed interval or differentiable throughout the interior. Endpoint values alone do not meet the hypotheses."
+      }
+    ],
+    "takeaway": "The mean value theorem requires continuity on the closed interval and differentiability inside.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "real-analysis.integration",
+    "beats": [
+      {
+        "formula": "integral_0^1 x d x",
+        "text": "To define area rigorously, trap it between quantities already understood. Divide the interval into equal pieces. For an increasing function, the left endpoint gives a lower rectangle height and the right endpoint gives an upper height.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.1
+          ],
+          "y": [
+            0,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "formula": "L_4=frac(1,4)(0+frac(1,4)+frac(1,2)+frac(3,4))=frac(3,8)",
+        "text": "With four pieces, each rectangle has width one quarter. The four lower heights are zero, one quarter, one half, and three quarters. Their sum times the shared width gives three eighths as the lower estimate.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0,
+            0.25,
+            0.5,
+            0.75
+          ],
+          "labels": [
+            "left 1",
+            "left 2",
+            "left 3",
+            "left 4"
+          ]
+        }
+      },
+      {
+        "formula": "U_n=frac(n+1,2n), quad L_n=frac(n-1,2n)",
+        "text": "For n equal pieces, summing the endpoint heights gives these upper and lower expressions. Their difference is one over n. As the partition gets finer, the entire uncertainty shrinks to zero, trapping the integral at one half.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            1,
+            0.75,
+            0.666667,
+            0.625,
+            0.6,
+            0.583333
+          ],
+          "limit": 0.5
+        }
+      },
+      {
+        "formula": "U_n-L_n=frac(1,n) arrow.r 0",
+        "text": "The finite pictures motivate the argument; the shrinking bound proves the result. More generally, a bounded function is Riemann integrable when partitions can make upper and lower sums arbitrarily close. Not every bounded function meets that condition.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.1
+          ],
+          "y": [
+            0,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For f(x)=x on [0,1] using two equal pieces, compute lower and upper sums.",
+        "answer": "Lower: (1/2)(0+1/2)=1/4. Upper: (1/2)(1/2+1)=3/4. Their gap is 1/2."
+      },
+      {
+        "prompt": "How many equal pieces guarantee the upper-minus-lower gap for f(x)=x is below 0.005?",
+        "answer": "The gap is 1/n. Strictly below 0.005 requires n>200, so 201 pieces suffice."
+      },
+      {
+        "prompt": "The function equals one at rational inputs in [0,1] and zero at irrational inputs. Explain its upper and lower sums.",
+        "answer": "Every nontrivial subinterval contains rational and irrational numbers. Its supremum is one and infimum zero, so every upper sum is one and lower sum zero. The function is not Riemann integrable."
+      }
+    ],
+    "takeaway": "Riemann integrability is established by making upper and lower sums arbitrarily close.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "real-analysis.function-sequences",
+    "beats": [
+      {
+        "formula": "f_n(x)=x^n, quad 0<=x<=1",
+        "text": "A sequence of functions changes an entire graph at each index. At any fixed input below one, repeated multiplication by that input drives the value toward zero. At input one, every function still equals one.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.05
+          ],
+          "y": [
+            0,
+            1.05
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            },
+            {
+              "f": "x**4",
+              "color": "gold",
+              "domain": [
+                0,
+                1
+              ]
+            },
+            {
+              "f": "x**12",
+              "color": "pink",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "f(x)=0 \" for \" x<1, quad f(1)=1",
+        "text": "This is pointwise convergence: each fixed input gets its own eventual control. But the limit jumps at one. The increasingly steep graphs near that endpoint show why controlling each location separately is not the same as controlling every location simultaneously.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.05
+          ],
+          "y": [
+            0,
+            1.05
+          ],
+          "curves": [
+            {
+              "f": "0",
+              "color": "green",
+              "domain": [
+                0,
+                1
+              ]
+            },
+            {
+              "f": "x**20",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              1
+            ]
+          ],
+          "holes": [
+            [
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "g_n(x)=frac(x,n), quad sup abs(g_n(x))=frac(1,n)",
+        "text": "Compare x divided by n on the same interval. The error from zero is at most one over n for every input at once. A single index therefore works across the whole interval, establishing uniform convergence.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.05
+          ],
+          "y": [
+            0,
+            1.05
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            },
+            {
+              "f": "x/3",
+              "color": "gold",
+              "domain": [
+                0,
+                1
+              ]
+            },
+            {
+              "f": "x/8",
+              "color": "green",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "sup_(x in [0,1]) abs(g_n(x)-0) arrow.r 0",
+        "text": "Uniform limits of continuous functions remain continuous. Pointwise limits need not, as the power example demonstrates. Exchanging limits with other operations requires an appropriate theorem; a visually settling sequence alone does not justify exchanging derivatives or integrals.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            1,
+            0.5,
+            0.333333,
+            0.25,
+            0.2,
+            0.166667
+          ],
+          "limit": 0
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Show that h_n(x)=(x+2)/n converges uniformly to zero on [0,1].",
+        "answer": "For every x in [0,1], |h_n(x)|≤3/n, and this bound tends to zero. Choose N>3/epsilon."
+      },
+      {
+        "prompt": "Does x^n converge uniformly to zero on [0,1/2]? Give an error bound.",
+        "answer": "Yes. The maximum error is (1/2)^n, which tends to zero uniformly."
+      },
+      {
+        "prompt": "Why can the discontinuous pointwise limit of x^n on [0,1] not be a uniform limit there?",
+        "answer": "Each x^n is continuous. A uniform limit of continuous functions would be continuous, but the limit is zero below one and one at one. Therefore convergence is not uniform."
+      }
+    ],
+    "takeaway": "Uniform convergence uses a single tail bound for every input in the domain.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "complex-analysis.holomorphic-functions",
+    "beats": [
+      {
+        "formula": "(1+i)^2=2i",
+        "text": "A complex input has two real directions. Squaring one plus i gives two i because the real terms cancel and the cross terms add. Complex differentiability asks for one limiting multiplier that works for changes approaching from every direction.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "frac((z+h)^2-z^2,h)=2z+h arrow.r 2z",
+        "text": "For a nonzero complex change h, expand the numerator and cancel its factor h. The quotient becomes two z plus h. Its limit is two z regardless of the direction of approach, so squaring is complex differentiable everywhere.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              0.5,
+              0
+            ],
+            [
+              0,
+              0.5
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "frac(overline(h),h)=1 \" or \" -1",
+        "text": "Complex conjugation looks smooth as a real reflection, but fails this stronger derivative test. Along real changes, the quotient is one. Along purely imaginary changes, it is negative one. Different directional limits rule out a complex derivative.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              -1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "u_x=v_y, quad u_y=-v_x",
+        "text": "Writing the function as u plus i v produces the Cauchy Riemann equations. Continuous first partial derivatives satisfying these equations throughout an open region are sufficient for holomorphicity there. Checking equations at an isolated point without regularity is not enough.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Expand (2+i)² and interpret the resulting point in the complex plane.",
+        "answer": "(2+i)²=4+4i+i²=3+4i, represented by (3,4)."
+      },
+      {
+        "prompt": "Use a difference quotient to prove the complex derivative of f(z)=z²+3z is 2z+3.",
+        "answer": "For h≠0, [f(z+h)−f(z)]/h=2z+h+3. As complex h→0 from any direction, this tends to 2z+3."
+      },
+      {
+        "prompt": "For f(z)=conjugate(z), compare the derivative quotient at zero using h=t and h=it, with real t≠0.",
+        "answer": "For h=t the quotient is t/t=1. For h=it it is −it/(it)=−1. The inconsistent limits show no complex derivative."
+      }
+    ],
+    "takeaway": "A complex derivative is a single limit over all approach directions, not just real ones.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "complex-analysis.contour-integrals",
+    "beats": [
+      {
+        "formula": "integral_gamma f(z) d z=integral_a^b f(gamma(t))gamma'(t)d t",
+        "text": "A contour integral adds changes along a directed path. Parameterize the path by a real variable t. Multiply the function value by the complex velocity of the path, then integrate in t; both path shape and orientation are accounted for.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "0",
+            "1",
+            "1+i"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "integral_0^(1+i) z d z=frac((1+i)^2,2)=i",
+        "text": "For the function z, an antiderivative is z squared divided by two. Every piecewise smooth path from zero to one plus i therefore gives i. The endpoint formula follows because this antiderivative exists throughout the region containing the path.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "points": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "z=e^(i t), quad frac(1,z)frac(d z,d t)=i",
+        "text": "Now travel counterclockwise around the unit circle while integrating one over z. The path velocity is i times z, so the product simplifies to i. Integrating from zero to two pi gives two pi i, not zero.",
+        "visual": {
+          "kind": "circle",
+          "angle": 6.28318530718,
+          "radius": 1,
+          "arc": true
+        }
+      },
+      {
+        "formula": "integral_gamma frac(1,z)d z=2pi i",
+        "text": "There is no contradiction with Cauchy's theorem: one over z is undefined at the enclosed origin. A holomorphic function on an open region containing the whole disk has zero integral around its boundary. Enclosed singularities change the situation.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1.5,
+            1.5
+          ],
+          "y": [
+            -1.5,
+            1.5
+          ],
+          "curves": [
+            {
+              "f": "sqrt(1-x*x)",
+              "color": "blue",
+              "domain": [
+                -1,
+                1
+              ]
+            },
+            {
+              "f": "-sqrt(1-x*x)",
+              "color": "blue",
+              "domain": [
+                -1,
+                1
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ]
+          ],
+          "labels": [
+            "singularity"
+          ],
+          "equal": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Compute the contour integral of 2z from zero to 2+i along any piecewise smooth path.",
+        "answer": "An antiderivative is z², so the integral is (2+i)²=3+4i."
+      },
+      {
+        "prompt": "What is the integral of 1/z around the unit circle traversed once clockwise? Explain the sign.",
+        "answer": "It is −2πi. Reversing the orientation negates the counterclockwise integral."
+      },
+      {
+        "prompt": "Why is the integral of 1/z around a circle centered at three with radius one equal to zero?",
+        "answer": "The closed disk does not contain zero. The function 1/z is holomorphic on an open set containing that disk, so Cauchy's theorem applies and the boundary integral is zero."
+      }
+    ],
+    "takeaway": "Contour orientation and the region where a function is holomorphic both matter.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "complex-analysis.power-series-residues",
+    "beats": [
+      {
+        "formula": "frac(1,1-z)=sum_(n=0)^infinity z^n, quad abs(z)<1",
+        "text": "Inside the unit disk, a geometric power series equals one divided by one minus z. Multiplying a finite partial sum by one minus z leaves one minus a small remainder. The condition on absolute value makes that remainder vanish.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -0.8,
+            0.8
+          ],
+          "y": [
+            0,
+            5
+          ],
+          "curves": [
+            {
+              "f": "1/(1-x)",
+              "color": "blue",
+              "domain": [
+                -0.8,
+                0.8
+              ]
+            },
+            {
+              "f": "1+x+x*x",
+              "color": "gold",
+              "domain": [
+                -0.8,
+                0.8
+              ]
+            },
+            {
+              "f": "1+x+x*x+x**3+x**4",
+              "color": "pink",
+              "domain": [
+                -0.8,
+                0.8
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "f(z)=frac(1,z(z-2))",
+        "text": "Near a singularity, a Laurent expansion may also contain negative powers. The coefficient of one over z is called the residue at zero. For this simple pole, multiply by z and evaluate the remaining continuous factor at zero.",
+        "visual": {
+          "kind": "plane",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "vectors": [
+            [
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "\"Residue at zero\"=frac(1,0-2)=-frac(1,2)",
+        "text": "The residue at zero is negative one half. Around the positively oriented unit circle, zero lies inside and the other pole, two, lies outside. The residue theorem gives two pi i times the enclosed residue, hence negative pi i.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1.5,
+            2.5
+          ],
+          "y": [
+            -1.5,
+            1.5
+          ],
+          "curves": [
+            {
+              "f": "sqrt(1-x*x)",
+              "color": "blue",
+              "domain": [
+                -1,
+                1
+              ]
+            },
+            {
+              "f": "-sqrt(1-x*x)",
+              "color": "blue",
+              "domain": [
+                -1,
+                1
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "labels": [
+            "inside pole",
+            "outside pole"
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "\"Residues\"=-frac(1,2)+frac(1,2)=0",
+        "text": "A counterclockwise circle of radius three encloses both simple poles. Their residues cancel, so that contour integral is zero. The rule assumes isolated singularities inside and none on the contour; a path through a pole requires different treatment.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3.5,
+            3.5
+          ],
+          "y": [
+            -3.5,
+            3.5
+          ],
+          "curves": [
+            {
+              "f": "sqrt(9-x*x)",
+              "color": "green",
+              "domain": [
+                -3,
+                3
+              ]
+            },
+            {
+              "f": "-sqrt(9-x*x)",
+              "color": "green",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "labels": [
+            "-1/2",
+            "+1/2"
+          ],
+          "equal": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Give the first four terms of 1/(1−z/2) and its disk of convergence.",
+        "answer": "1+z/2+z²/4+z³/8+…; convergence holds for |z/2|<1, equivalently |z|<2."
+      },
+      {
+        "prompt": "Find the residue at z=1 of 1/((z−1)(z+3)).",
+        "answer": "It is lim(z→1)(z−1)/((z−1)(z+3))=1/4."
+      },
+      {
+        "prompt": "Integrate 1/((z−1)(z+3)) around the unit-radius circle centered at one, counterclockwise. Explain which pole contributes.",
+        "answer": "Only z=1 is inside; z=−3 is outside. The integral is 2πi(1/4)=πi/2. No pole lies on this contour."
+      }
+    ],
+    "takeaway": "A residue is the coefficient of the negative first power; contours count enclosed singularities.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "abstract-algebra.groups",
+    "beats": [
+      {
+        "formula": "R_(pi/2) R_(pi/2)=R_pi",
+        "text": "A group records reversible operations and how they combine. Consider the four rotations of a square that preserve its position. Doing a quarter turn and then another quarter turn has the same effect as one half turn.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "matrix": [
+            [
+              0,
+              -1
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "0+1=1, quad 1+3=0 \" (mod 4)\"",
+        "text": "Label those rotations zero, one, two, and three quarter turns. Composition becomes addition modulo four. Zero acts as the identity. Three quarter turns undo one quarter turn, because together they make a full turn back to the start.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "weights": [
+            "+1",
+            "+1",
+            "+1",
+            "+1"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "(a+b)+c=a+(b+c) \" (mod 4)\"",
+        "text": "The group axioms require closure, an identity, inverses, and associativity. Associativity changes parentheses while keeping operation order. It follows here from composing rotations, or from integer addition before reducing the resulting remainder modulo four.",
+        "visual": {
+          "kind": "circle",
+          "angle": 4.71238898038,
+          "radius": 2,
+          "arc": true
+        }
+      },
+      {
+        "formula": "2+2=0 \" (mod 4)\"",
+        "text": "A half turn is its own inverse. These four rotations also commute, but commutativity is not a general group axiom. Rotations and reflections together form a larger symmetry group where swapping operation order can change the result.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              2,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              -1,
+              0
+            ],
+            [
+              0,
+              -1
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "In quarter-turn notation modulo four, compute the combination of three turns and two turns.",
+        "answer": "3+2=5≡1 modulo four, so the combined operation is a single quarter turn."
+      },
+      {
+        "prompt": "Find the inverse of each element in the additive group modulo five.",
+        "answer": "0 inverse 0; 1 inverse 4; 2 inverse 3; 3 inverse 2; 4 inverse 1. Each pair sums to zero modulo five."
+      },
+      {
+        "prompt": "Explain the difference between associativity and commutativity with symbolic statements.",
+        "answer": "Associativity is (a*b)*c=a*(b*c), which changes grouping but not order. Commutativity is a*b=b*a, which swaps order. Every group is associative, but not every group is commutative."
+      }
+    ],
+    "takeaway": "A group combines reversible operations; associativity does not mean commutativity.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "abstract-algebra.rings",
+    "beats": [
+      {
+        "formula": "2(1+2)=2+4=6",
+        "text": "A ring supports addition, subtraction, and multiplication with distributive laws. The integers are a familiar example. Multiplication need not supply inverses for every nonzero element: dividing one by two leaves the integer system altogether.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            2,
+            4
+          ],
+          "labels": [
+            "2 times 1",
+            "2 times 2"
+          ]
+        }
+      },
+      {
+        "formula": "2*3=0 \" (mod 6)\"",
+        "text": "Now calculate with remainders modulo six. Addition and multiplication still make a ring, but two times three becomes zero. Both factors were nonzero classes. Such factors are called zero divisors, and they prevent familiar cancellation arguments.",
+        "visual": {
+          "kind": "grid",
+          "rows": 2,
+          "cols": 3,
+          "filled": 6
+        }
+      },
+      {
+        "formula": "2*1=2*4 \" (mod 6)\"",
+        "text": "For example, twice one and twice four both leave remainder two. Cancelling the common two would falsely say one equals four. Division by a factor requires an appropriate inverse or another justified cancellation property, not merely matching notation.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "1",
+            "4",
+            "2"
+          ],
+          "edges": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "weights": [
+            "times 2",
+            "times 2"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "2u \" is never \" 1 \" (mod 6)\"",
+        "text": "The multiples of two modulo six are zero, two, and four, so two has no multiplicative inverse. A field is a nontrivial commutative ring with identity in which every nonzero element has a multiplicative inverse.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            6
+          ],
+          "points": [
+            0,
+            2,
+            4
+          ],
+          "labels": [
+            "0",
+            "2",
+            "4"
+          ],
+          "arrows": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              4,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find a pair of nonzero zero divisors modulo ten and verify their product.",
+        "answer": "The classes two and five are nonzero, but 2·5=10≡0 modulo ten."
+      },
+      {
+        "prompt": "Solve 2x≡2 modulo six by checking all six residue classes. Why can't you divide both sides by two within this ring?",
+        "answer": "x≡1 or 4 modulo six. The class two has no inverse; cancelling it would incorrectly discard the second solution."
+      },
+      {
+        "prompt": "Explain why ordinary integers form a ring but not a field.",
+        "answer": "They are closed under addition, subtraction and multiplication and satisfy the ring laws. The nonzero integer two has no integer multiplicative inverse, so the field inverse requirement fails."
+      }
+    ],
+    "takeaway": "Nonzero factors can multiply to zero in some rings, making cancellation invalid.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "abstract-algebra.fields",
+    "beats": [
+      {
+        "formula": "a != 0 arrow.r a a^(-1)=1",
+        "text": "A field permits addition, subtraction, multiplication, and division by every nonzero element. Rational numbers have this property. Zero remains excluded from division: multiplying zero by any candidate inverse still gives zero, never the required identity one.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            4
+          ],
+          "points": [
+            0.5,
+            1,
+            2
+          ],
+          "labels": [
+            "1/2",
+            "1",
+            "2"
+          ]
+        }
+      },
+      {
+        "formula": "3*2=1 \" (mod 5)\"",
+        "text": "Finite fields are possible too. Modulo the prime five, three has inverse two because their product six leaves remainder one. To solve three x equals four modulo five, multiply by two and reduce eight to three.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "x",
+            "3x",
+            "2(3x)"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "weights": [
+            "times 3",
+            "times 2"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "3x=4 \" (mod 5)\" arrow.r x=3",
+        "text": "Check the result directly: three times three is nine, with remainder four. Modulo a prime, every nonzero remainder has an inverse. For composite moduli that statement can fail, so being a remainder system alone does not guarantee a field.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            5,
+            4
+          ],
+          "labels": [
+            "5",
+            "4"
+          ]
+        }
+      },
+      {
+        "formula": "i^2=-1, quad x^2+1=0",
+        "text": "A field also determines which polynomial equations have solutions within it. The real numbers contain no square root of negative one. Extending to complex numbers adds i and its negative as roots, while keeping valid field arithmetic.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              -1
+            ]
+          ],
+          "points": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the inverse of four modulo seven, showing the product.",
+        "answer": "The inverse is two because 4·2=8≡1 modulo seven."
+      },
+      {
+        "prompt": "Solve 4x≡6 modulo seven using that inverse.",
+        "answer": "Multiply by two: x≡12≡5 modulo seven. Check 4·5=20≡6."
+      },
+      {
+        "prompt": "State why x²−2 has no rational root but does have real roots. What changes when the field changes?",
+        "answer": "Its real roots are ±√2, both irrational. They are unavailable in Q but belong to R. The polynomial is unchanged; the allowed candidate elements change."
+      }
+    ],
+    "takeaway": "Division requires a nonzero invertible element, and polynomial roots depend on the field.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "number-theory.divisibility",
+    "beats": [
+      {
+        "formula": "84=2*30+24",
+        "text": "The greatest common divisor is the largest positive integer dividing both inputs. The Euclidean algorithm repeatedly replaces a pair by the smaller number and the remainder. Subtracting a multiple preserves exactly the common divisors.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            90
+          ],
+          "points": [
+            0,
+            30,
+            60,
+            84
+          ],
+          "arrows": [
+            [
+              0,
+              30
+            ],
+            [
+              30,
+              60
+            ],
+            [
+              60,
+              84
+            ]
+          ],
+          "labels": [
+            "0",
+            "30",
+            "60",
+            "84"
+          ]
+        }
+      },
+      {
+        "formula": "30=24+6, quad 24=4*6",
+        "text": "After dividing eighty-four by thirty, the remainder is twenty-four. Dividing thirty by twenty-four leaves six; dividing twenty-four by six leaves zero. The last nonzero remainder is six, so the greatest common divisor is six.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            30,
+            24,
+            6
+          ],
+          "labels": [
+            "30",
+            "24",
+            "remainder 6"
+          ]
+        }
+      },
+      {
+        "formula": "6=30-24=3*30-84",
+        "text": "Reverse the substitutions to express the divisor as an integer combination of the original numbers. Six is thirty minus twenty-four, and twenty-four is eighty-four minus twice thirty. Combining these expressions gives three times thirty minus eighty-four.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            100
+          ],
+          "points": [
+            6,
+            84,
+            90
+          ],
+          "arrows": [
+            [
+              0,
+              90
+            ],
+            [
+              90,
+              6
+            ]
+          ],
+          "labels": [
+            "gcd",
+            "84",
+            "90"
+          ]
+        }
+      },
+      {
+        "formula": "d|84, d|30 arrow.r d|6",
+        "text": "Why does the combination matter? Every common divisor must divide every integer combination, including six. Since six itself divides both numbers, it is greatest. This is a proof of the answer, not merely an observed remainder pattern.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "labels": [
+            "30 as five groups of six"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Use the Euclidean algorithm to find gcd(66,42), showing each remainder.",
+        "answer": "66=42+24;42=24+18;24=18+6;18=3·6. The gcd is six."
+      },
+      {
+        "prompt": "Express gcd(66,42) as an integer combination of 66 and 42.",
+        "answer": "6=24−18=2·24−42=2(66−42)−42=2·66−3·42."
+      },
+      {
+        "prompt": "Prove that every integer dividing both 35 and 22 must divide one.",
+        "answer": "The Euclidean algorithm gives 1=8·22−5·35. Any common divisor divides that integer combination, hence divides one; the gcd is one."
+      }
+    ],
+    "takeaway": "The Euclidean algorithm preserves common divisors and produces a checkable integer combination.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "number-theory.modular-arithmetic",
+    "beats": [
+      {
+        "formula": "14 equiv 2 \" (mod 12)\"",
+        "text": "Congruence means two integers differ by a multiple of the modulus. Fourteen and two differ by twelve, so they represent the same remainder class. We can add and multiply classes consistently, but division needs an extra condition.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            15
+          ],
+          "points": [
+            2,
+            14
+          ],
+          "arrows": [
+            [
+              2,
+              14
+            ]
+          ],
+          "labels": [
+            "2",
+            "14"
+          ]
+        }
+      },
+      {
+        "formula": "7*7 equiv 1 \" (mod 12)\"",
+        "text": "Seven is invertible modulo twelve because forty-nine leaves remainder one. Its inverse is therefore seven itself. This works because seven and twelve have greatest common divisor one; an arbitrary nonzero remainder need not be invertible.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "1",
+            "7"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "weights": [
+            "times 7"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "7x equiv 5 arrow.r x equiv 35 equiv 11 \" (mod 12)\"",
+        "text": "Multiply the congruence seven x equals five by the inverse seven. The left side becomes x and the right becomes thirty-five, equivalent to eleven. Checking seven times eleven gives seventy-seven, whose remainder modulo twelve is five.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            36
+          ],
+          "points": [
+            5,
+            11,
+            35
+          ],
+          "arrows": [
+            [
+              35,
+              11
+            ]
+          ],
+          "labels": [
+            "5",
+            "11",
+            "35"
+          ]
+        }
+      },
+      {
+        "formula": "2x equiv 1 \" (mod 6): no solution\"",
+        "text": "Modulo six, every product of two with an integer has an even remainder. It can never equal the odd remainder one. A failed inverse does not permit formal cancellation; depending on the target, a congruence may have no solutions or several.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "0",
+            "2",
+            "4"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "weights": [
+            "+2",
+            "+2",
+            "+2"
+          ],
+          "directed": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Solve 5x≡3 modulo eight and verify the answer.",
+        "answer": "The inverse of five is five because 25≡1. Therefore x≡15≡7; 5·7=35≡3."
+      },
+      {
+        "prompt": "Find all solutions of 3x≡6 modulo nine.",
+        "answer": "The solutions modulo nine are x=2,5,8. Equivalently x≡2 modulo three."
+      },
+      {
+        "prompt": "Explain why 4x≡3 modulo ten has no integer solution.",
+        "answer": "Every left-hand side is even, while an integer congruent to three modulo ten is odd. Equivalently gcd(4,10)=2 does not divide three."
+      }
+    ],
+    "takeaway": "Multiplication by a modular inverse is justified only when the factor is coprime to the modulus.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "number-theory.diophantine-equations",
+    "beats": [
+      {
+        "formula": "6x+9y=15, quad x,y in ZZ",
+        "text": "A Diophantine equation asks for integer solutions, not merely points on a continuous curve. Six x plus nine y equals fifteen draws a line, but only the points with integer coordinates meet the arithmetic requirement.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            5
+          ],
+          "y": [
+            -2,
+            4
+          ],
+          "curves": [
+            {
+              "f": "(15-6*x)/9",
+              "color": "blue",
+              "domain": [
+                -3,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              -2,
+              3
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              -1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "2x+3y=5, quad (x,y)=(1,1)",
+        "text": "Both coefficients and the target share a factor of three, so divide the entire equation by three. The simpler equation has the solution one, one. This legal division preserves every solution because it divides an equality by a nonzero constant.",
+        "visual": {
+          "kind": "plane",
+          "points": [
+            [
+              1,
+              1
+            ]
+          ],
+          "vectors": [
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x=1+3t, quad y=1-2t, quad t in ZZ",
+        "text": "Increasing x by three adds six to twice x, while decreasing y by two subtracts six from three y. The changes cancel. Every integer t therefore gives a solution, and subtracting two solutions shows this parameterization captures them all.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            5
+          ],
+          "y": [
+            -2,
+            4
+          ],
+          "curves": [
+            {
+              "f": "(5-2*x)/3",
+              "color": "blue",
+              "domain": [
+                -3,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              -2,
+              3
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              4,
+              -1
+            ]
+          ],
+          "segments": [
+            [
+              [
+                -2,
+                3
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                -1
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "6x+9y=14 \" has no integer solution\"",
+        "text": "Changing the target to fourteen destroys solvability: the left side is always divisible by three, while fourteen is not. More generally, an integer linear equation has integer solutions exactly when the greatest common divisor of its coefficients divides its target.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            15
+          ],
+          "points": [
+            0,
+            3,
+            6,
+            9,
+            12,
+            14,
+            15
+          ],
+          "labels": [
+            "0",
+            "3",
+            "6",
+            "9",
+            "12",
+            "14",
+            "15"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find one integer solution of 4x+7y=11.",
+        "answer": "x=1,y=1 works because 4+7=11."
+      },
+      {
+        "prompt": "Give all integer solutions of 4x+7y=11 and verify the parameterization.",
+        "answer": "x=1+7t,y=1−4t for integer t. Substitution cancels the t terms. Differences between solutions satisfy 4Δx=−7Δy, implying Δx is a multiple of seven."
+      },
+      {
+        "prompt": "Explain why 8x+12y=18 has no integer solution.",
+        "answer": "Every left-hand side is divisible by gcd(8,12)=4, but eighteen is not divisible by four."
+      }
+    ],
+    "takeaway": "An integer equation requires both a solvability condition and an integer parameterization.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "differential-equations.odes",
+    "beats": [
+      {
+        "formula": "y'=-2y, quad y(0)=3",
+        "text": "A differential equation specifies a rate in terms of the unknown quantity. Here the rate is negative twice the current value. Starting at three, a positive solution decreases quickly at first and more slowly as its value approaches zero.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3
+          ],
+          "y": [
+            0,
+            3.5
+          ],
+          "curves": [
+            {
+              "f": "3*exp(-2*x)",
+              "color": "blue",
+              "domain": [
+                0,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              3
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "frac(y',y)=-2 arrow.r log(y)=-2t+C",
+        "text": "For a positive candidate solution, divide by y and integrate. The derivative of the logarithm is y prime divided by y, so the logarithm equals negative twice time plus a constant. Positivity justifies this particular logarithm expression.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2
+          ],
+          "y": [
+            -4,
+            2
+          ],
+          "curves": [
+            {
+              "f": "log(3)-2*x",
+              "color": "gold",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              1.09861228867
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "y(t)=3e^(-2t)",
+        "text": "Exponentiating gives a constant times the exponential. The initial value sets that constant to three. Differentiate the proposed formula to check the rate equation, and substitute time zero separately to check the initial condition. Both checks are necessary.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3
+          ],
+          "y": [
+            0,
+            3.5
+          ],
+          "curves": [
+            {
+              "f": "3*exp(-2*x)",
+              "color": "blue",
+              "domain": [
+                0,
+                3
+              ]
+            },
+            {
+              "f": "exp(-2*x)",
+              "color": "pink",
+              "domain": [
+                0,
+                3
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "y(t)=y_0 e^(-2t)",
+        "text": "The final formula also works for negative initial values. The identically zero solution must be checked directly because dividing by y excluded it earlier. Every real initial value approaches the zero equilibrium, illustrating stability for this particular linear equation.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3
+          ],
+          "y": [
+            -2.5,
+            3.5
+          ],
+          "curves": [
+            {
+              "f": "3*exp(-2*x)",
+              "color": "blue",
+              "domain": [
+                0,
+                3
+              ]
+            },
+            {
+              "f": "-2*exp(-2*x)",
+              "color": "pink",
+              "domain": [
+                0,
+                3
+              ]
+            },
+            {
+              "f": "0",
+              "color": "green",
+              "domain": [
+                0,
+                3
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Verify that y(t)=4e^(−3t) satisfies y′=−3y and y(0)=4.",
+        "answer": "Its derivative is −12e^(−3t)=−3y, and its value at zero is four."
+      },
+      {
+        "prompt": "Solve y′=−3y with y(0)=−2 and explain why the solution stays negative.",
+        "answer": "y(t)=−2e^(−3t). The exponential is positive for every real t, so the sign remains negative."
+      },
+      {
+        "prompt": "When separating y′=y(1−y) by dividing by y(1−y), which constant solutions would be lost unless checked separately?",
+        "answer": "y=0 and y=1 both make y(1−y)=0 and have derivative zero. Division excludes them, so they must be checked in the original equation."
+      }
+    ],
+    "takeaway": "Verify both the differential equation and initial condition, and recover solutions excluded by division.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "differential-equations.pdes",
+    "beats": [
+      {
+        "formula": "u_t=u_(x x), quad 0<=x<=pi",
+        "text": "A partial differential equation relates changes in several variables. In the heat equation, u is temperature departure, x is position, and t is time. The time rate equals spatial curvature in these chosen units, which describes the smoothing of temperature profiles.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3.14159265359
+          ],
+          "y": [
+            -1.1,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "sin(x)",
+              "color": "blue",
+              "domain": [
+                0,
+                3.14159265359
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "u(x,t)=e^(-t)sin(x)",
+        "text": "Try a sine-shaped profile whose amplitude decays exponentially. Differentiating with respect to time gives negative u. Differentiating twice with respect to position also gives negative u. The proposed formula therefore satisfies the equation at every interior position. The gold curve shows time one.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3.14159265359
+          ],
+          "y": [
+            -1.1,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "sin(x)",
+              "color": "blue",
+              "domain": [
+                0,
+                3.14159265359
+              ]
+            },
+            {
+              "f": "exp(-1)*sin(x)",
+              "color": "gold",
+              "domain": [
+                0,
+                3.14159265359
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "v(x,t)=e^(-4t)sin(2x)",
+        "text": "Doubling the spatial frequency introduces a factor of negative four after two spatial derivatives. The amplitude must therefore decay as e to negative four t. At time one, the gold profile is nearly flat: finer temperature variations smooth away faster.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3.14159265359
+          ],
+          "y": [
+            -1.1,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "sin(2*x)",
+              "color": "pink",
+              "domain": [
+                0,
+                3.14159265359
+              ]
+            },
+            {
+              "f": "exp(-4)*sin(2*x)",
+              "color": "gold",
+              "domain": [
+                0,
+                3.14159265359
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "u(0,t)=u(pi,t)=0, quad u(x,0)=sin(x)",
+        "text": "An equation alone does not select a unique temperature history. Our sine solution also meets zero temperature departure at both ends and the specified initial profile. Always state the spatial region, boundary conditions, and initial data before claiming a model is solved.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3.14159265359
+          ],
+          "y": [
+            0,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "sin(x)",
+              "color": "blue",
+              "domain": [
+                0,
+                3.14159265359
+              ]
+            },
+            {
+              "f": "exp(-2)*sin(x)",
+              "color": "green",
+              "domain": [
+                0,
+                3.14159265359
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              3.14159265359,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Verify u(x,t)=e^(−9t)sin(3x) satisfies u_t=u_xx.",
+        "answer": "u_t=−9e^(−9t)sin(3x), and two x-derivatives give the same expression."
+      },
+      {
+        "prompt": "For u_t=2u_xx, what exponential factor must multiply sin(2x) to obtain a separated solution?",
+        "answer": "Use e^(−8t)sin(2x), since u_xx=−4u and u_t must equal −8u."
+      },
+      {
+        "prompt": "State the initial and boundary conditions on [0,π] satisfied by 2e^(−t)sin(x). Why are those data part of the problem?",
+        "answer": "Initial profile u(x,0)=2sin(x); endpoints u(0,t)=u(π,t)=0. They select this solution among many solutions of the same PDE."
+      }
+    ],
+    "takeaway": "A PDE solution must satisfy the equation together with the stated initial and boundary data.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "optimization.convexity",
+    "beats": [
+      {
+        "formula": "f(x)=x^2",
+        "text": "A convex function lies at or below every chord joining two points on its graph. This is a statement about all mixtures of two inputs, not simply about a graph looking bowl shaped in a particular drawing.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            4
+          ],
+          "y": [
+            0,
+            10
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                -2,
+                3.1
+              ]
+            }
+          ],
+          "points": [
+            [
+              -1,
+              1
+            ],
+            [
+              3,
+              9
+            ]
+          ],
+          "segments": [
+            [
+              [
+                -1,
+                1
+              ],
+              [
+                3,
+                9
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "f(1)=1 <= frac(f(-1)+f(3),2)=5",
+        "text": "Take inputs negative one and three. Their midpoint is one, where the square function equals one. The midpoint of their two output values is five. The lower function value illustrates the convexity inequality for this particular pair.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            4
+          ],
+          "y": [
+            0,
+            10
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                -2,
+                3.1
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "segments": [
+            [
+              [
+                -1,
+                1
+              ],
+              [
+                3,
+                9
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                5
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(1-t)a+t b in [-2,4], quad 0<=t<=1",
+        "text": "A convex feasible set contains the whole segment between any two of its points. An interval has this property. Keeping mixtures feasible is crucial when using a convex objective to compare a nearby candidate with a distant alternative.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -3,
+            5
+          ],
+          "interval": [
+            -2,
+            4
+          ],
+          "points": [
+            -2,
+            1,
+            4
+          ],
+          "labels": [
+            "a",
+            "midpoint",
+            "b"
+          ]
+        }
+      },
+      {
+        "formula": "f((1-t)x+t y)<f(x), quad 0<t<1, quad f(y)<f(x)",
+        "text": "For a convex objective on a convex set, every local minimum is global. If a lower point existed, convexity would give lower values along the segment arbitrarily near the supposed minimum. That contradiction explains the conclusion; a plotted example alone would not.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            2
+          ],
+          "y": [
+            0,
+            4.5
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1.5,
+              2.25
+            ]
+          ],
+          "segments": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1.5,
+                2.25
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Check the midpoint convexity inequality for f(x)=x² at a=0 and b=4.",
+        "answer": "f(2)=4≤(f(0)+f(4))/2=8."
+      },
+      {
+        "prompt": "Is the set [−2,−1] union [1,2] convex? Give a decisive example.",
+        "answer": "No. It contains −1 and 1, but their midpoint zero is not in the set."
+      },
+      {
+        "prompt": "Explain why the local-to-global minimum argument needs the feasible set to be convex.",
+        "answer": "The proof moves a small distance along a segment toward a better point. Convexity of the feasible set guarantees those intermediate points remain feasible; without it the comparison could leave the allowed set."
+      }
+    ],
+    "takeaway": "Convexity controls every segment and turns local minima into global minima on convex feasible sets.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "optimization.unconstrained",
+    "beats": [
+      {
+        "formula": "f(x)=(x-2)^2, quad f'(x)=2(x-2)",
+        "text": "Unconstrained optimization searches without an additional feasible-set restriction. For this quadratic, the derivative points uphill. Moving a small distance opposite its sign moves toward the minimum at two, where the derivative is zero.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            4
+          ],
+          "y": [
+            0,
+            9
+          ],
+          "curves": [
+            {
+              "f": "(x-2)**2",
+              "color": "blue",
+              "domain": [
+                -1,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              4
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x_(n+1)=x_n-frac(1,4)2(x_n-2)",
+        "text": "Gradient descent subtracts a step size times the derivative. With step size one quarter and starting point zero, the next input is one. Repeating gives one and a half, then one and three quarters: the error halves each time.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -0.5,
+            3
+          ],
+          "y": [
+            0,
+            6.5
+          ],
+          "curves": [
+            {
+              "f": "(x-2)**2",
+              "color": "blue",
+              "domain": [
+                -0.5,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1.5,
+              0.25
+            ],
+            [
+              1.75,
+              0.0625
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x_(n+1)-2=(1-2alpha)(x_n-2)",
+        "text": "The error formula explains the step-size requirement for this example. Its magnitude contracts only when the absolute value of one minus twice alpha is below one. Thus alpha between zero and one converges; larger choices can make the iterates diverge.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            -2,
+            -1,
+            -0.5,
+            -0.25,
+            -0.125,
+            -0.0625
+          ],
+          "limit": 0
+        }
+      },
+      {
+        "formula": "g(x)=x^3, quad g'(0)=0",
+        "text": "A zero derivative is a candidate condition, not a universal minimum certificate. The cubic has derivative zero at the origin but takes smaller values immediately to its left. Use additional curvature or structural arguments to decide what a stationary point represents.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1.5,
+            1.5
+          ],
+          "y": [
+            -3.5,
+            3.5
+          ],
+          "curves": [
+            {
+              "f": "x**3",
+              "color": "pink",
+              "domain": [
+                -1.5,
+                1.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For f(x)=(x−5)², start at x=1 with step size 1/4. Compute the first two gradient-descent updates.",
+        "answer": "f′(x)=2(x−5). x1=1−(1/4)(−8)=3; x2=3−(1/4)(−4)=4."
+      },
+      {
+        "prompt": "For the same quadratic, explain what step size alpha=1 does to an initial error different from zero.",
+        "answer": "The error multiplier is 1−2alpha=−1. The error changes sign without shrinking, so the iteration oscillates instead of converging."
+      },
+      {
+        "prompt": "Find and classify the stationary point of g(x)=−x². Explain why a zero derivative is insufficient.",
+        "answer": "g′(x)=−2x vanishes at zero. Since −x²≤0 for all x, zero is a global maximum, not a minimum."
+      }
+    ],
+    "takeaway": "A descent rule needs a suitable step size; a stationary point still needs classification.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "optimization.constrained",
+    "beats": [
+      {
+        "formula": "x+y=3, quad f(x,y)=x^2+y^2",
+        "text": "A constraint restricts which directions are available. To minimize squared distance from the origin while staying on the line x plus y equals three, we must search along that line, rather than move freely toward the origin.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -0.5,
+            3.5
+          ],
+          "y": [
+            -0.5,
+            3.5
+          ],
+          "curves": [
+            {
+              "f": "3-x",
+              "color": "blue",
+              "domain": [
+                -0.5,
+                3.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1.5,
+              1.5
+            ]
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "(2x,2y)=lambda(1,1)",
+        "text": "At a regular constrained extremum, the objective gradient is parallel to the constraint gradient. Otherwise a tangent direction would still decrease the objective. Here the gradient equations give x equals y; combining that with the constraint gives one and a half each.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "points": [
+            [
+              1.5,
+              1.5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x^2+(3-x)^2=2(x-1.5)^2+4.5",
+        "text": "Lagrange multipliers produced a candidate. Substitution now proves it is the global minimum: the squared term is always nonnegative, and vanishes exactly at one and a half. The minimum squared distance is therefore four and a half.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3
+          ],
+          "y": [
+            4,
+            10
+          ],
+          "curves": [
+            {
+              "f": "x*x+(3-x)**2",
+              "color": "gold",
+              "domain": [
+                0,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              1.5,
+              4.5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x^2+y^2=0 arrow.r (x,y)=(0,0)",
+        "text": "The usual multiplier condition needs regularity, such as a nonzero constraint gradient. The constraint x squared plus y squared equals zero has only one feasible point, where its gradient vanishes. That point is optimal even for objectives whose gradients are nonzero.",
+        "visual": {
+          "kind": "plane",
+          "points": [
+            [
+              0,
+              0
+            ]
+          ],
+          "vectors": [
+            [
+              1,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Minimize x²+y² subject to x+y=8, justifying global minimality.",
+        "answer": "x=y=4, with value 32. Substituting y=8−x gives 2(x−4)²+32, which is at least 32."
+      },
+      {
+        "prompt": "Minimize x²+y² subject to y=2x+1 by substitution.",
+        "answer": "The objective is 5x²+4x+1=5(x+2/5)²+1/5. Minimum at x=−2/5,y=1/5, with value 1/5."
+      },
+      {
+        "prompt": "For objective f(x,y)=x and constraint x²+y²=0, explain why the feasible optimum fails the standard multiplier equation.",
+        "answer": "The only feasible point is (0,0), hence optimal. There ∇f=(1,0) and ∇g=(0,0), so no lambda satisfies ∇f=lambda∇g. The regularity hypothesis fails."
+      }
+    ],
+    "takeaway": "Multiplier equations identify regular candidates; feasibility and global optimality need their own checks.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "numerical-analysis.error-stability",
+    "beats": [
+      {
+        "formula": "f(x)=frac(1,x-1)",
+        "text": "Numerical error has two different sources. Conditioning describes sensitivity built into the mathematical problem. Near input one, the reciprocal of x minus one changes sharply: moving from one point zero one to one point zero two halves the output.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            1.005,
+            1.05
+          ],
+          "y": [
+            0,
+            210
+          ],
+          "curves": [
+            {
+              "f": "1/(x-1)",
+              "color": "blue",
+              "domain": [
+                1.005,
+                1.05
+              ]
+            }
+          ],
+          "points": [
+            [
+              1.01,
+              100
+            ],
+            [
+              1.02,
+              50
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "sqrt(10001)-100 approx 0.004999875",
+        "text": "Algorithmic stability concerns additional error introduced by the computation. Subtracting nearly equal rounded values can erase meaningful digits. If this square root is first rounded to two decimal places, the subtraction becomes zero even though the true difference is positive.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            99.999,
+            100.011
+          ],
+          "points": [
+            100,
+            100.004999875
+          ],
+          "labels": [
+            "100",
+            "sqrt(10001)"
+          ],
+          "arrows": [
+            [
+              100,
+              100.004999875
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "sqrt(10001)-100=frac(1,sqrt(10001)+100)",
+        "text": "Multiplying by the conjugate gives an equivalent quotient with numerator one and denominator about two hundred. This avoids subtracting two nearly equal intermediate values. The rewrite changes the computational route while preserving the exact mathematical quantity being requested.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            2
+          ],
+          "y": [
+            -0.011,
+            0.011
+          ],
+          "curves": [
+            {
+              "f": "x/(sqrt(10000+x)+100)",
+              "color": "green",
+              "domain": [
+                -2,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              0.004999875
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "\"relative error\"=frac(abs(\"approximate\"-\"true\"),abs(\"true\"))",
+        "text": "Relative error compares the absolute error with the size of a nonzero true answer. A tiny absolute error can be enormous relative to a tiny result. Improving an algorithm cannot remove sensitivity intrinsic to uncertain input data.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.004999875,
+            0,
+            0.005
+          ],
+          "labels": [
+            "true",
+            "subtract",
+            "rewrite"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A nonzero true answer is 0.002 and the approximation is 0.0022. Compute absolute and relative error.",
+        "answer": "Absolute error=0.0002; relative error=0.0002/0.002=0.1, or 10%."
+      },
+      {
+        "prompt": "Rewrite sqrt(2501)−50 without subtracting nearly equal numbers.",
+        "answer": "Multiply numerator and denominator by sqrt(2501)+50 to obtain 1/(sqrt(2501)+50)."
+      },
+      {
+        "prompt": "Explain whether an unstable implementation and an ill-conditioned problem are the same thing.",
+        "answer": "No. Conditioning describes sensitivity of the exact output to input perturbations. Stability describes extra error produced by the algorithm. A stable algorithm can still give uncertain answers for an ill-conditioned problem with uncertain inputs."
+      }
+    ],
+    "takeaway": "Conditioning belongs to the problem; stability belongs to the computational method.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "numerical-analysis.root-finding",
+    "beats": [
+      {
+        "formula": "f(x)=x^2-3, quad f(1)<0<f(2)",
+        "text": "Bisection starts with a continuous function whose endpoint values have opposite signs. The intermediate value theorem guarantees at least one zero inside. For x squared minus three, inputs one and two provide such a certified bracket.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0.8,
+            2.2
+          ],
+          "y": [
+            -2.5,
+            2
+          ],
+          "curves": [
+            {
+              "f": "x*x-3",
+              "color": "blue",
+              "domain": [
+                0.8,
+                2.2
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              -2
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "f(1.5)=-0.75, quad f(1.75)=0.0625",
+        "text": "The midpoint one and a half has negative output, so retain the right half. The next midpoint, one and three quarters, has positive output, so retain the left portion. Each decision halves the interval while preserving the sign bracket.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            1,
+            2
+          ],
+          "interval": [
+            1.5,
+            1.75
+          ],
+          "points": [
+            1,
+            1.5,
+            1.75,
+            2
+          ],
+          "labels": [
+            "old left",
+            "new left",
+            "new right",
+            "old right"
+          ]
+        }
+      },
+      {
+        "formula": "x_(n+1)=frac(x_n+3/x_n,2)",
+        "text": "Newton's method instead follows a tangent line to its horizontal intercept. Starting at two gives one and three quarters in one step. It often converges rapidly near a simple root, but needs a nonzero derivative and a suitable starting point.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            1,
+            2.1
+          ],
+          "y": [
+            -2.2,
+            1.5
+          ],
+          "curves": [
+            {
+              "f": "x*x-3",
+              "color": "blue",
+              "domain": [
+                1,
+                2.1
+              ]
+            },
+            {
+              "f": "4*x-7",
+              "color": "gold",
+              "domain": [
+                1.3,
+                2.1
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              1
+            ],
+            [
+              1.75,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "f(x)=frac(1,x), quad -1<=x<=1",
+        "text": "Opposite endpoint signs without continuity do not guarantee a zero. One over x changes sign across its missing point but never equals zero. Root-finding guarantees depend on their hypotheses, not just on a pattern of numbers or a crossing-looking picture.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            1
+          ],
+          "y": [
+            -10,
+            10
+          ],
+          "curves": [
+            {
+              "f": "1/x",
+              "color": "pink",
+              "domain": [
+                -1,
+                -0.1
+              ]
+            },
+            {
+              "f": "1/x",
+              "color": "pink",
+              "domain": [
+                0.1,
+                1
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For f(x)=x²−5, bisect [2,3] once. Which half retains the sign change?",
+        "answer": "At 2 the value is −1 and at 3 it is 4. The midpoint 2.5 gives 1.25>0, so retain [2,2.5]."
+      },
+      {
+        "prompt": "Perform one Newton update for x²−7 starting from x0=3.",
+        "answer": "x1=3−(9−7)/6=8/3."
+      },
+      {
+        "prompt": "After six bisections of an initial interval of width three, bound the error of its midpoint relative to an enclosed root.",
+        "answer": "The interval width is 3/64. Its midpoint is at distance at most half this width,3/128, from any root in the interval."
+      }
+    ],
+    "takeaway": "Bisection preserves a certified bracket; Newton uses local derivative information with different requirements.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "numerical-analysis.approximation-integration",
+    "beats": [
+      {
+        "formula": "integral_0^2 x^2 d x=frac(8,3)",
+        "text": "Quadrature replaces an integral with a computable weighted sum. For the square function from zero to two, the exact area is eight thirds. We can use that known value to examine how a numerical approximation improves with refinement.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2.2
+          ],
+          "y": [
+            0,
+            4.5
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            2
+          ]
+        }
+      },
+      {
+        "formula": "T_1=frac(2,2)(0+4)=4",
+        "text": "One trapezoid joins the endpoint heights by a straight line. Its area is interval width times the average height, giving four. The chord lies above this convex graph, so the estimate is too large for a geometrically understandable reason.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2.2
+          ],
+          "y": [
+            0,
+            4.5
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ],
+          "segments": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "T_2=frac(1,2)(0+1)+frac(1,2)(1+4)=3",
+        "text": "Split the interval into two equal pieces. The smaller trapezoids give one half plus two and a half, totaling three. The approximation is closer, and we can measure the remaining error rather than assuming more pieces automatically make it negligible.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2.2
+          ],
+          "y": [
+            0,
+            4.5
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ],
+          "segments": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          ],
+          "points": [
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "T_n-frac(8,3)=frac(4,3n^2)",
+        "text": "For this quadratic and equal subdivisions, direct summation gives the exact error four divided by three n squared. Doubling the number of pieces quarters the error. General error bounds require assumptions such as bounded derivatives; this exact formula is specific to our example.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            4,
+            3,
+            2.81481481481,
+            2.75,
+            2.72,
+            2.7037037037
+          ],
+          "limit": 2.66666666667
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Use one trapezoid to approximate the integral of x² from zero to three, then compare with its exact value.",
+        "answer": "The trapezoid gives 3(0+9)/2=13.5. The exact integral is[x³/3]0³=9, so the overestimate is 4.5."
+      },
+      {
+        "prompt": "Use two equal trapezoids for the integral of x² from zero to three.",
+        "answer": "Heights are 0,2.25,9 and width 1.5. The estimate is 0.75(0+2·2.25+9)=10.125."
+      },
+      {
+        "prompt": "For x² on [0,2], how many equal trapezoids ensure the exact error formula is below 0.01?",
+        "answer": "Need 4/(3n²)<0.01, so n²>400/3 and n>11.547…. The least integer is 12."
+      }
+    ],
+    "takeaway": "An approximation becomes reliable when its error is bounded, not merely when a plot looks close.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "numerical-analysis.linear-ode-methods",
+    "beats": [
+      {
+        "formula": "x'=-x, quad y'=-4y",
+        "text": "A linear system can contain quantities changing at different speeds. Here the y component decays four times as quickly as x. A time-stepping method must respect that faster scale even when the exact solutions themselves behave smoothly.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              2,
+              2
+            ]
+          ],
+          "points": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "y_(n+1)=(1-4h)y_n",
+        "text": "Forward Euler uses the current derivative to predict the next value. With step size one quarter, the fast component is multiplied by zero. This is an approximation, not the exact decay; the slow component is multiplied by three quarters.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              2,
+              2
+            ]
+          ],
+          "matrix": [
+            [
+              0.75,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "h=0.75 arrow.r 1-4h=-2",
+        "text": "Choose a step size of three quarters instead. The fast component now changes sign and doubles in magnitude at each update. The true solution decays, but the numerical solution grows. Stability requires the magnitude of its update factor to stay below one.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            2,
+            -4,
+            8,
+            -16,
+            32,
+            -64
+          ]
+        }
+      },
+      {
+        "formula": "(1+4h)y_(n+1)=y_n",
+        "text": "Backward Euler evaluates the derivative at the unknown next value, producing a linear equation to solve. The fast component is multiplied by one divided by one plus four h, which contracts for every positive h. Stability still does not guarantee a desired accuracy.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              2,
+              2
+            ]
+          ],
+          "matrix": [
+            [
+              0.571428571429,
+              0
+            ],
+            [
+              0,
+              0.25
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Use forward Euler on y′=−5y, y0=2, with h=0.1. Compute y1 and y2.",
+        "answer": "The update multiplier is 1−5(0.1)=0.5. Hence y1=1 and y2=0.5."
+      },
+      {
+        "prompt": "For forward Euler applied to y′=−5y, derive the positive step-size range giving strict decay of the numerical magnitude.",
+        "answer": "Require |1−5h|<1, equivalent to 0<h<2/5."
+      },
+      {
+        "prompt": "Apply one backward Euler step to the same equation with y0=2 and h=0.5. Why can a stable answer still be inaccurate?",
+        "answer": "Solve (1+2.5)y1=2, giving y1=4/7. The exact value is 2e^(−2.5), much smaller. Stability prevents growth from this decay equation but does not bound the chosen step's approximation error."
+      }
+    ],
+    "takeaway": "Time-step stability and approximation accuracy are separate requirements.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "topology.metric-topological-spaces",
+    "beats": [
+      {
+        "formula": "d(x,y)=abs(x-y)",
+        "text": "A metric measures distance and lets us define neighborhoods. On the real line, the distance between two points is their absolute difference. An open ball around a point consists of inputs closer than a chosen positive radius, excluding its boundary.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            2
+          ],
+          "interval": [
+            0.6,
+            1
+          ],
+          "points": [
+            0.6,
+            0.8,
+            1
+          ],
+          "open": [
+            0.6,
+            1
+          ],
+          "labels": [
+            "0.6",
+            "0.8",
+            "1"
+          ]
+        }
+      },
+      {
+        "formula": "B(0.8,0.1)=(0.7,0.9)",
+        "text": "A set is open when every member has some positive-radius ball staying entirely inside the set. The point zero point eight has a small neighborhood inside the interval from zero to one. Points closer to the edge may require smaller radii.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            1.2
+          ],
+          "interval": [
+            0.7,
+            0.9
+          ],
+          "points": [
+            0,
+            0.7,
+            0.8,
+            0.9,
+            1
+          ],
+          "open": [
+            0,
+            0.7,
+            0.9,
+            1
+          ]
+        }
+      },
+      {
+        "formula": "0 in [0,1], quad B(0,r) \" reaches left for \" r>0",
+        "text": "The closed interval contains zero, but every full real-line ball around zero reaches negative values. Therefore that interval is not open as a subset of the real line. Openness depends on the ambient space and its topology.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -0.5,
+            1.5
+          ],
+          "interval": [
+            0,
+            1
+          ],
+          "points": [
+            -0.2,
+            0,
+            0.2,
+            1
+          ],
+          "arrows": [
+            [
+              0,
+              -0.2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(0,1) union (0.5,2)=(0,2)",
+        "text": "Topology keeps the neighborhood idea through rules for open sets: arbitrary unions and finite intersections remain open. A metric supplies one way to obtain such a topology. The abstract definition also allows spaces where no particular distance function has been chosen.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -0.2,
+            2.2
+          ],
+          "interval": [
+            0,
+            2
+          ],
+          "points": [
+            0,
+            0.5,
+            1,
+            2
+          ],
+          "open": [
+            0,
+            2
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find a positive-radius real-line ball around x=2.9 contained in the open interval (1,3).",
+        "answer": "For example radius 0.05 gives (2.85,2.95), entirely inside (1,3). Any radius at most 0.1 also works with open endpoints."
+      },
+      {
+        "prompt": "Is the singleton {0} open in the real line with ordinary distance? Justify.",
+        "answer": "No. Every positive-radius ball about zero contains points other than zero, so no such ball is contained in{0}."
+      },
+      {
+        "prompt": "Explain why [0,1] is open when the ambient space is [0,1] itself with its subspace topology.",
+        "answer": "The entire ambient space is always open in its own topology. Equivalently[0,1]=R∩[0,1], with R open in R. This does not make[0,1] open as a subset of R."
+      }
+    ],
+    "takeaway": "Open sets give every member a neighborhood inside the set, relative to an ambient space.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "topology.compactness-connectedness",
+    "beats": [
+      {
+        "formula": "[0,1] \" is compact in \" RR",
+        "text": "Compactness says every open cover has a finite subcover. In Euclidean spaces, the Heine Borel theorem identifies compact sets as exactly the closed and bounded ones. The closed interval is our basic example, not the definition for every topological space.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -0.3,
+            1.3
+          ],
+          "interval": [
+            0,
+            1
+          ],
+          "points": [
+            0,
+            1
+          ],
+          "labels": [
+            "included",
+            "included"
+          ]
+        }
+      },
+      {
+        "formula": "f(x)=x, quad max_(x in [0,1]) f(x)=1",
+        "text": "A continuous real-valued function on a nonempty compact set attains its maximum and minimum. On this interval, the identity reaches its maximum at one. Removing that endpoint leaves values approaching one without ever attaining it.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.1
+          ],
+          "y": [
+            0,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "[0,1] \" is connected\"",
+        "text": "Connectedness is a different property: the space cannot be separated into two nonempty relatively open pieces. Real intervals are connected. Consequently, a continuous image of an interval cannot skip intermediate values between two of its outputs.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1
+          ],
+          "y": [
+            0,
+            1
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "green",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0.707106781187,
+              0.5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "[0,1] union [2,3] \" is compact, not connected\"",
+        "text": "Two separated closed intervals still form a closed bounded set, hence a compact one. They are disconnected because the gap separates the two components. Compactness controls covers and limiting behavior; connectedness controls separation. One property does not automatically supply the other.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -0.3,
+            3.3
+          ],
+          "y": [
+            -0.5,
+            0.5
+          ],
+          "curves": [],
+          "segments": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                0
+              ]
+            ]
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Is the interval (−2,2) compact in R? Is it connected? State the relevant reasons.",
+        "answer": "It is not compact because it is not closed in R. It is connected because every real interval is connected."
+      },
+      {
+        "prompt": "Give a continuous function on (0,1) with no maximum and explain.",
+        "answer": "f(x)=x is continuous; every value x<1 is surpassed by the value at (x+1)/2, while the supremum one is never attained."
+      },
+      {
+        "prompt": "Classify {−1,1} as compact and/or connected in R.",
+        "answer": "It is compact because it is finite, hence closed and bounded in R. It is disconnected: its two singleton subsets are nonempty disjoint relatively open sets covering it."
+      }
+    ],
+    "takeaway": "Compactness and connectedness are distinct; closed and bounded characterizes compactness in Euclidean space.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "topology.quotient-product-spaces",
+    "beats": [
+      {
+        "formula": "[0,1] times [0,1]",
+        "text": "A product space records a choice from each of two spaces. Pair two unit intervals and obtain a square: the first coordinate is chosen independently of the second. Product topology makes small rectangles the basic neighborhoods in this familiar finite-dimensional example.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -0.2,
+            1.2
+          ],
+          "y": [
+            -0.2,
+            1.2
+          ],
+          "curves": [
+            {
+              "f": "1",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ],
+          "segments": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "(0.2,0.8) times (0.3,0.7)",
+        "text": "An open rectangle says both coordinate conditions must hold. Around an interior point, we can independently restrict the first and second coordinates. More complicated open sets are built as unions of these neighborhoods, connecting coordinate descriptions with the topology of the plane.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1
+          ],
+          "y": [
+            0,
+            1
+          ],
+          "curves": [],
+          "segments": [
+            [
+              [
+                0.2,
+                0.3
+              ],
+              [
+                0.8,
+                0.3
+              ]
+            ],
+            [
+              [
+                0.8,
+                0.3
+              ],
+              [
+                0.8,
+                0.7
+              ]
+            ],
+            [
+              [
+                0.8,
+                0.7
+              ],
+              [
+                0.2,
+                0.7
+              ]
+            ],
+            [
+              [
+                0.2,
+                0.7
+              ],
+              [
+                0.2,
+                0.3
+              ]
+            ]
+          ],
+          "points": [
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "q(t)=(cos(2pi t),sin(2pi t)), quad q(0)=q(1)",
+        "text": "A quotient construction instead identifies selected points. Send the closed unit interval around the circle once. Its two endpoints land at the same point, while interior inputs remain distinct. Identifying just those endpoints produces a space homeomorphic to the circle.",
+        "visual": {
+          "kind": "circle",
+          "angle": 6.28318530718,
+          "radius": 1,
+          "arc": true
+        }
+      },
+      {
+        "formula": "U \" open in quotient\" \" exactly when \" q^(-1)(U) \" open in source\"",
+        "text": "The quotient topology specifies which sets count as open after gluing: exactly those whose full preimages are open in the source. Near the joined endpoint, the preimage includes neighborhoods near both zero and one. Drawing a loop illustrates this identification, not its proof.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "0=1",
+            "1/4",
+            "1/2",
+            "3/4"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Describe (−1,2)×(3,5) as coordinate inequalities and determine whether (0,4) belongs.",
+        "answer": "It is the set of pairs with −1<x<2 and 3<y<5. The point (0,4) satisfies both inequalities."
+      },
+      {
+        "prompt": "Under q(t)=(cos(2πt),sin(2πt)) on [0,1], compute q(0),q(1/2),q(1).",
+        "answer": "q(0)=(1,0), q(1/2)=(−1,0), and q(1)=(1,0). Only the endpoints among these share an image."
+      },
+      {
+        "prompt": "Why must an open neighborhood of the glued endpoint pull back to pieces near both endpoints of the interval?",
+        "answer": "The quotient identifies 0 and 1 as one point. The full preimage contains both representatives and, to be open in the interval's subspace topology, includes relative neighborhoods of both."
+      }
+    ],
+    "takeaway": "Products combine coordinates; quotients identify points and define openness through preimages.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "differential-geometry.curves-surfaces",
+    "beats": [
+      {
+        "formula": "gamma(t)=(2cos(t),2sin(t))",
+        "text": "A parametrized curve describes position as a parameter changes. This formula traces a circle of radius two. Differentiating gives the velocity vector; its length is two, so equal changes in the parameter correspond to twice that much traveled arc length.",
+        "visual": {
+          "kind": "circle",
+          "angle": 1.0471975512,
+          "radius": 2,
+          "arc": true
+        }
+      },
+      {
+        "formula": "norm(gamma'(t))=2, quad s=2t",
+        "text": "Speed depends on parameterization, while the geometric path remains the same. Using arc length s as the parameter makes speed one. The unit tangent then records direction alone, separating how the curve turns from how quickly it is traversed.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "points": [
+            [
+              2,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "kappa=norm(frac(d T,d s))=frac(1,2)",
+        "text": "Curvature measures the rate at which the unit tangent changes per unit arc length. A radius-two circle has curvature one half; a larger circle turns less sharply. This is curve curvature, not the Gaussian curvature assigned to a surface.",
+        "visual": {
+          "kind": "circle",
+          "angle": 1.57079632679,
+          "radius": 2,
+          "arc": true
+        }
+      },
+      {
+        "formula": "r(u,v)=(u,v,u^2+v^2)",
+        "text": "A surface uses two parameters instead of one. On this paraboloid, changing u or v gives two independent tangent directions. Their span is the tangent plane. Independence of these parameter derivatives is the regularity condition preventing a collapsed coordinate patch.",
+        "visual": {
+          "kind": "surface",
+          "mode": "paraboloid",
+          "slice": "x"
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For gamma(t)=(3cos(t),3sin(t)), find its speed and the distance traveled as t goes from zero to π/2.",
+        "answer": "The derivative is(−3sin t,3cos t), with speed 3. Distance=3(π/2)=3π/2."
+      },
+      {
+        "prompt": "Compare the curvatures of circles of radii three and six, explaining which bends more sharply.",
+        "answer": "Their curvatures are 1/3 and 1/6. The radius-three circle turns twice as quickly per unit arc length."
+      },
+      {
+        "prompt": "For r(u,v)=(u,v,u²+v²), compute the two parameter derivatives at (u,v)=(1,2) and explain why they are independent.",
+        "answer": "r_u=(1,0,2), r_v=(0,1,4). A linear combination equal to zero has first coordinate coefficient zero and second coefficient zero, so they are independent."
+      }
+    ],
+    "takeaway": "Curve speed depends on parameterization; curvature measures turning per unit traveled length.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "differential-geometry.manifolds",
+    "beats": [
+      {
+        "formula": "S^1={(x,y):x^2+y^2=1}",
+        "text": "A manifold looks locally like a Euclidean space even when its overall shape is different. The circle is one-dimensional: a sufficiently short open arc can be described by one real coordinate, despite the circle sitting in a two-dimensional plane.",
+        "visual": {
+          "kind": "circle",
+          "angle": 1.0471975512,
+          "radius": 1,
+          "arc": true
+        }
+      },
+      {
+        "formula": "(x,y)=(cos(theta),sin(theta)), quad -pi<theta<pi",
+        "text": "Angle gives a coordinate after removing the circle's leftmost point. Restricting the angle avoids repeated representations. The missing point needs another chart. No single chart is a homeomorphism from the whole circle onto an open real interval: inverse continuity matters.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1.3,
+            1.3
+          ],
+          "y": [
+            -1.3,
+            1.3
+          ],
+          "curves": [
+            {
+              "f": "sqrt(1-x*x)",
+              "color": "blue",
+              "domain": [
+                -1,
+                1
+              ]
+            },
+            {
+              "f": "-sqrt(1-x*x)",
+              "color": "blue",
+              "domain": [
+                -1,
+                1
+              ]
+            }
+          ],
+          "holes": [
+            [
+              -1,
+              0
+            ]
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "eta=theta \" or \" theta+2pi",
+        "text": "A second angle chart covers the missing point by cutting elsewhere. On each part of the overlap, the two coordinate descriptions differ by a constant full turn. These transition functions are smooth, which is the key compatibility required in a smooth atlas.",
+        "visual": {
+          "kind": "circle",
+          "angle": -1.5707963267948966,
+          "radius": 1,
+          "arc": true
+        }
+      },
+      {
+        "formula": "(u,v) arrow.r (u,v,u^2+v^2)",
+        "text": "For a two-dimensional example, the paraboloid has coordinates u and v everywhere. Projection back to the first two coordinates gives the inverse chart. Coordinates describe the surface; they are not additional physical dimensions or proof that every surface admits one global chart.",
+        "visual": {
+          "kind": "surface",
+          "mode": "paraboloid"
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Why is the circle one-dimensional even though a point on it is written using two coordinates?",
+        "answer": "Locally one parameter determines a short arc; the two ambient coordinates satisfy x²+y²=1 and are not independent. Dimension counts local independent coordinates."
+      },
+      {
+        "prompt": "For the paraboloid chart r(u,v)=(u,v,u²+v²), find the coordinates of (2,−1,5).",
+        "answer": "The inverse chart is projection onto the first two coordinates, so (u,v)=(2,−1). It lies on the surface since 4+1=5."
+      },
+      {
+        "prompt": "Explain why allowing every real angle theta does not give a one-to-one chart on the circle.",
+        "answer": "Angles differing by 2π produce the same point. A chart must be a homeomorphism to an open Euclidean set, so the coordinate representation must be locally one-to-one with a continuous inverse."
+      }
+    ],
+    "takeaway": "Smooth manifolds use compatible local coordinate charts, not necessarily one global coordinate system.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "differential-geometry.curvature-geodesics",
+    "beats": [
+      {
+        "formula": "gamma(t)=(1-t)p+t q",
+        "text": "In the Euclidean plane, a straight segment gives the shortest route between two points. A geodesic generalizes the idea of continuing straight while constrained to a curved space. Its meaning depends on the metric used to measure lengths.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            3
+          ],
+          "y": [
+            -1,
+            3
+          ],
+          "curves": [],
+          "segments": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "s=R theta",
+        "text": "On a sphere, great circles supply geodesics. The circle shown is a cross-section through the sphere's center. Along it, arc length equals radius times angle in radians, so a radius-two sphere and angle pi over three give length two pi over three.",
+        "visual": {
+          "kind": "circle",
+          "angle": 1.0471975512,
+          "radius": 2,
+          "arc": true
+        }
+      },
+      {
+        "formula": "2(2pi-frac(pi,3))=frac(10pi,3)",
+        "text": "Traveling the other way along the same great circle reaches the same endpoint by a much longer arc. That arc is still part of a geodesic, but it is not globally shortest. A geodesic guarantees only local straightness, with short segments minimizing length.",
+        "visual": {
+          "kind": "circle",
+          "angle": -5.23598775598,
+          "radius": 2,
+          "arc": true
+        }
+      },
+      {
+        "formula": "K=frac(1,R^2), quad R=2 arrow.r K=frac(1,4)",
+        "text": "The sphere's Gaussian curvature is one divided by radius squared. Do not confuse it with the ordinary curvature of a circular path, which is one divided by radius. The cross-section illustrates the sphere's geometry; the surface-curvature formula requires its own derivation.",
+        "visual": {
+          "kind": "circle",
+          "angle": 1.57079632679,
+          "radius": 2,
+          "arc": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "On a sphere of radius three, what is the length of a great-circle arc subtending angle π/4?",
+        "answer": "Arc length=Rtheta=3π/4."
+      },
+      {
+        "prompt": "Two non-antipodal points on a great circle are separated by angle π/3. Compare the short and long arcs for radius three.",
+        "answer": "Short length=π. Long length=3(2π−π/3)=5π. Both lie on a geodesic, but only the shorter arc is the global distance between these points."
+      },
+      {
+        "prompt": "For a sphere of radius four, distinguish its Gaussian curvature from the ordinary curvature of an equatorial circle.",
+        "answer": "The Gaussian curvature is 1/16. The equatorial circle as a curve in Euclidean space has curvature 1/4. These measure different geometric objects."
+      }
+    ],
+    "takeaway": "Geodesics are locally straight for a metric; a long geodesic arc need not be globally shortest.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "measure-theory.measures",
+    "beats": [
+      {
+        "formula": "mu(A)>=0, quad mu(emptyset)=0",
+        "text": "A measure assigns nonnegative size to allowed sets and assigns zero to the empty set. The allowed sets form a sigma algebra, closed under complements and countable unions. This specifies which events or regions can be measured consistently.",
+        "visual": {
+          "kind": "sets",
+          "left": [
+            "a",
+            "b"
+          ],
+          "right": [
+            "c",
+            "d"
+          ],
+          "both": [],
+          "highlight": "union"
+        }
+      },
+      {
+        "formula": "mu(A union B)=mu(A)+mu(B) \" when disjoint\"",
+        "text": "For disjoint measurable sets, sizes add. With four equally likely outcomes, a two-outcome event has probability one half and its two-outcome complement has probability one half. Their union has probability one. Probability is a measure with total size one.",
+        "visual": {
+          "kind": "grid",
+          "rows": 2,
+          "cols": 2,
+          "filled": 2,
+          "secondary": 2
+        }
+      },
+      {
+        "formula": "mu([0,1])=1, quad mu({0.5})=0",
+        "text": "Different measures describe different notions of size. Lebesgue measure on the line agrees with interval length. A singleton has length zero even though it is not empty. Counting measure, by contrast, assigns that singleton size one.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -0.2,
+            1.2
+          ],
+          "interval": [
+            0,
+            1
+          ],
+          "points": [
+            0.5
+          ],
+          "labels": [
+            "nonempty singleton"
+          ]
+        }
+      },
+      {
+        "formula": "mu(QQ)=0",
+        "text": "Countable additivity implies that a countable union of zero-length singletons still has measure zero. The rational numbers therefore have Lebesgue measure zero, although they are dense. The few rational points drawn are only an illustration of that countable-set argument.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            1
+          ],
+          "points": [
+            0,
+            0.2,
+            0.25,
+            0.333333333333,
+            0.5,
+            0.666666666667,
+            0.75,
+            0.8,
+            1
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "With six equally likely outcomes, compute the probability measure of an event containing two outcomes and its complement.",
+        "answer": "The event has measure 2/6=1/3, and its complement has measure 4/6=2/3."
+      },
+      {
+        "prompt": "Compare the Lebesgue measure and counting measure of {1,2,3}.",
+        "answer": "Lebesgue measure is 0 because the set is a finite union of zero-length singletons. Counting measure is 3."
+      },
+      {
+        "prompt": "Why does a dense set need not have positive Lebesgue measure? Give a specific example and the reason.",
+        "answer": "The rational numbers are dense yet countable. Each singleton has Lebesgue measure zero and countable additivity gives measure zero for their union. Density is about proximity, not length."
+      }
+    ],
+    "takeaway": "A null set can be nonempty; the meaning of size depends on the chosen measure.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "measure-theory.lebesgue-integration",
+    "beats": [
+      {
+        "formula": "integral_0^1 2 d x=2*1=2",
+        "text": "Lebesgue integration begins with simple functions that take finitely many values on measurable pieces. Multiply each value by the measure of its piece, then add. For height two on an interval of length one, the contribution is two.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2
+          ],
+          "y": [
+            0,
+            5.5
+          ],
+          "curves": [
+            {
+              "f": "2",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "formula": "integral_1^2 5 d x=5*1=5",
+        "text": "A second disjoint interval of length one, with height five, contributes five. Whether an endpoint belongs to the first or second piece does not affect this Lebesgue integral, because the endpoint is a set of measure zero.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2
+          ],
+          "y": [
+            0,
+            5.5
+          ],
+          "curves": [
+            {
+              "f": "5",
+              "color": "gold",
+              "domain": [
+                1,
+                2
+              ]
+            }
+          ],
+          "shade": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "formula": "integral_0^2 f(x)d x=2+5=7",
+        "text": "Combining the two measurable pieces gives total integral seven. More general nonnegative measurable functions are approached from below by simple functions, and their integrals are defined by the corresponding supremum. This extends the weighted-size idea beyond step-shaped graphs.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2
+          ],
+          "y": [
+            0,
+            5.5
+          ],
+          "curves": [
+            {
+              "f": "2",
+              "color": "blue",
+              "domain": [
+                0,
+                0.999999
+              ]
+            },
+            {
+              "f": "5",
+              "color": "gold",
+              "domain": [
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "integral_0^1 x^n d x=frac(1,n+1) arrow.r 0",
+        "text": "For x to the n on the unit interval, pointwise convergence to zero holds except at one. The functions are bounded by the integrable function one. Dominated convergence therefore permits passing the limit through the integral, and the single exceptional endpoint contributes nothing.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.05
+          ],
+          "y": [
+            0,
+            1.05
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            },
+            {
+              "f": "x**5",
+              "color": "gold",
+              "domain": [
+                0,
+                1
+              ]
+            },
+            {
+              "f": "x**15",
+              "color": "pink",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Integrate the simple function that equals three on [0,2) and one on [2,5].",
+        "answer": "The integral is 3·2+1·3=9."
+      },
+      {
+        "prompt": "If an integrable function on [0,1] is changed only at x=1/2, how does its Lebesgue integral change? Explain.",
+        "answer": "It does not change. A singleton has measure zero, so changing a finite value there does not alter the integral."
+      },
+      {
+        "prompt": "Why does pointwise convergence alone not allow every exchange of limit and integral? Use f_n=n on (0,1/n) and zero elsewhere on [0,1].",
+        "answer": "At each fixed x, f_n eventually equals zero, including at x=0 by definition. Yet each integral equals n(1/n)=1, while the limit function has integral zero. The sequence lacks a common integrable dominating bound."
+      }
+    ],
+    "takeaway": "Lebesgue integration weights values by measurable size; exchanging limits requires hypotheses.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "measure-theory.lp-spaces",
+    "beats": [
+      {
+        "formula": "norm(f)_2=(integral_0^1 abs(f(x))^2 d x)^(1/2)",
+        "text": "An L two norm measures a function's size by integrating its squared magnitude and taking a square root. It treats the entire function as one vector. For the function x on the unit interval, the norm is one over square root three.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.1
+          ],
+          "y": [
+            0,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "formula": "f=1 \" on \" [0,1/4], quad norm(f)_2=frac(1,2)",
+        "text": "A function equal to one on an interval of width one quarter and zero elsewhere has squared integral one quarter. Its L two norm is therefore one half. Both height and the measure of the supporting region determine the norm.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1
+          ],
+          "y": [
+            0,
+            1.2
+          ],
+          "curves": [
+            {
+              "f": "1",
+              "color": "gold",
+              "domain": [
+                0,
+                0.25
+              ]
+            },
+            {
+              "f": "0",
+              "color": "blue",
+              "domain": [
+                0.250001,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            0.25
+          ]
+        }
+      },
+      {
+        "formula": "f_n=sqrt(n) \" on \" (0,1/n), quad norm(f_n)_2=1",
+        "text": "Shrinking support alone need not shrink the norm. Set the height to square root n on the open interval zero to one over n, and zero elsewhere. Squared area remains one, yet every fixed input eventually has value zero.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            4.5
+          ],
+          "curves": [
+            {
+              "f": "2",
+              "color": "blue",
+              "domain": [
+                0,
+                0.25
+              ]
+            },
+            {
+              "f": "4",
+              "color": "pink",
+              "domain": [
+                0,
+                0.0625
+              ]
+            },
+            {
+              "f": "0",
+              "color": "blue",
+              "domain": [
+                0.25,
+                0.5
+              ]
+            },
+            {
+              "f": "0",
+              "color": "pink",
+              "domain": [
+                0.0625,
+                0.5
+              ]
+            }
+          ],
+          "holes": [
+            [
+              0,
+              2
+            ],
+            [
+              0.25,
+              2
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0.0625,
+              4
+            ]
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0.25,
+              0
+            ],
+            [
+              0.0625,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "f=g \" almost everywhere\" arrow.r norm(f-g)_2=0",
+        "text": "Functions that differ only on a measure-zero set have zero L two distance. The space therefore identifies them as the same vector. A spike at just one point changes a drawn value but not the corresponding equivalence class or norm.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1
+          ],
+          "y": [
+            0,
+            3.5
+          ],
+          "curves": [
+            {
+              "f": "0",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "points": [
+            [
+              0.5,
+              3
+            ]
+          ],
+          "holes": [
+            [
+              0.5,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "On [0,1], find the L1 and L2 norms of the indicator of [0,1/9].",
+        "answer": "L1=1/9. L2=sqrt(1/9)=1/3."
+      },
+      {
+        "prompt": "On [0,1], a function equals five on (0,1/25) and zero elsewhere. Find its L2 norm.",
+        "answer": "The squared integral is 25·(1/25)=1, so the L2 norm is 1."
+      },
+      {
+        "prompt": "Two measurable functions on [0,1] differ only at the three points 0,1/2,1. Are they different elements of L2 if both have finite L2 norm? Explain.",
+        "answer": "No. The finite exceptional set has measure zero, so the functions agree almost everywhere and define the same L2 equivalence class."
+      }
+    ],
+    "takeaway": "Lp norm convergence differs from pointwise convergence, and functions equal almost everywhere are identified.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "stochastic-processes.markov-chains",
+    "beats": [
+      {
+        "formula": "P(S \" next\" | S \" now\")=0.8",
+        "text": "A Markov chain models changes between states. The next-state distribution depends on the present state, conditional on the observed past. Suppose sunny weather stays sunny with probability point eight, while rainy weather changes to sunny with probability point four.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "sun now",
+            "sun next",
+            "rain now",
+            "rain next"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "weights": [
+            "0.8",
+            "0.2",
+            "0.4",
+            "0.6"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "P(S \" after two\" | S \" now\")=0.8^2+0.2*0.4=0.72",
+        "text": "Starting sunny, sunshine two steps later can arise by two disjoint paths: sunny then sunny, or rainy then sunny. Multiply conditional probabilities along each path and add across the alternatives. That gives point seven two, not simply point eight squared.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "sun start",
+            "sun 1",
+            "sun 2",
+            "rain 1"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "weights": [
+            "0.8",
+            "0.2",
+            "0.8",
+            "0.4"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "p=0.8p+0.4(1-p) arrow.r p=frac(2,3)",
+        "text": "A stationary distribution is unchanged by a transition. If its sunny probability is p, then the next sunny probability is point eight p plus point four times one minus p. Solving gives two thirds sunny and one third rainy.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.666666666667,
+            0.333333333333
+          ],
+          "labels": [
+            "sunny",
+            "rainy"
+          ]
+        }
+      },
+      {
+        "formula": "frac(2,3)0.8+frac(1,3)0.4=frac(2,3)",
+        "text": "Stationary does not mean the weather stops changing; it means the distribution remains unchanged. This finite chain has positive transition probabilities, so it converges to its unique stationary distribution. Other chains can be periodic or disconnected, and need separate analysis.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "S 2/3",
+            "next S",
+            "R 1/3",
+            "next R"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "weights": [
+            "0.8",
+            "0.2",
+            "0.4",
+            "0.6"
+          ],
+          "directed": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A two-state chain has P(A→A)=0.7 and P(B→A)=0.2. Starting at A, find the probability of A after two transitions.",
+        "answer": "It is 0.7·0.7+0.3·0.2=0.55, adding the two disjoint intermediate-state paths."
+      },
+      {
+        "prompt": "Find its stationary probability of state A by solving one equation.",
+        "answer": "p=0.7p+0.2(1−p), so 0.5p=0.2 and p=0.4; the stationary probability of B is 0.6."
+      },
+      {
+        "prompt": "A chain switches deterministically between A and B. It has stationary distribution (1/2,1/2). Does starting at A converge to that distribution? Explain.",
+        "answer": "No. The distributions alternate between (1,0) and(0,1). The chain is periodic, showing that existence of a stationary distribution alone does not guarantee convergence from every initial state."
+      }
+    ],
+    "takeaway": "Multiply along conditional paths, add disjoint paths, and distinguish stationary distributions from convergence.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "stochastic-processes.poisson-renewal",
+    "beats": [
+      {
+        "formula": "E[N(t)]=lambda t, quad lambda=2",
+        "text": "A Poisson process counts random arrivals at a constant rate with independent increments over disjoint time intervals. At rate two per hour, the expected count in one hour is two. This is an average, not a promise of exactly two events.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            2
+          ],
+          "points": [
+            0.2,
+            0.7,
+            1.4,
+            1.8
+          ],
+          "labels": [
+            "event",
+            "event",
+            "event",
+            "event"
+          ]
+        }
+      },
+      {
+        "formula": "P(N(1)=k)=e^(-2)frac(2^k,k!)",
+        "text": "The count in one hour has a Poisson distribution. Its first four probabilities correspond to zero, one, two, and three arrivals, with more possible counts beyond those shown. The chance of zero arrivals is e to the negative two.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.135335283237,
+            0.270670566473,
+            0.270670566473,
+            0.180447044315
+          ],
+          "labels": [
+            "0 events",
+            "1 event",
+            "2 events",
+            "3 events"
+          ]
+        }
+      },
+      {
+        "formula": "P(T>t)=e^(-2t), quad E[T]=frac(1,2)",
+        "text": "The waiting time to the first arrival exceeds t exactly when no arrivals occur by t. That gives exponential survival and mean waiting time one half hour. Independent exponential interarrival times are one way to construct this Poisson process.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2
+          ],
+          "y": [
+            0,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "exp(-2*x)",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "P(T>s+t | T>s)=P(T>t)",
+        "text": "Exponential waiting is memoryless: elapsed waiting does not change the remaining-time distribution. A general renewal process only assumes identically distributed independent interarrival times. Fixed half-hour intervals have the same average rate but are not memoryless and do not form a Poisson process.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            2
+          ],
+          "points": [
+            0.5,
+            1,
+            1.5,
+            2
+          ],
+          "arrows": [
+            [
+              0,
+              0.5
+            ],
+            [
+              0.5,
+              1
+            ],
+            [
+              1,
+              1.5
+            ],
+            [
+              1.5,
+              2
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For a Poisson process with rate three per hour, find the expected count and probability of zero events in two hours.",
+        "answer": "The count has mean 3·2=6, and the probability of zero is e^(−6)."
+      },
+      {
+        "prompt": "For exponential waiting with rate four per hour, find the mean wait in minutes.",
+        "answer": "Mean wait is 1/4 hour, or 15 minutes."
+      },
+      {
+        "prompt": "Events occur at fixed thirty-minute intervals. If twenty minutes have passed since the last event, how long remains, and why is this not memoryless?",
+        "answer": "Ten minutes remain. At a fresh start the wait is thirty minutes, so the remaining wait depends on elapsed time; it is not exponentially memoryless."
+      }
+    ],
+    "takeaway": "Poisson arrivals have exponential memoryless waiting; a general renewal process need not.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "stochastic-processes.martingales-brownian",
+    "beats": [
+      {
+        "formula": "E[M_(n+1) | \"past through n\"]=M_n",
+        "text": "A martingale is a precise fair-prediction model. Its current value is determined by the information already observed, its expected absolute value is finite, and its conditional expected next value equals its current value. Fairness concerns conditional averages, not every individual path.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "current 2",
+            "next 1",
+            "next 3"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "weights": [
+            "0.5",
+            "0.5"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "frac(1,4)1+frac(3,4)3=2.5",
+        "text": "If a step rises by one with probability three quarters and falls with probability one quarter, its expected increase is one half. The position itself is no longer a martingale. Subtracting one half times the step count removes that predictable drift.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "current 2",
+            "next 1",
+            "next 3"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "weights": [
+            "0.25",
+            "0.75"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "E[B_t-B_s]=0, quad \"Var\"(B_t-B_s)=t-s",
+        "text": "Standard Brownian motion is a continuous-time example with independent normal increments, mean zero and variance equal to elapsed time. Independence from the past makes its conditional expected future value equal its present value. These connected sample points only approximate a possible path.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            0,
+            0.3,
+            -0.1,
+            0.5,
+            0.2,
+            0.8,
+            0.4,
+            0.7
+          ],
+          "connect": true
+        }
+      },
+      {
+        "formula": "E[B_t | \"information at s\"]=B_s, quad s<=t",
+        "text": "Actual Brownian paths are continuous but almost surely nowhere differentiable. A polygonal drawing cannot demonstrate that theorem. Nor does the martingale condition justify every stopping strategy: results about stopping times need additional assumptions, such as bounded stopping or suitable integrability.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            0,
+            0.12,
+            0.3,
+            0.05,
+            -0.1,
+            0.15,
+            0.5,
+            0.35,
+            0.2,
+            0.6,
+            0.8,
+            0.55,
+            0.4,
+            0.9,
+            0.7
+          ],
+          "connect": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A fair random walk is currently at −3 and next moves up or down one with equal probability. Compute the conditional expected next position.",
+        "answer": "The next positions are −2 and −4, each probability 1/2, so the expectation is −3."
+      },
+      {
+        "prompt": "Independent increments are +1 with probability 0.6 and −1 with probability 0.4. What deterministic drift must be subtracted after n steps to make the cumulative walk a martingale?",
+        "answer": "The mean increment is 0.6−0.4=0.2. Subtract 0.2n from the cumulative position; the compensated process has zero conditional expected increments."
+      },
+      {
+        "prompt": "For standard Brownian motion, state the mean and variance of B5−B2 and explain why a straight-line interpolation of sampled values is not the actual full path.",
+        "answer": "The increment has mean 0 and variance 3, with a normal distribution. Interpolation is a finite-resolution illustration; Brownian motion has random fluctuations between sample times and almost surely nowhere differentiable continuous paths."
+      }
+    ],
+    "takeaway": "A martingale controls conditional expectation, not path smoothness or unrestricted stopping strategies.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "functional-analysis.banach-hilbert",
+    "beats": [
+      {
+        "formula": "norm((3,2))_2=sqrt(13)",
+        "text": "A norm assigns a vector a size, generalizing ordinary Euclidean length. A Banach space is a normed vector space in which every Cauchy sequence converges within the space. Completeness prevents sequences from approaching a missing point outside the chosen system.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "v_n=(frac(1,n),frac(2,n)) arrow.r (0,0)",
+        "text": "In the Euclidean plane, coordinatewise completeness gives this property. These vectors approach the origin, and their distance from it is square root five divided by n. That explicit bound proves convergence rather than relying on a few arrows becoming small.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              2
+            ],
+            [
+              0.5,
+              1
+            ]
+          ],
+          "points": [
+            [
+              0.25,
+              0.5
+            ],
+            [
+              0.125,
+              0.25
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "⟨f,g⟩=integral_0^1 f(x)g(x)d x",
+        "text": "A Hilbert space also has an inner product generating its norm and is complete for that norm. In real L two on the unit interval, inner products integrate products of functions. This makes geometry such as orthogonality available for function vectors.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1
+          ],
+          "y": [
+            0,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            },
+            {
+              "f": "1",
+              "color": "gold",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "formula": "norm(u+v)^2+norm(u-v)^2 != 2norm(u)^2+2norm(v)^2",
+        "text": "Not every Banach norm comes from an inner product. With the maximum-coordinate norm and the two coordinate unit vectors, the parallelogram identity gives two on the left and four on the right. This complete normed plane is therefore not Hilbert under that norm.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the Euclidean norm of (1/3,2/3) and explain how it fits the sequence (1/n,2/n).",
+        "answer": "The norm is √5/3. In general the norm is √5/n, tending to zero."
+      },
+      {
+        "prompt": "In real L2[0,1], compute the inner product of f(x)=1 and g(x)=x, and compute both norms.",
+        "answer": "The inner product is ∫0¹x dx=1/2. Norms are 1 and √(∫0¹x² dx)=1/√3."
+      },
+      {
+        "prompt": "Verify the parallelogram identity fails for u=(1,0),v=(0,1) under the maximum norm.",
+        "answer": "All of u,v,u+v,u−v have maximum norm 1. Thus the left side is 1+1=2 and the right is 2+2=4, so no inner product generates this norm."
+      }
+    ],
+    "takeaway": "Hilbert spaces have complete inner-product geometry; general Banach spaces need not.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "functional-analysis.operators-duality",
+    "beats": [
+      {
+        "formula": "T(a u+b v)=a T(u)+b T(v)",
+        "text": "A linear operator preserves addition and scalar multiplication. On the plane, stretching the first coordinate by two while leaving the second unchanged is linear. The operator norm measures the largest possible output size for an input of norm at most one.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "T(x,y)=(2x,y), quad norm(T)=2",
+        "text": "For Euclidean length, this transformation enlarges no vector by more than a factor of two. The first coordinate unit vector achieves exactly that factor, so the operator norm is two. A single successful vector supplies the lower bound, not the upper bound.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "phi(x,y)=x+2y, quad norm(phi)=sqrt(5)",
+        "text": "A continuous linear functional outputs a scalar and belongs to the dual space. This functional is the dot product with one, two. Cauchy Schwarz bounds its magnitude by square root five times the input norm, and a parallel unit vector attains equality.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              2
+            ]
+          ],
+          "points": [
+            [
+              0.4472135955,
+              0.894427191
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "f_n(x)=frac(sin(n x),n), quad f_n'(x)=cos(n x)",
+        "text": "Linearity alone does not imply boundedness. On continuously differentiable functions over zero to two pi, using the uniform norm for inputs and outputs, differentiation sends these shrinking functions to derivatives of size one. No fixed amplification bound can work for every n.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            6.28318530718
+          ],
+          "y": [
+            -1.1,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "sin(6*x)/6",
+              "color": "blue",
+              "domain": [
+                0,
+                6.28318530718
+              ]
+            },
+            {
+              "f": "cos(6*x)",
+              "color": "pink",
+              "domain": [
+                0,
+                6.28318530718
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the Euclidean operator norm of T(x,y)=(3x,−2y), giving an upper bound and an attaining input.",
+        "answer": "||T(x,y)||²=9x²+4y²≤9(x²+y²), so ||T||≤3. At (1,0), the ratio is 3; hence ||T||=3."
+      },
+      {
+        "prompt": "Find the norm of the Euclidean linear functional phi(x,y)=2x−y and a unit vector attaining it.",
+        "answer": "The norm is √5 by Cauchy Schwarz. The unit vector (2/√5,−1/√5) gives phi=√5."
+      },
+      {
+        "prompt": "Why does differentiation fail to be bounded under the uniform norm in the example f_n=sin(nx)/n on [0,2π]?",
+        "answer": "The input norm is 1/n and derivative norm is 1. The amplification ratio is n, which is unbounded, so no constant C can satisfy ||f′||∞≤C||f||∞ for every C1 function."
+      }
+    ],
+    "takeaway": "Bounded linear operators have a uniform amplification bound; linearity alone does not supply one.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  },
+  {
+    "id": "functional-analysis.spectral-theory",
+    "beats": [
+      {
+        "formula": "A e_1=2e_1, quad A e_2=e_2",
+        "text": "An eigenvector keeps its direction under a linear operator, changing only by a scalar eigenvalue. The diagonal matrix with entries two and one scales the coordinate directions separately. Decomposing a vector into those directions makes its transformation easy to compute.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "lambda in \"spectrum\" \" exactly when \" A-lambda I \"not invertible\"",
+        "text": "In finite dimensions, an eigenvalue is exactly a scalar for which subtracting that scalar times the identity makes the matrix noninvertible. At lambda equals two, the first coordinate direction collapses to zero, so the original input cannot be uniquely recovered.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              -1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(T f)(x)=x f(x), quad f in L^2([0,1])",
+        "text": "Infinite dimensions require greater care. Multiplication by x on complex L two of the unit interval has no nonzero eigenfunction: an eigenfunction would need support only at one point, which represents the zero vector. Nevertheless, its spectrum is the entire interval from zero to one.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1
+          ],
+          "y": [
+            0,
+            1.1
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "points": [
+            [
+              0.5,
+              0.5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "T e_n=frac(1,n)e_n",
+        "text": "Additional compactness and self-adjointness on a separable Hilbert space guarantee an orthonormal eigenbasis. The diagonal map sending basis vector n to one over n times itself illustrates this theorem. Its eigenvalues approach zero; it is a special structure, not a rule for every operator.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            1,
+            0.5,
+            0.333333,
+            0.25,
+            0.2,
+            0.166667,
+            0.142857
+          ],
+          "limit": 0
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For A=diag(4,−2), find its eigenvalues and explain why A−4I is not invertible.",
+        "answer": "The coordinate eigenvalues are 4 and −2. A−4I=diag(0,−6) kills the first coordinate vector, so it has a nontrivial kernel and cannot be invertible."
+      },
+      {
+        "prompt": "For multiplication by x on L2[0,1], explain why the equation xf(x)=lambda f(x) has no nonzero L2 solution.",
+        "answer": "It implies (x−lambda)f(x)=0 almost everywhere, so f is zero except possibly at the singleton {lambda}. That set has measure zero, making f the zero L2 equivalence class."
+      },
+      {
+        "prompt": "For T e_n=(1/n)e_n on square-summable sequences, is zero an eigenvalue? Explain why its inverse cannot be bounded.",
+        "answer": "Zero is not an eigenvalue because Tx=0 forces every coordinate of x to vanish. A putative inverse sends e_n to n e_n, whose norms grow without bound. Thus zero can belong to the spectrum without being an eigenvalue."
+      }
+    ],
+    "takeaway": "In infinite dimensions, spectrum is broader than eigenvalues; spectral-basis theorems require hypotheses.",
+    "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice."
+  }
+]

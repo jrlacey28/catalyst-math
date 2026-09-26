@@ -1,0 +1,7 @@
+Three-dimensional coordinates locate a point using three perpendicular directions. A surface equation restricts which triples are allowed. On the plane z equals x plus y, the first two coordinates determine the third; one and one therefore require height two.
+
+Distance extends the Pythagorean theorem. From the origin to one, one, two, the squared contributions are one, one, and four. Their sum is six, so the straight-line distance is square root of six, not the sum of the components.
+
+Rearranging the plane equation reveals a normal vector: negative one, negative one, one. Every displacement lying in the plane has dot product zero with this normal. The normal encodes orientation rather than a particular point on the plane.
+
+A slice helps us understand a curved surface. Hold y equal to one on the paraboloid, and the remaining cross-section is z equals x squared plus one. Fixing a coordinate reduces a three-dimensional question to a familiar two-dimensional graph.

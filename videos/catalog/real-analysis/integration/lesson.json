@@ -1,0 +1,127 @@
+{
+  "id": "real-analysis.integration",
+  "beats": [
+    {
+      "formula": "integral_0^1 x d x",
+      "text": "To define area rigorously, trap it between quantities already understood. Divide the interval into equal pieces. For an increasing function, the left endpoint gives a lower rectangle height and the right endpoint gives an upper height.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1.1
+        ],
+        "y": [
+          0,
+          1.1
+        ],
+        "curves": [
+          {
+            "f": "x",
+            "color": "blue",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "formula": "L_4=frac(1,4)(0+frac(1,4)+frac(1,2)+frac(3,4))=frac(3,8)",
+      "text": "With four pieces, each rectangle has width one quarter. The four lower heights are zero, one quarter, one half, and three quarters. Their sum times the shared width gives three eighths as the lower estimate.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0,
+          0.25,
+          0.5,
+          0.75
+        ],
+        "labels": [
+          "left 1",
+          "left 2",
+          "left 3",
+          "left 4"
+        ]
+      }
+    },
+    {
+      "formula": "U_n=frac(n+1,2n), quad L_n=frac(n-1,2n)",
+      "text": "For n equal pieces, summing the endpoint heights gives these upper and lower expressions. Their difference is one over n. As the partition gets finer, the entire uncertainty shrinks to zero, trapping the integral at one half.",
+      "visual": {
+        "kind": "sequence",
+        "values": [
+          1,
+          0.75,
+          0.666667,
+          0.625,
+          0.6,
+          0.583333
+        ],
+        "limit": 0.5
+      }
+    },
+    {
+      "formula": "U_n-L_n=frac(1,n) arrow.r 0",
+      "text": "The finite pictures motivate the argument; the shrinking bound proves the result. More generally, a bounded function is Riemann integrable when partitions can make upper and lower sums arbitrarily close. Not every bounded function meets that condition.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1.1
+        ],
+        "y": [
+          0,
+          1.1
+        ],
+        "curves": [
+          {
+            "f": "x",
+            "color": "blue",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For f(x)=x on [0,1] using two equal pieces, compute lower and upper sums.",
+      "answer": "Lower: (1/2)(0+1/2)=1/4. Upper: (1/2)(1/2+1)=3/4. Their gap is 1/2.",
+      "id": "real-analysis.integration.video-practice-1"
+    },
+    {
+      "prompt": "How many equal pieces guarantee the upper-minus-lower gap for f(x)=x is below 0.005?",
+      "answer": "The gap is 1/n. Strictly below 0.005 requires n>200, so 201 pieces suffice.",
+      "id": "real-analysis.integration.video-practice-2"
+    },
+    {
+      "prompt": "The function equals one at rational inputs in [0,1] and zero at irrational inputs. Explain its upper and lower sums.",
+      "answer": "Every nontrivial subinterval contains rational and irrational numbers. Its supremum is one and infimum zero, so every upper sum is one and lower sum zero. The function is not Riemann integrable.",
+      "id": "real-analysis.integration.video-practice-3"
+    }
+  ],
+  "takeaway": "Riemann integrability is established by making upper and lower sums arbitrarily close.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Real analysis",
+  "course_id": "real-analysis",
+  "title": "Rigorous integration",
+  "objective": "Construct Riemann integration and prove core convergence and fundamental results.",
+  "index": 4,
+  "total": 5,
+  "prerequisites": [
+    "real-analysis.continuity-differentiation",
+    "calculus-2.integrals"
+  ]
+}

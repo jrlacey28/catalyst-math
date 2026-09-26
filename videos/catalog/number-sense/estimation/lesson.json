@@ -1,0 +1,118 @@
+{
+  "id": "number-sense.estimation",
+  "beats": [
+    {
+      "formula": "198+403 approx 200+400=600",
+      "text": "Estimation deliberately replaces awkward quantities with nearby convenient ones. One hundred ninety eight is close to two hundred, and four hundred three is close to four hundred, so their sum should be close to six hundred.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          198,
+          200,
+          403,
+          400
+        ],
+        "labels": [
+          "198",
+          "200",
+          "403",
+          "400"
+        ]
+      }
+    },
+    {
+      "formula": "198+403=601",
+      "text": "The exact sum is six hundred one. Rounding the first number up by two and the second down by three changes the total by negative one, explaining why the estimate of six hundred is slightly low.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          590,
+          610
+        ],
+        "points": [
+          600,
+          601
+        ],
+        "arrows": [
+          [
+            600,
+            601
+          ]
+        ],
+        "labels": [
+          "estimate",
+          "exact"
+        ]
+      }
+    },
+    {
+      "formula": "19 times 31 approx 20 times 30=600",
+      "text": "For multiplication, nearby round factors often give a useful scale. Nineteen groups of thirty one should be near twenty groups of thirty. An answer around sixty or six thousand would have the wrong size before detailed checking.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          589,
+          600
+        ],
+        "labels": [
+          "19×31",
+          "20×30"
+        ]
+      }
+    },
+    {
+      "formula": "18 times 30 < 19 times 31 < 20 times 32",
+      "text": "When an estimate must be justified, use bounds. Replacing both positive factors by smaller numbers gives a lower bound, while larger factors give an upper bound. Here the true product lies strictly between five hundred forty and six hundred forty.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          520,
+          660
+        ],
+        "points": [
+          540,
+          589,
+          640
+        ],
+        "interval": [
+          540,
+          640
+        ],
+        "labels": [
+          "lower",
+          "exact",
+          "upper"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Estimate 297+506 using convenient hundreds.",
+      "answer": "About 800, using 300+500.",
+      "id": "number-sense.estimation.video-practice-1"
+    },
+    {
+      "prompt": "Estimate 48×21, then calculate exactly and compare.",
+      "answer": "Estimate 50×20=1000; exact value 1008, only eight larger.",
+      "id": "number-sense.estimation.video-practice-2"
+    },
+    {
+      "prompt": "A calculation of 39×62 gives 24180. Explain without long multiplication why this is unreasonable.",
+      "answer": "40×60 is about 2400; 24180 is roughly ten times too large. The exact value is 2418.",
+      "id": "number-sense.estimation.video-practice-3"
+    }
+  ],
+  "takeaway": "An estimate checks scale; explicit bounds state what is guaranteed.",
+  "scope": "Rounding, compensation, multiplication estimates, and positive-factor bounds.",
+  "course": "Number sense",
+  "course_id": "number-sense",
+  "title": "Estimation",
+  "objective": "Round and bound quantities to check reasonableness before exact calculation.",
+  "index": 6,
+  "total": 6,
+  "prerequisites": [
+    "number-sense.place-value",
+    "number-sense.multiplication-division"
+  ]
+}

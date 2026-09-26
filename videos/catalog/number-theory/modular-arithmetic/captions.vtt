@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.018
+Congruence means two integers differ by a multiple of the modulus
+
+00:00:05.018 --> 00:00:10.476
+Fourteen and two differ by twelve, so they represent the same remainder class
+
+00:00:10.476 --> 00:00:15.933
+We can add and multiply classes consistently, but division needs an extra condition.
+
+00:00:17.233 --> 00:00:21.967
+Seven is invertible modulo twelve because forty-nine leaves remainder one
+
+00:00:21.967 --> 00:00:24.807
+Its inverse is therefore seven itself
+
+00:00:24.807 --> 00:00:33.800
+This works because seven and twelve have greatest common divisor one; an arbitrary nonzero remainder need not be invertible.
+
+00:00:35.100 --> 00:00:40.203
+Multiply the congruence seven x equals five by the inverse seven
+
+00:00:40.203 --> 00:00:46.233
+The left side becomes x and the right becomes thirty-five, equivalent to eleven
+
+00:00:46.233 --> 00:00:51.800
+Checking seven times eleven gives seventy-seven, whose remainder modulo twelve is five.
+
+00:00:53.100 --> 00:00:58.184
+Modulo six, every product of two with an integer has an even remainder
+
+00:00:58.184 --> 00:01:01.312
+It can never equal the odd remainder one
+
+00:01:01.312 --> 00:01:09.133
+A failed inverse does not permit formal cancellation; depending on the target, a congruence may have no solutions or several.

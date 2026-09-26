@@ -1,0 +1,34 @@
+{
+  "lesson_id": "5-08",
+  "batches": [
+    [
+      {
+        "id": "5-08-P1",
+        "prompt": "Give the next two terms of 5, 8, 11, 14."
+      },
+      {
+        "id": "5-08-P2",
+        "prompt": "Find the tenth term of the arithmetic sequence with a\u2081=2 and d=3."
+      },
+      {
+        "id": "5-08-P3",
+        "prompt": "Find the fifth term of the geometric sequence with a\u2081=3 and r=2."
+      }
+    ],
+    [
+      {
+        "id": "5-08-P4",
+        "prompt": "Write an explicit rule for 7, 5, 3, 1, ... using a\u2081 as the first term."
+      },
+      {
+        "id": "5-08-P5",
+        "prompt": "Write a recursion for 4,12,36,... including the initial value."
+      },
+      {
+        "id": "5-08-P6",
+        "prompt": "Is 1,4,9,16,... arithmetic or geometric? Explain."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

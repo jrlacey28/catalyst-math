@@ -1,0 +1,103 @@
+[
+  {
+    "formula": "6 times 6=36 \"equally likely ordered pairs\"",
+    "text": "Counting gives probabilities only after we identify equally likely outcomes. Two independent fair dice produce thirty-six ordered face pairs. The first die and second die have separate positions, so a two followed by a five differs from a five followed by a two.",
+    "visual": {
+      "kind": "grid",
+      "rows": 6,
+      "cols": 6,
+      "filled": 36
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 18.866666666666667,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "P(\"sum 7\")=frac(6,36)=frac(1,6)",
+    "text": "Six ordered pairs add to seven: one and six, two and five, three and four, and their reversals. Divide those six favorable outcomes by the thirty-six equally likely pairs. We count the underlying outcomes before grouping them by their sum.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        6,
+        30
+      ],
+      "labels": [
+        "sum 7",
+        "other sums"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 18.866666666666667,
+    "duration": 17.5,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "P(\"sum 2\")=frac(1,36)",
+    "text": "The possible sums themselves are not equally likely. Only one ordered pair produces two, while six produce seven. This histogram shows how many pairs belong to each sum, preventing the mistake of assigning every possible sum the same probability.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ],
+      "labels": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 36.36666666666667,
+    "duration": 17.5,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "P(\"two marked\")=frac(4,6)frac(3,5)=frac(2,5)",
+    "text": "Without replacement, later counts change. From four marked objects and two plain objects, the probability of two marked draws is four sixths times three fifths. After the first marked object stays out, only three marked objects remain among five.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        3,
+        2
+      ],
+      "labels": [
+        "marked left",
+        "plain left"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 53.86666666666667,
+    "duration": 17.6,
+    "audio": "audio_parts/04.wav"
+  }
+]

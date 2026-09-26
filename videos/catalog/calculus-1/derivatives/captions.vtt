@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.810
+A derivative begins with an average rate between two different inputs
+
+00:00:04.810 --> 00:00:08.819
+For the square function, choose three and three plus h
+
+00:00:08.819 --> 00:00:14.833
+The quotient measures vertical change divided by horizontal change, giving the secant line its slope.
+
+00:00:16.133 --> 00:00:21.173
+Expand the square to get nine plus six h plus h squared
+
+00:00:21.173 --> 00:00:26.213
+Subtract nine, factor out h, and cancel it while h remains nonzero
+
+00:00:26.213 --> 00:00:30.833
+Each algebra step exposes the nearby slope without dividing by zero.
+
+00:00:32.133 --> 00:00:36.829
+As the second input approaches three, the slope approaches six
+
+00:00:36.829 --> 00:00:40.115
+The limiting secant becomes the tangent line
+
+00:00:40.115 --> 00:00:48.567
+This instantaneous rate is defined by nearby changes, not by directly substituting zero into the original difference quotient.
+
+00:00:49.867 --> 00:00:52.544
+A derivative does not always exist
+
+00:00:52.544 --> 00:01:00.131
+At the corner of absolute x, left-hand slopes approach negative one while right-hand slopes approach positive one
+
+00:01:00.131 --> 00:01:05.933
+The function is continuous there, but no single tangent slope fits both approaches.

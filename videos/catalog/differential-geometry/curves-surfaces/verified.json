@@ -1,0 +1,12 @@
+{
+  "duration_seconds": 73.7,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30.0,
+  "audio_codec": "aac",
+  "render_sha256": "639c4168106919197b07231b756309ffbc32d3d7d9b392de638c14321f9935f5",
+  "full_stream_decode": true,
+  "loudness_lufs": "-16.00",
+  "true_peak_dbtp": "-1.50",
+  "render_wall_seconds": 114.0
+}

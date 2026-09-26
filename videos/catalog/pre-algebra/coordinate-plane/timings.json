@@ -1,0 +1,161 @@
+[
+  {
+    "formula": "P=(3,2)",
+    "text": "An ordered pair gives two instructions: move horizontally to the first coordinate, then vertically to the second. The point three, two lies three units right of the origin and two units up. Reversing the order usually changes the point.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          3,
+          2
+        ]
+      ],
+      "points": [
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.566666666666666,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "Q=(-2,1)",
+    "text": "Negative coordinates describe direction as well as size. Negative two, one means move two units left, then one unit up. Both coordinates refer to the same origin and the marked scale, not to the previous point.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          -2,
+          1
+        ]
+      ],
+      "points": [
+        [
+          -2,
+          1
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.566666666666666,
+    "duration": 15.466666666666667,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "Delta x=3-(-2)=5 quad Delta y=2-1=1",
+    "text": "To compare the two points, subtract corresponding coordinates. From negative two, one to three, two, the horizontal change is five and the vertical change is one. Differences describe movement between points even though neither point is the origin.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        4
+      ],
+      "y": [
+        -1,
+        4
+      ],
+      "curves": [],
+      "points": [
+        [
+          -2,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "segments": [
+        [
+          [
+            -2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "labels": [
+        "Q",
+        "P"
+      ],
+      "equal": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 32.03333333333333,
+    "duration": 17.6,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "y=2",
+    "text": "A horizontal line contains every point with the same vertical coordinate. The equation y equals two therefore allows many x values while keeping height fixed. Coordinates connect individual locations with entire geometric relationships described by equations.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -4,
+        4
+      ],
+      "y": [
+        -1,
+        4
+      ],
+      "curves": [
+        {
+          "f": "2",
+          "color": "blue",
+          "domain": [
+            -4,
+            4
+          ]
+        }
+      ],
+      "points": [
+        [
+          -2,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 49.63333333333333,
+    "duration": 19.8,
+    "audio": "audio_parts/04.wav"
+  }
+]

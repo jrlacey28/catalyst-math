@@ -1,0 +1,7 @@
+A limit describes what nearby outputs approach, even when the target input itself is missing. This fraction is undefined at input one because its denominator is zero. We can still investigate values taken just to either side of that input.
+
+Factor the numerator into x minus one times x plus one. At every allowed nearby input, the common nonzero factor cancels and the output equals x plus one. The simplified expression reveals a line with its original missing point retained.
+
+As inputs approach one from either direction, these outputs approach two. That statement does not fill the hole or claim the original function equals two at one. A limit concerns nearby behavior; a function value concerns a particular allowed input.
+
+Both directions must agree for a two-sided limit. Absolute x divided by x equals negative one to the left of zero and positive one to the right. Because those approaches disagree, there is no single two-sided limit at zero.

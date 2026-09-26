@@ -1,0 +1,98 @@
+{
+  "id": "statistics.sampling",
+  "beats": [
+    {
+      "formula": "\"population\" arrow.r \"sample\" arrow.r \"estimate\"",
+      "text": "A sample is a smaller group used to learn about a population. First define who belongs to that population and how they can enter the sample. These three groups contain ten members each; omitting a group changes whom our evidence can represent.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          10,
+          10,
+          10
+        ],
+        "labels": [
+          "group A",
+          "group B",
+          "group C"
+        ]
+      }
+    },
+    {
+      "formula": "\"simple random sample: each size-6 subset is equally likely\"",
+      "text": "In a simple random sample of six, every subset of six population members has the same chance of selection. Random selection does not guarantee a perfectly representative individual sample, but it gives a defensible probability model for sampling variation.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          6
+        ],
+        "labels": [
+          "sample of six"
+        ]
+      }
+    },
+    {
+      "formula": "\"equal-sized strata: sample two from each\"",
+      "text": "Stratified sampling randomly samples within predefined groups. Taking two from each of our equal-sized groups ensures all are represented. When groups have different population sizes, analysis generally needs their population-size weights rather than blindly giving every sampled group equal influence.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          2,
+          2,
+          2
+        ],
+        "labels": [
+          "A sample",
+          "B sample",
+          "C sample"
+        ]
+      }
+    },
+    {
+      "formula": "\"larger sample\" != \"less selection bias\"",
+      "text": "A large convenience sample can still systematically miss parts of the population. Surveying only one group gives no direct evidence about the others, however carefully we average the responses. Sample size reduces random variation more readily than it repairs selection bias.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          10,
+          0,
+          0
+        ],
+        "labels": [
+          "A sampled",
+          "B sampled",
+          "C sampled"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "A population has 500 members and a simple random sample contains 50. What fraction is sampled, and what does 'simple random' require?",
+      "answer": "The sampled fraction is 50/500=0.1=10%. Every subset of 50 members must have the same selection probability; simply calling a convenient group random is insufficient.",
+      "id": "statistics.sampling.video-practice-1"
+    },
+    {
+      "prompt": "A university posts an optional online poll about study habits. Explain one reason a large response count may still fail to represent all students.",
+      "answer": "Responders self-select and may differ systematically from nonresponders; students who do not encounter or choose the poll are underrepresented. More responses do not automatically remove this selection bias.",
+      "id": "statistics.sampling.video-practice-2"
+    },
+    {
+      "prompt": "Two strata contain 200 and 800 people. You sample 20 from each. What weights combine the two sample means into an estimate of the population mean?",
+      "answer": "Use population weights 200/1000=0.2 and 800/1000=0.8. The estimate is 0.2 times the first sample mean plus 0.8 times the second, rather than an unweighted average.",
+      "id": "statistics.sampling.video-practice-3"
+    }
+  ],
+  "takeaway": "Inference depends on how the sample was selected, not only on how many observations it contains.",
+  "scope": "Simple random sampling, a stratified design, population weights, and selection bias.",
+  "course": "Statistics and inference",
+  "course_id": "statistics",
+  "title": "Sampling",
+  "objective": "Recognize target populations, selection bias, random sampling, and experimental design.",
+  "index": 1,
+  "total": 6,
+  "prerequisites": [
+    "statistics-basics.distributions",
+    "probability.random-variables"
+  ]
+}

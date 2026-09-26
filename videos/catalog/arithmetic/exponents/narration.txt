@@ -1,0 +1,7 @@
+A positive whole-number exponent counts repeated factors. Three to the fourth uses four factors of three, not four added threes. These repeated multiplications grow the sequence from three to nine, twenty seven, and eighty one.
+
+Multiplying powers with the same base joins their lists of factors. Two copies of three followed by three more copies produce five copies altogether. That is why multiplication adds exponents when the bases match.
+
+Extend the pattern backward by dividing by three at every step. After three comes one, then one third. This explains zero and negative exponents consistently: a nonzero base to zero is one, and a negative power means a reciprocal.
+
+A power of a sum repeats the whole sum, so its products include two cross terms. This tiled square shows why x plus one squared contains twice x, unlike the valid power rule for a product.

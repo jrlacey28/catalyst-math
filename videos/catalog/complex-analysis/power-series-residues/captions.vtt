@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:06.964
+Inside the unit disk, a geometric power series equals one divided by one minus z
+
+00:00:06.964 --> 00:00:13.528
+Multiplying a finite partial sum by one minus z leaves one minus a small remainder
+
+00:00:13.528 --> 00:00:17.467
+The condition on absolute value makes that remainder vanish.
+
+00:00:18.767 --> 00:00:23.446
+Near a singularity, a Laurent expansion may also contain negative powers
+
+00:00:23.446 --> 00:00:28.552
+The coefficient of one over z is called the residue at zero
+
+00:00:28.552 --> 00:00:34.933
+For this simple pole, multiply by z and evaluate the remaining continuous factor at zero.
+
+00:00:36.233 --> 00:00:39.597
+The residue at zero is negative one half
+
+00:00:39.597 --> 00:00:46.326
+Around the positively oriented unit circle, zero lies inside and the other pole, two, lies outside
+
+00:00:46.326 --> 00:00:52.633
+The residue theorem gives two pi i times the enclosed residue, hence negative pi i.
+
+00:00:53.933 --> 00:00:58.451
+A counterclockwise circle of radius three encloses both simple poles
+
+00:00:58.451 --> 00:01:02.517
+Their residues cancel, so that contour integral is zero
+
+00:01:02.517 --> 00:01:11.100
+The rule assumes isolated singularities inside and none on the contour; a path through a pole requires different treatment.

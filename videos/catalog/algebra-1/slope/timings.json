@@ -1,0 +1,252 @@
+[
+  {
+    "formula": "m=frac(Delta y,Delta x)",
+    "text": "Slope measures output change per unit input change along a nonvertical line. Choose two distinct points, compare their vertical coordinates, and divide by their horizontal separation. The order of subtraction must stay consistent in numerator and denominator.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        4
+      ],
+      "y": [
+        0,
+        10
+      ],
+      "curves": [
+        {
+          "f": "2*x+3",
+          "color": "blue",
+          "domain": [
+            -1.5,
+            3.5
+          ]
+        }
+      ],
+      "points": [
+        [
+          -1,
+          1
+        ],
+        [
+          3,
+          9
+        ]
+      ],
+      "segments": [
+        [
+          [
+            -1,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 19.066666666666666,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "m=frac(9-1,3-(-1))=frac(8,4)=2",
+    "text": "From negative one, one to three, nine, the horizontal change is four and the vertical change is eight. Eight divided by four gives slope two: each step right corresponds to a rise of two on this line.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        4
+      ],
+      "y": [
+        0,
+        10
+      ],
+      "curves": [
+        {
+          "f": "2*x+3",
+          "color": "blue",
+          "domain": [
+            -1.5,
+            3.5
+          ]
+        }
+      ],
+      "points": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "segments": [
+        [
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 19.066666666666666,
+    "duration": 15.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "m=frac(-1-3,2-0)=-2",
+    "text": "A downward trend gives a negative slope. Moving from zero, three to two, negative one changes height by negative four across a positive run of two. The sign records direction, while the magnitude records steepness relative to the axis units.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        3
+      ],
+      "y": [
+        -3,
+        5
+      ],
+      "curves": [
+        {
+          "f": "-2*x+3",
+          "color": "pink",
+          "domain": [
+            -1,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      "segments": [
+        [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            -1
+          ]
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 34.06666666666666,
+    "duration": 17.333333333333332,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "Delta x=0 quad \"slope undefined\"",
+    "text": "A vertical line has zero horizontal change, so its slope quotient would divide by zero. That slope is undefined, not zero. Zero slope belongs to a horizontal line, where the height remains unchanged across a nonzero horizontal movement.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        4
+      ],
+      "y": [
+        -3,
+        5
+      ],
+      "curves": [
+        {
+          "f": "1",
+          "color": "gold",
+          "domain": [
+            -1,
+            4
+          ]
+        }
+      ],
+      "segments": [
+        [
+          [
+            2,
+            -3
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      ],
+      "points": [
+        [
+          2,
+          -2
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 51.39999999999999,
+    "duration": 18.5,
+    "audio": "audio_parts/04.wav"
+  }
+]

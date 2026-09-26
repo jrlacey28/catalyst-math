@@ -1,0 +1,119 @@
+[
+  {
+    "formula": "hat(p)=frac(30,50)=0.6",
+    "text": "Statistical inference uses sample evidence to learn beyond the observed data. If thirty of fifty sampled people support a proposal, the sample proportion is sixty percent. Whether that estimates a wider population depends on how those people entered the sample.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        30,
+        20
+      ],
+      "labels": [
+        "support",
+        "do not support"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "\"estimated SE\" approx sqrt(frac(0.6(0.4),50))",
+    "text": "Under independent binary sampling with a common success probability, we can estimate how a sample proportion varies. Here the estimated standard error is about zero point zero six nine. The model supplies an uncertainty scale; the observed proportion alone cannot show its precision.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0.3,
+        0.9
+      ],
+      "y": [
+        0,
+        6.5
+      ],
+      "curves": [
+        {
+          "f": "exp(-((x-0.6)**2)/(2*0.0692820323**2))/(0.0692820323*sqrt(2*pi))",
+          "color": "blue",
+          "domain": [
+            0.3,
+            0.9
+          ]
+        }
+      ],
+      "points": [
+        [
+          0.6,
+          5.758235824751242
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "0.8-0.5=0.3 \"observed treatment difference\"",
+    "text": "Random assignment answers a different question from random sampling. Assigning volunteers randomly to treatments helps separate treatment effects from preexisting group differences. An observed success-rate difference of three tenths still carries sampling uncertainty; assignment does not eliminate random variation.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        0.8,
+        0.5
+      ],
+      "labels": [
+        "treatment",
+        "comparison"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "\"design\" + \"model\" + \"uncertainty\" arrow.r \"qualified conclusion\"",
+    "text": "Random sampling supports population generalization, while random assignment supports causal comparison under suitable implementation. Neither is replaced by a complicated formula. State the population, design, assumptions, effect estimate, and uncertainty so the conclusion remains matched to the evidence actually collected.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "design",
+        "data",
+        "model",
+        "uncertainty",
+        "conclusion"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "directed": true,
+      "active": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

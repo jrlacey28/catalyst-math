@@ -1,0 +1,90 @@
+{
+  "id": "arithmetic.decimals",
+  "beats": [
+    {
+      "formula": "0.37=frac(3,10)+frac(7,100)=frac(37,100)",
+      "text": "Decimal places extend the same base-ten system to parts smaller than one. Three tenths occupy thirty hundredths, and seven more hundredths bring the shaded total to thirty seven hundredths, written as zero point three seven.",
+      "visual": {
+        "kind": "grid",
+        "rows": 10,
+        "cols": 10,
+        "filled": 30,
+        "secondary": 7
+      }
+    },
+    {
+      "formula": "0.4=0.40=frac(40,100)",
+      "text": "A trailing zero changes the written precision, not the amount. Four tenths and forty hundredths shade exactly the same region. To compare decimals, compare corresponding place values instead of treating their digit strings as whole numbers.",
+      "visual": {
+        "kind": "grid",
+        "rows": 10,
+        "cols": 10,
+        "filled": 40
+      }
+    },
+    {
+      "formula": "1.2+0.35=1.20+0.35=1.55",
+      "text": "When adding decimals, align their units. One point two becomes one point two zero so that tenths line up with tenths and hundredths with hundredths. The increase of thirty five hundredths reaches one point five five.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          2
+        ],
+        "points": [
+          1.2,
+          1.55
+        ],
+        "arrows": [
+          [
+            1.2,
+            1.55
+          ]
+        ],
+        "labels": [
+          "1.20",
+          "1.55"
+        ]
+      }
+    },
+    {
+      "formula": "0.3 times 0.4=frac(3 times 4,100)=0.12",
+      "text": "For multiplication, think in fractions rather than shifting a point mechanically. Three tenths times four tenths is twelve hundredths. The product is smaller than either factor because we are taking only part of an amount below one.",
+      "visual": {
+        "kind": "grid",
+        "rows": 10,
+        "cols": 10,
+        "filled": 12
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Which is larger, 0.56 or 0.6? Explain with hundredths.",
+      "answer": "0.6=0.60=60/100 exceeds 56/100.",
+      "id": "arithmetic.decimals.video-practice-1"
+    },
+    {
+      "prompt": "Calculate 2.08+0.7 and show place-value alignment.",
+      "answer": "2.08+0.70=2.78.",
+      "id": "arithmetic.decimals.video-practice-2"
+    },
+    {
+      "prompt": "Explain why 0.2×0.7 is 0.14 rather than 1.4.",
+      "answer": "Two tenths times seven tenths is fourteen hundredths: (2/10)(7/10)=14/100.",
+      "id": "arithmetic.decimals.video-practice-3"
+    }
+  ],
+  "takeaway": "Decimal digits count tenths, hundredths, and further powers of ten.",
+  "scope": "Decimal place value, comparison, addition, and multiplication meaning.",
+  "course": "Arithmetic",
+  "course_id": "arithmetic",
+  "title": "Decimals",
+  "objective": "Relate decimal place value to fractions and perform decimal operations.",
+  "index": 2,
+  "total": 8,
+  "prerequisites": [
+    "number-sense.place-value",
+    "arithmetic.fractions"
+  ]
+}

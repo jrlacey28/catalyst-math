@@ -1,0 +1,31 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.875
+Estimation deliberately replaces awkward quantities with nearby convenient ones
+
+00:00:03.875 --> 00:00:14.300
+One hundred ninety eight is close to two hundred, and four hundred three is close to four hundred, so their sum should be close to six hundred.
+
+00:00:15.600 --> 00:00:18.264
+The exact sum is six hundred one
+
+00:00:18.264 --> 00:00:29.300
+Rounding the first number up by two and the second down by three changes the total by negative one, explaining why the estimate of six hundred is slightly low.
+
+00:00:30.600 --> 00:00:34.636
+For multiplication, nearby round factors often give a useful scale
+
+00:00:34.636 --> 00:00:39.479
+Nineteen groups of thirty one should be near twenty groups of thirty
+
+00:00:39.479 --> 00:00:45.533
+An answer around sixty or six thousand would have the wrong size before detailed checking.
+
+00:00:46.833 --> 00:00:50.047
+When an estimate must be justified, use bounds
+
+00:00:50.047 --> 00:00:57.277
+Replacing both positive factors by smaller numbers gives a lower bound, while larger factors give an upper bound
+
+00:00:57.277 --> 00:01:02.900
+Here the true product lies strictly between five hundred forty and six hundred forty.

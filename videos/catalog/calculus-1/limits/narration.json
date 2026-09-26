@@ -1,0 +1,176 @@
+[
+  {
+    "formula": "f(x)=frac(x^2-1,x-1), quad x != 1",
+    "text": "A limit describes nearby outputs, even when the input itself is missing. This quotient is undefined at one because its denominator is zero. The graph can still approach a definite height from both sides.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        3
+      ],
+      "y": [
+        -1,
+        5
+      ],
+      "curves": [
+        {
+          "f": "x+1",
+          "color": "blue",
+          "domain": [
+            -1,
+            3
+          ]
+        }
+      ],
+      "holes": [
+        [
+          1,
+          2
+        ]
+      ],
+      "sweep": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "frac((x-1)(x+1),x-1)=x+1, quad x != 1",
+    "text": "Factor the entire numerator as x minus one times x plus one. For nearby inputs other than one, the shared factor is nonzero, so its ratio equals one. Cancelling factors preserves these nearby values.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        3
+      ],
+      "y": [
+        -1,
+        5
+      ],
+      "curves": [
+        {
+          "f": "x+1",
+          "color": "blue",
+          "domain": [
+            -1,
+            3
+          ]
+        }
+      ],
+      "holes": [
+        [
+          1,
+          2
+        ]
+      ],
+      "points": [
+        [
+          0.5,
+          1.5
+        ],
+        [
+          1.5,
+          2.5
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "lim_(x arrow.r 1) frac(x^2-1,x-1)=2",
+    "text": "The simpler expression approaches two as x approaches one. Therefore the original quotient has limit two, although it has no value at one. Taking a limit and assigning a function value are different operations.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        2
+      ],
+      "y": [
+        0.5,
+        3.5
+      ],
+      "curves": [
+        {
+          "f": "x+1",
+          "color": "gold",
+          "domain": [
+            0,
+            2
+          ]
+        }
+      ],
+      "holes": [
+        [
+          1,
+          2
+        ]
+      ],
+      "points": [
+        [
+          0.9,
+          1.9
+        ],
+        [
+          1.1,
+          2.1
+        ]
+      ],
+      "sweep": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "lim_(x arrow.r 0) frac(abs(x),x) \"does not exist\"",
+    "text": "Both sides must agree for a two-sided limit. Absolute x divided by x equals negative one on the left and positive one on the right. These different destination heights prevent a two-sided limit at zero.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        2
+      ],
+      "y": [
+        -2,
+        2
+      ],
+      "curves": [
+        {
+          "f": "-1",
+          "color": "blue",
+          "domain": [
+            -2,
+            -0.01
+          ]
+        },
+        {
+          "f": "1",
+          "color": "gold",
+          "domain": [
+            0.01,
+            2
+          ]
+        }
+      ],
+      "holes": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

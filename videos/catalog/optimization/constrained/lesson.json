@@ -1,0 +1,143 @@
+{
+  "id": "optimization.constrained",
+  "beats": [
+    {
+      "formula": "x+y=3, quad f(x,y)=x^2+y^2",
+      "text": "A constraint restricts which directions are available. To minimize squared distance from the origin while staying on the line x plus y equals three, we must search along that line, rather than move freely toward the origin.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -0.5,
+          3.5
+        ],
+        "y": [
+          -0.5,
+          3.5
+        ],
+        "curves": [
+          {
+            "f": "3-x",
+            "color": "blue",
+            "domain": [
+              -0.5,
+              3.5
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1.5,
+            1.5
+          ]
+        ],
+        "equal": true
+      }
+    },
+    {
+      "formula": "(2x,2y)=lambda(1,1)",
+      "text": "At a regular constrained extremum, the objective gradient is parallel to the constraint gradient. Otherwise a tangent direction would still decrease the objective. Here the gradient equations give x equals y; combining that with the constraint gives one and a half each.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "points": [
+          [
+            1.5,
+            1.5
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "x^2+(3-x)^2=2(x-1.5)^2+4.5",
+      "text": "Lagrange multipliers produced a candidate. Substitution now proves it is the global minimum: the squared term is always nonnegative, and vanishes exactly at one and a half. The minimum squared distance is therefore four and a half.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          3
+        ],
+        "y": [
+          4,
+          10
+        ],
+        "curves": [
+          {
+            "f": "x*x+(3-x)**2",
+            "color": "gold",
+            "domain": [
+              0,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            1.5,
+            4.5
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "x^2+y^2=0 arrow.r (x,y)=(0,0)",
+      "text": "The usual multiplier condition needs regularity, such as a nonzero constraint gradient. The constraint x squared plus y squared equals zero has only one feasible point, where its gradient vanishes. That point is optimal even for objectives whose gradients are nonzero.",
+      "visual": {
+        "kind": "plane",
+        "points": [
+          [
+            0,
+            0
+          ]
+        ],
+        "vectors": [
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Minimize x²+y² subject to x+y=8, justifying global minimality.",
+      "answer": "x=y=4, with value 32. Substituting y=8−x gives 2(x−4)²+32, which is at least 32.",
+      "id": "optimization.constrained.video-practice-1"
+    },
+    {
+      "prompt": "Minimize x²+y² subject to y=2x+1 by substitution.",
+      "answer": "The objective is 5x²+4x+1=5(x+2/5)²+1/5. Minimum at x=−2/5,y=1/5, with value 1/5.",
+      "id": "optimization.constrained.video-practice-2"
+    },
+    {
+      "prompt": "For objective f(x,y)=x and constraint x²+y²=0, explain why the feasible optimum fails the standard multiplier equation.",
+      "answer": "The only feasible point is (0,0), hence optimal. There ∇f=(1,0) and ∇g=(0,0), so no lambda satisfies ∇f=lambda∇g. The regularity hypothesis fails.",
+      "id": "optimization.constrained.video-practice-3"
+    }
+  ],
+  "takeaway": "Multiplier equations identify regular candidates; feasibility and global optimality need their own checks.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Optimization",
+  "course_id": "optimization",
+  "title": "Constrained optimization",
+  "objective": "Use feasible sets, Lagrange multipliers, and optimality conditions.",
+  "index": 3,
+  "total": 3,
+  "prerequisites": [
+    "optimization.unconstrained",
+    "multivariable.partial-derivatives"
+  ]
+}

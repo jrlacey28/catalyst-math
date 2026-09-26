@@ -1,0 +1,123 @@
+[
+  {
+    "formula": "S=(0,2), quad sup S=2",
+    "text": "An upper bound sits at or above every member of a set. For the open interval from zero to two, two is an upper bound even though it is not a member. A supremum is the least upper bound.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        -1,
+        4
+      ],
+      "interval": [
+        0,
+        2
+      ],
+      "points": [
+        0,
+        2,
+        3
+      ],
+      "open": [
+        0,
+        2
+      ],
+      "labels": [
+        "0",
+        "least bound",
+        "another bound"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "b<2 arrow.r frac(b+2,2)>b",
+    "text": "Why can no smaller number be an upper bound? If b lies between zero and two, its midpoint with two still belongs to the interval and exceeds b. For b at most zero, the member one already defeats it.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        3
+      ],
+      "points": [
+        1,
+        1.5,
+        2
+      ],
+      "arrows": [
+        [
+          1,
+          1.5
+        ]
+      ],
+      "labels": [
+        "b",
+        "(b+2)/2",
+        "2"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.0,
+    "duration": 15.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "q>=0, quad q^2<2",
+    "text": "Now consider nonnegative rational numbers whose squares are below two. They form a nonempty set bounded above by two. Real completeness guarantees a real supremum. Further algebra shows this boundary squares to two, although it is not rational.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        1,
+        2
+      ],
+      "points": [
+        1.41421356237,
+        1,
+        1.4,
+        1.41,
+        1.4142
+      ],
+      "labels": [
+        "sqrt(2)",
+        "1"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 30.0,
+    "duration": 17.933333333333334,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "sqrt(2) in.not QQ",
+    "text": "This illustrates the difference between approximation and existence. More decimal digits alone do not prove a limit exists in the chosen number system. Completeness supplies real least upper bounds; the rationals lack the required boundary in this example.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        1,
+        1.4,
+        1.41,
+        1.414,
+        1.4142
+      ],
+      "limit": 1.41421356237
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 47.93333333333334,
+    "duration": 18.233333333333334,
+    "audio": "audio_parts/04.wav"
+  }
+]

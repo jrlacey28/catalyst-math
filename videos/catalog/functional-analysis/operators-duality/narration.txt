@@ -1,0 +1,7 @@
+A linear operator preserves addition and scalar multiplication. On the plane, stretching the first coordinate by two while leaving the second unchanged is linear. The operator norm measures the largest possible output size for an input of norm at most one.
+
+For Euclidean length, this transformation enlarges no vector by more than a factor of two. The first coordinate unit vector achieves exactly that factor, so the operator norm is two. A single successful vector supplies the lower bound, not the upper bound.
+
+A continuous linear functional outputs a scalar and belongs to the dual space. This functional is the dot product with one, two. Cauchy Schwarz bounds its magnitude by square root five times the input norm, and a parallel unit vector attains equality.
+
+Linearity alone does not imply boundedness. On continuously differentiable functions over zero to two pi, using the uniform norm for inputs and outputs, differentiation sends these shrinking functions to derivatives of size one. No fixed amplification bound can work for every n.

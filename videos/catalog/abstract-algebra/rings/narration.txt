@@ -1,0 +1,7 @@
+A ring supports addition, subtraction, and multiplication with distributive laws. The integers are a familiar example. Multiplication need not supply inverses for every nonzero element: dividing one by two leaves the integer system altogether.
+
+Now calculate with remainders modulo six. Addition and multiplication still make a ring, but two times three becomes zero. Both factors were nonzero classes. Such factors are called zero divisors, and they prevent familiar cancellation arguments.
+
+For example, twice one and twice four both leave remainder two. Cancelling the common two would falsely say one equals four. Division by a factor requires an appropriate inverse or another justified cancellation property, not merely matching notation.
+
+The multiples of two modulo six are zero, two, and four, so two has no multiplicative inverse. A field is a nontrivial commutative ring with identity in which every nonzero element has a multiplicative inverse.

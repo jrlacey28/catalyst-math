@@ -1,0 +1,99 @@
+[
+  {
+    "formula": "sin(theta)^2+cos(theta)^2=1",
+    "text": "A trigonometric identity is a relationship that holds at every input where both sides are defined. The unit-circle equation gives sine squared plus cosine squared equals one because the two coordinates always lie one unit from the origin.",
+    "visual": {
+      "kind": "circle",
+      "angle": 0.6283185307179586,
+      "radius": 2.4,
+      "triangle": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 17.333333333333332,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "1-cos(theta)^2=sin(theta)^2",
+    "text": "Rearrange the circle identity to replace one expression with an equal one. One minus cosine squared becomes sine squared. This substitution is useful because it can reveal a factor that was hidden in the original form.",
+    "visual": {
+      "kind": "circle",
+      "angle": 1.0471975511965976,
+      "radius": 2.4,
+      "triangle": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 17.333333333333332,
+    "duration": 16.2,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "frac(1-cos(theta)^2,sin(theta))=sin(theta) quad sin(theta)!=0",
+    "text": "After replacement, the numerator is sine squared. Dividing by sine cancels one common factor, leaving sine, but only when sine is nonzero. The simplified graph must retain the inputs excluded by the original denominator.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -0.5,
+        6.7
+      ],
+      "y": [
+        -1.5,
+        1.5
+      ],
+      "curves": [
+        {
+          "f": "sin(x)",
+          "color": "blue",
+          "domain": [
+            -0.5,
+            6.7
+          ]
+        }
+      ],
+      "holes": [
+        [
+          0,
+          0
+        ],
+        [
+          3.141592653589793,
+          0
+        ],
+        [
+          6.283185307179586,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 33.53333333333333,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "cos(theta)=plus.minus sqrt(1-sin(theta)^2)",
+    "text": "Solving a squared relationship introduces a sign choice. If sine is known, the magnitude of cosine follows from the identity, but the quadrant decides whether cosine is positive or negative. Choosing only the positive root would discard valid angles.",
+    "visual": {
+      "kind": "circle",
+      "angle": 2.0943951023931953,
+      "radius": 2.4,
+      "triangle": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 50.53333333333333,
+    "duration": 18.533333333333335,
+    "audio": "audio_parts/04.wav"
+  }
+]

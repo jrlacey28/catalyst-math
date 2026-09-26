@@ -1,0 +1,74 @@
+{
+  "id": "trigonometry.radians",
+  "beats": [
+    {
+      "formula": "theta=frac(s,r)",
+      "text": "Radians measure an angle by comparing its arc length with its radius. An arc as long as one radius subtends one radian. The units cancel in this ratio, making the angle independent of the size of the circle.",
+      "visual": {
+        "kind": "circle",
+        "angle": 1,
+        "radius": 2,
+        "arc": true
+      }
+    },
+    {
+      "formula": "s=r theta quad r=3 quad theta=2 arrow.r s=6",
+      "text": "For a radius of three units and an angle of two radians, the arc length is six units. Multiplying the radius by the radian measure reconstructs the distance along the circle, rather than the straight chord between endpoints.",
+      "visual": {
+        "kind": "circle",
+        "angle": 2,
+        "radius": 3,
+        "arc": true
+      }
+    },
+    {
+      "formula": "360 degree=2pi \"radians\"",
+      "text": "A complete circumference has length two pi times the radius, so dividing by the radius gives two pi radians per turn. Half a turn is pi radians and a quarter turn is pi over two. These are exact relationships.",
+      "visual": {
+        "kind": "circle",
+        "angle": 6.283185307179586,
+        "radius": 2.4,
+        "arc": true
+      }
+    },
+    {
+      "formula": "60 degree=frac(pi,3) \"radians\"",
+      "text": "Convert degrees by multiplying by pi over one hundred eighty. Sixty degrees becomes pi over three radians. The arc formula radius times angle requires radians; inserting sixty directly as though it were a radian measure would give the wrong length.",
+      "visual": {
+        "kind": "circle",
+        "angle": 1.0471975511965976,
+        "radius": 2.4,
+        "arc": true
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Convert forty five degrees to radians, showing the conversion factor.",
+      "answer": "45×π/180=π/4 radians.",
+      "id": "trigonometry.radians.video-practice-1"
+    },
+    {
+      "prompt": "A radius-five circle has an arc subtended by 1.4 radians. Find the arc length.",
+      "answer": "s=rθ=5×1.4=7 length units.",
+      "id": "trigonometry.radians.video-practice-2"
+    },
+    {
+      "prompt": "An arc measures twelve centimeters on a radius-eight-centimeter circle. Find its angle and explain why the radius matters.",
+      "answer": "θ=s/r=12/8=1.5 radians; the same arc length bends through different angles on different radii.",
+      "id": "trigonometry.radians.video-practice-3"
+    }
+  ],
+  "takeaway": "Radian measure is arc length divided by radius; arc length equals radius times radians.",
+  "scope": "Radian meaning, arc length, full-turn equivalence, and degree conversion.",
+  "course": "Trigonometry",
+  "course_id": "trigonometry",
+  "title": "Radians",
+  "objective": "Measure angles as arc length divided by radius and convert angle units.",
+  "index": 4,
+  "total": 7,
+  "prerequisites": [
+    "geometry.circles",
+    "arithmetic.ratios"
+  ]
+}

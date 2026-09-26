@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.429
+An application begins by identifying what one small piece contributes
+
+00:00:04.429 --> 00:00:14.500
+Between the curves y equals x and y equals x squared on the unit interval, each vertical strip has height upper curve minus lower curve.
+
+00:00:15.800 --> 00:00:18.632
+Integrate that strip height over its width
+
+00:00:18.632 --> 00:00:26.320
+The antiderivative is x squared over two minus x cubed over three, so the enclosed area is one sixth
+
+00:00:26.320 --> 00:00:30.367
+Subtracting the curves first creates a new nonnegative height function.
+
+00:00:31.667 --> 00:00:37.692
+Rotate the region under y equals x, from zero to two, around the horizontal axis
+
+00:00:37.692 --> 00:00:44.120
+Each thin slice is a disk with radius x, so its area is pi x squared
+
+00:00:44.120 --> 00:00:47.333
+Integrating slice area produces volume in cubic units.
+
+00:00:48.633 --> 00:00:53.226
+The same accumulation logic computes mass from a varying linear density
+
+00:00:53.226 --> 00:00:58.654
+A rod with density one plus x contributes density times a tiny length
+
+00:00:58.654 --> 00:01:04.500
+Integrating from zero to two gives mass four, with units determined by the density.

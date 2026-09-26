@@ -1,0 +1,169 @@
+{
+  "id": "calculus-2.integrals",
+  "beats": [
+    {
+      "formula": "integral_0^2 3 dif t=6",
+      "text": "An integral accumulates small contributions. If a rate stays at three units per second for two seconds, the total is six units. The graph shows a rectangle whose height is rate and whose width is elapsed time.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          3
+        ],
+        "y": [
+          -1,
+          4
+        ],
+        "curves": [
+          {
+            "f": "3",
+            "color": "blue",
+            "domain": [
+              0,
+              2
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "formula": "integral_0^2 t dif t=2",
+      "text": "When the rate changes, narrow rectangles approximate the accumulation, and a limit gives the exact integral. For a rate equal to time between zero and two, the region is a triangle with base two and height two.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          3
+        ],
+        "y": [
+          -1,
+          4
+        ],
+        "curves": [
+          {
+            "f": "x",
+            "color": "blue",
+            "domain": [
+              0,
+              2
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          2
+        ],
+        "sweep": true
+      }
+    },
+    {
+      "formula": "integral_0^2 (t-1) dif t=0",
+      "text": "Integrals count signed accumulation. This velocity is negative before time one and positive afterward. Equal areas cancel, giving zero displacement. Total distance instead adds their magnitudes, producing one unit rather than zero for this journey.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          2.5
+        ],
+        "y": [
+          -1.5,
+          2
+        ],
+        "curves": [
+          {
+            "f": "x-1",
+            "color": "blue",
+            "domain": [
+              0,
+              2
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          2
+        ],
+        "points": [
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "integral 2x dif x=x^2+C",
+      "text": "An indefinite integral describes all antiderivatives. Every vertical shift of x squared has derivative two x, so a constant must remain. A definite integral is a number between bounds; an indefinite integral is a family of functions.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          2
+        ],
+        "y": [
+          -2,
+          6
+        ],
+        "curves": [
+          {
+            "f": "x*x-1",
+            "color": "blue",
+            "domain": [
+              -2,
+              2
+            ]
+          },
+          {
+            "f": "x*x",
+            "color": "gold",
+            "domain": [
+              -2,
+              2
+            ]
+          },
+          {
+            "f": "x*x+1",
+            "color": "pink",
+            "domain": [
+              -2,
+              2
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find ∫₂⁴ 6 dt and explain the units if 6 is measured in liters per minute and t in minutes.",
+      "answer": "The integral is 6(4−2)=12 liters. Rate multiplied by elapsed time gives accumulated volume.",
+      "id": "calculus-2.integrals.video-practice-1"
+    },
+    {
+      "prompt": "Evaluate ∫₀¹ (3x²+2) dx using an antiderivative and show both endpoint values.",
+      "answer": "An antiderivative is x³+2x. Evaluating at 1 and 0 gives 3−0=3.",
+      "id": "calculus-2.integrals.video-practice-2"
+    },
+    {
+      "prompt": "For v(t)=t−1 on 0≤t≤3, find displacement and total distance. Explain the difference.",
+      "answer": "Displacement is [t²/2−t]₀³=3/2. Distance is the magnitude of the negative triangular area 1/2 plus the positive area 2, giving 5/2.",
+      "id": "calculus-2.integrals.video-practice-3"
+    }
+  ],
+  "takeaway": "Integrals accumulate signed quantities; distance and other totals may require integrating absolute values.",
+  "scope": "Constant and variable accumulation, signed area, and the antiderivative constant.",
+  "course": "Calculus II",
+  "course_id": "calculus-2",
+  "title": "Integrals",
+  "objective": "Connect signed accumulation, Riemann sums, and antiderivatives.",
+  "index": 1,
+  "total": 8,
+  "prerequisites": [
+    "calculus-1.limits",
+    "calculus-1.derivatives"
+  ]
+}

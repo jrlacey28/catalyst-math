@@ -1,0 +1,7 @@
+Inside the unit disk, a geometric power series equals one divided by one minus z. Multiplying a finite partial sum by one minus z leaves one minus a small remainder. The condition on absolute value makes that remainder vanish.
+
+Near a singularity, a Laurent expansion may also contain negative powers. The coefficient of one over z is called the residue at zero. For this simple pole, multiply by z and evaluate the remaining continuous factor at zero.
+
+The residue at zero is negative one half. Around the positively oriented unit circle, zero lies inside and the other pole, two, lies outside. The residue theorem gives two pi i times the enclosed residue, hence negative pi i.
+
+A counterclockwise circle of radius three encloses both simple poles. Their residues cancel, so that contour integral is zero. The rule assumes isolated singularities inside and none on the contour; a path through a pole requires different treatment.

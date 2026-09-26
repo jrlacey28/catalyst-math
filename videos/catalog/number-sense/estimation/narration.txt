@@ -1,0 +1,7 @@
+Estimation deliberately replaces awkward quantities with nearby convenient ones. One hundred ninety eight is close to two hundred, and four hundred three is close to four hundred, so their sum should be close to six hundred.
+
+The exact sum is six hundred one. Rounding the first number up by two and the second down by three changes the total by negative one, explaining why the estimate of six hundred is slightly low.
+
+For multiplication, nearby round factors often give a useful scale. Nineteen groups of thirty one should be near twenty groups of thirty. An answer around sixty or six thousand would have the wrong size before detailed checking.
+
+When an estimate must be justified, use bounds. Replacing both positive factors by smaller numbers gives a lower bound, while larger factors give an upper bound. Here the true product lies strictly between five hundred forty and six hundred forty.

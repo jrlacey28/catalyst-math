@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4A-04",
+  "batches": [
+    [
+      {
+        "id": "4A-04-P1",
+        "prompt": "A length of 5 becomes 15 under dilation. Find the scale factor."
+      },
+      {
+        "id": "4A-04-P2",
+        "prompt": "Similar triangles have matching sides 4 and 10. A second side on the smaller triangle is 6. Find its match."
+      },
+      {
+        "id": "4A-04-P3",
+        "prompt": "Lengths scale by 3. By what factor does area scale?"
+      }
+    ],
+    [
+      {
+        "id": "4A-04-P4",
+        "prompt": "A model is at scale 1:50. Its wall is 8 cm long. Find the real length in meters."
+      },
+      {
+        "id": "4A-04-P5",
+        "prompt": "Two triangles each have angles 40\u00b0 and 65\u00b0. Are they similar? Why?"
+      },
+      {
+        "id": "4A-04-P6",
+        "prompt": "Lengths double. Explain why volume increases by 8, not 2."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

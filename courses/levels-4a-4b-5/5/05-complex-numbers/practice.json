@@ -1,0 +1,34 @@
+{
+  "lesson_id": "5-05",
+  "batches": [
+    [
+      {
+        "id": "5-05-P1",
+        "prompt": "Identify real and imaginary parts of 4-3i."
+      },
+      {
+        "id": "5-05-P2",
+        "prompt": "Compute (2+3i)+(5-i)."
+      },
+      {
+        "id": "5-05-P3",
+        "prompt": "Compute i\u00b3 and i\u2074."
+      }
+    ],
+    [
+      {
+        "id": "5-05-P4",
+        "prompt": "Compute (2+i)(1-i)."
+      },
+      {
+        "id": "5-05-P5",
+        "prompt": "Where does multiplying 2 by i place the result in the complex plane?"
+      },
+      {
+        "id": "5-05-P6",
+        "prompt": "Solve x\u00b2=-16 over the complex numbers."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

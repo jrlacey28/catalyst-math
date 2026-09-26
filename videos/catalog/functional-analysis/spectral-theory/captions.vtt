@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:07.212
+An eigenvector keeps its direction under a linear operator, changing only by a scalar eigenvalue
+
+00:00:07.212 --> 00:00:13.117
+The diagonal matrix with entries two and one scales the coordinate directions separately
+
+00:00:13.117 --> 00:00:18.567
+Decomposing a vector into those directions makes its transformation easy to compute.
+
+00:00:19.867 --> 00:00:29.334
+In finite dimensions, an eigenvalue is exactly a scalar for which subtracting that scalar times the identity makes the matrix noninvertible
+
+00:00:29.334 --> 00:00:37.900
+At lambda equals two, the first coordinate direction collapses to zero, so the original input cannot be uniquely recovered.
+
+00:00:39.200 --> 00:00:41.481
+Infinite dimensions require greater care
+
+00:00:41.481 --> 00:00:54.714
+Multiplication by x on complex L two of the unit interval has no nonzero eigenfunction: an eigenfunction would need support only at one point, which represents the zero vector
+
+00:00:54.714 --> 00:00:59.733
+Nevertheless, its spectrum is the entire interval from zero to one.
+
+00:01:01.033 --> 00:01:07.090
+Additional compactness and self-adjointness on a separable Hilbert space guarantee an orthonormal eigenbasis
+
+00:01:07.090 --> 00:01:14.545
+The diagonal map sending basis vector n to one over n times itself illustrates this theorem
+
+00:01:14.545 --> 00:01:21.533
+Its eigenvalues approach zero; it is a special structure, not a rule for every operator.

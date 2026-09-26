@@ -1,0 +1,26 @@
+[
+  {
+    "title": "phase_0",
+    "text": "Variance is useful, but its units are squared. If observations are in centimeters, variance is in square centimeters. Taking the square root returns a measure of spread in centimeters: the standard deviation.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_1",
+    "text": "For the population two, two, six, six, the mean is four and the variance is four. The standard deviation is two. It is the root mean square deviation, not generally the simple average of absolute distances.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_2",
+    "text": "Adding five to every observation shifts the whole data set, including its mean, but does not change the distances from the mean. Standard deviation stays the same. Multiplying every value by three makes those distances three times as large.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_3",
+    "text": "A small standard deviation indicates tighter clustering around the mean. It does not tell us the entire shape of a distribution. Rules about sixty eight percent within one standard deviation need an approximately normal distribution; they are not universal.",
+    "min_duration": 17,
+    "tail": 1.0
+  }
+]

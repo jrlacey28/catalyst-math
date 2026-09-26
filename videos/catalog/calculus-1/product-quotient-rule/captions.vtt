@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.027
+When two factors change, the product has two first-order contributions
+
+00:00:05.027 --> 00:00:13.357
+One changes the first factor while retaining the second; the other changes the second while retaining the first
+
+00:00:13.357 --> 00:00:16.133
+Multiplying derivatives alone misses both contributions.
+
+00:00:17.433 --> 00:00:25.804
+For x squared times x plus three, the product rule gives two x times x plus three, plus x squared
+
+00:00:25.804 --> 00:00:28.315
+Now distribute and collect like terms
+
+00:00:28.315 --> 00:00:32.500
+The calculus rule comes first; ordinary algebra simplifies its result.
+
+00:00:33.800 --> 00:00:40.805
+For a quotient, differentiate the top times the bottom, then subtract the top times the differentiated bottom
+
+00:00:40.805 --> 00:00:43.277
+Divide by the original bottom squared
+
+00:00:43.277 --> 00:00:48.633
+Here the numerator becomes x plus four minus x minus one, leaving three.
+
+00:00:49.933 --> 00:00:54.026
+Sometimes factoring first is easier than using the quotient rule
+
+00:00:54.026 --> 00:01:01.393
+This expression equals x plus four except at four, so its derivative is one on its original domain
+
+00:01:01.393 --> 00:01:04.667
+The cancelled factor still leaves an excluded input.

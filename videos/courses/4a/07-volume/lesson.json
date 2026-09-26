@@ -1,0 +1,17 @@
+{
+  "id": "4A-07",
+  "unit": "4a",
+  "course": "Geometry",
+  "index": 7,
+  "total": 9,
+  "slug": "volume",
+  "title": "Volume and surface area",
+  "objective": "Distinguish volume from surface area and use base-area formulas.",
+  "prerequisites": "Area and cubic units.",
+  "formulas": [
+    "V=B h",
+    "V_(\"cylinder\")=pi r^2 h",
+    "V_(\"cone\")=(pi r^2 h)/3",
+    "S=2(l w+l h+w h)"
+  ]
+}

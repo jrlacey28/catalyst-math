@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "A logarithm asks which exponent produces a number. Since two cubed is eight, log base two of eight is three. These are two ways to express the same relationship, not separate arithmetic tricks.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "For real logarithms, the base is positive and not one, and the argument is positive. The exponential and logarithm graphs reflect across the diagonal because input and output swap roles.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.0,
+    "duration": 17.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "Multiplying equal-base powers adds their exponents. That is why the logarithm of a product becomes a sum of logarithms. The quotient rule subtracts, and a power becomes a multiplier. These rules require positive arguments in the real setting.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.0,
+    "duration": 17.933333333333334,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "To solve two to the x equals ten, take logs and divide by log of two. This is also the change-of-base formula. Do not split a logarithm of a sum: there is no corresponding sum rule.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.93333333333334,
+    "duration": 17.0,
+    "audio": "audio_parts/04.wav"
+  }
+]

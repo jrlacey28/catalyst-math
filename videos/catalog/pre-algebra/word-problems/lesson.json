@@ -1,0 +1,147 @@
+{
+  "id": "pre-algebra.word-problems",
+  "beats": [
+    {
+      "formula": "c=5+2d",
+      "text": "A word problem becomes manageable when quantities are named before calculating. A delivery service charges five dollars plus two dollars per kilometer. Let d measure distance in kilometers and c measure the total charge in dollars.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          8
+        ],
+        "y": [
+          0,
+          22
+        ],
+        "curves": [
+          {
+            "f": "5+2*x",
+            "color": "blue",
+            "domain": [
+              0,
+              8
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            5
+          ]
+        ],
+        "labels": [
+          "fixed fee"
+        ]
+      }
+    },
+    {
+      "formula": "d=4 arrow.r c=5+2 times 4=13",
+      "text": "For a four-kilometer delivery, the variable part is eight dollars, then the fixed fee adds five. The total thirteen dollars includes both contributions. Units prevent mistaking the five-dollar fee for five additional kilometers.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          5,
+          8,
+          13
+        ],
+        "labels": [
+          "fee",
+          "distance cost",
+          "total"
+        ]
+      }
+    },
+    {
+      "formula": "5+2d=19 arrow.r d=7",
+      "text": "A nineteen-dollar bill reverses the question. Remove the fixed five-dollar fee to isolate fourteen dollars of distance charges, then divide by two dollars per kilometer. The resulting seven has units of kilometers, matching the unknown we named.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          9
+        ],
+        "y": [
+          0,
+          24
+        ],
+        "curves": [
+          {
+            "f": "5+2*x",
+            "color": "blue",
+            "domain": [
+              0,
+              9
+            ]
+          },
+          {
+            "f": "19",
+            "color": "gold",
+            "domain": [
+              0,
+              9
+            ]
+          }
+        ],
+        "points": [
+          [
+            7,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "c>=5 quad d>=0",
+      "text": "Finally check the model against the story. Nonnegative distances make the total at least five dollars, so a three-dollar bill cannot fit this pricing rule. A mathematically computed answer may be invalid if it violates the context or its units.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          12
+        ],
+        "points": [
+          3,
+          5
+        ],
+        "interval": [
+          5,
+          12
+        ],
+        "labels": [
+          "impossible",
+          "minimum"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "A bicycle rental charges six dollars plus three per hour. Write a cost rule and define its variables.",
+      "answer": "C=6+3h, with h rental hours and C total dollars.",
+      "id": "pre-algebra.word-problems.video-practice-1"
+    },
+    {
+      "prompt": "Using that rental rule, find the cost for five hours.",
+      "answer": "6+3×5=21 dollars.",
+      "id": "pre-algebra.word-problems.video-practice-2"
+    },
+    {
+      "prompt": "A bill under the same rule is thirty dollars. Find the rental duration and check its units.",
+      "answer": "6+3h=30 gives h=8 hours. The distance between thirty and the fixed fee is24 dollars, divided by3 dollars per hour.",
+      "id": "pre-algebra.word-problems.video-practice-3"
+    }
+  ],
+  "takeaway": "Name quantities and units, model the relationship, solve, then check the context.",
+  "scope": "Linear word models, fixed and variable contributions, and feasibility.",
+  "course": "Pre-algebra",
+  "course_id": "pre-algebra",
+  "title": "Word problems",
+  "objective": "Name quantities, track units, build a model, and check its interpretation.",
+  "index": 8,
+  "total": 8,
+  "prerequisites": [
+    "pre-algebra.multi-step-equations",
+    "arithmetic.proportions"
+  ]
+}

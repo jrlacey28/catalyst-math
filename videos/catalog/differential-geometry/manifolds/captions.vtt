@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:06.695
+A manifold looks locally like a Euclidean space even when its overall shape is different
+
+00:00:06.695 --> 00:00:16.767
+The circle is one-dimensional: a sufficiently short open arc can be described by one real coordinate, despite the circle sitting in a two-dimensional plane.
+
+00:00:18.067 --> 00:00:22.800
+Angle gives a coordinate after removing the circle's leftmost point
+
+00:00:22.800 --> 00:00:25.640
+Restricting the angle avoids repeated representations
+
+00:00:25.640 --> 00:00:28.480
+The missing point needs another chart
+
+00:00:28.480 --> 00:00:37.000
+No single chart is a homeomorphism from the whole circle onto an open real interval: inverse continuity matters.
+
+00:00:38.300 --> 00:00:42.700
+A second angle chart covers the missing point by cutting elsewhere
+
+00:00:42.700 --> 00:00:49.100
+On each part of the overlap, the two coordinate descriptions differ by a constant full turn
+
+00:00:49.100 --> 00:00:55.100
+These transition functions are smooth, which is the key compatibility required in a smooth atlas.
+
+00:00:56.400 --> 00:01:01.533
+For a two-dimensional example, the paraboloid has coordinates u and v everywhere
+
+00:01:01.533 --> 00:01:06.239
+Projection back to the first two coordinates gives the inverse chart
+
+00:01:06.239 --> 00:01:14.367
+Coordinates describe the surface; they are not additional physical dimensions or proof that every surface admits one global chart.

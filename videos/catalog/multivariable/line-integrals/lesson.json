@@ -1,0 +1,86 @@
+{
+  "id": "multivariable.line-integrals",
+  "beats": [
+    {
+      "formula": "W=integral_C F dot.op dif r",
+      "text": "A force field does work only through the component aligned with movement. A line integral adds that contribution along a path. For the constant rightward field of magnitude one, moving from negative two to positive two along the axis gives work four.",
+      "visual": {
+        "kind": "field",
+        "mode": "constant",
+        "path": "line"
+      }
+    },
+    {
+      "formula": "F=(-y,x), quad r=(2cos(t),2sin(t))",
+      "text": "On a counterclockwise circle of radius two, the rotational field matches the direction of motion. Both the field vector and the parametrization's derivative have length two. Their dot product is four throughout the trip, so the work is eight pi.",
+      "visual": {
+        "kind": "field",
+        "mode": "rotation",
+        "path": "circle"
+      }
+    },
+    {
+      "formula": "F=(x,y): quad integral_C F dot.op dif r=0",
+      "text": "For the radial field on that same circle, every field arrow is perpendicular to the tangent direction. The dot product is zero at every point, so the line integral vanishes even though the field itself is not zero.",
+      "visual": {
+        "kind": "field",
+        "mode": "radial",
+        "path": "circle"
+      }
+    },
+    {
+      "formula": "integral_(-C) F dot.op dif r=-integral_C F dot.op dif r",
+      "text": "Reversing a path reverses the direction of each displacement, so a vector line integral changes sign. This orientation rule differs from merely measuring path length. Always specify the direction and distinguish work from a scalar integral against distance.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "start",
+          "finish"
+        ],
+        "edges": [
+          [
+            1,
+            0
+          ]
+        ],
+        "weights": [
+          "reverse direction"
+        ],
+        "directed": true,
+        "active": [
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For the constant force F=(3,0), compute work along the straight path from (0,0) to (2,0).",
+      "answer": "Force and displacement align, so work is (3,0)·(2,0)=6. Equivalently integrate 3 dx from 0 to 2.",
+      "id": "multivariable.line-integrals.video-practice-1"
+    },
+    {
+      "prompt": "For F=(−y,x), compute the line integral around the unit circle counterclockwise, then clockwise.",
+      "answer": "With r=(cos t,sin t), F(r)=r′ and their dot product is 1, so the counterclockwise integral is 2π. Reversing orientation gives −2π.",
+      "id": "multivariable.line-integrals.video-practice-2"
+    },
+    {
+      "prompt": "For F=(x,y), parametrize the straight path from (0,0) to (1,2) and compute the work.",
+      "answer": "Use r(t)=(t,2t), 0≤t≤1. F(r)·r′=(t,2t)·(1,2)=5t, so work=∫₀¹5t dt=5/2.",
+      "id": "multivariable.line-integrals.video-practice-3"
+    }
+  ],
+  "takeaway": "Vector line integrals add the field's component along oriented movement; path direction changes the sign.",
+  "scope": "Work in constant, rotational, and radial fields, plus the orientation rule.",
+  "course": "Multivariable calculus",
+  "course_id": "multivariable",
+  "title": "Line integrals",
+  "objective": "Accumulate scalar or vector quantities along parametrized curves.",
+  "index": 6,
+  "total": 7,
+  "prerequisites": [
+    "multivariable.vector-fields",
+    "calculus-2.integrals"
+  ]
+}

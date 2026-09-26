@@ -1,0 +1,11 @@
+phase_0
+Stack equal layers of area B through height h. A prism has volume B times h. Volume counts cubic units inside a solid. Surface area counts square units on its boundary; these answer different questions.
+
+phase_1
+A rectangular prism three by two by four contains twenty four unit cubes. A cylinder follows the same layer idea, but its base area is pi r squared.
+
+phase_2
+A pyramid or cone has one third the volume of a matching prism or cylinder with the same base area and perpendicular height. The shrinking cross sections account for the different formula.
+
+phase_3
+For a rectangular prism, pair the equal opposite faces. Surface area is twice length times width, plus twice length times height, plus twice width times height. Keep square units separate from the cubic units of volume.

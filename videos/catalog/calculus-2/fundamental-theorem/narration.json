@@ -1,0 +1,183 @@
+[
+  {
+    "formula": "A(x)=integral_0^x 2t dif t",
+    "text": "Let A record the area accumulated under the rate two t. Increasing the upper endpoint by a tiny amount adds a thin strip. Its width is the input change, and its height is approximately the current rate.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3
+      ],
+      "y": [
+        0,
+        7
+      ],
+      "curves": [
+        {
+          "f": "2*x",
+          "color": "blue",
+          "domain": [
+            0,
+            3
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        1
+      ],
+      "points": [
+        [
+          1,
+          2
+        ]
+      ],
+      "sweep": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "A(x)=x^2, quad A'(x)=2x",
+    "text": "The thin-strip reasoning connects accumulation with differentiation. Here the area function is x squared, and its derivative returns two x. At input two, the accumulated amount changes at rate four, matching the original rate at that endpoint.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3
+      ],
+      "y": [
+        -1,
+        10
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            0,
+            3
+          ]
+        },
+        {
+          "f": "4*x-4",
+          "color": "gold",
+          "domain": [
+            0.8,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "integral_1^3 2x dif x=3^2-1^2=8",
+    "text": "The other direction turns an integral into an endpoint subtraction. Since x squared differentiates to two x, subtract its value at one from its value at three. The change in accumulated area is nine minus one, or eight.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3.5
+      ],
+      "y": [
+        0,
+        7
+      ],
+      "curves": [
+        {
+          "f": "2*x",
+          "color": "blue",
+          "domain": [
+            0,
+            3.5
+          ]
+        }
+      ],
+      "shade": [
+        1,
+        3
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "\"If f is continuous, then\" A'(x)=f(x)",
+    "text": "The pointwise derivative statement requires suitable regularity: continuity of the rate at the point is enough. At a jump, the accumulation can remain continuous but develop a corner. The theorem's assumptions explain where this direct identification works.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        2
+      ],
+      "y": [
+        0,
+        4
+      ],
+      "curves": [
+        {
+          "f": "x",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        },
+        {
+          "f": "2*x-1",
+          "color": "blue",
+          "domain": [
+            1,
+            2
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          1
+        ]
+      ],
+      "segments": [
+        [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1.5,
+            2
+          ]
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

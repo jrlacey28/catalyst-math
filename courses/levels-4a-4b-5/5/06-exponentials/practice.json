@@ -1,0 +1,34 @@
+{
+  "lesson_id": "5-06",
+  "batches": [
+    [
+      {
+        "id": "5-06-P1",
+        "prompt": "A value starts at 5 and doubles each step. Find the first four values, including step 0."
+      },
+      {
+        "id": "5-06-P2",
+        "prompt": "Evaluate 3(2)^4."
+      },
+      {
+        "id": "5-06-P3",
+        "prompt": "Write a model starting at 200 and growing 10% per year."
+      }
+    ],
+    [
+      {
+        "id": "5-06-P4",
+        "prompt": "Write a model starting at 80 and shrinking 25% each month."
+      },
+      {
+        "id": "5-06-P5",
+        "prompt": "Is 4, 7, 10, 13 linear or exponential? Explain."
+      },
+      {
+        "id": "5-06-P6",
+        "prompt": "A model is 50(0.8)^t. State initial value and percent decrease per step."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

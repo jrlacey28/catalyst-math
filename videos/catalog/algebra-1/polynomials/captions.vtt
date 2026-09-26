@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:06.011
+A polynomial is built from sums of constant multiples of nonnegative whole-number powers
+
+00:00:06.011 --> 00:00:10.327
+When a sum is squared, the entire sum multiplies itself
+
+00:00:10.327 --> 00:00:17.233
+This partitioned square lets us account for every product instead of relying on a memorized shortcut.
+
+00:00:18.533 --> 00:00:26.734
+The large square contributes x squared, the two rectangular strips each contribute x, and the small corner contributes one
+
+00:00:26.734 --> 00:00:28.461
+Both strips are necessary
+
+00:00:28.461 --> 00:00:35.367
+Their combined area explains the middle term that disappears if we incorrectly square only the endpoints.
+
+00:00:36.667 --> 00:00:40.775
+Replace the small side one by a changing amount h
+
+00:00:40.775 --> 00:00:48.581
+The same geometric partition gives two rectangles of area x times h and one square of area h squared
+
+00:00:48.581 --> 00:00:53.100
+The identity remains algebraically valid for all real x and h.
+
+00:00:54.400 --> 00:00:58.681
+Subtracting x squared leaves the cross terms and the small square
+
+00:00:58.681 --> 00:01:05.297
+Both remaining terms share a factor h, so dividing by nonzero h gives two x plus h
+
+00:01:05.297 --> 00:01:09.967
+This exact rewrite becomes a key step in the calculus difference quotient.

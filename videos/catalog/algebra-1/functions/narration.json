@@ -1,0 +1,173 @@
+[
+  {
+    "formula": "f(x)=x^2",
+    "text": "A function gives exactly one output for each allowed input. Squaring is a function even though two different inputs can produce the same output. Negative two and positive two both give four, without violating the one-output requirement.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -1,
+        9
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          -2,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "\"domain\"=RR quad \"range\"=[0,infinity)",
+    "text": "The domain lists allowed inputs, while the range lists outputs actually reached. For the real squaring function, every real input is allowed, but no negative output occurs. Reading the horizontal and vertical coverage keeps these two ideas distinct.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -2,
+        9
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          0
+        ]
+      ],
+      "sweep": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "g(x)=frac(1,x-2) quad x!=2",
+    "text": "A formula can restrict its own domain. The reciprocal rule excludes input two because its denominator would vanish. The two branches belong to one function, but there is no output at the excluded input, regardless of the visible graph window.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        6
+      ],
+      "y": [
+        -5,
+        5
+      ],
+      "curves": [
+        {
+          "f": "1/(x-2)",
+          "color": "blue",
+          "domain": [
+            -2,
+            1.8
+          ]
+        },
+        {
+          "f": "1/(x-2)",
+          "color": "blue",
+          "domain": [
+            2.2,
+            6
+          ]
+        }
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "y^2=x quad x=4 arrow.r y=2 \"or\" y=-2",
+    "text": "Not every relation defines y as a function of x. In this sideways parabola, input four is paired with both two and negative two. A vertical line meets the relation twice, exposing the failure of the one-output condition.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        5
+      ],
+      "y": [
+        -3,
+        3
+      ],
+      "curves": [
+        {
+          "f": "sqrt(x)",
+          "color": "blue",
+          "domain": [
+            0,
+            5
+          ]
+        },
+        {
+          "f": "-sqrt(x)",
+          "color": "gold",
+          "domain": [
+            0,
+            5
+          ]
+        }
+      ],
+      "points": [
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          -2
+        ]
+      ],
+      "segments": [
+        [
+          [
+            4,
+            -3
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "id": "4A-09",
+  "unit": "4a",
+  "course": "Geometry",
+  "index": 9,
+  "total": 9,
+  "slug": "proof",
+  "title": "Proof: connecting claims to reasons",
+  "objective": "Build a short geometric argument and distinguish evidence from proof.",
+  "prerequisites": "Angles and triangle congruence.",
+  "formulas": [
+    "\"given\" => \"reason\" => \"claim\"",
+    "A B=A C quad B D=D C",
+    "triangle A B D \u2245 triangle A C D",
+    "A B=A C => angle B=angle C"
+  ]
+}

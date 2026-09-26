@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.962
+A vector field assigns a vector to every point in a region
+
+00:00:04.962 --> 00:00:13.706
+In this radial field, the output repeats the position coordinates, so arrows point away from the origin and become longer farther from it
+
+00:00:13.706 --> 00:00:16.367
+Position and assigned vector are different roles.
+
+00:00:17.667 --> 00:00:22.636
+Evaluate a field by substituting the location into both component functions
+
+00:00:22.636 --> 00:00:29.412
+At two, one, the vector is two, one; at negative one, two, it changes accordingly
+
+00:00:29.412 --> 00:00:34.833
+These outputs describe local direction and magnitude rather than another scalar height.
+
+00:00:36.133 --> 00:00:40.879
+Swapping the coordinates and negating the first creates a rotational field
+
+00:00:40.879 --> 00:00:43.899
+At two, zero, its arrow points upward
+
+00:00:43.899 --> 00:00:51.233
+Around a circle, the field is tangent to the path, contrasting with the radial field's perpendicular arrows.
+
+00:00:52.533 --> 00:00:59.421
+A constant field assigns the same vector everywhere, so every arrow points right with the same length
+
+00:00:59.421 --> 00:01:08.333
+Fields may model force or velocity, but the interpretation and units must come from the model; arrows alone do not specify them.

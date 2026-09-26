@@ -1,0 +1,134 @@
+[
+  {
+    "formula": "6+4=10",
+    "text": "Addition combines quantities. Start with six dots and bring in four more. Counting the joined collection gives ten, while keeping the original groups visible shows exactly which two amounts were combined.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        6,
+        4
+      ],
+      "labels": [
+        "6",
+        "4"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "10-4=6",
+    "text": "Subtraction can undo that combination. Removing the four newly added dots leaves six. We can also ask for the missing addend: what must join four to make ten? Both questions identify the same quantity.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        12
+      ],
+      "points": [
+        4,
+        6,
+        10
+      ],
+      "arrows": [
+        [
+          10,
+          6
+        ]
+      ],
+      "labels": [
+        "4",
+        "6",
+        "10"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.0,
+    "duration": 15.1,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "38+25=38+20+5=63",
+    "text": "For larger numbers, break one amount into convenient parts. To add twenty five to thirty eight, add twenty to reach fifty eight, then five to reach sixty three. We changed the steps, not the total increase.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        30,
+        70
+      ],
+      "points": [
+        38,
+        58,
+        63
+      ],
+      "arrows": [
+        [
+          38,
+          58
+        ],
+        [
+          58,
+          63
+        ]
+      ],
+      "labels": [
+        "38",
+        "58",
+        "63"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 30.1,
+    "duration": 15.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "63-25=38",
+    "text": "Reverse those same moves to check the result. Subtract five and then twenty from sixty three, returning to thirty eight. A sensible subtraction answer must rebuild the original total when the removed amount is added back.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        30,
+        70
+      ],
+      "points": [
+        63,
+        58,
+        38
+      ],
+      "arrows": [
+        [
+          63,
+          58
+        ],
+        [
+          58,
+          38
+        ]
+      ],
+      "labels": [
+        "63",
+        "58",
+        "38"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 45.1,
+    "duration": 15.8,
+    "audio": "audio_parts/04.wav"
+  }
+]

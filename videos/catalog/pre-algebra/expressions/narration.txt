@@ -1,0 +1,7 @@
+An expression describes a quantity without necessarily asserting an equation to solve. Two copies of the quantity x plus three means that both the variable part and the three additional units are repeated twice.
+
+Distribution accounts for those repeated parts separately. Two copies of x contribute two x, and two copies of three contribute six. The rewritten expression gives the same output for every real input, as the overlapping graphs illustrate.
+
+Like terms count the same variable quantity, so two x plus another x becomes three x. The six remains a separate constant. Adding coefficients is justified because the repeated units are identical, not because all symbols look similar.
+
+A leading minus means multiplication by negative one, and it affects every term inside the parentheses. The two sides again represent one function. Simplifying preserves all inputs; solving for a particular input requires an additional condition.

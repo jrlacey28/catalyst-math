@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.417
+A trigonometric equation asks which angles produce a specified coordinate
+
+00:00:04.417 --> 00:00:12.451
+On one full turn, the height one half occurs twice: once in the first quadrant and once in the second
+
+00:00:12.451 --> 00:00:16.067
+Reading only the first crossing would miss another solution.
+
+00:00:17.367 --> 00:00:25.693
+Within the interval from zero inclusive to two pi exclusive, the solutions are pi over six and five pi over six
+
+00:00:25.693 --> 00:00:32.433
+The second angle shares the reference angle but lies in the second quadrant, where sine remains positive.
+
+00:00:33.733 --> 00:00:38.111
+Without an interval restriction, full turns produce infinitely many solutions
+
+00:00:38.111 --> 00:00:42.925
+Add any integer multiple of two pi to each base angle
+
+00:00:42.925 --> 00:00:50.367
+The integer may be positive, zero, or negative, because turning backward also returns to the same coordinates.
+
+00:00:51.667 --> 00:00:55.826
+Factoring a trigonometric equation can reveal several solution families
+
+00:00:55.826 --> 00:01:00.910
+This product vanishes when sine is zero or cosine is zero
+
+00:01:00.910 --> 00:01:08.767
+Dividing by one factor without checking when it vanishes would erase an entire family of valid solutions.

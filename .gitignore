@@ -1,0 +1,12 @@
+student/
+students/
+.venv/
+__pycache__/
+*.pyc
+*.log
+*.pid
+qa/*-state/
+videos/**/final.mp4
+videos/**/audio_parts/
+videos/**/media/
+videos/**/*.wav

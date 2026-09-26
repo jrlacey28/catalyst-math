@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.615
+An upper bound sits at or above every member of a set
+
+00:00:04.615 --> 00:00:11.641
+For the open interval from zero to two, two is an upper bound even though it is not a member
+
+00:00:11.641 --> 00:00:14.100
+A supremum is the least upper bound.
+
+00:00:15.400 --> 00:00:25.236
+Why can no smaller number be an upper bound? If b lies between zero and two, its midpoint with two still belongs to the interval and exceeds b
+
+00:00:25.236 --> 00:00:29.100
+For b at most zero, the member one already defeats it.
+
+00:00:30.400 --> 00:00:34.777
+Now consider nonnegative rational numbers whose squares are below two
+
+00:00:34.777 --> 00:00:38.717
+They form a nonempty set bounded above by two
+
+00:00:38.717 --> 00:00:41.343
+Real completeness guarantees a real supremum
+
+00:00:41.343 --> 00:00:47.033
+Further algebra shows this boundary squares to two, although it is not rational.
+
+00:00:48.333 --> 00:00:51.898
+This illustrates the difference between approximation and existence
+
+00:00:51.898 --> 00:00:58.582
+More decimal digits alone do not prove a limit exists in the chosen number system
+
+00:00:58.582 --> 00:01:05.267
+Completeness supplies real least upper bounds; the rationals lack the required boundary in this example.

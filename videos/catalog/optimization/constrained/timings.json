@@ -1,0 +1,139 @@
+[
+  {
+    "formula": "x+y=3, quad f(x,y)=x^2+y^2",
+    "text": "A constraint restricts which directions are available. To minimize squared distance from the origin while staying on the line x plus y equals three, we must search along that line, rather than move freely toward the origin.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -0.5,
+        3.5
+      ],
+      "y": [
+        -0.5,
+        3.5
+      ],
+      "curves": [
+        {
+          "f": "3-x",
+          "color": "blue",
+          "domain": [
+            -0.5,
+            3.5
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          1.5,
+          1.5
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.366666666666667,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "(2x,2y)=lambda(1,1)",
+    "text": "At a regular constrained extremum, the objective gradient is parallel to the constraint gradient. Otherwise a tangent direction would still decrease the objective. Here the gradient equations give x equals y; combining that with the constraint gives one and a half each.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "points": [
+        [
+          1.5,
+          1.5
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.366666666666667,
+    "duration": 18.7,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "x^2+(3-x)^2=2(x-1.5)^2+4.5",
+    "text": "Lagrange multipliers produced a candidate. Substitution now proves it is the global minimum: the squared term is always nonnegative, and vanishes exactly at one and a half. The minimum squared distance is therefore four and a half.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3
+      ],
+      "y": [
+        4,
+        10
+      ],
+      "curves": [
+        {
+          "f": "x*x+(3-x)**2",
+          "color": "gold",
+          "domain": [
+            0,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          1.5,
+          4.5
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 34.06666666666666,
+    "duration": 16.633333333333333,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "x^2+y^2=0 arrow.r (x,y)=(0,0)",
+    "text": "The usual multiplier condition needs regularity, such as a nonzero constraint gradient. The constraint x squared plus y squared equals zero has only one feasible point, where its gradient vanishes. That point is optimal even for objectives whose gradients are nonzero.",
+    "visual": {
+      "kind": "plane",
+      "points": [
+        [
+          0,
+          0
+        ]
+      ],
+      "vectors": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 50.699999999999996,
+    "duration": 20.233333333333334,
+    "audio": "audio_parts/04.wav"
+  }
+]

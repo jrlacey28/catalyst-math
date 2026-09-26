@@ -1,0 +1,7 @@
+Function transformations change inputs or outputs in controlled ways. Start with the squaring graph, whose vertex is at the origin. Keeping track of a recognizable point, such as this vertex, makes each later change easier to explain and verify.
+
+Replacing the input by x minus two shifts the graph right by two. To deliver the old input zero into the rule, the new x must be two. This input-solving explanation is more reliable than memorizing that inside signs look reversed.
+
+Multiplying outside the function doubles its outputs while leaving inputs fixed. The vertex remains at two, zero, but a point one unit from the vertex now has height two instead of one. This is a vertical stretch.
+
+Subtracting three after the function evaluation shifts every output down three. The vertex becomes two, negative three, and the point at input three drops to negative one. Read the operations in their actual order to combine transformations correctly.

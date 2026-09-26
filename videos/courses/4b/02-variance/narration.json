@@ -1,0 +1,26 @@
+[
+  {
+    "title": "phase_0",
+    "text": "Two data sets can share a mean and still be very different. One is tightly clustered; the other is spread out. To measure spread, start with each value\u2019s distance from the mean.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_1",
+    "text": "For two, four, and six, the deviations from four are negative two, zero, and two. Adding these gives zero, which hides the spread. Squaring keeps all three contributions nonnegative.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_2",
+    "text": "When these values are the entire population of interest, average the squared deviations by dividing by three. Population variance is eight thirds. Its units are squared versions of the data units.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_3",
+    "text": "When the values are a sample used to estimate a larger population\u2019s variance, the usual sample formula divides by n minus one. The sample mean was estimated from these same observations. Always identify which convention the question requests.",
+    "min_duration": 17,
+    "tail": 1.0
+  }
+]

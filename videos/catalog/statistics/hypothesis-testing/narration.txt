@@ -1,0 +1,7 @@
+A hypothesis test compares data with a specified null model. Suppose ten independent tosses produce nine heads, and the planned alternative is a head probability greater than one half. The null model is a fair coin, not an assertion that the data must look exactly balanced.
+
+Under the fair-coin model, all one thousand twenty-four ordered sequences are equally likely. Ten have exactly nine heads and one has ten heads. This one-sided p-value counts results at least as extreme in the direction of the planned alternative.
+
+The p-value is about one percent, below a preselected five-percent significance threshold, so this test rejects the fair-coin null. The threshold is part of a procedure for controlling false positives under the model, not proof that a rejection is always correct.
+
+A p-value is not the probability that the null hypothesis is true. It also does not measure practical importance. Report the observed effect and its uncertainty, and keep the test's assumptions and chosen alternative visible when interpreting the result.

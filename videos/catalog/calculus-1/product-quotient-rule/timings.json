@@ -1,0 +1,187 @@
+[
+  {
+    "formula": "(u v)'=u' v+u v'",
+    "text": "When two factors change, the product has two first-order contributions. One changes the first factor while retaining the second; the other changes the second while retaining the first. Multiplying derivatives alone misses both contributions.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        2
+      ],
+      "y": [
+        -1,
+        8
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            -1,
+            2
+          ]
+        },
+        {
+          "f": "x+3",
+          "color": "gold",
+          "domain": [
+            -1,
+            2
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 17.033333333333335,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "(x^2(x+3))'=2x(x+3)+x^2=3x^2+6x",
+    "text": "For x squared times x plus three, the product rule gives two x times x plus three, plus x squared. Now distribute and collect like terms. The calculus rule comes first; ordinary algebra simplifies its result.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        2
+      ],
+      "y": [
+        -4,
+        26
+      ],
+      "curves": [
+        {
+          "f": "x*x*(x+3)",
+          "color": "blue",
+          "domain": [
+            -1,
+            2
+          ]
+        },
+        {
+          "f": "3*x*x+6*x",
+          "color": "gold",
+          "domain": [
+            -1,
+            2
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          9
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 17.033333333333335,
+    "duration": 16.366666666666667,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "(frac(x+1,x+4))'=frac(3,(x+4)^2), quad x != -4",
+    "text": "For a quotient, differentiate the top times the bottom, then subtract the top times the differentiated bottom. Divide by the original bottom squared. Here the numerator becomes x plus four minus x minus one, leaving three.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -3,
+        4
+      ],
+      "curves": [
+        {
+          "f": "(x+1)/(x+4)",
+          "color": "blue",
+          "domain": [
+            -3,
+            3
+          ]
+        },
+        {
+          "f": "3/((x+4)**2)",
+          "color": "gold",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          0.25
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 33.400000000000006,
+    "duration": 16.133333333333333,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "frac(x^2-16,x-4)=x+4, quad x != 4",
+    "text": "Sometimes factoring first is easier than using the quotient rule. This expression equals x plus four except at four, so its derivative is one on its original domain. The cancelled factor still leaves an excluded input.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        6
+      ],
+      "y": [
+        0,
+        11
+      ],
+      "curves": [
+        {
+          "f": "x+4",
+          "color": "blue",
+          "domain": [
+            0,
+            6
+          ]
+        }
+      ],
+      "holes": [
+        [
+          4,
+          8
+        ]
+      ],
+      "sweep": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 49.53333333333334,
+    "duration": 16.033333333333335,
+    "audio": "audio_parts/04.wav"
+  }
+]

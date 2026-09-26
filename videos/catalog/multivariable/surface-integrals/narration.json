@@ -1,0 +1,95 @@
+[
+  {
+    "formula": "M=integral_S rho dif S",
+    "text": "A scalar surface integral adds density over a curved or tilted sheet. Each contribution is density times a small piece of actual surface area. On a flat unit square with density two, four quarter-square pieces together have mass two.",
+    "visual": {
+      "kind": "grid",
+      "rows": 2,
+      "cols": 2,
+      "filled": 4
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "z=x+y: quad dif S=sqrt(3) dif x dif y",
+    "text": "Tilting the sheet changes area relative to its horizontal shadow. For z equals x plus y, the two tangent directions give an area scale of square root of three. This factor converts a small projected rectangle into its true surface area.",
+    "visual": {
+      "kind": "surface",
+      "mode": "plane"
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "M=integral_0^1 integral_0^1 2sqrt(3) dif x dif y=2sqrt(3)",
+    "text": "Restrict the tilted plane to the patch projecting onto the unit square. With constant density two, its mass is two times square root of three. Forgetting the surface-area factor would incorrectly treat the tilted sheet as flat.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.2
+      ],
+      "y": [
+        0,
+        1.2
+      ],
+      "curves": [
+        {
+          "f": "1",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        1
+      ],
+      "segments": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "\"upward flux\"=frac(2,sqrt(3))sqrt(3)=2",
+    "text": "Flux is different: it weights area by the vector field's normal component. For the upward field zero, zero, two, the upward unit normal gives component two over square root of three. The flux is two, and reversing orientation changes its sign.",
+    "visual": {
+      "kind": "surface",
+      "mode": "plane"
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

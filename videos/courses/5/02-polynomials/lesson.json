@@ -1,0 +1,17 @@
+{
+  "id": "5-02",
+  "unit": "5",
+  "course": "Algebra II",
+  "index": 2,
+  "total": 9,
+  "slug": "polynomials",
+  "title": "Polynomial functions and multiplicity",
+  "objective": "Read degree, leading behavior, zeros, and repeated factors.",
+  "prerequisites": "Factoring, exponents, and graph coordinates.",
+  "formulas": [
+    "p(x)=(x+2)(x-1)^2",
+    "x=-2 quad x=1",
+    "\"odd: cross\" quad \"even: touch\"",
+    "p(x)=x^3-3x+2"
+  ]
+}

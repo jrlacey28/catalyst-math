@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "The square root symbol denotes the nonnegative principal square root. The square root of nine is three. But solving x squared equals nine asks for every input whose square is nine, so both three and negative three work.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "To simplify the square root of seventy two, separate a perfect-square factor. Seventy two is thirty six times two, so its root is six root two. For real nonnegative factors, square roots split across multiplication.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.0,
+    "duration": 17.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "Squaring an equation can introduce an extra candidate. In square root of x plus one equals x minus one, the right side must be nonnegative. Squaring gives candidates zero and three, but only three can satisfy that sign requirement.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.0,
+    "duration": 17.466666666666665,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "Check each candidate in the original equation. At zero, the two sides are one and negative one, so it fails. At three, both sides are two. A candidate from a transformed equation is not automatically a solution.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.46666666666667,
+    "duration": 17.0,
+    "audio": "audio_parts/04.wav"
+  }
+]

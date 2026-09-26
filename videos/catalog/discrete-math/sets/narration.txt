@@ -1,0 +1,7 @@
+A set records membership without counting repeated copies or imposing an order. These two sets share the element three. The overlap shows shared membership, while the separate regions contain elements belonging to only one of the sets.
+
+Intersection keeps only elements that satisfy both membership conditions. Three belongs to A and to B, so it remains. The word and corresponds to the overlap, helping us translate between set notation and logical conditions.
+
+Union includes elements belonging to at least one set. Adding the two set sizes counts three twice, so subtract the overlap once. There are five distinct elements in the union; this correction prevents double counting.
+
+When sets are disjoint, their intersection is empty and no overlap correction is needed for their union's size. Complements require another ingredient: a specified universe, because not in A only has meaning relative to the objects under consideration.

@@ -1,0 +1,54 @@
+[
+  {
+    "beat": 1,
+    "start": 0.0,
+    "duration": 18.699999999999985,
+    "formula": "(x,y)=(cos(theta),sin(theta))",
+    "visual": "circle",
+    "bounds": [
+      -2.841859968234796,
+      2.841859968234796,
+      -3.275,
+      2.275
+    ]
+  },
+  {
+    "beat": 2,
+    "start": 18.699999999999985,
+    "duration": 14.966666666667013,
+    "formula": "sin(pi/6)=frac(1,2) quad cos(pi/6)=frac(sqrt(3),2)",
+    "visual": "circle",
+    "bounds": [
+      -2.841859968234796,
+      2.841859968234796,
+      -3.275,
+      2.275
+    ]
+  },
+  {
+    "beat": 3,
+    "start": 33.666666666667,
+    "duration": 17.499999999999616,
+    "formula": "tan(theta)=frac(sin(theta),cos(theta))",
+    "visual": "graph",
+    "bounds": [
+      -3.1757421750000003,
+      3.1757421750000003,
+      -3.1031152450000006,
+      2.1031152450000006
+    ]
+  },
+  {
+    "beat": 4,
+    "start": 51.166666666666615,
+    "duration": 21.56666666666628,
+    "formula": "cos(pi/2)=0 quad tan(pi/2) \"undefined\"",
+    "visual": "circle",
+    "bounds": [
+      -2.775,
+      2.775,
+      -3.275,
+      2.275
+    ]
+  }
+]

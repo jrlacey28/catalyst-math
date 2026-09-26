@@ -1,0 +1,91 @@
+{
+  "unit": "4b",
+  "form": "B",
+  "instructions": "Independent work. No hints or answer key during testing. Ask for clarification; substantive teaching makes the item assisted and requires a fresh replacement. Three questions per batch. Calculator allowed for arithmetic after writing the exact setup; no solver or answer lookup.",
+  "items": [
+    {
+      "id": "4B-TB-01",
+      "lesson_id": "4B-01",
+      "objective": "Choose and calculate measures of center; explain outlier sensitivity.",
+      "prompt": "For 1, 4, 4, 6, 10, find mean, median, and mode.",
+      "points": 2
+    },
+    {
+      "id": "4B-TB-02",
+      "lesson_id": "4B-01",
+      "objective": "Choose and calculate measures of center; explain outlier sensitivity.",
+      "prompt": "Replace 10 by 40. What are the new mean and median, and why do they behave differently?",
+      "points": 2
+    },
+    {
+      "id": "4B-TB-03",
+      "lesson_id": "4B-02",
+      "objective": "Calculate population variance and distinguish it from sample variance.",
+      "prompt": "Treat 1, 4, 7 as a population. Calculate its variance.",
+      "points": 2
+    },
+    {
+      "id": "4B-TB-04",
+      "lesson_id": "4B-02",
+      "objective": "Calculate population variance and distinguish it from sample variance.",
+      "prompt": "Treat those same observations as a sample. Calculate the usual sample variance.",
+      "points": 2
+    },
+    {
+      "id": "4B-TB-05",
+      "lesson_id": "4B-03",
+      "objective": "Recover the data\u2019s units and interpret spread without assuming normality.",
+      "prompt": "A population has variance 49 seconds\u00b2. Find its standard deviation.",
+      "points": 2
+    },
+    {
+      "id": "4B-TB-06",
+      "lesson_id": "4B-03",
+      "objective": "Recover the data\u2019s units and interpret spread without assuming normality.",
+      "prompt": "A data set has standard deviation 5. Transform every value by y=-2x+1. Find the new standard deviation and explain.",
+      "points": 2
+    },
+    {
+      "id": "4B-TB-07",
+      "lesson_id": "4B-04",
+      "objective": "Read frequency displays and describe center, spread, skew, and extremes.",
+      "prompt": "Histogram bins [0,5), [5,10), [10,15) have counts 4, 8, 8. Find total count and fraction below 10.",
+      "points": 2
+    },
+    {
+      "id": "4B-TB-08",
+      "lesson_id": "4B-04",
+      "objective": "Read frequency displays and describe center, spread, skew, and extremes.",
+      "prompt": "Most values cluster near 10 but a few reach 100. Describe the likely skew and a useful measure of center.",
+      "points": 2
+    },
+    {
+      "id": "4B-TB-09",
+      "lesson_id": "4B-05",
+      "objective": "Interpret direction and linear strength without inferring causation.",
+      "prompt": "Which is stronger linearly: r=0.85 or r=-0.3? Explain.",
+      "points": 2
+    },
+    {
+      "id": "4B-TB-10",
+      "lesson_id": "4B-05",
+      "objective": "Interpret direction and linear strength without inferring causation.",
+      "prompt": "A scatterplot has a strong curved pattern but r is near zero. Explain the apparent mismatch.",
+      "points": 2
+    },
+    {
+      "id": "4B-TB-11",
+      "lesson_id": "4B-06",
+      "objective": "Distinguish both, either, and at least one; use changing counts and complements.",
+      "prompt": "A bag has 3 red and 4 blue balls. Draw two without replacement. Find P(two red).",
+      "points": 2
+    },
+    {
+      "id": "4B-TB-12",
+      "lesson_id": "4B-06",
+      "objective": "Distinguish both, either, and at least one; use changing counts and complements.",
+      "prompt": "For that bag, find P(at least one red), naming the complement.",
+      "points": 2
+    }
+  ]
+}

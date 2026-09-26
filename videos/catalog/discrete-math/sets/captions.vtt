@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.222
+A set records membership without counting repeated copies or imposing an order
+
+00:00:05.222 --> 00:00:08.034
+These two sets share the element three
+
+00:00:08.034 --> 00:00:15.267
+The overlap shows shared membership, while the separate regions contain elements belonging to only one of the sets.
+
+00:00:16.567 --> 00:00:20.630
+Intersection keeps only elements that satisfy both membership conditions
+
+00:00:20.630 --> 00:00:25.144
+Three belongs to A and to B, so it remains
+
+00:00:25.144 --> 00:00:32.367
+The word and corresponds to the overlap, helping us translate between set notation and logical conditions.
+
+00:00:33.667 --> 00:00:37.310
+Union includes elements belonging to at least one set
+
+00:00:37.310 --> 00:00:42.571
+Adding the two set sizes counts three twice, so subtract the overlap once
+
+00:00:42.571 --> 00:00:47.833
+There are five distinct elements in the union; this correction prevents double counting.
+
+00:00:49.133 --> 00:00:56.965
+When sets are disjoint, their intersection is empty and no overlap correction is needed for their union's size
+
+00:00:56.965 --> 00:01:05.667
+Complements require another ingredient: a specified universe, because not in A only has meaning relative to the objects under consideration.

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "phase_0",
+    "text": "Take the three corners of a triangle and move them together without changing their angles. They form a straight turn. Every triangle in the plane has interior angles totaling one hundred eighty degrees.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_1",
+    "text": "Two sides must add to more than the third. Lengths two, three, and six cannot close into a triangle. Equality would make a flat line, not a triangle with area.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_2",
+    "text": "In a right triangle, the squares on the two legs together have the same area as the square on the hypotenuse. For legs three and four, nine plus sixteen is twenty five, giving a hypotenuse of five.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_3",
+    "text": "The hypotenuse is opposite the right angle. Use the Pythagorean theorem only when the triangle is right, or to check whether the longest side satisfies the converse. A drawing alone does not establish a right angle.",
+    "min_duration": 17,
+    "tail": 1.0
+  }
+]

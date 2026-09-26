@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:06.374
+An implication says that whenever its premise is true, its conclusion must also be true
+
+00:00:06.374 --> 00:00:09.959
+For integers, being divisible by four implies being even
+
+00:00:09.959 --> 00:00:15.933
+The arrow is a logical guarantee, not a claim that the two properties are identical.
+
+00:00:17.233 --> 00:00:20.576
+The algebra explains the guarantee for every integer k
+
+00:00:20.576 --> 00:00:28.005
+A multiple of four can be written as two times the integer two k, which is the definition of even
+
+00:00:28.005 --> 00:00:32.833
+The example eight illustrates this reasoning but does not replace the general argument.
+
+00:00:34.133 --> 00:00:38.050
+Reversing an implication produces its converse, which may fail
+
+00:00:38.050 --> 00:00:41.532
+Six is even, yet not divisible by four
+
+00:00:41.532 --> 00:00:49.367
+One counterexample is enough to disprove the converse because the proposed rule claimed to work for every integer.
+
+00:00:50.667 --> 00:00:54.567
+The contrapositive reverses the arrow and negates both properties
+
+00:00:54.567 --> 00:00:58.033
+It is logically equivalent to the original implication
+
+00:00:58.033 --> 00:01:06.267
+If an integer is not even, it cannot be divisible by four, because divisibility by four would force evenness.

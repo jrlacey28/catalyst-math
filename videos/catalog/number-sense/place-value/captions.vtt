@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.220
+Our number system bundles groups of ten
+
+00:00:03.220 --> 00:00:08.054
+Twenty three contains two complete bundles of ten and three single units
+
+00:00:08.054 --> 00:00:14.500
+The digit two counts tens, while the digit three counts ones; their positions determine their values.
+
+00:00:15.800 --> 00:00:19.323
+Trade one bundle of ten for ten loose units
+
+00:00:19.323 --> 00:00:23.629
+We now have one ten and thirteen ones, still twenty three
+
+00:00:23.629 --> 00:00:29.500
+Regrouping changes the representation while preserving the amount, which is why carrying and borrowing work.
+
+00:00:30.800 --> 00:00:33.218
+The same bundling idea extends leftward
+
+00:00:33.218 --> 00:00:37.650
+In four hundred twenty, four counts hundreds and two counts tens
+
+00:00:37.650 --> 00:00:44.500
+These bars count bundles of different sizes, and the zero records that there are no loose ones.
+
+00:00:45.800 --> 00:00:50.656
+Multiplying forty two by ten makes every unit ten times as large
+
+00:00:50.656 --> 00:00:55.106
+Four tens become four hundreds, and two ones become two tens
+
+00:00:55.106 --> 00:01:00.367
+The digits move one place left because every adjacent place differs by ten.

@@ -1,0 +1,133 @@
+{
+  "id": "complex-analysis.holomorphic-functions",
+  "beats": [
+    {
+      "formula": "(1+i)^2=2i",
+      "text": "A complex input has two real directions. Squaring one plus i gives two i because the real terms cancel and the cross terms add. Complex differentiability asks for one limiting multiplier that works for changes approaching from every direction.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "frac((z+h)^2-z^2,h)=2z+h arrow.r 2z",
+      "text": "For a nonzero complex change h, expand the numerator and cancel its factor h. The quotient becomes two z plus h. Its limit is two z regardless of the direction of approach, so squaring is complex differentiable everywhere.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            0.5,
+            0
+          ],
+          [
+            0,
+            0.5
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "frac(overline(h),h)=1 \" or \" -1",
+      "text": "Complex conjugation looks smooth as a real reflection, but fails this stronger derivative test. Along real changes, the quotient is one. Along purely imaginary changes, it is negative one. Different directional limits rule out a complex derivative.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "u_x=v_y, quad u_y=-v_x",
+      "text": "Writing the function as u plus i v produces the Cauchy Riemann equations. Continuous first partial derivatives satisfying these equations throughout an open region are sufficient for holomorphicity there. Checking equations at an isolated point without regularity is not enough.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Expand (2+i)² and interpret the resulting point in the complex plane.",
+      "answer": "(2+i)²=4+4i+i²=3+4i, represented by (3,4).",
+      "id": "complex-analysis.holomorphic-functions.video-practice-1"
+    },
+    {
+      "prompt": "Use a difference quotient to prove the complex derivative of f(z)=z²+3z is 2z+3.",
+      "answer": "For h≠0, [f(z+h)−f(z)]/h=2z+h+3. As complex h→0 from any direction, this tends to 2z+3.",
+      "id": "complex-analysis.holomorphic-functions.video-practice-2"
+    },
+    {
+      "prompt": "For f(z)=conjugate(z), compare the derivative quotient at zero using h=t and h=it, with real t≠0.",
+      "answer": "For h=t the quotient is t/t=1. For h=it it is −it/(it)=−1. The inconsistent limits show no complex derivative.",
+      "id": "complex-analysis.holomorphic-functions.video-practice-3"
+    }
+  ],
+  "takeaway": "A complex derivative is a single limit over all approach directions, not just real ones.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Complex analysis",
+  "course_id": "complex-analysis",
+  "title": "Holomorphic functions",
+  "objective": "Interpret complex differentiability and the Cauchy-Riemann equations.",
+  "index": 1,
+  "total": 3,
+  "prerequisites": [
+    "algebra-2.complex-numbers",
+    "calculus-1.derivatives",
+    "proof-foundations.mathematical-language"
+  ]
+}

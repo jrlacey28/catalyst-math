@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.142
+A metric measures distance and lets us define neighborhoods
+
+00:00:04.142 --> 00:00:09.548
+On the real line, the distance between two points is their absolute difference
+
+00:00:09.548 --> 00:00:17.033
+An open ball around a point consists of inputs closer than a chosen positive radius, excluding its boundary.
+
+00:00:18.333 --> 00:00:24.694
+A set is open when every member has some positive-radius ball staying entirely inside the set
+
+00:00:24.694 --> 00:00:31.055
+The point zero point eight has a small neighborhood inside the interval from zero to one
+
+00:00:31.055 --> 00:00:34.633
+Points closer to the edge may require smaller radii.
+
+00:00:35.933 --> 00:00:42.339
+The closed interval contains zero, but every full real-line ball around zero reaches negative values
+
+00:00:42.339 --> 00:00:47.890
+Therefore that interval is not open as a subset of the real line
+
+00:00:47.890 --> 00:00:51.733
+Openness depends on the ambient space and its topology.
+
+00:00:53.033 --> 00:01:01.050
+Topology keeps the neighborhood idea through rules for open sets: arbitrary unions and finite intersections remain open
+
+00:01:01.050 --> 00:01:05.765
+A metric supplies one way to obtain such a topology
+
+00:01:05.765 --> 00:01:12.367
+The abstract definition also allows spaces where no particular distance function has been chosen.

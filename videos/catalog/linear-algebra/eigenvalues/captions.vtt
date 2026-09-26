@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:09.150
+An eigenvalue describes how a transformation scales a special nonzero direction without turning it into a different line
+
+00:00:09.150 --> 00:00:17.900
+This diagonal transformation doubles horizontal components and halves vertical ones, so the coordinate axes reveal two special behaviors.
+
+00:00:19.200 --> 00:00:26.225
+The horizontal direction has eigenvalue two, while the vertical direction has eigenvalue one half
+
+00:00:26.225 --> 00:00:32.247
+An ordinary diagonal vector has both components changed differently and usually turns
+
+00:00:32.247 --> 00:00:37.767
+An eigenvalue belongs to a transformation together with an associated eigendirection.
+
+00:00:39.067 --> 00:00:47.659
+Rearranging the eigenvector equation gives A minus lambda times the identity acting on a nonzero vector to produce zero
+
+00:00:47.659 --> 00:00:49.921
+That requires a singular matrix
+
+00:00:49.921 --> 00:00:55.800
+Setting its determinant to zero finds the candidate eigenvalues two and one half.
+
+00:00:57.100 --> 00:00:59.943
+Zero can also be an eigenvalue
+
+00:00:59.943 --> 00:01:08.947
+A singular transformation collapses some nonzero vectors to zero, and those vectors satisfy the eigenvalue equation with lambda zero
+
+00:01:08.947 --> 00:01:14.633
+The input eigenvector must be nonzero; the resulting output need not be.

@@ -1,0 +1,70 @@
+[
+  {
+    "formula": "W=integral_C F dot.op dif r",
+    "text": "A force field does work only through the component aligned with movement. A line integral adds that contribution along a path. For the constant rightward field of magnitude one, moving from negative two to positive two along the axis gives work four.",
+    "visual": {
+      "kind": "field",
+      "mode": "constant",
+      "path": "line"
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "F=(-y,x), quad r=(2cos(t),2sin(t))",
+    "text": "On a counterclockwise circle of radius two, the rotational field matches the direction of motion. Both the field vector and the parametrization's derivative have length two. Their dot product is four throughout the trip, so the work is eight pi.",
+    "visual": {
+      "kind": "field",
+      "mode": "rotation",
+      "path": "circle"
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "F=(x,y): quad integral_C F dot.op dif r=0",
+    "text": "For the radial field on that same circle, every field arrow is perpendicular to the tangent direction. The dot product is zero at every point, so the line integral vanishes even though the field itself is not zero.",
+    "visual": {
+      "kind": "field",
+      "mode": "radial",
+      "path": "circle"
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "integral_(-C) F dot.op dif r=-integral_C F dot.op dif r",
+    "text": "Reversing a path reverses the direction of each displacement, so a vector line integral changes sign. This orientation rule differs from merely measuring path length. Always specify the direction and distinguish work from a scalar integral against distance.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "start",
+        "finish"
+      ],
+      "edges": [
+        [
+          1,
+          0
+        ]
+      ],
+      "weights": [
+        "reverse direction"
+      ],
+      "directed": true,
+      "active": [
+        0,
+        1
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

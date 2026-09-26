@@ -1,0 +1,281 @@
+WEBVTT
+
+00:00:00.350 --> 00:00:04.915
+Welcome to Catalyst. This walkthrough takes you from
+getting the software to
+
+00:00:04.915 --> 00:00:09.480
+a useful learning session. We will follow one idea:
+how changing a
+
+00:00:09.480 --> 00:00:14.045
+function changes its graph, and why algebraic steps
+work. Everything shown uses
+
+00:00:14.045 --> 00:00:15.567
+a separate demo learner.
+
+00:00:16.717 --> 00:00:22.099
+Start with the Catalyst offline ZIP supplied with this
+project. It includes
+
+00:00:22.099 --> 00:00:27.482
+the app and all the rendered lesson videos. The
+smaller source ZIP
+
+00:00:27.482 --> 00:00:32.864
+contains the code, transcripts and exercises. Extract
+the archive into a normal
+
+00:00:32.864 --> 00:00:38.247
+folder before opening anything. Catalyst's original
+code and shared lessons use the
+
+00:00:38.247 --> 00:00:43.630
+included MIT license. The upstream repository is
+currently private, so use the
+
+00:00:43.630 --> 00:00:47.667
+provided archive rather than expecting a public GitHub
+download.
+
+00:00:48.817 --> 00:00:52.939
+Install Python three point ten or newer from python
+dot org. On
+
+00:00:52.939 --> 00:00:57.061
+Windows, open the extracted Catalyst folder and double
+click Start Catalyst. If
+
+00:00:57.061 --> 00:01:01.183
+Python is not found, finish Python setup and check
+that the python
+
+00:01:01.183 --> 00:01:05.305
+command works. On Mac or Linux, open a terminal in
+that folder
+
+00:01:05.305 --> 00:01:09.427
+and run python three, space, start dot py. Keep the
+terminal open.
+
+00:01:09.427 --> 00:01:13.549
+In your browser, open the local address shown here.
+Stop the server
+
+00:01:13.549 --> 00:01:15.267
+with Control C when finished.
+
+00:01:16.417 --> 00:01:20.364
+Choose the learner name to create your own learning
+space. Pick a
+
+00:01:20.364 --> 00:01:24.311
+starting path and how you like to work. These
+preferences choose your
+
+00:01:24.311 --> 00:01:28.257
+first activity; they do not give you a test score.
+Each learner
+
+00:01:28.257 --> 00:01:32.204
+has separate saved work on this computer. You can
+return without starting
+
+00:01:32.204 --> 00:01:32.533
+over.
+
+00:01:33.683 --> 00:01:38.110
+If you are unsure where to begin, choose Find my
+level. The
+
+00:01:38.110 --> 00:01:42.537
+assessment asks one question at a time and adapts
+across several areas.
+
+00:01:42.537 --> 00:01:46.964
+Say when you do not know. Its recommendation is a
+starting estimate,
+
+00:01:46.964 --> 00:01:51.391
+not a permanent label. You can also browse Courses
+directly, from number
+
+00:01:51.391 --> 00:01:52.867
+sense through college topics.
+
+00:01:54.017 --> 00:01:58.407
+Open a topic and watch its short narrated animation.
+Pause, replay, or
+
+00:01:58.407 --> 00:02:02.797
+use captions and chapters. Then open the study guide
+when one is
+
+00:02:02.797 --> 00:02:07.187
+available. Read the worked example and ask what
+changed at each line,
+
+00:02:07.187 --> 00:02:11.577
+and why. Here, a function is a rule: changing the
+input changes
+
+00:02:11.577 --> 00:02:15.967
+the output. Prerequisite links help repair a missing
+step before you continue.
+
+00:02:17.117 --> 00:02:22.013
+The playground now brings the interactive tools
+together. Free exploration lets you
+
+00:02:22.013 --> 00:02:26.910
+change a graph or diagram. Guided reasoning explains
+valid transformations. Applied models
+
+00:02:26.910 --> 00:02:31.807
+connect several ideas to a situation. In the function
+lab, predict what
+
+00:02:31.807 --> 00:02:36.703
+changing the coefficient will do. Adjust it, watch the
+graph move, and
+
+00:02:36.703 --> 00:02:41.600
+compare the result with your prediction. Change one
+thing at a time.
+
+00:02:42.750 --> 00:02:47.488
+When a simplification feels like a jump, open Why this
+step. Reveal
+
+00:02:47.488 --> 00:02:52.225
+one transformation and its reason at a time. In the
+expression comparison,
+
+00:02:52.225 --> 00:02:56.963
+the quotient simplifies to a line everywhere except
+the excluded input. The
+
+00:02:56.963 --> 00:03:01.701
+missing point still matters. Matching graph shapes is
+a useful observation; factoring
+
+00:03:01.701 --> 00:03:06.439
+and the domain restriction explain why the expressions
+agree where both are
+
+00:03:06.439 --> 00:03:06.833
+defined.
+
+00:03:07.983 --> 00:03:12.096
+Return to Practice and try the three questions. Start
+with Build the
+
+00:03:12.096 --> 00:03:16.209
+idea, then Connect the steps and Stretch and transfer.
+Write your method
+
+00:03:16.209 --> 00:03:20.322
+as well as your answer. If you are stuck, ask for a
+
+00:03:20.322 --> 00:03:24.434
+hint. Check the feedback, find the first uncertain
+step, and try another
+
+00:03:24.434 --> 00:03:26.833
+variation. Getting help is part of learning.
+
+00:03:27.983 --> 00:03:32.764
+When you can explain the method, take a fresh
+independent check. Hinted
+
+00:03:32.764 --> 00:03:37.545
+or previously exposed questions do not establish new
+independent readiness. A passed
+
+00:03:37.545 --> 00:03:42.326
+check is useful evidence, but one short session does
+not prove lasting
+
+00:03:42.326 --> 00:03:47.106
+mastery. Some written work needs a tutor's review.
+Watching a video alone
+
+00:03:47.106 --> 00:03:48.700
+never passes a lesson.
+
+00:03:49.850 --> 00:03:54.506
+Apply the math connects ideas in a real model. Choose
+an investigation,
+
+00:03:54.506 --> 00:03:59.161
+make a prediction, change a control, and explain what
+you observe. The
+
+00:03:59.161 --> 00:04:03.817
+motion model links position, time and rate of change.
+Worked examples prepare
+
+00:04:03.817 --> 00:04:08.472
+you for three practice questions and a larger written
+project. State your
+
+00:04:08.472 --> 00:04:10.800
+assumptions and units as you reason.
+
+00:04:11.950 --> 00:04:17.179
+My homework brings your saved writing together. Review
+my reasoning helps you
+
+00:04:17.179 --> 00:04:22.407
+inspect assumptions, transformations, notation and
+conclusions. Save a revised explanation and say
+
+00:04:22.407 --> 00:04:27.636
+what changed. Earlier versions stay available. You can
+copy your work for
+
+00:04:27.636 --> 00:04:32.864
+a tutor, or open the optional tailoring workspace with
+your actual saved
+
+00:04:32.864 --> 00:04:33.300
+explanation.
+
+00:04:34.450 --> 00:04:39.113
+Mixed review gives fresh three-question sets across
+supported skills and suggests later
+
+00:04:39.113 --> 00:04:43.776
+retrieval. An empty due list is normal before you have
+qualifying work
+
+00:04:43.776 --> 00:04:48.439
+to review. Tailor to my interests connects a topic
+with your goals.
+
+00:04:48.439 --> 00:04:53.103
+Its copyable tutor brief works without AI. An optional
+local Ollama model
+
+00:04:53.103 --> 00:04:56.600
+can offer unverified help; it does not grade you.
+
+00:04:57.750 --> 00:05:02.726
+Keep this rhythm: understand, predict, explore, try,
+explain, and return later. Move
+
+00:05:02.726 --> 00:05:07.701
+quickly when the evidence supports it, and revisit
+foundations whenever a step
+
+00:05:07.701 --> 00:05:12.677
+feels unclear. Your progress stays on disk. Use the
+written getting-started guide
+
+00:05:12.677 --> 00:05:17.652
+for setup and backup instructions. Begin with one
+idea, and make it
+
+00:05:17.652 --> 00:05:18.067
+yours.

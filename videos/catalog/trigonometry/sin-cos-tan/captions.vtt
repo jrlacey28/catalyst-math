@@ -1,0 +1,31 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:07.092
+On a unit circle, cosine is the horizontal coordinate and sine is the vertical coordinate
+
+00:00:07.092 --> 00:00:14.231
+The right triangle connects these coordinates to familiar side ratios because its hypotenuse has length one
+
+00:00:14.231 --> 00:00:17.800
+Both functions therefore describe the same moving point.
+
+00:00:19.100 --> 00:00:27.986
+At an angle of thirty degrees, the vertical coordinate is one half and the horizontal coordinate is the square root of three over two
+
+00:00:27.986 --> 00:00:32.800
+These values satisfy the circle equation: the sum of their squares equals one.
+
+00:00:34.100 --> 00:00:39.770
+Tangent compares vertical change with horizontal change, so it equals sine divided by cosine
+
+00:00:39.770 --> 00:00:45.440
+For our thirty-degree angle, the ratio is one over the square root of three
+
+00:00:45.440 --> 00:00:50.300
+Tangent records the slope of the radius when that slope is defined.
+
+00:00:51.600 --> 00:00:59.707
+As the radius approaches vertical, the horizontal coordinate approaches zero while the vertical coordinate approaches one
+
+00:00:59.707 --> 00:01:11.867
+Dividing by that vanishing horizontal coordinate makes tangent unbounded nearby, and tangent is undefined exactly at ninety degrees because division by zero is invalid.

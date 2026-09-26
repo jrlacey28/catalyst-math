@@ -1,0 +1,103 @@
+[
+  {
+    "formula": "A={1,2,3}, quad B={3,4,5}",
+    "text": "A set records membership without counting repeated copies or imposing an order. These two sets share the element three. The overlap shows shared membership, while the separate regions contain elements belonging to only one of the sets.",
+    "visual": {
+      "kind": "sets",
+      "left": [
+        "1",
+        "2"
+      ],
+      "right": [
+        "4",
+        "5"
+      ],
+      "both": [
+        "3"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.166666666666668,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "A ∩ B={3}",
+    "text": "Intersection keeps only elements that satisfy both membership conditions. Three belongs to A and to B, so it remains. The word and corresponds to the overlap, helping us translate between set notation and logical conditions.",
+    "visual": {
+      "kind": "sets",
+      "left": [
+        "1",
+        "2"
+      ],
+      "right": [
+        "4",
+        "5"
+      ],
+      "both": [
+        "3"
+      ],
+      "highlight": "intersection"
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.166666666666668,
+    "duration": 17.1,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "abs(A union B)=3+3-1=5",
+    "text": "Union includes elements belonging to at least one set. Adding the two set sizes counts three twice, so subtract the overlap once. There are five distinct elements in the union; this correction prevents double counting.",
+    "visual": {
+      "kind": "sets",
+      "left": [
+        "1",
+        "2"
+      ],
+      "right": [
+        "4",
+        "5"
+      ],
+      "both": [
+        "3"
+      ],
+      "highlight": "union"
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 33.266666666666666,
+    "duration": 15.466666666666667,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "\"disjoint sets have no shared elements\"",
+    "text": "When sets are disjoint, their intersection is empty and no overlap correction is needed for their union's size. Complements require another ingredient: a specified universe, because not in A only has meaning relative to the objects under consideration.",
+    "visual": {
+      "kind": "sets",
+      "left": [
+        "1",
+        "2"
+      ],
+      "right": [
+        "3",
+        "4"
+      ],
+      "both": [],
+      "highlight": "union"
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 48.733333333333334,
+    "duration": 17.833333333333332,
+    "audio": "audio_parts/04.wav"
+  }
+]

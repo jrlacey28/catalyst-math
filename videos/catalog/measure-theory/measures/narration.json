@@ -1,0 +1,89 @@
+[
+  {
+    "formula": "mu(A)>=0, quad mu(emptyset)=0",
+    "text": "A measure assigns nonnegative size to allowed sets and assigns zero to the empty set. The allowed sets form a sigma algebra, closed under complements and countable unions. This specifies which events or regions can be measured consistently.",
+    "visual": {
+      "kind": "sets",
+      "left": [
+        "a",
+        "b"
+      ],
+      "right": [
+        "c",
+        "d"
+      ],
+      "both": [],
+      "highlight": "union"
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "mu(A union B)=mu(A)+mu(B) \" when disjoint\"",
+    "text": "For disjoint measurable sets, sizes add. With four equally likely outcomes, a two-outcome event has probability one half and its two-outcome complement has probability one half. Their union has probability one. Probability is a measure with total size one.",
+    "visual": {
+      "kind": "grid",
+      "rows": 2,
+      "cols": 2,
+      "filled": 2,
+      "secondary": 2
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "mu([0,1])=1, quad mu({0.5})=0",
+    "text": "Different measures describe different notions of size. Lebesgue measure on the line agrees with interval length. A singleton has length zero even though it is not empty. Counting measure, by contrast, assigns that singleton size one.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        -0.2,
+        1.2
+      ],
+      "interval": [
+        0,
+        1
+      ],
+      "points": [
+        0.5
+      ],
+      "labels": [
+        "nonempty singleton"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "mu(QQ)=0",
+    "text": "Countable additivity implies that a countable union of zero-length singletons still has measure zero. The rational numbers therefore have Lebesgue measure zero, although they are dense. The few rational points drawn are only an illustration of that countable-set argument.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        1
+      ],
+      "points": [
+        0,
+        0.2,
+        0.25,
+        0.333333333333,
+        0.5,
+        0.666666666667,
+        0.75,
+        0.8,
+        1
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

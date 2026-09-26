@@ -1,0 +1,138 @@
+[
+  {
+    "formula": "2(x+3)",
+    "text": "An expression describes a quantity without necessarily asserting an equation to solve. Two copies of the quantity x plus three means that both the variable part and the three additional units are repeated twice.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        2,
+        3,
+        2,
+        3
+      ],
+      "labels": [
+        "x",
+        "3",
+        "x",
+        "3"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "2(x+3)=2x+6",
+    "text": "Distribution accounts for those repeated parts separately. Two copies of x contribute two x, and two copies of three contribute six. The rewritten expression gives the same output for every real input, as the overlapping graphs illustrate.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        0,
+        12
+      ],
+      "curves": [
+        {
+          "f": "2*(x+3)",
+          "color": "blue",
+          "domain": [
+            -3,
+            3
+          ]
+        },
+        {
+          "f": "2*x+6",
+          "color": "gold",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "2(x+3)+x=3x+6",
+    "text": "Like terms count the same variable quantity, so two x plus another x becomes three x. The six remains a separate constant. Adding coefficients is justified because the repeated units are identical, not because all symbols look similar.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        3
+      ],
+      "y": [
+        0,
+        15
+      ],
+      "curves": [
+        {
+          "f": "3*x+6",
+          "color": "blue",
+          "domain": [
+            -2,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          6
+        ],
+        [
+          2,
+          12
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "-(x-4)=-x+4",
+    "text": "A leading minus means multiplication by negative one, and it affects every term inside the parentheses. The two sides again represent one function. Simplifying preserves all inputs; solving for a particular input requires an additional condition.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        5
+      ],
+      "y": [
+        -1,
+        6
+      ],
+      "curves": [
+        {
+          "f": "-(x-4)",
+          "color": "blue",
+          "domain": [
+            -2,
+            5
+          ]
+        },
+        {
+          "f": "-x+4",
+          "color": "gold",
+          "domain": [
+            -2,
+            5
+          ]
+        }
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

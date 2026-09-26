@@ -1,0 +1,7 @@
+A series adds the terms of a sequence. Because we cannot finish infinitely many additions, study the partial sums instead. For successive halves, the totals are one half, three quarters, seven eighths, and values increasingly close to one.
+
+The geometric sum formula makes the missing amount explicit: after N terms, the remaining gap is one over two to the N. That gap tends to zero, so the infinite series converges to one.
+
+Terms approaching zero are necessary, but not sufficient. Group the harmonic series into blocks ending at powers of two. Each new block contributes at least one half, so the partial sums keep growing beyond every finite bound.
+
+Signs can change the conclusion. For alternating one over n, decreasing term magnitudes tend to zero, so the series converges. After N terms, its error is at most the next magnitude. This bound requires those alternating-series conditions.

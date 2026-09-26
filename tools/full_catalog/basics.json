@@ -1,0 +1,6006 @@
+[
+  {
+    "id": "number-sense.counting",
+    "beats": [
+      {
+        "formula": "1,2,3,4,5",
+        "text": "Counting connects one number word to one object. Touch each dot once as the count grows. The last number names the whole collection, so stopping at five means that five objects are present.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            5
+          ],
+          "labels": [
+            "5"
+          ]
+        }
+      },
+      {
+        "formula": "5=2+3",
+        "text": "Separate those same five dots into two groups. Nothing has entered or left the collection, so its total stays five. Arrangement changes where objects are; counting measures how many objects there are.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            2,
+            3
+          ],
+          "labels": [
+            "2",
+            "3"
+          ]
+        }
+      },
+      {
+        "formula": "5+2=7",
+        "text": "Now add two new dots. We already know that five are present, so count on: six, seven. Each new object receives one new number, and the final count records the new total.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            5,
+            2
+          ],
+          "labels": [
+            "5",
+            "2"
+          ]
+        }
+      },
+      {
+        "formula": "7-2=5",
+        "text": "Remove the two newly added objects and the count returns to five. This connection prepares addition and subtraction. An empty group has count zero, and moving objects alone never creates extra objects.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            5,
+            0
+          ],
+          "labels": [
+            "5",
+            "0"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Count the symbols ● ● ● ● ● ● ● ● and explain your method.",
+        "answer": "Eight; pair each symbol with one count, without skipping or counting twice."
+      },
+      {
+        "prompt": "Start with thirteen buttons and add three. Count on aloud and give the total.",
+        "answer": "Fourteen, fifteen, sixteen; total sixteen."
+      },
+      {
+        "prompt": "You rearrange fourteen stones from a row into two piles. Explain why the total is unchanged.",
+        "answer": "No stone was added or removed. Regrouping changes positions but not the fourteen-object collection."
+      }
+    ],
+    "takeaway": "Count each object once; the last count names the quantity.",
+    "scope": "Counting, conservation of quantity, and counting on."
+  },
+  {
+    "id": "number-sense.place-value",
+    "beats": [
+      {
+        "formula": "23=2 times 10+3",
+        "text": "Our number system bundles groups of ten. Twenty three contains two complete bundles of ten and three single units. The digit two counts tens, while the digit three counts ones; their positions determine their values.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            10,
+            10,
+            3
+          ],
+          "labels": [
+            "10",
+            "10",
+            "3"
+          ]
+        }
+      },
+      {
+        "formula": "23=1 times 10+13",
+        "text": "Trade one bundle of ten for ten loose units. We now have one ten and thirteen ones, still twenty three. Regrouping changes the representation while preserving the amount, which is why carrying and borrowing work.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            10,
+            13
+          ],
+          "labels": [
+            "10",
+            "13"
+          ]
+        }
+      },
+      {
+        "formula": "420=4 times 100+2 times 10+0",
+        "text": "The same bundling idea extends leftward. In four hundred twenty, four counts hundreds and two counts tens. These bars count bundles of different sizes, and the zero records that there are no loose ones.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            4,
+            2,
+            0
+          ],
+          "labels": [
+            "100s",
+            "10s",
+            "1s"
+          ]
+        }
+      },
+      {
+        "formula": "42 times 10=420",
+        "text": "Multiplying forty two by ten makes every unit ten times as large. Four tens become four hundreds, and two ones become two tens. The digits move one place left because every adjacent place differs by ten.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            4,
+            2,
+            0
+          ],
+          "labels": [
+            "100s",
+            "10s",
+            "1s"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "What is the value of the digit three in three hundred sixty eight? Explain using bundles.",
+        "answer": "Three hundreds, so its value is 300."
+      },
+      {
+        "prompt": "Represent fifty seven as four tens and some ones. How many ones are needed?",
+        "answer": "Seventeen ones: 40+17=57."
+      },
+      {
+        "prompt": "Why does multiplying 206 by ten give 2060? Describe what happens to each nonzero digit.",
+        "answer": "Two hundreds become two thousands and six ones become six tens; 206×10=2060."
+      }
+    ],
+    "takeaway": "Place value names the size of each counted bundle.",
+    "scope": "Base-ten positions, equivalent regrouping, and multiplication by ten."
+  },
+  {
+    "id": "number-sense.addition-subtraction",
+    "beats": [
+      {
+        "formula": "6+4=10",
+        "text": "Addition combines quantities. Start with six dots and bring in four more. Counting the joined collection gives ten, while keeping the original groups visible shows exactly which two amounts were combined.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            6,
+            4
+          ],
+          "labels": [
+            "6",
+            "4"
+          ]
+        }
+      },
+      {
+        "formula": "10-4=6",
+        "text": "Subtraction can undo that combination. Removing the four newly added dots leaves six. We can also ask for the missing addend: what must join four to make ten? Both questions identify the same quantity.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            12
+          ],
+          "points": [
+            4,
+            6,
+            10
+          ],
+          "arrows": [
+            [
+              10,
+              6
+            ]
+          ],
+          "labels": [
+            "4",
+            "6",
+            "10"
+          ]
+        }
+      },
+      {
+        "formula": "38+25=38+20+5=63",
+        "text": "For larger numbers, break one amount into convenient parts. To add twenty five to thirty eight, add twenty to reach fifty eight, then five to reach sixty three. We changed the steps, not the total increase.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            30,
+            70
+          ],
+          "points": [
+            38,
+            58,
+            63
+          ],
+          "arrows": [
+            [
+              38,
+              58
+            ],
+            [
+              58,
+              63
+            ]
+          ],
+          "labels": [
+            "38",
+            "58",
+            "63"
+          ]
+        }
+      },
+      {
+        "formula": "63-25=38",
+        "text": "Reverse those same moves to check the result. Subtract five and then twenty from sixty three, returning to thirty eight. A sensible subtraction answer must rebuild the original total when the removed amount is added back.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            30,
+            70
+          ],
+          "points": [
+            63,
+            58,
+            38
+          ],
+          "arrows": [
+            [
+              63,
+              58
+            ],
+            [
+              58,
+              38
+            ]
+          ],
+          "labels": [
+            "63",
+            "58",
+            "38"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find eight plus five using a make-ten step.",
+        "answer": "8+2+3=10+3=13."
+      },
+      {
+        "prompt": "Find forty seven plus thirty six by splitting one addend.",
+        "answer": "47+30+6=77+6=83."
+      },
+      {
+        "prompt": "A store had ninety four notebooks and sold fifty eight. Find the remainder and check with addition.",
+        "answer": "94−58=36, checked by 36+58=94."
+      }
+    ],
+    "takeaway": "Addition and subtraction are inverse operations on quantities.",
+    "scope": "Combining, missing addends, decomposing numbers, and checking."
+  },
+  {
+    "id": "number-sense.multiplication-division",
+    "beats": [
+      {
+        "formula": "3 times 4=4+4+4=12",
+        "text": "Multiplication counts equal groups efficiently. Three groups containing four dots each give twelve altogether. The groups must be equal for this repeated addition model; three unequal groups would require adding their actual sizes.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            4,
+            4,
+            4
+          ],
+          "labels": [
+            "4",
+            "4",
+            "4"
+          ]
+        }
+      },
+      {
+        "formula": "12 div 3=4",
+        "text": "Division asks the reverse question. Sharing these twelve dots equally among three groups puts four in each group. We can also group by fours and ask how many groups fit; that version gives three groups.",
+        "visual": {
+          "kind": "grid",
+          "rows": 3,
+          "cols": 4,
+          "filled": 12
+        }
+      },
+      {
+        "formula": "17=3 times 5+2",
+        "text": "Not every whole-number division comes out evenly. Seventeen objects make three full groups of five with two left over. The remainder must be smaller than five, or another complete group would still fit.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            5,
+            5,
+            5,
+            2
+          ],
+          "labels": [
+            "5",
+            "5",
+            "5",
+            "2"
+          ]
+        }
+      },
+      {
+        "formula": "3 times 5=15<17<=20=4 times 5",
+        "text": "The story decides what to do with a remainder. If seventeen people need five-seat vehicles, three vehicles are insufficient, so we need four. If we are counting complete packs, however, only three packs are full.",
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 5,
+          "filled": 17
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Draw four equal groups of six and find their total.",
+        "answer": "Four groups contain 24 objects: 4×6=24."
+      },
+      {
+        "prompt": "Divide twenty nine objects into groups of four. State the quotient and remainder.",
+        "answer": "29=4×7+1, so quotient 7 and remainder 1."
+      },
+      {
+        "prompt": "Each boat holds seven passengers. How many boats are needed for thirty people, and why?",
+        "answer": "Five boats: four hold only 28, while five can hold all thirty."
+      }
+    ],
+    "takeaway": "Division reverses equal grouping; context determines how a remainder is used.",
+    "scope": "Equal groups, arrays, quotients, and interpreted remainders."
+  },
+  {
+    "id": "number-sense.order-of-operations",
+    "beats": [
+      {
+        "formula": "2+3 times 4=14",
+        "text": "An expression has structure before we calculate it. In two plus three times four, the multiplication describes one quantity: three groups of four. Add the separate two only after finding that product of twelve.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            2,
+            4,
+            4,
+            4
+          ],
+          "labels": [
+            "2",
+            "4",
+            "4",
+            "4"
+          ]
+        }
+      },
+      {
+        "formula": "(2+3) times 4=20",
+        "text": "Parentheses change which quantity acts as a factor. Two plus three now forms one five-object group, and four copies produce twenty. The same symbols can describe a different construction when their grouping changes.",
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 5,
+          "filled": 20
+        }
+      },
+      {
+        "formula": "18 div 3 times 2=6 times 2=12",
+        "text": "Multiplication and division have equal priority, so evaluate them from left to right unless grouping says otherwise. Eighteen divided by three gives six, then multiplying by two gives twelve; multiplying the denominator first would change the expression.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            6,
+            6
+          ],
+          "labels": [
+            "6",
+            "6"
+          ]
+        }
+      },
+      {
+        "formula": "2 times (3^2-4)=10",
+        "text": "Nested expressions are read from their inner structure outward. Square three to get nine, subtract four inside the parentheses to get five, then double the result. A fraction bar also groups its entire numerator and denominator.",
+        "visual": {
+          "kind": "grid",
+          "rows": 3,
+          "cols": 3,
+          "filled": 5,
+          "secondary": 4
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Evaluate 7+4×3 and explain the first operation.",
+        "answer": "Multiplication first: 4×3=12, then 7+12=19."
+      },
+      {
+        "prompt": "Evaluate 42÷7×3 using the equal-priority rule.",
+        "answer": "Left to right: 42÷7=6, then 6×3=18."
+      },
+      {
+        "prompt": "Insert parentheses into 6+2×5 to make its value forty. Explain the new grouping.",
+        "answer": "(6+2)×5=40; the sum of eight is now the factor multiplied by five."
+      }
+    ],
+    "takeaway": "Grouping determines meaning; equal-priority operations proceed left to right.",
+    "scope": "Expression structure, parentheses, powers, and equal-priority operations."
+  },
+  {
+    "id": "number-sense.estimation",
+    "beats": [
+      {
+        "formula": "198+403 approx 200+400=600",
+        "text": "Estimation deliberately replaces awkward quantities with nearby convenient ones. One hundred ninety eight is close to two hundred, and four hundred three is close to four hundred, so their sum should be close to six hundred.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            198,
+            200,
+            403,
+            400
+          ],
+          "labels": [
+            "198",
+            "200",
+            "403",
+            "400"
+          ]
+        }
+      },
+      {
+        "formula": "198+403=601",
+        "text": "The exact sum is six hundred one. Rounding the first number up by two and the second down by three changes the total by negative one, explaining why the estimate of six hundred is slightly low.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            590,
+            610
+          ],
+          "points": [
+            600,
+            601
+          ],
+          "arrows": [
+            [
+              600,
+              601
+            ]
+          ],
+          "labels": [
+            "estimate",
+            "exact"
+          ]
+        }
+      },
+      {
+        "formula": "19 times 31 approx 20 times 30=600",
+        "text": "For multiplication, nearby round factors often give a useful scale. Nineteen groups of thirty one should be near twenty groups of thirty. An answer around sixty or six thousand would have the wrong size before detailed checking.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            589,
+            600
+          ],
+          "labels": [
+            "19×31",
+            "20×30"
+          ]
+        }
+      },
+      {
+        "formula": "18 times 30 < 19 times 31 < 20 times 32",
+        "text": "When an estimate must be justified, use bounds. Replacing both positive factors by smaller numbers gives a lower bound, while larger factors give an upper bound. Here the true product lies strictly between five hundred forty and six hundred forty.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            520,
+            660
+          ],
+          "points": [
+            540,
+            589,
+            640
+          ],
+          "interval": [
+            540,
+            640
+          ],
+          "labels": [
+            "lower",
+            "exact",
+            "upper"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Estimate 297+506 using convenient hundreds.",
+        "answer": "About 800, using 300+500."
+      },
+      {
+        "prompt": "Estimate 48×21, then calculate exactly and compare.",
+        "answer": "Estimate 50×20=1000; exact value 1008, only eight larger."
+      },
+      {
+        "prompt": "A calculation of 39×62 gives 24180. Explain without long multiplication why this is unreasonable.",
+        "answer": "40×60 is about 2400; 24180 is roughly ten times too large. The exact value is 2418."
+      }
+    ],
+    "takeaway": "An estimate checks scale; explicit bounds state what is guaranteed.",
+    "scope": "Rounding, compensation, multiplication estimates, and positive-factor bounds."
+  },
+  {
+    "id": "arithmetic.fractions",
+    "beats": [
+      {
+        "formula": "frac(1,3)=frac(4,12)",
+        "text": "A fraction counts equal-sized pieces of one whole. Splitting each third into four smaller pieces creates twelfths without changing the shaded amount. One third and four twelfths therefore describe the same quantity in different units.",
+        "visual": {
+          "kind": "grid",
+          "rows": 3,
+          "cols": 4,
+          "filled": 4
+        }
+      },
+      {
+        "formula": "frac(1,3)+frac(1,4)=frac(4,12)+frac(3,12)=frac(7,12)",
+        "text": "To add fractions, first give their pieces a common size. One third contributes four twelfths and one fourth contributes three twelfths. We add the piece counts, while twelve remains the name of the unit.",
+        "visual": {
+          "kind": "grid",
+          "rows": 3,
+          "cols": 4,
+          "filled": 4,
+          "secondary": 3
+        }
+      },
+      {
+        "formula": "frac(2,3) times frac(3,4)=frac(6,12)=frac(1,2)",
+        "text": "Multiplication asks for a fraction of another amount. Two thirds of three fourths covers six of twelve equal cells. Here we multiply the fractions; we are not combining two separate amounts, so a common denominator is unnecessary.",
+        "visual": {
+          "kind": "grid",
+          "rows": 3,
+          "cols": 4,
+          "filled": 6,
+          "fill_rows": 2,
+          "fill_cols": 3
+        }
+      },
+      {
+        "formula": "frac(3,2) div frac(3,4)=2",
+        "text": "Division asks how many divisor-sized units fit. A length of one and a half contains two lengths of three fourths. Multiplying by the reciprocal gives the same count, provided the divisor is not zero.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            2
+          ],
+          "points": [
+            0,
+            0.75,
+            1.5
+          ],
+          "arrows": [
+            [
+              0,
+              0.75
+            ],
+            [
+              0.75,
+              1.5
+            ]
+          ],
+          "labels": [
+            "0",
+            "3/4",
+            "3/2"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find 1/5+1/2 using equal-sized pieces.",
+        "answer": "Use tenths: 2/10+5/10=7/10."
+      },
+      {
+        "prompt": "Find 3/5 of 5/8. Show how factors simplify.",
+        "answer": "(3/5)(5/8)=3/8, cancelling the common nonzero factor five."
+      },
+      {
+        "prompt": "A 5/3-meter ribbon is cut into pieces of length 2/9 meter. How many complete pieces fit, and why?",
+        "answer": "(5/3)/(2/9)=15/2=7.5, so seven complete pieces fit; a partial eighth is not a complete piece."
+      }
+    ],
+    "takeaway": "Addition combines equal units; multiplication takes a part; division counts units.",
+    "scope": "Fraction meaning, equivalence, operations, and a nonzero divisor."
+  },
+  {
+    "id": "arithmetic.decimals",
+    "beats": [
+      {
+        "formula": "0.37=frac(3,10)+frac(7,100)=frac(37,100)",
+        "text": "Decimal places extend the same base-ten system to parts smaller than one. Three tenths occupy thirty hundredths, and seven more hundredths bring the shaded total to thirty seven hundredths, written as zero point three seven.",
+        "visual": {
+          "kind": "grid",
+          "rows": 10,
+          "cols": 10,
+          "filled": 30,
+          "secondary": 7
+        }
+      },
+      {
+        "formula": "0.4=0.40=frac(40,100)",
+        "text": "A trailing zero changes the written precision, not the amount. Four tenths and forty hundredths shade exactly the same region. To compare decimals, compare corresponding place values instead of treating their digit strings as whole numbers.",
+        "visual": {
+          "kind": "grid",
+          "rows": 10,
+          "cols": 10,
+          "filled": 40
+        }
+      },
+      {
+        "formula": "1.2+0.35=1.20+0.35=1.55",
+        "text": "When adding decimals, align their units. One point two becomes one point two zero so that tenths line up with tenths and hundredths with hundredths. The increase of thirty five hundredths reaches one point five five.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            2
+          ],
+          "points": [
+            1.2,
+            1.55
+          ],
+          "arrows": [
+            [
+              1.2,
+              1.55
+            ]
+          ],
+          "labels": [
+            "1.20",
+            "1.55"
+          ]
+        }
+      },
+      {
+        "formula": "0.3 times 0.4=frac(3 times 4,100)=0.12",
+        "text": "For multiplication, think in fractions rather than shifting a point mechanically. Three tenths times four tenths is twelve hundredths. The product is smaller than either factor because we are taking only part of an amount below one.",
+        "visual": {
+          "kind": "grid",
+          "rows": 10,
+          "cols": 10,
+          "filled": 12
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Which is larger, 0.56 or 0.6? Explain with hundredths.",
+        "answer": "0.6=0.60=60/100 exceeds 56/100."
+      },
+      {
+        "prompt": "Calculate 2.08+0.7 and show place-value alignment.",
+        "answer": "2.08+0.70=2.78."
+      },
+      {
+        "prompt": "Explain why 0.2×0.7 is 0.14 rather than 1.4.",
+        "answer": "Two tenths times seven tenths is fourteen hundredths: (2/10)(7/10)=14/100."
+      }
+    ],
+    "takeaway": "Decimal digits count tenths, hundredths, and further powers of ten.",
+    "scope": "Decimal place value, comparison, addition, and multiplication meaning."
+  },
+  {
+    "id": "arithmetic.percentages",
+    "beats": [
+      {
+        "formula": "35%=frac(35,100)=0.35",
+        "text": "Percent means per hundred, so thirty five percent shades thirty five of these hundred equal cells. The percentage alone is a relative amount. Its actual size depends on the whole to which it refers.",
+        "visual": {
+          "kind": "grid",
+          "rows": 10,
+          "cols": 10,
+          "filled": 35
+        }
+      },
+      {
+        "formula": "35% \"of\" 60=0.35 times 60=21",
+        "text": "To find thirty five percent of sixty, multiply the whole sixty by the fraction thirty five hundredths. The result is twenty one. Keep track of which quantity is the whole and which quantity is the part.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            60,
+            21
+          ],
+          "labels": [
+            "whole",
+            "part"
+          ]
+        }
+      },
+      {
+        "formula": "60 times (1+0.25)=75",
+        "text": "A twenty five percent increase keeps the original whole and adds a quarter of it. The combined factor is one point two five, taking sixty to seventy five. This factor form makes repeated percentage changes easier to track.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            60,
+            15,
+            75
+          ],
+          "labels": [
+            "start",
+            "increase",
+            "result"
+          ]
+        }
+      },
+      {
+        "formula": "75 times (1-0.20)=60",
+        "text": "Dropping from seventy five back to sixty is a twenty percent decrease, because the new comparison whole is seventy five. Equal absolute changes can have different percentages; always name the starting amount used as the denominator.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            75,
+            15,
+            60
+          ],
+          "labels": [
+            "start",
+            "decrease",
+            "result"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find thirty percent of ninety and identify the whole.",
+        "answer": "0.30×90=27; the whole is ninety."
+      },
+      {
+        "prompt": "A price of eighty five increases by twenty percent. Find the new price.",
+        "answer": "85×1.20=102."
+      },
+      {
+        "prompt": "A count rises from seventy five to ninety. Find its percentage increase and explain the denominator.",
+        "answer": "The increase is fifteen; 15/75=20%. The original seventy five is the comparison whole."
+      }
+    ],
+    "takeaway": "A percentage change compares its difference with a specified starting whole.",
+    "scope": "Percent equivalence, parts of a whole, and changing percentage bases."
+  },
+  {
+    "id": "arithmetic.ratios",
+    "beats": [
+      {
+        "formula": "\"red : blue\"=2:3",
+        "text": "A ratio compares quantities multiplicatively. Two red dots for every three blue dots describes a mixture with five dots altogether. Red to blue is two to three, while red to total is two to five.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            2,
+            3
+          ],
+          "labels": [
+            "red",
+            "blue"
+          ]
+        }
+      },
+      {
+        "formula": "2:3=4:6",
+        "text": "Doubling every ingredient produces four red and six blue dots. The total changes, but the relationship stays the same because both quantities share the same scale factor. Altering only one ingredient would create a different mixture.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            4,
+            6
+          ],
+          "labels": [
+            "red",
+            "blue"
+          ]
+        }
+      },
+      {
+        "formula": "frac(6,4)=frac(3,2) quad \"blue per red\"",
+        "text": "An equivalent way to express this comparison is a unit rate: one and a half cups of blue per cup of red. Units and order matter, because reversing the comparison gives a different reciprocal rate.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            1,
+            1.5
+          ],
+          "labels": [
+            "red cups",
+            "blue cups"
+          ]
+        }
+      },
+      {
+        "formula": "\"red fraction\"=frac(2,2+3)=frac(2,5)",
+        "text": "A part-to-part ratio is not already a fraction of the whole. To find the red fraction, combine both parts in the denominator. This distinction prevents using two thirds when the actual red share is two fifths.",
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 5,
+          "filled": 2,
+          "secondary": 3
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A group has three green counters and five orange counters. Give green-to-orange and green-to-total ratios.",
+        "answer": "Green:orange is 3:5; green:total is 3:8."
+      },
+      {
+        "prompt": "A recipe uses four cups of water for three cups of rice. How much water for nine cups of rice?",
+        "answer": "Scale both quantities by three: twelve cups of water."
+      },
+      {
+        "prompt": "Explain why a blue-to-white ratio of five to two does not mean five sevenths is the blue-to-white ratio.",
+        "answer": "Five sevenths is the blue-to-total fraction. Blue-to-white remains 5:2 because the comparison denominator is the white amount."
+      }
+    ],
+    "takeaway": "Name the two quantities and preserve their order before using a ratio.",
+    "scope": "Part-to-part, part-to-whole, equivalent ratios, and unit rates."
+  },
+  {
+    "id": "arithmetic.proportions",
+    "beats": [
+      {
+        "formula": "frac(3,2)=frac(9,6)",
+        "text": "A proportion states that two ratios are equal. Three dollars for two notebooks and nine dollars for six notebooks describe the same price per notebook. Both the number of notebooks and the cost have tripled.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            8
+          ],
+          "y": [
+            0,
+            12
+          ],
+          "curves": [
+            {
+              "f": "1.5*x",
+              "color": "blue",
+              "domain": [
+                0,
+                8
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              3
+            ],
+            [
+              6,
+              9
+            ]
+          ],
+          "labels": [
+            "2,3",
+            "6,9"
+          ]
+        }
+      },
+      {
+        "formula": "frac(3,2)=frac(c,10)",
+        "text": "To price ten notebooks at the same rate, multiply the original two-notebook purchase by five. The cost also multiplies by five, giving fifteen dollars. This scaling method explains the proportion before any cross multiplication is introduced.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            2,
+            10,
+            3,
+            15
+          ],
+          "labels": [
+            "books",
+            "books",
+            "cost",
+            "cost"
+          ]
+        }
+      },
+      {
+        "formula": "2c=30 arrow.r c=15",
+        "text": "Cross multiplication is shorthand for clearing two nonzero denominators. Multiplying both sides by twenty converts the original fractions into an equivalent equation. Solving that equation gives the same fifteen dollars as our scaling argument.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            12
+          ],
+          "y": [
+            0,
+            20
+          ],
+          "curves": [
+            {
+              "f": "1.5*x",
+              "color": "blue",
+              "domain": [
+                0,
+                12
+              ]
+            }
+          ],
+          "points": [
+            [
+              10,
+              15
+            ]
+          ],
+          "labels": [
+            "10,15"
+          ]
+        }
+      },
+      {
+        "formula": "c=1.5n+4",
+        "text": "A fixed fee breaks this proportional model. Adding a four-dollar service charge produces a line that does not pass through the origin, and the total cost per notebook is no longer constant. Check the situation before assuming proportionality.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            10
+          ],
+          "y": [
+            0,
+            20
+          ],
+          "curves": [
+            {
+              "f": "1.5*x",
+              "color": "blue",
+              "domain": [
+                0,
+                10
+              ]
+            },
+            {
+              "f": "1.5*x+4",
+              "color": "gold",
+              "domain": [
+                0,
+                10
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              4
+            ]
+          ],
+          "labels": [
+            "fee"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Five meters of fabric cost twenty dollars. At the same rate, what do eight meters cost?",
+        "answer": "The unit rate is four dollars per meter, so eight meters cost thirty two dollars."
+      },
+      {
+        "prompt": "Solve 7/3=x/12 and justify the scaling.",
+        "answer": "The denominator multiplies by four, so x=28."
+      },
+      {
+        "prompt": "A taxi charges three dollars plus two dollars per mile. Is total cost proportional to distance? Explain.",
+        "answer": "No. The fixed charge means zero miles still costs three dollars and cost per mile is not constant."
+      }
+    ],
+    "takeaway": "Proportional relationships have a constant ratio and scale together.",
+    "scope": "Scaling, denominator clearing, and recognizing nonproportional fees."
+  },
+  {
+    "id": "arithmetic.negative-numbers",
+    "beats": [
+      {
+        "formula": "-4+7=3",
+        "text": "A signed number locates a position relative to zero. Starting at negative four and adding seven means moving seven units right, finishing at three. The sign tells direction, while the magnitude tells how far away the number is.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -6,
+            6
+          ],
+          "points": [
+            -4,
+            0,
+            3
+          ],
+          "arrows": [
+            [
+              -4,
+              3
+            ]
+          ],
+          "labels": [
+            "-4",
+            "0",
+            "3"
+          ]
+        }
+      },
+      {
+        "formula": "3-7=3+(-7)=-4",
+        "text": "Subtraction adds the opposite movement. Subtracting seven from three moves seven units left and returns to negative four. This rule works even when subtraction crosses zero; negative answers still describe meaningful positions.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -6,
+            6
+          ],
+          "points": [
+            3,
+            -4
+          ],
+          "arrows": [
+            [
+              3,
+              -4
+            ]
+          ],
+          "labels": [
+            "3",
+            "-4"
+          ]
+        }
+      },
+      {
+        "formula": "3-(-2)=3+2=5",
+        "text": "Subtracting a negative reverses a leftward movement, so it moves right. Three minus negative two becomes three plus two. Read which minus sign performs subtraction and which belongs to a signed number before combining them.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -2,
+            7
+          ],
+          "points": [
+            3,
+            5
+          ],
+          "arrows": [
+            [
+              3,
+              5
+            ]
+          ],
+          "labels": [
+            "3",
+            "5"
+          ]
+        }
+      },
+      {
+        "formula": "-2(3-3)=-6+6=0",
+        "text": "The sign rule for multiplication also preserves distribution. Negative two times the zero quantity three minus three must equal zero. Expanding gives negative six plus the product of negative two and negative three, forcing that second product to be positive six.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -8,
+            8
+          ],
+          "points": [
+            0,
+            -6
+          ],
+          "arrows": [
+            [
+              0,
+              -6
+            ],
+            [
+              -6,
+              0
+            ]
+          ],
+          "labels": [
+            "0",
+            "-6"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Compute −5+12 and describe the motion.",
+        "answer": "Start at negative five and move twelve right, reaching seven."
+      },
+      {
+        "prompt": "Compute −9−(−6) and explain why.",
+        "answer": "Subtracting negative six adds six: −9+6=−3."
+      },
+      {
+        "prompt": "Compare −5² with (−5)² and explain the role of parentheses.",
+        "answer": "−5²=−25 because the square acts on five first; (−5)²=25 because the negative number is the base."
+      }
+    ],
+    "takeaway": "Addition follows signed movement; subtraction adds the opposite.",
+    "scope": "Signed positions, subtraction, distribution, and product signs."
+  },
+  {
+    "id": "arithmetic.exponents",
+    "beats": [
+      {
+        "formula": "3^4=3 times 3 times 3 times 3=81",
+        "text": "A positive whole-number exponent counts repeated factors. Three to the fourth uses four factors of three, not four added threes. These repeated multiplications grow the sequence from three to nine, twenty seven, and eighty one.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            3,
+            9,
+            27,
+            81
+          ],
+          "bars": true
+        }
+      },
+      {
+        "formula": "3^2 times 3^3=3^5",
+        "text": "Multiplying powers with the same base joins their lists of factors. Two copies of three followed by three more copies produce five copies altogether. That is why multiplication adds exponents when the bases match.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            3,
+            9,
+            27,
+            81,
+            243
+          ],
+          "bars": true
+        }
+      },
+      {
+        "formula": "3^0=1 quad 3^(-1)=frac(1,3)",
+        "text": "Extend the pattern backward by dividing by three at every step. After three comes one, then one third. This explains zero and negative exponents consistently: a nonzero base to zero is one, and a negative power means a reciprocal.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            9,
+            3,
+            1,
+            0.3333333333333333,
+            0.1111111111111111
+          ],
+          "bars": true
+        }
+      },
+      {
+        "formula": "(x+1)^2=x^2+2x+1",
+        "text": "A power of a sum repeats the whole sum, so its products include two cross terms. This tiled square shows why x plus one squared contains twice x, unlike the valid power rule for a product.",
+        "visual": {
+          "kind": "tiles",
+          "a": 2,
+          "b": 1,
+          "labels": [
+            "x^2",
+            "x",
+            "x",
+            "1"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Evaluate 3⁵ by repeated multiplication.",
+        "answer": "3×3×3×3×3=243."
+      },
+      {
+        "prompt": "For a≠0, simplify a⁶/a² and a⁻³.",
+        "answer": "a⁶/a²=a⁴; a⁻³=1/a³."
+      },
+      {
+        "prompt": "Explain why (p+q)² is not generally p²+q².",
+        "answer": "Multiplying (p+q)(p+q) produces p²+pq+qp+q², including two cross terms."
+      }
+    ],
+    "takeaway": "Exponent rules describe factor structure; zero and negative powers need a nonzero base.",
+    "scope": "Repeated factors, exponent laws, reciprocals, and sum/product distinctions."
+  },
+  {
+    "id": "arithmetic.roots",
+    "beats": [
+      {
+        "formula": "sqrt(25)=5",
+        "text": "A square root reverses squaring, with one important convention: the square-root symbol chooses the nonnegative answer. A square with twenty five unit cells has side length five, so the principal square root of twenty five is five.",
+        "visual": {
+          "kind": "grid",
+          "rows": 5,
+          "cols": 5,
+          "filled": 25
+        }
+      },
+      {
+        "formula": "x^2=25 arrow.r x=5 \"or\" x=-5",
+        "text": "Solving a squared equation asks a different question. Both positive five and negative five produce twenty five when squared. The graph crosses the height twenty five twice, so the equation has two real solutions although the principal root has one value.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -6,
+            6
+          ],
+          "y": [
+            0,
+            30
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                -5.4,
+                5.4
+              ]
+            },
+            {
+              "f": "25",
+              "color": "gold",
+              "domain": [
+                -6,
+                6
+              ]
+            }
+          ],
+          "points": [
+            [
+              -5,
+              25
+            ],
+            [
+              5,
+              25
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "sqrt(18)=sqrt(9 times 2)=3sqrt(2)",
+        "text": "To simplify a radical, extract a perfect-square factor. Eighteen is nine times two, so its square root is three times the square root of two. Splitting a product this way is valid for nonnegative factors.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            5
+          ],
+          "y": [
+            0,
+            20
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                4.4
+              ]
+            },
+            {
+              "f": "18",
+              "color": "gold",
+              "domain": [
+                0,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              4.242640687119285,
+              18
+            ]
+          ],
+          "labels": [
+            "3 sqrt(2)"
+          ]
+        }
+      },
+      {
+        "formula": "sqrt(x^2)=abs(x)",
+        "text": "The principal root must stay nonnegative even when its input was formed by squaring a negative number. Therefore the square root of x squared is the absolute value of x, not always x itself. Negative radicands have no real square root.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -4,
+            4
+          ],
+          "y": [
+            -1,
+            5
+          ],
+          "curves": [
+            {
+              "f": "abs(x)",
+              "color": "blue",
+              "domain": [
+                -4,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              -3,
+              3
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Evaluate √169 and state why its sign is fixed.",
+        "answer": "The principal square root is thirteen, the nonnegative number whose square is 169."
+      },
+      {
+        "prompt": "Simplify √27 by identifying a perfect-square factor.",
+        "answer": "√27=√(9×3)=3√3."
+      },
+      {
+        "prompt": "For t=−8, compare √(t²) with t. Explain the general rule.",
+        "answer": "√64=8, whereas t=−8. In general √(t²)=|t|."
+      }
+    ],
+    "takeaway": "Principal square roots are nonnegative; squared equations may have two solutions.",
+    "scope": "Principal roots, equation solutions, product simplification, and absolute value."
+  },
+  {
+    "id": "pre-algebra.variables",
+    "beats": [
+      {
+        "formula": "c=3n",
+        "text": "A variable names a quantity so we can describe a relationship without choosing its value immediately. If each notebook costs three dollars, n can count notebooks and c can describe the corresponding cost in dollars.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            3,
+            3
+          ],
+          "labels": [
+            "notebook",
+            "notebook"
+          ]
+        }
+      },
+      {
+        "formula": "n=4 arrow.r c=3 times 4=12",
+        "text": "Once an input is supplied, substitution makes the rule concrete. Four notebooks means replace n with four everywhere it appears. Three times four gives twelve dollars; the letter was a placeholder for the quantity, not an extra operation.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            3,
+            3,
+            3,
+            3
+          ],
+          "labels": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      },
+      {
+        "formula": "3n=21 arrow.r n=7",
+        "text": "Sometimes the output is known instead. A bill of twenty one dollars creates an equation whose unknown is the notebook count. Seven groups of three fill that total, so solving recovers seven notebooks.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "labels": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+          ]
+        }
+      },
+      {
+        "formula": "n=0,1,2,3,...",
+        "text": "The situation restricts which values make sense. A notebook count uses nonnegative whole numbers, even though the formula can be evaluated at other real inputs. Naming a variable should include its meaning, units, and allowed values.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -1,
+            6
+          ],
+          "points": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Let b be the number of boxes, each containing eight pencils. Write a rule for the pencil count p.",
+        "answer": "p=8b, where b is a nonnegative whole-number count."
+      },
+      {
+        "prompt": "Use p=8b to find p when b=6.",
+        "answer": "p=8×6=48 pencils."
+      },
+      {
+        "prompt": "Using the same rule, a shipment contains eighty eight pencils. Find b and explain why 2.5 is not an allowed box count here.",
+        "answer": "b=88/8=11; the situation counts complete boxes, so fractional counts are excluded."
+      }
+    ],
+    "takeaway": "A variable names a quantity; its context supplies units and allowed values.",
+    "scope": "Variables as inputs and unknowns, substitution, and contextual domains."
+  },
+  {
+    "id": "pre-algebra.expressions",
+    "beats": [
+      {
+        "formula": "2(x+3)",
+        "text": "An expression describes a quantity without necessarily asserting an equation to solve. Two copies of the quantity x plus three means that both the variable part and the three additional units are repeated twice.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            2,
+            3,
+            2,
+            3
+          ],
+          "labels": [
+            "x",
+            "3",
+            "x",
+            "3"
+          ]
+        }
+      },
+      {
+        "formula": "2(x+3)=2x+6",
+        "text": "Distribution accounts for those repeated parts separately. Two copies of x contribute two x, and two copies of three contribute six. The rewritten expression gives the same output for every real input, as the overlapping graphs illustrate.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            0,
+            12
+          ],
+          "curves": [
+            {
+              "f": "2*(x+3)",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            },
+            {
+              "f": "2*x+6",
+              "color": "gold",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "2(x+3)+x=3x+6",
+        "text": "Like terms count the same variable quantity, so two x plus another x becomes three x. The six remains a separate constant. Adding coefficients is justified because the repeated units are identical, not because all symbols look similar.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            3
+          ],
+          "y": [
+            0,
+            15
+          ],
+          "curves": [
+            {
+              "f": "3*x+6",
+              "color": "blue",
+              "domain": [
+                -2,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              6
+            ],
+            [
+              2,
+              12
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "-(x-4)=-x+4",
+        "text": "A leading minus means multiplication by negative one, and it affects every term inside the parentheses. The two sides again represent one function. Simplifying preserves all inputs; solving for a particular input requires an additional condition.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            5
+          ],
+          "y": [
+            -1,
+            6
+          ],
+          "curves": [
+            {
+              "f": "-(x-4)",
+              "color": "blue",
+              "domain": [
+                -2,
+                5
+              ]
+            },
+            {
+              "f": "-x+4",
+              "color": "gold",
+              "domain": [
+                -2,
+                5
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Expand 4(t+5), explaining each product.",
+        "answer": "4t+20; four multiplies both t and five."
+      },
+      {
+        "prompt": "Simplify 3(2x+1)+2x and name the like terms.",
+        "answer": "6x+3+2x=8x+3; 6x and 2x are like terms."
+      },
+      {
+        "prompt": "Explain why 8−(y−2) becomes 10−y rather than 6−y.",
+        "answer": "The negative sign distributes: 8−y+2=10−y."
+      }
+    ],
+    "takeaway": "Rewrite structure with distribution and like terms; expressions need not be equations.",
+    "scope": "Expressions, distribution, like terms, and a leading negative sign."
+  },
+  {
+    "id": "pre-algebra.one-step-equations",
+    "beats": [
+      {
+        "formula": "x+4=9",
+        "text": "An equation asserts that two quantities are equal. Here we seek the input whose output under the rule x plus four is nine. On the graph, that means locating the intersection with the horizontal level nine.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            8
+          ],
+          "y": [
+            0,
+            12
+          ],
+          "curves": [
+            {
+              "f": "x+4",
+              "color": "blue",
+              "domain": [
+                0,
+                8
+              ]
+            },
+            {
+              "f": "9",
+              "color": "gold",
+              "domain": [
+                0,
+                8
+              ]
+            }
+          ],
+          "points": [
+            [
+              5,
+              9
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x+4-4=9-4 arrow.r x=5",
+        "text": "Subtracting four from both sides preserves equality and reverses the addition. The unknown is therefore five. Substituting five into the original equation confirms the result: five plus four really does equal nine.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            8
+          ],
+          "y": [
+            0,
+            8
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                8
+              ]
+            },
+            {
+              "f": "5",
+              "color": "gold",
+              "domain": [
+                0,
+                8
+              ]
+            }
+          ],
+          "points": [
+            [
+              5,
+              5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "3x=12 arrow.r x=4",
+        "text": "For a multiplication equation, divide both sides by the same nonzero multiplier. Three x equals twelve becomes x equals four. The original graph also places the intersection at input four, connecting the algebra with the picture.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            6
+          ],
+          "y": [
+            0,
+            18
+          ],
+          "curves": [
+            {
+              "f": "3*x",
+              "color": "blue",
+              "domain": [
+                0,
+                6
+              ]
+            },
+            {
+              "f": "12",
+              "color": "gold",
+              "domain": [
+                0,
+                6
+              ]
+            }
+          ],
+          "points": [
+            [
+              4,
+              12
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "0x=5 quad \"no solution\"",
+        "text": "Division by zero cannot be used as an inverse step. Zero times any real input stays zero, so it never reaches five. This equation has no solution because its two sides cannot agree, not because the answer is zero.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -1,
+            6
+          ],
+          "curves": [
+            {
+              "f": "0",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            },
+            {
+              "f": "5",
+              "color": "gold",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Solve z−7=16 and check the original equation.",
+        "answer": "z=23; 23−7=16."
+      },
+      {
+        "prompt": "Solve 6q=42 and state the inverse operation.",
+        "answer": "Divide both sides by six: q=7."
+      },
+      {
+        "prompt": "Compare 0x=0 with 0x=8. How many real solutions does each have?",
+        "answer": "0x=0 is true for all real x; 0x=8 has no real solution. Division by zero is never a valid solving step."
+      }
+    ],
+    "takeaway": "Undo an operation on both sides with a valid inverse operation.",
+    "scope": "Equality preservation, inverse operations, verification, and zero multipliers."
+  },
+  {
+    "id": "pre-algebra.multi-step-equations",
+    "beats": [
+      {
+        "formula": "2(x+3)=x+11",
+        "text": "A multi-step equation still asks where two quantities agree. These two lines meet at one input. Rather than guessing from the picture, we will transform the equality through steps that preserve exactly the same solution.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            8
+          ],
+          "y": [
+            0,
+            22
+          ],
+          "curves": [
+            {
+              "f": "2*(x+3)",
+              "color": "blue",
+              "domain": [
+                0,
+                8
+              ]
+            },
+            {
+              "f": "x+11",
+              "color": "gold",
+              "domain": [
+                0,
+                8
+              ]
+            }
+          ],
+          "points": [
+            [
+              5,
+              16
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "2x+6=x+11",
+        "text": "First distribute the factor two to every term in its parentheses. Two copies of x contribute two x and two copies of three contribute six. This rewrite changes only the notation, so the graphed relationship remains unchanged.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            8
+          ],
+          "y": [
+            0,
+            22
+          ],
+          "curves": [
+            {
+              "f": "2*x+6",
+              "color": "blue",
+              "domain": [
+                0,
+                8
+              ]
+            },
+            {
+              "f": "x+11",
+              "color": "gold",
+              "domain": [
+                0,
+                8
+              ]
+            }
+          ],
+          "points": [
+            [
+              5,
+              16
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x+6=11",
+        "text": "Now subtract x from both sides. One x remains on the left, while the right becomes eleven. Both graphs have changed, but their equality still occurs at the same horizontal position because the identical quantity was removed from each.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            8
+          ],
+          "y": [
+            0,
+            15
+          ],
+          "curves": [
+            {
+              "f": "x+6",
+              "color": "blue",
+              "domain": [
+                0,
+                8
+              ]
+            },
+            {
+              "f": "11",
+              "color": "gold",
+              "domain": [
+                0,
+                8
+              ]
+            }
+          ],
+          "points": [
+            [
+              5,
+              11
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x=5 quad 2(5+3)=5+11=16",
+        "text": "Subtract six from both sides to isolate the input five, then check it in the original equation. Both original sides become sixteen. A term does not change sign by traveling; subtraction from both sides explains that familiar shortcut.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            8
+          ],
+          "y": [
+            0,
+            8
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                8
+              ]
+            },
+            {
+              "f": "5",
+              "color": "gold",
+              "domain": [
+                0,
+                8
+              ]
+            }
+          ],
+          "points": [
+            [
+              5,
+              5
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Solve 3r+2=29, showing each operation on both sides.",
+        "answer": "Subtract two: 3r=27. Divide by three: r=9."
+      },
+      {
+        "prompt": "Solve 4(t+2)=2t+22 and check.",
+        "answer": "4t+8=2t+22; 2t=14; t=7. Both original sides equal36."
+      },
+      {
+        "prompt": "Explain why subtracting 2x from both sides is valid in 5x−1=2x+14, then solve it.",
+        "answer": "Subtracting equal quantities preserves equality: 3x−1=14, so x=5."
+      }
+    ],
+    "takeaway": "Each step rewrites a side or applies the same valid operation to both sides.",
+    "scope": "Distribution, collecting unknowns, inverse steps, and original-equation checks."
+  },
+  {
+    "id": "pre-algebra.inequalities",
+    "beats": [
+      {
+        "formula": "x+2<5 arrow.r x<3",
+        "text": "An inequality describes a set of allowed inputs rather than necessarily one solution. If x plus two must stay below five, subtracting two from both sides shows that every input below three works.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -4,
+            6
+          ],
+          "points": [
+            3
+          ],
+          "interval": [
+            -4,
+            3
+          ],
+          "open": [
+            3
+          ],
+          "labels": [
+            "3"
+          ]
+        }
+      },
+      {
+        "formula": "x+2<=5 arrow.r x<=3",
+        "text": "Including equality changes the boundary. When the condition says at most five, input three is allowed because it produces exactly five. A filled boundary point includes that input, whereas an open boundary point excludes it.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -4,
+            6
+          ],
+          "points": [
+            3
+          ],
+          "interval": [
+            -4,
+            3
+          ],
+          "labels": [
+            "3"
+          ]
+        }
+      },
+      {
+        "formula": "-2x<6 arrow.r x> -3",
+        "text": "Multiplying or dividing by a negative number reverses order. Dividing negative two x less than six by negative two gives x greater than negative three. Reflection across zero explains why the direction of the comparison must switch.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -6,
+            6
+          ],
+          "points": [
+            -3
+          ],
+          "interval": [
+            -3,
+            6
+          ],
+          "open": [
+            -3
+          ],
+          "labels": [
+            "-3"
+          ]
+        }
+      },
+      {
+        "formula": "x=0: -2 times 0<6",
+        "text": "Always test a value from the proposed interval. Zero is greater than negative three, and its original left side is zero, which is less than six. Checking a value outside the interval also helps detect a reversed inequality.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -6,
+            6
+          ],
+          "points": [
+            -4,
+            -3,
+            0
+          ],
+          "interval": [
+            -3,
+            6
+          ],
+          "open": [
+            -3
+          ],
+          "labels": [
+            "fails",
+            "boundary",
+            "works"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Solve y+7≤11 and describe the boundary point.",
+        "answer": "y≤4; the boundary four is included."
+      },
+      {
+        "prompt": "Solve −3u≥12 and explain the changed sign.",
+        "answer": "Divide by negative three and reverse the comparison: u≤−4."
+      },
+      {
+        "prompt": "Test one allowed and one excluded value for 2t−1>9.",
+        "answer": "t>5. For example, t=6 gives11>9; t=5 gives9>9, which is false."
+      }
+    ],
+    "takeaway": "Inequalities describe sets; negative scaling reverses their order.",
+    "scope": "Strict and inclusive boundaries, interval meaning, and negative division."
+  },
+  {
+    "id": "pre-algebra.coordinate-plane",
+    "beats": [
+      {
+        "formula": "P=(3,2)",
+        "text": "An ordered pair gives two instructions: move horizontally to the first coordinate, then vertically to the second. The point three, two lies three units right of the origin and two units up. Reversing the order usually changes the point.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              3,
+              2
+            ]
+          ],
+          "points": [
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "Q=(-2,1)",
+        "text": "Negative coordinates describe direction as well as size. Negative two, one means move two units left, then one unit up. Both coordinates refer to the same origin and the marked scale, not to the previous point.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              -2,
+              1
+            ]
+          ],
+          "points": [
+            [
+              -2,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "Delta x=3-(-2)=5 quad Delta y=2-1=1",
+        "text": "To compare the two points, subtract corresponding coordinates. From negative two, one to three, two, the horizontal change is five and the vertical change is one. Differences describe movement between points even though neither point is the origin.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            4
+          ],
+          "y": [
+            -1,
+            4
+          ],
+          "curves": [],
+          "points": [
+            [
+              -2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "segments": [
+            [
+              [
+                -2,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                2
+              ]
+            ]
+          ],
+          "labels": [
+            "Q",
+            "P"
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "y=2",
+        "text": "A horizontal line contains every point with the same vertical coordinate. The equation y equals two therefore allows many x values while keeping height fixed. Coordinates connect individual locations with entire geometric relationships described by equations.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -4,
+            4
+          ],
+          "y": [
+            -1,
+            4
+          ],
+          "curves": [
+            {
+              "f": "2",
+              "color": "blue",
+              "domain": [
+                -4,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              -2,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "equal": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Plot or describe the point (−3,−1) from the origin.",
+        "answer": "Move three units left and one unit down."
+      },
+      {
+        "prompt": "Find the horizontal and vertical changes from (−1,−2) to (4,3).",
+        "answer": "Δx=4−(−1)=5 and Δy=3−(−2)=5."
+      },
+      {
+        "prompt": "Describe all points with x=−2. Explain why this is a vertical line.",
+        "answer": "Every point has form (−2,y): horizontal position stays fixed while height varies, creating a vertical line."
+      }
+    ],
+    "takeaway": "Coordinate order and axis scales determine a point; coordinate differences describe displacement.",
+    "scope": "Ordered pairs, signed coordinates, differences, and constant-coordinate lines."
+  },
+  {
+    "id": "pre-algebra.basic-functions",
+    "beats": [
+      {
+        "formula": "f(x)=3x-2",
+        "text": "A function pairs each allowed input with exactly one output. This rule triples the input and then subtracts two. The letter x marks an input position; it does not mean that we must solve for x immediately.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            4
+          ],
+          "y": [
+            -5,
+            10
+          ],
+          "curves": [
+            {
+              "f": "3*x-2",
+              "color": "blue",
+              "domain": [
+                -1,
+                4
+              ]
+            }
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "f(2)=3 times 2-2=4",
+        "text": "Evaluating the function means supply an input and follow its rule. Replacing x by two gives output four, represented by the point two, four. The first coordinate records the supplied input and the second records the result.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            4
+          ],
+          "y": [
+            -5,
+            10
+          ],
+          "curves": [
+            {
+              "f": "3*x-2",
+              "color": "blue",
+              "domain": [
+                -1,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              4
+            ]
+          ],
+          "labels": [
+            "input, output"
+          ]
+        }
+      },
+      {
+        "formula": "f(t+1)=3(t+1)-2=3t+1",
+        "text": "An entire expression can enter the input slot. Replace every x with the whole quantity t plus one, using parentheses to protect its grouping. Distributing three then gives three t plus one, an output expression rather than a solved input.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "t",
+            "t+1",
+            "3(t+1)-2"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "weights": [
+            "+1",
+            "f"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "f(x)=7 arrow.r 3x-2=7 arrow.r x=3",
+        "text": "Solving reverses what is known. Specifying output seven asks which input reaches that height; here the input is three. Evaluation, symbolic substitution, and solving are related tasks, but their requested answers are different kinds of objects.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            4
+          ],
+          "y": [
+            -5,
+            10
+          ],
+          "curves": [
+            {
+              "f": "3*x-2",
+              "color": "blue",
+              "domain": [
+                -1,
+                4
+              ]
+            },
+            {
+              "f": "7",
+              "color": "gold",
+              "domain": [
+                -1,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              3,
+              7
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For f(x)=2x−7, find f(6) and identify input and output.",
+        "answer": "f(6)=5; input six and output five."
+      },
+      {
+        "prompt": "For f(x)=2x−7, simplify f(s+4).",
+        "answer": "2(s+4)−7=2s+1."
+      },
+      {
+        "prompt": "For the same rule, solve f(x)=15. Explain how this differs from evaluating f(15).",
+        "answer": "2x−7=15 gives x=11. Evaluating f(15) instead supplies input fifteen and gives output23."
+      }
+    ],
+    "takeaway": "Distinguish supplying an input, substituting an expression, and solving for an input.",
+    "scope": "Input-output meaning, whole-expression substitution, and inverse questions."
+  },
+  {
+    "id": "pre-algebra.word-problems",
+    "beats": [
+      {
+        "formula": "c=5+2d",
+        "text": "A word problem becomes manageable when quantities are named before calculating. A delivery service charges five dollars plus two dollars per kilometer. Let d measure distance in kilometers and c measure the total charge in dollars.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            8
+          ],
+          "y": [
+            0,
+            22
+          ],
+          "curves": [
+            {
+              "f": "5+2*x",
+              "color": "blue",
+              "domain": [
+                0,
+                8
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              5
+            ]
+          ],
+          "labels": [
+            "fixed fee"
+          ]
+        }
+      },
+      {
+        "formula": "d=4 arrow.r c=5+2 times 4=13",
+        "text": "For a four-kilometer delivery, the variable part is eight dollars, then the fixed fee adds five. The total thirteen dollars includes both contributions. Units prevent mistaking the five-dollar fee for five additional kilometers.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            5,
+            8,
+            13
+          ],
+          "labels": [
+            "fee",
+            "distance cost",
+            "total"
+          ]
+        }
+      },
+      {
+        "formula": "5+2d=19 arrow.r d=7",
+        "text": "A nineteen-dollar bill reverses the question. Remove the fixed five-dollar fee to isolate fourteen dollars of distance charges, then divide by two dollars per kilometer. The resulting seven has units of kilometers, matching the unknown we named.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            9
+          ],
+          "y": [
+            0,
+            24
+          ],
+          "curves": [
+            {
+              "f": "5+2*x",
+              "color": "blue",
+              "domain": [
+                0,
+                9
+              ]
+            },
+            {
+              "f": "19",
+              "color": "gold",
+              "domain": [
+                0,
+                9
+              ]
+            }
+          ],
+          "points": [
+            [
+              7,
+              19
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "c>=5 quad d>=0",
+        "text": "Finally check the model against the story. Nonnegative distances make the total at least five dollars, so a three-dollar bill cannot fit this pricing rule. A mathematically computed answer may be invalid if it violates the context or its units.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            12
+          ],
+          "points": [
+            3,
+            5
+          ],
+          "interval": [
+            5,
+            12
+          ],
+          "labels": [
+            "impossible",
+            "minimum"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A bicycle rental charges six dollars plus three per hour. Write a cost rule and define its variables.",
+        "answer": "C=6+3h, with h rental hours and C total dollars."
+      },
+      {
+        "prompt": "Using that rental rule, find the cost for five hours.",
+        "answer": "6+3×5=21 dollars."
+      },
+      {
+        "prompt": "A bill under the same rule is thirty dollars. Find the rental duration and check its units.",
+        "answer": "6+3h=30 gives h=8 hours. The distance between thirty and the fixed fee is24 dollars, divided by3 dollars per hour."
+      }
+    ],
+    "takeaway": "Name quantities and units, model the relationship, solve, then check the context.",
+    "scope": "Linear word models, fixed and variable contributions, and feasibility."
+  },
+  {
+    "id": "algebra-1.linear-equations",
+    "beats": [
+      {
+        "formula": "y=2x+1",
+        "text": "A linear equation connects two coordinates through a constant rate. Here the output begins at one when the input is zero, then grows by two for each additional input unit. Every point on this straight line satisfies the equation.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            4
+          ],
+          "y": [
+            -4,
+            10
+          ],
+          "curves": [
+            {
+              "f": "2*x+1",
+              "color": "blue",
+              "domain": [
+                -2,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "2x-y=-1",
+        "text": "Moving all variable terms to one side creates another form of the same equation. Subtract y and subtract one from both sides of the original equality. No points are gained or lost, so the graph stays exactly the same.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            4
+          ],
+          "y": [
+            -4,
+            10
+          ],
+          "curves": [
+            {
+              "f": "2*x+1",
+              "color": "blue",
+              "domain": [
+                -2,
+                4
+              ]
+            },
+            {
+              "f": "2*x+1",
+              "color": "gold",
+              "domain": [
+                -2,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "y=7 arrow.r 2x+1=7 arrow.r x=3",
+        "text": "If the output is fixed at seven, the equation becomes a one-variable problem. Subtract one and divide by two to get input three. Geometrically, we are finding where our line meets the horizontal level seven.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            4
+          ],
+          "y": [
+            -4,
+            10
+          ],
+          "curves": [
+            {
+              "f": "2*x+1",
+              "color": "blue",
+              "domain": [
+                -2,
+                4
+              ]
+            },
+            {
+              "f": "7",
+              "color": "gold",
+              "domain": [
+                -2,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              3,
+              7
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "2y=6 arrow.r y=3",
+        "text": "Some linear equations do not depend on both coordinates. Two y equals six gives the horizontal line y equals three, allowing every x. A linear equation describes all satisfying pairs unless another condition selects a particular point.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -1,
+            6
+          ],
+          "curves": [
+            {
+              "f": "3",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              -2,
+              3
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For y=4x−2, find the point whose input is three.",
+        "answer": "y=4×3−2=10, so the point is (3,10)."
+      },
+      {
+        "prompt": "Rewrite 3x−y=8 with y isolated, and find its vertical intercept.",
+        "answer": "y=3x−8; vertical intercept (0,−8)."
+      },
+      {
+        "prompt": "Explain why y=−4 has infinitely many ordered-pair solutions but 2x+1=7 has one real x solution.",
+        "answer": "The first permits every x with fixed y=−4; the second constrains one variable to x=3."
+      }
+    ],
+    "takeaway": "Equivalent linear equations describe the same satisfying points.",
+    "scope": "Linear forms, fixed-output solving, and horizontal special cases."
+  },
+  {
+    "id": "algebra-1.linear-inequalities",
+    "beats": [
+      {
+        "formula": "3x+2<=17 arrow.r x<=5",
+        "text": "A linear inequality can represent a limit on resources. If each item costs three dollars plus a fixed two-dollar charge, staying within seventeen dollars requires three x plus two at most seventeen. Solving gives at most five items.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            8
+          ],
+          "points": [
+            5
+          ],
+          "interval": [
+            0,
+            5
+          ],
+          "labels": [
+            "5"
+          ]
+        }
+      },
+      {
+        "formula": "x>=2",
+        "text": "Now add another requirement: buy at least two items. This produces a second interval, extending rightward from two. Meeting one requirement is not sufficient; a valid purchase must satisfy the budget and the minimum quantity together.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            8
+          ],
+          "points": [
+            2
+          ],
+          "interval": [
+            2,
+            8
+          ],
+          "labels": [
+            "2"
+          ]
+        }
+      },
+      {
+        "formula": "2<=x<=5",
+        "text": "The overlap of the two solution sets runs from two through five, including both endpoints. This compound inequality is an intersection: every value inside meets both restrictions, while a value outside fails at least one of them.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            8
+          ],
+          "points": [
+            2,
+            5
+          ],
+          "interval": [
+            2,
+            5
+          ],
+          "labels": [
+            "2",
+            "5"
+          ]
+        }
+      },
+      {
+        "formula": "x in {2,3,4,5}",
+        "text": "Finally restore the context of whole items. Three and a half lies inside the real interval but is not a permitted whole-item count. The feasible answers are two, three, four, and five, after combining algebraic and contextual restrictions.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            7
+          ],
+          "points": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "labels": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Solve 5x+4≤29 over the real numbers.",
+        "answer": "Subtract four and divide by five: x≤5."
+      },
+      {
+        "prompt": "Combine x>−1 with x≤6 and describe both endpoints.",
+        "answer": "−1<x≤6; negative one is excluded and six is included."
+      },
+      {
+        "prompt": "A club needs at least three vans. Each van costs forty dollars and the budget is two hundred ten. List feasible whole van counts.",
+        "answer": "n≥3 and40n≤210 give3≤n≤5.25; whole feasible counts are3,4,5."
+      }
+    ],
+    "takeaway": "Combine constraints by intersecting their solution sets, then apply the context.",
+    "scope": "Compound linear constraints, endpoints, and discrete feasible values."
+  },
+  {
+    "id": "algebra-1.systems",
+    "beats": [
+      {
+        "formula": "y=2x+1 quad y=-x+7",
+        "text": "A system asks for inputs that satisfy several equations at the same time. These lines represent two different rules, and their shared point has coordinates that make both equalities true simultaneously. Nearby points on just one line do not qualify.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            5
+          ],
+          "y": [
+            -1,
+            10
+          ],
+          "curves": [
+            {
+              "f": "2*x+1",
+              "color": "blue",
+              "domain": [
+                -1,
+                4.5
+              ]
+            },
+            {
+              "f": "-x+7",
+              "color": "gold",
+              "domain": [
+                -1,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "2x+1=-x+7 arrow.r 3x=6 arrow.r x=2",
+        "text": "Because both expressions equal y at the intersection, set them equal to each other. Add x and subtract one to get three x equals six, then find x equals two. Substituting back gives y equals five.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            4
+          ],
+          "y": [
+            0,
+            9
+          ],
+          "curves": [
+            {
+              "f": "2*x+1",
+              "color": "blue",
+              "domain": [
+                0,
+                4
+              ]
+            },
+            {
+              "f": "-x+7",
+              "color": "gold",
+              "domain": [
+                0,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              5
+            ]
+          ],
+          "labels": [
+            "2,5"
+          ]
+        }
+      },
+      {
+        "formula": "y=2x+1 quad y=2x+4",
+        "text": "Different systems can have no solution. These lines have equal rates but different vertical starting values, so they remain separated. Setting their expressions equal cancels the x terms and leaves the impossible statement one equals four.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            3
+          ],
+          "y": [
+            -4,
+            11
+          ],
+          "curves": [
+            {
+              "f": "2*x+1",
+              "color": "blue",
+              "domain": [
+                -2,
+                3
+              ]
+            },
+            {
+              "f": "2*x+4",
+              "color": "gold",
+              "domain": [
+                -2,
+                3
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "y=2x+1 quad 2y=4x+2",
+        "text": "If one equation is simply a nonzero multiple of the other, both describe the same line. Every point on that line satisfies the system. Thus two linear equations can have one solution, no solutions, or infinitely many.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            3
+          ],
+          "y": [
+            -4,
+            8
+          ],
+          "curves": [
+            {
+              "f": "2*x+1",
+              "color": "blue",
+              "domain": [
+                -2,
+                3
+              ]
+            },
+            {
+              "f": "(4*x+2)/2",
+              "color": "gold",
+              "domain": [
+                -2,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              -1,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Solve y=x+2 and y=4x−7, then check both.",
+        "answer": "x+2=4x−7 gives x=3, y=5; both rules give five."
+      },
+      {
+        "prompt": "Solve x+y=11 and x−y=3 using addition.",
+        "answer": "Add equations to get2x=14, sox=7; theny=4."
+      },
+      {
+        "prompt": "Classify y=−3x+2 and 2y=−6x+4. Explain the geometry.",
+        "answer": "Infinitely many solutions; dividing the second equation by two gives the first, so both describe one line."
+      }
+    ],
+    "takeaway": "A system requires simultaneous truth; intersections determine its solution set.",
+    "scope": "Substitution, shared solutions, parallel lines, and dependent equations."
+  },
+  {
+    "id": "algebra-1.functions",
+    "beats": [
+      {
+        "formula": "f(x)=x^2",
+        "text": "A function gives exactly one output for each allowed input. Squaring is a function even though two different inputs can produce the same output. Negative two and positive two both give four, without violating the one-output requirement.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -1,
+            9
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              -2,
+              4
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "\"domain\"=RR quad \"range\"=[0,infinity)",
+        "text": "The domain lists allowed inputs, while the range lists outputs actually reached. For the real squaring function, every real input is allowed, but no negative output occurs. Reading the horizontal and vertical coverage keeps these two ideas distinct.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -2,
+            9
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ]
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "g(x)=frac(1,x-2) quad x!=2",
+        "text": "A formula can restrict its own domain. The reciprocal rule excludes input two because its denominator would vanish. The two branches belong to one function, but there is no output at the excluded input, regardless of the visible graph window.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            6
+          ],
+          "y": [
+            -5,
+            5
+          ],
+          "curves": [
+            {
+              "f": "1/(x-2)",
+              "color": "blue",
+              "domain": [
+                -2,
+                1.8
+              ]
+            },
+            {
+              "f": "1/(x-2)",
+              "color": "blue",
+              "domain": [
+                2.2,
+                6
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "y^2=x quad x=4 arrow.r y=2 \"or\" y=-2",
+        "text": "Not every relation defines y as a function of x. In this sideways parabola, input four is paired with both two and negative two. A vertical line meets the relation twice, exposing the failure of the one-output condition.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            5
+          ],
+          "y": [
+            -3,
+            3
+          ],
+          "curves": [
+            {
+              "f": "sqrt(x)",
+              "color": "blue",
+              "domain": [
+                0,
+                5
+              ]
+            },
+            {
+              "f": "-sqrt(x)",
+              "color": "gold",
+              "domain": [
+                0,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              -2
+            ]
+          ],
+          "segments": [
+            [
+              [
+                4,
+                -3
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For f(x)=(x−2)², can two different real inputs share an output? Give an example.",
+        "answer": "Yes. Inputs one and three both produce one; each input still has just one output."
+      },
+      {
+        "prompt": "State the real domain of h(x)=1/(x+7), with a reason.",
+        "answer": "All real x except−7, because the denominator must be nonzero."
+      },
+      {
+        "prompt": "Does x=y²+1 define y as a function of x over its full relation? Justify with one input.",
+        "answer": "No. At x=5, both y=2 and y=−2 satisfy the relation."
+      }
+    ],
+    "takeaway": "A function needs one output per allowed input; domain and range play different roles.",
+    "scope": "Function criteria, domains, ranges, and the vertical-line test."
+  },
+  {
+    "id": "algebra-1.slope",
+    "beats": [
+      {
+        "formula": "m=frac(Delta y,Delta x)",
+        "text": "Slope measures output change per unit input change along a nonvertical line. Choose two distinct points, compare their vertical coordinates, and divide by their horizontal separation. The order of subtraction must stay consistent in numerator and denominator.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            4
+          ],
+          "y": [
+            0,
+            10
+          ],
+          "curves": [
+            {
+              "f": "2*x+3",
+              "color": "blue",
+              "domain": [
+                -1.5,
+                3.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              -1,
+              1
+            ],
+            [
+              3,
+              9
+            ]
+          ],
+          "segments": [
+            [
+              [
+                -1,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            [
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                9
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "m=frac(9-1,3-(-1))=frac(8,4)=2",
+        "text": "From negative one, one to three, nine, the horizontal change is four and the vertical change is eight. Eight divided by four gives slope two: each step right corresponds to a rise of two on this line.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            4
+          ],
+          "y": [
+            0,
+            10
+          ],
+          "curves": [
+            {
+              "f": "2*x+3",
+              "color": "blue",
+              "domain": [
+                -1.5,
+                3.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "segments": [
+            [
+              [
+                -1,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "m=frac(-1-3,2-0)=-2",
+        "text": "A downward trend gives a negative slope. Moving from zero, three to two, negative one changes height by negative four across a positive run of two. The sign records direction, while the magnitude records steepness relative to the axis units.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            3
+          ],
+          "y": [
+            -3,
+            5
+          ],
+          "curves": [
+            {
+              "f": "-2*x+3",
+              "color": "pink",
+              "domain": [
+                -1,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          "segments": [
+            [
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ],
+            [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                -1
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "Delta x=0 quad \"slope undefined\"",
+        "text": "A vertical line has zero horizontal change, so its slope quotient would divide by zero. That slope is undefined, not zero. Zero slope belongs to a horizontal line, where the height remains unchanged across a nonzero horizontal movement.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            4
+          ],
+          "y": [
+            -3,
+            5
+          ],
+          "curves": [
+            {
+              "f": "1",
+              "color": "gold",
+              "domain": [
+                -1,
+                4
+              ]
+            }
+          ],
+          "segments": [
+            [
+              [
+                2,
+                -3
+              ],
+              [
+                2,
+                5
+              ]
+            ]
+          ],
+          "points": [
+            [
+              2,
+              -2
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the slope through (1,2) and (5,14), showing both changes.",
+        "answer": "Δy=12, Δx=4, so slope3."
+      },
+      {
+        "prompt": "Find the slope through (−2,6) and (4,0).",
+        "answer": "(0−6)/(4−(−2))=−6/6=−1."
+      },
+      {
+        "prompt": "A graph shows meters vertically and seconds horizontally. Explain the units of slope and the difference between zero and undefined slope.",
+        "answer": "Slope has meters per second. Zero slope means no vertical change; undefined slope occurs for zero horizontal change with distinct points."
+      }
+    ],
+    "takeaway": "Slope is a signed rate, with a nonzero horizontal change and meaningful units.",
+    "scope": "Rate, consistent subtraction, negative slope, and vertical/horizontal distinctions."
+  },
+  {
+    "id": "algebra-1.graphing",
+    "beats": [
+      {
+        "formula": "y=-2x+3",
+        "text": "A graph collects all input-output pairs of a rule. Begin with a few easy inputs for y equals negative two x plus three. When x is zero, one, and two, the corresponding outputs are three, one, and negative one.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            4
+          ],
+          "y": [
+            -5,
+            5
+          ],
+          "curves": [],
+          "points": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          "labels": [
+            "0,3",
+            "1,1",
+            "2,-1"
+          ]
+        }
+      },
+      {
+        "formula": "m=-2 quad b=3",
+        "text": "The constant rate shows that these points belong to one straight line. Starting at the vertical intercept three, each step right goes two units down. Drawing the line extends the relationship beyond the few sampled inputs.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            4
+          ],
+          "y": [
+            -5,
+            5
+          ],
+          "curves": [
+            {
+              "f": "-2*x+3",
+              "color": "blue",
+              "domain": [
+                -1,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "0=-2x+3 arrow.r x=frac(3,2)",
+        "text": "The horizontal intercept is found by setting the output to zero, not by guessing a plotted point. Solving gives input three halves. This is where the line crosses the horizontal axis, while its vertical intercept remains three.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            4
+          ],
+          "y": [
+            -5,
+            5
+          ],
+          "curves": [
+            {
+              "f": "-2*x+3",
+              "color": "blue",
+              "domain": [
+                -1,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              1.5,
+              0
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "labels": [
+            "x intercept",
+            "y intercept"
+          ]
+        }
+      },
+      {
+        "formula": "y=x^2",
+        "text": "Graphing from samples also has limits. These values come from a quadratic rule, so connecting them with a single straight line would invent a different relationship. Use the formula, its structure, and enough points to determine the appropriate shape.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -1,
+            9
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "gold",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              -2,
+              4
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Make a three-point table and sketch y=3x−2 using inputs zero, one, and two.",
+        "answer": "The points are(0,−2),(1,1),(2,4); draw the straight line through them."
+      },
+      {
+        "prompt": "Find both intercepts of y=−4x+8.",
+        "answer": "Vertical intercept(0,8); horizontal intercept(2,0)."
+      },
+      {
+        "prompt": "Why do three points from y=x² not justify replacing the whole graph with a straight line?",
+        "answer": "The rule is nonlinear: slopes change with x. Samples must be interpreted using the equation, which defines a parabola."
+      }
+    ],
+    "takeaway": "A graph represents every valid pair, not just a table of sampled points.",
+    "scope": "Tables, linear graphs, intercepts, and recognizing nonlinear structure."
+  },
+  {
+    "id": "algebra-1.polynomials",
+    "beats": [
+      {
+        "formula": "(x+1)^2=(x+1)(x+1)",
+        "text": "A polynomial is built from sums of constant multiples of nonnegative whole-number powers. When a sum is squared, the entire sum multiplies itself. This partitioned square lets us account for every product instead of relying on a memorized shortcut.",
+        "visual": {
+          "kind": "tiles",
+          "a": 2,
+          "b": 1,
+          "labels": [
+            "x^2",
+            "x",
+            "x",
+            "1"
+          ]
+        }
+      },
+      {
+        "formula": "(x+1)^2=x^2+x+x+1=x^2+2x+1",
+        "text": "The large square contributes x squared, the two rectangular strips each contribute x, and the small corner contributes one. Both strips are necessary. Their combined area explains the middle term that disappears if we incorrectly square only the endpoints.",
+        "visual": {
+          "kind": "tiles",
+          "a": 2,
+          "b": 1,
+          "labels": [
+            "x^2",
+            "x",
+            "x",
+            "1"
+          ]
+        }
+      },
+      {
+        "formula": "(x+h)^2=x^2+2x h+h^2",
+        "text": "Replace the small side one by a changing amount h. The same geometric partition gives two rectangles of area x times h and one square of area h squared. The identity remains algebraically valid for all real x and h.",
+        "visual": {
+          "kind": "tiles",
+          "a": 2,
+          "b": 0.7,
+          "labels": [
+            "x^2",
+            "x h",
+            "x h",
+            "h^2"
+          ]
+        }
+      },
+      {
+        "formula": "frac((x+h)^2-x^2,h)=2x+h quad h!=0",
+        "text": "Subtracting x squared leaves the cross terms and the small square. Both remaining terms share a factor h, so dividing by nonzero h gives two x plus h. This exact rewrite becomes a key step in the calculus difference quotient.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -6,
+            7
+          ],
+          "curves": [
+            {
+              "f": "2*x+0.5",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            },
+            {
+              "f": "2*x+0.1",
+              "color": "gold",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Expand (u+5)² and identify both cross products.",
+        "answer": "u²+5u+5u+25=u²+10u+25."
+      },
+      {
+        "prompt": "Expand (2t+1)(t+4), showing every product.",
+        "answer": "2t²+8t+t+4=2t²+9t+4."
+      },
+      {
+        "prompt": "For h≠0, simplify ((7+h)²−49)/h and explain why division is valid.",
+        "answer": "The numerator is14h+h²=h(14+h), so the quotient is14+h when h≠0."
+      }
+    ],
+    "takeaway": "Distribute every factor to every term; common factors enable valid simplification.",
+    "scope": "Binomial products, cross terms, and difference-quotient preparation."
+  },
+  {
+    "id": "algebra-1.factoring",
+    "beats": [
+      {
+        "formula": "x^2+4x=x(x+4)",
+        "text": "Factoring reverses distribution by recognizing a common multiplicative structure. Both terms contain x, so x squared plus four x becomes x times x plus four. Expanding the product again verifies that the original expression has been preserved.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -5,
+            2
+          ],
+          "y": [
+            -5,
+            13
+          ],
+          "curves": [
+            {
+              "f": "x*x+4*x",
+              "color": "blue",
+              "domain": [
+                -5,
+                2
+              ]
+            },
+            {
+              "f": "x*(x+4)",
+              "color": "gold",
+              "domain": [
+                -5,
+                2
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "x^2+5x+4=(x+1)(x+4)",
+        "text": "For a monic quadratic, look for two numbers with the required sum and product. One and four add to five and multiply to four, so they produce the middle and constant terms when these binomials are expanded.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -5,
+            1
+          ],
+          "y": [
+            -4,
+            11
+          ],
+          "curves": [
+            {
+              "f": "x*x+5*x+4",
+              "color": "blue",
+              "domain": [
+                -5,
+                1
+              ]
+            }
+          ],
+          "points": [
+            [
+              -4,
+              0
+            ],
+            [
+              -1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(x+1)(x+4)=0 arrow.r x=-1 \"or\" x=-4",
+        "text": "A factored equation equal to zero splits into simpler cases. A product of real numbers is zero only if at least one factor is zero, yielding inputs negative one and negative four. This step is not valid for a sum merely equal to zero.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -5,
+            1
+          ],
+          "y": [
+            -4,
+            11
+          ],
+          "curves": [
+            {
+              "f": "(x+1)*(x+4)",
+              "color": "blue",
+              "domain": [
+                -5,
+                1
+              ]
+            }
+          ],
+          "points": [
+            [
+              -4,
+              0
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "labels": [
+            "root",
+            "root"
+          ]
+        }
+      },
+      {
+        "formula": "frac(x^2-4,x-2)=x+2 quad x!=2",
+        "text": "Factoring also reveals cancellable factors in a quotient. The difference of squares contains x minus two in its entire numerator, so it cancels for nonzero x minus two. The original exclusion remains, leaving a hole at input two.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            4
+          ],
+          "y": [
+            -2,
+            7
+          ],
+          "curves": [
+            {
+              "f": "x+2",
+              "color": "blue",
+              "domain": [
+                -3,
+                4
+              ]
+            }
+          ],
+          "holes": [
+            [
+              2,
+              4
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Factor 12z²+18z and verify by expanding.",
+        "answer": "6z(2z+3), which expands to12z²+18z."
+      },
+      {
+        "prompt": "Factor t²+8t+15 and solve when this expression equals zero.",
+        "answer": "(t+3)(t+5), givingt=−3 or−5."
+      },
+      {
+        "prompt": "Simplify (x²−64)/(x−8), preserving the original restriction.",
+        "answer": "(x−8)(x+8)/(x−8)=x+8 for x≠8. The original function is still undefined at eight."
+      }
+    ],
+    "takeaway": "Factoring exposes products for zero equations and cancellation, while restrictions remain.",
+    "scope": "Common factors, quadratic factoring, zero products, and rational restrictions."
+  },
+  {
+    "id": "algebra-1.quadratics",
+    "beats": [
+      {
+        "formula": "y=x^2-4x+3",
+        "text": "A quadratic function has a squared term with nonzero coefficient, so its graph bends instead of maintaining a constant rate. This parabola opens upward. We will rewrite the same function to reveal different features without changing its outputs.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            5
+          ],
+          "y": [
+            -2,
+            9
+          ],
+          "curves": [
+            {
+              "f": "x*x-4*x+3",
+              "color": "blue",
+              "domain": [
+                -1,
+                5
+              ]
+            }
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "x^2-4x+3=(x-1)(x-3)",
+        "text": "The factored form makes zeros visible. Setting the output equal to zero means one factor must vanish, giving inputs one and three. Those roots locate the two horizontal intercepts of the same parabola.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            5
+          ],
+          "y": [
+            -2,
+            9
+          ],
+          "curves": [
+            {
+              "f": "(x-1)*(x-3)",
+              "color": "blue",
+              "domain": [
+                -1,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x^2-4x+3=(x-2)^2-1",
+        "text": "Completing the square reveals the turning point. Squaring x minus two creates x squared minus four x plus four, so subtract one to recover the original constant three. The minimum occurs at input two with output negative one.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            5
+          ],
+          "y": [
+            -2,
+            9
+          ],
+          "curves": [
+            {
+              "f": "(x-2)**2-1",
+              "color": "blue",
+              "domain": [
+                -1,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              -1
+            ]
+          ],
+          "labels": [
+            "vertex"
+          ]
+        }
+      },
+      {
+        "formula": "(x-2)^2-1=3 arrow.r x=0 \"or\" x=4",
+        "text": "A different target output can produce different solutions. To reach height three, the square must equal four, so x minus two can be positive two or negative two. Keep both signs when reversing a square in an equation.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            5
+          ],
+          "y": [
+            -2,
+            9
+          ],
+          "curves": [
+            {
+              "f": "(x-2)**2-1",
+              "color": "blue",
+              "domain": [
+                -1,
+                5
+              ]
+            },
+            {
+              "f": "3",
+              "color": "gold",
+              "domain": [
+                -1,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Solve x²−6x+8=0 by factoring.",
+        "answer": "(x−2)(x−4)=0, so x=2 or4."
+      },
+      {
+        "prompt": "Write x²+8x+11 in completed-square form and identify its vertex.",
+        "answer": "(x+4)²−5, with vertex(−4,−5)."
+      },
+      {
+        "prompt": "Solve (t+2)²=9 and explain why one sign is not enough.",
+        "answer": "t+2=±3 gives t=1 or−5; both positive and negative three square to nine."
+      }
+    ],
+    "takeaway": "Equivalent quadratic forms reveal roots, turning points, and symmetric solutions.",
+    "scope": "Factored and vertex forms, completing the square, and both square-root signs."
+  },
+  {
+    "id": "algebra-1.exponential-functions",
+    "beats": [
+      {
+        "formula": "a_n=3 times 2^(n-1) quad n=1,2,3,...",
+        "text": "Exponential change repeats multiplication by a fixed factor. Label the starting amount three as term one. Doubling gives six, twelve, and twenty four as later terms. The amounts added grow, but neighboring terms always have ratio two.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            3,
+            6,
+            12,
+            24
+          ],
+          "bars": true
+        }
+      },
+      {
+        "formula": "y=3 times 2^x",
+        "text": "Let x now count elapsed steps, beginning at zero. The continuous graph extends our doubling rule to real inputs. At zero the factor is one, preserving the initial amount three. Every additional input unit doubles the output.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            3
+          ],
+          "y": [
+            0,
+            25
+          ],
+          "curves": [
+            {
+              "f": "3*2**x",
+              "color": "blue",
+              "domain": [
+                -2,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              12
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "y=3+3x",
+        "text": "A linear comparison instead adds a fixed amount at each step. Both rules begin at three and agree again at input one, yet then separate because equal starting values do not determine the type of change. Compare differences and ratios.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3
+          ],
+          "y": [
+            0,
+            25
+          ],
+          "curves": [
+            {
+              "f": "3*2**x",
+              "color": "blue",
+              "domain": [
+                0,
+                3
+              ]
+            },
+            {
+              "f": "3+3*x",
+              "color": "gold",
+              "domain": [
+                0,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "y=12(0.5)^x",
+        "text": "A positive factor below one gives exponential decay. Each step retains half of the previous amount, approaching zero while staying positive for finite real inputs. The base must be positive for this standard real exponential function.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            5
+          ],
+          "y": [
+            0,
+            13
+          ],
+          "curves": [
+            {
+              "f": "12*0.5**x",
+              "color": "pink",
+              "domain": [
+                0,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              1.5
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Start with five and triple twice. List the starting value and both later values.",
+        "answer": "Five, fifteen, forty five."
+      },
+      {
+        "prompt": "A quantity follows y=80(0.75)^t. Find its value after two steps and describe the percentage retained each step.",
+        "answer": "80×0.75²=45; each step retains75%, a25% decrease."
+      },
+      {
+        "prompt": "Compare sequences 4,8,12,16 and 4,8,16,32. Explain which is linear and which is exponential.",
+        "answer": "The first adds four each step and is linear; the second multiplies by two and is exponential."
+      }
+    ],
+    "takeaway": "Exponential models have a constant ratio; linear models have a constant difference.",
+    "scope": "Repeated multiplication, initial values, linear comparison, and positive decay bases."
+  },
+  {
+    "id": "trigonometry.right-triangle-trig",
+    "beats": [
+      {
+        "formula": "sin(theta)=frac(\"opposite\",\"hypotenuse\")",
+        "text": "Similar right triangles preserve ratios of corresponding sides, even when their sizes change. Fix an acute angle and compare the side opposite it with the hypotenuse. That consistent ratio is called the sine of the chosen angle.",
+        "visual": {
+          "kind": "circle",
+          "angle": 0.6435011087932844,
+          "radius": 1.1,
+          "triangle": true
+        }
+      },
+      {
+        "formula": "sin(theta)=frac(3,5) quad cos(theta)=frac(4,5)",
+        "text": "Suppose the original triangle has opposite side three, adjacent side four, and hypotenuse five. Dividing every length by five normalizes the hypotenuse to one. Its vertical and horizontal legs then have lengths three fifths and four fifths.",
+        "visual": {
+          "kind": "circle",
+          "angle": 0.6435011087932844,
+          "radius": 1.1,
+          "triangle": true
+        }
+      },
+      {
+        "formula": "frac(6,10)=frac(3,5)",
+        "text": "Enlarge the triangle by a factor of two. The opposite side becomes six and the hypotenuse ten, leaving the same sine ratio. This is why an angle determines trigonometric ratios independently of the scale of the triangle.",
+        "visual": {
+          "kind": "circle",
+          "angle": 0.6435011087932844,
+          "radius": 2.2,
+          "triangle": true
+        }
+      },
+      {
+        "formula": "\"opposite\"=10 sin(theta)=6",
+        "text": "To recover a side, multiply the hypotenuse by the known ratio. Ten times three fifths gives six. First check that the triangle is right and identify sides relative to the marked angle; the hypotenuse always faces the right angle.",
+        "visual": {
+          "kind": "circle",
+          "angle": 0.6435011087932844,
+          "radius": 2.2,
+          "triangle": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A right triangle has opposite side eight and hypotenuse seventeen relative to angle A. Find sin A.",
+        "answer": "sin A=8/17."
+      },
+      {
+        "prompt": "For an acute angle, sin A=5/13 and the hypotenuse is thirty nine. Find the opposite side.",
+        "answer": "39×5/13=15."
+      },
+      {
+        "prompt": "Explain why doubling every side of a right triangle leaves its sine and cosine ratios unchanged.",
+        "answer": "Each numerator and denominator gets the same factor two, which cancels; the angles and shape remain unchanged."
+      }
+    ],
+    "takeaway": "Right-triangle trigonometric ratios depend on the angle, not on triangle size.",
+    "scope": "Opposite and adjacent sides, normalization, similarity, and solving a side."
+  },
+  {
+    "id": "trigonometry.sin-cos-tan",
+    "beats": [
+      {
+        "formula": "(x,y)=(cos(theta),sin(theta))",
+        "text": "On a unit circle, cosine is the horizontal coordinate and sine is the vertical coordinate. The right triangle connects these coordinates to familiar side ratios because its hypotenuse has length one. Both functions therefore describe the same moving point.",
+        "visual": {
+          "kind": "circle",
+          "angle": 0.5235987755982988,
+          "radius": 2.5,
+          "triangle": true
+        }
+      },
+      {
+        "formula": "sin(pi/6)=frac(1,2) quad cos(pi/6)=frac(sqrt(3),2)",
+        "text": "At an angle of thirty degrees, the vertical coordinate is one half and the horizontal coordinate is the square root of three over two. These values satisfy the circle equation: the sum of their squares equals one.",
+        "visual": {
+          "kind": "circle",
+          "angle": 0.5235987755982988,
+          "radius": 2.5,
+          "triangle": true
+        }
+      },
+      {
+        "formula": "tan(theta)=frac(sin(theta),cos(theta))",
+        "text": "Tangent compares vertical change with horizontal change, so it equals sine divided by cosine. For our thirty-degree angle, the ratio is one over the square root of three. Tangent records the slope of the radius when that slope is defined.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.2
+          ],
+          "y": [
+            0,
+            1
+          ],
+          "curves": [
+            {
+              "f": "x/sqrt(3)",
+              "color": "blue",
+              "domain": [
+                0,
+                1.2
+              ]
+            }
+          ],
+          "points": [
+            [
+              0.8660254037844386,
+              0.5
+            ]
+          ],
+          "segments": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0.8660254037844386,
+                0.5
+              ]
+            ]
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "cos(pi/2)=0 quad tan(pi/2) \"undefined\"",
+        "text": "As the radius approaches vertical, the horizontal coordinate approaches zero while the vertical coordinate approaches one. Dividing by that vanishing horizontal coordinate makes tangent unbounded nearby, and tangent is undefined exactly at ninety degrees because division by zero is invalid.",
+        "visual": {
+          "kind": "circle",
+          "angle": 1.5707963267948966,
+          "radius": 2.5,
+          "triangle": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For a unit-circle point (12/13,5/13), state cosine and sine of its angle.",
+        "answer": "Cosine is12/13 and sine is5/13."
+      },
+      {
+        "prompt": "Using that same point, find tangent and explain its ratio.",
+        "answer": "tan θ=(5/13)/(12/13)=5/12, vertical coordinate divided by horizontal coordinate."
+      },
+      {
+        "prompt": "Why is tangent undefined when the unit-circle point is (0,−1), while sine is defined?",
+        "answer": "Tangent divides by the horizontal coordinate zero; sine is simply the defined vertical coordinate−1."
+      }
+    ],
+    "takeaway": "Cosine and sine are coordinates; tangent is their quotient where cosine is nonzero.",
+    "scope": "Unit-circle coordinates, exact special values, tangent, and its domain."
+  },
+  {
+    "id": "trigonometry.unit-circle",
+    "beats": [
+      {
+        "formula": "cos(theta)^2+sin(theta)^2=1",
+        "text": "The unit circle extends trigonometry beyond acute triangle angles. A point reached by turning through an angle has coordinates cosine and sine. Because its distance from the origin is one, the coordinate squares always add to one.",
+        "visual": {
+          "kind": "circle",
+          "angle": 0.7853981633974483,
+          "radius": 2.4,
+          "triangle": true,
+          "arc": true
+        }
+      },
+      {
+        "formula": "theta=frac(2pi,3) quad (x,y)=(-frac(1,2),frac(sqrt(3),2))",
+        "text": "Turn into the second quadrant. At one hundred twenty degrees, the horizontal coordinate is negative one half and the vertical coordinate is positive square root of three over two. Quadrant signs come from actual coordinate directions, not memorized exceptions.",
+        "visual": {
+          "kind": "circle",
+          "angle": 2.0943951023931953,
+          "radius": 2.4,
+          "triangle": true,
+          "arc": true
+        }
+      },
+      {
+        "formula": "theta=frac(4pi,3) quad (x,y)=(-frac(1,2),-frac(sqrt(3),2))",
+        "text": "Continuing to two hundred forty degrees keeps the horizontal coordinate negative but moves the point below the horizontal axis. Sine is now negative as well. A related reference triangle gives the magnitudes, while the quadrant supplies each sign.",
+        "visual": {
+          "kind": "circle",
+          "angle": 4.1887902047863905,
+          "radius": 2.4,
+          "triangle": true,
+          "arc": true
+        }
+      },
+      {
+        "formula": "cos(theta+2pi)=cos(theta) quad sin(theta+2pi)=sin(theta)",
+        "text": "One full additional turn returns to the same point. Sine and cosine therefore repeat after two pi radians, and many angles can share the same coordinates. Angle size records the turning history, while the point records its final position.",
+        "visual": {
+          "kind": "circle",
+          "angle": 8.377580409572781,
+          "radius": 2.4,
+          "triangle": true,
+          "arc": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Give the unit-circle coordinates at angle π radians.",
+        "answer": "(−1,0), so cosine is−1 and sine is0."
+      },
+      {
+        "prompt": "Find cos(5π/3) and sin(5π/3), explaining their signs.",
+        "answer": "Cosine is1/2 and sine is−√3/2; the point lies in quadrant IV."
+      },
+      {
+        "prompt": "Explain why angles π/4 and 9π/4 have the same sine and cosine.",
+        "answer": "They differ by2π, one complete turn, so they end at the same unit-circle point."
+      }
+    ],
+    "takeaway": "Coordinates supply signs, and full turns explain periodicity.",
+    "scope": "Angles beyond ninety degrees, quadrant signs, reference angles, and periodicity."
+  },
+  {
+    "id": "trigonometry.radians",
+    "beats": [
+      {
+        "formula": "theta=frac(s,r)",
+        "text": "Radians measure an angle by comparing its arc length with its radius. An arc as long as one radius subtends one radian. The units cancel in this ratio, making the angle independent of the size of the circle.",
+        "visual": {
+          "kind": "circle",
+          "angle": 1,
+          "radius": 2,
+          "arc": true
+        }
+      },
+      {
+        "formula": "s=r theta quad r=3 quad theta=2 arrow.r s=6",
+        "text": "For a radius of three units and an angle of two radians, the arc length is six units. Multiplying the radius by the radian measure reconstructs the distance along the circle, rather than the straight chord between endpoints.",
+        "visual": {
+          "kind": "circle",
+          "angle": 2,
+          "radius": 3,
+          "arc": true
+        }
+      },
+      {
+        "formula": "360 degree=2pi \"radians\"",
+        "text": "A complete circumference has length two pi times the radius, so dividing by the radius gives two pi radians per turn. Half a turn is pi radians and a quarter turn is pi over two. These are exact relationships.",
+        "visual": {
+          "kind": "circle",
+          "angle": 6.283185307179586,
+          "radius": 2.4,
+          "arc": true
+        }
+      },
+      {
+        "formula": "60 degree=frac(pi,3) \"radians\"",
+        "text": "Convert degrees by multiplying by pi over one hundred eighty. Sixty degrees becomes pi over three radians. The arc formula radius times angle requires radians; inserting sixty directly as though it were a radian measure would give the wrong length.",
+        "visual": {
+          "kind": "circle",
+          "angle": 1.0471975511965976,
+          "radius": 2.4,
+          "arc": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Convert forty five degrees to radians, showing the conversion factor.",
+        "answer": "45×π/180=π/4 radians."
+      },
+      {
+        "prompt": "A radius-five circle has an arc subtended by 1.4 radians. Find the arc length.",
+        "answer": "s=rθ=5×1.4=7 length units."
+      },
+      {
+        "prompt": "An arc measures twelve centimeters on a radius-eight-centimeter circle. Find its angle and explain why the radius matters.",
+        "answer": "θ=s/r=12/8=1.5 radians; the same arc length bends through different angles on different radii."
+      }
+    ],
+    "takeaway": "Radian measure is arc length divided by radius; arc length equals radius times radians.",
+    "scope": "Radian meaning, arc length, full-turn equivalence, and degree conversion."
+  },
+  {
+    "id": "trigonometry.trig-graphs",
+    "beats": [
+      {
+        "formula": "y=sin(x)",
+        "text": "Unwrap the unit-circle vertical coordinate as a function of angle. Sine starts at zero, rises to one, returns through zero, reaches negative one, and completes its cycle at two pi. The input axis here is measured in radians.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            6.283185307179586
+          ],
+          "y": [
+            -2,
+            2
+          ],
+          "curves": [
+            {
+              "f": "sin(x)",
+              "color": "blue",
+              "domain": [
+                0,
+                6.283185307179586
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1.5707963267948966,
+              1
+            ],
+            [
+              3.141592653589793,
+              0
+            ],
+            [
+              4.71238898038469,
+              -1
+            ],
+            [
+              6.283185307179586,
+              0
+            ]
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "y=2sin(x)",
+        "text": "Multiplying the output by two doubles every height without changing the input values where a cycle begins and ends. The amplitude becomes two, while the period stays two pi. Amplitude measures distance from the midline, not total peak-to-trough height.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            6.283185307179586
+          ],
+          "y": [
+            -3,
+            3
+          ],
+          "curves": [
+            {
+              "f": "sin(x)",
+              "color": "blue",
+              "domain": [
+                0,
+                6.283185307179586
+              ]
+            },
+            {
+              "f": "2*sin(x)",
+              "color": "gold",
+              "domain": [
+                0,
+                6.283185307179586
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "y=2sin(2x) quad \"period\"=pi",
+        "text": "Multiplying the input by two makes the circular phase advance twice as quickly. A full cycle now occurs while x advances only pi, so two cycles fit where one used to. Input scaling changes period rather than amplitude.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            6.283185307179586
+          ],
+          "y": [
+            -3,
+            3
+          ],
+          "curves": [
+            {
+              "f": "2*sin(2*x)",
+              "color": "gold",
+              "domain": [
+                0,
+                6.283185307179586
+              ]
+            }
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "y=2sin(2x)+1 quad \"midline\"=1",
+        "text": "Adding one shifts every output upward, placing the midline at one. The peaks are three and the troughs negative one, while amplitude and period stay unchanged. Read vertical scale, input scale, and vertical shift as separate transformations.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            6.283185307179586
+          ],
+          "y": [
+            -2,
+            4
+          ],
+          "curves": [
+            {
+              "f": "2*sin(2*x)+1",
+              "color": "gold",
+              "domain": [
+                0,
+                6.283185307179586
+              ]
+            },
+            {
+              "f": "1",
+              "color": "blue",
+              "domain": [
+                0,
+                6.283185307179586
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "State the amplitude and period of y=3cos(x).",
+        "answer": "Amplitude3 and period2π."
+      },
+      {
+        "prompt": "Find the amplitude, period, and midline of y=4sin(3x)−2.",
+        "answer": "Amplitude4, period2π/3, midline y=−2."
+      },
+      {
+        "prompt": "A wave ranges from −5 to seven. Find its midline and amplitude, explaining the difference from its full height.",
+        "answer": "Midline1 and amplitude6; peak-to-trough height is12, twice the amplitude."
+      }
+    ],
+    "takeaway": "Output scale changes amplitude; input scale changes period; addition moves the midline.",
+    "scope": "Sine cycles, amplitude, period, and vertical shifts."
+  },
+  {
+    "id": "trigonometry.identities",
+    "beats": [
+      {
+        "formula": "sin(theta)^2+cos(theta)^2=1",
+        "text": "A trigonometric identity is a relationship that holds at every input where both sides are defined. The unit-circle equation gives sine squared plus cosine squared equals one because the two coordinates always lie one unit from the origin.",
+        "visual": {
+          "kind": "circle",
+          "angle": 0.6283185307179586,
+          "radius": 2.4,
+          "triangle": true
+        }
+      },
+      {
+        "formula": "1-cos(theta)^2=sin(theta)^2",
+        "text": "Rearrange the circle identity to replace one expression with an equal one. One minus cosine squared becomes sine squared. This substitution is useful because it can reveal a factor that was hidden in the original form.",
+        "visual": {
+          "kind": "circle",
+          "angle": 1.0471975511965976,
+          "radius": 2.4,
+          "triangle": true
+        }
+      },
+      {
+        "formula": "frac(1-cos(theta)^2,sin(theta))=sin(theta) quad sin(theta)!=0",
+        "text": "After replacement, the numerator is sine squared. Dividing by sine cancels one common factor, leaving sine, but only when sine is nonzero. The simplified graph must retain the inputs excluded by the original denominator.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -0.5,
+            6.7
+          ],
+          "y": [
+            -1.5,
+            1.5
+          ],
+          "curves": [
+            {
+              "f": "sin(x)",
+              "color": "blue",
+              "domain": [
+                -0.5,
+                6.7
+              ]
+            }
+          ],
+          "holes": [
+            [
+              0,
+              0
+            ],
+            [
+              3.141592653589793,
+              0
+            ],
+            [
+              6.283185307179586,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "cos(theta)=plus.minus sqrt(1-sin(theta)^2)",
+        "text": "Solving a squared relationship introduces a sign choice. If sine is known, the magnitude of cosine follows from the identity, but the quadrant decides whether cosine is positive or negative. Choosing only the positive root would discard valid angles.",
+        "visual": {
+          "kind": "circle",
+          "angle": 2.0943951023931953,
+          "radius": 2.4,
+          "triangle": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "If cos θ=7/25, find sin²θ using an identity.",
+        "answer": "sin²θ=1−49/625=576/625."
+      },
+      {
+        "prompt": "Simplify cos²θ/(1−sin²θ), stating its restriction.",
+        "answer": "It equals1 where cos θ≠0, since the denominator equals cos²θ."
+      },
+      {
+        "prompt": "If sin θ=8/17 and θ lies in quadrant II, find cos θ and justify the sign.",
+        "answer": "cos²θ=225/289, so cos θ=−15/17 because quadrant II has negative horizontal coordinates."
+      }
+    ],
+    "takeaway": "Identities preserve values on valid domains; cancellation and square roots need conditions.",
+    "scope": "Pythagorean identity, structural substitution, cancellations, and quadrant signs."
+  },
+  {
+    "id": "trigonometry.trig-equations",
+    "beats": [
+      {
+        "formula": "sin(x)=frac(1,2)",
+        "text": "A trigonometric equation asks which angles produce a specified coordinate. On one full turn, the height one half occurs twice: once in the first quadrant and once in the second. Reading only the first crossing would miss another solution.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            6.283185307179586
+          ],
+          "y": [
+            -1.5,
+            1.5
+          ],
+          "curves": [
+            {
+              "f": "sin(x)",
+              "color": "blue",
+              "domain": [
+                0,
+                6.283185307179586
+              ]
+            },
+            {
+              "f": "0.5",
+              "color": "gold",
+              "domain": [
+                0,
+                6.283185307179586
+              ]
+            }
+          ],
+          "points": [
+            [
+              0.5235987755982988,
+              0.5
+            ],
+            [
+              2.6179938779914944,
+              0.5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x=frac(pi,6) \"or\" x=frac(5pi,6) quad 0<=x<2pi",
+        "text": "Within the interval from zero inclusive to two pi exclusive, the solutions are pi over six and five pi over six. The second angle shares the reference angle but lies in the second quadrant, where sine remains positive.",
+        "visual": {
+          "kind": "circle",
+          "angle": 2.6179938779914944,
+          "radius": 2.4,
+          "triangle": true,
+          "arc": true
+        }
+      },
+      {
+        "formula": "x=frac(pi,6)+2k pi \"or\" x=frac(5pi,6)+2k pi",
+        "text": "Without an interval restriction, full turns produce infinitely many solutions. Add any integer multiple of two pi to each base angle. The integer may be positive, zero, or negative, because turning backward also returns to the same coordinates.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -6.283185307179586,
+            12.566370614359172
+          ],
+          "y": [
+            -1.5,
+            1.5
+          ],
+          "curves": [
+            {
+              "f": "sin(x)",
+              "color": "blue",
+              "domain": [
+                -6.283185307179586,
+                12.566370614359172
+              ]
+            },
+            {
+              "f": "0.5",
+              "color": "gold",
+              "domain": [
+                -6.283185307179586,
+                12.566370614359172
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "formula": "sin(x)cos(x)=0",
+        "text": "Factoring a trigonometric equation can reveal several solution families. This product vanishes when sine is zero or cosine is zero. Dividing by one factor without checking when it vanishes would erase an entire family of valid solutions.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            6.283185307179586
+          ],
+          "y": [
+            -0.7,
+            0.7
+          ],
+          "curves": [
+            {
+              "f": "sin(x)*cos(x)",
+              "color": "pink",
+              "domain": [
+                0,
+                6.283185307179586
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1.5707963267948966,
+              0
+            ],
+            [
+              3.141592653589793,
+              0
+            ],
+            [
+              4.71238898038469,
+              0
+            ],
+            [
+              6.283185307179586,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Solve cos x=0 for 0≤x<2π.",
+        "answer": "x=π/2 or3π/2."
+      },
+      {
+        "prompt": "Solve sin x=−√3/2 for 0≤x<2π, explaining the quadrants.",
+        "answer": "x=4π/3 or5π/3, in quadrants III and IV."
+      },
+      {
+        "prompt": "Solve sin x(2cos x−1)=0 for 0≤x<2π without losing any factors.",
+        "answer": "sin x=0 gives0,π; cos x=1/2 givesπ/3,5π/3. The four solutions are0,π/3,π,5π/3."
+      }
+    ],
+    "takeaway": "Respect the requested interval, include periodic families, and do not divide away zero factors.",
+    "scope": "Multiple angles per output, interval solutions, periodic families, and factor preservation."
+  },
+  {
+    "id": "precalculus.function-transformations",
+    "beats": [
+      {
+        "formula": "f(x)=x^2",
+        "text": "Function transformations change inputs or outputs in controlled ways. Start with the squaring graph, whose vertex is at the origin. Keeping track of a recognizable point, such as this vertex, makes each later change easier to explain and verify.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            5
+          ],
+          "y": [
+            -4,
+            10
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "f(x-2)=(x-2)^2",
+        "text": "Replacing the input by x minus two shifts the graph right by two. To deliver the old input zero into the rule, the new x must be two. This input-solving explanation is more reliable than memorizing that inside signs look reversed.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            5
+          ],
+          "y": [
+            -4,
+            10
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            },
+            {
+              "f": "(x-2)**2",
+              "color": "gold",
+              "domain": [
+                -1,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "2f(x-2)=2(x-2)^2",
+        "text": "Multiplying outside the function doubles its outputs while leaving inputs fixed. The vertex remains at two, zero, but a point one unit from the vertex now has height two instead of one. This is a vertical stretch.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            5
+          ],
+          "y": [
+            -4,
+            10
+          ],
+          "curves": [
+            {
+              "f": "(x-2)**2",
+              "color": "blue",
+              "domain": [
+                -1,
+                5
+              ]
+            },
+            {
+              "f": "2*(x-2)**2",
+              "color": "gold",
+              "domain": [
+                0,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "y=2(x-2)^2-3",
+        "text": "Subtracting three after the function evaluation shifts every output down three. The vertex becomes two, negative three, and the point at input three drops to negative one. Read the operations in their actual order to combine transformations correctly.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            5
+          ],
+          "y": [
+            -4,
+            10
+          ],
+          "curves": [
+            {
+              "f": "2*(x-2)**2-3",
+              "color": "gold",
+              "domain": [
+                -0.5,
+                4.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              -3
+            ],
+            [
+              3,
+              -1
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Describe how y=(x+3)² moves the graph of y=x² and locate the vertex.",
+        "answer": "It shifts left three; vertex(−3,0)."
+      },
+      {
+        "prompt": "For y=−2(x−1)²+4, name the transformations and vertex.",
+        "answer": "Shift right one, reflect across the horizontal axis and stretch vertically by2, then shift up4; vertex(1,4)."
+      },
+      {
+        "prompt": "Explain why f(x−5) moves a graph right rather than left by tracking the old input zero.",
+        "answer": "To feed zero to f, solve x−5=0, giving the new input x=5. Every old input is reached five units later."
+      }
+    ],
+    "takeaway": "Inside changes alter the input needed; outside changes alter the output produced.",
+    "scope": "Horizontal shifts, vertical stretches, vertical shifts, and operation order."
+  },
+  {
+    "id": "precalculus.composite-functions",
+    "beats": [
+      {
+        "formula": "f(u)=u^2 quad g(x)=x+2",
+        "text": "Composition feeds one output into another function. Let g add two, and let f square its input. In f of g of x, g acts first, so its entire output becomes the input to the squaring rule.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "x",
+            "add 2",
+            "square"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "f(g(3))=f(5)=25",
+        "text": "For input three, the inner function produces five, then the outer function squares five to produce twenty five. Replacing the whole input gives f of g of x equals the square of x plus two, including its cross term.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "3",
+            "5",
+            "25"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "weights": [
+            "+2",
+            "square"
+          ],
+          "directed": true,
+          "active": [
+            2
+          ]
+        }
+      },
+      {
+        "formula": "g(f(3))=g(9)=11",
+        "text": "Reverse the order and the same starting input now produces eleven. Squaring three gives nine before adding two. Because the operations do different things, composition generally depends on order and cannot be replaced by multiplying the two functions.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "3",
+            "9",
+            "11"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "weights": [
+            "square",
+            "+2"
+          ],
+          "directed": true,
+          "active": [
+            2
+          ]
+        }
+      },
+      {
+        "formula": "h(g(x))=sqrt(x+2) quad x>=-2",
+        "text": "A composition must satisfy every stage of its domain. If the outer function is instead a real square root, the inner output x plus two must be nonnegative. This restricts the original input to negative two or larger.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            7
+          ],
+          "y": [
+            -1,
+            4
+          ],
+          "curves": [
+            {
+              "f": "sqrt(x+2)",
+              "color": "blue",
+              "domain": [
+                -2,
+                7
+              ]
+            }
+          ],
+          "points": [
+            [
+              -2,
+              0
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Let f(u)=u−5 and g(x)=4x. Find f(g(2)) with both stages shown.",
+        "answer": "g(2)=8, thenf(8)=3."
+      },
+      {
+        "prompt": "Using those functions, find g(f(2)) and compare.",
+        "answer": "f(2)=−3, theng(−3)=−12; the order changes the result."
+      },
+      {
+        "prompt": "Let r(u)=1/u and s(x)=x²−16. State the domain of r(s(x)) and explain both stages.",
+        "answer": "s accepts every real x, but its output must not be zero. Thus x≠−4 andx≠4."
+      }
+    ],
+    "takeaway": "Compose from the inside out and check that every intermediate output is allowed.",
+    "scope": "Function order, evaluation, whole-expression substitution, and composite domains."
+  },
+  {
+    "id": "precalculus.inverse-functions",
+    "beats": [
+      {
+        "formula": "f(x)=2x+3",
+        "text": "An inverse function reverses an input-output pairing. This line sends input one to output five. If it has an inverse, that inverse must send five back to one, undoing the operations in the reverse order.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            6
+          ],
+          "y": [
+            -3,
+            8
+          ],
+          "curves": [
+            {
+              "f": "2*x+3",
+              "color": "blue",
+              "domain": [
+                -3,
+                2.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              5
+            ]
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "y=2x+3 arrow.r x=frac(y-3,2)",
+        "text": "To undo the rule, first subtract three from the output, then divide by two. Solving the original equation for its input gives this reverse instruction. Renaming the new input variable leads to inverse of x equals x minus three over two.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "5",
+            "2",
+            "1"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "weights": [
+            "-3",
+            "÷2"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "f^(-1)(x)=frac(x-3,2)",
+        "text": "Swapping input and output reflects the graph across the line y equals x. The point one, five becomes five, one. The inverse symbol means reversing a function; it does not mean the reciprocal one divided by the function value.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            6
+          ],
+          "y": [
+            -3,
+            8
+          ],
+          "curves": [
+            {
+              "f": "2*x+3",
+              "color": "blue",
+              "domain": [
+                -3,
+                2.5
+              ]
+            },
+            {
+              "f": "(x-3)/2",
+              "color": "gold",
+              "domain": [
+                -3,
+                6
+              ]
+            },
+            {
+              "f": "x",
+              "color": "pink",
+              "domain": [
+                -3,
+                6
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              5
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "f(x)=x^2, x>=0 quad f^(-1)(x)=sqrt(x)",
+        "text": "A function needs unique reverse outputs to have an inverse. Squaring over all real numbers fails because positive and negative inputs share outputs. Restricting its input to nonnegative values makes the reverse unambiguous and gives the principal square-root function.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            5
+          ],
+          "y": [
+            -1,
+            5
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                2.23606797749979
+              ]
+            },
+            {
+              "f": "sqrt(x)",
+              "color": "gold",
+              "domain": [
+                0,
+                5
+              ]
+            },
+            {
+              "f": "x",
+              "color": "pink",
+              "domain": [
+                0,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              4
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "equal": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the inverse of f(x)=5x−4 by undoing its operations.",
+        "answer": "f⁻¹(x)=(x+4)/5."
+      },
+      {
+        "prompt": "Check both compositions for f(x)=x+6 and f⁻¹(x)=x−6.",
+        "answer": "f(f⁻¹(x))=(x−6)+6=x and f⁻¹(f(x))=(x+6)−6=x."
+      },
+      {
+        "prompt": "Why does x² need a domain restriction to have an inverse function? Give a valid restriction and inverse.",
+        "answer": "Inputs a and−a share a², so reversal is ambiguous. Restrict x≥0; then the inverse is√x forx≥0."
+      }
+    ],
+    "takeaway": "An inverse undoes unique pairings; it is not a reciprocal.",
+    "scope": "Undoing linear rules, reflection, injectivity, and domain restrictions."
+  },
+  {
+    "id": "precalculus.advanced-exponentials-logs",
+    "beats": [
+      {
+        "formula": "2^x=6",
+        "text": "An exponential equation asks which input produces a target output. Six lies between the outputs four and eight, so the needed exponent lies between two and three. Graphing gives this estimate, while logarithms give an exact expression.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            4
+          ],
+          "y": [
+            0,
+            17
+          ],
+          "curves": [
+            {
+              "f": "2**x",
+              "color": "blue",
+              "domain": [
+                0,
+                4
+              ]
+            },
+            {
+              "f": "6",
+              "color": "gold",
+              "domain": [
+                0,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              2.584962500721156,
+              6
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x=log_2(6)=frac(log(6),log(2))",
+        "text": "A logarithm names the exponent rather than approximating by trial and error. Taking natural logarithms of both sides and using the power rule gives x times natural log of two equals natural log of six, leading to the change-of-base formula.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0.2,
+            8
+          ],
+          "y": [
+            -3,
+            4
+          ],
+          "curves": [
+            {
+              "f": "log(x)/log(2)",
+              "color": "gold",
+              "domain": [
+                0.2,
+                8
+              ]
+            }
+          ],
+          "points": [
+            [
+              6,
+              2.584962500721156
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "log(x-1)+log(x+1)=log(x^2-1) quad x>1",
+        "text": "Logarithm laws also depend on domains. Combining the sum into a product requires both original arguments to be positive, which means x is greater than one. Simplifying their product must not introduce negative inputs excluded by either original logarithm.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -4,
+            4
+          ],
+          "y": [
+            -4,
+            4
+          ],
+          "curves": [
+            {
+              "f": "log(x*x-1)",
+              "color": "blue",
+              "domain": [
+                1.02,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              2.23606797749979,
+              1.3862943611198906
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "log(x^2-1)=log(4) arrow.r x=sqrt(5)",
+        "text": "Equating the combined logarithm with natural log of four gives x squared minus one equals four. Algebra suggests positive or negative square root of five, but the original condition x greater than one keeps only the positive candidate.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -3,
+            4
+          ],
+          "points": [
+            -2.23606797749979,
+            1,
+            2.23606797749979
+          ],
+          "interval": [
+            1,
+            4
+          ],
+          "open": [
+            1
+          ],
+          "labels": [
+            "rejected",
+            "boundary",
+            "valid"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Solve 3ˣ=11 using logarithms; an exact expression is sufficient.",
+        "answer": "x=ln(11)/ln(3)."
+      },
+      {
+        "prompt": "State the real domain before simplifying ln(x−2)+ln(x+2).",
+        "answer": "Both arguments must be positive, sox>2. The sum becomesln(x²−4) only on that original domain."
+      },
+      {
+        "prompt": "Solve ln(x−2)+ln(x+2)=ln(5), checking candidates against the original domain.",
+        "answer": "x²−4=5 givesx=±3; onlyx=3 lies inx>2."
+      }
+    ],
+    "takeaway": "Logarithms invert positive-base exponentials; log laws retain every original argument restriction.",
+    "scope": "Change of base, exponential solving, logarithm laws, and domain checks."
+  },
+  {
+    "id": "precalculus.parametric-equations",
+    "beats": [
+      {
+        "formula": "x=t quad y=t^2",
+        "text": "Parametric equations give both coordinates in terms of a shared parameter. Let the horizontal coordinate equal t and the vertical coordinate equal t squared. As t varies, these paired outputs trace the familiar parabola while retaining an order of travel.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -1,
+            9
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              -2,
+              4
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "sweep": true,
+          "equal": true
+        }
+      },
+      {
+        "formula": "t=-2,0,2 arrow.r (-2,4),(0,0),(2,4)",
+        "text": "Evaluate both rules at the same parameter value. Negative two gives negative two, four; zero gives the origin; and positive two gives two, four. Mixing coordinates from different parameter values would create a point that the motion never actually visits at that time.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -1,
+            9
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              -2,
+              4
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "labels": [
+            "t=-2",
+            "t=0",
+            "t=2"
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "x=cos(t) quad y=sin(t)",
+        "text": "A different pair of rules traces a circle. Cosine and sine automatically satisfy x squared plus y squared equals one. As the parameter increases from zero to two pi, the point travels counterclockwise through one complete turn.",
+        "visual": {
+          "kind": "circle",
+          "angle": 2.356194490192345,
+          "radius": 2.4,
+          "triangle": true,
+          "arc": true
+        }
+      },
+      {
+        "formula": "x=cos(2t) quad y=sin(2t)",
+        "text": "Doubling the parameter inside both functions traces the same geometric circle twice as quickly. Eliminating the parameter reveals the circle equation but loses this timing information. A curve can therefore have many parametrizations with different directions, speeds, or numbers of traversals.",
+        "visual": {
+          "kind": "circle",
+          "angle": 4.71238898038469,
+          "radius": 2.4,
+          "triangle": true,
+          "arc": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For x=2t−1 and y=t+4, find the point at t=3.",
+        "answer": "The point is(5,7)."
+      },
+      {
+        "prompt": "Eliminate t from x=t+1 and y=t², keeping the full real parameter domain.",
+        "answer": "t=x−1, so y=(x−1)² for all realx."
+      },
+      {
+        "prompt": "Compare x=cos t,y=sin t with x=cos t,y=−sin t for increasing t.",
+        "answer": "Both trace the unit circle, but the first goes counterclockwise and the second clockwise, starting at(1,0)."
+      }
+    ],
+    "takeaway": "One parameter synchronizes coordinates and preserves direction and timing that a locus alone can lose.",
+    "scope": "Shared parameters, evaluation, elimination, circular paths, and traversal speed."
+  },
+  {
+    "id": "precalculus.polar-coordinates",
+    "beats": [
+      {
+        "formula": "x=r cos(theta) quad y=r sin(theta)",
+        "text": "Polar coordinates locate a point using a directed distance from the origin and an angle. For nonnegative radius, move outward along the ray at that angle. Multiplying the unit-circle coordinates by the radius converts the location into Cartesian coordinates.",
+        "visual": {
+          "kind": "circle",
+          "angle": 1.0471975511965976,
+          "radius": 2.4,
+          "triangle": true,
+          "arc": true
+        }
+      },
+      {
+        "formula": "r=2, theta=frac(pi,3) arrow.r (x,y)=(1,sqrt(3))",
+        "text": "At radius two and angle sixty degrees, the horizontal coordinate is two times one half, giving one. The vertical coordinate is two times the square root of three over two, giving the square root of three.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              1.7320508075688772
+            ]
+          ],
+          "points": [
+            [
+              1,
+              1.7320508075688772
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(2,theta) \"and\" (2,theta+2pi)",
+        "text": "Polar names are not unique. Adding a complete turn keeps the same radius and final ray, so the same point receives another angle label. This differs from ordinary Cartesian coordinates, where each ordered pair names one fixed coordinate combination.",
+        "visual": {
+          "kind": "circle",
+          "angle": 7.330382858376184,
+          "radius": 2.4,
+          "arc": true
+        }
+      },
+      {
+        "formula": "(r,theta)=(-r,theta+pi)",
+        "text": "A negative radius reverses the direction along the chosen ray. Changing the radius sign while adding half a turn names the same point. When converting back from coordinates, use quadrant information instead of relying on a tangent ratio alone.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              -1,
+              -1.7320508075688772
+            ]
+          ],
+          "matrix": [
+            [
+              -1,
+              0
+            ],
+            [
+              0,
+              -1
+            ]
+          ],
+          "points": [
+            [
+              1,
+              1.7320508075688772
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Convert polar coordinates (4,π/2) to Cartesian coordinates.",
+        "answer": "x=4cos(π/2)=0,y=4sin(π/2)=4, so(0,4)."
+      },
+      {
+        "prompt": "Give one polar description of (−3,0) with a nonnegative radius.",
+        "answer": "(r,θ)=(3,π), with angles understood modulo2π."
+      },
+      {
+        "prompt": "Show that (−2,0) and (2,π) as polar pairs name the same Cartesian point.",
+        "answer": "First gives(−2×1,−2×0)=(−2,0); second gives(2×−1,2×0)=(−2,0)."
+      }
+    ],
+    "takeaway": "Radius-angle descriptions can be nonunique; conversion requires sign and quadrant awareness.",
+    "scope": "Polar-to-Cartesian conversion, full turns, and negative radii."
+  },
+  {
+    "id": "precalculus.sequences-series",
+    "beats": [
+      {
+        "formula": "a_n=frac(1,2^n) quad n=1,2,3,...",
+        "text": "A sequence lists individual terms in an indexed order. Here the terms are one half, one fourth, one eighth, and so on, with each term half the previous one. Their values approach zero as the index grows.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            0.5,
+            0.25,
+            0.125,
+            0.0625,
+            0.03125,
+            0.015625
+          ],
+          "limit": 0
+        }
+      },
+      {
+        "formula": "S_n=sum_(k=1)^n frac(1,2^k)",
+        "text": "A series instead adds terms, and its partial sums form another sequence. The first sums are one half, three fourths, and seven eighths. Those sums increase even while the individual terms decrease, because each newly added term is positive.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            0.5,
+            0.75,
+            0.875,
+            0.9375,
+            0.96875,
+            0.984375
+          ],
+          "limit": 1
+        }
+      },
+      {
+        "formula": "S_n=1-frac(1,2^n) arrow.r 1",
+        "text": "The gap from the partial sum to one halves each time. After n terms that gap is one over two to the n, giving this exact finite-sum formula. Since the gap approaches zero, the infinite geometric series converges to one.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            1.1
+          ],
+          "points": [
+            0.5,
+            0.75,
+            0.875,
+            1
+          ],
+          "labels": [
+            "1/2",
+            "3/4",
+            "7/8",
+            "limit"
+          ]
+        }
+      },
+      {
+        "formula": "a_n=frac(1,n) arrow.r 0 quad sum_(n=1)^infinity frac(1,n)=infinity",
+        "text": "The harmonic terms also approach zero, but their sum diverges. Four terms from one fifth through one eighth each exceed or equal one eighth, totaling at least one half. Every doubled block repeats this lower bound, forcing unbounded partial sums.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            1,
+            0.5,
+            0.5833333333333333,
+            0.6345238095238095
+          ],
+          "labels": [
+            "first",
+            "next 1",
+            "next 2",
+            "next 4"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "List the first four terms of a_n=2/3ⁿ for n starting at one.",
+        "answer": "2/3,2/9,2/27,2/81."
+      },
+      {
+        "prompt": "Find the sum 1/3+1/9+1/27+… and state why it converges.",
+        "answer": "It is geometric with first term1/3 and ratio1/3, so the sum is(1/3)/(1−1/3)=1/2 because the ratio magnitude is below one."
+      },
+      {
+        "prompt": "A sequence of terms tends to zero. Does this alone prove their infinite series converges? Explain with a counterexample.",
+        "answer": "No. Terms1/n tend to zero, but the harmonic series diverges; grouped blocks keep adding at least a fixed positive amount."
+      }
+    ],
+    "takeaway": "Terms and partial sums are different sequences; vanishing terms alone do not ensure a finite sum.",
+    "scope": "Sequence limits, geometric partial sums, and a divergence counterexample."
+  },
+  {
+    "id": "precalculus.introduction-to-limits",
+    "beats": [
+      {
+        "formula": "f(x)=frac(x^2-1,x-1) quad x!=1",
+        "text": "A limit describes what nearby outputs approach, even when the target input itself is missing. This fraction is undefined at input one because its denominator is zero. We can still investigate values taken just to either side of that input.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            3
+          ],
+          "y": [
+            -1,
+            5
+          ],
+          "curves": [
+            {
+              "f": "x+1",
+              "color": "blue",
+              "domain": [
+                -1,
+                3
+              ]
+            }
+          ],
+          "holes": [
+            [
+              1,
+              2
+            ]
+          ],
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "frac(x^2-1,x-1)=x+1 quad x!=1",
+        "text": "Factor the numerator into x minus one times x plus one. At every allowed nearby input, the common nonzero factor cancels and the output equals x plus one. The simplified expression reveals a line with its original missing point retained.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2
+          ],
+          "y": [
+            0.5,
+            3.5
+          ],
+          "curves": [
+            {
+              "f": "x+1",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ],
+          "holes": [
+            [
+              1,
+              2
+            ]
+          ],
+          "points": [
+            [
+              0.5,
+              1.5
+            ],
+            [
+              1.5,
+              2.5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "lim_(x arrow.r 1) f(x)=2",
+        "text": "As inputs approach one from either direction, these outputs approach two. That statement does not fill the hole or claim the original function equals two at one. A limit concerns nearby behavior; a function value concerns a particular allowed input.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0.8,
+            1.2
+          ],
+          "y": [
+            1.75,
+            2.25
+          ],
+          "curves": [
+            {
+              "f": "x+1",
+              "color": "blue",
+              "domain": [
+                0.8,
+                1.2
+              ]
+            }
+          ],
+          "holes": [
+            [
+              1,
+              2
+            ]
+          ],
+          "points": [
+            [
+              0.9,
+              1.9
+            ],
+            [
+              1.1,
+              2.1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "g(x)=frac(abs(x),x) quad x!=0",
+        "text": "Both directions must agree for a two-sided limit. Absolute x divided by x equals negative one to the left of zero and positive one to the right. Because those approaches disagree, there is no single two-sided limit at zero.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            2
+          ],
+          "y": [
+            -1.5,
+            1.5
+          ],
+          "curves": [
+            {
+              "f": "-1",
+              "color": "pink",
+              "domain": [
+                -2,
+                -0.001
+              ]
+            },
+            {
+              "f": "1",
+              "color": "blue",
+              "domain": [
+                0.001,
+                2
+              ]
+            }
+          ],
+          "holes": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For f(x)=x+4 except at x=2 where it is undefined, find the limit as x approaches two. Explain.",
+        "answer": "The nearby rule approaches six, so the limit is6 even though f(2) is undefined."
+      },
+      {
+        "prompt": "Simplify (x²−100)/(x−10) near x=10 and determine its limit there.",
+        "answer": "Forx≠10 it equalsx+10; asx approaches10 the output approaches20."
+      },
+      {
+        "prompt": "A function approaches three from the left of a point and negative two from the right. Can it have a two-sided limit there?",
+        "answer": "No. A two-sided limit requires the two one-sided limits to agree."
+      }
+    ],
+    "takeaway": "Nearby agreement determines a limit; the point value and the two approaches must be distinguished.",
+    "scope": "Removable gaps, valid simplification near a point, and one-sided agreement."
+  }
+]

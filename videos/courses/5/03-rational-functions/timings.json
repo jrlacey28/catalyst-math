@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "A rational function is a ratio of polynomials. Its original denominator cannot equal zero. Write those excluded inputs before simplifying, because canceling a factor does not restore a value the original expression never had.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.133333333333333,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "Factor the numerator and cancel the common factor for allowed inputs. The graph follows the line x plus one, but the point at input one is missing. That missing point is a hole at one, two.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.133333333333333,
+    "duration": 17.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "An uncanceled denominator factor can produce a vertical asymptote instead. For two divided by x minus two, outputs become very large in magnitude as x approaches two from either side. The excluded input is two.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.13333333333333,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "When solving a rational equation, multiply only while retaining the original restrictions. Solving x over x minus one equals two gives x equals two. Check it in the original expression; excluded candidates can never be solutions.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.13333333333333,
+    "duration": 17.933333333333334,
+    "audio": "audio_parts/04.wav"
+  }
+]

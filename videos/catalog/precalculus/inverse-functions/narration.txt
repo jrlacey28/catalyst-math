@@ -1,0 +1,7 @@
+An inverse function reverses an input-output pairing. This line sends input one to output five. If it has an inverse, that inverse must send five back to one, undoing the operations in the reverse order.
+
+To undo the rule, first subtract three from the output, then divide by two. Solving the original equation for its input gives this reverse instruction. Renaming the new input variable leads to inverse of x equals x minus three over two.
+
+Swapping input and output reflects the graph across the line y equals x. The point one, five becomes five, one. The inverse symbol means reversing a function; it does not mean the reciprocal one divided by the function value.
+
+A function needs unique reverse outputs to have an inverse. Squaring over all real numbers fails because positive and negative inputs share outputs. Restricting its input to nonnegative values makes the reverse unambiguous and gives the principal square-root function.

@@ -1,0 +1,7 @@
+A probability distribution specifies how probability is allocated across possible values. In a discrete distribution, probabilities are nonnegative and add to one. These three bars assign one fifth, three tenths, and one half to zero, one, and two.
+
+A binomial model counts successes across a fixed number of independent trials with the same success probability. For three fair tosses, exactly one head can occur in three positions, each with probability one eighth, giving three eighths altogether.
+
+A continuous distribution uses density, whose area gives probability. Uniform density one half from zero to two has total area one. An interval of length one inside this range has probability one half, regardless of where it lies.
+
+Density is not a point probability and may exceed one. Uniform density four on an interval of length one quarter still has total probability one. Any single exact point has probability zero in this continuous model because its interval width is zero.

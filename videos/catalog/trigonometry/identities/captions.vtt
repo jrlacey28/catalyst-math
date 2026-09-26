@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:07.151
+A trigonometric identity is a relationship that holds at every input where both sides are defined
+
+00:00:07.151 --> 00:00:16.433
+The unit-circle equation gives sine squared plus cosine squared equals one because the two coordinates always lie one unit from the origin.
+
+00:00:17.733 --> 00:00:22.700
+Rearrange the circle identity to replace one expression with an equal one
+
+00:00:22.700 --> 00:00:25.597
+One minus cosine squared becomes sine squared
+
+00:00:25.597 --> 00:00:32.633
+This substitution is useful because it can reveal a factor that was hidden in the original form.
+
+00:00:33.933 --> 00:00:37.166
+After replacement, the numerator is sine squared
+
+00:00:37.166 --> 00:00:44.092
+Dividing by sine cancels one common factor, leaving sine, but only when sine is nonzero
+
+00:00:44.092 --> 00:00:49.633
+The simplified graph must retain the inputs excluded by the original denominator.
+
+00:00:50.933 --> 00:00:54.468
+Solving a squared relationship introduces a sign choice
+
+00:00:54.468 --> 00:01:04.190
+If sine is known, the magnitude of cosine follows from the identity, but the quadrant decides whether cosine is positive or negative
+
+00:01:04.190 --> 00:01:08.167
+Choosing only the positive root would discard valid angles.

@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4A-05",
+  "batches": [
+    [
+      {
+        "id": "4A-05-P1",
+        "prompt": "A circle has radius 7 cm. Find its diameter."
+      },
+      {
+        "id": "4A-05-P2",
+        "prompt": "A circle has radius 3. Find its exact circumference."
+      },
+      {
+        "id": "4A-05-P3",
+        "prompt": "Find the area of a disk with radius 4."
+      }
+    ],
+    [
+      {
+        "id": "4A-05-P4",
+        "prompt": "A radius-6 circle has a 60\u00b0 arc. Find its arc length."
+      },
+      {
+        "id": "4A-05-P5",
+        "prompt": "Find the area of a 90\u00b0 sector of a radius-8 disk."
+      },
+      {
+        "id": "4A-05-P6",
+        "prompt": "Explain why arc length and sector area need different units."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

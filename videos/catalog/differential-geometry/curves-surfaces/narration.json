@@ -1,0 +1,70 @@
+[
+  {
+    "formula": "gamma(t)=(2cos(t),2sin(t))",
+    "text": "A parametrized curve describes position as a parameter changes. This formula traces a circle of radius two. Differentiating gives the velocity vector; its length is two, so equal changes in the parameter correspond to twice that much traveled arc length.",
+    "visual": {
+      "kind": "circle",
+      "angle": 1.0471975512,
+      "radius": 2,
+      "arc": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "norm(gamma'(t))=2, quad s=2t",
+    "text": "Speed depends on parameterization, while the geometric path remains the same. Using arc length s as the parameter makes speed one. The unit tangent then records direction alone, separating how the curve turns from how quickly it is traversed.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "points": [
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "kappa=norm(frac(d T,d s))=frac(1,2)",
+    "text": "Curvature measures the rate at which the unit tangent changes per unit arc length. A radius-two circle has curvature one half; a larger circle turns less sharply. This is curve curvature, not the Gaussian curvature assigned to a surface.",
+    "visual": {
+      "kind": "circle",
+      "angle": 1.57079632679,
+      "radius": 2,
+      "arc": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "r(u,v)=(u,v,u^2+v^2)",
+    "text": "A surface uses two parameters instead of one. On this paraboloid, changing u or v gives two independent tangent directions. Their span is the tangent plane. Independence of these parameter derivatives is the regularity condition preventing a collapsed coordinate patch.",
+    "visual": {
+      "kind": "surface",
+      "mode": "paraboloid",
+      "slice": "x"
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

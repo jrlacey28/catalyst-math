@@ -1,0 +1,161 @@
+[
+  {
+    "formula": "e^x=1+x+frac(x^2,2)+frac(x^3,6)+dots",
+    "text": "Taylor polynomials imitate a function near one point by matching its value and successive derivatives there. For exponential x at zero, every derivative equals one, so the coefficients are reciprocals of factorials. More matching derivatives improve the local shape.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        2
+      ],
+      "y": [
+        -1,
+        8
+      ],
+      "curves": [
+        {
+          "f": "exp(x)",
+          "color": "blue",
+          "domain": [
+            -2,
+            2
+          ]
+        },
+        {
+          "f": "1+x",
+          "color": "gold",
+          "domain": [
+            -2,
+            2
+          ]
+        },
+        {
+          "f": "1+x+x*x/2",
+          "color": "pink",
+          "domain": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "e^(0.2) approx 1+0.2+frac(0.2^2,2)+frac(0.2^3,6)",
+    "text": "At one fifth, the cubic polynomial gives about one point two two one three three three. This is an approximation, not an exact finite identity. Taylor's remainder theorem controls the difference using a bound on the next derivative.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        0.5
+      ],
+      "y": [
+        0.9,
+        1.8
+      ],
+      "curves": [
+        {
+          "f": "exp(x)",
+          "color": "blue",
+          "domain": [
+            0,
+            0.5
+          ]
+        },
+        {
+          "f": "1+x+x*x/2+x*x*x/6",
+          "color": "gold",
+          "domain": [
+            0,
+            0.5
+          ]
+        }
+      ],
+      "points": [
+        [
+          0.2,
+          1.2213333333
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "abs(R_3(0.2))<=frac(2(0.2)^4,24)",
+    "text": "On the interval from zero to one fifth, the fourth derivative is exponential x and is less than two. Therefore the cubic error is at most two times one fifth to the fourth, divided by twenty-four: about one ten-thousandth.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        1.2211,
+        1.2216
+      ],
+      "points": [
+        1.2213333333,
+        1.2214027582
+      ],
+      "labels": [
+        "cubic",
+        "actual"
+      ],
+      "interval": [
+        1.2212,
+        1.2214666667
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "frac(1,1-x)=sum_(n=0)^infinity x^n, quad abs(x)<1",
+    "text": "A power series also has a convergence domain. The geometric expansion for one over one minus x works only when absolute x is less than one. Outside that interval its terms may not shrink, even though the original function remains defined.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        1
+      ],
+      "y": [
+        0,
+        6
+      ],
+      "curves": [
+        {
+          "f": "1/(1-x)",
+          "color": "blue",
+          "domain": [
+            -0.9,
+            0.8
+          ]
+        },
+        {
+          "f": "1+x+x*x+x*x*x",
+          "color": "gold",
+          "domain": [
+            -0.9,
+            0.8
+          ]
+        }
+      ],
+      "sweep": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "formula": "35%=frac(35,100)=0.35",
+    "text": "Percent means per hundred, so thirty five percent shades thirty five of these hundred equal cells. The percentage alone is a relative amount. Its actual size depends on the whole to which it refers.",
+    "visual": {
+      "kind": "grid",
+      "rows": 10,
+      "cols": 10,
+      "filled": 35
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "35% \"of\" 60=0.35 times 60=21",
+    "text": "To find thirty five percent of sixty, multiply the whole sixty by the fraction thirty five hundredths. The result is twenty one. Keep track of which quantity is the whole and which quantity is the part.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        60,
+        21
+      ],
+      "labels": [
+        "whole",
+        "part"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "60 times (1+0.25)=75",
+    "text": "A twenty five percent increase keeps the original whole and adds a quarter of it. The combined factor is one point two five, taking sixty to seventy five. This factor form makes repeated percentage changes easier to track.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        60,
+        15,
+        75
+      ],
+      "labels": [
+        "start",
+        "increase",
+        "result"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "75 times (1-0.20)=60",
+    "text": "Dropping from seventy five back to sixty is a twenty percent decrease, because the new comparison whole is seventy five. Equal absolute changes can have different percentages; always name the starting amount used as the denominator.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        75,
+        15,
+        60
+      ],
+      "labels": [
+        "start",
+        "decrease",
+        "result"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

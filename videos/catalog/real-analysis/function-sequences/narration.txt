@@ -1,0 +1,7 @@
+A sequence of functions changes an entire graph at each index. At any fixed input below one, repeated multiplication by that input drives the value toward zero. At input one, every function still equals one.
+
+This is pointwise convergence: each fixed input gets its own eventual control. But the limit jumps at one. The increasingly steep graphs near that endpoint show why controlling each location separately is not the same as controlling every location simultaneously.
+
+Compare x divided by n on the same interval. The error from zero is at most one over n for every input at once. A single index therefore works across the whole interval, establishing uniform convergence.
+
+Uniform limits of continuous functions remain continuous. Pointwise limits need not, as the power example demonstrates. Exchanging limits with other operations requires an appropriate theorem; a visually settling sequence alone does not justify exchanging derivatives or integrals.

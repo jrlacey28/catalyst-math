@@ -1,0 +1,166 @@
+[
+  {
+    "formula": "6x+9y=15, quad x,y in ZZ",
+    "text": "A Diophantine equation asks for integer solutions, not merely points on a continuous curve. Six x plus nine y equals fifteen draws a line, but only the points with integer coordinates meet the arithmetic requirement.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        5
+      ],
+      "y": [
+        -2,
+        4
+      ],
+      "curves": [
+        {
+          "f": "(15-6*x)/9",
+          "color": "blue",
+          "domain": [
+            -3,
+            5
+          ]
+        }
+      ],
+      "points": [
+        [
+          -2,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          -1
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "2x+3y=5, quad (x,y)=(1,1)",
+    "text": "Both coefficients and the target share a factor of three, so divide the entire equation by three. The simpler equation has the solution one, one. This legal division preserves every solution because it divides an equality by a nonzero constant.",
+    "visual": {
+      "kind": "plane",
+      "points": [
+        [
+          1,
+          1
+        ]
+      ],
+      "vectors": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "x=1+3t, quad y=1-2t, quad t in ZZ",
+    "text": "Increasing x by three adds six to twice x, while decreasing y by two subtracts six from three y. The changes cancel. Every integer t therefore gives a solution, and subtracting two solutions shows this parameterization captures them all.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        5
+      ],
+      "y": [
+        -2,
+        4
+      ],
+      "curves": [
+        {
+          "f": "(5-2*x)/3",
+          "color": "blue",
+          "domain": [
+            -3,
+            5
+          ]
+        }
+      ],
+      "points": [
+        [
+          -2,
+          3
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          -1
+        ]
+      ],
+      "segments": [
+        [
+          [
+            -2,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            -1
+          ]
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "6x+9y=14 \" has no integer solution\"",
+    "text": "Changing the target to fourteen destroys solvability: the left side is always divisible by three, while fourteen is not. More generally, an integer linear equation has integer solutions exactly when the greatest common divisor of its coefficients divides its target.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        15
+      ],
+      "points": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        14,
+        15
+      ],
+      "labels": [
+        "0",
+        "3",
+        "6",
+        "9",
+        "12",
+        "14",
+        "15"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

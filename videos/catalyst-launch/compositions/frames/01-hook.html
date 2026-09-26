@@ -1,0 +1,154 @@
+<template>
+  <style>
+    #root {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      container-type: size;
+      color: #243e34;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-weight: 400;
+    }
+    #root .clip { position: absolute; }
+    #launch-01-ground { inset: 0; background: #f6f7f0; }
+    #launch-01-topbar {
+      left: 5cqw;
+      top: 6.8cqh;
+      width: 90cqw;
+      height: 4.8cqh;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid #315c47;
+      font-family: Consolas, monospace;
+      font-size: 1.35cqw;
+      font-weight: 500;
+      letter-spacing: .18em;
+    }
+    #launch-01-graph {
+      left: 5cqw;
+      top: 17.96cqh;
+      width: 40.625cqw;
+      height: 61.11cqh;
+    }
+    #launch-01-graph svg { width: 100%; height: 100%; overflow: visible; }
+    #launch-01-graph text {
+      font-family: Consolas, monospace;
+      font-size: 30px;
+      font-weight: 500;
+      fill: #315c47;
+    }
+    #root .launch-01-symbol {
+      position: absolute;
+      font-size: 4.58cqw;
+      line-height: 1;
+      font-weight: 500;
+      letter-spacing: -.02em;
+      color: #315c47;
+    }
+    #launch-01-symbol-square { left: 6.25cqw; top: 17.13cqh; }
+    #launch-01-symbol-function { left: 26.04cqw; top: 10.65cqh; }
+    #launch-01-symbol-change { left: 20.83cqw; top: 37.96cqh; color: #617465; }
+    #launch-01-brand {
+      left: 49.17cqw;
+      top: 27.78cqh;
+      width: 44cqw;
+      display: flex;
+      align-items: center;
+      gap: 1.77cqw;
+    }
+    #launch-01-logo { display: block; width: 5.83cqw; height: 5.83cqw; object-fit: contain; flex: 0 0 auto; }
+    #launch-01-name {
+      margin: 0;
+      font-size: 8.33cqw;
+      font-weight: 500;
+      line-height: 1.02;
+      letter-spacing: -.035em;
+      color: #315c47;
+    }
+    #root .launch-01-cue {
+      left: 49.17cqw;
+      margin: 0;
+      font-size: 3.23cqw;
+      line-height: 1.02;
+      font-weight: 500;
+      letter-spacing: -.02em;
+    }
+    #launch-01-cue-1 { top: 45.65cqh; }
+    #launch-01-cue-2 { top: 53.52cqh; }
+    #launch-01-cue-3 { top: 61.39cqh; color: #315c47; }
+    #launch-01-finale-rule {
+      left: 49.17cqw;
+      top: 69.81cqh;
+      width: 28.75cqw;
+      height: 2px;
+      background: #315c47;
+    }
+    #launch-01-footline {
+      left: 5cqw;
+      top: 81.48cqh;
+      width: 90cqw;
+      height: 2px;
+      background: #617465;
+    }
+  </style>
+  <div id="root" data-composition-id="launch-01" data-width="1920" data-height="1080" data-duration="7.2">
+    <div id="launch-01-ground" class="clip" data-start="0" data-duration="7.2" data-track-index="0"></div>
+    <div id="launch-01-topbar" class="clip" data-start="0" data-duration="7.2" data-track-index="1">
+      <span>MAKE IT CLICK</span><span>01</span>
+    </div>
+    <div id="launch-01-graph" class="clip" data-start="0" data-duration="7.2" data-track-index="2">
+      <svg viewBox="0 0 780 660" role="img" aria-label="A few mathematical symbols resolve into the graph of a square function.">
+        <rect id="launch-01-paper" x="40" y="40" width="660" height="560" rx="8" fill="#edf0fc"/>
+        <path id="launch-01-area" d="M130 530 Q283.333333 530 436.666667 350 L436.666667 530 Z" fill="#f7edd6"/>
+        <path id="launch-01-axes" d="M130 80 V530 H665" pathLength="1" fill="none" stroke="#315c47" stroke-width="2" stroke-dasharray="1"/>
+        <path id="launch-01-axis-heads" d="M123 93 L130 80 L137 93 M652 523 L665 530 L652 537" fill="none" stroke="#315c47" stroke-width="2"/>
+        <g id="launch-01-axis-labels"><text x="684" y="538">x</text><text x="121" y="61">y</text></g>
+        <path id="launch-01-guides" d="M130 350 H436.666667 V530" fill="none" stroke="#617465" stroke-width="2" stroke-dasharray="7 9"/>
+        <path id="launch-01-curve" d="M130 530 Q360 530 590 125" pathLength="1" fill="none" stroke="#315c47" stroke-width="5" stroke-linecap="round" stroke-dasharray="1"/>
+        <circle id="launch-01-point" cx="436.666667" cy="350" r="9" fill="#f7edd6" stroke="#315c47" stroke-width="2"/>
+      </svg>
+      <span id="launch-01-symbol-square" class="launch-01-symbol">x²</span>
+      <span id="launch-01-symbol-function" class="launch-01-symbol">f(x)</span>
+      <span id="launch-01-symbol-change" class="launch-01-symbol">Δx</span>
+    </div>
+    <div id="launch-01-brand" class="clip" data-start="2.8" data-duration="4.4" data-track-index="3">
+      <img id="launch-01-logo" src="assets/catalyst-logo.svg" alt="Catalyst logo" width="112" height="112">
+      <h1 id="launch-01-name">Catalyst</h1>
+    </div>
+    <p id="launch-01-cue-1" class="clip launch-01-cue" data-start="4.8" data-duration="2.4" data-track-index="4">See it.</p>
+    <p id="launch-01-cue-2" class="clip launch-01-cue" data-start="5.55" data-duration="1.65" data-track-index="5">Try it.</p>
+    <p id="launch-01-cue-3" class="clip launch-01-cue" data-start="6.25" data-duration="0.95" data-track-index="6">Make it click.</p>
+    <div id="launch-01-finale-rule" class="clip" data-start="6.65" data-duration="0.55" data-track-index="7"></div>
+    <div id="launch-01-footline" class="clip" data-start="0" data-duration="7.2" data-track-index="1"></div>
+  </div>
+  <script src="assets/gsap.min.js"></script>
+  <script>
+    (function () {
+      var timeline = gsap.timeline({ paused: true });
+      timeline.fromTo('#launch-01-topbar', { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: .5, ease: 'power2.out' }, 0);
+      timeline.fromTo('#launch-01-footline', { opacity: 0 }, { opacity: .28, duration: .6, ease: 'power1.out' }, .1);
+      timeline.fromTo('#launch-01-paper', { opacity: 0 }, { opacity: 1, duration: .8, ease: 'power1.out' }, .1);
+      timeline.fromTo('#launch-01-symbol-square', { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: .5, ease: 'power2.out' }, .05);
+      timeline.fromTo('#launch-01-symbol-function', { opacity: 0, y: 14 }, { opacity: .75, y: 0, duration: .5, ease: 'power2.out' }, .2);
+      timeline.fromTo('#launch-01-symbol-change', { opacity: 0, y: 14 }, { opacity: .65, y: 0, duration: .5, ease: 'power2.out' }, .38);
+      timeline.fromTo('#launch-01-axes', { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1, ease: 'power2.out' }, .65);
+      timeline.fromTo('#launch-01-axis-heads, #launch-01-axis-labels', { opacity: 0 }, { opacity: 1, duration: .5, ease: 'power1.out' }, 1.05);
+      timeline.fromTo('#launch-01-symbol-square', { x: 0, y: 0, scale: 1, transformOrigin: 'left top' }, { x: 410, y: -125, scale: .8, duration: 1.15, ease: 'power2.inOut', immediateRender: false }, 1.3);
+      timeline.fromTo('#launch-01-symbol-function', { x: 0, y: 0, opacity: .75 }, { x: -85, y: 175, opacity: 0, duration: 1, ease: 'power2.inOut', immediateRender: false }, 1.2);
+      timeline.fromTo('#launch-01-symbol-change', { x: 0, y: 0, opacity: .65 }, { x: 35, y: -55, opacity: 0, duration: 1, ease: 'power2.inOut', immediateRender: false }, 1.35);
+      timeline.fromTo('#launch-01-area', { opacity: 0 }, { opacity: 1, duration: .8, ease: 'power1.out' }, 1.55);
+      timeline.fromTo('#launch-01-curve', { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 1.35, ease: 'power2.inOut' }, 1.15);
+      timeline.fromTo('#launch-01-guides', { opacity: 0 }, { opacity: .65, duration: .65, ease: 'power1.out' }, 1.9);
+      timeline.fromTo('#launch-01-point', { opacity: 0, scale: .7, transformOrigin: 'center center' }, { opacity: 1, scale: 1, duration: .55, ease: 'power2.out' }, 2.08);
+      timeline.fromTo('#launch-01-brand', { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: .85, ease: 'power2.out' }, 2.8);
+      timeline.fromTo('#launch-01-cue-1', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .65, ease: 'power2.out' }, 4.8);
+      timeline.fromTo('#launch-01-cue-2', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .65, ease: 'power2.out' }, 5.55);
+      timeline.fromTo('#launch-01-cue-3', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: .65, ease: 'power2.out' }, 6.25);
+      timeline.fromTo('#launch-01-finale-rule', { scaleX: 0, transformOrigin: 'left center' }, { scaleX: 1, duration: .55, ease: 'power2.out' }, 6.65);
+      window.__timelines = window.__timelines || {};
+      window.__timelines['launch-01'] = timeline;
+    }());
+  </script>
+</template>

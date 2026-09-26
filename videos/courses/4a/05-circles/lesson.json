@@ -1,0 +1,17 @@
+{
+  "id": "4A-05",
+  "unit": "4a",
+  "course": "Geometry",
+  "index": 5,
+  "total": 9,
+  "slug": "circles",
+  "title": "Circles, arcs, and sectors",
+  "objective": "Relate radius, circumference, arc length, and sector area.",
+  "prerequisites": "Fractions, angles, and square units.",
+  "formulas": [
+    "d=2r",
+    "C=2 pi r",
+    "s=(theta/360 degree) 2 pi r",
+    "A=(theta/360 degree) pi r^2"
+  ]
+}

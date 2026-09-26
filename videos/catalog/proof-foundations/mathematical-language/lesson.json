@@ -1,0 +1,138 @@
+{
+  "id": "proof-foundations.mathematical-language",
+  "beats": [
+    {
+      "formula": "forall x in RR, exists y in RR: y > x",
+      "text": "Quantifiers say who gets chosen first. For every real number x, there exists a larger real number y. The choice of y may depend on x; it need not be one number that works for everybody.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -3,
+          5
+        ],
+        "points": [
+          -2,
+          -1,
+          2,
+          3
+        ],
+        "arrows": [
+          [
+            -2,
+            -1
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "y=x+1 arrow.r y>x",
+      "text": "Choose an arbitrary real x, then define y as x plus one. Subtracting x leaves the true inequality one greater than zero. This single argument covers every x, rather than merely checking the displayed examples.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          3
+        ],
+        "y": [
+          -3,
+          4
+        ],
+        "curves": [
+          {
+            "f": "x+1",
+            "color": "gold",
+            "domain": [
+              -3,
+              3
+            ]
+          },
+          {
+            "f": "x",
+            "color": "blue",
+            "domain": [
+              -3,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "formula": "exists y in RR, forall x in RR: y>x",
+      "text": "Now reverse the order. One fixed y would have to exceed every real x. After that y is chosen, choose x equal to y plus one. The proposed universal inequality fails, so the reversed statement is false.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -2,
+          5
+        ],
+        "points": [
+          2,
+          3
+        ],
+        "labels": [
+          "y",
+          "x=y+1"
+        ],
+        "arrows": [
+          [
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "not (forall x: P(x)) equiv (exists x: not P(x))",
+      "text": "Negating an all statement requires one counterexample. Negating a some statement requires that every candidate fail. Keep the allowed universe fixed: changing from integers to positive integers can change whether the same sentence is true.",
+      "visual": {
+        "kind": "sets",
+        "left": [
+          "-2",
+          "-1"
+        ],
+        "right": [
+          "1",
+          "2"
+        ],
+        "both": [
+          "0"
+        ],
+        "highlight": "union"
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Write a true forall-exists statement saying every integer has a smaller integer, and give a formula for the witness.",
+      "answer": "For every integer n there exists an integer m<n. Choose m=n−1; it is an integer and m<n.",
+      "id": "proof-foundations.mathematical-language.video-practice-1"
+    },
+    {
+      "prompt": "Is there a real c greater than every real x? Justify without listing examples.",
+      "answer": "No. For any proposed c, the real x=c+1 is larger, contradicting the requirement.",
+      "id": "proof-foundations.mathematical-language.video-practice-2"
+    },
+    {
+      "prompt": "Negate: For every real x there is a real y with y²=x. Explain why the original is false.",
+      "answer": "There exists a real x such that for every real y, y²≠x. Take x=−1, since real squares are nonnegative.",
+      "id": "proof-foundations.mathematical-language.video-practice-3"
+    }
+  ],
+  "takeaway": "Quantifier order controls whether later choices may depend on earlier ones.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Proof writing and mathematical foundations",
+  "course_id": "proof-foundations",
+  "title": "Definitions and quantifiers",
+  "objective": "Parse nested quantifiers and distinguish examples, definitions, and theorems.",
+  "index": 1,
+  "total": 3,
+  "prerequisites": [
+    "discrete-math.logic",
+    "discrete-math.sets"
+  ]
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "formula": "integral_0^1 2 d x=2*1=2",
+    "text": "Lebesgue integration begins with simple functions that take finitely many values on measurable pieces. Multiply each value by the measure of its piece, then add. For height two on an interval of length one, the contribution is two.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        2
+      ],
+      "y": [
+        0,
+        5.5
+      ],
+      "curves": [
+        {
+          "f": "2",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        1
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.533333333333335,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "integral_1^2 5 d x=5*1=5",
+    "text": "A second disjoint interval of length one, with height five, contributes five. Whether an endpoint belongs to the first or second piece does not affect this Lebesgue integral, because the endpoint is a set of measure zero.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        2
+      ],
+      "y": [
+        0,
+        5.5
+      ],
+      "curves": [
+        {
+          "f": "5",
+          "color": "gold",
+          "domain": [
+            1,
+            2
+          ]
+        }
+      ],
+      "shade": [
+        1,
+        2
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.533333333333335,
+    "duration": 15.633333333333333,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "integral_0^2 f(x)d x=2+5=7",
+    "text": "Combining the two measurable pieces gives total integral seven. More general nonnegative measurable functions are approached from below by simple functions, and their integrals are defined by the corresponding supremum. This extends the weighted-size idea beyond step-shaped graphs.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        2
+      ],
+      "y": [
+        0,
+        5.5
+      ],
+      "curves": [
+        {
+          "f": "2",
+          "color": "blue",
+          "domain": [
+            0,
+            0.999999
+          ]
+        },
+        {
+          "f": "5",
+          "color": "gold",
+          "domain": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 32.16666666666667,
+    "duration": 19.8,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "integral_0^1 x^n d x=frac(1,n+1) arrow.r 0",
+    "text": "For x to the n on the unit interval, pointwise convergence to zero holds except at one. The functions are bounded by the integrable function one. Dominated convergence therefore permits passing the limit through the integral, and the single exceptional endpoint contributes nothing.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.05
+      ],
+      "y": [
+        0,
+        1.05
+      ],
+      "curves": [
+        {
+          "f": "x",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        },
+        {
+          "f": "x**5",
+          "color": "gold",
+          "domain": [
+            0,
+            1
+          ]
+        },
+        {
+          "f": "x**15",
+          "color": "pink",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 51.96666666666667,
+    "duration": 19.366666666666667,
+    "audio": "audio_parts/04.wav"
+  }
+]

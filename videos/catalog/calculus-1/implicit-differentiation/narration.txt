@@ -1,0 +1,7 @@
+Some curves are easier to describe by a relationship than by one output formula. This circle contains an upper and a lower branch. Near suitable points, y can still depend on x even when we do not explicitly solve for it.
+
+Differentiate both sides with respect to x. The x squared term gives two x. Because y itself changes with x, the derivative of y squared is two y times y prime, an application of the chain rule.
+
+Subtract two x, then divide by two y where y is nonzero. At the point one, square root of three, the slope is negative one over square root of three. The tangent slopes downward on the upper-right branch.
+
+At either horizontal endpoint, y is zero, so this rearrangement cannot produce a finite slope. The circle has a vertical tangent there. A failed division is useful information about the geometry, not permission to discard the condition.

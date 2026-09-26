@@ -1,0 +1,84 @@
+{
+  "source": "Actual Catalyst browser interface",
+  "release": "0.10.2",
+  "capture_method": "CUA screenshot",
+  "isolated_demo": true,
+  "private_learner_records": false,
+  "frames": [
+    {
+      "file": "assets/ai-after.png",
+      "sha256": "d4bead1736f8fffa987e6e6192e4687759d2108099fd628a055a3f74d91a0c6c"
+    },
+    {
+      "file": "assets/ai-before.png",
+      "sha256": "619a8f6417dde4154f2e1a4d32fe1ea68d52547e5bed70ad903d37e690c01d4c"
+    },
+    {
+      "file": "assets/applications.png",
+      "sha256": "32faea8a561359e878fb7e78a54ce759a15c016bbae4712c52d9489a2d9ecbcf"
+    },
+    {
+      "file": "assets/courses.png",
+      "sha256": "e687b76f2d555a43d0b7092b9b8ae8e506a239041908717b750d5a3e22cedab7"
+    },
+    {
+      "file": "assets/example.png",
+      "sha256": "253dd659867dbbfac66cbe631e2fe5a3cb1f414952052a0866420dd9d9717319"
+    },
+    {
+      "file": "assets/gears-after.png",
+      "sha256": "ec0e28bda7aaca4f5dab8ca62611b0589a05f585c64c079e11c56e280bb99129"
+    },
+    {
+      "file": "assets/gears-before.png",
+      "sha256": "18bde30ccca99f90a3d6a206beecf14b78d5737f0b59e000d22a5fa372148a49"
+    },
+    {
+      "file": "assets/home.png",
+      "sha256": "748726217665802905ac2ac42e211f2d5f1f37f7f17d9b76eba18ee7e1a3efcc"
+    },
+    {
+      "file": "assets/orbit-after.png",
+      "sha256": "60eeae66c609874c9a168855f1ba1b4123590bb851d0a81109c1e6047adb215d"
+    },
+    {
+      "file": "assets/orbit-before.png",
+      "sha256": "bb74901e23b061941ad842b8d05be4253c8c9ac889cdbbb59a87708ee1264e06"
+    },
+    {
+      "file": "assets/practice.png",
+      "sha256": "dfc0ac42765e637e55e74d8f679d688f16878b825d96830761eab0fbc22d5b47"
+    },
+    {
+      "file": "assets/tree.png",
+      "sha256": "81c928b99088def860a8f821936293962320a4777bdbb70df7386d12960be6f8"
+    },
+    {
+      "file": "assets/watch.png",
+      "sha256": "c83b34c69d3e390b46f87d3aa291c2a9b6cfc4f28a1f59b8141ca0ba955db802"
+    }
+  ],
+  "model_changes": {
+    "orbit_speed_km_s": [
+      1.7,
+      2
+    ],
+    "gear_teeth": [
+      36,
+      54
+    ],
+    "gear_output_rpm": [
+      40,
+      26.67
+    ],
+    "ai_actual_updates": [
+      0,
+      1
+    ],
+    "ai_mean_square_error": [
+      0.26715,
+      0.20006
+    ]
+  },
+  "caption_timing": "Scene-aligned sentence cues; proportional timing within each spoken scene"
+}

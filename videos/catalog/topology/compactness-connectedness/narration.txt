@@ -1,0 +1,7 @@
+Compactness says every open cover has a finite subcover. In Euclidean spaces, the Heine Borel theorem identifies compact sets as exactly the closed and bounded ones. The closed interval is our basic example, not the definition for every topological space.
+
+A continuous real-valued function on a nonempty compact set attains its maximum and minimum. On this interval, the identity reaches its maximum at one. Removing that endpoint leaves values approaching one without ever attaining it.
+
+Connectedness is a different property: the space cannot be separated into two nonempty relatively open pieces. Real intervals are connected. Consequently, a continuous image of an interval cannot skip intermediate values between two of its outputs.
+
+Two separated closed intervals still form a closed bounded set, hence a compact one. They are disconnected because the gap separates the two components. Compactness controls covers and limiting behavior; connectedness controls separation. One property does not automatically supply the other.

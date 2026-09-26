@@ -1,0 +1,133 @@
+{
+  "id": "complex-analysis.contour-integrals",
+  "beats": [
+    {
+      "formula": "integral_gamma f(z) d z=integral_a^b f(gamma(t))gamma'(t)d t",
+      "text": "A contour integral adds changes along a directed path. Parameterize the path by a real variable t. Multiply the function value by the complex velocity of the path, then integrate in t; both path shape and orientation are accounted for.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "0",
+          "1",
+          "1+i"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "directed": true
+      }
+    },
+    {
+      "formula": "integral_0^(1+i) z d z=frac((1+i)^2,2)=i",
+      "text": "For the function z, an antiderivative is z squared divided by two. Every piecewise smooth path from zero to one plus i therefore gives i. The endpoint formula follows because this antiderivative exists throughout the region containing the path.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "points": [
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "z=e^(i t), quad frac(1,z)frac(d z,d t)=i",
+      "text": "Now travel counterclockwise around the unit circle while integrating one over z. The path velocity is i times z, so the product simplifies to i. Integrating from zero to two pi gives two pi i, not zero.",
+      "visual": {
+        "kind": "circle",
+        "angle": 6.28318530718,
+        "radius": 1,
+        "arc": true
+      }
+    },
+    {
+      "formula": "integral_gamma frac(1,z)d z=2pi i",
+      "text": "There is no contradiction with Cauchy's theorem: one over z is undefined at the enclosed origin. A holomorphic function on an open region containing the whole disk has zero integral around its boundary. Enclosed singularities change the situation.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1.5,
+          1.5
+        ],
+        "y": [
+          -1.5,
+          1.5
+        ],
+        "curves": [
+          {
+            "f": "sqrt(1-x*x)",
+            "color": "blue",
+            "domain": [
+              -1,
+              1
+            ]
+          },
+          {
+            "f": "-sqrt(1-x*x)",
+            "color": "blue",
+            "domain": [
+              -1,
+              1
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            0
+          ]
+        ],
+        "labels": [
+          "singularity"
+        ],
+        "equal": true
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Compute the contour integral of 2z from zero to 2+i along any piecewise smooth path.",
+      "answer": "An antiderivative is z², so the integral is (2+i)²=3+4i.",
+      "id": "complex-analysis.contour-integrals.video-practice-1"
+    },
+    {
+      "prompt": "What is the integral of 1/z around the unit circle traversed once clockwise? Explain the sign.",
+      "answer": "It is −2πi. Reversing the orientation negates the counterclockwise integral.",
+      "id": "complex-analysis.contour-integrals.video-practice-2"
+    },
+    {
+      "prompt": "Why is the integral of 1/z around a circle centered at three with radius one equal to zero?",
+      "answer": "The closed disk does not contain zero. The function 1/z is holomorphic on an open set containing that disk, so Cauchy's theorem applies and the boundary integral is zero.",
+      "id": "complex-analysis.contour-integrals.video-practice-3"
+    }
+  ],
+  "takeaway": "Contour orientation and the region where a function is holomorphic both matter.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Complex analysis",
+  "course_id": "complex-analysis",
+  "title": "Contour integrals",
+  "objective": "Integrate complex functions over paths and use Cauchy integral theorems.",
+  "index": 2,
+  "total": 3,
+  "prerequisites": [
+    "complex-analysis.holomorphic-functions",
+    "calculus-2.integrals"
+  ]
+}

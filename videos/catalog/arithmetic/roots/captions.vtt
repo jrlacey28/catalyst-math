@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:06.771
+A square root reverses squaring, with one important convention: the square-root symbol chooses the nonnegative answer
+
+00:00:06.771 --> 00:00:15.133
+A square with twenty five unit cells has side length five, so the principal square root of twenty five is five.
+
+00:00:16.433 --> 00:00:19.646
+Solving a squared equation asks a different question
+
+00:00:19.646 --> 00:00:24.064
+Both positive five and negative five produce twenty five when squared
+
+00:00:24.064 --> 00:00:32.900
+The graph crosses the height twenty five twice, so the equation has two real solutions although the principal root has one value.
+
+00:00:34.200 --> 00:00:37.331
+To simplify a radical, extract a perfect-square factor
+
+00:00:37.331 --> 00:00:43.986
+Eighteen is nine times two, so its square root is three times the square root of two
+
+00:00:43.986 --> 00:00:47.900
+Splitting a product this way is valid for nonnegative factors.
+
+00:00:49.200 --> 00:00:55.737
+The principal root must stay nonnegative even when its input was formed by squaring a negative number
+
+00:00:55.737 --> 00:01:02.275
+Therefore the square root of x squared is the absolute value of x, not always x itself
+
+00:01:02.275 --> 00:01:04.967
+Negative radicands have no real square root.

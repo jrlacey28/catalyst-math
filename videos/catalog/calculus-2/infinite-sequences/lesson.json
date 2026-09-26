@@ -1,0 +1,103 @@
+{
+  "id": "calculus-2.infinite-sequences",
+  "beats": [
+    {
+      "formula": "a_n=frac(1,n), quad a_n arrow.r 0",
+      "text": "A sequence assigns an output to each positive integer index. For one over n, the terms get closer to zero as the index grows. Convergence means eventually staying within any chosen positive distance of a single limiting value.",
+      "visual": {
+        "kind": "sequence",
+        "values": [
+          1,
+          0.5,
+          0.3333333333,
+          0.25,
+          0.2,
+          0.1666666667,
+          0.1428571429,
+          0.125
+        ],
+        "limit": 0
+      }
+    },
+    {
+      "formula": "a_n=(-1)^n",
+      "text": "Being bounded is not enough. These terms alternate between negative one and positive one, so they never settle near a single value. Different subsequences approach different destinations, preventing convergence of the complete sequence.",
+      "visual": {
+        "kind": "sequence",
+        "values": [
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1,
+          -1,
+          1
+        ]
+      }
+    },
+    {
+      "formula": "a_n=3-frac(1,n), quad a_n arrow.r 3",
+      "text": "This sequence increases toward three and never rises above it. A monotone sequence bounded in the direction of its movement converges. Here the explicit formula also identifies the limit, because one over n approaches zero.",
+      "visual": {
+        "kind": "sequence",
+        "values": [
+          2,
+          2.5,
+          2.6666666667,
+          2.75,
+          2.8,
+          2.8333333333,
+          2.8571428571
+        ],
+        "limit": 3
+      }
+    },
+    {
+      "formula": "a_(n+1)=frac(a_n+2,2), quad a_1=0",
+      "text": "A recurrence can define a sequence without an explicit formula. Starting at zero, repeatedly average the current term with two. The gap from two halves at every step, which both explains convergence and identifies its limit.",
+      "visual": {
+        "kind": "sequence",
+        "values": [
+          0,
+          1,
+          1.5,
+          1.75,
+          1.875,
+          1.9375,
+          1.96875
+        ],
+        "limit": 2
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find the limit of a_n=(5n+2)/n. Show a simplification that separates the persistent part from the vanishing part.",
+      "answer": "a_n=5+2/n. Since 2/n→0, the limit is 5.",
+      "id": "calculus-2.infinite-sequences.video-practice-1"
+    },
+    {
+      "prompt": "Does a_n=(−1)^n/n converge? Explain why alternating signs do not prevent convergence in this case.",
+      "answer": "Yes, it converges to 0. Its magnitude is 1/n→0, so −1/n≤a_n≤1/n and the squeeze theorem applies.",
+      "id": "calculus-2.infinite-sequences.video-practice-2"
+    },
+    {
+      "prompt": "Let a_1=4 and a_(n+1)=(a_n+10)/2. Compute the next three terms and justify the limiting value.",
+      "answer": "The next terms are 7, 8.5, and 9.25. The distance from 10 halves each time, so a_n→10.",
+      "id": "calculus-2.infinite-sequences.video-practice-3"
+    }
+  ],
+  "takeaway": "Convergence means settling near one value; monotonicity with a bound or a shrinking error can establish it.",
+  "scope": "Explicit sequences, oscillation, a monotone convergence example, and a contracting recurrence.",
+  "course": "Calculus II",
+  "course_id": "calculus-2",
+  "title": "Infinite sequences",
+  "objective": "Define convergence of sequences and compare growth rates.",
+  "index": 6,
+  "total": 8,
+  "prerequisites": [
+    "precalculus.sequences-series",
+    "calculus-1.limits"
+  ]
+}

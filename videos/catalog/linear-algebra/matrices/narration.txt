@@ -1,0 +1,7 @@
+A matrix can describe a linear transformation. Its columns tell us where the standard basis vectors go. This matrix leaves the horizontal basis vector fixed and sends the vertical basis vector to one, one, producing a shear.
+
+Any vector is a combination of the basis vectors, so its image is the same combination of their images. One copy of the first column plus two copies of the second gives three, two. Matrix multiplication encodes this geometric rule.
+
+A product of matrices composes transformations from right to left. First B doubles the horizontal coordinate, sending one, one to two, one. Then the shear A sends that intermediate vector to three, one.
+
+Reversing the order gives a different result. Shearing first sends one, one to two, one, and doubling horizontally afterward gives four, one. Matrix products generally do not commute, and their dimensions must also be compatible before multiplication.

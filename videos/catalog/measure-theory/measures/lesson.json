@@ -1,0 +1,105 @@
+{
+  "id": "measure-theory.measures",
+  "beats": [
+    {
+      "formula": "mu(A)>=0, quad mu(emptyset)=0",
+      "text": "A measure assigns nonnegative size to allowed sets and assigns zero to the empty set. The allowed sets form a sigma algebra, closed under complements and countable unions. This specifies which events or regions can be measured consistently.",
+      "visual": {
+        "kind": "sets",
+        "left": [
+          "a",
+          "b"
+        ],
+        "right": [
+          "c",
+          "d"
+        ],
+        "both": [],
+        "highlight": "union"
+      }
+    },
+    {
+      "formula": "mu(A union B)=mu(A)+mu(B) \" when disjoint\"",
+      "text": "For disjoint measurable sets, sizes add. With four equally likely outcomes, a two-outcome event has probability one half and its two-outcome complement has probability one half. Their union has probability one. Probability is a measure with total size one.",
+      "visual": {
+        "kind": "grid",
+        "rows": 2,
+        "cols": 2,
+        "filled": 2,
+        "secondary": 2
+      }
+    },
+    {
+      "formula": "mu([0,1])=1, quad mu({0.5})=0",
+      "text": "Different measures describe different notions of size. Lebesgue measure on the line agrees with interval length. A singleton has length zero even though it is not empty. Counting measure, by contrast, assigns that singleton size one.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -0.2,
+          1.2
+        ],
+        "interval": [
+          0,
+          1
+        ],
+        "points": [
+          0.5
+        ],
+        "labels": [
+          "nonempty singleton"
+        ]
+      }
+    },
+    {
+      "formula": "mu(QQ)=0",
+      "text": "Countable additivity implies that a countable union of zero-length singletons still has measure zero. The rational numbers therefore have Lebesgue measure zero, although they are dense. The few rational points drawn are only an illustration of that countable-set argument.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          1
+        ],
+        "points": [
+          0,
+          0.2,
+          0.25,
+          0.333333333333,
+          0.5,
+          0.666666666667,
+          0.75,
+          0.8,
+          1
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "With six equally likely outcomes, compute the probability measure of an event containing two outcomes and its complement.",
+      "answer": "The event has measure 2/6=1/3, and its complement has measure 4/6=2/3.",
+      "id": "measure-theory.measures.video-practice-1"
+    },
+    {
+      "prompt": "Compare the Lebesgue measure and counting measure of {1,2,3}.",
+      "answer": "Lebesgue measure is 0 because the set is a finite union of zero-length singletons. Counting measure is 3.",
+      "id": "measure-theory.measures.video-practice-2"
+    },
+    {
+      "prompt": "Why does a dense set need not have positive Lebesgue measure? Give a specific example and the reason.",
+      "answer": "The rational numbers are dense yet countable. Each singleton has Lebesgue measure zero and countable additivity gives measure zero for their union. Density is about proximity, not length.",
+      "id": "measure-theory.measures.video-practice-3"
+    }
+  ],
+  "takeaway": "A null set can be nonempty; the meaning of size depends on the chosen measure.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Measure theory",
+  "course_id": "measure-theory",
+  "title": "Measures and measurable sets",
+  "objective": "Construct sigma-algebras and measures and distinguish null sets from empty sets.",
+  "index": 1,
+  "total": 3,
+  "prerequisites": [
+    "real-analysis.real-numbers",
+    "proof-foundations.relations-functions"
+  ]
+}

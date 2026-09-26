@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "The real numbers cannot solve x squared equals negative one. Introduce i with i squared equal to negative one. A complex number a plus b i can be drawn at the point a, b: real part across, imaginary part upward.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "Add complex numbers component by component. Two plus i, added to one plus two i, gives three plus three i. The arrows in the plane add just like coordinate displacements.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.0,
+    "duration": 17.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "Multiplying by i rotates a point ninety degrees counterclockwise about the origin. One becomes i, i becomes negative one, and another two quarter turns return to one. This picture agrees with the powers of i.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.0,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "For general multiplication, distribute and then replace i squared by negative one. One plus i, squared, gives one plus two i plus i squared, which simplifies to two i. Keep real and imaginary terms separate while collecting them.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.0,
+    "duration": 17.5,
+    "audio": "audio_parts/04.wav"
+  }
+]

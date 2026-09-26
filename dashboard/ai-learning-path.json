@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "title": "Teach a rover to recognize a rock",
+  "subtitle": "Follow the numbers from a first measurement to a learning model.",
+  "purpose": "One tiny project connects arithmetic, algebra, linear algebra, calculus and probability. Change the inputs, inspect every calculation, and train the actual models running in your browser.",
+  "dataset_note": "Eight invented, labeled surface patches: four rocks and four sand patches. Brightness and texture are supplied features, not features extracted from real images. The illustrations are diagrams. This exercise shows mathematical mechanisms; its training scores do not demonstrate real-world rock recognition, calibration or generalization.",
+  "scaling_note": "Use the fixed transform x₁=(brightness−128)/128 and x₂=(texture−50)/50. These centers and scales are chosen for the measurement ranges; they are not estimates of the dataset mean and standard deviation.",
+  "stages": [
+    {
+      "id": "features", "title": "Turn a patch into numbers", "short_title": "Features", "topic_id": "arithmetic.ratios",
+      "purpose": "A model can only use information represented as numbers. Choose what to measure, then give those measurements manageable scales.",
+      "plain": "Brightness is measured on a 0–255 scale; texture on a 0–100 scale. Centering and dividing express each as a signed, unitless feature. One patch becomes a two-number vector. Its label is a separate target: rock=1, sand=0.",
+      "formula": "x = [(brightness − 128)/128, (texture − 50)/50]",
+      "worked": [
+        {"equation": "R1: brightness=64, texture=75, target y=1", "why": "These are the observed measurements and the supplied label. The label is not an input feature."},
+        {"equation": "x₁=(64−128)/128=−64/128=−0.5", "why": "This patch is darker than the chosen reference brightness. The negative feature is meaningful, not an error."},
+        {"equation": "x₂=(75−50)/50=25/50=0.5", "why": "Its texture is above the chosen reference by half the texture scale."},
+        {"equation": "x=[−0.5,0.5]", "why": "Keep the feature order fixed. Every later weight and matrix column depends on this order."}
+      ],
+      "try": ["Load R1, then change only brightness from 64 to 128. Watch x₁ reach zero while x₂ stays fixed.","Load S1 and compare its position with R1. Which sign describes brightness and which describes texture?"],
+      "challenge": {"prompt":"Brightness changes from 64 to 128 while texture remains 75. What is the new feature vector?","choices":["[0, 0.5]","[0.5, 0]","[128, 75]"],"answer":0,"feedback":["Yes. Subtracting the reference makes x₁=0; the unchanged texture still gives x₂=0.5.","The coordinates have different jobs. Brightness is first, so its change affects x₁, not x₂.","Those are raw measurements. Apply the centering and division before passing them into this model."]},
+      "reflection":"Why would changing the order or scale of the inputs without changing the weights alter a model's behavior?",
+      "prerequisite_ids":["number-sense.multiplication-division","arithmetic.fractions","arithmetic.decimals","arithmetic.negative-numbers","arithmetic.ratios","pre-algebra.coordinate-plane"],"source_ids":[]
+    },
+    {
+      "id":"weighted-sum","title":"Build one weighted score","short_title":"Weighted sum","topic_id":"linear-algebra.vectors",
+      "purpose":"A weight tells how much one feature changes the score. A bias shifts the whole rule. Together they form the simplest useful prediction model.",
+      "plain":"Multiply each feature by its matching weight and add the contributions. This is a dot product plus a bias. For a batch, the same calculation is matrix multiplication Xw+b: every row of X is a patch, and every column keeps the same feature meaning.",
+      "formula":"z = w₁x₁ + w₂x₂ + b = w · x + b",
+      "worked":[
+        {"equation":"R1: x=[−0.5,0.5]; w=[0.4,0.6]; b=0.2","why":"The two weights align with brightness and texture in that order."},
+        {"equation":"Brightness contribution=0.4(−0.5)=−0.2","why":"A positive weight multiplied by a negative feature contributes a negative amount."},
+        {"equation":"Texture contribution=0.6(0.5)=0.3","why":"Keep the multiplication separate so you can see where each part of the score came from."},
+        {"equation":"z=−0.2+0.3+0.2=0.3","why":"The bias is added once. This raw score has no restriction to the interval from zero to one."}
+      ],
+      "try":["Keep R1 selected. Move w₁ upward: x₁ is negative, so what happens to the score?","Set a weight to zero. Which feature stops contributing? Then change the bias and compare all eight scores."],
+      "challenge":{"prompt":"For R1, increase w₁ from 0.4 to 0.8 while keeping w₂=0.6 and b=0.2. What happens to z?","choices":["It rises from 0.3 to 0.5.","It falls from 0.3 to 0.1.","It stays 0.3."],"answer":1,"feedback":["The feature x₁ is −0.5. An increase in its weight adds a negative contribution here.","Yes. The extra 0.4 in w₁ contributes 0.4×(−0.5)=−0.2, taking the score from 0.3 to 0.1.","The brightness feature is nonzero, so changing its weight changes the score."]},
+      "reflection":"Explain the difference between an input feature, a learned weight and a bias. Which one does training change?",
+      "prerequisite_ids":["pre-algebra.variables","pre-algebra.expressions","algebra-1.functions","linear-algebra.vectors","linear-algebra.matrices"],"source_ids":[]
+    },
+    {
+      "id":"loss","title":"Make the error measurable","short_title":"Prediction & loss","topic_id":"statistics-basics.variance",
+      "purpose":"Training needs a numerical objective. A loss turns predictions and supplied targets into a quantity the model can try to reduce.",
+      "plain":"First treat the raw score as a numerical prediction of the 0/1 label. Squared error makes both positive and negative mistakes contribute positively. Average all eight squared errors to obtain the mean squared error, or MSE. This is a simple teaching baseline, not yet a probability model.",
+      "formula":"errorᵢ = zᵢ − yᵢ; L = (1/8) Σ (zᵢ − yᵢ)²",
+      "worked":[
+        {"equation":"R1 at the initial weights: prediction z=0.3, target y=1","why":"The prediction is too small for this labeled rock patch."},
+        {"equation":"error=0.3−1=−0.7","why":"The sign describes the direction of the error."},
+        {"equation":"Squared error=(−0.7)²=0.49","why":"Squaring prevents positive and negative errors from canceling in a sum."},
+        {"equation":"Batch loss=(loss₁+⋯+loss₈)/8","why":"One improved patch is not enough. Training compares the model against every labeled row in the batch."}
+      ],
+      "try":["Change the bias until R1's prediction is near 1. Check whether the sand predictions got worse.","Compare a residual of magnitude 0.2 with one of magnitude 0.4. The latter contributes four times as much squared error."],
+      "challenge":{"prompt":"Two predictions have errors −0.3 and +0.3. What is their mean squared error?","choices":["0, because the errors cancel.","0.3, because both errors have that magnitude.","0.09, because each squared error is 0.09."],"answer":2,"feedback":["The signed errors cancel, but the loss squares each error before averaging.","That would be the mean absolute error. This stage uses squared errors.","Yes. ((−0.3)²+0.3²)/2=(0.09+0.09)/2=0.09."]},
+      "reflection":"Why can a change improve one patch's prediction while increasing the average loss?",
+      "prerequisite_ids":["arithmetic.exponents","statistics-basics.center","statistics-basics.variance","algebra-1.graphing"],"source_ids":["optimization"]
+    },
+    {
+      "id":"gradients","title":"Let a derivative choose the next change","short_title":"Gradient descent","topic_id":"multivariable.partial-derivatives",
+      "purpose":"A gradient measures how the loss changes with each parameter. Take a controlled step in the opposite direction, then recompute the predictions and loss.",
+      "plain":"For one squared error, the chain rule gives 2(z−y)x₁ as the derivative with respect to w₁. Average these derivatives across all eight rows. Training updates all three parameters using their own partial derivatives. The plotted curve holds the other parameters fixed only to make one slice visible.",
+      "formula":"∂L/∂wⱼ = (2/8) Σ (zᵢ−yᵢ)xᵢⱼ; θnew = θold − η∇L",
+      "worked":[
+        {"equation":"For R1 initially: z−y=−0.7 and x₁=−0.5","why":"Use the current prediction error and the feature attached to the weight."},
+        {"equation":"∂(R1 squared error)/∂w₁=2(−0.7)(−0.5)=0.7","why":"The outer square contributes 2(z−y), and the inner weighted sum contributes x₁."},
+        {"equation":"∂L/∂w₁ is the average of eight such terms","why":"The full-batch objective uses all labeled patches, so its derivative must also use them all."},
+        {"equation":"If the batch derivative were +0.4 and η=0.1: w₁,new=w₁,old−0.04","why":"A positive derivative suggests decreasing the parameter locally. The learning rate controls the step size; this last pair of numbers is an illustration of the update rule."}
+      ],
+      "try":["Take one actual update. Read the old parameter, averaged gradient and new parameter before trying ten updates.","Reset, choose a different learning rate and compare the loss history. A larger step is not a universal guarantee of better training."],
+      "challenge":{"prompt":"A parameter is 0.6, its current batch gradient is −0.4, and η=0.1. What is the descent update?","choices":["0.64","0.56","−0.04"],"answer":0,"feedback":["Yes. 0.6−0.1(−0.4)=0.64. Subtracting a negative gradient increases this parameter.","That moves in the gradient direction. Descent subtracts the gradient, including its sign.","−0.04 is η times the gradient. Subtract that change from the old value to obtain the new parameter."]},
+      "reflection":"Why is the direction of a gradient different from the current prediction error on one patch?",
+      "prerequisite_ids":["algebra-1.slope","calculus-1.derivatives","calculus-1.chain-rule","multivariable.partial-derivatives","optimization.unconstrained"],"source_ids":["optimization"]
+    },
+    {
+      "id":"probability","title":"Turn a score into a classifier probability","short_title":"Probability","topic_id":"probability.random-variables",
+      "purpose":"For a two-class target, convert an unrestricted score to a number from zero to one and use a loss designed for labeled probabilities.",
+      "plain":"The sigmoid maps z to a model probability p for rock. A probability of 0.5 sits at score zero. Binary cross-entropy penalizes a confident wrong prediction sharply. Its logit derivative is p−y, so this classifier can learn with the same gradient-descent loop but a different loss and derivative.",
+      "formula":"p=1/(1+e⁻ᶻ); ℓ=−[y ln(p)+(1−y)ln(1−p)]",
+      "worked":[
+        {"equation":"If z=0, p=1/(1+1)=0.5","why":"A zero logit lies at the midpoint of the sigmoid."},
+        {"equation":"For a rock target y=1: ℓ=−ln(p)","why":"The term multiplied by 1−y disappears for this label."},
+        {"equation":"At p=0.5, ℓ≈0.693; at p=0.9, ℓ≈0.105","why":"A larger probability assigned to the true label reduces log loss."},
+        {"equation":"∂ℓ/∂z=p−y; ∂L/∂w₁=average[(p−y)x₁]","why":"Combining sigmoid and cross-entropy simplifies the chain-rule expression. The browser computes the loss from logits in a numerically stable form."}
+      ],
+      "try":["Move the bias and watch z move along the sigmoid. A large score change near saturation produces only a small probability change.","Train the logistic model and inspect the labeled rows. These are training results, not held-out validation or evidence of real-world reliability."],
+      "challenge":{"prompt":"For a true rock label y=1, which prediction has the largest binary cross-entropy loss?","choices":["p=0.9","p=0.5","p=0.1"],"answer":2,"feedback":["This assigns high probability to the true class and has a relatively small loss of about 0.105.","This is uncertain, with loss about 0.693, but it is less wrong than assigning only 0.1 to the true class.","Yes. −ln(0.1)≈2.303, much larger than −ln(0.5) or −ln(0.9)."]},
+      "reflection":"Why is a model probability of 0.9 not automatically proof that this system is correct 90% of the time?",
+      "prerequisite_ids":["arithmetic.percentages","algebra-2.exponentials","algebra-2.logarithms","probability.random-variables","probability.conditional-probability","statistics.sampling"],"source_ids":["bce"]
+    },
+    {
+      "id":"network","title":"Follow a chain through a tiny neural network","short_title":"A small network","topic_id":"calculus-1.chain-rule",
+      "purpose":"Compose weighted sums with nonlinear functions. The output then depends on earlier weights through several intermediate quantities, making the chain rule the mechanism of learning.",
+      "plain":"Two hidden neurons each calculate a weighted sum and pass it through tanh, which maps real inputs into (−1,1). The output combines those hidden values and applies sigmoid. Backpropagation multiplies the local derivatives along each route, then adds contributions where routes meet. The live derivative follows one weight u₁₁ all the way to the probability. This small dataset is already linearly separable; the network is here to expose composition, not to claim that more parameters are needed or automatically better.",
+      "formula":"a=Ux+c; h=tanh(a); z=v·h+d; p=sigmoid(z)",
+      "worked":[
+        {"equation":"a₁=u₁₁x₁+u₁₂x₂+c₁, then h₁=tanh(a₁)","why":"The first hidden value depends on the first input weight through a weighted sum and a nonlinear activation."},
+        {"equation":"z=v₁h₁+v₂h₂+d, then p=sigmoid(z)","why":"The output combines both hidden values before producing its probability."},
+        {"equation":"∂p/∂u₁₁=p(1−p) × v₁ × (1−h₁²) × x₁","why":"Multiply the derivative of each link in the route u₁₁→a₁→h₁→z→p."},
+        {"equation":"For a labeled patch: ∂ℓ/∂u₁₁=(p−y)v₁(1−h₁²)x₁","why":"With binary cross-entropy, the output sigmoid/loss derivative simplifies to p−y. Training averages this across all eight patches."},
+        {"equation":"Nine parameters are updated together","why":"Four input weights, two hidden biases, two output weights and one output bias each receive their own derivative."}
+      ],
+      "try":["Select R1 and inspect the four factors in ∂p/∂u₁₁. Change u₁₁ and see the intermediate values change.","Train ten steps, then inspect every connection's actual weight. Hidden neurons start differently so their routes do not remain identical."],
+      "challenge":{"prompt":"For the route u₁₁→a₁→h₁→z→p, what happens to ∂p/∂u₁₁ when x₁=0?","choices":["It must equal 1.","It is 0 for this patch.","It is the same as p."],"answer":1,"feedback":["The local derivative of a₁ with respect to u₁₁ is x₁. A zero factor makes the route's derivative zero.","Yes. u₁₁x₁ contributes nothing when x₁=0, and the displayed chain has an x₁ factor. Other patches may still provide a nonzero training gradient.","The output probability and its sensitivity to one parameter are different quantities."]},
+      "reflection":"Explain why one patch can give a zero gradient for a particular weight even while the whole training batch changes that weight.",
+      "prerequisite_ids":["algebra-1.functions","linear-algebra.matrices","calculus-1.product-quotient-rule","calculus-1.chain-rule","multivariable.partial-derivatives","algebra-2.exponentials"],"source_ids":["tanh","bce","optimization"]
+    },
+    {
+      "id":"attention","title":"Choose how much each patch contributes","short_title":"Attention extension","topic_id":"linear-algebra.matrices",
+      "purpose":"Reuse dot products, exponentials and weighted sums to make a context vector. This is the mathematical core of one attention query, not a complete transformer.",
+      "plain":"A two-number query is compared with three patch keys. Scale their dot products by √2, then softmax converts the scores into nonnegative weights summing to one. Weight and add the patch value vectors. Here keys and values are the fixed normalized features; learned query/key/value projections, multiple heads, token positions and a trained transformer are outside this demo.",
+      "formula":"scores=qKᵀ/√2; α=softmax(scores); context=αV",
+      "worked":[
+        {"equation":"One query q and three keys k₁,k₂,k₃, each with two coordinates","why":"The dot product compares matching coordinates; dₖ=2 is the key dimension used in the scale."},
+        {"equation":"sⱼ=(q·kⱼ)/√2","why":"Scaled dot-product attention divides the dot products by the square root of key dimension."},
+        {"equation":"αⱼ=exp(sⱼ)/Σexp(sₖ)","why":"Exponentials make positive scores for normalization; dividing by their total makes the weights sum to one. Computation subtracts the largest score first to avoid overflow without changing the result."},
+        {"equation":"If q=[0,0], every sⱼ=0 and every αⱼ=1/3","why":"Equal comparison scores produce equal attention weights."},
+        {"equation":"context=α₁v₁+α₂v₂+α₃v₃","why":"A weighted sum combines the value vectors. Its coordinates remain within the corresponding values' ranges because the weights are nonnegative and sum to one."}
+      ],
+      "try":["Set the query to [0,0] and verify the one-third weights. Then favor darker, more textured features using a negative first coordinate and a positive second coordinate.","Reverse both query signs. See how the contribution bars and context change even though the patch features stay fixed."],
+      "challenge":{"prompt":"Add the same constant 10 to all three scores before softmax. What happens to the attention weights?","choices":["They all increase by 10.","They become one-third each.","They stay the same."],"answer":2,"feedback":["Softmax weights must still sum to one. Adding a constant to scores does not add that constant to weights.","Only equal scores produce equal weights. A shared shift preserves their differences.","Yes. The factor exp(10) appears in every numerator and the denominator, then cancels. This also explains the stable max-subtraction computation."]},
+      "reflection":"Why should an attention weight not be interpreted as the probability that a patch's rock label is correct?",
+      "prerequisite_ids":["linear-algebra.vectors","linear-algebra.matrices","arithmetic.roots","algebra-2.exponentials","arithmetic.fractions","probability.expectation"],"source_ids":["attention","attention-paper"]
+    }
+  ],
+  "foundation_path": [
+    {"title":"1. Numbers, units and expressions","scope":"Used directly","why":"Measure features, normalize ranges, track signs, and read formulas in their intended order.","topic_ids":["number-sense.counting","number-sense.place-value","number-sense.addition-subtraction","number-sense.multiplication-division","number-sense.order-of-operations","arithmetic.fractions","arithmetic.decimals","arithmetic.percentages","arithmetic.ratios","arithmetic.proportions","arithmetic.negative-numbers","arithmetic.exponents","arithmetic.roots","pre-algebra.variables","pre-algebra.expressions"]},
+    {"title":"2. Functions, coordinates and linear algebra","scope":"Used directly","why":"Represent a data row as a vector, predictions as functions, and a batch of weighted sums as a matrix operation.","topic_ids":["pre-algebra.basic-functions","pre-algebra.coordinate-plane","algebra-1.linear-equations","algebra-1.functions","algebra-1.slope","algebra-1.graphing","linear-algebra.vectors","linear-algebra.matrices","linear-algebra.linear-systems","linear-algebra.vector-spaces"]},
+    {"title":"3. Error, derivatives and optimization","scope":"Used directly","why":"Average errors, square deviations, differentiate composed functions and update many parameters through partial derivatives.","topic_ids":["statistics-basics.center","statistics-basics.variance","calculus-1.limits","calculus-1.derivatives","calculus-1.product-quotient-rule","calculus-1.chain-rule","multivariable.partial-derivatives","optimization.unconstrained"]},
+    {"title":"4. Probability and model evaluation","scope":"Probability is demonstrated; inference needs further study","why":"Read classifier probabilities and likelihood losses, then learn how sampling, uncertainty and separate evaluation data govern real evidence.","topic_ids":["statistics-basics.standard-deviation","statistics-basics.distributions","statistics-basics.basic-probability","algebra-2.exponentials","algebra-2.logarithms","probability.counting","probability.conditional-probability","probability.random-variables","probability.distributions","probability.expectation","statistics.sampling","statistics.estimation","statistics.regression","statistics.confidence-intervals","statistics.statistical-inference"]}
+  ],
+  "beyond": [
+    {"title":"Geometry of high-dimensional data","why":"Eigenvectors, covariance geometry, PCA and singular-value decompositions explain useful data directions. The two-feature demo does not teach PCA or SVD.","topic_ids":["linear-algebra.eigenvalues","linear-algebra.eigenvectors","statistics-basics.correlation","linear-algebra.vector-spaces"]},
+    {"title":"Optimization beyond a small gradient step","why":"Convexity, curvature, constraints, regularization and numerical stability explain when algorithms work and where they can fail. No convergence guarantee for a general neural network is established here.","topic_ids":["optimization.convexity","optimization.constrained","numerical-analysis.error-stability","multivariable.partial-derivatives"]},
+    {"title":"Probability beyond two classes","why":"Bayesian inference, continuous densities, expectations, entropy and KL divergence underpin many ML methods. Binary log loss is only one entry point; entropy and KL are not taught by this walkthrough.","topic_ids":["probability.bayes-theorem","probability.distributions","probability.expectation","multivariable.multiple-integrals","statistics.hypothesis-testing"]},
+    {"title":"Algorithms, graphs and scientific computing","why":"Discrete structures and algorithm analysis support graph models, efficient training and reproducible computation. The toy network is a computational graph but does not cover these subjects in depth.","topic_ids":["discrete-math.logic","discrete-math.graph-theory","discrete-math.algorithms","numerical-analysis.linear-ode-methods"]}
+  ],
+  "sources": [
+    {"id":"optimization","title":"PyTorch: Optimizing Model Parameters","url":"https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html","supports":"The loss, gradient and parameter-update loop; learning-rate effects and the distinction between training and separate evaluation."},
+    {"id":"bce","title":"PyTorch: BCEWithLogitsLoss","url":"https://docs.pytorch.org/docs/stable/generated/torch.nn.BCEWithLogitsLoss.html","supports":"Sigmoid with binary cross-entropy and numerically stable computation from logits."},
+    {"id":"tanh","title":"PyTorch: Tanh","url":"https://docs.pytorch.org/docs/stable/generated/torch.nn.Tanh.html","supports":"The tanh activation definition. The chain-rule derivatives in this lesson are derived for the displayed two-neuron model."},
+    {"id":"attention","title":"PyTorch: scaled dot-product attention","url":"https://docs.pytorch.org/docs/stable/generated/torch.nn.functional.scaled_dot_product_attention.html","supports":"Dot products scaled by the square root of key dimension, softmax weights and multiplication by value vectors; this demo uses no mask or dropout."},
+    {"id":"attention-paper","title":"Vaswani et al. (2017): Attention Is All You Need","url":"https://papers.nips.cc/paper_files/paper/2017/hash/3f5ee243547dee91fbd053c1c4a845aa-Abstract.html","supports":"The Transformer attention architecture as the larger context for the final mathematical extension."}
+  ]
+}

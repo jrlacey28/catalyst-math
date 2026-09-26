@@ -1,0 +1,104 @@
+[
+  {
+    "formula": "c=3n",
+    "text": "A variable names a quantity so we can describe a relationship without choosing its value immediately. If each notebook costs three dollars, n can count notebooks and c can describe the corresponding cost in dollars.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        3,
+        3
+      ],
+      "labels": [
+        "notebook",
+        "notebook"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "n=4 arrow.r c=3 times 4=12",
+    "text": "Once an input is supplied, substitution makes the rule concrete. Four notebooks means replace n with four everywhere it appears. Three times four gives twelve dollars; the letter was a placeholder for the quantity, not an extra operation.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "labels": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "3n=21 arrow.r n=7",
+    "text": "Sometimes the output is known instead. A bill of twenty one dollars creates an equation whose unknown is the notebook count. Seven groups of three fill that total, so solving recovers seven notebooks.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "labels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "n=0,1,2,3,...",
+    "text": "The situation restricts which values make sense. A notebook count uses nonnegative whole numbers, even though the formula can be evaluated at other real inputs. Naming a variable should include its meaning, units, and allowed values.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        -1,
+        6
+      ],
+      "points": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "labels": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

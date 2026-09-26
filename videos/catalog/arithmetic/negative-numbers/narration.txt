@@ -1,0 +1,7 @@
+A signed number locates a position relative to zero. Starting at negative four and adding seven means moving seven units right, finishing at three. The sign tells direction, while the magnitude tells how far away the number is.
+
+Subtraction adds the opposite movement. Subtracting seven from three moves seven units left and returns to negative four. This rule works even when subtraction crosses zero; negative answers still describe meaningful positions.
+
+Subtracting a negative reverses a leftward movement, so it moves right. Three minus negative two becomes three plus two. Read which minus sign performs subtraction and which belongs to a signed number before combining them.
+
+The sign rule for multiplication also preserves distribution. Negative two times the zero quantity three minus three must equal zero. Expanding gives negative six plus the product of negative two and negative three, forcing that second product to be positive six.

@@ -1,0 +1,7 @@
+Congruence means two integers differ by a multiple of the modulus. Fourteen and two differ by twelve, so they represent the same remainder class. We can add and multiply classes consistently, but division needs an extra condition.
+
+Seven is invertible modulo twelve because forty-nine leaves remainder one. Its inverse is therefore seven itself. This works because seven and twelve have greatest common divisor one; an arbitrary nonzero remainder need not be invertible.
+
+Multiply the congruence seven x equals five by the inverse seven. The left side becomes x and the right becomes thirty-five, equivalent to eleven. Checking seven times eleven gives seventy-seven, whose remainder modulo twelve is five.
+
+Modulo six, every product of two with an integer has an even remainder. It can never equal the odd remainder one. A failed inverse does not permit formal cancellation; depending on the target, a congruence may have no solutions or several.

@@ -1,0 +1,7 @@
+A useful integration technique recognizes the structure that differentiation would create. Here the outside is a power, the inside is x squared plus two, and the nearby factor two x is exactly the inside's derivative.
+
+Name the inside u. The entire combination two x times d x becomes d u, so the integral becomes u cubed with respect to u. This substitution reverses the chain rule; it does not simply delete an inconvenient factor.
+
+Integrating u cubed gives u to the fourth divided by four, plus a constant. Substitute the original inside back into the answer. Differentiating this result recreates both the outer cube and the required factor two x.
+
+Products may call for integration by parts, the reverse of the product rule. Choose u equal to x and d v equal to exponential x d x. Subtracting the remaining exponential integral gives an answer you can verify by differentiating.

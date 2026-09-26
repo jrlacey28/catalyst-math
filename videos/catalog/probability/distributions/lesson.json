@@ -1,0 +1,128 @@
+{
+  "id": "probability.distributions",
+  "beats": [
+    {
+      "formula": "P(X=0)=0.2, quad P(X=1)=0.3, quad P(X=2)=0.5",
+      "text": "A probability distribution specifies how probability is allocated across possible values. In a discrete distribution, probabilities are nonnegative and add to one. These three bars assign one fifth, three tenths, and one half to zero, one, and two.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0.2,
+          0.3,
+          0.5
+        ],
+        "labels": [
+          "0",
+          "1",
+          "2"
+        ]
+      }
+    },
+    {
+      "formula": "P(X=1)=frac(3,8) \"for three fair coin tosses\"",
+      "text": "A binomial model counts successes across a fixed number of independent trials with the same success probability. For three fair tosses, exactly one head can occur in three positions, each with probability one eighth, giving three eighths altogether.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0.125,
+          0.375,
+          0.375,
+          0.125
+        ],
+        "labels": [
+          "0 heads",
+          "1 head",
+          "2 heads",
+          "3 heads"
+        ]
+      }
+    },
+    {
+      "formula": "f(x)=frac(1,2), quad 0<=x<=2",
+      "text": "A continuous distribution uses density, whose area gives probability. Uniform density one half from zero to two has total area one. An interval of length one inside this range has probability one half, regardless of where it lies.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -0.2,
+          2.3
+        ],
+        "y": [
+          0,
+          1
+        ],
+        "curves": [
+          {
+            "f": "0.5",
+            "color": "blue",
+            "domain": [
+              0,
+              2
+            ]
+          }
+        ],
+        "shade": [
+          0.5,
+          1.5
+        ]
+      }
+    },
+    {
+      "formula": "4 times frac(1,4)=1",
+      "text": "Density is not a point probability and may exceed one. Uniform density four on an interval of length one quarter still has total probability one. Any single exact point has probability zero in this continuous model because its interval width is zero.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          0.5
+        ],
+        "y": [
+          0,
+          5
+        ],
+        "curves": [
+          {
+            "f": "4",
+            "color": "gold",
+            "domain": [
+              0,
+              0.25
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          0.25
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "A discrete variable takes values 0,1,2 with probabilities 0.1,0.25,0.65. Verify that this is a valid distribution and find P(X≥1).",
+      "answer": "All probabilities are nonnegative and sum to 1. P(X≥1)=0.25+0.65=0.9.",
+      "id": "probability.distributions.video-practice-1"
+    },
+    {
+      "prompt": "Four independent fair coins are tossed. Find the probability of exactly one head, explaining the number of supporting outcomes.",
+      "answer": "The head can occupy any of four positions, each outcome having probability 1/16. The probability is 4/16=1/4.",
+      "id": "probability.distributions.video-practice-2"
+    },
+    {
+      "prompt": "X is uniform on [0,5]. Find its density, P(1≤X≤3), and P(X=2). Explain why the last two answers differ.",
+      "answer": "Density is 1/5. The interval has length 2, so its probability is 2/5. A single point has zero width and probability 0; density at that point is not its probability.",
+      "id": "probability.distributions.video-practice-3"
+    }
+  ],
+  "takeaway": "Discrete probabilities are masses; continuous probabilities are areas under a density, with assumptions defining the model.",
+  "scope": "Discrete probability mass, a binomial example, and uniform continuous density.",
+  "course": "Probability",
+  "course_id": "probability",
+  "title": "Probability distributions",
+  "objective": "Use Bernoulli, binomial, normal, and other models with explicit assumptions.",
+  "index": 5,
+  "total": 6,
+  "prerequisites": [
+    "probability.random-variables",
+    "algebra-2.exponentials"
+  ]
+}

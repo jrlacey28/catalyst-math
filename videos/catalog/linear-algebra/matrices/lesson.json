@@ -1,0 +1,130 @@
+{
+  "id": "linear-algebra.matrices",
+  "beats": [
+    {
+      "formula": "A=mat(1,1;0,1)",
+      "text": "A matrix can describe a linear transformation. Its columns tell us where the standard basis vectors go. This matrix leaves the horizontal basis vector fixed and sends the vertical basis vector to one, one, producing a shear.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "A(1,2)=1(1,0)+2(1,1)=(3,2)",
+      "text": "Any vector is a combination of the basis vectors, so its image is the same combination of their images. One copy of the first column plus two copies of the second gives three, two. Matrix multiplication encodes this geometric rule.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            2
+          ]
+        ],
+        "matrix": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "B=mat(2,0;0,1), quad A B(1,1)=(3,1)",
+      "text": "A product of matrices composes transformations from right to left. First B doubles the horizontal coordinate, sending one, one to two, one. Then the shear A sends that intermediate vector to three, one.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            2,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "B A(1,1)=(4,1), quad A B != B A",
+      "text": "Reversing the order gives a different result. Shearing first sends one, one to two, one, and doubling horizontally afterward gives four, one. Matrix products generally do not commute, and their dimensions must also be compatible before multiplication.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            2,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For A=[[1,2],[-1,1]], calculate A(2,1) by combining columns.",
+      "answer": "2(1,−1)+1(2,1)=(4,−1). This agrees with the row-by-column calculation.",
+      "id": "linear-algebra.matrices.video-practice-1"
+    },
+    {
+      "prompt": "A rotation matrix is R=[[0,−1],[1,0]]. Find R(1,0) and R(0,1), then describe the rotation.",
+      "answer": "The images are (0,1) and (−1,0). This is a counterclockwise quarter-turn about the origin.",
+      "id": "linear-algebra.matrices.video-practice-2"
+    },
+    {
+      "prompt": "A is 2×3 and B is 3×4. Give the size of AB and explain whether BA is defined.",
+      "answer": "AB is 2×4 because the inner dimensions 3 match. BA would require 4=2, which is false, so BA is not defined.",
+      "id": "linear-algebra.matrices.video-practice-3"
+    }
+  ],
+  "takeaway": "Matrix columns describe basis images, and matrix multiplication composes compatible transformations in order.",
+  "scope": "A geometric shear, vector multiplication, composition order, and dimensions.",
+  "course": "Linear algebra",
+  "course_id": "linear-algebra",
+  "title": "Matrices",
+  "objective": "Represent linear maps, multiply compatibly, and interpret matrix columns.",
+  "index": 2,
+  "total": 6,
+  "prerequisites": [
+    "linear-algebra.vectors",
+    "algebra-1.systems"
+  ]
+}

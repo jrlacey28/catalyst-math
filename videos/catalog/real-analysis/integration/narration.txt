@@ -1,0 +1,7 @@
+To define area rigorously, trap it between quantities already understood. Divide the interval into equal pieces. For an increasing function, the left endpoint gives a lower rectangle height and the right endpoint gives an upper height.
+
+With four pieces, each rectangle has width one quarter. The four lower heights are zero, one quarter, one half, and three quarters. Their sum times the shared width gives three eighths as the lower estimate.
+
+For n equal pieces, summing the endpoint heights gives these upper and lower expressions. Their difference is one over n. As the partition gets finer, the entire uncertainty shrinks to zero, trapping the integral at one half.
+
+The finite pictures motivate the argument; the shrinking bound proves the result. More generally, a bounded function is Riemann integrable when partitions can make upper and lower sums arbitrarily close. Not every bounded function meets that condition.

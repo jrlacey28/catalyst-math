@@ -1,0 +1,107 @@
+{
+  "id": "discrete-math.sets",
+  "beats": [
+    {
+      "formula": "A={1,2,3}, quad B={3,4,5}",
+      "text": "A set records membership without counting repeated copies or imposing an order. These two sets share the element three. The overlap shows shared membership, while the separate regions contain elements belonging to only one of the sets.",
+      "visual": {
+        "kind": "sets",
+        "left": [
+          "1",
+          "2"
+        ],
+        "right": [
+          "4",
+          "5"
+        ],
+        "both": [
+          "3"
+        ]
+      }
+    },
+    {
+      "formula": "A ∩ B={3}",
+      "text": "Intersection keeps only elements that satisfy both membership conditions. Three belongs to A and to B, so it remains. The word and corresponds to the overlap, helping us translate between set notation and logical conditions.",
+      "visual": {
+        "kind": "sets",
+        "left": [
+          "1",
+          "2"
+        ],
+        "right": [
+          "4",
+          "5"
+        ],
+        "both": [
+          "3"
+        ],
+        "highlight": "intersection"
+      }
+    },
+    {
+      "formula": "abs(A union B)=3+3-1=5",
+      "text": "Union includes elements belonging to at least one set. Adding the two set sizes counts three twice, so subtract the overlap once. There are five distinct elements in the union; this correction prevents double counting.",
+      "visual": {
+        "kind": "sets",
+        "left": [
+          "1",
+          "2"
+        ],
+        "right": [
+          "4",
+          "5"
+        ],
+        "both": [
+          "3"
+        ],
+        "highlight": "union"
+      }
+    },
+    {
+      "formula": "\"disjoint sets have no shared elements\"",
+      "text": "When sets are disjoint, their intersection is empty and no overlap correction is needed for their union's size. Complements require another ingredient: a specified universe, because not in A only has meaning relative to the objects under consideration.",
+      "visual": {
+        "kind": "sets",
+        "left": [
+          "1",
+          "2"
+        ],
+        "right": [
+          "3",
+          "4"
+        ],
+        "both": [],
+        "highlight": "union"
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For A={2,4,6} and B={4,6,8}, find A∩B and A∪B. Check the union size by inclusion-exclusion.",
+      "answer": "A∩B={4,6}; A∪B={2,4,6,8}. The count is 3+3−2=4.",
+      "id": "discrete-math.sets.video-practice-1"
+    },
+    {
+      "prompt": "Using those sets, find A\\B. Explain why it differs from the intersection.",
+      "answer": "A\\B={2}, keeping elements in A that are not in B. The intersection instead keeps the shared elements 4 and 6.",
+      "id": "discrete-math.sets.video-practice-2"
+    },
+    {
+      "prompt": "Let U={1,2,3,4,5,6,7,8} and A={2,4,6}. Find the complement of A in U and explain why specifying U is necessary.",
+      "answer": "U\\A={1,3,5,7,8}. Changing the universe changes which nonmembers are available, so a complement is relative to U.",
+      "id": "discrete-math.sets.video-practice-3"
+    }
+  ],
+  "takeaway": "Set operations combine membership conditions; overlap and the chosen universe determine the correct counts.",
+  "scope": "Membership, intersection, union, disjointness, difference, and a relative complement.",
+  "course": "Discrete mathematics",
+  "course_id": "discrete-math",
+  "title": "Sets",
+  "objective": "Use membership, inclusion, unions, intersections, products, and functions.",
+  "index": 2,
+  "total": 6,
+  "prerequisites": [
+    "discrete-math.logic",
+    "algebra-1.functions"
+  ]
+}

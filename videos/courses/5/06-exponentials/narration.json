@@ -1,0 +1,26 @@
+[
+  {
+    "title": "phase_0",
+    "text": "Linear growth adds the same amount each step. Exponential growth multiplies by the same factor. Starting with two and multiplying by one and a half gives two, three, four and a half, and six and three quarters.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_1",
+    "text": "In a times b to the t, a is the initial value at time zero and b is the per-step factor. A factor of one point five means a fifty percent increase, not a one point five percent increase.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_2",
+    "text": "A factor between zero and one gives decay. Multiplying by one half repeatedly halves the amount. Zero exponent gives one, so the initial value remains a; negative exponents reverse the multiplication.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_3",
+    "text": "For a rate r expressed as a decimal, growth uses one plus r and decay uses one minus r. Check the time unit: a monthly rate and a yearly exponent do not belong in the same model without conversion.",
+    "min_duration": 17,
+    "tail": 1.0
+  }
+]

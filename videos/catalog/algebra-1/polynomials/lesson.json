@@ -1,0 +1,112 @@
+{
+  "id": "algebra-1.polynomials",
+  "beats": [
+    {
+      "formula": "(x+1)^2=(x+1)(x+1)",
+      "text": "A polynomial is built from sums of constant multiples of nonnegative whole-number powers. When a sum is squared, the entire sum multiplies itself. This partitioned square lets us account for every product instead of relying on a memorized shortcut.",
+      "visual": {
+        "kind": "tiles",
+        "a": 2,
+        "b": 1,
+        "labels": [
+          "x^2",
+          "x",
+          "x",
+          "1"
+        ]
+      }
+    },
+    {
+      "formula": "(x+1)^2=x^2+x+x+1=x^2+2x+1",
+      "text": "The large square contributes x squared, the two rectangular strips each contribute x, and the small corner contributes one. Both strips are necessary. Their combined area explains the middle term that disappears if we incorrectly square only the endpoints.",
+      "visual": {
+        "kind": "tiles",
+        "a": 2,
+        "b": 1,
+        "labels": [
+          "x^2",
+          "x",
+          "x",
+          "1"
+        ]
+      }
+    },
+    {
+      "formula": "(x+h)^2=x^2+2x h+h^2",
+      "text": "Replace the small side one by a changing amount h. The same geometric partition gives two rectangles of area x times h and one square of area h squared. The identity remains algebraically valid for all real x and h.",
+      "visual": {
+        "kind": "tiles",
+        "a": 2,
+        "b": 0.7,
+        "labels": [
+          "x^2",
+          "x h",
+          "x h",
+          "h^2"
+        ]
+      }
+    },
+    {
+      "formula": "frac((x+h)^2-x^2,h)=2x+h quad h!=0",
+      "text": "Subtracting x squared leaves the cross terms and the small square. Both remaining terms share a factor h, so dividing by nonzero h gives two x plus h. This exact rewrite becomes a key step in the calculus difference quotient.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          3
+        ],
+        "y": [
+          -6,
+          7
+        ],
+        "curves": [
+          {
+            "f": "2*x+0.5",
+            "color": "blue",
+            "domain": [
+              -3,
+              3
+            ]
+          },
+          {
+            "f": "2*x+0.1",
+            "color": "gold",
+            "domain": [
+              -3,
+              3
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Expand (u+5)² and identify both cross products.",
+      "answer": "u²+5u+5u+25=u²+10u+25.",
+      "id": "algebra-1.polynomials.video-practice-1"
+    },
+    {
+      "prompt": "Expand (2t+1)(t+4), showing every product.",
+      "answer": "2t²+8t+t+4=2t²+9t+4.",
+      "id": "algebra-1.polynomials.video-practice-2"
+    },
+    {
+      "prompt": "For h≠0, simplify ((7+h)²−49)/h and explain why division is valid.",
+      "answer": "The numerator is14h+h²=h(14+h), so the quotient is14+h when h≠0.",
+      "id": "algebra-1.polynomials.video-practice-3"
+    }
+  ],
+  "takeaway": "Distribute every factor to every term; common factors enable valid simplification.",
+  "scope": "Binomial products, cross terms, and difference-quotient preparation.",
+  "course": "Algebra I",
+  "course_id": "algebra-1",
+  "title": "Polynomials and binomial expansion",
+  "objective": "Multiply every term by every term and recognize the middle term of a square.",
+  "index": 7,
+  "total": 10,
+  "prerequisites": [
+    "pre-algebra.expressions",
+    "arithmetic.exponents"
+  ]
+}

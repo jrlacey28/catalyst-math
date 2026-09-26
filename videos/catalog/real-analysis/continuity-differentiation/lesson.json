@@ -1,0 +1,204 @@
+{
+  "id": "real-analysis.continuity-differentiation",
+  "beats": [
+    {
+      "formula": "f(x)=x^2, quad x in [1,3]",
+      "text": "The mean value theorem links an average change to an instantaneous rate. Its hypotheses matter: the function must be continuous on the closed interval and differentiable throughout the interior. Our square function satisfies both requirements.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          4
+        ],
+        "y": [
+          0,
+          10
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              0,
+              3.1
+            ]
+          }
+        ],
+        "points": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "segments": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              9
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "frac(f(3)-f(1),3-1)=4",
+      "text": "The secant slope is nine minus one divided by three minus one, giving four. The theorem guarantees some interior input where the tangent slope is also four. It does not usually claim that input is the midpoint.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          4
+        ],
+        "y": [
+          0,
+          10
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              0,
+              3.1
+            ]
+          },
+          {
+            "f": "4*x-3",
+            "color": "gold",
+            "domain": [
+              1,
+              3
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "formula": "f'(c)=2c=4 arrow.r c=2",
+      "text": "Here the derivative is two x, so solving for slope four gives c equals two. The tangent line through two, four is four x minus four. Its parallel direction makes the average and local rates visually comparable.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0.5,
+          3.5
+        ],
+        "y": [
+          0,
+          10
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              0.5,
+              3.1
+            ]
+          },
+          {
+            "f": "4*x-4",
+            "color": "pink",
+            "domain": [
+              1,
+              3
+            ]
+          },
+          {
+            "f": "4*x-3",
+            "color": "gold",
+            "domain": [
+              1,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            2,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "f(x)=abs(x), quad x in [-1,1]",
+      "text": "Absolute value is continuous, but the corner at zero is not differentiable. Its endpoint secant slope is zero, while its existing interior derivatives are negative or positive one. Dropping a hypothesis destroys the promised conclusion.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1.5,
+          1.5
+        ],
+        "y": [
+          -0.2,
+          1.5
+        ],
+        "curves": [
+          {
+            "f": "abs(x)",
+            "color": "blue",
+            "domain": [
+              -1.5,
+              1.5
+            ]
+          }
+        ],
+        "segments": [
+          [
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        "points": [
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Apply the mean value theorem to f(x)=x² on [2,6]. Find the promised c.",
+      "answer": "The average slope is (36−4)/4=8. Solve 2c=8, obtaining c=4 in (2,6). The polynomial meets both hypotheses.",
+      "id": "real-analysis.continuity-differentiation.video-practice-1"
+    },
+    {
+      "prompt": "For f(x)=x³ on [0,3], find all interior c satisfying the theorem's equation.",
+      "answer": "The secant slope is 27/3=9. Since f′(c)=3c², c=√3 is the only solution in (0,3).",
+      "id": "real-analysis.continuity-differentiation.video-practice-2"
+    },
+    {
+      "prompt": "Explain why the theorem cannot be applied to 1/x on [−1,1], even though endpoint values exist.",
+      "answer": "The function is undefined at zero, so it is not continuous on the closed interval or differentiable throughout the interior. Endpoint values alone do not meet the hypotheses.",
+      "id": "real-analysis.continuity-differentiation.video-practice-3"
+    }
+  ],
+  "takeaway": "The mean value theorem requires continuity on the closed interval and differentiability inside.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Real analysis",
+  "course_id": "real-analysis",
+  "title": "Continuity and differentiation",
+  "objective": "Prove continuity and derivative theorems with explicit hypotheses.",
+  "index": 3,
+  "total": 5,
+  "prerequisites": [
+    "real-analysis.sequences-limits",
+    "calculus-1.derivatives"
+  ]
+}

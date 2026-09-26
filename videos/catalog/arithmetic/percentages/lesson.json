@@ -1,0 +1,92 @@
+{
+  "id": "arithmetic.percentages",
+  "beats": [
+    {
+      "formula": "35%=frac(35,100)=0.35",
+      "text": "Percent means per hundred, so thirty five percent shades thirty five of these hundred equal cells. The percentage alone is a relative amount. Its actual size depends on the whole to which it refers.",
+      "visual": {
+        "kind": "grid",
+        "rows": 10,
+        "cols": 10,
+        "filled": 35
+      }
+    },
+    {
+      "formula": "35% \"of\" 60=0.35 times 60=21",
+      "text": "To find thirty five percent of sixty, multiply the whole sixty by the fraction thirty five hundredths. The result is twenty one. Keep track of which quantity is the whole and which quantity is the part.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          60,
+          21
+        ],
+        "labels": [
+          "whole",
+          "part"
+        ]
+      }
+    },
+    {
+      "formula": "60 times (1+0.25)=75",
+      "text": "A twenty five percent increase keeps the original whole and adds a quarter of it. The combined factor is one point two five, taking sixty to seventy five. This factor form makes repeated percentage changes easier to track.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          60,
+          15,
+          75
+        ],
+        "labels": [
+          "start",
+          "increase",
+          "result"
+        ]
+      }
+    },
+    {
+      "formula": "75 times (1-0.20)=60",
+      "text": "Dropping from seventy five back to sixty is a twenty percent decrease, because the new comparison whole is seventy five. Equal absolute changes can have different percentages; always name the starting amount used as the denominator.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          75,
+          15,
+          60
+        ],
+        "labels": [
+          "start",
+          "decrease",
+          "result"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find thirty percent of ninety and identify the whole.",
+      "answer": "0.30×90=27; the whole is ninety.",
+      "id": "arithmetic.percentages.video-practice-1"
+    },
+    {
+      "prompt": "A price of eighty five increases by twenty percent. Find the new price.",
+      "answer": "85×1.20=102.",
+      "id": "arithmetic.percentages.video-practice-2"
+    },
+    {
+      "prompt": "A count rises from seventy five to ninety. Find its percentage increase and explain the denominator.",
+      "answer": "The increase is fifteen; 15/75=20%. The original seventy five is the comparison whole.",
+      "id": "arithmetic.percentages.video-practice-3"
+    }
+  ],
+  "takeaway": "A percentage change compares its difference with a specified starting whole.",
+  "scope": "Percent equivalence, parts of a whole, and changing percentage bases.",
+  "course": "Arithmetic",
+  "course_id": "arithmetic",
+  "title": "Percentages",
+  "objective": "Relate percent, fraction, and decimal; solve increase and decrease problems.",
+  "index": 3,
+  "total": 8,
+  "prerequisites": [
+    "arithmetic.decimals"
+  ]
+}

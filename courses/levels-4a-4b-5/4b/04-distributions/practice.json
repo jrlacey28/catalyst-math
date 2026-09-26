@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4B-04",
+  "batches": [
+    [
+      {
+        "id": "4B-04-P1",
+        "prompt": "Bins have counts 2, 5, 3. How many observations are represented?"
+      },
+      {
+        "id": "4B-04-P2",
+        "prompt": "A bin contains 6 of 24 observations. Find its relative frequency."
+      },
+      {
+        "id": "4B-04-P3",
+        "prompt": "Most observations are small, with a few extremely large ones. Which skew direction is suggested?"
+      }
+    ],
+    [
+      {
+        "id": "4B-04-P4",
+        "prompt": "Name four features to consider when describing a distribution."
+      },
+      {
+        "id": "4B-04-P5",
+        "prompt": "A histogram bin [10,20) has count 7. What does that tell you?"
+      },
+      {
+        "id": "4B-04-P6",
+        "prompt": "Can two distributions share a mean but have different spreads? Give an example."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

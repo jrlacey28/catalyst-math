@@ -1,0 +1,190 @@
+[
+  {
+    "formula": "frac(1,1-z)=sum_(n=0)^infinity z^n, quad abs(z)<1",
+    "text": "Inside the unit disk, a geometric power series equals one divided by one minus z. Multiplying a finite partial sum by one minus z leaves one minus a small remainder. The condition on absolute value makes that remainder vanish.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -0.8,
+        0.8
+      ],
+      "y": [
+        0,
+        5
+      ],
+      "curves": [
+        {
+          "f": "1/(1-x)",
+          "color": "blue",
+          "domain": [
+            -0.8,
+            0.8
+          ]
+        },
+        {
+          "f": "1+x+x*x",
+          "color": "gold",
+          "domain": [
+            -0.8,
+            0.8
+          ]
+        },
+        {
+          "f": "1+x+x*x+x**3+x**4",
+          "color": "pink",
+          "domain": [
+            -0.8,
+            0.8
+          ]
+        }
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 18.366666666666667,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "f(z)=frac(1,z(z-2))",
+    "text": "Near a singularity, a Laurent expansion may also contain negative powers. The coefficient of one over z is called the residue at zero. For this simple pole, multiply by z and evaluate the remaining continuous factor at zero.",
+    "visual": {
+      "kind": "plane",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "vectors": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 18.366666666666667,
+    "duration": 17.466666666666665,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "\"Residue at zero\"=frac(1,0-2)=-frac(1,2)",
+    "text": "The residue at zero is negative one half. Around the positively oriented unit circle, zero lies inside and the other pole, two, lies outside. The residue theorem gives two pi i times the enclosed residue, hence negative pi i.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1.5,
+        2.5
+      ],
+      "y": [
+        -1.5,
+        1.5
+      ],
+      "curves": [
+        {
+          "f": "sqrt(1-x*x)",
+          "color": "blue",
+          "domain": [
+            -1,
+            1
+          ]
+        },
+        {
+          "f": "-sqrt(1-x*x)",
+          "color": "blue",
+          "domain": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "labels": [
+        "inside pole",
+        "outside pole"
+      ],
+      "equal": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 35.83333333333333,
+    "duration": 17.7,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "\"Residues\"=-frac(1,2)+frac(1,2)=0",
+    "text": "A counterclockwise circle of radius three encloses both simple poles. Their residues cancel, so that contour integral is zero. The rule assumes isolated singularities inside and none on the contour; a path through a pole requires different treatment.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3.5,
+        3.5
+      ],
+      "y": [
+        -3.5,
+        3.5
+      ],
+      "curves": [
+        {
+          "f": "sqrt(9-x*x)",
+          "color": "green",
+          "domain": [
+            -3,
+            3
+          ]
+        },
+        {
+          "f": "-sqrt(9-x*x)",
+          "color": "green",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "labels": [
+        "-1/2",
+        "+1/2"
+      ],
+      "equal": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 53.53333333333333,
+    "duration": 18.466666666666665,
+    "audio": "audio_parts/04.wav"
+  }
+]

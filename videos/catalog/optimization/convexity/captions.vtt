@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:06.022
+A convex function lies at or below every chord joining two points on its graph
+
+00:00:06.022 --> 00:00:14.267
+This is a statement about all mixtures of two inputs, not simply about a graph looking bowl shaped in a particular drawing.
+
+00:00:15.567 --> 00:00:18.032
+Take inputs negative one and three
+
+00:00:18.032 --> 00:00:22.140
+Their midpoint is one, where the square function equals one
+
+00:00:22.140 --> 00:00:25.837
+The midpoint of their two output values is five
+
+00:00:25.837 --> 00:00:30.767
+The lower function value illustrates the convexity inequality for this particular pair.
+
+00:00:32.067 --> 00:00:37.875
+A convex feasible set contains the whole segment between any two of its points
+
+00:00:37.875 --> 00:00:39.950
+An interval has this property
+
+00:00:39.950 --> 00:00:47.833
+Keeping mixtures feasible is crucial when using a convex objective to compare a nearby candidate with a distant alternative.
+
+00:00:49.133 --> 00:00:54.643
+For a convex objective on a convex set, every local minimum is global
+
+00:00:54.643 --> 00:01:02.271
+If a lower point existed, convexity would give lower values along the segment arbitrarily near the supposed minimum
+
+00:01:02.271 --> 00:01:06.933
+That contradiction explains the conclusion; a plotted example alone would not.

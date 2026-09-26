@@ -1,0 +1,7 @@
+A limit describes nearby outputs, even when the input itself is missing. This quotient is undefined at one because its denominator is zero. The graph can still approach a definite height from both sides.
+
+Factor the entire numerator as x minus one times x plus one. For nearby inputs other than one, the shared factor is nonzero, so its ratio equals one. Cancelling factors preserves these nearby values.
+
+The simpler expression approaches two as x approaches one. Therefore the original quotient has limit two, although it has no value at one. Taking a limit and assigning a function value are different operations.
+
+Both sides must agree for a two-sided limit. Absolute x divided by x equals negative one on the left and positive one on the right. These different destination heights prevent a two-sided limit at zero.

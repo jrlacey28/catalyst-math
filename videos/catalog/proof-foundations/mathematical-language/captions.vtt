@@ -1,0 +1,40 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:02.683
+Quantifiers say who gets chosen first
+
+00:00:02.683 --> 00:00:07.250
+For every real number x, there exists a larger real number y
+
+00:00:07.250 --> 00:00:14.100
+The choice of y may depend on x; it need not be one number that works for everybody.
+
+00:00:15.400 --> 00:00:20.531
+Choose an arbitrary real x, then define y as x plus one
+
+00:00:20.531 --> 00:00:24.808
+Subtracting x leaves the true inequality one greater than zero
+
+00:00:24.808 --> 00:00:30.367
+This single argument covers every x, rather than merely checking the displayed examples.
+
+00:00:31.667 --> 00:00:33.227
+Now reverse the order
+
+00:00:33.227 --> 00:00:37.128
+One fixed y would have to exceed every real x
+
+00:00:37.128 --> 00:00:41.809
+After that y is chosen, choose x equal to y plus one
+
+00:00:41.809 --> 00:00:46.100
+The proposed universal inequality fails, so the reversed statement is false.
+
+00:00:47.400 --> 00:00:50.653
+Negating an all statement requires one counterexample
+
+00:00:50.653 --> 00:00:54.836
+Negating a some statement requires that every candidate fail
+
+00:00:54.836 --> 00:01:03.667
+Keep the allowed universe fixed: changing from integers to positive integers can change whether the same sentence is true.

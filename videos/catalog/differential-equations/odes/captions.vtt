@@ -1,0 +1,40 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.200
+A differential equation specifies a rate in terms of the unknown quantity
+
+00:00:05.200 --> 00:00:08.800
+Here the rate is negative twice the current value
+
+00:00:08.800 --> 00:00:16.000
+Starting at three, a positive solution decreases quickly at first and more slowly as its value approaches zero.
+
+00:00:17.300 --> 00:00:22.174
+For a positive candidate solution, divide by y and integrate
+
+00:00:22.174 --> 00:00:32.409
+The derivative of the logarithm is y prime divided by y, so the logarithm equals negative twice time plus a constant
+
+00:00:32.409 --> 00:00:35.333
+Positivity justifies this particular logarithm expression.
+
+00:00:36.633 --> 00:00:39.826
+Exponentiating gives a constant times the exponential
+
+00:00:39.826 --> 00:00:43.475
+The initial value sets that constant to three
+
+00:00:43.475 --> 00:00:52.142
+Differentiate the proposed formula to check the rate equation, and substitute time zero separately to check the initial condition
+
+00:00:52.142 --> 00:00:53.967
+Both checks are necessary.
+
+00:00:55.267 --> 00:00:59.682
+The final formula also works for negative initial values
+
+00:00:59.682 --> 00:01:07.041
+The identically zero solution must be checked directly because dividing by y excluded it earlier
+
+00:01:07.041 --> 00:01:14.400
+Every real initial value approaches the zero equilibrium, illustrating stability for this particular linear equation.

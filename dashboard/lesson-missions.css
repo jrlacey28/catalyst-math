@@ -1,0 +1,81 @@
+.lesson-mission,.mission-directory{--mission-ink:#254538;--mission-muted:#566f64;color:var(--mission-ink)}
+.lesson-mission{margin:26px 0;padding:27px;border:1px solid #d5e1d4;border-radius:18px;background:#f8faf4}
+.lesson-mission [hidden],.mission-directory [hidden]{display:none!important}
+.mission-eyebrow{display:block;font-size:10px;letter-spacing:1.3px;font-weight:750;color:#526e54;margin-bottom:9px}
+.mission-intro h2,.mission-directory h2{font-size:clamp(23px,2.8vw,31px);line-height:1.18;letter-spacing:-.8px}
+.mission-intro>p,.mission-directory header>p{font-size:14px;line-height:1.7;color:var(--mission-muted);margin-top:11px;max-width:900px}
+.mission-scope{padding:11px 14px;border-left:3px solid #af91c3;background:#f0ebf6;font-size:12px!important}
+.mission-task{margin-top:23px}
+.mission-task label{display:block;font-size:14px;line-height:1.7;color:#355747}
+.mission-task label>span{display:block;color:#466747;font-size:11px;font-weight:750;text-transform:uppercase;letter-spacing:.8px;margin-bottom:7px}
+.mission-task textarea{display:block;width:100%;min-height:80px;resize:vertical;padding:12px 14px;background:#fff;border:1px solid #cbdcc8;border-radius:9px;color:#294d3b;font:inherit;font-size:14px;line-height:1.65;margin-top:10px}
+.mission-task textarea::placeholder{color:#687e6b}
+.mission-explore{margin-top:23px;border:1px solid #c9dbca;border-radius:12px;background:#fff;overflow:hidden}
+.mission-explore>summary{cursor:pointer;display:flex;justify-content:space-between;gap:18px;padding:17px 19px;font-size:14px;font-weight:650;color:#315c47;background:#e8f0df;list-style:none}
+.mission-explore>summary::-webkit-details-marker{display:none}
+.mission-explore[open]>summary{border-bottom:1px solid #d0dfca}
+.mission-task-copy{padding:17px 20px;font-size:13px;line-height:1.7;color:#526e5d}
+.mission-model-grid{display:grid;grid-template-columns:minmax(0,1fr) 255px;border-top:1px solid #edf1e8}
+.mission-figure{margin:0;min-width:0;padding:11px 8px 12px;background:#f7f9f4}
+.mission-figure:focus-visible{outline:3px solid #49a78f;outline-offset:-3px}
+.mission-scroll-note{display:none;font-size:11px;color:#526e5d;padding:0 15px 12px}
+.mission-figure svg{display:block;width:100%;height:auto;font-family:Segoe UI,system-ui,sans-serif;overflow:visible}
+.mission-figure figcaption{font-size:12px;line-height:1.7;color:#526b5c;padding:8px 15px 0}
+.mission-controls{padding:20px 17px;border-left:1px solid #e0e8db;background:#fff}
+.mission-controls h3{font-size:14px;margin-bottom:15px}
+.mission-control{display:grid;grid-template-columns:1fr 87px;align-items:center;gap:7px 9px;margin:15px 0}
+.mission-control label{font-size:12px;line-height:1.4;font-weight:620;min-width:0}
+.mission-control label small{display:block;color:#60755e;font-weight:400;font-size:10px;margin-top:2px}
+.mission-control input[type=number]{width:100%;padding:7px 6px;border:1px solid #ccdcca;border-radius:6px;background:#fcfdf9;color:#315942;font-size:12px}
+.mission-control input[type=range]{grid-column:1/-1;width:100%;accent-color:#518168;min-height:26px;margin:0}
+.mission-presets{display:flex;flex-wrap:wrap;gap:5px}
+.mission-presets button{font-size:10px;min-height:30px;padding:6px 8px;border:1px solid #cbdaca;background:#edf4e7;color:#3d634b;border-radius:6px}
+.mission-presets button:hover{background:#dfead9}
+.mission-model-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.mission-audio-status{font-size:11px;color:#5f745e;line-height:1.6;margin-top:10px}
+.mission-readouts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#e2e9dc;border-top:1px solid #dbe5d3;border-bottom:1px solid #dbe5d3}
+.mission-readouts>div{padding:15px 18px;background:#f2f6eb;min-width:0}
+.mission-readouts span{display:block;font-size:10px;color:#5d7359;margin-bottom:7px}
+.mission-readouts strong{display:block;font-size:17px;font-weight:650;line-height:1.4;overflow-wrap:anywhere}
+.mission-equations{padding:14px 20px;display:grid;gap:7px;background:#fbfcf8}
+.mission-equations p{font-family:Cambria,Georgia,serif;font-size:17px;line-height:1.6;color:#496e50;overflow-wrap:anywhere}
+.mission-data{padding:0 20px 16px}
+.mission-data summary,.mission-assumptions summary{cursor:pointer;font-size:12px;font-weight:650;padding:12px 0;color:#466848}
+.mission-data table{border-collapse:collapse;width:100%;font-size:12px;margin-top:5px}
+.mission-data caption{text-align:left;font-size:11px;color:#5e735d;margin:7px 0 11px}
+.mission-data td,.mission-data th{padding:8px;text-align:left;border-bottom:1px solid #dfe7d8;line-height:1.5;font-weight:400}
+.mission-data th{font-weight:600;width:48%}
+.mission-save-note,.mission-evidence-note{font-size:11px;color:#5d7157;line-height:1.6;margin-top:8px}
+.mission-clue{margin:19px 0}
+.mission-clue>p{font-size:13px;line-height:1.75;border-left:3px solid #c6aa62;padding:12px 16px;margin-top:12px;background:#faf3df;color:#766039}
+.mission-assumptions{border-top:1px solid #dbe4d4;border-bottom:1px solid #dbe4d4;padding:0 2px}
+.mission-assumptions ul{padding:0 0 5px 19px;margin:4px 0;font-size:12px;line-height:1.8;color:#586f5c}
+.mission-assumptions li{margin:7px 0}
+.mission-sources{font-size:11px;line-height:1.8;margin:10px 0 15px;color:#586f5c}
+.mission-sources a{text-decoration:underline;text-underline-offset:3px}
+.mission-prereqs{display:flex;flex-wrap:wrap;gap:8px 15px;font-size:11px;margin-top:17px;line-height:1.8}
+.mission-prereqs>span{font-weight:650;color:#58704f}
+.mission-prereqs a{text-decoration:underline;text-underline-offset:3px;color:#4e7558}
+.mission-status{font-size:12px;line-height:1.7;color:#4d7056;margin-top:14px}
+.mission-evidence-note{margin-top:15px}
+.mission-directory{margin-bottom:30px;padding:27px;border:1px solid #d7e2d1;border-radius:17px;background:#f5f8ef}
+.mission-worlds{display:flex;gap:7px;flex-wrap:wrap;margin:22px 0}
+.mission-worlds button{padding:10px 12px;border:1px solid #d0ddc9;border-radius:8px;font-size:12px;line-height:1.4;color:#496549;background:#fff}
+.mission-worlds button[aria-pressed=true]{background:#365e46;border-color:#365e46;color:#fff}
+.mission-directory-filters{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:16px}
+.mission-directory-filters label{font-size:11px;font-weight:650;color:#536b4e}
+.mission-directory-filters input,.mission-directory-filters select{display:block;width:100%;font-size:13px;color:#345540;padding:10px 13px;background:#fff;border:1px solid #cadac3;border-radius:8px;margin-top:6px}
+.mission-count{font-size:12px;color:#586f53;margin:15px 0}
+.mission-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;margin-bottom:16px}
+.mission-card{border:1px solid #d5e1d1;border-radius:12px;background:#fff;padding:20px;display:flex;flex-direction:column;gap:10px}
+.mission-card:hover{border-color:#87ab81;box-shadow:0 4px 14px #34583310}
+.mission-card>span{font-size:10px;color:#5e735b;line-height:1.5}
+.mission-card h3{font-size:16px;line-height:1.4}
+.mission-card p{font-size:12px;line-height:1.7;color:#5b705d;flex:1}
+.mission-card strong{font-size:11px;color:#436847;margin-top:3px}
+.mission-card.mission-world-orbit{background:#eef1fa}.mission-card.mission-world-rocket{background:#f8efe3}.mission-card.mission-world-signal{background:#f2edf8}.mission-card.mission-world-camera{background:#eaf4f5}.mission-card.mission-world-energy{background:#f5f3df}.mission-card.mission-world-network{background:#edf4e8}
+.mission-loading,.mission-empty{font-size:13px;line-height:1.7;color:#5d755c;padding:20px}.mission-empty a{text-decoration:underline}
+.lesson-mission summary:focus-visible,.mission-directory summary:focus-visible{outline:3px solid #49a78f;outline-offset:-3px}
+@media(max-width:1150px){.mission-model-grid{grid-template-columns:1fr}.mission-controls{border-left:0;border-top:1px solid #e0e8db;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}.mission-controls h3,.mission-presets,.mission-model-actions,.mission-audio-status{grid-column:1/-1}.mission-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.mission-control{margin:10px 0}.mission-figure svg{max-height:490px}}
+@media(max-width:620px){.lesson-mission,.mission-directory{padding:19px 14px;border-radius:12px}.mission-model-grid{display:block}.mission-controls{padding:16px;grid-template-columns:1fr}.mission-figure{overflow:auto}.mission-figure svg{min-width:540px}.mission-scroll-note{display:block}.mission-readouts{grid-template-columns:repeat(2,minmax(0,1fr))}.mission-readouts>div{padding:12px}.mission-readouts strong{font-size:15px}.mission-cards,.mission-directory-filters{grid-template-columns:1fr}.mission-card{padding:18px}.mission-presets button{min-height:36px}.mission-worlds button{min-height:42px}.mission-equations{padding:13px}.mission-equations p{font-size:16px}.mission-data{padding:0 12px 13px}.mission-explore>summary{padding:15px 13px}.mission-task-copy{padding:15px 13px}}
+@media(prefers-reduced-motion:reduce){.lesson-mission *,.mission-directory *{transition:none!important;scroll-behavior:auto!important}}

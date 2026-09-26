@@ -1,0 +1,54 @@
+[
+  {
+    "beat": 1,
+    "start": 0.0,
+    "duration": 18.5,
+    "formula": "P(S \" next\" | S \" now\")=0.8",
+    "visual": "network",
+    "bounds": [
+      -2.65,
+      2.65,
+      -3.15,
+      2.15
+    ]
+  },
+  {
+    "beat": 2,
+    "start": 18.5,
+    "duration": 18.966666666666818,
+    "formula": "P(S \" after two\" | S \" now\")=0.8^2+0.2*0.4=0.72",
+    "visual": "network",
+    "bounds": [
+      -2.65,
+      2.65,
+      -3.15,
+      2.15
+    ]
+  },
+  {
+    "beat": 3,
+    "start": 37.46666666666682,
+    "duration": 16.699999999999832,
+    "formula": "p=0.8p+0.4(1-p) arrow.r p=frac(2,3)",
+    "visual": "bars",
+    "bounds": [
+      -5.7,
+      5.7,
+      -2.1732018568484346,
+      1.173201856848435
+    ]
+  },
+  {
+    "beat": 4,
+    "start": 54.16666666666665,
+    "duration": 20.199999999999825,
+    "formula": "frac(2,3)0.8+frac(1,3)0.4=frac(2,3)",
+    "visual": "network",
+    "bounds": [
+      -2.65,
+      2.65,
+      -3.15,
+      2.15
+    ]
+  }
+]

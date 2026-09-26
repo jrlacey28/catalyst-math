@@ -1,0 +1,87 @@
+[
+  {
+    "formula": "3 times 2=6",
+    "text": "Counting becomes easier when we organize choices. Three shirt choices and two trouser choices create six outfits because every shirt can pair with every trouser. The grid represents the independent stages of the choice, not probabilities by itself.",
+    "visual": {
+      "kind": "grid",
+      "rows": 3,
+      "cols": 2,
+      "filled": 6
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "4 times 3=12",
+    "text": "Now choose a first and second person from four distinct people, without repetition. There are four possibilities first and three afterward. The twelve ordered selections distinguish who was chosen first, so swapping the same two people creates another outcome.",
+    "visual": {
+      "kind": "grid",
+      "rows": 4,
+      "cols": 3,
+      "filled": 12
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "frac(4 times 3,2)=6",
+    "text": "If we only want a two-person committee, order no longer matters. Each unordered pair was counted twice, once in each order, so divide by two. The six edges connecting four labeled people represent the six distinct committees.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "\"ordered with repetition\": quad 4^2=16",
+    "text": "Allowing repetition changes the count again. A two-position code with four symbols has four choices at each position, making sixteen possibilities. Before choosing a formula, decide whether order matters and whether a chosen object can be used again.",
+    "visual": {
+      "kind": "grid",
+      "rows": 4,
+      "cols": 4,
+      "filled": 16
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

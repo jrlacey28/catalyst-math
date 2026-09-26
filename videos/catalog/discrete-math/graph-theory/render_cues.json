@@ -1,0 +1,54 @@
+[
+  {
+    "beat": 1,
+    "start": 0.0,
+    "duration": 17.799999999999997,
+    "formula": "V={A,B,C,D}, quad abs(E)=4",
+    "visual": "network",
+    "bounds": [
+      -2.65,
+      2.65,
+      -3.15,
+      2.15
+    ]
+  },
+  {
+    "beat": 2,
+    "start": 17.799999999999997,
+    "duration": 15.033333333333488,
+    "formula": "1+3+2+2=2 times 4",
+    "visual": "network",
+    "bounds": [
+      -2.65,
+      2.65,
+      -3.15,
+      2.15
+    ]
+  },
+  {
+    "beat": 3,
+    "start": 32.833333333333485,
+    "duration": 16.1666666666665,
+    "formula": "A arrow.r B arrow.r D: quad \"2 edges\"",
+    "visual": "network",
+    "bounds": [
+      -2.65,
+      2.65,
+      -3.15,
+      2.15
+    ]
+  },
+  {
+    "beat": 4,
+    "start": 48.999999999999986,
+    "duration": 16.099999999999838,
+    "formula": "A arrow.r B arrow.r C arrow.r D: quad 1+1+1=3",
+    "visual": "network",
+    "bounds": [
+      -2.65,
+      2.65,
+      -3.15,
+      2.15
+    ]
+  }
+]

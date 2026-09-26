@@ -1,0 +1,7 @@
+Our number system bundles groups of ten. Twenty three contains two complete bundles of ten and three single units. The digit two counts tens, while the digit three counts ones; their positions determine their values.
+
+Trade one bundle of ten for ten loose units. We now have one ten and thirteen ones, still twenty three. Regrouping changes the representation while preserving the amount, which is why carrying and borrowing work.
+
+The same bundling idea extends leftward. In four hundred twenty, four counts hundreds and two counts tens. These bars count bundles of different sizes, and the zero records that there are no loose ones.
+
+Multiplying forty two by ten makes every unit ten times as large. Four tens become four hundreds, and two ones become two tens. The digits move one place left because every adjacent place differs by ten.

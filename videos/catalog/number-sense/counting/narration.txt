@@ -1,0 +1,7 @@
+Counting connects one number word to one object. Touch each dot once as the count grows. The last number names the whole collection, so stopping at five means that five objects are present.
+
+Separate those same five dots into two groups. Nothing has entered or left the collection, so its total stays five. Arrangement changes where objects are; counting measures how many objects there are.
+
+Now add two new dots. We already know that five are present, so count on: six, seven. Each new object receives one new number, and the final count records the new total.
+
+Remove the two newly added objects and the count returns to five. This connection prepares addition and subtraction. An empty group has count zero, and moving objects alone never creates extra objects.

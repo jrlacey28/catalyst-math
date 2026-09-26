@@ -1,0 +1,7 @@
+A linear inequality can represent a limit on resources. If each item costs three dollars plus a fixed two-dollar charge, staying within seventeen dollars requires three x plus two at most seventeen. Solving gives at most five items.
+
+Now add another requirement: buy at least two items. This produces a second interval, extending rightward from two. Meeting one requirement is not sufficient; a valid purchase must satisfy the budget and the minimum quantity together.
+
+The overlap of the two solution sets runs from two through five, including both endpoints. This compound inequality is an intersection: every value inside meets both restrictions, while a value outside fails at least one of them.
+
+Finally restore the context of whole items. Three and a half lies inside the real interval but is not a permitted whole-item count. The feasible answers are two, three, four, and five, after combining algebraic and contextual restrictions.

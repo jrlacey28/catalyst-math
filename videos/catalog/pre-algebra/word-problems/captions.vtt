@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.106
+A word problem becomes manageable when quantities are named before calculating
+
+00:00:05.106 --> 00:00:09.811
+A delivery service charges five dollars plus two dollars per kilometer
+
+00:00:09.811 --> 00:00:15.800
+Let d measure distance in kilometers and c measure the total charge in dollars.
+
+00:00:17.100 --> 00:00:24.340
+For a four-kilometer delivery, the variable part is eight dollars, then the fixed fee adds five
+
+00:00:24.340 --> 00:00:27.508
+The total thirteen dollars includes both contributions
+
+00:00:27.508 --> 00:00:32.033
+Units prevent mistaking the five-dollar fee for five additional kilometers.
+
+00:00:33.333 --> 00:00:36.025
+A nineteen-dollar bill reverses the question
+
+00:00:36.025 --> 00:00:44.550
+Remove the fixed five-dollar fee to isolate fourteen dollars of distance charges, then divide by two dollars per kilometer
+
+00:00:44.550 --> 00:00:49.933
+The resulting seven has units of kilometers, matching the unknown we named.
+
+00:00:51.233 --> 00:00:54.138
+Finally check the model against the story
+
+00:00:54.138 --> 00:01:01.608
+Nonnegative distances make the total at least five dollars, so a three-dollar bill cannot fit this pricing rule
+
+00:01:01.608 --> 00:01:07.833
+A mathematically computed answer may be invalid if it violates the context or its units.

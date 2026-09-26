@@ -1,0 +1,7 @@
+An equation asserts that two quantities are equal. Here we seek the input whose output under the rule x plus four is nine. On the graph, that means locating the intersection with the horizontal level nine.
+
+Subtracting four from both sides preserves equality and reverses the addition. The unknown is therefore five. Substituting five into the original equation confirms the result: five plus four really does equal nine.
+
+For a multiplication equation, divide both sides by the same nonzero multiplier. Three x equals twelve becomes x equals four. The original graph also places the intersection at input four, connecting the algebra with the picture.
+
+Division by zero cannot be used as an inverse step. Zero times any real input stays zero, so it never reaches five. This equation has no solution because its two sides cannot agree, not because the answer is zero.

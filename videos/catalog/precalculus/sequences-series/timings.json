@@ -1,0 +1,104 @@
+[
+  {
+    "formula": "a_n=frac(1,2^n) quad n=1,2,3,...",
+    "text": "A sequence lists individual terms in an indexed order. Here the terms are one half, one fourth, one eighth, and so on, with each term half the previous one. Their values approach zero as the index grows.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        0.5,
+        0.25,
+        0.125,
+        0.0625,
+        0.03125,
+        0.015625
+      ],
+      "limit": 0
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "S_n=sum_(k=1)^n frac(1,2^k)",
+    "text": "A series instead adds terms, and its partial sums form another sequence. The first sums are one half, three fourths, and seven eighths. Those sums increase even while the individual terms decrease, because each newly added term is positive.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        0.5,
+        0.75,
+        0.875,
+        0.9375,
+        0.96875,
+        0.984375
+      ],
+      "limit": 1
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.0,
+    "duration": 17.333333333333332,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "S_n=1-frac(1,2^n) arrow.r 1",
+    "text": "The gap from the partial sum to one halves each time. After n terms that gap is one over two to the n, giving this exact finite-sum formula. Since the gap approaches zero, the infinite geometric series converges to one.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        1.1
+      ],
+      "points": [
+        0.5,
+        0.75,
+        0.875,
+        1
+      ],
+      "labels": [
+        "1/2",
+        "3/4",
+        "7/8",
+        "limit"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 32.33333333333333,
+    "duration": 16.666666666666668,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "a_n=frac(1,n) arrow.r 0 quad sum_(n=1)^infinity frac(1,n)=infinity",
+    "text": "The harmonic terms also approach zero, but their sum diverges. Four terms from one fifth through one eighth each exceed or equal one eighth, totaling at least one half. Every doubled block repeats this lower bound, forcing unbounded partial sums.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        1,
+        0.5,
+        0.5833333333333333,
+        0.6345238095238095
+      ],
+      "labels": [
+        "first",
+        "next 1",
+        "next 2",
+        "next 4"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 49.0,
+    "duration": 18.366666666666667,
+    "audio": "audio_parts/04.wav"
+  }
+]

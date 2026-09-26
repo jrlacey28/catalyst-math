@@ -1,0 +1,89 @@
+{
+  "id": "arithmetic.ratios",
+  "beats": [
+    {
+      "formula": "\"red : blue\"=2:3",
+      "text": "A ratio compares quantities multiplicatively. Two red dots for every three blue dots describes a mixture with five dots altogether. Red to blue is two to three, while red to total is two to five.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          2,
+          3
+        ],
+        "labels": [
+          "red",
+          "blue"
+        ]
+      }
+    },
+    {
+      "formula": "2:3=4:6",
+      "text": "Doubling every ingredient produces four red and six blue dots. The total changes, but the relationship stays the same because both quantities share the same scale factor. Altering only one ingredient would create a different mixture.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          4,
+          6
+        ],
+        "labels": [
+          "red",
+          "blue"
+        ]
+      }
+    },
+    {
+      "formula": "frac(6,4)=frac(3,2) quad \"blue per red\"",
+      "text": "An equivalent way to express this comparison is a unit rate: one and a half cups of blue per cup of red. Units and order matter, because reversing the comparison gives a different reciprocal rate.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          1,
+          1.5
+        ],
+        "labels": [
+          "red cups",
+          "blue cups"
+        ]
+      }
+    },
+    {
+      "formula": "\"red fraction\"=frac(2,2+3)=frac(2,5)",
+      "text": "A part-to-part ratio is not already a fraction of the whole. To find the red fraction, combine both parts in the denominator. This distinction prevents using two thirds when the actual red share is two fifths.",
+      "visual": {
+        "kind": "grid",
+        "rows": 1,
+        "cols": 5,
+        "filled": 2,
+        "secondary": 3
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "A group has three green counters and five orange counters. Give green-to-orange and green-to-total ratios.",
+      "answer": "Green:orange is 3:5; green:total is 3:8.",
+      "id": "arithmetic.ratios.video-practice-1"
+    },
+    {
+      "prompt": "A recipe uses four cups of water for three cups of rice. How much water for nine cups of rice?",
+      "answer": "Scale both quantities by three: twelve cups of water.",
+      "id": "arithmetic.ratios.video-practice-2"
+    },
+    {
+      "prompt": "Explain why a blue-to-white ratio of five to two does not mean five sevenths is the blue-to-white ratio.",
+      "answer": "Five sevenths is the blue-to-total fraction. Blue-to-white remains 5:2 because the comparison denominator is the white amount.",
+      "id": "arithmetic.ratios.video-practice-3"
+    }
+  ],
+  "takeaway": "Name the two quantities and preserve their order before using a ratio.",
+  "scope": "Part-to-part, part-to-whole, equivalent ratios, and unit rates.",
+  "course": "Arithmetic",
+  "course_id": "arithmetic",
+  "title": "Ratios",
+  "objective": "Compare quantities multiplicatively and distinguish part-to-part from part-to-whole.",
+  "index": 4,
+  "total": 8,
+  "prerequisites": [
+    "arithmetic.fractions"
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "beat": 1,
+    "start": 0.0,
+    "duration": 16.9,
+    "formula": "\"population\" arrow.r \"sample\" arrow.r \"estimate\"",
+    "visual": "dots",
+    "bounds": [
+      -4.0885254,
+      4.0885254,
+      -1.5467187500000001,
+      0.54671875
+    ]
+  },
+  {
+    "beat": 2,
+    "start": 16.9,
+    "duration": 18.333333333333485,
+    "formula": "\"simple random sample: each size-6 subset is equally likely\"",
+    "visual": "dots",
+    "bounds": [
+      -1.39882815,
+      1.39882815,
+      -1.3452148250000002,
+      0.3452148250000001
+    ]
+  },
+  {
+    "beat": 3,
+    "start": 35.23333333333348,
+    "duration": 21.233333333333164,
+    "formula": "\"equal-sized strata: sample two from each\"",
+    "visual": "dots",
+    "bounds": [
+      -4.188574212500001,
+      4.188574212500001,
+      -1.132578125,
+      0.13257812500000005
+    ]
+  },
+  {
+    "beat": 4,
+    "start": 56.46666666666665,
+    "duration": 20.399999999999828,
+    "formula": "\"larger sample\" != \"less selection bias\"",
+    "visual": "bars",
+    "bounds": [
+      -5.7,
+      5.7,
+      -2.782483446521739,
+      1.7824834465217392
+    ]
+  }
+]

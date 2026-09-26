@@ -1,0 +1,143 @@
+{
+  "id": "topology.metric-topological-spaces",
+  "beats": [
+    {
+      "formula": "d(x,y)=abs(x-y)",
+      "text": "A metric measures distance and lets us define neighborhoods. On the real line, the distance between two points is their absolute difference. An open ball around a point consists of inputs closer than a chosen positive radius, excluding its boundary.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          2
+        ],
+        "interval": [
+          0.6,
+          1
+        ],
+        "points": [
+          0.6,
+          0.8,
+          1
+        ],
+        "open": [
+          0.6,
+          1
+        ],
+        "labels": [
+          "0.6",
+          "0.8",
+          "1"
+        ]
+      }
+    },
+    {
+      "formula": "B(0.8,0.1)=(0.7,0.9)",
+      "text": "A set is open when every member has some positive-radius ball staying entirely inside the set. The point zero point eight has a small neighborhood inside the interval from zero to one. Points closer to the edge may require smaller radii.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          1.2
+        ],
+        "interval": [
+          0.7,
+          0.9
+        ],
+        "points": [
+          0,
+          0.7,
+          0.8,
+          0.9,
+          1
+        ],
+        "open": [
+          0,
+          0.7,
+          0.9,
+          1
+        ]
+      }
+    },
+    {
+      "formula": "0 in [0,1], quad B(0,r) \" reaches left for \" r>0",
+      "text": "The closed interval contains zero, but every full real-line ball around zero reaches negative values. Therefore that interval is not open as a subset of the real line. Openness depends on the ambient space and its topology.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -0.5,
+          1.5
+        ],
+        "interval": [
+          0,
+          1
+        ],
+        "points": [
+          -0.2,
+          0,
+          0.2,
+          1
+        ],
+        "arrows": [
+          [
+            0,
+            -0.2
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "(0,1) union (0.5,2)=(0,2)",
+      "text": "Topology keeps the neighborhood idea through rules for open sets: arbitrary unions and finite intersections remain open. A metric supplies one way to obtain such a topology. The abstract definition also allows spaces where no particular distance function has been chosen.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -0.2,
+          2.2
+        ],
+        "interval": [
+          0,
+          2
+        ],
+        "points": [
+          0,
+          0.5,
+          1,
+          2
+        ],
+        "open": [
+          0,
+          2
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find a positive-radius real-line ball around x=2.9 contained in the open interval (1,3).",
+      "answer": "For example radius 0.05 gives (2.85,2.95), entirely inside (1,3). Any radius at most 0.1 also works with open endpoints.",
+      "id": "topology.metric-topological-spaces.video-practice-1"
+    },
+    {
+      "prompt": "Is the singleton {0} open in the real line with ordinary distance? Justify.",
+      "answer": "No. Every positive-radius ball about zero contains points other than zero, so no such ball is contained in{0}.",
+      "id": "topology.metric-topological-spaces.video-practice-2"
+    },
+    {
+      "prompt": "Explain why [0,1] is open when the ambient space is [0,1] itself with its subspace topology.",
+      "answer": "The entire ambient space is always open in its own topology. Equivalently[0,1]=R∩[0,1], with R open in R. This does not make[0,1] open as a subset of R.",
+      "id": "topology.metric-topological-spaces.video-practice-3"
+    }
+  ],
+  "takeaway": "Open sets give every member a neighborhood inside the set, relative to an ambient space.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Topology",
+  "course_id": "topology",
+  "title": "Metric and topological spaces",
+  "objective": "Use open sets and neighborhoods to define convergence and continuity.",
+  "index": 1,
+  "total": 3,
+  "prerequisites": [
+    "proof-foundations.relations-functions",
+    "real-analysis.sequences-limits"
+  ]
+}

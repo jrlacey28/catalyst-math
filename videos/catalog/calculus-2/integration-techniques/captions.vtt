@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.030
+A useful integration technique recognizes the structure that differentiation would create
+
+00:00:05.030 --> 00:00:15.133
+Here the outside is a power, the inside is x squared plus two, and the nearby factor two x is exactly the inside's derivative.
+
+00:00:16.433 --> 00:00:18.020
+Name the inside u
+
+00:00:18.020 --> 00:00:26.348
+The entire combination two x times d x becomes d u, so the integral becomes u cubed with respect to u
+
+00:00:26.348 --> 00:00:31.900
+This substitution reverses the chain rule; it does not simply delete an inconvenient factor.
+
+00:00:33.200 --> 00:00:39.124
+Integrating u cubed gives u to the fourth divided by four, plus a constant
+
+00:00:39.124 --> 00:00:42.509
+Substitute the original inside back into the answer
+
+00:00:42.509 --> 00:00:48.433
+Differentiating this result recreates both the outer cube and the required factor two x.
+
+00:00:49.733 --> 00:00:55.009
+Products may call for integration by parts, the reverse of the product rule
+
+00:00:55.009 --> 00:01:00.691
+Choose u equal to x and d v equal to exponential x d x
+
+00:01:00.691 --> 00:01:05.967
+Subtracting the remaining exponential integral gives an answer you can verify by differentiating.

@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.162
+A force field does work only through the component aligned with movement
+
+00:00:05.162 --> 00:00:08.733
+A line integral adds that contribution along a path
+
+00:00:08.733 --> 00:00:17.067
+For the constant rightward field of magnitude one, moving from negative two to positive two along the axis gives work four.
+
+00:00:18.367 --> 00:00:24.267
+On a counterclockwise circle of radius two, the rotational field matches the direction of motion
+
+00:00:24.267 --> 00:00:28.593
+Both the field vector and the parametrization's derivative have length two
+
+00:00:28.593 --> 00:00:34.100
+Their dot product is four throughout the trip, so the work is eight pi.
+
+00:00:35.400 --> 00:00:41.589
+For the radial field on that same circle, every field arrow is perpendicular to the tangent direction
+
+00:00:41.589 --> 00:00:49.233
+The dot product is zero at every point, so the line integral vanishes even though the field itself is not zero.
+
+00:00:50.533 --> 00:00:57.733
+Reversing a path reverses the direction of each displacement, so a vector line integral changes sign
+
+00:00:57.733 --> 00:01:01.783
+This orientation rule differs from merely measuring path length
+
+00:01:01.783 --> 00:01:07.633
+Always specify the direction and distinguish work from a scalar integral against distance.

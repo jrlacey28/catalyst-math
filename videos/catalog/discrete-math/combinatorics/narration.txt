@@ -1,0 +1,7 @@
+Counting becomes easier when we organize choices. Three shirt choices and two trouser choices create six outfits because every shirt can pair with every trouser. The grid represents the independent stages of the choice, not probabilities by itself.
+
+Now choose a first and second person from four distinct people, without repetition. There are four possibilities first and three afterward. The twelve ordered selections distinguish who was chosen first, so swapping the same two people creates another outcome.
+
+If we only want a two-person committee, order no longer matters. Each unordered pair was counted twice, once in each order, so divide by two. The six edges connecting four labeled people represent the six distinct committees.
+
+Allowing repetition changes the count again. A two-position code with four symbols has four choices at each position, making sixteen possibilities. Before choosing a formula, decide whether order matters and whether a chosen object can be used again.

@@ -1,0 +1,133 @@
+{
+  "unit": "4a",
+  "form": "A",
+  "instructions": "Independent work. No hints or answer key during testing. Ask for clarification; substantive teaching makes the item assisted and requires a fresh replacement. Three questions per batch. Calculator allowed for arithmetic after writing the exact setup; no solver or answer lookup.",
+  "items": [
+    {
+      "id": "4A-TA-01",
+      "lesson_id": "4A-01",
+      "objective": "Use a straight angle, vertical angles, and parallel-line angle relationships.",
+      "prompt": "A linear pair is (4x+5)\u00b0 and (2x+25)\u00b0. Find x and both angles.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-02",
+      "lesson_id": "4A-01",
+      "objective": "Use a straight angle, vertical angles, and parallel-line angle relationships.",
+      "prompt": "Two parallel lines are cut by a transversal. An interior angle is 73\u00b0. Find its alternate interior angle and name the needed condition.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-03",
+      "lesson_id": "4A-02",
+      "objective": "Use angle sums, triangle inequality, and the right-triangle condition.",
+      "prompt": "A triangle has angles 35\u00b0 and 76\u00b0. Find the third angle.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-04",
+      "lesson_id": "4A-02",
+      "objective": "Use angle sums, triangle inequality, and the right-triangle condition.",
+      "prompt": "A triangle has sides 7, 24, and 25. Is it right? Show the check.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-05",
+      "lesson_id": "4A-03",
+      "objective": "Match vertices and justify triangle congruence with valid criteria.",
+      "prompt": "Triangle PQR is \u2245 to triangle XYZ. Which angle matches Q and which side matches PR?",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-06",
+      "lesson_id": "4A-03",
+      "objective": "Match vertices and justify triangle congruence with valid criteria.",
+      "prompt": "Two triangles have matching sides 3 and 5 and a matching angle that is NOT between those sides. Is SAS established? Explain.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-07",
+      "lesson_id": "4A-04",
+      "objective": "Use matching sides, scale factors, and area/volume scaling.",
+      "prompt": "A 6 cm side corresponds to 15 cm in a similar figure. A 10 cm side in the smaller figure corresponds to what length?",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-08",
+      "lesson_id": "4A-04",
+      "objective": "Use matching sides, scale factors, and area/volume scaling.",
+      "prompt": "A dilation has factor 4. Give the area factor and explain it.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-09",
+      "lesson_id": "4A-05",
+      "objective": "Relate radius, circumference, arc length, and sector area.",
+      "prompt": "Find the circumference of a circle with diameter 10 cm.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-10",
+      "lesson_id": "4A-05",
+      "objective": "Relate radius, circumference, arc length, and sector area.",
+      "prompt": "A radius-6 disk has a 120\u00b0 sector. Find its area and its boundary arc length.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-11",
+      "lesson_id": "4A-06",
+      "objective": "Derive and use triangle, parallelogram, and trapezoid areas.",
+      "prompt": "A triangle has area 36 cm\u00b2 and base 9 cm. Find its height.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-12",
+      "lesson_id": "4A-06",
+      "objective": "Derive and use triangle, parallelogram, and trapezoid areas.",
+      "prompt": "A trapezoid has parallel sides 6 and 14 and height 5. Find its area and justify the formula.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-13",
+      "lesson_id": "4A-07",
+      "objective": "Distinguish volume from surface area and use base-area formulas.",
+      "prompt": "A cylinder has radius 4 cm and height 6 cm. Find its volume.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-14",
+      "lesson_id": "4A-07",
+      "objective": "Distinguish volume from surface area and use base-area formulas.",
+      "prompt": "Find the surface area of a 3 by 4 by 5 box and state the units.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-15",
+      "lesson_id": "4A-08",
+      "objective": "Use coordinates for distance, midpoint, slope, and geometric claims.",
+      "prompt": "Find the distance and midpoint between (-1,2) and (5,10).",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-16",
+      "lesson_id": "4A-08",
+      "objective": "Use coordinates for distance, midpoint, slope, and geometric claims.",
+      "prompt": "Find the slope through (1,4) and (5,12). Explain what the ratio measures.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-17",
+      "lesson_id": "4A-09",
+      "objective": "Build a short geometric argument and distinguish evidence from proof.",
+      "prompt": "LM=LN and P is the midpoint of MN. Prove LP is perpendicular to MN, using triangle congruence and a straight angle.",
+      "points": 2
+    },
+    {
+      "id": "4A-TA-18",
+      "lesson_id": "4A-09",
+      "objective": "Build a short geometric argument and distinguish evidence from proof.",
+      "prompt": "Does checking ten triangles prove a claim about every triangle? Explain.",
+      "points": 2
+    }
+  ]
+}

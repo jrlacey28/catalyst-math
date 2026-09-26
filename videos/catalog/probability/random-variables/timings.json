@@ -1,0 +1,141 @@
+[
+  {
+    "formula": "X=\"number of heads in two tosses\"",
+    "text": "A random variable assigns a number to each outcome of a random experiment. For two independent fair coin tosses, let X count heads. Different outcomes can receive the same numerical value: head-tail and tail-head both map to one.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "HH",
+        "HT",
+        "TH",
+        "TT",
+        "0",
+        "1",
+        "2"
+      ],
+      "edges": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "directed": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.7,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "P(X=0)=frac(1,4), quad P(X=1)=frac(1,2)",
+    "text": "Each ordered coin outcome has probability one quarter, but the values of X are not equally likely. Zero heads has one supporting outcome, one head has two, and two heads has one. Grouping outcomes creates the variable's probability distribution.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        0.25,
+        0.5,
+        0.25
+      ],
+      "labels": [
+        "X=0",
+        "X=1",
+        "X=2"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.7,
+    "duration": 18.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "Y=2X-1",
+    "text": "A new numerical rule creates another random variable. If Y equals twice X minus one, its possible values are negative one, one, and three. The mapping changes the numerical labels while preserving the probabilities attached to these three distinct groups.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        0.25,
+        0.5,
+        0.25
+      ],
+      "labels": [
+        "Y=-1",
+        "Y=1",
+        "Y=3"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 34.7,
+    "duration": 18.7,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "P(X>=1)=frac(3,4)",
+    "text": "An event about a random variable corresponds to a collection of original outcomes. At least one head includes head-head, head-tail, and tail-head, so its probability is three quarters. Keep the outcome, its numerical value, and its probability conceptually separate.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "HH",
+        "HT",
+        "TH",
+        "TT",
+        "0",
+        "1",
+        "2"
+      ],
+      "edges": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "directed": true,
+      "active": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 53.400000000000006,
+    "duration": 18.566666666666666,
+    "audio": "audio_parts/04.wav"
+  }
+]

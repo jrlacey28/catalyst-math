@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.129
+The sequence one over n appears to approach zero
+
+00:00:04.129 --> 00:00:14.900
+A convergence proof turns that picture into a promise: for every positive error tolerance, eventually every remaining term lies within that distance of the proposed limit.
+
+00:00:16.200 --> 00:00:18.668
+Choose a tolerance of one tenth
+
+00:00:18.668 --> 00:00:26.896
+Starting at n equals eleven, every term is smaller than one tenth because increasing the positive denominator decreases the fraction
+
+00:00:26.896 --> 00:00:31.833
+Checking one small term alone would not control the whole remaining tail.
+
+00:00:33.133 --> 00:00:38.357
+For an arbitrary positive epsilon, choose an integer N larger than its reciprocal
+
+00:00:38.357 --> 00:00:46.394
+Whenever n is at least N, one over n is at most one over N, which is smaller than epsilon
+
+00:00:46.394 --> 00:00:47.600
+That proves convergence.
+
+00:00:48.900 --> 00:00:51.650
+Boundedness alone is weaker than convergence
+
+00:00:51.650 --> 00:00:58.525
+Alternating positive and negative one stays bounded, yet its two subsequences settle at different values
+
+00:00:58.525 --> 00:01:05.400
+No single small neighborhood can contain the entire tail, so this sequence does not converge.

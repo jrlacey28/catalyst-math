@@ -1,0 +1,7 @@
+A double integral accumulates tiny contributions over a region in two input dimensions. For the surface z equals x plus y above the unit square, each small base rectangle contributes its area times the surface height.
+
+Integrate one coordinate at a time. During the inner integration with respect to x, y stays constant. The result is one half plus y, representing the cross-sectional accumulation for each fixed value of the outer coordinate.
+
+Now add those cross-sectional accumulations over y from zero to one. One half y plus one half y squared increases by one. Continuity on this rectangle justifies the iterated integration and also permits reversing the order.
+
+Bounds encode geometry. Over the triangle below y equals x in the unit square, the upper y bound depends on x. Integrating one over that triangle returns its area, one half; using constant square bounds would describe a different region.

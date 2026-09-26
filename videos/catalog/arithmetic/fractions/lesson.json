@@ -1,0 +1,98 @@
+{
+  "id": "arithmetic.fractions",
+  "beats": [
+    {
+      "formula": "frac(1,3)=frac(4,12)",
+      "text": "A fraction counts equal-sized pieces of one whole. Splitting each third into four smaller pieces creates twelfths without changing the shaded amount. One third and four twelfths therefore describe the same quantity in different units.",
+      "visual": {
+        "kind": "grid",
+        "rows": 3,
+        "cols": 4,
+        "filled": 4
+      }
+    },
+    {
+      "formula": "frac(1,3)+frac(1,4)=frac(4,12)+frac(3,12)=frac(7,12)",
+      "text": "To add fractions, first give their pieces a common size. One third contributes four twelfths and one fourth contributes three twelfths. We add the piece counts, while twelve remains the name of the unit.",
+      "visual": {
+        "kind": "grid",
+        "rows": 3,
+        "cols": 4,
+        "filled": 4,
+        "secondary": 3
+      }
+    },
+    {
+      "formula": "frac(2,3) times frac(3,4)=frac(6,12)=frac(1,2)",
+      "text": "Multiplication asks for a fraction of another amount. Two thirds of three fourths covers six of twelve equal cells. Here we multiply the fractions; we are not combining two separate amounts, so a common denominator is unnecessary.",
+      "visual": {
+        "kind": "grid",
+        "rows": 3,
+        "cols": 4,
+        "filled": 6,
+        "fill_rows": 2,
+        "fill_cols": 3
+      }
+    },
+    {
+      "formula": "frac(3,2) div frac(3,4)=2",
+      "text": "Division asks how many divisor-sized units fit. A length of one and a half contains two lengths of three fourths. Multiplying by the reciprocal gives the same count, provided the divisor is not zero.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          2
+        ],
+        "points": [
+          0,
+          0.75,
+          1.5
+        ],
+        "arrows": [
+          [
+            0,
+            0.75
+          ],
+          [
+            0.75,
+            1.5
+          ]
+        ],
+        "labels": [
+          "0",
+          "3/4",
+          "3/2"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find 1/5+1/2 using equal-sized pieces.",
+      "answer": "Use tenths: 2/10+5/10=7/10.",
+      "id": "arithmetic.fractions.video-practice-1"
+    },
+    {
+      "prompt": "Find 3/5 of 5/8. Show how factors simplify.",
+      "answer": "(3/5)(5/8)=3/8, cancelling the common nonzero factor five.",
+      "id": "arithmetic.fractions.video-practice-2"
+    },
+    {
+      "prompt": "A 5/3-meter ribbon is cut into pieces of length 2/9 meter. How many complete pieces fit, and why?",
+      "answer": "(5/3)/(2/9)=15/2=7.5, so seven complete pieces fit; a partial eighth is not a complete piece.",
+      "id": "arithmetic.fractions.video-practice-3"
+    }
+  ],
+  "takeaway": "Addition combines equal units; multiplication takes a part; division counts units.",
+  "scope": "Fraction meaning, equivalence, operations, and a nonzero divisor.",
+  "course": "Arithmetic",
+  "course_id": "arithmetic",
+  "title": "Fractions",
+  "objective": "Interpret units and equivalence; add, subtract, multiply, and divide fractions.",
+  "index": 1,
+  "total": 8,
+  "prerequisites": [
+    "number-sense.multiplication-division",
+    "number-sense.order-of-operations"
+  ]
+}

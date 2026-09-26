@@ -1,0 +1,7 @@
+An infinite interval does not fit directly into an ordinary bounded integral. Replace infinity with a finite endpoint R, compute the area up to R, and then ask whether those accumulated areas approach a finite limit.
+
+The antiderivative is negative one over x. Subtracting endpoint values gives one minus one over R. As R grows, the missing amount approaches zero, so this infinite tail has finite total area equal to one.
+
+A shrinking height does not guarantee a finite total. For one over x, the accumulated area is the natural logarithm of R, which grows without bound. Both curves approach zero, but their tails accumulate at different rates.
+
+Improper behavior can also occur at a finite endpoint. One over square root of x becomes unbounded near zero, yet its integral from epsilon to one is two minus twice square root of epsilon. The limit is finite.

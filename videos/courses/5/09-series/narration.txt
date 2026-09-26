@@ -1,0 +1,11 @@
+phase_0
+A sequence lists terms; a series adds them. The sum of the first n terms is a partial sum. For one, two, three, four, the fourth term is four, while the fourth partial sum is ten.
+
+phase_1
+Pair the first and last terms of an arithmetic sequence. Each pair has the same sum. This gives n times the average of the first and last term. The formula also works when n is odd.
+
+phase_2
+For a geometric sum, multiply by the ratio and subtract. Most terms cancel. When the ratio is not one, the finite sum is first term times one minus r to the n, divided by one minus r.
+
+phase_3
+If the absolute value of r is less than one, r to the n approaches zero. The infinite geometric sum approaches a first over one minus r. Here one plus a half plus a quarter keeps filling toward two. Outside that ratio condition, this infinite-sum formula is not valid.

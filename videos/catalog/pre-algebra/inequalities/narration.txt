@@ -1,0 +1,7 @@
+An inequality describes a set of allowed inputs rather than necessarily one solution. If x plus two must stay below five, subtracting two from both sides shows that every input below three works.
+
+Including equality changes the boundary. When the condition says at most five, input three is allowed because it produces exactly five. A filled boundary point includes that input, whereas an open boundary point excludes it.
+
+Multiplying or dividing by a negative number reverses order. Dividing negative two x less than six by negative two gives x greater than negative three. Reflection across zero explains why the direction of the comparison must switch.
+
+Always test a value from the proposed interval. Zero is greater than negative three, and its original left side is zero, which is less than six. Checking a value outside the interval also helps detect a reversed inequality.

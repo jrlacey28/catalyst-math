@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "Area measures how many unit squares cover a region. A rectangle has base times height square units. Cutting a shape apart and moving the pieces preserves area, provided pieces do not overlap or leave gaps.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "Cut the triangular end from a parallelogram and move it to the other side. We get a rectangle with the same base and perpendicular height. The slanted side is not the height.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.0,
+    "duration": 17.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "Two copies of any triangle fit into a parallelogram. One triangle therefore has half its area. The height must be perpendicular to the chosen base, even when its foot lies outside the triangle.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.0,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "Two congruent trapezoids make a parallelogram whose base is the sum of the parallel sides. Divide its area by two. Area reasoning works even when the drawing is rotated.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.0,
+    "duration": 17.0,
+    "audio": "audio_parts/04.wav"
+  }
+]

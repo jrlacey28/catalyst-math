@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "A scatterplot places each pair of measurements at a point. If larger x values tend to go with larger y values, the association is positive. If larger x values go with smaller y values, it is negative.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "The correlation coefficient measures the direction and strength of linear association. Values near positive one or negative one indicate points close to a line. The sign gives direction, not whether the relationship is good or bad.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.0,
+    "duration": 17.066666666666666,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "A correlation near zero does not rule out a relationship. Points can form a strong curved pattern while having little linear correlation. Look at the scatterplot before reducing the pattern to a single number.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.06666666666666,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "Correlation alone does not establish causation. A third variable can influence both measurements, or other explanations may be possible. Also check for outliers: one distant point can greatly change a correlation.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.06666666666666,
+    "duration": 17.0,
+    "audio": "audio_parts/04.wav"
+  }
+]

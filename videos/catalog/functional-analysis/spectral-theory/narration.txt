@@ -1,0 +1,7 @@
+An eigenvector keeps its direction under a linear operator, changing only by a scalar eigenvalue. The diagonal matrix with entries two and one scales the coordinate directions separately. Decomposing a vector into those directions makes its transformation easy to compute.
+
+In finite dimensions, an eigenvalue is exactly a scalar for which subtracting that scalar times the identity makes the matrix noninvertible. At lambda equals two, the first coordinate direction collapses to zero, so the original input cannot be uniquely recovered.
+
+Infinite dimensions require greater care. Multiplication by x on complex L two of the unit interval has no nonzero eigenfunction: an eigenfunction would need support only at one point, which represents the zero vector. Nevertheless, its spectrum is the entire interval from zero to one.
+
+Additional compactness and self-adjointness on a separable Hilbert space guarantee an orthonormal eigenbasis. The diagonal map sending basis vector n to one over n times itself illustrates this theorem. Its eigenvalues approach zero; it is a special structure, not a rule for every operator.

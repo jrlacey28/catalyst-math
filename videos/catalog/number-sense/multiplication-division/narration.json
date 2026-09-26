@@ -1,0 +1,74 @@
+[
+  {
+    "formula": "3 times 4=4+4+4=12",
+    "text": "Multiplication counts equal groups efficiently. Three groups containing four dots each give twelve altogether. The groups must be equal for this repeated addition model; three unequal groups would require adding their actual sizes.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        4,
+        4,
+        4
+      ],
+      "labels": [
+        "4",
+        "4",
+        "4"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "12 div 3=4",
+    "text": "Division asks the reverse question. Sharing these twelve dots equally among three groups puts four in each group. We can also group by fours and ask how many groups fit; that version gives three groups.",
+    "visual": {
+      "kind": "grid",
+      "rows": 3,
+      "cols": 4,
+      "filled": 12
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "17=3 times 5+2",
+    "text": "Not every whole-number division comes out evenly. Seventeen objects make three full groups of five with two left over. The remainder must be smaller than five, or another complete group would still fit.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        5,
+        5,
+        5,
+        2
+      ],
+      "labels": [
+        "5",
+        "5",
+        "5",
+        "2"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "3 times 5=15<17<=20=4 times 5",
+    "text": "The story decides what to do with a remainder. If seventeen people need five-seat vehicles, three vehicles are insufficient, so we need four. If we are counting complete packs, however, only three packs are full.",
+    "visual": {
+      "kind": "grid",
+      "rows": 4,
+      "cols": 5,
+      "filled": 17
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

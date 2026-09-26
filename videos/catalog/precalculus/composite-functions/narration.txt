@@ -1,0 +1,7 @@
+Composition feeds one output into another function. Let g add two, and let f square its input. In f of g of x, g acts first, so its entire output becomes the input to the squaring rule.
+
+For input three, the inner function produces five, then the outer function squares five to produce twenty five. Replacing the whole input gives f of g of x equals the square of x plus two, including its cross term.
+
+Reverse the order and the same starting input now produces eleven. Squaring three gives nine before adding two. Because the operations do different things, composition generally depends on order and cannot be replaced by multiplying the two functions.
+
+A composition must satisfy every stage of its domain. If the outer function is instead a real square root, the inner output x plus two must be nonnegative. This restricts the original input to negative two or larger.

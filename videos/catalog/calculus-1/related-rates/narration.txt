@@ -1,0 +1,7 @@
+Related rates connect quantities that change together in time. As a circular ripple expands, both radius and area change. Start with the geometric relationship between them before inserting the numerical information for one particular instant.
+
+Differentiate the area equation with respect to time. The chain rule contributes the radius's rate of change. When the radius is two and grows at half a unit per second, the area grows at two pi square units per second.
+
+For a sliding ladder of length five, horizontal and vertical distances satisfy the Pythagorean theorem. Differentiate first, then cancel the nonzero constant two. One distance increasing can force the other to decrease because the ladder length stays fixed.
+
+At horizontal distance three and height four, an outward speed of one gives a downward speed of three quarters. The negative sign describes direction. Substituting fixed positions before differentiating would incorrectly erase their time dependence.

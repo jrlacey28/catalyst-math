@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.635
+A proof explains why a claim holds for every object meeting its assumptions
+
+00:00:05.635 --> 00:00:13.286
+Four plus six equals ten is evidence for the even-plus-even claim, but testing examples can never cover all integers
+
+00:00:13.286 --> 00:00:15.300
+We need a general reason.
+
+00:00:16.600 --> 00:00:22.368
+Represent arbitrary even integers as two a and two b, where a and b are integers
+
+00:00:22.368 --> 00:00:26.334
+Their sum factors as two times the integer a plus b
+
+00:00:26.334 --> 00:00:30.300
+That matches the definition of even and completes a direct proof.
+
+00:00:31.600 --> 00:00:37.874
+Mathematical induction uses a different structure: a starting case and a step that passes truth forward
+
+00:00:37.874 --> 00:00:46.500
+For the sum of the first n positive integers, the claimed formula works at n equal to one, establishing the base case.
+
+00:00:47.800 --> 00:00:54.210
+Assume the formula holds for a particular positive integer n, then add the next term
+
+00:00:54.210 --> 00:00:59.338
+Factoring n plus one produces exactly the formula for n plus one
+
+00:00:59.338 --> 00:01:04.467
+Combined with the base case, this implication establishes every positive integer case.

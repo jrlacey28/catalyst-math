@@ -1,0 +1,193 @@
+[
+  {
+    "formula": "f(x)=2x+3",
+    "text": "An inverse function reverses an input-output pairing. This line sends input one to output five. If it has an inverse, that inverse must send five back to one, undoing the operations in the reverse order.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        6
+      ],
+      "y": [
+        -3,
+        8
+      ],
+      "curves": [
+        {
+          "f": "2*x+3",
+          "color": "blue",
+          "domain": [
+            -3,
+            2.5
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          5
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.4,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "y=2x+3 arrow.r x=frac(y-3,2)",
+    "text": "To undo the rule, first subtract three from the output, then divide by two. Solving the original equation for its input gives this reverse instruction. Renaming the new input variable leads to inverse of x equals x minus three over two.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "5",
+        "2",
+        "1"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "weights": [
+        "-3",
+        "÷2"
+      ],
+      "directed": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.4,
+    "duration": 17.733333333333334,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "f^(-1)(x)=frac(x-3,2)",
+    "text": "Swapping input and output reflects the graph across the line y equals x. The point one, five becomes five, one. The inverse symbol means reversing a function; it does not mean the reciprocal one divided by the function value.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        6
+      ],
+      "y": [
+        -3,
+        8
+      ],
+      "curves": [
+        {
+          "f": "2*x+3",
+          "color": "blue",
+          "domain": [
+            -3,
+            2.5
+          ]
+        },
+        {
+          "f": "(x-3)/2",
+          "color": "gold",
+          "domain": [
+            -3,
+            6
+          ]
+        },
+        {
+          "f": "x",
+          "color": "pink",
+          "domain": [
+            -3,
+            6
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 33.13333333333333,
+    "duration": 16.866666666666667,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "f(x)=x^2, x>=0 quad f^(-1)(x)=sqrt(x)",
+    "text": "A function needs unique reverse outputs to have an inverse. Squaring over all real numbers fails because positive and negative inputs share outputs. Restricting its input to nonnegative values makes the reverse unambiguous and gives the principal square-root function.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        5
+      ],
+      "y": [
+        -1,
+        5
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            0,
+            2.23606797749979
+          ]
+        },
+        {
+          "f": "sqrt(x)",
+          "color": "gold",
+          "domain": [
+            0,
+            5
+          ]
+        },
+        {
+          "f": "x",
+          "color": "pink",
+          "domain": [
+            0,
+            5
+          ]
+        }
+      ],
+      "points": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 50.0,
+    "duration": 19.066666666666666,
+    "audio": "audio_parts/04.wav"
+  }
+]

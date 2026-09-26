@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.061
+A constraint restricts which directions are available
+
+00:00:03.061 --> 00:00:14.467
+To minimize squared distance from the origin while staying on the line x plus y equals three, we must search along that line, rather than move freely toward the origin.
+
+00:00:15.767 --> 00:00:21.567
+At a regular constrained extremum, the objective gradient is parallel to the constraint gradient
+
+00:00:21.567 --> 00:00:25.295
+Otherwise a tangent direction would still decrease the objective
+
+00:00:25.295 --> 00:00:33.167
+Here the gradient equations give x equals y; combining that with the constraint gives one and a half each.
+
+00:00:34.467 --> 00:00:36.539
+Lagrange multipliers produced a candidate
+
+00:00:36.539 --> 00:00:45.656
+Substitution now proves it is the global minimum: the squared term is always nonnegative, and vanishes exactly at one and a half
+
+00:00:45.656 --> 00:00:49.800
+The minimum squared distance is therefore four and a half.
+
+00:00:51.100 --> 00:00:56.641
+The usual multiplier condition needs regularity, such as a nonzero constraint gradient
+
+00:00:56.641 --> 00:01:04.954
+The constraint x squared plus y squared equals zero has only one feasible point, where its gradient vanishes
+
+00:01:04.954 --> 00:01:10.033
+That point is optimal even for objectives whose gradients are nonzero.

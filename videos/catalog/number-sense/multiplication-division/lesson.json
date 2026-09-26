@@ -1,0 +1,89 @@
+{
+  "id": "number-sense.multiplication-division",
+  "beats": [
+    {
+      "formula": "3 times 4=4+4+4=12",
+      "text": "Multiplication counts equal groups efficiently. Three groups containing four dots each give twelve altogether. The groups must be equal for this repeated addition model; three unequal groups would require adding their actual sizes.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          4,
+          4,
+          4
+        ],
+        "labels": [
+          "4",
+          "4",
+          "4"
+        ]
+      }
+    },
+    {
+      "formula": "12 div 3=4",
+      "text": "Division asks the reverse question. Sharing these twelve dots equally among three groups puts four in each group. We can also group by fours and ask how many groups fit; that version gives three groups.",
+      "visual": {
+        "kind": "grid",
+        "rows": 3,
+        "cols": 4,
+        "filled": 12
+      }
+    },
+    {
+      "formula": "17=3 times 5+2",
+      "text": "Not every whole-number division comes out evenly. Seventeen objects make three full groups of five with two left over. The remainder must be smaller than five, or another complete group would still fit.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          5,
+          5,
+          5,
+          2
+        ],
+        "labels": [
+          "5",
+          "5",
+          "5",
+          "2"
+        ]
+      }
+    },
+    {
+      "formula": "3 times 5=15<17<=20=4 times 5",
+      "text": "The story decides what to do with a remainder. If seventeen people need five-seat vehicles, three vehicles are insufficient, so we need four. If we are counting complete packs, however, only three packs are full.",
+      "visual": {
+        "kind": "grid",
+        "rows": 4,
+        "cols": 5,
+        "filled": 17
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Draw four equal groups of six and find their total.",
+      "answer": "Four groups contain 24 objects: 4×6=24.",
+      "id": "number-sense.multiplication-division.video-practice-1"
+    },
+    {
+      "prompt": "Divide twenty nine objects into groups of four. State the quotient and remainder.",
+      "answer": "29=4×7+1, so quotient 7 and remainder 1.",
+      "id": "number-sense.multiplication-division.video-practice-2"
+    },
+    {
+      "prompt": "Each boat holds seven passengers. How many boats are needed for thirty people, and why?",
+      "answer": "Five boats: four hold only 28, while five can hold all thirty.",
+      "id": "number-sense.multiplication-division.video-practice-3"
+    }
+  ],
+  "takeaway": "Division reverses equal grouping; context determines how a remainder is used.",
+  "scope": "Equal groups, arrays, quotients, and interpreted remainders.",
+  "course": "Number sense",
+  "course_id": "number-sense",
+  "title": "Multiplication and division",
+  "objective": "Connect equal groups, arrays, sharing, and remainders.",
+  "index": 4,
+  "total": 6,
+  "prerequisites": [
+    "number-sense.addition-subtraction"
+  ]
+}

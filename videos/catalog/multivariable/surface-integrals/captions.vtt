@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.292
+A scalar surface integral adds density over a curved or tilted sheet
+
+00:00:05.292 --> 00:00:10.185
+Each contribution is density times a small piece of actual surface area
+
+00:00:10.185 --> 00:00:16.300
+On a flat unit square with density two, four quarter-square pieces together have mass two.
+
+00:00:17.600 --> 00:00:21.608
+Tilting the sheet changes area relative to its horizontal shadow
+
+00:00:21.608 --> 00:00:29.224
+For z equals x plus y, the two tangent directions give an area scale of square root of three
+
+00:00:29.224 --> 00:00:34.033
+This factor converts a small projected rectangle into its true surface area.
+
+00:00:35.333 --> 00:00:39.874
+Restrict the tilted plane to the patch projecting onto the unit square
+
+00:00:39.874 --> 00:00:44.793
+With constant density two, its mass is two times square root of three
+
+00:00:44.793 --> 00:00:49.333
+Forgetting the surface-area factor would incorrectly treat the tilted sheet as flat.
+
+00:00:50.633 --> 00:00:55.560
+Flux is different: it weights area by the vector field's normal component
+
+00:00:55.560 --> 00:01:03.361
+For the upward field zero, zero, two, the upward unit normal gives component two over square root of three
+
+00:01:03.361 --> 00:01:07.467
+The flux is two, and reversing orientation changes its sign.

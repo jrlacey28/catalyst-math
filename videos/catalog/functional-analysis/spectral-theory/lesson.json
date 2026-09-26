@@ -1,0 +1,140 @@
+{
+  "id": "functional-analysis.spectral-theory",
+  "beats": [
+    {
+      "formula": "A e_1=2e_1, quad A e_2=e_2",
+      "text": "An eigenvector keeps its direction under a linear operator, changing only by a scalar eigenvalue. The diagonal matrix with entries two and one scales the coordinate directions separately. Decomposing a vector into those directions makes its transformation easy to compute.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "lambda in \"spectrum\" \" exactly when \" A-lambda I \"not invertible\"",
+      "text": "In finite dimensions, an eigenvalue is exactly a scalar for which subtracting that scalar times the identity makes the matrix noninvertible. At lambda equals two, the first coordinate direction collapses to zero, so the original input cannot be uniquely recovered.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "(T f)(x)=x f(x), quad f in L^2([0,1])",
+      "text": "Infinite dimensions require greater care. Multiplication by x on complex L two of the unit interval has no nonzero eigenfunction: an eigenfunction would need support only at one point, which represents the zero vector. Nevertheless, its spectrum is the entire interval from zero to one.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1
+        ],
+        "y": [
+          0,
+          1.1
+        ],
+        "curves": [
+          {
+            "f": "x",
+            "color": "blue",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "points": [
+          [
+            0.5,
+            0.5
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "T e_n=frac(1,n)e_n",
+      "text": "Additional compactness and self-adjointness on a separable Hilbert space guarantee an orthonormal eigenbasis. The diagonal map sending basis vector n to one over n times itself illustrates this theorem. Its eigenvalues approach zero; it is a special structure, not a rule for every operator.",
+      "visual": {
+        "kind": "sequence",
+        "values": [
+          1,
+          0.5,
+          0.333333,
+          0.25,
+          0.2,
+          0.166667,
+          0.142857
+        ],
+        "limit": 0
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For A=diag(4,−2), find its eigenvalues and explain why A−4I is not invertible.",
+      "answer": "The coordinate eigenvalues are 4 and −2. A−4I=diag(0,−6) kills the first coordinate vector, so it has a nontrivial kernel and cannot be invertible.",
+      "id": "functional-analysis.spectral-theory.video-practice-1"
+    },
+    {
+      "prompt": "For multiplication by x on L2[0,1], explain why the equation xf(x)=lambda f(x) has no nonzero L2 solution.",
+      "answer": "It implies (x−lambda)f(x)=0 almost everywhere, so f is zero except possibly at the singleton {lambda}. That set has measure zero, making f the zero L2 equivalence class.",
+      "id": "functional-analysis.spectral-theory.video-practice-2"
+    },
+    {
+      "prompt": "For T e_n=(1/n)e_n on square-summable sequences, is zero an eigenvalue? Explain why its inverse cannot be bounded.",
+      "answer": "Zero is not an eigenvalue because Tx=0 forces every coordinate of x to vanish. A putative inverse sends e_n to n e_n, whose norms grow without bound. Thus zero can belong to the spectrum without being an eigenvalue.",
+      "id": "functional-analysis.spectral-theory.video-practice-3"
+    }
+  ],
+  "takeaway": "In infinite dimensions, spectrum is broader than eigenvalues; spectral-basis theorems require hypotheses.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Functional analysis",
+  "course_id": "functional-analysis",
+  "title": "Spectral theory",
+  "objective": "Extend eigenvalue ideas to operators with the required domain and boundedness hypotheses.",
+  "index": 3,
+  "total": 3,
+  "prerequisites": [
+    "functional-analysis.operators-duality",
+    "linear-algebra.eigenvectors"
+  ]
+}

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:02.678
+Multiplication counts equal groups efficiently
+
+00:00:02.678 --> 00:00:06.778
+Three groups containing four dots each give twelve altogether
+
+00:00:06.778 --> 00:00:15.433
+The groups must be equal for this repeated addition model; three unequal groups would require adding their actual sizes.
+
+00:00:16.733 --> 00:00:18.690
+Division asks the reverse question
+
+00:00:18.690 --> 00:00:23.779
+Sharing these twelve dots equally among three groups puts four in each group
+
+00:00:23.779 --> 00:00:30.433
+We can also group by fours and ask how many groups fit; that version gives three groups.
+
+00:00:31.733 --> 00:00:34.639
+Not every whole-number division comes out evenly
+
+00:00:34.639 --> 00:00:39.621
+Seventeen objects make three full groups of five with two left over
+
+00:00:39.621 --> 00:00:45.433
+The remainder must be smaller than five, or another complete group would still fit.
+
+00:00:46.733 --> 00:00:50.256
+The story decides what to do with a remainder
+
+00:00:50.256 --> 00:00:55.736
+If seventeen people need five-seat vehicles, three vehicles are insufficient, so we need four
+
+00:00:55.736 --> 00:01:00.433
+If we are counting complete packs, however, only three packs are full.

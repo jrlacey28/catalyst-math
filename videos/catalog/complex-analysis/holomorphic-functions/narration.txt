@@ -1,0 +1,7 @@
+A complex input has two real directions. Squaring one plus i gives two i because the real terms cancel and the cross terms add. Complex differentiability asks for one limiting multiplier that works for changes approaching from every direction.
+
+For a nonzero complex change h, expand the numerator and cancel its factor h. The quotient becomes two z plus h. Its limit is two z regardless of the direction of approach, so squaring is complex differentiable everywhere.
+
+Complex conjugation looks smooth as a real reflection, but fails this stronger derivative test. Along real changes, the quotient is one. Along purely imaginary changes, it is negative one. Different directional limits rule out a complex derivative.
+
+Writing the function as u plus i v produces the Cauchy Riemann equations. Continuous first partial derivatives satisfying these equations throughout an open region are sufficient for holomorphicity there. Checking equations at an isolated point without regularity is not enough.

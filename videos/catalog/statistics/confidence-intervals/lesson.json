@@ -1,0 +1,129 @@
+{
+  "id": "statistics.confidence-intervals",
+  "beats": [
+    {
+      "formula": "overline(x)=10, quad sigma=2, quad n=25",
+      "text": "A confidence interval adds an uncertainty range to an estimate. Assume twenty-five independent observations from a normal population with known standard deviation two, and a sample mean of ten. These assumptions determine the interval procedure we are about to use.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          8,
+          12
+        ],
+        "points": [
+          10
+        ],
+        "labels": [
+          "sample mean"
+        ]
+      }
+    },
+    {
+      "formula": "10 ± 1.96frac(2,sqrt(25))=10 ± 0.784",
+      "text": "The mean's standard error is two divided by five, or zero point four. Multiplying by the normal cutoff, approximately one point nine six, gives a margin of zero point seven eight four. Add and subtract that margin to find the endpoints.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          8.5,
+          11.5
+        ],
+        "points": [
+          9.216,
+          10,
+          10.784
+        ],
+        "labels": [
+          "lower",
+          "estimate",
+          "upper"
+        ],
+        "interval": [
+          9.216,
+          10.784
+        ]
+      }
+    },
+    {
+      "formula": "P(L<=mu<=U) approx 0.95",
+      "text": "The ninety-five-percent confidence level describes repeated use of the method. Across repeated samples under these assumptions, about ninety-five percent of the resulting intervals cover the fixed population mean. It does not say that ninety-five percent of individual observations lie in this interval.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "new sample",
+          "new interval",
+          "covers fixed mean?"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "weights": [
+          "compute",
+          "check coverage",
+          "repeat"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "formula": "n=100 quad arrow.r quad \"margin\"=0.392",
+      "text": "With the same known variability and confidence level, quadrupling sample size halves the margin. If the population standard deviation is estimated instead, use an appropriate method such as a t interval under its assumptions; do not automatically reuse the known-sigma formula.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          8.5,
+          11.5
+        ],
+        "points": [
+          10
+        ],
+        "labels": [
+          "same estimate"
+        ],
+        "interval": [
+          9.608,
+          10.392
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For an independent sample from a normal population with known σ=10, n=100, and sample mean 50, compute an approximate 95% z confidence interval.",
+      "answer": "SE=10/√100=1 and margin=1.96. The interval is [48.04,51.96].",
+      "id": "statistics.confidence-intervals.video-practice-1"
+    },
+    {
+      "prompt": "Keeping the same known σ and confidence level, how does the margin change when n rises from 100 to 400? Explain using the square root.",
+      "answer": "√n doubles from 10 to 20, so σ/√n and the margin both halve.",
+      "id": "statistics.confidence-intervals.video-practice-2"
+    },
+    {
+      "prompt": "Explain what is wrong with 'This 95% confidence interval contains 95% of the population's observations.' Give the repeated-sampling interpretation instead.",
+      "answer": "It targets the population mean, not a fraction of individual observations. Under the procedure's assumptions, about 95% of intervals built from repeated samples cover the fixed population mean.",
+      "id": "statistics.confidence-intervals.video-practice-3"
+    }
+  ],
+  "takeaway": "Confidence belongs to an interval-building method under stated assumptions; its target is a parameter, not individual observations.",
+  "scope": "A known-sigma normal-mean interval, repeated-sampling coverage, and sample-size effects.",
+  "course": "Statistics and inference",
+  "course_id": "statistics",
+  "title": "Confidence intervals",
+  "objective": "Construct intervals and explain repeated-sampling coverage accurately.",
+  "index": 5,
+  "total": 6,
+  "prerequisites": [
+    "statistics.estimation",
+    "probability.distributions"
+  ]
+}

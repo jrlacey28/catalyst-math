@@ -1,0 +1,145 @@
+{
+  "id": "probability.random-variables",
+  "beats": [
+    {
+      "formula": "X=\"number of heads in two tosses\"",
+      "text": "A random variable assigns a number to each outcome of a random experiment. For two independent fair coin tosses, let X count heads. Different outcomes can receive the same numerical value: head-tail and tail-head both map to one.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "HH",
+          "HT",
+          "TH",
+          "TT",
+          "0",
+          "1",
+          "2"
+        ],
+        "edges": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "directed": true
+      }
+    },
+    {
+      "formula": "P(X=0)=frac(1,4), quad P(X=1)=frac(1,2)",
+      "text": "Each ordered coin outcome has probability one quarter, but the values of X are not equally likely. Zero heads has one supporting outcome, one head has two, and two heads has one. Grouping outcomes creates the variable's probability distribution.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "labels": [
+          "X=0",
+          "X=1",
+          "X=2"
+        ]
+      }
+    },
+    {
+      "formula": "Y=2X-1",
+      "text": "A new numerical rule creates another random variable. If Y equals twice X minus one, its possible values are negative one, one, and three. The mapping changes the numerical labels while preserving the probabilities attached to these three distinct groups.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "labels": [
+          "Y=-1",
+          "Y=1",
+          "Y=3"
+        ]
+      }
+    },
+    {
+      "formula": "P(X>=1)=frac(3,4)",
+      "text": "An event about a random variable corresponds to a collection of original outcomes. At least one head includes head-head, head-tail, and tail-head, so its probability is three quarters. Keep the outcome, its numerical value, and its probability conceptually separate.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "HH",
+          "HT",
+          "TH",
+          "TT",
+          "0",
+          "1",
+          "2"
+        ],
+        "edges": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "directed": true,
+        "active": [
+          0,
+          1,
+          2,
+          5,
+          6
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Roll a fair die and define X=1 if the face exceeds 4, otherwise X=0. Find the distribution of X.",
+      "answer": "X=1 for faces 5 and 6, so P(X=1)=1/3. The other four faces give P(X=0)=2/3.",
+      "id": "probability.random-variables.video-practice-1"
+    },
+    {
+      "prompt": "For three independent fair coin tosses, let X count heads. Find P(X=0) and P(X=3), and identify the underlying outcomes.",
+      "answer": "TTT gives zero heads and HHH gives three. Each has probability (1/2)³=1/8.",
+      "id": "probability.random-variables.video-practice-2"
+    },
+    {
+      "prompt": "For X counting heads in two fair independent tosses, define Y=3X+2. List Y's possible values and their probabilities.",
+      "answer": "Y takes values 2, 5, 8 with probabilities 1/4, 1/2, 1/4 respectively. Each value follows from applying the rule to X=0,1,2.",
+      "id": "probability.random-variables.video-practice-3"
+    }
+  ],
+  "takeaway": "A random variable is a numerical function of outcomes, and its distribution groups the probabilities of outcomes sharing a value.",
+  "scope": "A coin-count variable, an indicator, transformed values, and events involving a variable.",
+  "course": "Probability",
+  "course_id": "probability",
+  "title": "Random variables",
+  "objective": "Map outcomes to values and distinguish discrete mass from continuous density.",
+  "index": 4,
+  "total": 6,
+  "prerequisites": [
+    "probability.conditional-probability",
+    "algebra-1.functions"
+  ]
+}

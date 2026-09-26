@@ -1,0 +1,17 @@
+{
+  "id": "4A-01",
+  "unit": "4a",
+  "course": "Geometry",
+  "index": 1,
+  "total": 9,
+  "slug": "angles",
+  "title": "Angles and intersecting lines",
+  "objective": "Use a straight angle, vertical angles, and parallel-line angle relationships.",
+  "prerequisites": "Addition, subtraction, and simple equations.",
+  "formulas": [
+    "90 degree quad 180 degree",
+    "55 degree + x = 180 degree",
+    "alpha = beta",
+    "l_1 parallel l_2"
+  ]
+}

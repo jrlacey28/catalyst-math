@@ -1,0 +1,7 @@
+Unwrap the unit-circle vertical coordinate as a function of angle. Sine starts at zero, rises to one, returns through zero, reaches negative one, and completes its cycle at two pi. The input axis here is measured in radians.
+
+Multiplying the output by two doubles every height without changing the input values where a cycle begins and ends. The amplitude becomes two, while the period stays two pi. Amplitude measures distance from the midline, not total peak-to-trough height.
+
+Multiplying the input by two makes the circular phase advance twice as quickly. A full cycle now occurs while x advances only pi, so two cycles fit where one used to. Input scaling changes period rather than amplitude.
+
+Adding one shifts every output upward, placing the midline at one. The peaks are three and the troughs negative one, while amplitude and period stay unchanged. Read vertical scale, input scale, and vertical shift as separate transformations.

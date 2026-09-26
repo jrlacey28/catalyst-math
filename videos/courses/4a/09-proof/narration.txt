@@ -1,0 +1,11 @@
+phase_0
+A diagram suggests what might be true. A proof explains why the claim follows from stated facts. Mark the givens first. Do not assume two lengths are equal merely because they look equal in a drawing.
+
+phase_1
+Suppose two sides of a triangle are equal. Draw the segment from their shared vertex to the midpoint of the opposite side. The midpoint creates equal base pieces, and both smaller triangles share the new segment.
+
+phase_2
+The two small triangles now have three pairs of equal sides. By side, side, side, they are congruent. Corresponding base angles are therefore equal. Each arrow in the argument has a reason.
+
+phase_3
+Testing examples can reveal a pattern, but examples alone do not prove a universal statement. One genuine counterexample can disprove it. A good proof names the assumptions and explains why every allowed case follows.

@@ -1,0 +1,17 @@
+{
+  "id": "5-08",
+  "unit": "5",
+  "course": "Algebra II",
+  "index": 8,
+  "total": 9,
+  "slug": "sequences",
+  "title": "Sequences: additive and multiplicative patterns",
+  "objective": "Use explicit and recursive rules with correct indexing.",
+  "prerequisites": "Linear equations and exponents.",
+  "formulas": [
+    "a_1,a_2,a_3,dots",
+    "a_n=a_1+(n-1)d",
+    "a_n=a_1 r^(n-1)",
+    "a_1=3 quad a_(n+1)=2 a_n"
+  ]
+}

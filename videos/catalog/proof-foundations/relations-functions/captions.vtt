@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:07.638
+A function assigns each input exactly one output, but different questions concern how outputs are covered
+
+00:00:07.638 --> 00:00:10.805
+Injective means no two distinct inputs collide
+
+00:00:10.805 --> 00:00:16.233
+Surjective means every member of the stated target set receives an input.
+
+00:00:17.533 --> 00:00:22.106
+To prove this linear rule injective, suppose two outputs are equal
+
+00:00:22.106 --> 00:00:25.848
+Subtract three and divide by the nonzero coefficient two
+
+00:00:25.848 --> 00:00:27.927
+The inputs must be equal
+
+00:00:27.927 --> 00:00:32.500
+This checks all potential collisions, not just the two points shown.
+
+00:00:33.800 --> 00:00:40.155
+To prove surjectivity onto the real numbers, start with any desired real output y
+
+00:00:40.155 --> 00:00:44.240
+Solving gives input y minus three, divided by two
+
+00:00:44.240 --> 00:00:49.233
+That input is real and substitution produces precisely the requested output.
+
+00:00:50.533 --> 00:00:58.260
+The square function has a collision at negative two and two, so it is not injective on all reals
+
+00:00:58.260 --> 00:01:04.767
+Its surjectivity changes with the target: nonnegative reals are covered, while negative real targets are impossible.

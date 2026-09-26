@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:06.012
+Lebesgue integration begins with simple functions that take finitely many values on measurable pieces
+
+00:00:06.012 --> 00:00:10.422
+Multiply each value by the measure of its piece, then add
+
+00:00:10.422 --> 00:00:15.633
+For height two on an interval of length one, the contribution is two.
+
+00:00:16.933 --> 00:00:21.582
+A second disjoint interval of length one, with height five, contributes five
+
+00:00:21.582 --> 00:00:31.267
+Whether an endpoint belongs to the first or second piece does not affect this Lebesgue integral, because the endpoint is a set of measure zero.
+
+00:00:32.567 --> 00:00:36.948
+Combining the two measurable pieces gives total integral seven
+
+00:00:36.948 --> 00:00:47.172
+More general nonnegative measurable functions are approached from below by simple functions, and their integrals are defined by the corresponding supremum
+
+00:00:47.172 --> 00:00:51.067
+This extends the weighted-size idea beyond step-shaped graphs.
+
+00:00:52.367 --> 00:00:59.509
+For x to the n on the unit interval, pointwise convergence to zero holds except at one
+
+00:00:59.509 --> 00:01:03.291
+The functions are bounded by the integrable function one
+
+00:01:03.291 --> 00:01:10.433
+Dominated convergence therefore permits passing the limit through the integral, and the single exceptional endpoint contributes nothing.

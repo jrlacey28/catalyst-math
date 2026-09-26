@@ -1,0 +1,125 @@
+[
+  {
+    "formula": "2x+2y=20, quad y=10-x",
+    "text": "Optimization starts by translating constraints. A rectangle with perimeter twenty has side lengths whose sum is ten. Naming one side x makes the other ten minus x, so one variable now determines the entire area.",
+    "visual": {
+      "kind": "grid",
+      "rows": 4,
+      "cols": 6,
+      "filled": 24
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "A(x)=x(10-x), quad 0<=x<=10",
+    "text": "The area is x times ten minus x, with nonnegative side lengths restricting x between zero and ten. Expanding gives ten x minus x squared. Its graph shows that increasing one side eventually sacrifices too much of the other.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        10
+      ],
+      "y": [
+        0,
+        30
+      ],
+      "curves": [
+        {
+          "f": "10*x-x*x",
+          "color": "blue",
+          "domain": [
+            0,
+            10
+          ]
+        }
+      ],
+      "points": [
+        [
+          2,
+          16
+        ],
+        [
+          8,
+          16
+        ]
+      ],
+      "sweep": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "A'(x)=10-2x=0 quad arrow.r quad x=5",
+    "text": "Differentiate to locate the interior stationary point. Ten minus two x equals zero when x is five. That produces a five by five square with area twenty-five, while either endpoint gives a degenerate rectangle with zero area.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        10
+      ],
+      "y": [
+        0,
+        30
+      ],
+      "curves": [
+        {
+          "f": "10*x-x*x",
+          "color": "blue",
+          "domain": [
+            0,
+            10
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          25
+        ],
+        [
+          10,
+          0
+        ]
+      ],
+      "segments": [
+        [
+          [
+            3,
+            25
+          ],
+          [
+            7,
+            25
+          ]
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "A(x)=25-(x-5)^2<=25",
+    "text": "Completing the square explains why this is the global maximum: a square is never negative, so subtracting it cannot exceed twenty-five. A zero derivative only suggests a candidate; the domain and comparison establish what kind of optimum it is.",
+    "visual": {
+      "kind": "grid",
+      "rows": 5,
+      "cols": 5,
+      "filled": 25
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

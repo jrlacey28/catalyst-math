@@ -1,0 +1,11 @@
+phase_0
+Similar figures have the same shape. A dilation multiplies every length by one scale factor. Angles stay the same. Congruence is the special case where the scale factor is one.
+
+phase_1
+For these triangles, a side of three corresponds to a side of six. The scale factor is two. So the matching side of four becomes eight. Build ratios from corresponding sides in a consistent direction.
+
+phase_2
+Area uses two dimensions. When lengths double, a square fits four copies of its original area. Area scales by the square of the length factor. Volume uses three dimensions and scales by the cube.
+
+phase_3
+Two equal pairs of angles establish triangle similarity because the third pair must match too. Use similarity to find inaccessible distances, but first justify why the triangles have the same shape.

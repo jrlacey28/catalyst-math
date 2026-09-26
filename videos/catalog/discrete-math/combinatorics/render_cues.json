@@ -1,0 +1,54 @@
+[
+  {
+    "beat": 1,
+    "start": 0.0,
+    "duration": 18.0,
+    "formula": "3 times 2=6",
+    "visual": "grid",
+    "bounds": [
+      -0.8,
+      0.8,
+      -1.7000000000000002,
+      0.7000000000000002
+    ]
+  },
+  {
+    "beat": 2,
+    "start": 18.0,
+    "duration": 17.833333333333485,
+    "formula": "4 times 3=12",
+    "visual": "grid",
+    "bounds": [
+      -1.2000000000000002,
+      1.2000000000000002,
+      -2.1,
+      1.1
+    ]
+  },
+  {
+    "beat": 3,
+    "start": 35.833333333333485,
+    "duration": 16.766666666666495,
+    "formula": "frac(4 times 3,2)=6",
+    "visual": "network",
+    "bounds": [
+      -2.65,
+      2.65,
+      -3.15,
+      2.15
+    ]
+  },
+  {
+    "beat": 4,
+    "start": 52.59999999999998,
+    "duration": 17.36666666666649,
+    "formula": "\"ordered with repetition\": quad 4^2=16",
+    "visual": "grid",
+    "bounds": [
+      -1.6,
+      1.6,
+      -2.1,
+      1.1
+    ]
+  }
+]

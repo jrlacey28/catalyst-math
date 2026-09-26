@@ -1,0 +1,7 @@
+A sequence assigns an output to each positive integer index. For one over n, the terms get closer to zero as the index grows. Convergence means eventually staying within any chosen positive distance of a single limiting value.
+
+Being bounded is not enough. These terms alternate between negative one and positive one, so they never settle near a single value. Different subsequences approach different destinations, preventing convergence of the complete sequence.
+
+This sequence increases toward three and never rises above it. A monotone sequence bounded in the direction of its movement converges. Here the explicit formula also identifies the limit, because one over n approaches zero.
+
+A recurrence can define a sequence without an explicit formula. Starting at zero, repeatedly average the current term with two. The gap from two halves at every step, which both explains convergence and identifies its limit.

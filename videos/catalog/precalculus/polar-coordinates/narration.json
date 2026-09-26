@@ -1,0 +1,87 @@
+[
+  {
+    "formula": "x=r cos(theta) quad y=r sin(theta)",
+    "text": "Polar coordinates locate a point using a directed distance from the origin and an angle. For nonnegative radius, move outward along the ray at that angle. Multiplying the unit-circle coordinates by the radius converts the location into Cartesian coordinates.",
+    "visual": {
+      "kind": "circle",
+      "angle": 1.0471975511965976,
+      "radius": 2.4,
+      "triangle": true,
+      "arc": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "r=2, theta=frac(pi,3) arrow.r (x,y)=(1,sqrt(3))",
+    "text": "At radius two and angle sixty degrees, the horizontal coordinate is two times one half, giving one. The vertical coordinate is two times the square root of three over two, giving the square root of three.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          1.7320508075688772
+        ]
+      ],
+      "points": [
+        [
+          1,
+          1.7320508075688772
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "(2,theta) \"and\" (2,theta+2pi)",
+    "text": "Polar names are not unique. Adding a complete turn keeps the same radius and final ray, so the same point receives another angle label. This differs from ordinary Cartesian coordinates, where each ordered pair names one fixed coordinate combination.",
+    "visual": {
+      "kind": "circle",
+      "angle": 7.330382858376184,
+      "radius": 2.4,
+      "arc": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "(r,theta)=(-r,theta+pi)",
+    "text": "A negative radius reverses the direction along the chosen ray. Changing the radius sign while adding half a turn names the same point. When converting back from coordinates, use quadrant information instead of relying on a tangent ratio alone.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          -1,
+          -1.7320508075688772
+        ]
+      ],
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "points": [
+        [
+          1,
+          1.7320508075688772
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

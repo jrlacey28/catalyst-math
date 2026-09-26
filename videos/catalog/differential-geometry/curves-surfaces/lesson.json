@@ -1,0 +1,86 @@
+{
+  "id": "differential-geometry.curves-surfaces",
+  "beats": [
+    {
+      "formula": "gamma(t)=(2cos(t),2sin(t))",
+      "text": "A parametrized curve describes position as a parameter changes. This formula traces a circle of radius two. Differentiating gives the velocity vector; its length is two, so equal changes in the parameter correspond to twice that much traveled arc length.",
+      "visual": {
+        "kind": "circle",
+        "angle": 1.0471975512,
+        "radius": 2,
+        "arc": true
+      }
+    },
+    {
+      "formula": "norm(gamma'(t))=2, quad s=2t",
+      "text": "Speed depends on parameterization, while the geometric path remains the same. Using arc length s as the parameter makes speed one. The unit tangent then records direction alone, separating how the curve turns from how quickly it is traversed.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "points": [
+          [
+            2,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "kappa=norm(frac(d T,d s))=frac(1,2)",
+      "text": "Curvature measures the rate at which the unit tangent changes per unit arc length. A radius-two circle has curvature one half; a larger circle turns less sharply. This is curve curvature, not the Gaussian curvature assigned to a surface.",
+      "visual": {
+        "kind": "circle",
+        "angle": 1.57079632679,
+        "radius": 2,
+        "arc": true
+      }
+    },
+    {
+      "formula": "r(u,v)=(u,v,u^2+v^2)",
+      "text": "A surface uses two parameters instead of one. On this paraboloid, changing u or v gives two independent tangent directions. Their span is the tangent plane. Independence of these parameter derivatives is the regularity condition preventing a collapsed coordinate patch.",
+      "visual": {
+        "kind": "surface",
+        "mode": "paraboloid",
+        "slice": "x"
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For gamma(t)=(3cos(t),3sin(t)), find its speed and the distance traveled as t goes from zero to π/2.",
+      "answer": "The derivative is(−3sin t,3cos t), with speed 3. Distance=3(π/2)=3π/2.",
+      "id": "differential-geometry.curves-surfaces.video-practice-1"
+    },
+    {
+      "prompt": "Compare the curvatures of circles of radii three and six, explaining which bends more sharply.",
+      "answer": "Their curvatures are 1/3 and 1/6. The radius-three circle turns twice as quickly per unit arc length.",
+      "id": "differential-geometry.curves-surfaces.video-practice-2"
+    },
+    {
+      "prompt": "For r(u,v)=(u,v,u²+v²), compute the two parameter derivatives at (u,v)=(1,2) and explain why they are independent.",
+      "answer": "r_u=(1,0,2), r_v=(0,1,4). A linear combination equal to zero has first coordinate coefficient zero and second coefficient zero, so they are independent.",
+      "id": "differential-geometry.curves-surfaces.video-practice-3"
+    }
+  ],
+  "takeaway": "Curve speed depends on parameterization; curvature measures turning per unit traveled length.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Differential geometry",
+  "course_id": "differential-geometry",
+  "title": "Curves and surfaces",
+  "objective": "Calculate curvature and surface geometry from local parametrizations.",
+  "index": 1,
+  "total": 3,
+  "prerequisites": [
+    "multivariable.3d-geometry",
+    "multivariable.partial-derivatives"
+  ]
+}

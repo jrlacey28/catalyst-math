@@ -1,0 +1,180 @@
+[
+  {
+    "formula": "x^2+y^2=4",
+    "text": "Some curves are easier to describe by a relationship than by one output formula. This circle contains an upper and a lower branch. Near suitable points, y can still depend on x even when we do not explicitly solve for it.",
+    "visual": {
+      "kind": "circle",
+      "angle": 1.0471975512,
+      "radius": 2,
+      "triangle": false
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.433333333333334,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "2x+2y y'=0",
+    "text": "Differentiate both sides with respect to x. The x squared term gives two x. Because y itself changes with x, the derivative of y squared is two y times y prime, an application of the chain rule.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -3,
+        3
+      ],
+      "curves": [
+        {
+          "f": "sqrt(4-x*x)",
+          "color": "blue",
+          "domain": [
+            -2,
+            2
+          ]
+        },
+        {
+          "f": "-sqrt(4-x*x)",
+          "color": "blue",
+          "domain": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          1.7320508075688772
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.433333333333334,
+    "duration": 15.233333333333333,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "y'=-frac(x,y), quad y != 0",
+    "text": "Subtract two x, then divide by two y where y is nonzero. At the point one, square root of three, the slope is negative one over square root of three. The tangent slopes downward on the upper-right branch.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -3,
+        3
+      ],
+      "curves": [
+        {
+          "f": "sqrt(4-x*x)",
+          "color": "blue",
+          "domain": [
+            -2,
+            2
+          ]
+        },
+        {
+          "f": "-sqrt(4-x*x)",
+          "color": "blue",
+          "domain": [
+            -2,
+            2
+          ]
+        },
+        {
+          "f": "(4-x)/sqrt(3)",
+          "color": "gold",
+          "domain": [
+            -0.5,
+            2.5
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          1.7320508075688772
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 31.666666666666664,
+    "duration": 15.533333333333333,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "y=0: quad \"do not divide by zero\"",
+    "text": "At either horizontal endpoint, y is zero, so this rearrangement cannot produce a finite slope. The circle has a vertical tangent there. A failed division is useful information about the geometry, not permission to discard the condition.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -3,
+        3
+      ],
+      "curves": [
+        {
+          "f": "sqrt(4-x*x)",
+          "color": "blue",
+          "domain": [
+            -2,
+            2
+          ]
+        },
+        {
+          "f": "-sqrt(4-x*x)",
+          "color": "blue",
+          "domain": [
+            -2,
+            2
+          ]
+        }
+      ],
+      "points": [
+        [
+          2,
+          0
+        ]
+      ],
+      "segments": [
+        [
+          [
+            2,
+            -2.5
+          ],
+          [
+            2,
+            2.5
+          ]
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 47.199999999999996,
+    "duration": 17.6,
+    "audio": "audio_parts/04.wav"
+  }
+]

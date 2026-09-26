@@ -1,0 +1,104 @@
+[
+  {
+    "formula": "(x,y)=(cos(theta),sin(theta))",
+    "text": "On a unit circle, cosine is the horizontal coordinate and sine is the vertical coordinate. The right triangle connects these coordinates to familiar side ratios because its hypotenuse has length one. Both functions therefore describe the same moving point.",
+    "visual": {
+      "kind": "circle",
+      "angle": 0.5235987755982988,
+      "radius": 2.5,
+      "triangle": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 18.7,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "sin(pi/6)=frac(1,2) quad cos(pi/6)=frac(sqrt(3),2)",
+    "text": "At an angle of thirty degrees, the vertical coordinate is one half and the horizontal coordinate is the square root of three over two. These values satisfy the circle equation: the sum of their squares equals one.",
+    "visual": {
+      "kind": "circle",
+      "angle": 0.5235987755982988,
+      "radius": 2.5,
+      "triangle": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 18.7,
+    "duration": 15.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "tan(theta)=frac(sin(theta),cos(theta))",
+    "text": "Tangent compares vertical change with horizontal change, so it equals sine divided by cosine. For our thirty-degree angle, the ratio is one over the square root of three. Tangent records the slope of the radius when that slope is defined.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.2
+      ],
+      "y": [
+        0,
+        1
+      ],
+      "curves": [
+        {
+          "f": "x/sqrt(3)",
+          "color": "blue",
+          "domain": [
+            0,
+            1.2
+          ]
+        }
+      ],
+      "points": [
+        [
+          0.8660254037844386,
+          0.5
+        ]
+      ],
+      "segments": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0.8660254037844386,
+            0.5
+          ]
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 33.7,
+    "duration": 17.5,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "cos(pi/2)=0 quad tan(pi/2) \"undefined\"",
+    "text": "As the radius approaches vertical, the horizontal coordinate approaches zero while the vertical coordinate approaches one. Dividing by that vanishing horizontal coordinate makes tangent unbounded nearby, and tangent is undefined exactly at ninety degrees because division by zero is invalid.",
+    "visual": {
+      "kind": "circle",
+      "angle": 1.5707963267948966,
+      "radius": 2.5,
+      "triangle": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 51.2,
+    "duration": 21.566666666666666,
+    "audio": "audio_parts/04.wav"
+  }
+]

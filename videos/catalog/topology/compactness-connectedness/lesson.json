@@ -1,0 +1,182 @@
+{
+  "id": "topology.compactness-connectedness",
+  "beats": [
+    {
+      "formula": "[0,1] \" is compact in \" RR",
+      "text": "Compactness says every open cover has a finite subcover. In Euclidean spaces, the Heine Borel theorem identifies compact sets as exactly the closed and bounded ones. The closed interval is our basic example, not the definition for every topological space.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -0.3,
+          1.3
+        ],
+        "interval": [
+          0,
+          1
+        ],
+        "points": [
+          0,
+          1
+        ],
+        "labels": [
+          "included",
+          "included"
+        ]
+      }
+    },
+    {
+      "formula": "f(x)=x, quad max_(x in [0,1]) f(x)=1",
+      "text": "A continuous real-valued function on a nonempty compact set attains its maximum and minimum. On this interval, the identity reaches its maximum at one. Removing that endpoint leaves values approaching one without ever attaining it.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1.1
+        ],
+        "y": [
+          0,
+          1.1
+        ],
+        "curves": [
+          {
+            "f": "x",
+            "color": "blue",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "points": [
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "[0,1] \" is connected\"",
+      "text": "Connectedness is a different property: the space cannot be separated into two nonempty relatively open pieces. Real intervals are connected. Consequently, a continuous image of an interval cannot skip intermediate values between two of its outputs.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1
+        ],
+        "y": [
+          0,
+          1
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "green",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            0.707106781187,
+            0.5
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "[0,1] union [2,3] \" is compact, not connected\"",
+      "text": "Two separated closed intervals still form a closed bounded set, hence a compact one. They are disconnected because the gap separates the two components. Compactness controls covers and limiting behavior; connectedness controls separation. One property does not automatically supply the other.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -0.3,
+          3.3
+        ],
+        "y": [
+          -0.5,
+          0.5
+        ],
+        "curves": [],
+        "segments": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        ],
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Is the interval (−2,2) compact in R? Is it connected? State the relevant reasons.",
+      "answer": "It is not compact because it is not closed in R. It is connected because every real interval is connected.",
+      "id": "topology.compactness-connectedness.video-practice-1"
+    },
+    {
+      "prompt": "Give a continuous function on (0,1) with no maximum and explain.",
+      "answer": "f(x)=x is continuous; every value x<1 is surpassed by the value at (x+1)/2, while the supremum one is never attained.",
+      "id": "topology.compactness-connectedness.video-practice-2"
+    },
+    {
+      "prompt": "Classify {−1,1} as compact and/or connected in R.",
+      "answer": "It is compact because it is finite, hence closed and bounded in R. It is disconnected: its two singleton subsets are nonempty disjoint relatively open sets covering it.",
+      "id": "topology.compactness-connectedness.video-practice-3"
+    }
+  ],
+  "takeaway": "Compactness and connectedness are distinct; closed and bounded characterizes compactness in Euclidean space.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Topology",
+  "course_id": "topology",
+  "title": "Compactness and connectedness",
+  "objective": "Prove compactness and connectedness statements and use their consequences.",
+  "index": 2,
+  "total": 3,
+  "prerequisites": [
+    "topology.metric-topological-spaces"
+  ]
+}

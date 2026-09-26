@@ -1,0 +1,26 @@
+[
+  {
+    "title": "phase_0",
+    "text": "A diagram suggests what might be true. A proof explains why the claim follows from stated facts. Mark the givens first. Do not assume two lengths are equal merely because they look equal in a drawing.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_1",
+    "text": "Suppose two sides of a triangle are equal. Draw the segment from their shared vertex to the midpoint of the opposite side. The midpoint creates equal base pieces, and both smaller triangles share the new segment.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_2",
+    "text": "The two small triangles now have three pairs of equal sides. By side, side, side, they are congruent. Corresponding base angles are therefore equal. Each arrow in the argument has a reason.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_3",
+    "text": "Testing examples can reveal a pattern, but examples alone do not prove a universal statement. One genuine counterexample can disprove it. A good proof names the assumptions and explains why every allowed case follows.",
+    "min_duration": 17,
+    "tail": 1.0
+  }
+]

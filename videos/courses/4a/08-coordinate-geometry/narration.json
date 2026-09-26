@@ -1,0 +1,26 @@
+[
+  {
+    "title": "phase_0",
+    "text": "Coordinates connect pictures to arithmetic. To move from one point to another, subtract the x coordinates for horizontal change, and subtract the y coordinates for vertical change. Keep each subtraction in the same order.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_1",
+    "text": "These changes form the legs of a right triangle. The distance between the points is the square root of the sum of their squares. Negative changes are squared, so distance stays nonnegative.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_2",
+    "text": "The midpoint lies halfway in each coordinate. Average the two x coordinates and average the two y coordinates. Do not average x with y; each axis is handled separately.",
+    "min_duration": 17,
+    "tail": 1.0
+  },
+  {
+    "title": "phase_3",
+    "text": "Slope compares vertical change to horizontal change. Equal slopes show parallel nonvertical lines. A vertical line has zero horizontal change, so its slope is undefined, not zero.",
+    "min_duration": 17,
+    "tail": 1.0
+  }
+]

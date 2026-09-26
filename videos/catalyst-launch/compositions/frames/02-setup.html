@@ -1,0 +1,293 @@
+<template>
+  <style>
+    #root {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      container-type: size;
+      color: #243e34;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-weight: 400;
+    }
+    #launch-02-background {
+      position: absolute;
+      inset: 0;
+      background: #f6f7f0;
+    }
+    #launch-02-topbar {
+      position: absolute;
+      left: 5cqw;
+      top: 5.8cqh;
+      width: 90cqw;
+      height: 8.2cqh;
+      border-bottom: 2px solid #315c47;
+      box-sizing: border-box;
+    }
+    #launch-02-topbar-label {
+      position: absolute;
+      left: 0;
+      top: 1.2cqh;
+      margin: 0;
+      font-family: Consolas, monospace;
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: #315c47;
+    }
+    #launch-02-logo {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 3.35cqw;
+      height: 3.35cqw;
+      object-fit: contain;
+    }
+    .launch-02-phase {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100cqw;
+      height: 82cqh;
+    }
+    .launch-02-ordinal {
+      position: absolute;
+      left: 5cqw;
+      top: 27.8cqh;
+      margin: 0;
+      color: #315c47;
+      font-size: 11.5cqw;
+      font-weight: 500;
+      line-height: .92;
+      letter-spacing: -.03em;
+    }
+    .launch-02-card {
+      position: absolute;
+      box-sizing: border-box;
+      border: 2.5px solid #315c47;
+      border-radius: 8px;
+    }
+    #launch-02-preparation-card {
+      left: 22.4cqw;
+      top: 25.9cqh;
+      width: 71.8cqw;
+      height: 34cqh;
+      padding: 4.3cqh 3cqw;
+      background: #f7edd6;
+    }
+    #launch-02-python {
+      margin: 0;
+      font-size: 5cqw;
+      font-weight: 500;
+      line-height: .96;
+      letter-spacing: -.02em;
+      color: #243e34;
+    }
+    #launch-02-preparation-rule {
+      position: absolute;
+      left: 3cqw;
+      top: 17.4cqh;
+      width: 65.5cqw;
+      height: 2px;
+      background: #315c47;
+    }
+    #launch-02-extract {
+      position: absolute;
+      left: 3cqw;
+      top: 22cqh;
+      margin: 0;
+      font-size: 3.5cqw;
+      font-weight: 500;
+      line-height: .96;
+      letter-spacing: -.01em;
+      color: #243e34;
+    }
+    #launch-02-windows {
+      left: 22.4cqw;
+      top: 25.9cqh;
+      width: 33.4cqw;
+      height: 33cqh;
+      padding: 4.4cqh 2.45cqw;
+      background: #f6f7f0;
+      color: #315c47;
+    }
+    #launch-02-terminal {
+      left: 56.25cqw;
+      top: 25.9cqh;
+      width: 38cqw;
+      height: 33cqh;
+      padding: 4.4cqh 2.45cqw;
+      background: #315c47;
+      color: #f6f7f0;
+    }
+    .launch-02-platform {
+      margin: 0;
+      font-size: 3.5cqw;
+      font-weight: 500;
+      line-height: .96;
+      letter-spacing: -.01em;
+    }
+    .launch-02-platform-rule {
+      position: absolute;
+      left: 2.45cqw;
+      right: 2.45cqw;
+      top: 14.4cqh;
+      height: 2px;
+      background: currentColor;
+    }
+    .launch-02-command {
+      position: absolute;
+      left: 2.45cqw;
+      top: 19.25cqh;
+      margin: 0;
+      font-family: Consolas, monospace;
+      font-size: 2.5cqw;
+      font-weight: 500;
+      line-height: 1.3;
+      white-space: pre;
+      letter-spacing: 0;
+    }
+    .launch-02-command-letter {
+      display: inline-block;
+    }
+    #launch-02-browser {
+      left: 22.4cqw;
+      top: 25.9cqh;
+      width: 71.8cqw;
+      height: 33cqh;
+      background: #edf0fc;
+      border-width: 2px;
+      border-radius: 6px;
+    }
+    #launch-02-browser-label {
+      position: absolute;
+      top: 4cqh;
+      left: 2.65cqw;
+      margin: 0;
+      font-family: Consolas, monospace;
+      font-size: 26px;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #315c47;
+    }
+    #launch-02-browser-rule {
+      position: absolute;
+      left: 2.65cqw;
+      right: 2.65cqw;
+      top: 10.8cqh;
+      height: 2px;
+      background: #315c47;
+    }
+    #launch-02-address-strip {
+      position: absolute;
+      left: 2.65cqw;
+      right: 2.65cqw;
+      top: 15.1cqh;
+      height: 12.8cqh;
+      border: 2px solid #315c47;
+      border-radius: 6px;
+      background: #f6f7f0;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      padding: 0 2cqw;
+    }
+    #launch-02-address {
+      margin: 0;
+      color: #243e34;
+      font-size: 4.4cqw;
+      font-weight: 500;
+      letter-spacing: -.02em;
+      line-height: 1;
+      white-space: nowrap;
+    }
+  </style>
+
+  <div id="root" data-composition-id="launch-02" data-width="1920" data-height="1080">
+    <div id="launch-02-background" class="clip" data-start="0" data-duration="12.46666667" data-track-index="0"></div>
+
+    <header id="launch-02-topbar" class="clip" data-start="0" data-duration="12.46666667" data-track-index="1">
+      <p id="launch-02-topbar-label">Start your copy</p>
+      <img id="launch-02-logo" src="assets/catalyst-logo.svg" alt="Catalyst" width="64" height="64">
+    </header>
+
+    <section id="launch-02-prepare" class="clip launch-02-phase" data-start="0" data-duration="3" data-track-index="2" aria-label="Step 1: Python and the offline ZIP">
+      <div id="launch-02-number-one" class="launch-02-ordinal">01</div>
+      <div id="launch-02-preparation-card" class="launch-02-card">
+        <h2 id="launch-02-python">Python 3.10+</h2>
+        <div id="launch-02-preparation-rule"></div>
+        <p id="launch-02-extract">Extract offline ZIP</p>
+      </div>
+    </section>
+
+    <section id="launch-02-start" class="clip launch-02-phase" data-start="3" data-duration="6.2" data-track-index="3" aria-label="Step 2: launch Catalyst for your operating system">
+      <div id="launch-02-number-two" class="launch-02-ordinal">02</div>
+      <div id="launch-02-windows" class="launch-02-card">
+        <h2 class="launch-02-platform">Windows</h2>
+        <div class="launch-02-platform-rule"></div>
+        <code class="launch-02-command">Start Catalyst.cmd</code>
+      </div>
+      <div id="launch-02-terminal" class="launch-02-card">
+        <h2 class="launch-02-platform">Mac / Linux</h2>
+        <div class="launch-02-platform-rule"></div>
+        <code id="launch-02-terminal-command" class="launch-02-command" aria-label="python3 start.py"><span class="launch-02-command-letter">p</span><span class="launch-02-command-letter">y</span><span class="launch-02-command-letter">t</span><span class="launch-02-command-letter">h</span><span class="launch-02-command-letter">o</span><span class="launch-02-command-letter">n</span><span class="launch-02-command-letter">3</span><span class="launch-02-command-letter"> </span><span class="launch-02-command-letter">s</span><span class="launch-02-command-letter">t</span><span class="launch-02-command-letter">a</span><span class="launch-02-command-letter">r</span><span class="launch-02-command-letter">t</span><span class="launch-02-command-letter">.</span><span class="launch-02-command-letter">p</span><span class="launch-02-command-letter">y</span></code>
+      </div>
+    </section>
+
+    <section id="launch-02-open" class="clip launch-02-phase" data-start="9.2" data-duration="3.26666667" data-track-index="4" aria-label="Step 3: open the local address in a browser">
+      <div id="launch-02-number-three" class="launch-02-ordinal">03</div>
+      <div id="launch-02-browser" class="launch-02-card">
+        <p id="launch-02-browser-label">Browser</p>
+        <div id="launch-02-browser-rule"></div>
+        <div id="launch-02-address-strip"><p id="launch-02-address">http://127.0.0.1:8766</p></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="assets/gsap.min.js"></script>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const launch02Timeline = gsap.timeline({ paused: true });
+
+    launch02Timeline.fromTo('#launch-02-number-one',
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }, 0);
+    launch02Timeline.fromTo('#launch-02-preparation-card',
+      { opacity: 0, y: 22 },
+      { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }, 0.04);
+    launch02Timeline.fromTo('#launch-02-preparation-rule',
+      { opacity: 0, scaleX: 0.92, transformOrigin: '0% 50%' },
+      { opacity: 1, scaleX: 1, duration: 0.4, ease: 'power2.out' }, 1.1);
+    launch02Timeline.fromTo('#launch-02-extract',
+      { opacity: 0, y: 18 },
+      { opacity: 1, y: 0, duration: 0.45, ease: 'power2.out' }, 1.2);
+
+    launch02Timeline.fromTo('#launch-02-number-two',
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }, 3);
+    launch02Timeline.fromTo('#launch-02-windows',
+      { opacity: 0, x: 280, y: 22, scale: 1 },
+      { opacity: 1, x: 280, y: 0, scale: 1, duration: 0.45, ease: 'power2.out' }, 3.03);
+    launch02Timeline.to('#launch-02-windows',
+      { x: 0, scale: 0.86, opacity: 0.42, transformOrigin: '0% 50%', duration: 0.65, ease: 'power2.inOut' }, 5.6);
+    launch02Timeline.fromTo('#launch-02-terminal',
+      { opacity: 0, y: 24 },
+      { opacity: 1, y: 0, duration: 0.45, ease: 'power2.out' }, 5.62);
+    launch02Timeline.fromTo('.launch-02-command-letter',
+      { opacity: 0, y: 3 },
+      { opacity: 1, y: 0, duration: 0.05, stagger: 0.085, ease: 'none' }, 6.35);
+
+    launch02Timeline.fromTo('#launch-02-number-three',
+      { opacity: 0, y: 15 },
+      { opacity: 1, y: 0, duration: 0.23, ease: 'power2.out' }, 9.2);
+    launch02Timeline.fromTo('#launch-02-browser',
+      { opacity: 0, y: 15 },
+      { opacity: 1, y: 0, duration: 0.23, ease: 'power2.out' }, 9.2);
+    // Address is fully landed at 9.43s: a 3.03666667-second reading hold.
+    launch02Timeline.set('#launch-02-browser', { opacity: 1 }, 12.46666667);
+
+    window.__timelines['launch-02'] = launch02Timeline;
+  </script>
+</template>

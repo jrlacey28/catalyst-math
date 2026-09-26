@@ -1,0 +1,120 @@
+[
+  {
+    "formula": "E[N(t)]=lambda t, quad lambda=2",
+    "text": "A Poisson process counts random arrivals at a constant rate with independent increments over disjoint time intervals. At rate two per hour, the expected count in one hour is two. This is an average, not a promise of exactly two events.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        2
+      ],
+      "points": [
+        0.2,
+        0.7,
+        1.4,
+        1.8
+      ],
+      "labels": [
+        "event",
+        "event",
+        "event",
+        "event"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "P(N(1)=k)=e^(-2)frac(2^k,k!)",
+    "text": "The count in one hour has a Poisson distribution. Its first four probabilities correspond to zero, one, two, and three arrivals, with more possible counts beyond those shown. The chance of zero arrivals is e to the negative two.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        0.135335283237,
+        0.270670566473,
+        0.270670566473,
+        0.180447044315
+      ],
+      "labels": [
+        "0 events",
+        "1 event",
+        "2 events",
+        "3 events"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "P(T>t)=e^(-2t), quad E[T]=frac(1,2)",
+    "text": "The waiting time to the first arrival exceeds t exactly when no arrivals occur by t. That gives exponential survival and mean waiting time one half hour. Independent exponential interarrival times are one way to construct this Poisson process.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        2
+      ],
+      "y": [
+        0,
+        1.1
+      ],
+      "curves": [
+        {
+          "f": "exp(-2*x)",
+          "color": "blue",
+          "domain": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "P(T>s+t | T>s)=P(T>t)",
+    "text": "Exponential waiting is memoryless: elapsed waiting does not change the remaining-time distribution. A general renewal process only assumes identically distributed independent interarrival times. Fixed half-hour intervals have the same average rate but are not memoryless and do not form a Poisson process.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        2
+      ],
+      "points": [
+        0.5,
+        1,
+        1.5,
+        2
+      ],
+      "arrows": [
+        [
+          0,
+          0.5
+        ],
+        [
+          0.5,
+          1
+        ],
+        [
+          1,
+          1.5
+        ],
+        [
+          1.5,
+          2
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

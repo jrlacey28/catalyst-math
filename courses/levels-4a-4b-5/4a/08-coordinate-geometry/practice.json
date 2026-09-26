@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4A-08",
+  "batches": [
+    [
+      {
+        "id": "4A-08-P1",
+        "prompt": "Find the changes from A(1,2) to B(4,6)."
+      },
+      {
+        "id": "4A-08-P2",
+        "prompt": "Find the distance between (1,2) and (4,6)."
+      },
+      {
+        "id": "4A-08-P3",
+        "prompt": "Find the midpoint of (-2,1) and (6,5)."
+      }
+    ],
+    [
+      {
+        "id": "4A-08-P4",
+        "prompt": "Find the slope through (2,1) and (6,9)."
+      },
+      {
+        "id": "4A-08-P5",
+        "prompt": "What is the slope of the line through (3,-1) and (3,7)?"
+      },
+      {
+        "id": "4A-08-P6",
+        "prompt": "Lines have slopes 2/3 and 2/3 and different intercepts. What geometric relationship follows?"
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

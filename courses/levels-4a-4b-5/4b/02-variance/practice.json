@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4B-02",
+  "batches": [
+    [
+      {
+        "id": "4B-02-P1",
+        "prompt": "Treat 1, 3 as the entire population. Find its mean."
+      },
+      {
+        "id": "4B-02-P2",
+        "prompt": "For that population, list the deviations from the mean and their squares."
+      },
+      {
+        "id": "4B-02-P3",
+        "prompt": "Find the population variance of 1, 3."
+      }
+    ],
+    [
+      {
+        "id": "4B-02-P4",
+        "prompt": "Find the population variance of 2, 2, 6, 6."
+      },
+      {
+        "id": "4B-02-P5",
+        "prompt": "Treat 1, 3 as a sample. Find the usual sample variance."
+      },
+      {
+        "id": "4B-02-P6",
+        "prompt": "Why not average the signed deviations as a measure of spread?"
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.711
+Bisection starts with a continuous function whose endpoint values have opposite signs
+
+00:00:05.711 --> 00:00:10.137
+The intermediate value theorem guarantees at least one zero inside
+
+00:00:10.137 --> 00:00:16.333
+For x squared minus three, inputs one and two provide such a certified bracket.
+
+00:00:17.633 --> 00:00:22.886
+The midpoint one and a half has negative output, so retain the right half
+
+00:00:22.886 --> 00:00:28.515
+The next midpoint, one and three quarters, has positive output, so retain the left portion
+
+00:00:28.515 --> 00:00:32.267
+Each decision halves the interval while preserving the sign bracket.
+
+00:00:33.567 --> 00:00:38.012
+Newton's method instead follows a tangent line to its horizontal intercept
+
+00:00:38.012 --> 00:00:42.458
+Starting at two gives one and three quarters in one step
+
+00:00:42.458 --> 00:00:49.733
+It often converges rapidly near a simple root, but needs a nonzero derivative and a suitable starting point.
+
+00:00:51.033 --> 00:00:55.442
+Opposite endpoint signs without continuity do not guarantee a zero
+
+00:00:55.442 --> 00:01:01.172
+One over x changes sign across its missing point but never equals zero
+
+00:01:01.172 --> 00:01:08.667
+Root-finding guarantees depend on their hypotheses, not just on a pattern of numbers or a crossing-looking picture.

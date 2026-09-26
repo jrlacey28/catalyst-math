@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.897
+The mean value theorem links an average change to an instantaneous rate
+
+00:00:05.897 --> 00:00:13.685
+Its hypotheses matter: the function must be continuous on the closed interval and differentiable throughout the interior
+
+00:00:13.685 --> 00:00:16.433
+Our square function satisfies both requirements.
+
+00:00:17.733 --> 00:00:23.207
+The secant slope is nine minus one divided by three minus one, giving four
+
+00:00:23.207 --> 00:00:28.290
+The theorem guarantees some interior input where the tangent slope is also four
+
+00:00:28.290 --> 00:00:32.200
+It does not usually claim that input is the midpoint.
+
+00:00:33.500 --> 00:00:39.203
+Here the derivative is two x, so solving for slope four gives c equals two
+
+00:00:39.203 --> 00:00:43.385
+The tangent line through two, four is four x minus four
+
+00:00:43.385 --> 00:00:47.567
+Its parallel direction makes the average and local rates visually comparable.
+
+00:00:48.867 --> 00:00:54.570
+Absolute value is continuous, but the corner at zero is not differentiable
+
+00:00:54.570 --> 00:01:02.173
+Its endpoint secant slope is zero, while its existing interior derivatives are negative or positive one
+
+00:01:02.173 --> 00:01:05.500
+Dropping a hypothesis destroys the promised conclusion.

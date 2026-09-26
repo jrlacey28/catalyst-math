@@ -1,0 +1,103 @@
+{
+  "id": "precalculus.polar-coordinates",
+  "beats": [
+    {
+      "formula": "x=r cos(theta) quad y=r sin(theta)",
+      "text": "Polar coordinates locate a point using a directed distance from the origin and an angle. For nonnegative radius, move outward along the ray at that angle. Multiplying the unit-circle coordinates by the radius converts the location into Cartesian coordinates.",
+      "visual": {
+        "kind": "circle",
+        "angle": 1.0471975511965976,
+        "radius": 2.4,
+        "triangle": true,
+        "arc": true
+      }
+    },
+    {
+      "formula": "r=2, theta=frac(pi,3) arrow.r (x,y)=(1,sqrt(3))",
+      "text": "At radius two and angle sixty degrees, the horizontal coordinate is two times one half, giving one. The vertical coordinate is two times the square root of three over two, giving the square root of three.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            1.7320508075688772
+          ]
+        ],
+        "points": [
+          [
+            1,
+            1.7320508075688772
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "(2,theta) \"and\" (2,theta+2pi)",
+      "text": "Polar names are not unique. Adding a complete turn keeps the same radius and final ray, so the same point receives another angle label. This differs from ordinary Cartesian coordinates, where each ordered pair names one fixed coordinate combination.",
+      "visual": {
+        "kind": "circle",
+        "angle": 7.330382858376184,
+        "radius": 2.4,
+        "arc": true
+      }
+    },
+    {
+      "formula": "(r,theta)=(-r,theta+pi)",
+      "text": "A negative radius reverses the direction along the chosen ray. Changing the radius sign while adding half a turn names the same point. When converting back from coordinates, use quadrant information instead of relying on a tangent ratio alone.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            -1,
+            -1.7320508075688772
+          ]
+        ],
+        "matrix": [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        "points": [
+          [
+            1,
+            1.7320508075688772
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Convert polar coordinates (4,π/2) to Cartesian coordinates.",
+      "answer": "x=4cos(π/2)=0,y=4sin(π/2)=4, so(0,4).",
+      "id": "precalculus.polar-coordinates.video-practice-1"
+    },
+    {
+      "prompt": "Give one polar description of (−3,0) with a nonnegative radius.",
+      "answer": "(r,θ)=(3,π), with angles understood modulo2π.",
+      "id": "precalculus.polar-coordinates.video-practice-2"
+    },
+    {
+      "prompt": "Show that (−2,0) and (2,π) as polar pairs name the same Cartesian point.",
+      "answer": "First gives(−2×1,−2×0)=(−2,0); second gives(2×−1,2×0)=(−2,0).",
+      "id": "precalculus.polar-coordinates.video-practice-3"
+    }
+  ],
+  "takeaway": "Radius-angle descriptions can be nonunique; conversion requires sign and quadrant awareness.",
+  "scope": "Polar-to-Cartesian conversion, full turns, and negative radii.",
+  "course": "Precalculus",
+  "course_id": "precalculus",
+  "title": "Polar coordinates",
+  "objective": "Translate radius-angle pairs to Cartesian coordinates and interpret repeated representations.",
+  "index": 6,
+  "total": 8,
+  "prerequisites": [
+    "trigonometry.unit-circle",
+    "trigonometry.radians"
+  ]
+}

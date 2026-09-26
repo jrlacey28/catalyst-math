@@ -1,0 +1,7 @@
+Polar coordinates locate a point using a directed distance from the origin and an angle. For nonnegative radius, move outward along the ray at that angle. Multiplying the unit-circle coordinates by the radius converts the location into Cartesian coordinates.
+
+At radius two and angle sixty degrees, the horizontal coordinate is two times one half, giving one. The vertical coordinate is two times the square root of three over two, giving the square root of three.
+
+Polar names are not unique. Adding a complete turn keeps the same radius and final ray, so the same point receives another angle label. This differs from ordinary Cartesian coordinates, where each ordered pair names one fixed coordinate combination.
+
+A negative radius reverses the direction along the chosen ray. Changing the radius sign while adding half a turn names the same point. When converting back from coordinates, use quadrant information instead of relying on a tangent ratio alone.

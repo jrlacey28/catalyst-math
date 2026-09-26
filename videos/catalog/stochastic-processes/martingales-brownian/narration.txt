@@ -1,0 +1,7 @@
+A martingale is a precise fair-prediction model. Its current value is determined by the information already observed, its expected absolute value is finite, and its conditional expected next value equals its current value. Fairness concerns conditional averages, not every individual path.
+
+If a step rises by one with probability three quarters and falls with probability one quarter, its expected increase is one half. The position itself is no longer a martingale. Subtracting one half times the step count removes that predictable drift.
+
+Standard Brownian motion is a continuous-time example with independent normal increments, mean zero and variance equal to elapsed time. Independence from the past makes its conditional expected future value equal its present value. These connected sample points only approximate a possible path.
+
+Actual Brownian paths are continuous but almost surely nowhere differentiable. A polygonal drawing cannot demonstrate that theorem. Nor does the martingale condition justify every stopping strategy: results about stopping times need additional assumptions, such as bounded stopping or suitable integrability.

@@ -1,0 +1,142 @@
+{
+  "id": "calculus-1.optimization",
+  "beats": [
+    {
+      "formula": "2x+2y=20, quad y=10-x",
+      "text": "Optimization starts by translating constraints. A rectangle with perimeter twenty has side lengths whose sum is ten. Naming one side x makes the other ten minus x, so one variable now determines the entire area.",
+      "visual": {
+        "kind": "grid",
+        "rows": 4,
+        "cols": 6,
+        "filled": 24
+      }
+    },
+    {
+      "formula": "A(x)=x(10-x), quad 0<=x<=10",
+      "text": "The area is x times ten minus x, with nonnegative side lengths restricting x between zero and ten. Expanding gives ten x minus x squared. Its graph shows that increasing one side eventually sacrifices too much of the other.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          10
+        ],
+        "y": [
+          0,
+          30
+        ],
+        "curves": [
+          {
+            "f": "10*x-x*x",
+            "color": "blue",
+            "domain": [
+              0,
+              10
+            ]
+          }
+        ],
+        "points": [
+          [
+            2,
+            16
+          ],
+          [
+            8,
+            16
+          ]
+        ],
+        "sweep": true
+      }
+    },
+    {
+      "formula": "A'(x)=10-2x=0 quad arrow.r quad x=5",
+      "text": "Differentiate to locate the interior stationary point. Ten minus two x equals zero when x is five. That produces a five by five square with area twenty-five, while either endpoint gives a degenerate rectangle with zero area.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          10
+        ],
+        "y": [
+          0,
+          30
+        ],
+        "curves": [
+          {
+            "f": "10*x-x*x",
+            "color": "blue",
+            "domain": [
+              0,
+              10
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            5,
+            25
+          ],
+          [
+            10,
+            0
+          ]
+        ],
+        "segments": [
+          [
+            [
+              3,
+              25
+            ],
+            [
+              7,
+              25
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "A(x)=25-(x-5)^2<=25",
+      "text": "Completing the square explains why this is the global maximum: a square is never negative, so subtracting it cannot exceed twenty-five. A zero derivative only suggests a candidate; the domain and comparison establish what kind of optimum it is.",
+      "visual": {
+        "kind": "grid",
+        "rows": 5,
+        "cols": 5,
+        "filled": 25
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "A rectangle has perimeter 28. Write its area using one side x, find its maximum, and explain why the answer is a square.",
+      "answer": "The other side is 14−x, with 0≤x≤14. A=14x−x²=49−(x−7)², so the maximum is 49 at x=7 and y=7.",
+      "id": "calculus-1.optimization.video-practice-1"
+    },
+    {
+      "prompt": "Two nonnegative numbers have sum 12. Find their largest possible product and justify the result algebraically or with calculus.",
+      "answer": "Let them be x and 12−x. Their product is 36−(x−6)²≤36. Equality occurs at 6 and 6.",
+      "id": "calculus-1.optimization.video-practice-2"
+    },
+    {
+      "prompt": "The derivative of f(x)=x² is zero at x=0. Explain why this does not make zero a maximum.",
+      "answer": "f(x)=x²≥0 with equality at 0, so zero is a global minimum. A stationary point can be a minimum, maximum, or neither; classification needs additional reasoning.",
+      "id": "calculus-1.optimization.video-practice-3"
+    }
+  ],
+  "takeaway": "Write the constraint, respect the domain, find candidates, and justify the optimum rather than trusting a zero derivative alone.",
+  "scope": "One-variable constrained rectangle optimization with both calculus and completing-the-square justification.",
+  "course": "Calculus I",
+  "course_id": "calculus-1",
+  "title": "Optimization",
+  "objective": "Model an objective and constraints, compare candidates, and interpret endpoints.",
+  "index": 7,
+  "total": 8,
+  "prerequisites": [
+    "calculus-1.derivatives",
+    "calculus-1.continuity",
+    "pre-algebra.word-problems"
+  ]
+}

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.955
+A vector in three dimensions records three directed components
+
+00:00:03.955 --> 00:00:09.880
+For one, two, two, the length comes from adding the squares of all three components
+
+00:00:09.880 --> 00:00:16.200
+These bars display the squared contributions, whose sum is nine and whose square root is three.
+
+00:00:17.500 --> 00:00:19.380
+Addition combines corresponding coordinates
+
+00:00:19.380 --> 00:00:24.081
+Add the first components, then the second, then the third
+
+00:00:24.081 --> 00:00:35.833
+The drawn arrows show the horizontal projection, while the formula retains the height component; a two-dimensional picture cannot show every coordinate of the three-dimensional movement.
+
+00:00:37.133 --> 00:00:42.031
+The dot product adds products of matching components and produces a scalar
+
+00:00:42.031 --> 00:00:48.560
+Here the first contribution is two, the second is negative two, and the third is two
+
+00:00:48.560 --> 00:00:52.233
+Including the hidden third coordinate changes the alignment calculation.
+
+00:00:53.533 --> 00:00:59.709
+Dividing this nonzero vector by its length preserves its direction and produces a unit vector
+
+00:00:59.709 --> 00:01:05.885
+Each component is scaled by one third, so each squared contribution scales by one ninth
+
+00:01:05.885 --> 00:01:08.767
+The new squared contributions add to one.

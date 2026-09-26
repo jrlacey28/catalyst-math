@@ -1,0 +1,7 @@
+The mean value theorem links an average change to an instantaneous rate. Its hypotheses matter: the function must be continuous on the closed interval and differentiable throughout the interior. Our square function satisfies both requirements.
+
+The secant slope is nine minus one divided by three minus one, giving four. The theorem guarantees some interior input where the tangent slope is also four. It does not usually claim that input is the midpoint.
+
+Here the derivative is two x, so solving for slope four gives c equals two. The tangent line through two, four is four x minus four. Its parallel direction makes the average and local rates visually comparable.
+
+Absolute value is continuous, but the corner at zero is not differentiable. Its endpoint secant slope is zero, while its existing interior derivatives are negative or positive one. Dropping a hypothesis destroys the promised conclusion.

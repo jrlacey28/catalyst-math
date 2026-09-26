@@ -1,0 +1,178 @@
+{
+  "id": "discrete-math.graph-theory",
+  "beats": [
+    {
+      "formula": "V={A,B,C,D}, quad abs(E)=4",
+      "text": "A graph describes relationships through vertices and edges. These four vertices might represent places, with an edge whenever a direct connection exists. The geometry of the drawing is optional; which pairs are connected is the essential information.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "1+3+2+2=2 times 4",
+      "text": "A vertex's degree counts the edges touching it. The degrees here are one, three, two, and two. Adding them counts every undirected edge twice, once at each endpoint, which explains the degree-sum identity.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "A:1",
+          "B:3",
+          "C:2",
+          "D:2"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "active": [
+          1
+        ]
+      }
+    },
+    {
+      "formula": "A arrow.r B arrow.r D: quad \"2 edges\"",
+      "text": "A path follows connected edges. Without weights, a shortest path minimizes the number of edges, so reaching D from A through B takes two steps. A disconnected graph would not guarantee a path between every pair of vertices.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "active": [
+          0,
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "formula": "A arrow.r B arrow.r C arrow.r D: quad 1+1+1=3",
+      "text": "Weights change the goal. If the direct B-to-D edge costs four, then the two-edge route from A costs five. The three-edge route through C costs only three. Fewest edges and least total cost are different optimization questions.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": [
+          "1",
+          "1",
+          "4",
+          "1"
+        ],
+        "active": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "In a triangle graph with edges AB, BC, and CA, list the degrees and verify the degree-sum identity.",
+      "answer": "Each of the three vertices has degree 2. The degree sum is 6=2·3, twice the number of edges.",
+      "id": "discrete-math.graph-theory.video-practice-1"
+    },
+    {
+      "prompt": "Suppose AB has cost 2, BC cost 1, and AC cost 5. Find the least-cost route from A to C and compare it with the route using the fewest edges.",
+      "answer": "A→B→C costs 3 and is least-cost. The direct A→C edge uses only one edge but costs 5.",
+      "id": "discrete-math.graph-theory.video-practice-2"
+    },
+    {
+      "prompt": "A graph has only edges AB and CD. Is there a path from A to D? Explain using connected components.",
+      "answer": "No. The vertices form two components {A,B} and {C,D}; no edge connects them.",
+      "id": "discrete-math.graph-theory.video-practice-3"
+    }
+  ],
+  "takeaway": "Graph structure records connections; degree, reachability, edge count, and weighted cost answer different questions.",
+  "scope": "Undirected graphs, degrees, paths, and the distinction between weighted and unweighted shortest routes.",
+  "course": "Discrete mathematics",
+  "course_id": "discrete-math",
+  "title": "Graph theory",
+  "objective": "Reason about vertices, edges, paths, trees, and connectivity.",
+  "index": 5,
+  "total": 6,
+  "prerequisites": [
+    "discrete-math.sets",
+    "discrete-math.proofs"
+  ]
+}

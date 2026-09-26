@@ -1,0 +1,160 @@
+{
+  "id": "pre-algebra.basic-functions",
+  "beats": [
+    {
+      "formula": "f(x)=3x-2",
+      "text": "A function pairs each allowed input with exactly one output. This rule triples the input and then subtracts two. The letter x marks an input position; it does not mean that we must solve for x immediately.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          4
+        ],
+        "y": [
+          -5,
+          10
+        ],
+        "curves": [
+          {
+            "f": "3*x-2",
+            "color": "blue",
+            "domain": [
+              -1,
+              4
+            ]
+          }
+        ],
+        "sweep": true
+      }
+    },
+    {
+      "formula": "f(2)=3 times 2-2=4",
+      "text": "Evaluating the function means supply an input and follow its rule. Replacing x by two gives output four, represented by the point two, four. The first coordinate records the supplied input and the second records the result.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          4
+        ],
+        "y": [
+          -5,
+          10
+        ],
+        "curves": [
+          {
+            "f": "3*x-2",
+            "color": "blue",
+            "domain": [
+              -1,
+              4
+            ]
+          }
+        ],
+        "points": [
+          [
+            2,
+            4
+          ]
+        ],
+        "labels": [
+          "input, output"
+        ]
+      }
+    },
+    {
+      "formula": "f(t+1)=3(t+1)-2=3t+1",
+      "text": "An entire expression can enter the input slot. Replace every x with the whole quantity t plus one, using parentheses to protect its grouping. Distributing three then gives three t plus one, an output expression rather than a solved input.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "t",
+          "t+1",
+          "3(t+1)-2"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "weights": [
+          "+1",
+          "f"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "formula": "f(x)=7 arrow.r 3x-2=7 arrow.r x=3",
+      "text": "Solving reverses what is known. Specifying output seven asks which input reaches that height; here the input is three. Evaluation, symbolic substitution, and solving are related tasks, but their requested answers are different kinds of objects.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          4
+        ],
+        "y": [
+          -5,
+          10
+        ],
+        "curves": [
+          {
+            "f": "3*x-2",
+            "color": "blue",
+            "domain": [
+              -1,
+              4
+            ]
+          },
+          {
+            "f": "7",
+            "color": "gold",
+            "domain": [
+              -1,
+              4
+            ]
+          }
+        ],
+        "points": [
+          [
+            3,
+            7
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For f(x)=2x−7, find f(6) and identify input and output.",
+      "answer": "f(6)=5; input six and output five.",
+      "id": "pre-algebra.basic-functions.video-practice-1"
+    },
+    {
+      "prompt": "For f(x)=2x−7, simplify f(s+4).",
+      "answer": "2(s+4)−7=2s+1.",
+      "id": "pre-algebra.basic-functions.video-practice-2"
+    },
+    {
+      "prompt": "For the same rule, solve f(x)=15. Explain how this differs from evaluating f(15).",
+      "answer": "2x−7=15 gives x=11. Evaluating f(15) instead supplies input fifteen and gives output23.",
+      "id": "pre-algebra.basic-functions.video-practice-3"
+    }
+  ],
+  "takeaway": "Distinguish supplying an input, substituting an expression, and solving for an input.",
+  "scope": "Input-output meaning, whole-expression substitution, and inverse questions.",
+  "course": "Pre-algebra",
+  "course_id": "pre-algebra",
+  "title": "Basic functions",
+  "objective": "Distinguish an input, an output, and an equation to solve; substitute whole expressions.",
+  "index": 7,
+  "total": 8,
+  "prerequisites": [
+    "pre-algebra.expressions",
+    "pre-algebra.coordinate-plane"
+  ]
+}

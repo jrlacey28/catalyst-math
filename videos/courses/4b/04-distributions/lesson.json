@@ -1,0 +1,17 @@
+{
+  "id": "4B-04",
+  "unit": "4b",
+  "course": "Statistics Basics",
+  "index": 4,
+  "total": 6,
+  "slug": "distributions",
+  "title": "Distributions: shape, frequency, and outliers",
+  "objective": "Read frequency displays and describe center, spread, skew, and extremes.",
+  "prerequisites": "Counting and measures of center.",
+  "formulas": [
+    "\"value\" quad \"frequency\"",
+    "\"symmetric\" quad \"right-skewed\"",
+    "\"center\" quad \"spread\" quad \"shape\"",
+    "\"relative frequency\"=\"count\"/\"total\""
+  ]
+}

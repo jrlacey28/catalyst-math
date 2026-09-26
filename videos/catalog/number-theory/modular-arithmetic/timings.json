@@ -1,0 +1,139 @@
+[
+  {
+    "formula": "14 equiv 2 \" (mod 12)\"",
+    "text": "Congruence means two integers differ by a multiple of the modulus. Fourteen and two differ by twelve, so they represent the same remainder class. We can add and multiply classes consistently, but division needs an extra condition.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        15
+      ],
+      "points": [
+        2,
+        14
+      ],
+      "arrows": [
+        [
+          2,
+          14
+        ]
+      ],
+      "labels": [
+        "2",
+        "14"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.833333333333332,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "7*7 equiv 1 \" (mod 12)\"",
+    "text": "Seven is invertible modulo twelve because forty-nine leaves remainder one. Its inverse is therefore seven itself. This works because seven and twelve have greatest common divisor one; an arbitrary nonzero remainder need not be invertible.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "1",
+        "7"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "weights": [
+        "times 7"
+      ],
+      "directed": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.833333333333332,
+    "duration": 17.866666666666667,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "7x equiv 5 arrow.r x equiv 35 equiv 11 \" (mod 12)\"",
+    "text": "Multiply the congruence seven x equals five by the inverse seven. The left side becomes x and the right becomes thirty-five, equivalent to eleven. Checking seven times eleven gives seventy-seven, whose remainder modulo twelve is five.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        36
+      ],
+      "points": [
+        5,
+        11,
+        35
+      ],
+      "arrows": [
+        [
+          35,
+          11
+        ]
+      ],
+      "labels": [
+        "5",
+        "11",
+        "35"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 34.7,
+    "duration": 18.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "2x equiv 1 \" (mod 6): no solution\"",
+    "text": "Modulo six, every product of two with an integer has an even remainder. It can never equal the odd remainder one. A failed inverse does not permit formal cancellation; depending on the target, a congruence may have no solutions or several.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "0",
+        "2",
+        "4"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "weights": [
+        "+2",
+        "+2",
+        "+2"
+      ],
+      "directed": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 52.7,
+    "duration": 17.333333333333332,
+    "audio": "audio_parts/04.wav"
+  }
+]

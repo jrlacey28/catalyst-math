@@ -1,0 +1,128 @@
+{
+  "id": "multivariable.partial-derivatives",
+  "beats": [
+    {
+      "formula": "f(x,y)=x^2+y^2",
+      "text": "A function of two inputs can change in more than one direction. A partial derivative asks what happens when one input moves while the other stays fixed. On this bowl, each coordinate direction gives its own local slope.",
+      "visual": {
+        "kind": "surface",
+        "mode": "paraboloid"
+      }
+    },
+    {
+      "formula": "y=1: quad f(x,1)=x^2+1, quad f_x=2x",
+      "text": "Fix y equal to one and move only x. The cross-section becomes x squared plus one, so its slope is two x. At x equal to one, the partial slope is two; the frozen y contribution behaves like a constant.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          2
+        ],
+        "y": [
+          -1,
+          6
+        ],
+        "curves": [
+          {
+            "f": "x*x+1",
+            "color": "blue",
+            "domain": [
+              -2,
+              2
+            ]
+          },
+          {
+            "f": "2*x",
+            "color": "gold",
+            "domain": [
+              -0.5,
+              2
+            ]
+          }
+        ],
+        "points": [
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "f_x (1,-1)=2, quad f_y (1,-1)=-2",
+      "text": "At the point one, negative one, increasing x initially raises the surface, while increasing y initially lowers it. The two partial derivatives are two and negative two. A single height does not determine how the surface tilts in every direction.",
+      "visual": {
+        "kind": "surface",
+        "mode": "paraboloid"
+      }
+    },
+    {
+      "formula": "x=t, y=2t: quad frac(dif f,dif t)=10t",
+      "text": "If both coordinates move along a path, neither partial derivative alone is the full rate. Along x equals t and y equals two t, the height is five t squared. Its derivative is ten t, combining both coordinate contributions.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1.5,
+          1.5
+        ],
+        "y": [
+          -1,
+          12
+        ],
+        "curves": [
+          {
+            "f": "5*x*x",
+            "color": "blue",
+            "domain": [
+              -1.5,
+              1.5
+            ]
+          },
+          {
+            "f": "10*x-5",
+            "color": "gold",
+            "domain": [
+              0.5,
+              1.5
+            ]
+          }
+        ],
+        "points": [
+          [
+            1,
+            5
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For f(x,y)=3x²+2y², find both partial derivatives at (2,−1). Explain which variable stays fixed in each calculation.",
+      "answer": "f_x=6x, so f_x(2,−1)=12; f_y=4y, so f_y(2,−1)=−4. Hold y fixed for f_x and x fixed for f_y.",
+      "id": "multivariable.partial-derivatives.video-practice-1"
+    },
+    {
+      "prompt": "For g(x,y)=x²y³, find g_x and g_y, then evaluate both at (1,2).",
+      "answer": "g_x=2xy³ and g_y=3x²y². At (1,2), they are 16 and 12 respectively.",
+      "id": "multivariable.partial-derivatives.video-practice-2"
+    },
+    {
+      "prompt": "Let f=x²+y² and follow x=t, y=3t. Find df/dt at t=2 and explain why using only f_x would be incomplete.",
+      "answer": "Along the path f=10t², so df/dt=20t=40 at t=2. Both x and y change; equivalently f_x x′+f_y y′=2t+18t.",
+      "id": "multivariable.partial-derivatives.video-practice-3"
+    }
+  ],
+  "takeaway": "A partial derivative freezes the other inputs; rates along a path must account for every moving coordinate.",
+  "scope": "Coordinate slices and the distinction between partial and total change along a path.",
+  "course": "Multivariable calculus",
+  "course_id": "multivariable",
+  "title": "Partial derivatives",
+  "objective": "Distinguish coordinate rates, directional derivatives, gradients, and differentiability.",
+  "index": 3,
+  "total": 7,
+  "prerequisites": [
+    "calculus-1.chain-rule",
+    "multivariable.3d-geometry"
+  ]
+}

@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:02.992
+Composition feeds one output into another function
+
+00:00:02.992 --> 00:00:06.695
+Let g add two, and let f square its input
+
+00:00:06.695 --> 00:00:14.100
+In f of g of x, g acts first, so its entire output becomes the input to the squaring rule.
+
+00:00:15.400 --> 00:00:21.908
+For input three, the inner function produces five, then the outer function squares five to produce twenty five
+
+00:00:21.908 --> 00:00:29.500
+Replacing the whole input gives f of g of x equals the square of x plus two, including its cross term.
+
+00:00:30.800 --> 00:00:35.461
+Reverse the order and the same starting input now produces eleven
+
+00:00:35.461 --> 00:00:38.426
+Squaring three gives nine before adding two
+
+00:00:38.426 --> 00:00:46.900
+Because the operations do different things, composition generally depends on order and cannot be replaced by multiplying the two functions.
+
+00:00:48.200 --> 00:00:51.903
+A composition must satisfy every stage of its domain
+
+00:00:51.903 --> 00:00:59.719
+If the outer function is instead a real square root, the inner output x plus two must be nonnegative
+
+00:00:59.719 --> 00:01:03.833
+This restricts the original input to negative two or larger.

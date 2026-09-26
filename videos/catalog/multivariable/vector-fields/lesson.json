@@ -1,0 +1,86 @@
+{
+  "id": "multivariable.vector-fields",
+  "beats": [
+    {
+      "formula": "F(x,y)=(x,y)",
+      "text": "A vector field assigns a vector to every point in a region. In this radial field, the output repeats the position coordinates, so arrows point away from the origin and become longer farther from it. Position and assigned vector are different roles.",
+      "visual": {
+        "kind": "field",
+        "mode": "radial"
+      }
+    },
+    {
+      "formula": "F(2,1)=(2,1), quad F(-1,2)=(-1,2)",
+      "text": "Evaluate a field by substituting the location into both component functions. At two, one, the vector is two, one; at negative one, two, it changes accordingly. These outputs describe local direction and magnitude rather than another scalar height.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            2,
+            1
+          ],
+          [
+            -1,
+            2
+          ]
+        ],
+        "points": [
+          [
+            2,
+            1
+          ],
+          [
+            -1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "G(x,y)=(-y,x)",
+      "text": "Swapping the coordinates and negating the first creates a rotational field. At two, zero, its arrow points upward. Around a circle, the field is tangent to the path, contrasting with the radial field's perpendicular arrows.",
+      "visual": {
+        "kind": "field",
+        "mode": "rotation",
+        "path": "circle"
+      }
+    },
+    {
+      "formula": "H(x,y)=(1,0)",
+      "text": "A constant field assigns the same vector everywhere, so every arrow points right with the same length. Fields may model force or velocity, but the interpretation and units must come from the model; arrows alone do not specify them.",
+      "visual": {
+        "kind": "field",
+        "mode": "constant",
+        "path": "line"
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For F(x,y)=(x,y), find F(−2,3) and its magnitude.",
+      "answer": "F(−2,3)=(−2,3), with magnitude √(4+9)=√13.",
+      "id": "multivariable.vector-fields.video-practice-1"
+    },
+    {
+      "prompt": "For G(x,y)=(−y,x), find the vector at (1,−2). Verify that it is perpendicular to the position vector.",
+      "answer": "G(1,−2)=(2,1). The dot product (1,−2)·(2,1)=2−2=0, so they are perpendicular.",
+      "id": "multivariable.vector-fields.video-practice-2"
+    },
+    {
+      "prompt": "Compare F(x,y)=(x,y) and H(x,y)=(1,0) at (3,4). Which has greater magnitude there, and does this establish a universal comparison?",
+      "answer": "F has magnitude 5 and H has magnitude 1, so F is larger there. This is not universal: near the origin F can have magnitude below 1.",
+      "id": "multivariable.vector-fields.video-practice-3"
+    }
+  ],
+  "takeaway": "A field assigns a vector to a location; evaluating its components reveals local direction and magnitude.",
+  "scope": "Radial, rotational, and constant planar fields as concrete vector-field models.",
+  "course": "Multivariable calculus",
+  "course_id": "multivariable",
+  "title": "Vector fields",
+  "objective": "Interpret vector-valued functions through flow, divergence, and curl.",
+  "index": 5,
+  "total": 7,
+  "prerequisites": [
+    "multivariable.partial-derivatives"
+  ]
+}

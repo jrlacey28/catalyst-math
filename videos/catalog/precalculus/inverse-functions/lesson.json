@@ -1,0 +1,197 @@
+{
+  "id": "precalculus.inverse-functions",
+  "beats": [
+    {
+      "formula": "f(x)=2x+3",
+      "text": "An inverse function reverses an input-output pairing. This line sends input one to output five. If it has an inverse, that inverse must send five back to one, undoing the operations in the reverse order.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          6
+        ],
+        "y": [
+          -3,
+          8
+        ],
+        "curves": [
+          {
+            "f": "2*x+3",
+            "color": "blue",
+            "domain": [
+              -3,
+              2.5
+            ]
+          }
+        ],
+        "points": [
+          [
+            1,
+            5
+          ]
+        ],
+        "equal": true
+      }
+    },
+    {
+      "formula": "y=2x+3 arrow.r x=frac(y-3,2)",
+      "text": "To undo the rule, first subtract three from the output, then divide by two. Solving the original equation for its input gives this reverse instruction. Renaming the new input variable leads to inverse of x equals x minus three over two.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "5",
+          "2",
+          "1"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "weights": [
+          "-3",
+          "÷2"
+        ],
+        "directed": true
+      }
+    },
+    {
+      "formula": "f^(-1)(x)=frac(x-3,2)",
+      "text": "Swapping input and output reflects the graph across the line y equals x. The point one, five becomes five, one. The inverse symbol means reversing a function; it does not mean the reciprocal one divided by the function value.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          6
+        ],
+        "y": [
+          -3,
+          8
+        ],
+        "curves": [
+          {
+            "f": "2*x+3",
+            "color": "blue",
+            "domain": [
+              -3,
+              2.5
+            ]
+          },
+          {
+            "f": "(x-3)/2",
+            "color": "gold",
+            "domain": [
+              -3,
+              6
+            ]
+          },
+          {
+            "f": "x",
+            "color": "pink",
+            "domain": [
+              -3,
+              6
+            ]
+          }
+        ],
+        "points": [
+          [
+            1,
+            5
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "equal": true
+      }
+    },
+    {
+      "formula": "f(x)=x^2, x>=0 quad f^(-1)(x)=sqrt(x)",
+      "text": "A function needs unique reverse outputs to have an inverse. Squaring over all real numbers fails because positive and negative inputs share outputs. Restricting its input to nonnegative values makes the reverse unambiguous and gives the principal square-root function.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          5
+        ],
+        "y": [
+          -1,
+          5
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              0,
+              2.23606797749979
+            ]
+          },
+          {
+            "f": "sqrt(x)",
+            "color": "gold",
+            "domain": [
+              0,
+              5
+            ]
+          },
+          {
+            "f": "x",
+            "color": "pink",
+            "domain": [
+              0,
+              5
+            ]
+          }
+        ],
+        "points": [
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "equal": true
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find the inverse of f(x)=5x−4 by undoing its operations.",
+      "answer": "f⁻¹(x)=(x+4)/5.",
+      "id": "precalculus.inverse-functions.video-practice-1"
+    },
+    {
+      "prompt": "Check both compositions for f(x)=x+6 and f⁻¹(x)=x−6.",
+      "answer": "f(f⁻¹(x))=(x−6)+6=x and f⁻¹(f(x))=(x+6)−6=x.",
+      "id": "precalculus.inverse-functions.video-practice-2"
+    },
+    {
+      "prompt": "Why does x² need a domain restriction to have an inverse function? Give a valid restriction and inverse.",
+      "answer": "Inputs a and−a share a², so reversal is ambiguous. Restrict x≥0; then the inverse is√x forx≥0.",
+      "id": "precalculus.inverse-functions.video-practice-3"
+    }
+  ],
+  "takeaway": "An inverse undoes unique pairings; it is not a reciprocal.",
+  "scope": "Undoing linear rules, reflection, injectivity, and domain restrictions.",
+  "course": "Precalculus",
+  "course_id": "precalculus",
+  "title": "Inverse functions",
+  "objective": "Reverse a one-to-one rule and distinguish an inverse from a reciprocal.",
+  "index": 3,
+  "total": 8,
+  "prerequisites": [
+    "algebra-1.functions",
+    "pre-algebra.multi-step-equations"
+  ]
+}

@@ -1,0 +1,104 @@
+[
+  {
+    "formula": "a != 0 arrow.r a a^(-1)=1",
+    "text": "A field permits addition, subtraction, multiplication, and division by every nonzero element. Rational numbers have this property. Zero remains excluded from division: multiplying zero by any candidate inverse still gives zero, never the required identity one.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        4
+      ],
+      "points": [
+        0.5,
+        1,
+        2
+      ],
+      "labels": [
+        "1/2",
+        "1",
+        "2"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "3*2=1 \" (mod 5)\"",
+    "text": "Finite fields are possible too. Modulo the prime five, three has inverse two because their product six leaves remainder one. To solve three x equals four modulo five, multiply by two and reduce eight to three.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "x",
+        "3x",
+        "2(3x)"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "weights": [
+        "times 3",
+        "times 2"
+      ],
+      "directed": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "3x=4 \" (mod 5)\" arrow.r x=3",
+    "text": "Check the result directly: three times three is nine, with remainder four. Modulo a prime, every nonzero remainder has an inverse. For composite moduli that statement can fail, so being a remainder system alone does not guarantee a field.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        5,
+        4
+      ],
+      "labels": [
+        "5",
+        "4"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "i^2=-1, quad x^2+1=0",
+    "text": "A field also determines which polynomial equations have solutions within it. The real numbers contain no square root of negative one. Extending to complex numbers adds i and its negative as roots, while keeping valid field arithmetic.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "points": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

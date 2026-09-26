@@ -1,0 +1,208 @@
+[
+  {
+    "formula": "hat(y)=b_0+b_1 x",
+    "text": "Regression models how a response tends to vary with an explanatory input. A fitted line predicts a response for each input, while observations can sit above or below it. Those vertical differences are residuals, not necessarily recording errors.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -0.3,
+        2.5
+      ],
+      "y": [
+        0,
+        5
+      ],
+      "curves": [
+        {
+          "f": "1.5*x+0.5",
+          "color": "blue",
+          "domain": [
+            0,
+            2.5
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 18.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "\"residual\"=y-hat(y)",
+    "text": "For these points, the line one half plus one point five x predicts one half, two, and three point five. Subtracting predictions from observed responses gives residuals one half, negative one, and one half. Their signs record which side of the line each point occupies.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -0.3,
+        2.5
+      ],
+      "y": [
+        0,
+        5
+      ],
+      "curves": [
+        {
+          "f": "1.5*x+0.5",
+          "color": "blue",
+          "domain": [
+            0,
+            2.5
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "segments": [
+        [
+          [
+            0,
+            0.5
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            3.5
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 18.0,
+    "duration": 19.266666666666666,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "\"SSE\"=0.5^2+(-1)^2+0.5^2=1.5",
+    "text": "Ordinary least squares chooses the intercept and slope that minimize the sum of squared residuals. Squaring prevents positive and negative residuals from cancelling and emphasizes larger deviations. For these three points, this line achieves the minimum total of one point five.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        0.25,
+        1,
+        0.25
+      ],
+      "labels": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 37.266666666666666,
+    "duration": 20.266666666666666,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "hat(y)(5)=8 \"is an extrapolation\"",
+    "text": "Predicting at five extends beyond the observed input range of zero to two. The line can produce that number without evidence that the relationship remains linear there. A fitted association also does not establish that changing the input causes the response to change.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        5.5
+      ],
+      "y": [
+        0,
+        9
+      ],
+      "curves": [
+        {
+          "f": "1.5*x+0.5",
+          "color": "blue",
+          "domain": [
+            0,
+            2
+          ]
+        },
+        {
+          "f": "1.5*x+0.5",
+          "color": "gold",
+          "domain": [
+            2,
+            5
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          5,
+          8
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 57.53333333333333,
+    "duration": 19.5,
+    "audio": "audio_parts/04.wav"
+  }
+]

@@ -1,0 +1,5901 @@
+[
+  {
+    "id": "calculus-1.limits",
+    "beats": [
+      {
+        "formula": "f(x)=frac(x^2-1,x-1), quad x != 1",
+        "text": "A limit describes nearby outputs, even when the input itself is missing. This quotient is undefined at one because its denominator is zero. The graph can still approach a definite height from both sides.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            3
+          ],
+          "y": [
+            -1,
+            5
+          ],
+          "curves": [
+            {
+              "f": "x+1",
+              "color": "blue",
+              "domain": [
+                -1,
+                3
+              ]
+            }
+          ],
+          "holes": [
+            [
+              1,
+              2
+            ]
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "frac((x-1)(x+1),x-1)=x+1, quad x != 1",
+        "text": "Factor the entire numerator as x minus one times x plus one. For nearby inputs other than one, the shared factor is nonzero, so its ratio equals one. Cancelling factors preserves these nearby values.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            3
+          ],
+          "y": [
+            -1,
+            5
+          ],
+          "curves": [
+            {
+              "f": "x+1",
+              "color": "blue",
+              "domain": [
+                -1,
+                3
+              ]
+            }
+          ],
+          "holes": [
+            [
+              1,
+              2
+            ]
+          ],
+          "points": [
+            [
+              0.5,
+              1.5
+            ],
+            [
+              1.5,
+              2.5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "lim_(x arrow.r 1) frac(x^2-1,x-1)=2",
+        "text": "The simpler expression approaches two as x approaches one. Therefore the original quotient has limit two, although it has no value at one. Taking a limit and assigning a function value are different operations.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2
+          ],
+          "y": [
+            0.5,
+            3.5
+          ],
+          "curves": [
+            {
+              "f": "x+1",
+              "color": "gold",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ],
+          "holes": [
+            [
+              1,
+              2
+            ]
+          ],
+          "points": [
+            [
+              0.9,
+              1.9
+            ],
+            [
+              1.1,
+              2.1
+            ]
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "lim_(x arrow.r 0) frac(abs(x),x) \"does not exist\"",
+        "text": "Both sides must agree for a two-sided limit. Absolute x divided by x equals negative one on the left and positive one on the right. These different destination heights prevent a two-sided limit at zero.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            2
+          ],
+          "y": [
+            -2,
+            2
+          ],
+          "curves": [
+            {
+              "f": "-1",
+              "color": "blue",
+              "domain": [
+                -2,
+                -0.01
+              ]
+            },
+            {
+              "f": "1",
+              "color": "gold",
+              "domain": [
+                0.01,
+                2
+              ]
+            }
+          ],
+          "holes": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the limit of 5x−4 as x approaches 2. Explain why substitution is valid here.",
+        "answer": "The polynomial is continuous, so the limit is 5(2)−4=6."
+      },
+      {
+        "prompt": "Find lim x→−2 (x²−4)/(x+2). Show the factorization and keep the original excluded input.",
+        "answer": "For x≠−2, (x²−4)/(x+2)=(x−2)(x+2)/(x+2)=x−2. The limit is −4; the original is still undefined at −2."
+      },
+      {
+        "prompt": "Let g(x)=3x−2 for x≠1, but g(1)=100. Find the limit at 1 and decide whether g is continuous there.",
+        "answer": "Nearby outputs approach 1, so the limit is 1. Since g(1)=100, g is not continuous at 1."
+      }
+    ],
+    "takeaway": "Simplification on nearby allowed inputs can reveal a limit without filling a missing function value.",
+    "scope": "First lesson on removable gaps, legal cancellation, and agreement of one-sided limits."
+  },
+  {
+    "id": "calculus-1.continuity",
+    "beats": [
+      {
+        "formula": "lim_(x arrow.r a) f(x)=f(a)",
+        "text": "Continuity means the output at an input matches the height approached nearby. Three things are needed: a defined value, an existing two-sided limit, and agreement between them. A graph without a break illustrates this relationship.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            3
+          ],
+          "y": [
+            -2,
+            5
+          ],
+          "curves": [
+            {
+              "f": "x+1",
+              "color": "blue",
+              "domain": [
+                -2,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              2
+            ]
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "f(1)=5, quad lim_(x arrow.r 1) f(x)=2",
+        "text": "Now keep the nearby line but move only the value at one up to five. The approaching outputs still converge to two. A single misplaced value makes the function discontinuous even though its nearby behavior is unchanged.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            3
+          ],
+          "y": [
+            -1,
+            6
+          ],
+          "curves": [
+            {
+              "f": "x+1",
+              "color": "blue",
+              "domain": [
+                -1,
+                3
+              ]
+            }
+          ],
+          "holes": [
+            [
+              1,
+              2
+            ]
+          ],
+          "points": [
+            [
+              1,
+              5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "f(1)=2 \"repairs the removable gap\"",
+        "text": "Setting the value at one equal to two repairs this removable discontinuity. This works because both sides already have the same limit. Merely defining a value would not repair a jump with unequal one-sided limits.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            3
+          ],
+          "y": [
+            -1,
+            5
+          ],
+          "curves": [
+            {
+              "f": "x+1",
+              "color": "green",
+              "domain": [
+                -1,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              2
+            ]
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "sqrt(x) \"is continuous on\" [0,infinity)",
+        "text": "Continuity also respects the domain. The square root function accepts only nonnegative real inputs. At its endpoint zero, continuity uses approach from within that domain, so only the right-hand approach is relevant there.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            5
+          ],
+          "y": [
+            -1,
+            3
+          ],
+          "curves": [
+            {
+              "f": "sqrt(x)",
+              "color": "gold",
+              "domain": [
+                0,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "sweep": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For x≠2, f(x)=(x²−4)/(x−2). What value should f(2) receive to make f continuous? Show why.",
+        "answer": "For x≠2 the formula equals x+2, whose limit at 2 is 4. Set f(2)=4."
+      },
+      {
+        "prompt": "Is |x| continuous at zero even though it has a corner? Explain using the limit.",
+        "answer": "Yes. Both sides approach 0, which equals |0|. A corner can prevent differentiability without preventing continuity."
+      },
+      {
+        "prompt": "Can any real choice for f(0) make f(x)=1/x, x≠0, continuous at zero? Explain.",
+        "answer": "No. There is no finite two-sided limit at zero; the right side grows without bound and the left decreases without bound. A single value cannot repair that behavior."
+      }
+    ],
+    "takeaway": "Continuity requires the nearby limit to equal the function value, with endpoint approaches taken inside the domain.",
+    "scope": "Continuity at interior points, removable discontinuities, and a domain endpoint."
+  },
+  {
+    "id": "calculus-1.derivatives",
+    "beats": [
+      {
+        "formula": "frac(f(3+h)-f(3),h), quad h != 0",
+        "text": "A derivative begins with an average rate between two different inputs. For the square function, choose three and three plus h. The quotient measures vertical change divided by horizontal change, giving the secant line its slope.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            4
+          ],
+          "y": [
+            -1,
+            17
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                4
+              ]
+            },
+            {
+              "f": "6.5*x-10.5",
+              "color": "gold",
+              "domain": [
+                1.7,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              3,
+              9
+            ],
+            [
+              3.5,
+              12.25
+            ]
+          ],
+          "segments": [
+            [
+              [
+                3,
+                9
+              ],
+              [
+                3.5,
+                9
+              ]
+            ],
+            [
+              [
+                3.5,
+                9
+              ],
+              [
+                3.5,
+                12.25
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "frac((3+h)^2-9,h)=6+h, quad h != 0",
+        "text": "Expand the square to get nine plus six h plus h squared. Subtract nine, factor out h, and cancel it while h remains nonzero. Each algebra step exposes the nearby slope without dividing by zero.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            4
+          ],
+          "y": [
+            -1,
+            17
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                4
+              ]
+            },
+            {
+              "f": "6.1*x-9.3",
+              "color": "gold",
+              "domain": [
+                1.7,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              3,
+              9
+            ],
+            [
+              3.1,
+              9.61
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "f'(3)=lim_(h arrow.r 0)(6+h)=6",
+        "text": "As the second input approaches three, the slope approaches six. The limiting secant becomes the tangent line. This instantaneous rate is defined by nearby changes, not by directly substituting zero into the original difference quotient.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            4
+          ],
+          "y": [
+            -1,
+            17
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                4
+              ]
+            },
+            {
+              "f": "6*x-9",
+              "color": "green",
+              "domain": [
+                1.7,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              3,
+              9
+            ]
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "f(x)=abs(x): quad f'(0) \"does not exist\"",
+        "text": "A derivative does not always exist. At the corner of absolute x, left-hand slopes approach negative one while right-hand slopes approach positive one. The function is continuous there, but no single tangent slope fits both approaches.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            2
+          ],
+          "y": [
+            -1,
+            3
+          ],
+          "curves": [
+            {
+              "f": "abs(x)",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            },
+            {
+              "f": "-x",
+              "color": "gold",
+              "domain": [
+                -1.8,
+                0
+              ]
+            },
+            {
+              "f": "x",
+              "color": "pink",
+              "domain": [
+                0,
+                1.8
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Starting from the difference quotient for f(x)=x² at x=−2, simplify it for h≠0 and find the derivative.",
+        "answer": "[(-2+h)²−4]/h=(-4h+h²)/h=−4+h for h≠0. The derivative is −4."
+      },
+      {
+        "prompt": "Use expansion to find the derivative of f(x)=x³ at x=1 from [f(1+h)−f(1)]/h.",
+        "answer": "[(1+h)³−1]/h=(3h+3h²+h³)/h=3+3h+h² for h≠0; the limit is 3."
+      },
+      {
+        "prompt": "Explain why f(x)=|x| can be continuous at zero but have no derivative there. Give the two one-sided slopes.",
+        "answer": "Both function values approach f(0)=0, so continuity holds. The left slope is −1 and the right slope is +1, so the derivative does not exist."
+      }
+    ],
+    "takeaway": "The derivative is a limit of nonzero-input-change quotients; simplify legally before taking the limit.",
+    "scope": "Difference quotients, tangent slope, and a continuous function with no derivative at a corner."
+  },
+  {
+    "id": "calculus-1.product-quotient-rule",
+    "beats": [
+      {
+        "formula": "(u v)'=u' v+u v'",
+        "text": "When two factors change, the product has two first-order contributions. One changes the first factor while retaining the second; the other changes the second while retaining the first. Multiplying derivatives alone misses both contributions.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            2
+          ],
+          "y": [
+            -1,
+            8
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                -1,
+                2
+              ]
+            },
+            {
+              "f": "x+3",
+              "color": "gold",
+              "domain": [
+                -1,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(x^2(x+3))'=2x(x+3)+x^2=3x^2+6x",
+        "text": "For x squared times x plus three, the product rule gives two x times x plus three, plus x squared. Now distribute and collect like terms. The calculus rule comes first; ordinary algebra simplifies its result.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            2
+          ],
+          "y": [
+            -4,
+            26
+          ],
+          "curves": [
+            {
+              "f": "x*x*(x+3)",
+              "color": "blue",
+              "domain": [
+                -1,
+                2
+              ]
+            },
+            {
+              "f": "3*x*x+6*x",
+              "color": "gold",
+              "domain": [
+                -1,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              9
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(frac(x+1,x+4))'=frac(3,(x+4)^2), quad x != -4",
+        "text": "For a quotient, differentiate the top times the bottom, then subtract the top times the differentiated bottom. Divide by the original bottom squared. Here the numerator becomes x plus four minus x minus one, leaving three.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -3,
+            4
+          ],
+          "curves": [
+            {
+              "f": "(x+1)/(x+4)",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            },
+            {
+              "f": "3/((x+4)**2)",
+              "color": "gold",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0.25
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "frac(x^2-16,x-4)=x+4, quad x != 4",
+        "text": "Sometimes factoring first is easier than using the quotient rule. This expression equals x plus four except at four, so its derivative is one on its original domain. The cancelled factor still leaves an excluded input.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            6
+          ],
+          "y": [
+            0,
+            11
+          ],
+          "curves": [
+            {
+              "f": "x+4",
+              "color": "blue",
+              "domain": [
+                0,
+                6
+              ]
+            }
+          ],
+          "holes": [
+            [
+              4,
+              8
+            ]
+          ],
+          "sweep": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Differentiate y=x²(x−5), then expand and collect like terms. Name the rule you used.",
+        "answer": "Product rule: y′=2x(x−5)+x²=3x²−10x."
+      },
+      {
+        "prompt": "Differentiate q(x)=(x+4)/(x+2). Show the subtraction in the numerator and state the domain.",
+        "answer": "q′=[(x+2)−(x+4)]/(x+2)²=−2/(x+2)², for x≠−2."
+      },
+      {
+        "prompt": "At one point, u=1, u′=2, v=3, and v′=−1. Find both (uv)′ and (u/v)′, explaining why their rules differ.",
+        "answer": "(uv)′=2·3+1·(−1)=5. (u/v)′=[2·3−1·(−1)]/3²=7/9. A quotient includes the denominator's inverse, producing subtraction and a squared denominator."
+      }
+    ],
+    "takeaway": "Differentiate the expression's structure, then use algebra to simplify while retaining original exclusions.",
+    "scope": "The product rule, quotient rule, and a legal simplification shortcut."
+  },
+  {
+    "id": "calculus-1.chain-rule",
+    "beats": [
+      {
+        "formula": "y=u^2, quad u=2x+3",
+        "text": "A composition feeds one function's output into another. First x becomes two x plus three; then that entire result is squared. A change in x therefore passes through two layers before changing y.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "x",
+            "u = 2x + 3",
+            "y = u²"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "weights": [
+            "inside",
+            "outside"
+          ],
+          "directed": true,
+          "active": [
+            0,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "formula": "frac(dif y,dif x)=2u times 2=4(2x+3)",
+        "text": "The outer derivative is two u, but it measures change per unit of u. Multiply by the inner derivative, two, to measure change per unit of x. At zero the resulting tangent slope is twelve.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            1
+          ],
+          "y": [
+            -4,
+            27
+          ],
+          "curves": [
+            {
+              "f": "(2*x+3)**2",
+              "color": "blue",
+              "domain": [
+                -1,
+                1
+              ]
+            },
+            {
+              "f": "12*x+9",
+              "color": "gold",
+              "domain": [
+                -1,
+                1
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              9
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(sqrt(4+x^2))'=frac(2x,2sqrt(4+x^2))",
+        "text": "Now use a square root outside four plus x squared. Its derivative is one over twice the square root, multiplied by two x from the inside. Cancelling the constant two gives x over the square root.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -2,
+            5
+          ],
+          "curves": [
+            {
+              "f": "sqrt(4+x*x)",
+              "color": "blue",
+              "domain": [
+                -3,
+                3
+              ]
+            },
+            {
+              "f": "x/sqrt(4+x*x)",
+              "color": "gold",
+              "domain": [
+                -3,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(log(2x+3))'=frac(2,2x+3), quad x> -frac(3,2)",
+        "text": "The chain rule keeps the original function's domain. For the natural logarithm of two x plus three, the inside must be positive. The derivative formula alone also accepts some negative denominators, but those inputs never belonged to the original real function.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            3
+          ],
+          "y": [
+            -3,
+            5
+          ],
+          "curves": [
+            {
+              "f": "log(2*x+3)",
+              "color": "blue",
+              "domain": [
+                -1.45,
+                3
+              ]
+            },
+            {
+              "f": "2/(2*x+3)",
+              "color": "gold",
+              "domain": [
+                -1.25,
+                3
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Differentiate (5x−2)³. Identify the inner function and the missing factor someone would lose by using only the power rule.",
+        "answer": "Inner function u=5x−2 has u′=5. The derivative is 3(5x−2)²·5=15(5x−2)²."
+      },
+      {
+        "prompt": "Differentiate √(2+x²), show why a factor of 2 cancels, and state whether x=0 remains allowed.",
+        "answer": "The derivative is 2x/[2√(2+x²)]=x/√(2+x²). Only the nonzero constant 2 is cancelled. All real x, including 0, remain allowed."
+      },
+      {
+        "prompt": "Compare derivatives of e^(3x) and (e^x)³. Explain why the results must agree.",
+        "answer": "Both functions equal e^(3x). The first derivative is 3e^(3x) by the chain rule; the second is 3(e^x)²·e^x=3e^(3x)."
+      }
+    ],
+    "takeaway": "Differentiate the outside at the inside, multiply by the inside's derivative, and keep the original domain.",
+    "scope": "Two-layer compositions involving powers, roots, and natural logarithms."
+  },
+  {
+    "id": "calculus-1.implicit-differentiation",
+    "beats": [
+      {
+        "formula": "x^2+y^2=4",
+        "text": "Some curves are easier to describe by a relationship than by one output formula. This circle contains an upper and a lower branch. Near suitable points, y can still depend on x even when we do not explicitly solve for it.",
+        "visual": {
+          "kind": "circle",
+          "angle": 1.0471975512,
+          "radius": 2,
+          "triangle": false
+        }
+      },
+      {
+        "formula": "2x+2y y'=0",
+        "text": "Differentiate both sides with respect to x. The x squared term gives two x. Because y itself changes with x, the derivative of y squared is two y times y prime, an application of the chain rule.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -3,
+            3
+          ],
+          "curves": [
+            {
+              "f": "sqrt(4-x*x)",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            },
+            {
+              "f": "-sqrt(4-x*x)",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              1.7320508075688772
+            ]
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "y'=-frac(x,y), quad y != 0",
+        "text": "Subtract two x, then divide by two y where y is nonzero. At the point one, square root of three, the slope is negative one over square root of three. The tangent slopes downward on the upper-right branch.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -3,
+            3
+          ],
+          "curves": [
+            {
+              "f": "sqrt(4-x*x)",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            },
+            {
+              "f": "-sqrt(4-x*x)",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            },
+            {
+              "f": "(4-x)/sqrt(3)",
+              "color": "gold",
+              "domain": [
+                -0.5,
+                2.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              1.7320508075688772
+            ]
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "y=0: quad \"do not divide by zero\"",
+        "text": "At either horizontal endpoint, y is zero, so this rearrangement cannot produce a finite slope. The circle has a vertical tangent there. A failed division is useful information about the geometry, not permission to discard the condition.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -3,
+            3
+          ],
+          "y": [
+            -3,
+            3
+          ],
+          "curves": [
+            {
+              "f": "sqrt(4-x*x)",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            },
+            {
+              "f": "-sqrt(4-x*x)",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              0
+            ]
+          ],
+          "segments": [
+            [
+              [
+                2,
+                -2.5
+              ],
+              [
+                2,
+                2.5
+              ]
+            ]
+          ],
+          "equal": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For x²+y²=25, find dy/dx at (3,4). Show the chain-rule factor.",
+        "answer": "2x+2y y′=0, so y′=−x/y where y≠0. At (3,4), y′=−3/4."
+      },
+      {
+        "prompt": "For xy=6, differentiate implicitly and find the slope at (2,3).",
+        "answer": "Product rule gives y+x y′=0. Thus y′=−y/x, and the slope at (2,3) is −3/2."
+      },
+      {
+        "prompt": "Explain why differentiating y² with respect to x gives 2y y′ rather than just 2y. What assumption is needed before solving by division by y?",
+        "answer": "y is a function of x, so the chain rule contributes y′. Dividing by y requires y≠0; points where y=0 must be examined separately."
+      }
+    ],
+    "takeaway": "Treat y as a function of x, apply the chain rule, and justify every division when solving for the slope.",
+    "scope": "Implicit differentiation of a circle and interpretation of vertical tangents."
+  },
+  {
+    "id": "calculus-1.optimization",
+    "beats": [
+      {
+        "formula": "2x+2y=20, quad y=10-x",
+        "text": "Optimization starts by translating constraints. A rectangle with perimeter twenty has side lengths whose sum is ten. Naming one side x makes the other ten minus x, so one variable now determines the entire area.",
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 6,
+          "filled": 24
+        }
+      },
+      {
+        "formula": "A(x)=x(10-x), quad 0<=x<=10",
+        "text": "The area is x times ten minus x, with nonnegative side lengths restricting x between zero and ten. Expanding gives ten x minus x squared. Its graph shows that increasing one side eventually sacrifices too much of the other.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            10
+          ],
+          "y": [
+            0,
+            30
+          ],
+          "curves": [
+            {
+              "f": "10*x-x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                10
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              16
+            ],
+            [
+              8,
+              16
+            ]
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "A'(x)=10-2x=0 quad arrow.r quad x=5",
+        "text": "Differentiate to locate the interior stationary point. Ten minus two x equals zero when x is five. That produces a five by five square with area twenty-five, while either endpoint gives a degenerate rectangle with zero area.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            10
+          ],
+          "y": [
+            0,
+            30
+          ],
+          "curves": [
+            {
+              "f": "10*x-x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                10
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              5,
+              25
+            ],
+            [
+              10,
+              0
+            ]
+          ],
+          "segments": [
+            [
+              [
+                3,
+                25
+              ],
+              [
+                7,
+                25
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "A(x)=25-(x-5)^2<=25",
+        "text": "Completing the square explains why this is the global maximum: a square is never negative, so subtracting it cannot exceed twenty-five. A zero derivative only suggests a candidate; the domain and comparison establish what kind of optimum it is.",
+        "visual": {
+          "kind": "grid",
+          "rows": 5,
+          "cols": 5,
+          "filled": 25
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A rectangle has perimeter 28. Write its area using one side x, find its maximum, and explain why the answer is a square.",
+        "answer": "The other side is 14−x, with 0≤x≤14. A=14x−x²=49−(x−7)², so the maximum is 49 at x=7 and y=7."
+      },
+      {
+        "prompt": "Two nonnegative numbers have sum 12. Find their largest possible product and justify the result algebraically or with calculus.",
+        "answer": "Let them be x and 12−x. Their product is 36−(x−6)²≤36. Equality occurs at 6 and 6."
+      },
+      {
+        "prompt": "The derivative of f(x)=x² is zero at x=0. Explain why this does not make zero a maximum.",
+        "answer": "f(x)=x²≥0 with equality at 0, so zero is a global minimum. A stationary point can be a minimum, maximum, or neither; classification needs additional reasoning."
+      }
+    ],
+    "takeaway": "Write the constraint, respect the domain, find candidates, and justify the optimum rather than trusting a zero derivative alone.",
+    "scope": "One-variable constrained rectangle optimization with both calculus and completing-the-square justification."
+  },
+  {
+    "id": "calculus-1.related-rates",
+    "beats": [
+      {
+        "formula": "A=pi r^2",
+        "text": "Related rates connect quantities that change together in time. As a circular ripple expands, both radius and area change. Start with the geometric relationship between them before inserting the numerical information for one particular instant.",
+        "visual": {
+          "kind": "circle",
+          "angle": 6.283185307179586,
+          "radius": 2,
+          "arc": true
+        }
+      },
+      {
+        "formula": "frac(dif A,dif t)=2pi r frac(dif r,dif t)",
+        "text": "Differentiate the area equation with respect to time. The chain rule contributes the radius's rate of change. When the radius is two and grows at half a unit per second, the area grows at two pi square units per second.",
+        "visual": {
+          "kind": "circle",
+          "angle": 6.283185307179586,
+          "radius": 2,
+          "arc": true
+        }
+      },
+      {
+        "formula": "x^2+y^2=25 quad arrow.r quad x x'+y y'=0",
+        "text": "For a sliding ladder of length five, horizontal and vertical distances satisfy the Pythagorean theorem. Differentiate first, then cancel the nonzero constant two. One distance increasing can force the other to decrease because the ladder length stays fixed.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            5
+          ],
+          "y": [
+            0,
+            5
+          ],
+          "curves": [
+            {
+              "f": "4-4*x/3",
+              "color": "blue",
+              "domain": [
+                0,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              4
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "segments": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                3,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          ],
+          "equal": true
+        }
+      },
+      {
+        "formula": "x=3, y=4, x'=1 quad arrow.r quad y'=-frac(3,4)",
+        "text": "At horizontal distance three and height four, an outward speed of one gives a downward speed of three quarters. The negative sign describes direction. Substituting fixed positions before differentiating would incorrectly erase their time dependence.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            5
+          ],
+          "y": [
+            0,
+            5
+          ],
+          "curves": [
+            {
+              "f": "4-4*x/3",
+              "color": "blue",
+              "domain": [
+                0,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              4
+            ],
+            [
+              3,
+              0
+            ]
+          ],
+          "segments": [
+            [
+              [
+                3,
+                0
+              ],
+              [
+                4,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3.25
+              ]
+            ]
+          ],
+          "equal": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A circle's radius is 5 cm and increases at 0.2 cm/s. Find the instantaneous area growth rate, including units.",
+        "answer": "dA/dt=2πr dr/dt=2π·5·0.2=2π cm²/s."
+      },
+      {
+        "prompt": "A 13 m ladder has its foot 5 m from a wall and its top 12 m high. Its foot moves outward at 3 m/s. Find the top's vertical velocity.",
+        "answer": "x x′+y y′=0 gives y′=−5·3/12=−5/4 m/s. The negative sign means downward."
+      },
+      {
+        "prompt": "A sphere has V=(4/3)πr³. At r=2 m, dr/dt=0.1 m/s. Derive and calculate dV/dt; explain why r stays a function until differentiation is finished.",
+        "answer": "dV/dt=4πr² dr/dt=4π·4·0.1=1.6π m³/s. r changes with time; replacing it by the instant's value before differentiating would lose that dependence."
+      }
+    ],
+    "takeaway": "Differentiate the relationship with respect to time before substituting a particular instant; signs and units explain the answer.",
+    "scope": "Area growth and a sliding ladder as two concrete related-rates models."
+  },
+  {
+    "id": "calculus-2.integrals",
+    "beats": [
+      {
+        "formula": "integral_0^2 3 dif t=6",
+        "text": "An integral accumulates small contributions. If a rate stays at three units per second for two seconds, the total is six units. The graph shows a rectangle whose height is rate and whose width is elapsed time.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3
+          ],
+          "y": [
+            -1,
+            4
+          ],
+          "curves": [
+            {
+              "f": "3",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            2
+          ]
+        }
+      },
+      {
+        "formula": "integral_0^2 t dif t=2",
+        "text": "When the rate changes, narrow rectangles approximate the accumulation, and a limit gives the exact integral. For a rate equal to time between zero and two, the region is a triangle with base two and height two.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3
+          ],
+          "y": [
+            -1,
+            4
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            2
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "integral_0^2 (t-1) dif t=0",
+        "text": "Integrals count signed accumulation. This velocity is negative before time one and positive afterward. Equal areas cancel, giving zero displacement. Total distance instead adds their magnitudes, producing one unit rather than zero for this journey.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2.5
+          ],
+          "y": [
+            -1.5,
+            2
+          ],
+          "curves": [
+            {
+              "f": "x-1",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            2
+          ],
+          "points": [
+            [
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "integral 2x dif x=x^2+C",
+        "text": "An indefinite integral describes all antiderivatives. Every vertical shift of x squared has derivative two x, so a constant must remain. A definite integral is a number between bounds; an indefinite integral is a family of functions.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            2
+          ],
+          "y": [
+            -2,
+            6
+          ],
+          "curves": [
+            {
+              "f": "x*x-1",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            },
+            {
+              "f": "x*x",
+              "color": "gold",
+              "domain": [
+                -2,
+                2
+              ]
+            },
+            {
+              "f": "x*x+1",
+              "color": "pink",
+              "domain": [
+                -2,
+                2
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find ∫₂⁴ 6 dt and explain the units if 6 is measured in liters per minute and t in minutes.",
+        "answer": "The integral is 6(4−2)=12 liters. Rate multiplied by elapsed time gives accumulated volume."
+      },
+      {
+        "prompt": "Evaluate ∫₀¹ (3x²+2) dx using an antiderivative and show both endpoint values.",
+        "answer": "An antiderivative is x³+2x. Evaluating at 1 and 0 gives 3−0=3."
+      },
+      {
+        "prompt": "For v(t)=t−1 on 0≤t≤3, find displacement and total distance. Explain the difference.",
+        "answer": "Displacement is [t²/2−t]₀³=3/2. Distance is the magnitude of the negative triangular area 1/2 plus the positive area 2, giving 5/2."
+      }
+    ],
+    "takeaway": "Integrals accumulate signed quantities; distance and other totals may require integrating absolute values.",
+    "scope": "Constant and variable accumulation, signed area, and the antiderivative constant."
+  },
+  {
+    "id": "calculus-2.fundamental-theorem",
+    "beats": [
+      {
+        "formula": "A(x)=integral_0^x 2t dif t",
+        "text": "Let A record the area accumulated under the rate two t. Increasing the upper endpoint by a tiny amount adds a thin strip. Its width is the input change, and its height is approximately the current rate.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3
+          ],
+          "y": [
+            0,
+            7
+          ],
+          "curves": [
+            {
+              "f": "2*x",
+              "color": "blue",
+              "domain": [
+                0,
+                3
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ],
+          "points": [
+            [
+              1,
+              2
+            ]
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "A(x)=x^2, quad A'(x)=2x",
+        "text": "The thin-strip reasoning connects accumulation with differentiation. Here the area function is x squared, and its derivative returns two x. At input two, the accumulated amount changes at rate four, matching the original rate at that endpoint.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3
+          ],
+          "y": [
+            -1,
+            10
+          ],
+          "curves": [
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                3
+              ]
+            },
+            {
+              "f": "4*x-4",
+              "color": "gold",
+              "domain": [
+                0.8,
+                3
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              4
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "integral_1^3 2x dif x=3^2-1^2=8",
+        "text": "The other direction turns an integral into an endpoint subtraction. Since x squared differentiates to two x, subtract its value at one from its value at three. The change in accumulated area is nine minus one, or eight.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            3.5
+          ],
+          "y": [
+            0,
+            7
+          ],
+          "curves": [
+            {
+              "f": "2*x",
+              "color": "blue",
+              "domain": [
+                0,
+                3.5
+              ]
+            }
+          ],
+          "shade": [
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "formula": "\"If f is continuous, then\" A'(x)=f(x)",
+        "text": "The pointwise derivative statement requires suitable regularity: continuity of the rate at the point is enough. At a jump, the accumulation can remain continuous but develop a corner. The theorem's assumptions explain where this direct identification works.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2
+          ],
+          "y": [
+            0,
+            4
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            },
+            {
+              "f": "2*x-1",
+              "color": "blue",
+              "domain": [
+                1,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              1
+            ]
+          ],
+          "segments": [
+            [
+              [
+                0.5,
+                0.5
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              [
+                1.5,
+                2
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Use the fundamental theorem to evaluate ∫₂⁴ 3x² dx. Show the antiderivative.",
+        "answer": "An antiderivative is x³. The integral is 4³−2³=64−8=56."
+      },
+      {
+        "prompt": "If A(x)=∫₀ˣ (t²+1) dt, find A′(x) and A′(2) without first evaluating the integral.",
+        "answer": "Because the integrand is continuous, A′(x)=x²+1. Therefore A′(2)=5."
+      },
+      {
+        "prompt": "Let B(x)=∫₀^(3x) cos(t) dt. Find B′(x) and explain the extra factor.",
+        "answer": "The fundamental theorem gives the integrand at the upper limit; the chain rule multiplies by the derivative of 3x. Thus B′(x)=3cos(3x)."
+      }
+    ],
+    "takeaway": "Differentiation recovers a continuous accumulation rate, and antiderivatives turn definite integrals into endpoint differences.",
+    "scope": "Both directions of the fundamental theorem and why continuity matters."
+  },
+  {
+    "id": "calculus-2.integration-techniques",
+    "beats": [
+      {
+        "formula": "integral 2x(x^2+2)^3 dif x",
+        "text": "A useful integration technique recognizes the structure that differentiation would create. Here the outside is a power, the inside is x squared plus two, and the nearby factor two x is exactly the inside's derivative.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.2
+          ],
+          "y": [
+            0,
+            90
+          ],
+          "curves": [
+            {
+              "f": "2*x*(x*x+2)**3",
+              "color": "blue",
+              "domain": [
+                0,
+                1.2
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "formula": "u=x^2+2, quad dif u=2x dif x",
+        "text": "Name the inside u. The entire combination two x times d x becomes d u, so the integral becomes u cubed with respect to u. This substitution reverses the chain rule; it does not simply delete an inconvenient factor.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "x",
+            "u = x² + 2",
+            "u³"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "weights": [
+            "du = 2x dx",
+            "power"
+          ],
+          "directed": true,
+          "active": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "formula": "integral 2x(x^2+2)^3 dif x=frac((x^2+2)^4,4)+C",
+        "text": "Integrating u cubed gives u to the fourth divided by four, plus a constant. Substitute the original inside back into the answer. Differentiating this result recreates both the outer cube and the required factor two x.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.2
+          ],
+          "y": [
+            0,
+            40
+          ],
+          "curves": [
+            {
+              "f": "((x*x+2)**4)/4",
+              "color": "gold",
+              "domain": [
+                0,
+                1.2
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              20.25
+            ]
+          ],
+          "sweep": true
+        }
+      },
+      {
+        "formula": "integral x e^x dif x=x e^x-e^x+C",
+        "text": "Products may call for integration by parts, the reverse of the product rule. Choose u equal to x and d v equal to exponential x d x. Subtracting the remaining exponential integral gives an answer you can verify by differentiating.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2
+          ],
+          "y": [
+            -2,
+            16
+          ],
+          "curves": [
+            {
+              "f": "x*exp(x)",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            },
+            {
+              "f": "(x-1)*exp(x)",
+              "color": "gold",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Evaluate ∫3x²(x³+1)² dx by substitution. State u and du, then check by differentiating.",
+        "answer": "Set u=x³+1, du=3x² dx. The integral is u³/3+C=(x³+1)³/3+C. Its derivative is (x³+1)²·3x²."
+      },
+      {
+        "prompt": "Use integration by parts to find ∫x cos(x) dx.",
+        "answer": "Take u=x and dv=cos x dx, so du=dx and v=sin x. The result is x sin x−∫sin x dx=x sin x+cos x+C."
+      },
+      {
+        "prompt": "Evaluate ∫₀¹ 2x(x²+3)² dx by changing the limits to u-values. Explain why the new bounds are 3 and 4.",
+        "answer": "For u=x²+3, x=0 gives u=3 and x=1 gives u=4. The integral is ∫₃⁴u² du=(64−27)/3=37/3."
+      }
+    ],
+    "takeaway": "Choose substitutions by the chain rule and integration by parts by the product rule; verify antiderivatives by differentiating.",
+    "scope": "One substitution pattern, a definite substitution, and a first integration-by-parts example."
+  },
+  {
+    "id": "calculus-2.applications-of-integration",
+    "beats": [
+      {
+        "formula": "\"height between curves\"=x-x^2",
+        "text": "An application begins by identifying what one small piece contributes. Between the curves y equals x and y equals x squared on the unit interval, each vertical strip has height upper curve minus lower curve.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.2
+          ],
+          "y": [
+            0,
+            1.3
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "gold",
+              "domain": [
+                0,
+                1
+              ]
+            },
+            {
+              "f": "x*x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "segments": [
+            [
+              [
+                0.5,
+                0.25
+              ],
+              [
+                0.5,
+                0.5
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "integral_0^1 (x-x^2) dif x=frac(1,6)",
+        "text": "Integrate that strip height over its width. The antiderivative is x squared over two minus x cubed over three, so the enclosed area is one sixth. Subtracting the curves first creates a new nonnegative height function.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.2
+          ],
+          "y": [
+            0,
+            0.4
+          ],
+          "curves": [
+            {
+              "f": "x-x*x",
+              "color": "green",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "formula": "V=integral_0^2 pi x^2 dif x=frac(8pi,3)",
+        "text": "Rotate the region under y equals x, from zero to two, around the horizontal axis. Each thin slice is a disk with radius x, so its area is pi x squared. Integrating slice area produces volume in cubic units.",
+        "visual": {
+          "kind": "circle",
+          "angle": 6.283185307179586,
+          "radius": 2,
+          "arc": true
+        }
+      },
+      {
+        "formula": "M=integral_0^2 (1+x) dif x=4",
+        "text": "The same accumulation logic computes mass from a varying linear density. A rod with density one plus x contributes density times a tiny length. Integrating from zero to two gives mass four, with units determined by the density.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2.5
+          ],
+          "y": [
+            0,
+            4
+          ],
+          "curves": [
+            {
+              "f": "1+x",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            2
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the area between y=2x and y=x² on 0≤x≤2. Show which curve is above the other.",
+        "answer": "2x−x²=x(2−x)≥0 on [0,2], so area=∫₀²(2x−x²)dx=[x²−x³/3]₀²=4/3."
+      },
+      {
+        "prompt": "Rotate the region under y=√x on 0≤x≤4 about the x-axis. Write the disk integral and compute the volume.",
+        "answer": "Disk radius is √x, so area is πx. V=∫₀⁴πx dx=8π cubic units."
+      },
+      {
+        "prompt": "A 2 m rod has density 3x+1 kg/m at position x meters from one end. Find its mass and explain the units.",
+        "answer": "M=∫₀²(3x+1)dx=[3x²/2+x]₀²=8 kg. Density in kg/m multiplied by dx in meters gives kilograms."
+      }
+    ],
+    "takeaway": "Identify the quantity contributed by one small slice before integrating: height, cross-sectional area, or density.",
+    "scope": "Area between curves, disk volume, and mass from a nonuniform density."
+  },
+  {
+    "id": "calculus-2.improper-integrals",
+    "beats": [
+      {
+        "formula": "integral_1^infinity frac(1,x^2) dif x",
+        "text": "An infinite interval does not fit directly into an ordinary bounded integral. Replace infinity with a finite endpoint R, compute the area up to R, and then ask whether those accumulated areas approach a finite limit.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0.8,
+            8
+          ],
+          "y": [
+            0,
+            1.3
+          ],
+          "curves": [
+            {
+              "f": "1/(x*x)",
+              "color": "blue",
+              "domain": [
+                1,
+                8
+              ]
+            }
+          ],
+          "shade": [
+            1,
+            6
+          ]
+        }
+      },
+      {
+        "formula": "integral_1^R frac(1,x^2) dif x=1-frac(1,R)",
+        "text": "The antiderivative is negative one over x. Subtracting endpoint values gives one minus one over R. As R grows, the missing amount approaches zero, so this infinite tail has finite total area equal to one.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            0.5,
+            0.6666666667,
+            0.75,
+            0.8,
+            0.8333333333,
+            0.8571428571
+          ],
+          "limit": 1
+        }
+      },
+      {
+        "formula": "integral_1^R frac(1,x) dif x=log(R)",
+        "text": "A shrinking height does not guarantee a finite total. For one over x, the accumulated area is the natural logarithm of R, which grows without bound. Both curves approach zero, but their tails accumulate at different rates.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            1,
+            8
+          ],
+          "y": [
+            0,
+            1.2
+          ],
+          "curves": [
+            {
+              "f": "1/x",
+              "color": "gold",
+              "domain": [
+                1,
+                8
+              ]
+            },
+            {
+              "f": "1/(x*x)",
+              "color": "blue",
+              "domain": [
+                1,
+                8
+              ]
+            }
+          ],
+          "shade": [
+            1,
+            7
+          ]
+        }
+      },
+      {
+        "formula": "lim_(epsilon arrow.r 0^+) integral_epsilon^1 frac(1,sqrt(x)) dif x=2",
+        "text": "Improper behavior can also occur at a finite endpoint. One over square root of x becomes unbounded near zero, yet its integral from epsilon to one is two minus twice square root of epsilon. The limit is finite.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.2
+          ],
+          "y": [
+            0,
+            5
+          ],
+          "curves": [
+            {
+              "f": "1/sqrt(x)",
+              "color": "pink",
+              "domain": [
+                0.05,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0.05,
+            1
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Evaluate ∫₁^∞ 3/x² dx by explicitly introducing a finite upper bound R.",
+        "answer": "∫₁ᴿ3/x² dx=3−3/R, whose limit as R→∞ is 3."
+      },
+      {
+        "prompt": "Does ∫₁^∞1/√x dx converge? Show the finite-bound expression rather than reasoning only that the integrand approaches zero.",
+        "answer": "∫₁ᴿx^(−1/2)dx=2√R−2, which grows without bound. The improper integral diverges."
+      },
+      {
+        "prompt": "Determine whether ∫₀¹1/x² dx converges. Explain which one-sided limit defines it.",
+        "answer": "Use ε→0+ of ∫ε¹x^(−2)dx=1/ε−1. This diverges to infinity, so the integral does not converge."
+      }
+    ],
+    "takeaway": "An improper integral is a limit of ordinary integrals; small heights or unbounded heights alone do not decide convergence.",
+    "scope": "An infinite tail, a divergent comparison, and an integrable endpoint singularity."
+  },
+  {
+    "id": "calculus-2.infinite-sequences",
+    "beats": [
+      {
+        "formula": "a_n=frac(1,n), quad a_n arrow.r 0",
+        "text": "A sequence assigns an output to each positive integer index. For one over n, the terms get closer to zero as the index grows. Convergence means eventually staying within any chosen positive distance of a single limiting value.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            1,
+            0.5,
+            0.3333333333,
+            0.25,
+            0.2,
+            0.1666666667,
+            0.1428571429,
+            0.125
+          ],
+          "limit": 0
+        }
+      },
+      {
+        "formula": "a_n=(-1)^n",
+        "text": "Being bounded is not enough. These terms alternate between negative one and positive one, so they never settle near a single value. Different subsequences approach different destinations, preventing convergence of the complete sequence.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            1,
+            -1,
+            1
+          ]
+        }
+      },
+      {
+        "formula": "a_n=3-frac(1,n), quad a_n arrow.r 3",
+        "text": "This sequence increases toward three and never rises above it. A monotone sequence bounded in the direction of its movement converges. Here the explicit formula also identifies the limit, because one over n approaches zero.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            2,
+            2.5,
+            2.6666666667,
+            2.75,
+            2.8,
+            2.8333333333,
+            2.8571428571
+          ],
+          "limit": 3
+        }
+      },
+      {
+        "formula": "a_(n+1)=frac(a_n+2,2), quad a_1=0",
+        "text": "A recurrence can define a sequence without an explicit formula. Starting at zero, repeatedly average the current term with two. The gap from two halves at every step, which both explains convergence and identifies its limit.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            0,
+            1,
+            1.5,
+            1.75,
+            1.875,
+            1.9375,
+            1.96875
+          ],
+          "limit": 2
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the limit of a_n=(5n+2)/n. Show a simplification that separates the persistent part from the vanishing part.",
+        "answer": "a_n=5+2/n. Since 2/n→0, the limit is 5."
+      },
+      {
+        "prompt": "Does a_n=(−1)^n/n converge? Explain why alternating signs do not prevent convergence in this case.",
+        "answer": "Yes, it converges to 0. Its magnitude is 1/n→0, so −1/n≤a_n≤1/n and the squeeze theorem applies."
+      },
+      {
+        "prompt": "Let a_1=4 and a_(n+1)=(a_n+10)/2. Compute the next three terms and justify the limiting value.",
+        "answer": "The next terms are 7, 8.5, and 9.25. The distance from 10 halves each time, so a_n→10."
+      }
+    ],
+    "takeaway": "Convergence means settling near one value; monotonicity with a bound or a shrinking error can establish it.",
+    "scope": "Explicit sequences, oscillation, a monotone convergence example, and a contracting recurrence."
+  },
+  {
+    "id": "calculus-2.infinite-series",
+    "beats": [
+      {
+        "formula": "sum_(n=1)^infinity frac(1,2^n)",
+        "text": "A series adds the terms of a sequence. Because we cannot finish infinitely many additions, study the partial sums instead. For successive halves, the totals are one half, three quarters, seven eighths, and values increasingly close to one.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            0.5,
+            0.75,
+            0.875,
+            0.9375,
+            0.96875,
+            0.984375
+          ],
+          "limit": 1
+        }
+      },
+      {
+        "formula": "S_N=1-frac(1,2^N), quad S_N arrow.r 1",
+        "text": "The geometric sum formula makes the missing amount explicit: after N terms, the remaining gap is one over two to the N. That gap tends to zero, so the infinite series converges to one.",
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 8,
+          "filled": 31
+        }
+      },
+      {
+        "formula": "sum_(n=1)^infinity frac(1,n) \"diverges\"",
+        "text": "Terms approaching zero are necessary, but not sufficient. Group the harmonic series into blocks ending at powers of two. Each new block contributes at least one half, so the partial sums keep growing beyond every finite bound.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            1,
+            0.5,
+            0.5833333333,
+            0.6345238095
+          ],
+          "labels": [
+            "1",
+            "2",
+            "3–4",
+            "5–8"
+          ]
+        }
+      },
+      {
+        "formula": "abs(\"alternating-series error\")<=frac(1,N+1)",
+        "text": "Signs can change the conclusion. For alternating one over n, decreasing term magnitudes tend to zero, so the series converges. After N terms, its error is at most the next magnitude. This bound requires those alternating-series conditions.",
+        "visual": {
+          "kind": "sequence",
+          "values": [
+            1,
+            0.5,
+            0.8333333333,
+            0.5833333333,
+            0.7833333333,
+            0.6166666667
+          ],
+          "limit": 0.69314718056
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find ∑ from n=0 to infinity of (1/3)^n. State the condition that permits the geometric sum formula.",
+        "answer": "The ratio is 1/3, whose absolute value is less than 1. The sum is 1/(1−1/3)=3/2."
+      },
+      {
+        "prompt": "Does ∑ from n=1 to infinity of (2n+1)/(n+1) converge? Identify the quickest necessary-condition check.",
+        "answer": "The terms approach 2, not 0, so the series diverges by the term test."
+      },
+      {
+        "prompt": "For 1−1/2+1/3−1/4+…, bound the magnitude of the error after ten terms. Explain why the bound applies.",
+        "answer": "The error is at most 1/11 because magnitudes decrease to zero and signs alternate. The next omitted term bounds the alternating-series error."
+      }
+    ],
+    "takeaway": "A series converges when its partial sums converge; term size, signs, and valid error conditions all matter.",
+    "scope": "Geometric convergence, harmonic divergence, and a controlled alternating approximation."
+  },
+  {
+    "id": "calculus-2.taylor-series",
+    "beats": [
+      {
+        "formula": "e^x=1+x+frac(x^2,2)+frac(x^3,6)+dots",
+        "text": "Taylor polynomials imitate a function near one point by matching its value and successive derivatives there. For exponential x at zero, every derivative equals one, so the coefficients are reciprocals of factorials. More matching derivatives improve the local shape.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            2
+          ],
+          "y": [
+            -1,
+            8
+          ],
+          "curves": [
+            {
+              "f": "exp(x)",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            },
+            {
+              "f": "1+x",
+              "color": "gold",
+              "domain": [
+                -2,
+                2
+              ]
+            },
+            {
+              "f": "1+x+x*x/2",
+              "color": "pink",
+              "domain": [
+                -2,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "e^(0.2) approx 1+0.2+frac(0.2^2,2)+frac(0.2^3,6)",
+        "text": "At one fifth, the cubic polynomial gives about one point two two one three three three. This is an approximation, not an exact finite identity. Taylor's remainder theorem controls the difference using a bound on the next derivative.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0.9,
+            1.8
+          ],
+          "curves": [
+            {
+              "f": "exp(x)",
+              "color": "blue",
+              "domain": [
+                0,
+                0.5
+              ]
+            },
+            {
+              "f": "1+x+x*x/2+x*x*x/6",
+              "color": "gold",
+              "domain": [
+                0,
+                0.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              0.2,
+              1.2213333333
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "abs(R_3(0.2))<=frac(2(0.2)^4,24)",
+        "text": "On the interval from zero to one fifth, the fourth derivative is exponential x and is less than two. Therefore the cubic error is at most two times one fifth to the fourth, divided by twenty-four: about one ten-thousandth.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            1.2211,
+            1.2216
+          ],
+          "points": [
+            1.2213333333,
+            1.2214027582
+          ],
+          "labels": [
+            "cubic",
+            "actual"
+          ],
+          "interval": [
+            1.2212,
+            1.2214666667
+          ]
+        }
+      },
+      {
+        "formula": "frac(1,1-x)=sum_(n=0)^infinity x^n, quad abs(x)<1",
+        "text": "A power series also has a convergence domain. The geometric expansion for one over one minus x works only when absolute x is less than one. Outside that interval its terms may not shrink, even though the original function remains defined.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            1
+          ],
+          "y": [
+            0,
+            6
+          ],
+          "curves": [
+            {
+              "f": "1/(1-x)",
+              "color": "blue",
+              "domain": [
+                -0.9,
+                0.8
+              ]
+            },
+            {
+              "f": "1+x+x*x+x*x*x",
+              "color": "gold",
+              "domain": [
+                -0.9,
+                0.8
+              ]
+            }
+          ],
+          "sweep": true
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Use the degree-two Taylor polynomial of e^x about zero to estimate e^0.1. State the polynomial and the estimate.",
+        "answer": "P₂(x)=1+x+x²/2. P₂(0.1)=1+0.1+0.005=1.105."
+      },
+      {
+        "prompt": "The first nonconstant term of the Taylor expansion of cos x is −x²/2. Use its degree-two polynomial to estimate cos(0.2), with angles in radians.",
+        "answer": "P₂(x)=1−x²/2, so P₂(0.2)=1−0.04/2=0.98. It is a local approximation, not an exact identity."
+      },
+      {
+        "prompt": "Can 1+x+x²+… represent 1/(1−x) at x=1.2? What about x=−0.5? Explain using the ratio.",
+        "answer": "At 1.2 the terms fail to tend to zero, so the series diverges. At −0.5 the ratio has magnitude below one, so the sum is 1/(1+0.5)=2/3."
+      }
+    ],
+    "takeaway": "Taylor polynomials provide local approximations; remainder bounds and convergence domains determine when they can be trusted.",
+    "scope": "The exponential Taylor expansion, a numerical error bound, and a power-series convergence interval."
+  },
+  {
+    "id": "multivariable.vectors",
+    "beats": [
+      {
+        "formula": "v=(1,2,2), quad norm(v)=sqrt(1+4+4)=3",
+        "text": "A vector in three dimensions records three directed components. For one, two, two, the length comes from adding the squares of all three components. These bars display the squared contributions, whose sum is nine and whose square root is three.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            1,
+            4,
+            4
+          ],
+          "labels": [
+            "x²",
+            "y²",
+            "z²"
+          ]
+        }
+      },
+      {
+        "formula": "(1,2,2)+(2,-1,1)=(3,1,3)",
+        "text": "Addition combines corresponding coordinates. Add the first components, then the second, then the third. The drawn arrows show the horizontal projection, while the formula retains the height component; a two-dimensional picture cannot show every coordinate of the three-dimensional movement.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "1 times 2+2 times (-1)+2 times 1=2",
+        "text": "The dot product adds products of matching components and produces a scalar. Here the first contribution is two, the second is negative two, and the third is two. Including the hidden third coordinate changes the alignment calculation.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -1,
+            4
+          ],
+          "points": [
+            0,
+            2
+          ],
+          "labels": [
+            "zero",
+            "dot product"
+          ],
+          "arrows": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "hat(v)=frac(v,3), quad norm(hat(v))=1",
+        "text": "Dividing this nonzero vector by its length preserves its direction and produces a unit vector. Each component is scaled by one third, so each squared contribution scales by one ninth. The new squared contributions add to one.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.1111111111,
+            0.4444444444,
+            0.4444444444
+          ],
+          "labels": [
+            "x²",
+            "y²",
+            "z²"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the length of v=(2,−1,2), then write a unit vector in the same direction.",
+        "answer": "The length is √(4+1+4)=3. The unit vector is (2/3,−1/3,2/3). Normalization requires a nonzero vector."
+      },
+      {
+        "prompt": "Add u=(2,0,1) and v=(−1,3,2). Explain why a drawing of only the first two coordinates is incomplete.",
+        "answer": "u+v=(1,3,3). Its planar projection is (1,3), but that does not include the third component 3."
+      },
+      {
+        "prompt": "Compute the dot product of (1,2,−1) and (2,−1,3). Describe the role of the third coordinates.",
+        "answer": "The dot product is 1·2+2·(−1)+(−1)·3=−3. The first two contributions cancel, but the third contributes −3."
+      }
+    ],
+    "takeaway": "Coordinate rules extend to any finite dimension, but projections must not erase components from calculations.",
+    "scope": "Three-dimensional components, length, addition, dot product, and normalization."
+  },
+  {
+    "id": "multivariable.3d-geometry",
+    "beats": [
+      {
+        "formula": "z=x+y, quad (1,1,2) \"lies on the plane\"",
+        "text": "Three-dimensional coordinates locate a point using three perpendicular directions. A surface equation restricts which triples are allowed. On the plane z equals x plus y, the first two coordinates determine the third; one and one therefore require height two.",
+        "visual": {
+          "kind": "surface",
+          "mode": "plane"
+        }
+      },
+      {
+        "formula": "\"distance to\" (1,1,2)=sqrt(1+1+4)=sqrt(6)",
+        "text": "Distance extends the Pythagorean theorem. From the origin to one, one, two, the squared contributions are one, one, and four. Their sum is six, so the straight-line distance is square root of six, not the sum of the components.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            1,
+            1,
+            4
+          ],
+          "labels": [
+            "Δx²",
+            "Δy²",
+            "Δz²"
+          ]
+        }
+      },
+      {
+        "formula": "-x-y+z=0, quad n=(-1,-1,1)",
+        "text": "Rearranging the plane equation reveals a normal vector: negative one, negative one, one. Every displacement lying in the plane has dot product zero with this normal. The normal encodes orientation rather than a particular point on the plane.",
+        "visual": {
+          "kind": "surface",
+          "mode": "plane"
+        }
+      },
+      {
+        "formula": "z=x^2+y^2, quad y=1 arrow.r z=x^2+1",
+        "text": "A slice helps us understand a curved surface. Hold y equal to one on the paraboloid, and the remaining cross-section is z equals x squared plus one. Fixing a coordinate reduces a three-dimensional question to a familiar two-dimensional graph.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            2
+          ],
+          "y": [
+            0,
+            6
+          ],
+          "curves": [
+            {
+              "f": "x*x+1",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the distance between P=(1,2,3) and Q=(4,2,−1). Show the coordinate differences.",
+        "answer": "Q−P=(3,0,−4), so distance=√(9+0+16)=5."
+      },
+      {
+        "prompt": "Does (2,−1,1) lie on z=x+y? Give a normal vector to this plane.",
+        "answer": "Yes, since 1=2+(−1). A normal vector is (−1,−1,1), or any nonzero scalar multiple."
+      },
+      {
+        "prompt": "Write the equation of the sphere centered at the origin with radius 3. Check whether (1,2,2) lies on it.",
+        "answer": "x²+y²+z²=9. At (1,2,2), 1+4+4=9, so the point lies on the sphere."
+      }
+    ],
+    "takeaway": "Equations describe allowed triples; distances, normals, and coordinate slices reveal their geometry.",
+    "scope": "Points, distances, planes, a normal vector, and a paraboloid cross-section."
+  },
+  {
+    "id": "multivariable.partial-derivatives",
+    "beats": [
+      {
+        "formula": "f(x,y)=x^2+y^2",
+        "text": "A function of two inputs can change in more than one direction. A partial derivative asks what happens when one input moves while the other stays fixed. On this bowl, each coordinate direction gives its own local slope.",
+        "visual": {
+          "kind": "surface",
+          "mode": "paraboloid"
+        }
+      },
+      {
+        "formula": "y=1: quad f(x,1)=x^2+1, quad f_x=2x",
+        "text": "Fix y equal to one and move only x. The cross-section becomes x squared plus one, so its slope is two x. At x equal to one, the partial slope is two; the frozen y contribution behaves like a constant.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -2,
+            2
+          ],
+          "y": [
+            -1,
+            6
+          ],
+          "curves": [
+            {
+              "f": "x*x+1",
+              "color": "blue",
+              "domain": [
+                -2,
+                2
+              ]
+            },
+            {
+              "f": "2*x",
+              "color": "gold",
+              "domain": [
+                -0.5,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "f_x (1,-1)=2, quad f_y (1,-1)=-2",
+        "text": "At the point one, negative one, increasing x initially raises the surface, while increasing y initially lowers it. The two partial derivatives are two and negative two. A single height does not determine how the surface tilts in every direction.",
+        "visual": {
+          "kind": "surface",
+          "mode": "paraboloid"
+        }
+      },
+      {
+        "formula": "x=t, y=2t: quad frac(dif f,dif t)=10t",
+        "text": "If both coordinates move along a path, neither partial derivative alone is the full rate. Along x equals t and y equals two t, the height is five t squared. Its derivative is ten t, combining both coordinate contributions.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1.5,
+            1.5
+          ],
+          "y": [
+            -1,
+            12
+          ],
+          "curves": [
+            {
+              "f": "5*x*x",
+              "color": "blue",
+              "domain": [
+                -1.5,
+                1.5
+              ]
+            },
+            {
+              "f": "10*x-5",
+              "color": "gold",
+              "domain": [
+                0.5,
+                1.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              1,
+              5
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For f(x,y)=3x²+2y², find both partial derivatives at (2,−1). Explain which variable stays fixed in each calculation.",
+        "answer": "f_x=6x, so f_x(2,−1)=12; f_y=4y, so f_y(2,−1)=−4. Hold y fixed for f_x and x fixed for f_y."
+      },
+      {
+        "prompt": "For g(x,y)=x²y³, find g_x and g_y, then evaluate both at (1,2).",
+        "answer": "g_x=2xy³ and g_y=3x²y². At (1,2), they are 16 and 12 respectively."
+      },
+      {
+        "prompt": "Let f=x²+y² and follow x=t, y=3t. Find df/dt at t=2 and explain why using only f_x would be incomplete.",
+        "answer": "Along the path f=10t², so df/dt=20t=40 at t=2. Both x and y change; equivalently f_x x′+f_y y′=2t+18t."
+      }
+    ],
+    "takeaway": "A partial derivative freezes the other inputs; rates along a path must account for every moving coordinate.",
+    "scope": "Coordinate slices and the distinction between partial and total change along a path."
+  },
+  {
+    "id": "multivariable.multiple-integrals",
+    "beats": [
+      {
+        "formula": "V=integral_0^1 integral_0^1 (x+y) dif x dif y",
+        "text": "A double integral accumulates tiny contributions over a region in two input dimensions. For the surface z equals x plus y above the unit square, each small base rectangle contributes its area times the surface height.",
+        "visual": {
+          "kind": "surface",
+          "mode": "plane"
+        }
+      },
+      {
+        "formula": "integral_0^1 (x+y) dif x=frac(1,2)+y",
+        "text": "Integrate one coordinate at a time. During the inner integration with respect to x, y stays constant. The result is one half plus y, representing the cross-sectional accumulation for each fixed value of the outer coordinate.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.2
+          ],
+          "y": [
+            0,
+            2
+          ],
+          "curves": [
+            {
+              "f": "x+0.5",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "formula": "integral_0^1 (frac(1,2)+y) dif y=1",
+        "text": "Now add those cross-sectional accumulations over y from zero to one. One half y plus one half y squared increases by one. Continuity on this rectangle justifies the iterated integration and also permits reversing the order.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.2
+          ],
+          "y": [
+            0,
+            2
+          ],
+          "curves": [
+            {
+              "f": "0.5+x",
+              "color": "gold",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "formula": "integral_0^1 integral_0^x 1 dif y dif x=frac(1,2)",
+        "text": "Bounds encode geometry. Over the triangle below y equals x in the unit square, the upper y bound depends on x. Integrating one over that triangle returns its area, one half; using constant square bounds would describe a different region.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.2
+          ],
+          "y": [
+            0,
+            1.2
+          ],
+          "curves": [
+            {
+              "f": "x",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ],
+          "segments": [
+            [
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Evaluate ∫₀²∫₀¹(x+2y) dy dx. Show the inner integral before using the outer one.",
+        "answer": "The inner integral is [xy+y²]₀¹=x+1. Integrating from x=0 to 2 gives [x²/2+x]₀²=4."
+      },
+      {
+        "prompt": "A rectangle has side lengths 2 and 4 with constant density 3 kg per square meter. Express its mass as a double integral and evaluate it.",
+        "answer": "M=∫₀²∫₀⁴3 dy dx=3·8=24 kg."
+      },
+      {
+        "prompt": "Write and evaluate a double integral for the area of 0≤y≤x≤2. Explain why the upper inner bound is variable.",
+        "answer": "Area=∫₀²∫₀ˣ1 dy dx=∫₀²x dx=2. For each x, the vertical slice stops at y=x, so its bound changes with x."
+      }
+    ],
+    "takeaway": "Integrate small contributions over a stated region; inner variables move while outer variables temporarily remain fixed.",
+    "scope": "Iterated integrals over a rectangle and a triangle, with bounds tied to geometry."
+  },
+  {
+    "id": "multivariable.vector-fields",
+    "beats": [
+      {
+        "formula": "F(x,y)=(x,y)",
+        "text": "A vector field assigns a vector to every point in a region. In this radial field, the output repeats the position coordinates, so arrows point away from the origin and become longer farther from it. Position and assigned vector are different roles.",
+        "visual": {
+          "kind": "field",
+          "mode": "radial"
+        }
+      },
+      {
+        "formula": "F(2,1)=(2,1), quad F(-1,2)=(-1,2)",
+        "text": "Evaluate a field by substituting the location into both component functions. At two, one, the vector is two, one; at negative one, two, it changes accordingly. These outputs describe local direction and magnitude rather than another scalar height.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              2,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "points": [
+            [
+              2,
+              1
+            ],
+            [
+              -1,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "G(x,y)=(-y,x)",
+        "text": "Swapping the coordinates and negating the first creates a rotational field. At two, zero, its arrow points upward. Around a circle, the field is tangent to the path, contrasting with the radial field's perpendicular arrows.",
+        "visual": {
+          "kind": "field",
+          "mode": "rotation",
+          "path": "circle"
+        }
+      },
+      {
+        "formula": "H(x,y)=(1,0)",
+        "text": "A constant field assigns the same vector everywhere, so every arrow points right with the same length. Fields may model force or velocity, but the interpretation and units must come from the model; arrows alone do not specify them.",
+        "visual": {
+          "kind": "field",
+          "mode": "constant",
+          "path": "line"
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For F(x,y)=(x,y), find F(−2,3) and its magnitude.",
+        "answer": "F(−2,3)=(−2,3), with magnitude √(4+9)=√13."
+      },
+      {
+        "prompt": "For G(x,y)=(−y,x), find the vector at (1,−2). Verify that it is perpendicular to the position vector.",
+        "answer": "G(1,−2)=(2,1). The dot product (1,−2)·(2,1)=2−2=0, so they are perpendicular."
+      },
+      {
+        "prompt": "Compare F(x,y)=(x,y) and H(x,y)=(1,0) at (3,4). Which has greater magnitude there, and does this establish a universal comparison?",
+        "answer": "F has magnitude 5 and H has magnitude 1, so F is larger there. This is not universal: near the origin F can have magnitude below 1."
+      }
+    ],
+    "takeaway": "A field assigns a vector to a location; evaluating its components reveals local direction and magnitude.",
+    "scope": "Radial, rotational, and constant planar fields as concrete vector-field models."
+  },
+  {
+    "id": "multivariable.line-integrals",
+    "beats": [
+      {
+        "formula": "W=integral_C F dot.op dif r",
+        "text": "A force field does work only through the component aligned with movement. A line integral adds that contribution along a path. For the constant rightward field of magnitude one, moving from negative two to positive two along the axis gives work four.",
+        "visual": {
+          "kind": "field",
+          "mode": "constant",
+          "path": "line"
+        }
+      },
+      {
+        "formula": "F=(-y,x), quad r=(2cos(t),2sin(t))",
+        "text": "On a counterclockwise circle of radius two, the rotational field matches the direction of motion. Both the field vector and the parametrization's derivative have length two. Their dot product is four throughout the trip, so the work is eight pi.",
+        "visual": {
+          "kind": "field",
+          "mode": "rotation",
+          "path": "circle"
+        }
+      },
+      {
+        "formula": "F=(x,y): quad integral_C F dot.op dif r=0",
+        "text": "For the radial field on that same circle, every field arrow is perpendicular to the tangent direction. The dot product is zero at every point, so the line integral vanishes even though the field itself is not zero.",
+        "visual": {
+          "kind": "field",
+          "mode": "radial",
+          "path": "circle"
+        }
+      },
+      {
+        "formula": "integral_(-C) F dot.op dif r=-integral_C F dot.op dif r",
+        "text": "Reversing a path reverses the direction of each displacement, so a vector line integral changes sign. This orientation rule differs from merely measuring path length. Always specify the direction and distinguish work from a scalar integral against distance.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "start",
+            "finish"
+          ],
+          "edges": [
+            [
+              1,
+              0
+            ]
+          ],
+          "weights": [
+            "reverse direction"
+          ],
+          "directed": true,
+          "active": [
+            0,
+            1
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For the constant force F=(3,0), compute work along the straight path from (0,0) to (2,0).",
+        "answer": "Force and displacement align, so work is (3,0)·(2,0)=6. Equivalently integrate 3 dx from 0 to 2."
+      },
+      {
+        "prompt": "For F=(−y,x), compute the line integral around the unit circle counterclockwise, then clockwise.",
+        "answer": "With r=(cos t,sin t), F(r)=r′ and their dot product is 1, so the counterclockwise integral is 2π. Reversing orientation gives −2π."
+      },
+      {
+        "prompt": "For F=(x,y), parametrize the straight path from (0,0) to (1,2) and compute the work.",
+        "answer": "Use r(t)=(t,2t), 0≤t≤1. F(r)·r′=(t,2t)·(1,2)=5t, so work=∫₀¹5t dt=5/2."
+      }
+    ],
+    "takeaway": "Vector line integrals add the field's component along oriented movement; path direction changes the sign.",
+    "scope": "Work in constant, rotational, and radial fields, plus the orientation rule."
+  },
+  {
+    "id": "multivariable.surface-integrals",
+    "beats": [
+      {
+        "formula": "M=integral_S rho dif S",
+        "text": "A scalar surface integral adds density over a curved or tilted sheet. Each contribution is density times a small piece of actual surface area. On a flat unit square with density two, four quarter-square pieces together have mass two.",
+        "visual": {
+          "kind": "grid",
+          "rows": 2,
+          "cols": 2,
+          "filled": 4
+        }
+      },
+      {
+        "formula": "z=x+y: quad dif S=sqrt(3) dif x dif y",
+        "text": "Tilting the sheet changes area relative to its horizontal shadow. For z equals x plus y, the two tangent directions give an area scale of square root of three. This factor converts a small projected rectangle into its true surface area.",
+        "visual": {
+          "kind": "surface",
+          "mode": "plane"
+        }
+      },
+      {
+        "formula": "M=integral_0^1 integral_0^1 2sqrt(3) dif x dif y=2sqrt(3)",
+        "text": "Restrict the tilted plane to the patch projecting onto the unit square. With constant density two, its mass is two times square root of three. Forgetting the surface-area factor would incorrectly treat the tilted sheet as flat.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            1.2
+          ],
+          "y": [
+            0,
+            1.2
+          ],
+          "curves": [
+            {
+              "f": "1",
+              "color": "blue",
+              "domain": [
+                0,
+                1
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            1
+          ],
+          "segments": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "\"upward flux\"=frac(2,sqrt(3))sqrt(3)=2",
+        "text": "Flux is different: it weights area by the vector field's normal component. For the upward field zero, zero, two, the upward unit normal gives component two over square root of three. The flux is two, and reversing orientation changes its sign.",
+        "visual": {
+          "kind": "surface",
+          "mode": "plane"
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A flat surface of area 6 m² carries constant surface density 4 kg/m². Find its mass and identify the small quantity a surface integral adds.",
+        "answer": "Mass is 4·6=24 kg. Each small contribution is density times actual surface area, ρ dS."
+      },
+      {
+        "prompt": "For the patch z=x+y above 0≤x≤2, 0≤y≤1, compute its surface area using dS=√3 dx dy.",
+        "answer": "The projected rectangle has area 2, so surface area=∫₀²∫₀¹√3 dy dx=2√3."
+      },
+      {
+        "prompt": "For the same tilted patch above a unit square and constant field F=(0,0,3), compute upward flux. Explain the effect of choosing the downward normal.",
+        "answer": "The upward normal is (−1,−1,1)/√3, so F·n=3/√3. Multiplying by dS=√3 dxdy and integrating the unit square gives flux 3. Downward orientation gives −3."
+      }
+    ],
+    "takeaway": "Surface integrals use actual surface area; vector flux additionally depends on an oriented normal component.",
+    "scope": "A tilted plane's area factor, constant-density mass, and upward versus downward flux."
+  },
+  {
+    "id": "linear-algebra.vectors",
+    "beats": [
+      {
+        "formula": "u=(1,2), quad v=(2,-1)",
+        "text": "A vector records a directed change, not merely the location of its drawn tip. One, two means one unit right and two up. Two, negative one means two right and one down; moving an arrow without changing its displacement preserves the vector.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              -1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "u+v=(3,1)",
+        "text": "Add vectors component by component because horizontal and vertical changes combine independently. The total horizontal change is three and the total vertical change is one. Placing the second movement after the first would reach the same resulting displacement.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "2u=(2,4), quad norm(2u)=2norm(u)",
+        "text": "Scalar multiplication changes every component by the same factor. Doubling this vector doubles its length while keeping its direction. A negative multiplier reverses direction as well; in general the new length uses the absolute value of the scalar.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              -1,
+              -2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "u dot.op v=1 times 2+2 times (-1)=0",
+        "text": "The dot product measures alignment by adding products of matching components. These two contributions cancel to zero. Since both vectors are nonzero, zero dot product means the vectors are perpendicular, connecting coordinate arithmetic with a geometric right angle.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              -1
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Add u=(−3,1) and v=(2,2). Explain the result as horizontal and vertical displacement.",
+        "answer": "u+v=(−1,3): one unit left and three units up."
+      },
+      {
+        "prompt": "For u=(1,1) and v=(0,2), compute 2u−v and its length.",
+        "answer": "2u−v=(2,2)−(0,2)=(2,0), whose length is 2."
+      },
+      {
+        "prompt": "Check whether (2,3) and (3,−2) are perpendicular. Explain why your numerical test has a geometric meaning.",
+        "answer": "Their dot product is 2·3+3·(−2)=0. Since both are nonzero and u·v=||u||||v||cosθ, cosθ=0, so the angle is a right angle."
+      }
+    ],
+    "takeaway": "Vector operations combine directed components; scalar multiplication and dot products connect arithmetic to geometry.",
+    "scope": "Planar vectors, addition, scaling, length, and perpendicularity."
+  },
+  {
+    "id": "linear-algebra.matrices",
+    "beats": [
+      {
+        "formula": "A=mat(1,1;0,1)",
+        "text": "A matrix can describe a linear transformation. Its columns tell us where the standard basis vectors go. This matrix leaves the horizontal basis vector fixed and sends the vertical basis vector to one, one, producing a shear.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "A(1,2)=1(1,0)+2(1,1)=(3,2)",
+        "text": "Any vector is a combination of the basis vectors, so its image is the same combination of their images. One copy of the first column plus two copies of the second gives three, two. Matrix multiplication encodes this geometric rule.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              2
+            ]
+          ],
+          "matrix": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "B=mat(2,0;0,1), quad A B(1,1)=(3,1)",
+        "text": "A product of matrices composes transformations from right to left. First B doubles the horizontal coordinate, sending one, one to two, one. Then the shear A sends that intermediate vector to three, one.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              2,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "B A(1,1)=(4,1), quad A B != B A",
+        "text": "Reversing the order gives a different result. Shearing first sends one, one to two, one, and doubling horizontally afterward gives four, one. Matrix products generally do not commute, and their dimensions must also be compatible before multiplication.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              2,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For A=[[1,2],[-1,1]], calculate A(2,1) by combining columns.",
+        "answer": "2(1,−1)+1(2,1)=(4,−1). This agrees with the row-by-column calculation."
+      },
+      {
+        "prompt": "A rotation matrix is R=[[0,−1],[1,0]]. Find R(1,0) and R(0,1), then describe the rotation.",
+        "answer": "The images are (0,1) and (−1,0). This is a counterclockwise quarter-turn about the origin."
+      },
+      {
+        "prompt": "A is 2×3 and B is 3×4. Give the size of AB and explain whether BA is defined.",
+        "answer": "AB is 2×4 because the inner dimensions 3 match. BA would require 4=2, which is false, so BA is not defined."
+      }
+    ],
+    "takeaway": "Matrix columns describe basis images, and matrix multiplication composes compatible transformations in order.",
+    "scope": "A geometric shear, vector multiplication, composition order, and dimensions."
+  },
+  {
+    "id": "linear-algebra.linear-systems",
+    "beats": [
+      {
+        "formula": "x+y=3, quad x-y=1",
+        "text": "A linear system asks for an input satisfying several constraints at once. Each equation here describes a line. Their shared solution is the intersection point, where both equations return the required values simultaneously.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            4
+          ],
+          "y": [
+            -1,
+            4
+          ],
+          "curves": [
+            {
+              "f": "3-x",
+              "color": "blue",
+              "domain": [
+                0,
+                4
+              ]
+            },
+            {
+              "f": "x-1",
+              "color": "gold",
+              "domain": [
+                0,
+                4
+              ]
+            }
+          ],
+          "points": [
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(x+y)+(x-y)=4 quad arrow.r quad x=2",
+        "text": "Adding the equations cancels y and produces two x equals four. Keep one original equation to recover y equal to one. These elimination steps preserve solutions because the equation replacements are reversible; we are not arbitrarily discarding a constraint.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            4
+          ],
+          "y": [
+            -1,
+            4
+          ],
+          "curves": [
+            {
+              "f": "3-x",
+              "color": "blue",
+              "domain": [
+                0,
+                4
+              ]
+            }
+          ],
+          "segments": [
+            [
+              [
+                2,
+                -1
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          ],
+          "points": [
+            [
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "mat(1,1;1,-1)(2,1)=(3,1)",
+        "text": "The matrix viewpoint asks which vector is transformed into the target vector. The determinant here is negative two, not zero, so the transformation is invertible. Every target has one preimage, matching the unique intersection we found.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              2,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "x+y=3, quad 2x+2y=8 \"has no solution\"",
+        "text": "Dependent left-hand sides can produce a different outcome. Doubling the first equation would require the second right-hand side to be six, not eight. These parallel lines never meet; if it were six instead, the constraints would describe the same line.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            4
+          ],
+          "y": [
+            0,
+            5
+          ],
+          "curves": [
+            {
+              "f": "3-x",
+              "color": "blue",
+              "domain": [
+                0,
+                3
+              ]
+            },
+            {
+              "f": "4-x",
+              "color": "pink",
+              "domain": [
+                0,
+                4
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Solve 3x+y=8 and x−y=0 by elimination, then verify both equations.",
+        "answer": "Adding gives 4x=8, so x=2. The second equation gives y=2. Then 3·2+2=8 and 2−2=0."
+      },
+      {
+        "prompt": "Compare the systems u+v=2, 2u+2v=4 and u+v=2, 2u+2v=5. How many solutions does each have?",
+        "answer": "The first has infinitely many solutions because the second equation repeats the first. The second has none because doubling u+v=2 requires 4, not 5."
+      },
+      {
+        "prompt": "For A=[[1,1],[2,2]] and b=(3,7), explain why Ax=b has no solution without trying arbitrary values of x.",
+        "answer": "The second row output is always twice the first. If the first is 3, the second must be 6, never 7. The target is outside the image of A."
+      }
+    ],
+    "takeaway": "Elimination preserves constraints through reversible operations; geometry and matrix invertibility explain unique, missing, or nonunique solutions.",
+    "scope": "Two-variable systems, elimination, and the role of dependent equations."
+  },
+  {
+    "id": "linear-algebra.vector-spaces",
+    "beats": [
+      {
+        "formula": "S={t(1,2):t in RR}",
+        "text": "A vector space is a collection where vector addition and scalar multiplication follow the usual rules and stay inside the collection. The line of all multiples of one, two is a simple subspace of the plane.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              2
+            ],
+            [
+              -1,
+              -2
+            ],
+            [
+              0.5,
+              1
+            ]
+          ],
+          "points": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "a(1,2)+b(1,2)=(a+b)(1,2)",
+        "text": "Adding two points on this line keeps us on the line because their coefficients add. Scaling also keeps the same direction, and choosing coefficient zero supplies the zero vector. These closure facts work for arbitrary coefficients, not just a few drawn examples.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              2
+            ],
+            [
+              0.5,
+              1
+            ],
+            [
+              1.5,
+              3
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "y=2x+1 \"is not a subspace\"",
+        "text": "A shifted line fails the subspace test. It does not contain the zero vector, and adding two of its vectors can leave the line. Similar-looking geometric sets can therefore have different algebraic structure; passing through the origin matters here.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            2
+          ],
+          "y": [
+            -2,
+            5
+          ],
+          "curves": [
+            {
+              "f": "2*x+1",
+              "color": "pink",
+              "domain": [
+                -1,
+                2
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(1+x)+(2-x)=3",
+        "text": "Vectors need not be arrows. Polynomials of degree at most one form a vector space because adding or scaling them stays within that collection. Their coefficients act like coordinates; the constant polynomial three is allowed, as is the zero polynomial.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -1,
+            3
+          ],
+          "y": [
+            -2,
+            5
+          ],
+          "curves": [
+            {
+              "f": "1+x",
+              "color": "blue",
+              "domain": [
+                -1,
+                3
+              ]
+            },
+            {
+              "f": "2-x",
+              "color": "gold",
+              "domain": [
+                -1,
+                3
+              ]
+            },
+            {
+              "f": "3",
+              "color": "green",
+              "domain": [
+                -1,
+                3
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Show that S={(x,y):x+y=0} is a subspace of R². Give a spanning vector.",
+        "answer": "Every member is t(1,−1). The zero vector corresponds to t=0, and adding or scaling multiples gives another multiple. Thus S is a subspace spanned by (1,−1)."
+      },
+      {
+        "prompt": "Why is the set of points y=2x+1 not a vector subspace? Give one decisive test and one numerical failure of addition.",
+        "answer": "It omits (0,0). Also (0,1) lies in the set but adding it to itself gives (0,2), which does not satisfy y=2x+1."
+      },
+      {
+        "prompt": "Represent p(x)=1+x and q(x)=2−x by coefficient vectors. Add them and explain why polynomials of degree exactly one would not form a vector space.",
+        "answer": "The vectors are (1,1) and (2,−1), adding to (3,0), the constant polynomial 3. Degree exactly one excludes this sum and the zero polynomial, so it fails closure and the zero-vector requirement."
+      }
+    ],
+    "takeaway": "A vector space is defined by algebraic closure and structure, not by whether its objects look like arrows.",
+    "scope": "A line through the origin, a nonexample, and polynomials as vectors."
+  },
+  {
+    "id": "linear-algebra.eigenvalues",
+    "beats": [
+      {
+        "formula": "A=mat(2,0;0,frac(1,2)), quad A v=lambda v",
+        "text": "An eigenvalue describes how a transformation scales a special nonzero direction without turning it into a different line. This diagonal transformation doubles horizontal components and halves vertical ones, so the coordinate axes reveal two special behaviors.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              0.5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "A(1,0)=2(1,0), quad A(0,2)=frac(1,2)(0,2)",
+        "text": "The horizontal direction has eigenvalue two, while the vertical direction has eigenvalue one half. An ordinary diagonal vector has both components changed differently and usually turns. An eigenvalue belongs to a transformation together with an associated eigendirection.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              0.5
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "det(A-lambda I)=(2-lambda)(frac(1,2)-lambda)=0",
+        "text": "Rearranging the eigenvector equation gives A minus lambda times the identity acting on a nonzero vector to produce zero. That requires a singular matrix. Setting its determinant to zero finds the candidate eigenvalues two and one half.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            2.5
+          ],
+          "y": [
+            -1,
+            2
+          ],
+          "curves": [
+            {
+              "f": "(2-x)*(0.5-x)",
+              "color": "blue",
+              "domain": [
+                0,
+                2.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              0.5,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "mat(2,0;0,0)(0,1)=0(0,1)",
+        "text": "Zero can also be an eigenvalue. A singular transformation collapses some nonzero vectors to zero, and those vectors satisfy the eigenvalue equation with lambda zero. The input eigenvector must be nonzero; the resulting output need not be.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the eigenvalues of A=[[3,0],[0,−2]] by considering its action on the coordinate axes.",
+        "answer": "The eigenvalues are 3 and −2. The first axis is stretched by 3, and the second is scaled by −2, reversing direction and doubling length."
+      },
+      {
+        "prompt": "For A=[[1,0],[0,0]], give a nonzero eigenvector with eigenvalue zero. Explain why the zero vector itself is not an eigenvector.",
+        "answer": "v=(0,1) satisfies Av=(0,0)=0v. The definition excludes v=0, which would otherwise satisfy Av=λv for every scalar and identify no direction."
+      },
+      {
+        "prompt": "Find the eigenvalues of A=[[2,1],[0,2]] using det(A−λI). Must there be two different eigenvalues?",
+        "answer": "The determinant is (2−λ)², so λ=2 is the only distinct eigenvalue, with algebraic multiplicity two. A 2×2 matrix need not have two distinct eigenvalues."
+      }
+    ],
+    "takeaway": "Eigenvalues are the scalings of nonzero eigenvectors; singularity of A−λI identifies the possible values.",
+    "scope": "Diagonal examples, the characteristic equation, and a zero eigenvalue."
+  },
+  {
+    "id": "linear-algebra.eigenvectors",
+    "beats": [
+      {
+        "formula": "A=mat(2,1;1,2), quad A(1,1)=3(1,1)",
+        "text": "An eigenvector is a nonzero vector whose image is a scalar multiple of itself. For this matrix, one, one becomes three, three. The arrow grows but stays on the same line, so it is an eigenvector with eigenvalue three.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "(A-3I)v=0 quad arrow.r quad y=x",
+        "text": "To find every eigenvector for eigenvalue three, solve the homogeneous system formed by A minus three times the identity. Both equations reduce to y equals x. Therefore every nonzero multiple of one, one belongs to this eigendirection.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              0.5,
+              0.5
+            ],
+            [
+              -1,
+              -1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "A(1,-1)=(1,-1)",
+        "text": "There is another eigendirection: one, negative one remains unchanged, giving eigenvalue one. Two independent eigenvectors form a useful coordinate system here. Along these directions the same transformation acts by separate scalar multipliers rather than mixed coordinate formulas.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "A(2,0)=3(1,1)+(1,-1)=(4,2)",
+        "text": "Decompose two, zero into one copy of each eigendirection. Linearity lets us transform those pieces separately, then recombine them. The result is four, two. This simplification explains why an eigenvector basis is powerful when such a basis exists.",
+        "visual": {
+          "kind": "plane",
+          "vectors": [
+            [
+              2,
+              0
+            ]
+          ],
+          "matrix": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For A=[[3,1],[1,3]], check whether v=(1,1) is an eigenvector and identify its eigenvalue.",
+        "answer": "Av=(4,4)=4v, so v is an eigenvector with eigenvalue 4."
+      },
+      {
+        "prompt": "For the same matrix, check v=(1,−1). Compare its eigenvalue with the previous direction.",
+        "answer": "Av=(2,−2)=2v, so its eigenvalue is 2. The two independent directions scale differently."
+      },
+      {
+        "prompt": "For D=[[2,0],[0,5]], explain why (1,1) is not an eigenvector, then compute D(3,−1) using the two coordinate eigendirections.",
+        "answer": "D(1,1)=(2,5) is not one scalar multiple of (1,1). Decompose (3,−1)=3e₁−e₂; the image is 3·2e₁−5e₂=(6,−5)."
+      }
+    ],
+    "takeaway": "Solve (A−λI)v=0 for nonzero vectors; an eigenvector basis turns a transformation into independent scalings.",
+    "scope": "Two eigenspaces of a symmetric 2×2 matrix and decomposition into eigendirections."
+  },
+  {
+    "id": "discrete-math.logic",
+    "beats": [
+      {
+        "formula": "\"divisible by 4\" arrow.r \"even\"",
+        "text": "An implication says that whenever its premise is true, its conclusion must also be true. For integers, being divisible by four implies being even. The arrow is a logical guarantee, not a claim that the two properties are identical.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "divisible by 4",
+            "even"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "weights": [
+            "implies"
+          ],
+          "directed": true,
+          "active": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "formula": "n=4k=2(2k)",
+        "text": "The algebra explains the guarantee for every integer k. A multiple of four can be written as two times the integer two k, which is the definition of even. The example eight illustrates this reasoning but does not replace the general argument.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            4,
+            4
+          ],
+          "labels": [
+            "4",
+            "4"
+          ]
+        }
+      },
+      {
+        "formula": "6 \"is even but not divisible by 4\"",
+        "text": "Reversing an implication produces its converse, which may fail. Six is even, yet not divisible by four. One counterexample is enough to disprove the converse because the proposed rule claimed to work for every integer.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "labels": [
+            "pair",
+            "pair",
+            "pair"
+          ]
+        }
+      },
+      {
+        "formula": "\"not even\" arrow.r \"not divisible by 4\"",
+        "text": "The contrapositive reverses the arrow and negates both properties. It is logically equivalent to the original implication. If an integer is not even, it cannot be divisible by four, because divisibility by four would force evenness.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "not even",
+            "not divisible by 4"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "weights": [
+            "contrapositive"
+          ],
+          "directed": true,
+          "active": [
+            0,
+            1
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Prove that an integer divisible by 6 is divisible by 3. Use an arbitrary integer rather than only an example.",
+        "answer": "If n=6k for integer k, then n=3(2k), and 2k is an integer. Thus 3 divides n."
+      },
+      {
+        "prompt": "Is the converse, 'divisible by 3 implies divisible by 6,' valid? Supply a counterexample if not.",
+        "answer": "No. The integer 3 is divisible by 3 but not by 6."
+      },
+      {
+        "prompt": "Negate the statement 'For every integer n, n²≥0.' Explain why changing 'every' matters, and state whether the negation is true.",
+        "answer": "Its negation is 'There exists an integer n with n²<0.' Negating a universal statement requires an existential counterexample, not another universal statement. This negation is false over the integers."
+      }
+    ],
+    "takeaway": "Distinguish an implication, its converse, and its equivalent contrapositive; a universal claim can be defeated by one counterexample.",
+    "scope": "Implication and quantifiers through integer divisibility."
+  },
+  {
+    "id": "discrete-math.sets",
+    "beats": [
+      {
+        "formula": "A={1,2,3}, quad B={3,4,5}",
+        "text": "A set records membership without counting repeated copies or imposing an order. These two sets share the element three. The overlap shows shared membership, while the separate regions contain elements belonging to only one of the sets.",
+        "visual": {
+          "kind": "sets",
+          "left": [
+            "1",
+            "2"
+          ],
+          "right": [
+            "4",
+            "5"
+          ],
+          "both": [
+            "3"
+          ]
+        }
+      },
+      {
+        "formula": "A ∩ B={3}",
+        "text": "Intersection keeps only elements that satisfy both membership conditions. Three belongs to A and to B, so it remains. The word and corresponds to the overlap, helping us translate between set notation and logical conditions.",
+        "visual": {
+          "kind": "sets",
+          "left": [
+            "1",
+            "2"
+          ],
+          "right": [
+            "4",
+            "5"
+          ],
+          "both": [
+            "3"
+          ],
+          "highlight": "intersection"
+        }
+      },
+      {
+        "formula": "abs(A union B)=3+3-1=5",
+        "text": "Union includes elements belonging to at least one set. Adding the two set sizes counts three twice, so subtract the overlap once. There are five distinct elements in the union; this correction prevents double counting.",
+        "visual": {
+          "kind": "sets",
+          "left": [
+            "1",
+            "2"
+          ],
+          "right": [
+            "4",
+            "5"
+          ],
+          "both": [
+            "3"
+          ],
+          "highlight": "union"
+        }
+      },
+      {
+        "formula": "\"disjoint sets have no shared elements\"",
+        "text": "When sets are disjoint, their intersection is empty and no overlap correction is needed for their union's size. Complements require another ingredient: a specified universe, because not in A only has meaning relative to the objects under consideration.",
+        "visual": {
+          "kind": "sets",
+          "left": [
+            "1",
+            "2"
+          ],
+          "right": [
+            "3",
+            "4"
+          ],
+          "both": [],
+          "highlight": "union"
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For A={2,4,6} and B={4,6,8}, find A∩B and A∪B. Check the union size by inclusion-exclusion.",
+        "answer": "A∩B={4,6}; A∪B={2,4,6,8}. The count is 3+3−2=4."
+      },
+      {
+        "prompt": "Using those sets, find A\\B. Explain why it differs from the intersection.",
+        "answer": "A\\B={2}, keeping elements in A that are not in B. The intersection instead keeps the shared elements 4 and 6."
+      },
+      {
+        "prompt": "Let U={1,2,3,4,5,6,7,8} and A={2,4,6}. Find the complement of A in U and explain why specifying U is necessary.",
+        "answer": "U\\A={1,3,5,7,8}. Changing the universe changes which nonmembers are available, so a complement is relative to U."
+      }
+    ],
+    "takeaway": "Set operations combine membership conditions; overlap and the chosen universe determine the correct counts.",
+    "scope": "Membership, intersection, union, disjointness, difference, and a relative complement."
+  },
+  {
+    "id": "discrete-math.proofs",
+    "beats": [
+      {
+        "formula": "\"even\"+\"even\"=\"even\"",
+        "text": "A proof explains why a claim holds for every object meeting its assumptions. Four plus six equals ten is evidence for the even-plus-even claim, but testing examples can never cover all integers. We need a general reason.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            4,
+            6
+          ],
+          "labels": [
+            "even",
+            "even"
+          ]
+        }
+      },
+      {
+        "formula": "2a+2b=2(a+b)",
+        "text": "Represent arbitrary even integers as two a and two b, where a and b are integers. Their sum factors as two times the integer a plus b. That matches the definition of even and completes a direct proof.",
+        "visual": {
+          "kind": "grid",
+          "rows": 2,
+          "cols": 5,
+          "filled": 10
+        }
+      },
+      {
+        "formula": "1=frac(1(1+1),2)",
+        "text": "Mathematical induction uses a different structure: a starting case and a step that passes truth forward. For the sum of the first n positive integers, the claimed formula works at n equal to one, establishing the base case.",
+        "visual": {
+          "kind": "grid",
+          "rows": 1,
+          "cols": 2,
+          "filled": 1
+        }
+      },
+      {
+        "formula": "frac(n(n+1),2)+(n+1)=frac((n+1)(n+2),2)",
+        "text": "Assume the formula holds for a particular positive integer n, then add the next term. Factoring n plus one produces exactly the formula for n plus one. Combined with the base case, this implication establishes every positive integer case.",
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 5,
+          "filled": 10
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Prove that the sum of two odd integers is even, using arbitrary integer variables.",
+        "answer": "Write the odd integers as 2a+1 and 2b+1. Their sum is 2(a+b+1), which is even because a+b+1 is an integer."
+      },
+      {
+        "prompt": "Disprove the claim 'Every prime number is odd.' Explain why one example is sufficient here but not sufficient to prove a universal claim.",
+        "answer": "2 is prime and even, so it contradicts the universal claim. A universal claim fails if even one allowed object violates it; finitely many positive examples do not establish all cases."
+      },
+      {
+        "prompt": "Prove 1+3+…+(2n−1)=n² by induction. State both the base case and the induction step.",
+        "answer": "At n=1, 1=1². If the sum through 2n−1 is n², adding the next odd number 2n+1 gives n²+2n+1=(n+1)². Thus the claim holds for all positive integers."
+      }
+    ],
+    "takeaway": "A proof uses general reasoning under stated assumptions; induction needs both a base case and a valid forward step.",
+    "scope": "A direct parity proof, counterexamples, and one induction argument."
+  },
+  {
+    "id": "discrete-math.combinatorics",
+    "beats": [
+      {
+        "formula": "3 times 2=6",
+        "text": "Counting becomes easier when we organize choices. Three shirt choices and two trouser choices create six outfits because every shirt can pair with every trouser. The grid represents the independent stages of the choice, not probabilities by itself.",
+        "visual": {
+          "kind": "grid",
+          "rows": 3,
+          "cols": 2,
+          "filled": 6
+        }
+      },
+      {
+        "formula": "4 times 3=12",
+        "text": "Now choose a first and second person from four distinct people, without repetition. There are four possibilities first and three afterward. The twelve ordered selections distinguish who was chosen first, so swapping the same two people creates another outcome.",
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 3,
+          "filled": 12
+        }
+      },
+      {
+        "formula": "frac(4 times 3,2)=6",
+        "text": "If we only want a two-person committee, order no longer matters. Each unordered pair was counted twice, once in each order, so divide by two. The six edges connecting four labeled people represent the six distinct committees.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "\"ordered with repetition\": quad 4^2=16",
+        "text": "Allowing repetition changes the count again. A two-position code with four symbols has four choices at each position, making sixteen possibilities. Before choosing a formula, decide whether order matters and whether a chosen object can be used again.",
+        "visual": {
+          "kind": "grid",
+          "rows": 4,
+          "cols": 4,
+          "filled": 16
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "How many ordered arrangements of three different books can be chosen from five different books? Explain each factor.",
+        "answer": "There are 5 choices first, 4 second, and 3 third, so 5·4·3=60."
+      },
+      {
+        "prompt": "How many three-book groups can be chosen from those five books if order does not matter? Explain the division.",
+        "answer": "Each group has 3!=6 orderings, so the count is 60/6=10."
+      },
+      {
+        "prompt": "How many four-digit codes use digits 0–9 if repetition and leading zero are allowed? How would excluding repeated digits change the result?",
+        "answer": "With repetition there are 10⁴=10,000 codes. Without repetition, there are 10·9·8·7=5,040."
+      }
+    ],
+    "takeaway": "Identify stages, order, and repetition before counting; divide only when you know exactly how many times each outcome was counted.",
+    "scope": "The product rule, ordered choices, combinations, and repeated symbols."
+  },
+  {
+    "id": "discrete-math.graph-theory",
+    "beats": [
+      {
+        "formula": "V={A,B,C,D}, quad abs(E)=4",
+        "text": "A graph describes relationships through vertices and edges. These four vertices might represent places, with an edge whenever a direct connection exists. The geometry of the drawing is optional; which pairs are connected is the essential information.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "1+3+2+2=2 times 4",
+        "text": "A vertex's degree counts the edges touching it. The degrees here are one, three, two, and two. Adding them counts every undirected edge twice, once at each endpoint, which explains the degree-sum identity.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "A:1",
+            "B:3",
+            "C:2",
+            "D:2"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "active": [
+            1
+          ]
+        }
+      },
+      {
+        "formula": "A arrow.r B arrow.r D: quad \"2 edges\"",
+        "text": "A path follows connected edges. Without weights, a shortest path minimizes the number of edges, so reaching D from A through B takes two steps. A disconnected graph would not guarantee a path between every pair of vertices.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "active": [
+            0,
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "formula": "A arrow.r B arrow.r C arrow.r D: quad 1+1+1=3",
+        "text": "Weights change the goal. If the direct B-to-D edge costs four, then the two-edge route from A costs five. The three-edge route through C costs only three. Fewest edges and least total cost are different optimization questions.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "weights": [
+            "1",
+            "1",
+            "4",
+            "1"
+          ],
+          "active": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "In a triangle graph with edges AB, BC, and CA, list the degrees and verify the degree-sum identity.",
+        "answer": "Each of the three vertices has degree 2. The degree sum is 6=2·3, twice the number of edges."
+      },
+      {
+        "prompt": "Suppose AB has cost 2, BC cost 1, and AC cost 5. Find the least-cost route from A to C and compare it with the route using the fewest edges.",
+        "answer": "A→B→C costs 3 and is least-cost. The direct A→C edge uses only one edge but costs 5."
+      },
+      {
+        "prompt": "A graph has only edges AB and CD. Is there a path from A to D? Explain using connected components.",
+        "answer": "No. The vertices form two components {A,B} and {C,D}; no edge connects them."
+      }
+    ],
+    "takeaway": "Graph structure records connections; degree, reachability, edge count, and weighted cost answer different questions.",
+    "scope": "Undirected graphs, degrees, paths, and the distinction between weighted and unweighted shortest routes."
+  },
+  {
+    "id": "discrete-math.algorithms",
+    "beats": [
+      {
+        "formula": "2,4,6,8,10,12,14,16",
+        "text": "An algorithm is a precise sequence of steps for solving a class of problems. To find ten in this sorted list, binary search compares with a middle value instead of inspecting every entry from the beginning.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16
+          ],
+          "labels": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        }
+      },
+      {
+        "formula": "10>8 quad arrow.r quad \"keep the right half\"",
+        "text": "Comparing ten with the lower middle value eight eliminates every entry up to eight. Sorted order justifies the elimination: none of those smaller values can be the target. The remaining candidates are ten, twelve, fourteen, and sixteen.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            10,
+            12,
+            14,
+            16
+          ],
+          "labels": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        }
+      },
+      {
+        "formula": "10<12 quad arrow.r quad \"then test 10\"",
+        "text": "Comparing with twelve narrows the search again, leaving ten as the only candidate on its left. Each step preserves the invariant that a present target remains inside the candidate range. Shrinking that range ensures the procedure eventually terminates.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            10
+          ],
+          "labels": [
+            "found"
+          ]
+        }
+      },
+      {
+        "formula": "T(n)=O(log(n))",
+        "text": "Repeated halving explains the logarithmic growth in comparisons. This efficiency depends on ordered data and a method for accessing middle entries. Without sorted order, discarding half could throw away the target, so speed cannot replace the algorithm's assumptions.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "sorted range",
+            "middle test",
+            "discard half",
+            "repeat"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "directed": true,
+          "active": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Use binary search to find 11 in [1,3,5,7,9,11,13]. State each middle comparison.",
+        "answer": "Compare with 7, then keep [9,11,13]. Its middle is 11, so the target is found after two comparisons."
+      },
+      {
+        "prompt": "Why is ordinary binary search invalid on [9,1,7,3,5]? Use target 3 and the middle value 7 to explain the failure.",
+        "answer": "The list is unsorted. Comparing 3<7 would discard the right side, but the target 3 is on that discarded side. Sorted order is needed for the elimination rule."
+      },
+      {
+        "prompt": "Starting with 1,024 candidates, how many remain after ten exact halvings? Does this by itself prove that an arbitrary search procedure is correct?",
+        "answer": "1,024/2¹⁰=1 remains. No: correctness also needs an invariant ensuring the target was never discarded and a valid stopping rule, possibly including a final comparison."
+      }
+    ],
+    "takeaway": "An algorithm needs justified steps, a correctness invariant, and termination; efficiency depends on its assumptions.",
+    "scope": "Binary search as a concrete example of algorithm design, correctness, and logarithmic work."
+  },
+  {
+    "id": "probability.counting",
+    "beats": [
+      {
+        "formula": "6 times 6=36 \"equally likely ordered pairs\"",
+        "text": "Counting gives probabilities only after we identify equally likely outcomes. Two independent fair dice produce thirty-six ordered face pairs. The first die and second die have separate positions, so a two followed by a five differs from a five followed by a two.",
+        "visual": {
+          "kind": "grid",
+          "rows": 6,
+          "cols": 6,
+          "filled": 36
+        }
+      },
+      {
+        "formula": "P(\"sum 7\")=frac(6,36)=frac(1,6)",
+        "text": "Six ordered pairs add to seven: one and six, two and five, three and four, and their reversals. Divide those six favorable outcomes by the thirty-six equally likely pairs. We count the underlying outcomes before grouping them by their sum.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            6,
+            30
+          ],
+          "labels": [
+            "sum 7",
+            "other sums"
+          ]
+        }
+      },
+      {
+        "formula": "P(\"sum 2\")=frac(1,36)",
+        "text": "The possible sums themselves are not equally likely. Only one ordered pair produces two, while six produce seven. This histogram shows how many pairs belong to each sum, preventing the mistake of assigning every possible sum the same probability.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            5,
+            4,
+            3,
+            2,
+            1
+          ],
+          "labels": [
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ]
+        }
+      },
+      {
+        "formula": "P(\"two marked\")=frac(4,6)frac(3,5)=frac(2,5)",
+        "text": "Without replacement, later counts change. From four marked objects and two plain objects, the probability of two marked draws is four sixths times three fifths. After the first marked object stays out, only three marked objects remain among five.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            3,
+            2
+          ],
+          "labels": [
+            "marked left",
+            "plain left"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "List the equally likely outcomes of two independent fair coin tosses. Find the probability of exactly one head.",
+        "answer": "HH, HT, TH, TT each have probability 1/4. Exactly one head occurs in HT or TH, giving 2/4=1/2."
+      },
+      {
+        "prompt": "Find the probability that two independent fair dice have sum 4. List the favorable ordered pairs.",
+        "answer": "The pairs are (1,3), (2,2), and (3,1). The probability is 3/36=1/12."
+      },
+      {
+        "prompt": "A bag has five marked and three plain objects. Draw two without replacement. Find the probability both are marked and explain the changed denominator.",
+        "answer": "(5/8)(4/7)=20/56=5/14. The second denominator is 7 because one object has been removed."
+      }
+    ],
+    "takeaway": "Count equally likely underlying outcomes, and update the sample space when earlier choices remove possibilities.",
+    "scope": "Dice counting, unequal grouped outcomes, and two draws without replacement."
+  },
+  {
+    "id": "probability.conditional-probability",
+    "beats": [
+      {
+        "formula": "P(B|A)=frac(P(A ∩ B),P(A)), quad P(A)>0",
+        "text": "Conditioning restricts attention to the outcomes where the given event happened. Among eight people, six play guitar, four play piano, and two play both. Knowing someone plays guitar changes the comparison group from eight people to six.",
+        "visual": {
+          "kind": "sets",
+          "left": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "right": [
+            "G",
+            "H"
+          ],
+          "both": [
+            "E",
+            "F"
+          ],
+          "highlight": "left"
+        }
+      },
+      {
+        "formula": "P(\"piano\"|\"guitar\")=frac(2,6)=frac(1,3)",
+        "text": "Within the guitar group, only the two people in the overlap play piano. Therefore the conditional probability is two divided by six. The numerator describes both events, while the denominator describes the event we are already assuming.",
+        "visual": {
+          "kind": "sets",
+          "left": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "right": [
+            "G",
+            "H"
+          ],
+          "both": [
+            "E",
+            "F"
+          ],
+          "highlight": "intersection"
+        }
+      },
+      {
+        "formula": "P(\"guitar\"|\"piano\")=frac(2,4)=frac(1,2)",
+        "text": "Reversing the condition changes the denominator. Among the four piano players, two also play guitar, giving one half instead of one third. Conditional probabilities with the same two events are generally different when their roles are reversed.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            2,
+            2
+          ],
+          "labels": [
+            "both",
+            "piano only"
+          ]
+        }
+      },
+      {
+        "formula": "frac(2,8) != frac(6,8)frac(4,8)",
+        "text": "Independence means learning one event does not change the other's probability. Here the observed overlap is one quarter, while multiplying the two unconditional probabilities gives three eighths. They differ, so guitar and piano membership are not independent in this example.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.25,
+            0.375
+          ],
+          "labels": [
+            "actual",
+            "if independent"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Among 20 students, 12 walk to school, 8 cycle, and 3 sometimes do both. Find P(cycle|walk) and P(walk|cycle).",
+        "answer": "P(cycle|walk)=3/12=1/4. P(walk|cycle)=3/8. The different conditioning groups give different denominators."
+      },
+      {
+        "prompt": "A bag has two green and three purple objects. Given that the first draw was green and was not replaced, find the probability the next draw is green.",
+        "answer": "One green remains among four objects, so the conditional probability is 1/4."
+      },
+      {
+        "prompt": "Suppose P(A)=0.4, P(B)=0.5, and P(A∩B)=0.2. Are A and B independent? Verify with a conditional probability.",
+        "answer": "Yes: P(A)P(B)=0.2 equals the overlap. Also P(B|A)=0.2/0.4=0.5=P(B), with P(A)>0."
+      }
+    ],
+    "takeaway": "Condition on the correct group, and test independence instead of assuming probabilities can always be multiplied.",
+    "scope": "Conditional denominators, reversed conditions, and the independence criterion."
+  },
+  {
+    "id": "probability.bayes-theorem",
+    "beats": [
+      {
+        "formula": "P(A)=frac(20,100), quad P(B)=frac(80,100)",
+        "text": "Bayes' theorem reverses a conditional probability by accounting for how common each group is. Imagine one hundred objects: twenty are type A and eighty are type B. A screening rule flags some objects from either group.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            20,
+            80
+          ],
+          "labels": [
+            "type A",
+            "type B"
+          ]
+        }
+      },
+      {
+        "formula": "P(\"flag\"|A)=0.9, quad P(\"flag\"|B)=0.1",
+        "text": "The rule flags ninety percent of type A and ten percent of type B. In this frequency model, that means eighteen flagged A objects and eight flagged B objects. The remaining objects are not part of the flagged comparison group.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            18,
+            2,
+            8,
+            72
+          ],
+          "labels": [
+            "A flag",
+            "A clear",
+            "B flag",
+            "B clear"
+          ]
+        }
+      },
+      {
+        "formula": "P(A|\"flag\")=frac(18,18+8)=frac(9,13)",
+        "text": "Once a flag is observed, compare only the twenty-six flagged objects. Eighteen are type A, giving nine thirteenths, or about sixty-nine percent. The original ninety percent described flags within type A, not type A within flags.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            18,
+            8
+          ],
+          "labels": [
+            "flagged A",
+            "flagged B"
+          ]
+        }
+      },
+      {
+        "formula": "P(A|\"flag\")=frac(9,9+99)=frac(1,12)",
+        "text": "Now make type A rarer: ten of a thousand objects, with the same flagging rates. There are nine flagged A objects and ninety-nine flagged B objects. The posterior falls to one twelfth, showing why base rates cannot be ignored.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            9,
+            99
+          ],
+          "labels": [
+            "flagged A",
+            "flagged B"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Type A accounts for 30% of objects. A rule flags 80% of A and 10% of non-A. Find P(A|flag) using frequencies out of 1,000.",
+        "answer": "There are 300 A, of which 240 are flagged, and 700 non-A, of which 70 are flagged. P(A|flag)=240/310=24/31≈0.7742."
+      },
+      {
+        "prompt": "Repeat the calculation when A accounts for only 10%, the A flagging rate is 80%, and the non-A flagging rate is 20%.",
+        "answer": "Out of 1,000, 80 A and 180 non-A are flagged. P(A|flag)=80/260=4/13≈0.3077."
+      },
+      {
+        "prompt": "Explain why '80% of A objects get flagged' does not by itself tell us the percentage of flagged objects that are A. Identify the missing information.",
+        "answer": "It describes P(flag|A), not P(A|flag). We also need the base rate P(A) and the flagging rate among non-A, which determine the full flagged group."
+      }
+    ],
+    "takeaway": "To reverse a conditional probability, combine the relevant likelihoods with the base rates and normalize within the observed group.",
+    "scope": "Bayes' theorem through a transparent frequency model and a base-rate change."
+  },
+  {
+    "id": "probability.random-variables",
+    "beats": [
+      {
+        "formula": "X=\"number of heads in two tosses\"",
+        "text": "A random variable assigns a number to each outcome of a random experiment. For two independent fair coin tosses, let X count heads. Different outcomes can receive the same numerical value: head-tail and tail-head both map to one.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "HH",
+            "HT",
+            "TH",
+            "TT",
+            "0",
+            "1",
+            "2"
+          ],
+          "edges": [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "P(X=0)=frac(1,4), quad P(X=1)=frac(1,2)",
+        "text": "Each ordered coin outcome has probability one quarter, but the values of X are not equally likely. Zero heads has one supporting outcome, one head has two, and two heads has one. Grouping outcomes creates the variable's probability distribution.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "labels": [
+            "X=0",
+            "X=1",
+            "X=2"
+          ]
+        }
+      },
+      {
+        "formula": "Y=2X-1",
+        "text": "A new numerical rule creates another random variable. If Y equals twice X minus one, its possible values are negative one, one, and three. The mapping changes the numerical labels while preserving the probabilities attached to these three distinct groups.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.25,
+            0.5,
+            0.25
+          ],
+          "labels": [
+            "Y=-1",
+            "Y=1",
+            "Y=3"
+          ]
+        }
+      },
+      {
+        "formula": "P(X>=1)=frac(3,4)",
+        "text": "An event about a random variable corresponds to a collection of original outcomes. At least one head includes head-head, head-tail, and tail-head, so its probability is three quarters. Keep the outcome, its numerical value, and its probability conceptually separate.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "HH",
+            "HT",
+            "TH",
+            "TT",
+            "0",
+            "1",
+            "2"
+          ],
+          "edges": [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "directed": true,
+          "active": [
+            0,
+            1,
+            2,
+            5,
+            6
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Roll a fair die and define X=1 if the face exceeds 4, otherwise X=0. Find the distribution of X.",
+        "answer": "X=1 for faces 5 and 6, so P(X=1)=1/3. The other four faces give P(X=0)=2/3."
+      },
+      {
+        "prompt": "For three independent fair coin tosses, let X count heads. Find P(X=0) and P(X=3), and identify the underlying outcomes.",
+        "answer": "TTT gives zero heads and HHH gives three. Each has probability (1/2)³=1/8."
+      },
+      {
+        "prompt": "For X counting heads in two fair independent tosses, define Y=3X+2. List Y's possible values and their probabilities.",
+        "answer": "Y takes values 2, 5, 8 with probabilities 1/4, 1/2, 1/4 respectively. Each value follows from applying the rule to X=0,1,2."
+      }
+    ],
+    "takeaway": "A random variable is a numerical function of outcomes, and its distribution groups the probabilities of outcomes sharing a value.",
+    "scope": "A coin-count variable, an indicator, transformed values, and events involving a variable."
+  },
+  {
+    "id": "probability.distributions",
+    "beats": [
+      {
+        "formula": "P(X=0)=0.2, quad P(X=1)=0.3, quad P(X=2)=0.5",
+        "text": "A probability distribution specifies how probability is allocated across possible values. In a discrete distribution, probabilities are nonnegative and add to one. These three bars assign one fifth, three tenths, and one half to zero, one, and two.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.2,
+            0.3,
+            0.5
+          ],
+          "labels": [
+            "0",
+            "1",
+            "2"
+          ]
+        }
+      },
+      {
+        "formula": "P(X=1)=frac(3,8) \"for three fair coin tosses\"",
+        "text": "A binomial model counts successes across a fixed number of independent trials with the same success probability. For three fair tosses, exactly one head can occur in three positions, each with probability one eighth, giving three eighths altogether.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.125,
+            0.375,
+            0.375,
+            0.125
+          ],
+          "labels": [
+            "0 heads",
+            "1 head",
+            "2 heads",
+            "3 heads"
+          ]
+        }
+      },
+      {
+        "formula": "f(x)=frac(1,2), quad 0<=x<=2",
+        "text": "A continuous distribution uses density, whose area gives probability. Uniform density one half from zero to two has total area one. An interval of length one inside this range has probability one half, regardless of where it lies.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -0.2,
+            2.3
+          ],
+          "y": [
+            0,
+            1
+          ],
+          "curves": [
+            {
+              "f": "0.5",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            }
+          ],
+          "shade": [
+            0.5,
+            1.5
+          ]
+        }
+      },
+      {
+        "formula": "4 times frac(1,4)=1",
+        "text": "Density is not a point probability and may exceed one. Uniform density four on an interval of length one quarter still has total probability one. Any single exact point has probability zero in this continuous model because its interval width is zero.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            0.5
+          ],
+          "y": [
+            0,
+            5
+          ],
+          "curves": [
+            {
+              "f": "4",
+              "color": "gold",
+              "domain": [
+                0,
+                0.25
+              ]
+            }
+          ],
+          "shade": [
+            0,
+            0.25
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A discrete variable takes values 0,1,2 with probabilities 0.1,0.25,0.65. Verify that this is a valid distribution and find P(X≥1).",
+        "answer": "All probabilities are nonnegative and sum to 1. P(X≥1)=0.25+0.65=0.9."
+      },
+      {
+        "prompt": "Four independent fair coins are tossed. Find the probability of exactly one head, explaining the number of supporting outcomes.",
+        "answer": "The head can occupy any of four positions, each outcome having probability 1/16. The probability is 4/16=1/4."
+      },
+      {
+        "prompt": "X is uniform on [0,5]. Find its density, P(1≤X≤3), and P(X=2). Explain why the last two answers differ.",
+        "answer": "Density is 1/5. The interval has length 2, so its probability is 2/5. A single point has zero width and probability 0; density at that point is not its probability."
+      }
+    ],
+    "takeaway": "Discrete probabilities are masses; continuous probabilities are areas under a density, with assumptions defining the model.",
+    "scope": "Discrete probability mass, a binomial example, and uniform continuous density."
+  },
+  {
+    "id": "probability.expectation",
+    "beats": [
+      {
+        "formula": "E(X)=sum_x x P(X=x)",
+        "text": "Expectation is a probability-weighted average, not a promise about one trial. Suppose the possible payoffs are zero, four, and ten with probabilities one half, three tenths, and one fifth. More likely values receive more weight in the average.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.5,
+            0.3,
+            0.2
+          ],
+          "labels": [
+            "payoff 0",
+            "payoff 4",
+            "payoff 10"
+          ]
+        }
+      },
+      {
+        "formula": "E(X)=0(0.5)+4(0.3)+10(0.2)=3.2",
+        "text": "Multiply each payoff by its probability, then add the contributions. The result is three point two, even though that value is not a possible payoff. For repeated independent trials of this model, sample averages settle near this expected value in the long run.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0,
+            1.2,
+            2
+          ],
+          "labels": [
+            "X=0",
+            "X=4",
+            "X=10"
+          ]
+        }
+      },
+      {
+        "formula": "E(2X+1)=2E(X)+1=7.4",
+        "text": "Expectation respects addition and scaling when the relevant expectations exist. Doubling every payoff and adding one therefore doubles the old expectation and adds one. This linearity does not require independence between quantities; even adding X to itself follows the rule.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.5,
+            2.7,
+            4.2
+          ],
+          "labels": [
+            "1 × 0.5",
+            "9 × 0.3",
+            "21 × 0.2"
+          ]
+        }
+      },
+      {
+        "formula": "E(X-3.2)=0",
+        "text": "Paying three point two to play gives zero expected net payoff, but an individual outcome can still lose or gain money. Expected value summarizes an average; it does not describe variability, guarantee fairness in every trial, or eliminate the possibility of a loss.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            -4,
+            8
+          ],
+          "points": [
+            -3.2,
+            0,
+            0.8,
+            6.8
+          ],
+          "labels": [
+            "loss",
+            "mean",
+            "small gain",
+            "large gain"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "X takes values −1,2,5 with probabilities 0.2,0.5,0.3. Compute E(X), showing each weighted contribution.",
+        "answer": "E(X)=−1·0.2+2·0.5+5·0.3=−0.2+1+1.5=2.3."
+      },
+      {
+        "prompt": "Find the expected face value of a fair six-sided die. Explain why its not being a possible face is not a contradiction.",
+        "answer": "E(X)=(1+2+3+4+5+6)/6=3.5. An expectation is a weighted average, not necessarily an attainable single outcome."
+      },
+      {
+        "prompt": "If E(X)=4, find E(2X−3). Does applying the linearity rule require X to be independent of itself?",
+        "answer": "E(2X−3)=2·4−3=5. No independence is required for linearity; X is generally not independent of itself."
+      }
+    ],
+    "takeaway": "Expectation is a weighted average with linearity, not a prediction of a single outcome or a measure of its risk.",
+    "scope": "A finite payoff distribution, linearity, and the difference between expected and individual outcomes."
+  },
+  {
+    "id": "statistics.sampling",
+    "beats": [
+      {
+        "formula": "\"population\" arrow.r \"sample\" arrow.r \"estimate\"",
+        "text": "A sample is a smaller group used to learn about a population. First define who belongs to that population and how they can enter the sample. These three groups contain ten members each; omitting a group changes whom our evidence can represent.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            10,
+            10,
+            10
+          ],
+          "labels": [
+            "group A",
+            "group B",
+            "group C"
+          ]
+        }
+      },
+      {
+        "formula": "\"simple random sample: each size-6 subset is equally likely\"",
+        "text": "In a simple random sample of six, every subset of six population members has the same chance of selection. Random selection does not guarantee a perfectly representative individual sample, but it gives a defensible probability model for sampling variation.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            6
+          ],
+          "labels": [
+            "sample of six"
+          ]
+        }
+      },
+      {
+        "formula": "\"equal-sized strata: sample two from each\"",
+        "text": "Stratified sampling randomly samples within predefined groups. Taking two from each of our equal-sized groups ensures all are represented. When groups have different population sizes, analysis generally needs their population-size weights rather than blindly giving every sampled group equal influence.",
+        "visual": {
+          "kind": "dots",
+          "groups": [
+            2,
+            2,
+            2
+          ],
+          "labels": [
+            "A sample",
+            "B sample",
+            "C sample"
+          ]
+        }
+      },
+      {
+        "formula": "\"larger sample\" != \"less selection bias\"",
+        "text": "A large convenience sample can still systematically miss parts of the population. Surveying only one group gives no direct evidence about the others, however carefully we average the responses. Sample size reduces random variation more readily than it repairs selection bias.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            10,
+            0,
+            0
+          ],
+          "labels": [
+            "A sampled",
+            "B sampled",
+            "C sampled"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A population has 500 members and a simple random sample contains 50. What fraction is sampled, and what does 'simple random' require?",
+        "answer": "The sampled fraction is 50/500=0.1=10%. Every subset of 50 members must have the same selection probability; simply calling a convenient group random is insufficient."
+      },
+      {
+        "prompt": "A university posts an optional online poll about study habits. Explain one reason a large response count may still fail to represent all students.",
+        "answer": "Responders self-select and may differ systematically from nonresponders; students who do not encounter or choose the poll are underrepresented. More responses do not automatically remove this selection bias."
+      },
+      {
+        "prompt": "Two strata contain 200 and 800 people. You sample 20 from each. What weights combine the two sample means into an estimate of the population mean?",
+        "answer": "Use population weights 200/1000=0.2 and 800/1000=0.8. The estimate is 0.2 times the first sample mean plus 0.8 times the second, rather than an unweighted average."
+      }
+    ],
+    "takeaway": "Inference depends on how the sample was selected, not only on how many observations it contains.",
+    "scope": "Simple random sampling, a stratified design, population weights, and selection bias."
+  },
+  {
+    "id": "statistics.estimation",
+    "beats": [
+      {
+        "formula": "overline(x)=frac(8+10+12,3)=10",
+        "text": "An estimator is a rule that uses sample data to estimate a population quantity. The sample mean averages the observed values. For eight, ten, and twelve, the estimate is ten, but the unknown population mean need not equal that particular result.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            8,
+            10,
+            12
+          ],
+          "labels": [
+            "1",
+            "2",
+            "3"
+          ],
+          "mean": 10
+        }
+      },
+      {
+        "formula": "\"new sample\" arrow.r \"new estimate\"",
+        "text": "A different sample usually produces a different mean. This variation is part of the estimation problem, not necessarily a calculation mistake. We judge an estimator by how it behaves across repeated samples under a stated sampling model.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            9,
+            10,
+            11
+          ],
+          "labels": [
+            "sample A",
+            "sample B",
+            "sample C"
+          ],
+          "mean": 10
+        }
+      },
+      {
+        "formula": "\"SE\"(overline(X))=frac(sigma,sqrt(n))",
+        "text": "For independent observations with a common population variance, the sample mean's standard error is population standard deviation divided by square root of sample size. With standard deviation six, nine observations give standard error two, while thirty-six give standard error one.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            2,
+            1
+          ],
+          "labels": [
+            "n = 9",
+            "n = 36"
+          ]
+        }
+      },
+      {
+        "formula": "\"precision\" != \"lack of bias\"",
+        "text": "Precision and bias describe different features. Estimates can cluster tightly around the wrong target if the sampling method systematically favors certain observations. Increasing the sample size may shrink random error while leaving that systematic shift untouched; design must address the bias.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            7,
+            14
+          ],
+          "points": [
+            10,
+            11.8,
+            12,
+            12.2
+          ],
+          "labels": [
+            "target",
+            "estimate",
+            "estimate",
+            "estimate"
+          ],
+          "interval": [
+            11.7,
+            12.3
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "Find the sample mean of 5,9,13. Explain why this estimate is not guaranteed to be the population mean.",
+        "answer": "The sample mean is (5+9+13)/3=9. Samples vary, and the population may contain other values; the statistic estimates rather than guarantees the unknown parameter."
+      },
+      {
+        "prompt": "For independent identically distributed observations with population standard deviation 8, compute the standard error of the mean for n=16 and n=64.",
+        "answer": "SE=8/√16=2 and 8/√64=1. Quadrupling n halves the standard error."
+      },
+      {
+        "prompt": "Explain the difference between the standard deviation of individual observations and the standard error of a sample mean. Can an unbiased estimator still be inaccurate in one sample?",
+        "answer": "Observation standard deviation measures spread among individual values; standard error measures variation of the estimator across repeated samples. Unbiasedness concerns the estimator's average over samples, so a particular estimate can still miss the parameter."
+      }
+    ],
+    "takeaway": "An estimate is sample-dependent; standard error measures its random variation while bias measures a systematic shift.",
+    "scope": "The sample mean, repeated-sample variation, standard error, and bias versus precision."
+  },
+  {
+    "id": "statistics.hypothesis-testing",
+    "beats": [
+      {
+        "formula": "H_0:p=frac(1,2), quad H_1:p>frac(1,2)",
+        "text": "A hypothesis test compares data with a specified null model. Suppose ten independent tosses produce nine heads, and the planned alternative is a head probability greater than one half. The null model is a fair coin, not an assertion that the data must look exactly balanced.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            9,
+            1
+          ],
+          "labels": [
+            "heads",
+            "tails"
+          ]
+        }
+      },
+      {
+        "formula": "P(X>=9|H_0)=frac(10+1,1024)",
+        "text": "Under the fair-coin model, all one thousand twenty-four ordered sequences are equally likely. Ten have exactly nine heads and one has ten heads. This one-sided p-value counts results at least as extreme in the direction of the planned alternative.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            1,
+            10,
+            45,
+            120,
+            210,
+            252,
+            210,
+            120,
+            45,
+            10,
+            1
+          ],
+          "labels": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+          ]
+        }
+      },
+      {
+        "formula": "\"p-value\" approx 0.0107<0.05",
+        "text": "The p-value is about one percent, below a preselected five-percent significance threshold, so this test rejects the fair-coin null. The threshold is part of a procedure for controlling false positives under the model, not proof that a rejection is always correct.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            0,
+            0.1
+          ],
+          "points": [
+            0.0107421875,
+            0.05
+          ],
+          "labels": [
+            "p-value",
+            "threshold"
+          ],
+          "interval": [
+            0,
+            0.05
+          ]
+        }
+      },
+      {
+        "formula": "\"p-value\" != P(H_0 \"is true\")",
+        "text": "A p-value is not the probability that the null hypothesis is true. It also does not measure practical importance. Report the observed effect and its uncertainty, and keep the test's assumptions and chosen alternative visible when interpreting the result.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.5,
+            0.9
+          ],
+          "labels": [
+            "null p",
+            "observed"
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For six independent fair-coin tosses, all six are heads. For the planned one-sided alternative p>1/2, calculate the exact p-value.",
+        "answer": "At least six heads means exactly six, with probability (1/2)⁶=1/64≈0.015625 under the null."
+      },
+      {
+        "prompt": "A planned test gives p=0.08 with significance level 0.05. State the decision and explain why it does not prove the null hypothesis.",
+        "answer": "Do not reject at 0.05 because 0.08>0.05. Insufficient evidence against the null is not proof that the null is true; the test may lack sensitivity."
+      },
+      {
+        "prompt": "A very large study finds a tiny difference with a very small p-value. What additional information is needed before calling the difference important?",
+        "answer": "Consider the effect size, its uncertainty, practical context, data quality, and study design. Statistical significance alone does not establish a meaningful effect or a causal explanation."
+      }
+    ],
+    "takeaway": "A p-value measures extremeness under a specified null model, not the probability the null is true or the importance of an effect.",
+    "scope": "An exact one-sided binomial test and careful interpretation of significance."
+  },
+  {
+    "id": "statistics.regression",
+    "beats": [
+      {
+        "formula": "hat(y)=b_0+b_1 x",
+        "text": "Regression models how a response tends to vary with an explanatory input. A fitted line predicts a response for each input, while observations can sit above or below it. Those vertical differences are residuals, not necessarily recording errors.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -0.3,
+            2.5
+          ],
+          "y": [
+            0,
+            5
+          ],
+          "curves": [
+            {
+              "f": "1.5*x+0.5",
+              "color": "blue",
+              "domain": [
+                0,
+                2.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "\"residual\"=y-hat(y)",
+        "text": "For these points, the line one half plus one point five x predicts one half, two, and three point five. Subtracting predictions from observed responses gives residuals one half, negative one, and one half. Their signs record which side of the line each point occupies.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            -0.3,
+            2.5
+          ],
+          "y": [
+            0,
+            5
+          ],
+          "curves": [
+            {
+              "f": "1.5*x+0.5",
+              "color": "blue",
+              "domain": [
+                0,
+                2.5
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "segments": [
+            [
+              [
+                0,
+                0.5
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              [
+                2,
+                3.5
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "\"SSE\"=0.5^2+(-1)^2+0.5^2=1.5",
+        "text": "Ordinary least squares chooses the intercept and slope that minimize the sum of squared residuals. Squaring prevents positive and negative residuals from cancelling and emphasizes larger deviations. For these three points, this line achieves the minimum total of one point five.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.25,
+            1,
+            0.25
+          ],
+          "labels": [
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      },
+      {
+        "formula": "hat(y)(5)=8 \"is an extrapolation\"",
+        "text": "Predicting at five extends beyond the observed input range of zero to two. The line can produce that number without evidence that the relationship remains linear there. A fitted association also does not establish that changing the input causes the response to change.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0,
+            5.5
+          ],
+          "y": [
+            0,
+            9
+          ],
+          "curves": [
+            {
+              "f": "1.5*x+0.5",
+              "color": "blue",
+              "domain": [
+                0,
+                2
+              ]
+            },
+            {
+              "f": "1.5*x+0.5",
+              "color": "gold",
+              "domain": [
+                2,
+                5
+              ]
+            }
+          ],
+          "points": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              5,
+              8
+            ]
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A fitted line is ŷ=2x+1. At x=3 the observed response is 8. Find the prediction and residual, explaining its sign.",
+        "answer": "The prediction is 7, and residual=8−7=1. A positive residual means the observed response is above the fitted line."
+      },
+      {
+        "prompt": "For points (0,0),(1,2),(2,4), find a line with the smallest possible sum of squared residuals. Explain why no other fit can improve its total.",
+        "answer": "ŷ=2x passes through all points and has SSE=0. Squared residuals are nonnegative, so no fit can achieve a smaller total."
+      },
+      {
+        "prompt": "Ice-cream sales and swimming incidents rise together in a dataset. Why does a regression relationship alone not show that sales cause incidents?",
+        "answer": "A shared factor such as hot weather may influence both. An observational association does not by itself identify a causal mechanism or rule out confounding."
+      }
+    ],
+    "takeaway": "Regression minimizes a stated discrepancy and describes association; residuals, extrapolation, and causal interpretation need separate attention.",
+    "scope": "A three-point least-squares line, residuals, extrapolation, and a causality limitation."
+  },
+  {
+    "id": "statistics.confidence-intervals",
+    "beats": [
+      {
+        "formula": "overline(x)=10, quad sigma=2, quad n=25",
+        "text": "A confidence interval adds an uncertainty range to an estimate. Assume twenty-five independent observations from a normal population with known standard deviation two, and a sample mean of ten. These assumptions determine the interval procedure we are about to use.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            8,
+            12
+          ],
+          "points": [
+            10
+          ],
+          "labels": [
+            "sample mean"
+          ]
+        }
+      },
+      {
+        "formula": "10 ± 1.96frac(2,sqrt(25))=10 ± 0.784",
+        "text": "The mean's standard error is two divided by five, or zero point four. Multiplying by the normal cutoff, approximately one point nine six, gives a margin of zero point seven eight four. Add and subtract that margin to find the endpoints.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            8.5,
+            11.5
+          ],
+          "points": [
+            9.216,
+            10,
+            10.784
+          ],
+          "labels": [
+            "lower",
+            "estimate",
+            "upper"
+          ],
+          "interval": [
+            9.216,
+            10.784
+          ]
+        }
+      },
+      {
+        "formula": "P(L<=mu<=U) approx 0.95",
+        "text": "The ninety-five-percent confidence level describes repeated use of the method. Across repeated samples under these assumptions, about ninety-five percent of the resulting intervals cover the fixed population mean. It does not say that ninety-five percent of individual observations lie in this interval.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "new sample",
+            "new interval",
+            "covers fixed mean?"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "weights": [
+            "compute",
+            "check coverage",
+            "repeat"
+          ],
+          "directed": true
+        }
+      },
+      {
+        "formula": "n=100 quad arrow.r quad \"margin\"=0.392",
+        "text": "With the same known variability and confidence level, quadrupling sample size halves the margin. If the population standard deviation is estimated instead, use an appropriate method such as a t interval under its assumptions; do not automatically reuse the known-sigma formula.",
+        "visual": {
+          "kind": "numberline",
+          "range": [
+            8.5,
+            11.5
+          ],
+          "points": [
+            10
+          ],
+          "labels": [
+            "same estimate"
+          ],
+          "interval": [
+            9.608,
+            10.392
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "For an independent sample from a normal population with known σ=10, n=100, and sample mean 50, compute an approximate 95% z confidence interval.",
+        "answer": "SE=10/√100=1 and margin=1.96. The interval is [48.04,51.96]."
+      },
+      {
+        "prompt": "Keeping the same known σ and confidence level, how does the margin change when n rises from 100 to 400? Explain using the square root.",
+        "answer": "√n doubles from 10 to 20, so σ/√n and the margin both halve."
+      },
+      {
+        "prompt": "Explain what is wrong with 'This 95% confidence interval contains 95% of the population's observations.' Give the repeated-sampling interpretation instead.",
+        "answer": "It targets the population mean, not a fraction of individual observations. Under the procedure's assumptions, about 95% of intervals built from repeated samples cover the fixed population mean."
+      }
+    ],
+    "takeaway": "Confidence belongs to an interval-building method under stated assumptions; its target is a parameter, not individual observations.",
+    "scope": "A known-sigma normal-mean interval, repeated-sampling coverage, and sample-size effects."
+  },
+  {
+    "id": "statistics.statistical-inference",
+    "beats": [
+      {
+        "formula": "hat(p)=frac(30,50)=0.6",
+        "text": "Statistical inference uses sample evidence to learn beyond the observed data. If thirty of fifty sampled people support a proposal, the sample proportion is sixty percent. Whether that estimates a wider population depends on how those people entered the sample.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            30,
+            20
+          ],
+          "labels": [
+            "support",
+            "do not support"
+          ]
+        }
+      },
+      {
+        "formula": "\"estimated SE\" approx sqrt(frac(0.6(0.4),50))",
+        "text": "Under independent binary sampling with a common success probability, we can estimate how a sample proportion varies. Here the estimated standard error is about zero point zero six nine. The model supplies an uncertainty scale; the observed proportion alone cannot show its precision.",
+        "visual": {
+          "kind": "graph",
+          "x": [
+            0.3,
+            0.9
+          ],
+          "y": [
+            0,
+            6.5
+          ],
+          "curves": [
+            {
+              "f": "exp(-((x-0.6)**2)/(2*0.0692820323**2))/(0.0692820323*sqrt(2*pi))",
+              "color": "blue",
+              "domain": [
+                0.3,
+                0.9
+              ]
+            }
+          ],
+          "points": [
+            [
+              0.6,
+              5.758235824751242
+            ]
+          ]
+        }
+      },
+      {
+        "formula": "0.8-0.5=0.3 \"observed treatment difference\"",
+        "text": "Random assignment answers a different question from random sampling. Assigning volunteers randomly to treatments helps separate treatment effects from preexisting group differences. An observed success-rate difference of three tenths still carries sampling uncertainty; assignment does not eliminate random variation.",
+        "visual": {
+          "kind": "bars",
+          "values": [
+            0.8,
+            0.5
+          ],
+          "labels": [
+            "treatment",
+            "comparison"
+          ]
+        }
+      },
+      {
+        "formula": "\"design\" + \"model\" + \"uncertainty\" arrow.r \"qualified conclusion\"",
+        "text": "Random sampling supports population generalization, while random assignment supports causal comparison under suitable implementation. Neither is replaced by a complicated formula. State the population, design, assumptions, effect estimate, and uncertainty so the conclusion remains matched to the evidence actually collected.",
+        "visual": {
+          "kind": "network",
+          "nodes": [
+            "design",
+            "data",
+            "model",
+            "uncertainty",
+            "conclusion"
+          ],
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "directed": true,
+          "active": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      }
+    ],
+    "practice": [
+      {
+        "prompt": "A random sample of 80 people contains 24 supporters. Estimate the population support proportion and explain what makes population inference plausible.",
+        "answer": "The estimate is 24/80=0.30. A suitable probability sample from the target population supports generalization, with uncertainty from sampling variation; nonresponse and coverage still need attention."
+      },
+      {
+        "prompt": "The same 30% support estimate comes from people who volunteered for an online poll. Why may its population interpretation change even though the arithmetic is identical?",
+        "answer": "Self-selection can make respondents systematically different from the target population. The arithmetic estimates the respondent proportion, but generalizing it requires additional justified assumptions or a better sampling design."
+      },
+      {
+        "prompt": "A study randomly assigns volunteers to two treatments but does not randomly sample the population. Distinguish the causal and population claims it can support.",
+        "answer": "Random assignment can support a causal comparison for the studied participants under proper implementation and analysis. Broad population generalization is a separate issue because volunteers may not represent that population."
+      }
+    ],
+    "takeaway": "Inference joins a study design, a probability model, and uncertainty; formulas alone do not authorize population or causal claims.",
+    "scope": "A sample proportion, its uncertainty model, and the distinct roles of sampling and treatment assignment."
+  }
+]

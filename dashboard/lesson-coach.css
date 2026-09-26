@@ -1,0 +1,49 @@
+#lesson-coach { --lc-green: #365b42; --lc-line: #d6dfd1; --lc-cream: #fbfcf7; color: #233c2d; font: 15px/1.45 system-ui, sans-serif; }
+#lesson-coach [hidden] { display: none !important; }
+#lesson-coach button, #lesson-coach textarea, #lesson-coach select { font: inherit; }
+#lesson-coach button { cursor: pointer; }
+#lesson-coach button:disabled { cursor: wait; opacity: .65; }
+#lesson-coach button:focus-visible, #lesson-coach a:focus-visible, #lesson-coach textarea:focus-visible, #lesson-coach select:focus-visible, #lesson-coach summary:focus-visible { outline: 3px solid #937738; outline-offset: 3px; }
+#lesson-coach .lc-launcher { position: fixed; z-index: 80; right: 24px; bottom: max(20px, env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 9px; min-height: 46px; padding: 10px 17px; border: 1px solid #6a825b; border-radius: 30px; color: #fff; background: var(--lc-green); box-shadow: 0 5px 20px #17332424; font-weight: 650; }
+#lesson-coach .lc-launcher span { display: grid; place-items: center; width: 23px; height: 23px; border: 1px solid #b9ceb1; border-radius: 50%; font-family: Georgia, serif; font-size: 20px; }
+#lesson-coach .lc-panel { box-sizing: border-box; position: fixed; z-index: 81; right: 24px; bottom: max(80px, calc(env(safe-area-inset-bottom) + 65px)); width: min(410px, calc(100% - 28px)); max-height: min(740px, calc(100dvh - 110px)); overflow-y: auto; overscroll-behavior: contain; border: 1px solid #b9cbb0; border-radius: 19px; background: var(--lc-cream); box-shadow: 0 15px 55px #1733242b; }
+#lesson-coach .lc-header { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; padding: 19px 19px 14px; border-bottom: 1px solid var(--lc-line); background: #eef3e6; }
+#lesson-coach .lc-header h2 { margin: 0; font-size: 19px; letter-spacing: -.03em; line-height: 1.3; }
+#lesson-coach .lc-header p { margin: 4px 0 0; color: #567052; font-size: 12px; overflow-wrap: anywhere; }
+#lesson-coach .lc-close { flex: none; width: 33px; height: 33px; padding: 0; border: 0; border-radius: 50%; font-size: 26px; line-height: 1; color: #365b42; background: #e0e8d8; }
+#lesson-coach .lc-conversation { max-height: 290px; min-height: 100px; overflow-y: auto; overscroll-behavior: contain; padding: 14px; }
+#lesson-coach .lc-message { padding: 12px 13px; border: 1px solid #e0e6d9; border-radius: 13px; margin: 0 0 12px; background: white; }
+#lesson-coach .lc-user { background: #edf0fa; margin-left: 22px; border-color: #dce0ef; }
+#lesson-coach .lc-author { color: #536c4d; font-size: 11px; font-weight: 700; letter-spacing: .035em; }
+#lesson-coach .lc-message p { margin: 7px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 14px; }
+#lesson-coach .lc-prompts { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 16px 13px; }
+#lesson-coach .lc-prompts button, #lesson-coach .lc-small-button { border: 1px solid #c9d5bd; border-radius: 15px; background: #f0f4e8; color: #36583a; padding: 6px 10px; font-size: 12px; }
+#lesson-coach #lc-form { padding: 0 16px 14px; }
+#lesson-coach .lc-question-label { display: block; font-size: 13px; font-weight: 650; margin-bottom: 7px; }
+#lesson-coach textarea { display: block; box-sizing: border-box; resize: vertical; width: 100%; min-height: 74px; max-height: 180px; border: 1px solid #b9c9ac; border-radius: 10px; padding: 10px 11px; color: #233c2d; background: white; }
+#lesson-coach .lc-attach { display: flex; gap: 7px; align-items: flex-start; margin-top: 10px; font-size: 12px; cursor: pointer; }
+#lesson-coach .lc-attach input { flex: none; width: 15px; height: 15px; margin: 2px 0 0; accent-color: #496e45; }
+#lesson-coach .lc-preview, #lesson-coach .lc-attached { margin: 9px 0; border: 1px dashed #bacbad; border-radius: 9px; padding: 9px; font-size: 12px; }
+#lesson-coach summary { cursor: pointer; }
+#lesson-coach pre { white-space: pre-wrap; overflow-wrap: anywhere; font: 12px/1.5 system-ui, sans-serif; margin: 8px 0; max-height: 130px; overflow: auto; }
+#lesson-coach .lc-preview small { color: #65725d; }
+#lesson-coach .lc-send-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; }
+#lesson-coach #lc-mode-note { font-size: 11px; color: #66775d; }
+#lesson-coach .lc-primary { flex: none; min-height: 37px; padding: 8px 15px; border-radius: 9px; border: 1px solid var(--lc-green); background: var(--lc-green); color: #fff; font-size: 13px; font-weight: 650; }
+#lesson-coach .lc-settings { margin: 0 16px 12px; padding-top: 11px; border-top: 1px solid var(--lc-line); font-size: 12px; color: #4e6648; }
+#lesson-coach .lc-settings p { margin: 10px 0; }
+#lesson-coach .lc-settings label { display: block; margin: 9px 0 4px; }
+#lesson-coach .lc-settings select { box-sizing: border-box; display: block; width: 100%; max-width: 100%; padding: 7px; border: 1px solid #bbcbb0; border-radius: 7px; color: #233c2d; background: white; font-size: 12px; }
+#lesson-coach #lc-connection { padding-top: 8px; overflow-wrap: anywhere; }
+#lesson-coach .lc-settings a { color: #496737; }
+#lesson-coach .lc-retention-note { margin: 0 16px 10px; color: #6b7862; font-size: 10px; }
+#lesson-coach .lc-status { margin: 0; padding: 0 16px 13px; color: #56754d; font-size: 12px; overflow-wrap: anywhere; }
+#lesson-coach .lc-error { color: #933e36; }
+#lesson-coach .lc-check-note { margin: 18px; padding: 15px; border-radius: 12px; border: 1px solid #dcc89a; background: #fbf3df; }
+#lesson-coach .lc-check-note p { margin: 10px 0 15px; font-size: 14px; }
+@media (max-width: 600px) {
+  #lesson-coach .lc-launcher { right: 14px; bottom: max(14px, env(safe-area-inset-bottom)); min-height: 43px; padding: 8px 13px; font-size: 13px; }
+  #lesson-coach .lc-panel { right: 14px; bottom: max(70px, calc(env(safe-area-inset-bottom) + 58px)); max-height: calc(100dvh - 96px); border-radius: 15px; }
+  #lesson-coach .lc-conversation { max-height: 230px; }
+}
+@media (prefers-reduced-motion: reduce) { #lesson-coach * { scroll-behavior: auto !important; } }

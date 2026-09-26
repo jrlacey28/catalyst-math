@@ -1,0 +1,54 @@
+[
+  {
+    "beat": 1,
+    "start": 0.0,
+    "duration": 16.4,
+    "formula": "2x+2y=20, quad y=10-x",
+    "visual": "grid",
+    "bounds": [
+      -2.4,
+      2.4,
+      -2.1,
+      1.1
+    ]
+  },
+  {
+    "beat": 2,
+    "start": 16.4,
+    "duration": 17.56666666666701,
+    "formula": "A(x)=x(10-x), quad 0<=x<=10",
+    "visual": "graph",
+    "bounds": [
+      -5.9067285,
+      5.9067285,
+      -3.10375,
+      2.10375
+    ]
+  },
+  {
+    "beat": 3,
+    "start": 33.96666666666701,
+    "duration": 17.16666666666628,
+    "formula": "A'(x)=10-2x=0 quad arrow.r quad x=5",
+    "visual": "graph",
+    "bounds": [
+      -5.9067285,
+      5.9067285,
+      -3.10375,
+      2.10375
+    ]
+  },
+  {
+    "beat": 4,
+    "start": 51.13333333333329,
+    "duration": 17.666666666666494,
+    "formula": "A(x)=25-(x-5)^2<=25",
+    "visual": "grid",
+    "bounds": [
+      -2.0,
+      2.0,
+      -2.5,
+      1.5
+    ]
+  }
+]

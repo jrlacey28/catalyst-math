@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4B-05",
+  "batches": [
+    [
+      {
+        "id": "4B-05-P1",
+        "prompt": "As study time increases, exam scores tend to increase. Describe the association direction."
+      },
+      {
+        "id": "4B-05-P2",
+        "prompt": "Which has stronger linear association: r=-0.9 or r=0.4?"
+      },
+      {
+        "id": "4B-05-P3",
+        "prompt": "Does r=-0.8 mean x causes y to decrease?"
+      }
+    ],
+    [
+      {
+        "id": "4B-05-P4",
+        "prompt": "A scatterplot forms a clear U shape. Does r near zero prove no relationship?"
+      },
+      {
+        "id": "4B-05-P5",
+        "prompt": "Ice-cream sales and swimming accidents both increase in summer. Suggest a possible common influence."
+      },
+      {
+        "id": "4B-05-P6",
+        "prompt": "Why inspect a scatterplot even when given r?"
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

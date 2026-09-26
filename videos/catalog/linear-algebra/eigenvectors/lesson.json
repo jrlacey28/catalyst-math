@@ -1,0 +1,138 @@
+{
+  "id": "linear-algebra.eigenvectors",
+  "beats": [
+    {
+      "formula": "A=mat(2,1;1,2), quad A(1,1)=3(1,1)",
+      "text": "An eigenvector is a nonzero vector whose image is a scalar multiple of itself. For this matrix, one, one becomes three, three. The arrow grows but stays on the same line, so it is an eigenvector with eigenvalue three.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "(A-3I)v=0 quad arrow.r quad y=x",
+      "text": "To find every eigenvector for eigenvalue three, solve the homogeneous system formed by A minus three times the identity. Both equations reduce to y equals x. Therefore every nonzero multiple of one, one belongs to this eigendirection.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            -1,
+            -1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "A(1,-1)=(1,-1)",
+      "text": "There is another eigendirection: one, negative one remains unchanged, giving eigenvalue one. Two independent eigenvectors form a useful coordinate system here. Along these directions the same transformation acts by separate scalar multipliers rather than mixed coordinate formulas.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            -1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "A(2,0)=3(1,1)+(1,-1)=(4,2)",
+      "text": "Decompose two, zero into one copy of each eigendirection. Linearity lets us transform those pieces separately, then recombine them. The result is four, two. This simplification explains why an eigenvector basis is powerful when such a basis exists.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            2,
+            0
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For A=[[3,1],[1,3]], check whether v=(1,1) is an eigenvector and identify its eigenvalue.",
+      "answer": "Av=(4,4)=4v, so v is an eigenvector with eigenvalue 4.",
+      "id": "linear-algebra.eigenvectors.video-practice-1"
+    },
+    {
+      "prompt": "For the same matrix, check v=(1,−1). Compare its eigenvalue with the previous direction.",
+      "answer": "Av=(2,−2)=2v, so its eigenvalue is 2. The two independent directions scale differently.",
+      "id": "linear-algebra.eigenvectors.video-practice-2"
+    },
+    {
+      "prompt": "For D=[[2,0],[0,5]], explain why (1,1) is not an eigenvector, then compute D(3,−1) using the two coordinate eigendirections.",
+      "answer": "D(1,1)=(2,5) is not one scalar multiple of (1,1). Decompose (3,−1)=3e₁−e₂; the image is 3·2e₁−5e₂=(6,−5).",
+      "id": "linear-algebra.eigenvectors.video-practice-3"
+    }
+  ],
+  "takeaway": "Solve (A−λI)v=0 for nonzero vectors; an eigenvector basis turns a transformation into independent scalings.",
+  "scope": "Two eigenspaces of a symmetric 2×2 matrix and decomposition into eigendirections.",
+  "course": "Linear algebra",
+  "course_id": "linear-algebra",
+  "title": "Eigenvectors",
+  "objective": "Find invariant directions and connect diagonalization to repeated transformations.",
+  "index": 6,
+  "total": 6,
+  "prerequisites": [
+    "linear-algebra.eigenvalues",
+    "linear-algebra.vector-spaces"
+  ]
+}

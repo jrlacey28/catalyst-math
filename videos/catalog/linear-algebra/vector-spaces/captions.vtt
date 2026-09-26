@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:08.469
+A vector space is a collection where vector addition and scalar multiplication follow the usual rules and stay inside the collection
+
+00:00:08.469 --> 00:00:14.233
+The line of all multiples of one, two is a simple subspace of the plane.
+
+00:00:15.533 --> 00:00:21.783
+Adding two points on this line keeps us on the line because their coefficients add
+
+00:00:21.783 --> 00:00:27.617
+Scaling also keeps the same direction, and choosing coefficient zero supplies the zero vector
+
+00:00:27.617 --> 00:00:33.033
+These closure facts work for arbitrary coefficients, not just a few drawn examples.
+
+00:00:34.333 --> 00:00:37.193
+A shifted line fails the subspace test
+
+00:00:37.193 --> 00:00:44.138
+It does not contain the zero vector, and adding two of its vectors can leave the line
+
+00:00:44.138 --> 00:00:50.267
+Similar-looking geometric sets can therefore have different algebraic structure; passing through the origin matters here.
+
+00:00:51.567 --> 00:00:53.762
+Vectors need not be arrows
+
+00:00:53.762 --> 00:01:02.107
+Polynomials of degree at most one form a vector space because adding or scaling them stays within that collection
+
+00:01:02.107 --> 00:01:09.133
+Their coefficients act like coordinates; the constant polynomial three is allowed, as is the zero polynomial.

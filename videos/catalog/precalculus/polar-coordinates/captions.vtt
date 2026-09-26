@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:07.105
+Polar coordinates locate a point using a directed distance from the origin and an angle
+
+00:00:07.105 --> 00:00:12.022
+For nonnegative radius, move outward along the ray at that angle
+
+00:00:12.022 --> 00:00:17.833
+Multiplying the unit-circle coordinates by the radius converts the location into Cartesian coordinates.
+
+00:00:19.133 --> 00:00:25.603
+At radius two and angle sixty degrees, the horizontal coordinate is two times one half, giving one
+
+00:00:25.603 --> 00:00:32.833
+The vertical coordinate is two times the square root of three over two, giving the square root of three.
+
+00:00:34.133 --> 00:00:36.291
+Polar names are not unique
+
+00:00:36.291 --> 00:00:44.492
+Adding a complete turn keeps the same radius and final ray, so the same point receives another angle label
+
+00:00:44.492 --> 00:00:50.967
+This differs from ordinary Cartesian coordinates, where each ordered pair names one fixed coordinate combination.
+
+00:00:52.267 --> 00:00:56.472
+A negative radius reverses the direction along the chosen ray
+
+00:00:56.472 --> 00:01:01.938
+Changing the radius sign while adding half a turn names the same point
+
+00:01:01.938 --> 00:01:08.667
+When converting back from coordinates, use quadrant information instead of relying on a tangent ratio alone.

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.733
+A vector records a directed change, not merely the location of its drawn tip
+
+00:00:05.733 --> 00:00:09.162
+One, two means one unit right and two up
+
+00:00:09.162 --> 00:00:16.400
+Two, negative one means two right and one down; moving an arrow without changing its displacement preserves the vector.
+
+00:00:17.700 --> 00:00:23.237
+Add vectors component by component because horizontal and vertical changes combine independently
+
+00:00:23.237 --> 00:00:29.235
+The total horizontal change is three and the total vertical change is one
+
+00:00:29.235 --> 00:00:35.233
+Placing the second movement after the first would reach the same resulting displacement.
+
+00:00:36.533 --> 00:00:40.441
+Scalar multiplication changes every component by the same factor
+
+00:00:40.441 --> 00:00:44.783
+Doubling this vector doubles its length while keeping its direction
+
+00:00:44.783 --> 00:00:53.033
+A negative multiplier reverses direction as well; in general the new length uses the absolute value of the scalar.
+
+00:00:54.333 --> 00:00:59.476
+The dot product measures alignment by adding products of matching components
+
+00:00:59.476 --> 00:01:02.282
+These two contributions cancel to zero
+
+00:01:02.282 --> 00:01:12.100
+Since both vectors are nonzero, zero dot product means the vectors are perpendicular, connecting coordinate arithmetic with a geometric right angle.

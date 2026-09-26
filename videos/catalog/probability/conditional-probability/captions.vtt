@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.949
+Conditioning restricts attention to the outcomes where the given event happened
+
+00:00:04.949 --> 00:00:10.324
+Among eight people, six play guitar, four play piano, and two play both
+
+00:00:10.324 --> 00:00:15.700
+Knowing someone plays guitar changes the comparison group from eight people to six.
+
+00:00:17.000 --> 00:00:22.329
+Within the guitar group, only the two people in the overlap play piano
+
+00:00:22.329 --> 00:00:26.018
+Therefore the conditional probability is two divided by six
+
+00:00:26.018 --> 00:00:32.167
+The numerator describes both events, while the denominator describes the event we are already assuming.
+
+00:00:33.467 --> 00:00:35.969
+Reversing the condition changes the denominator
+
+00:00:35.969 --> 00:00:42.643
+Among the four piano players, two also play guitar, giving one half instead of one third
+
+00:00:42.643 --> 00:00:48.900
+Conditional probabilities with the same two events are generally different when their roles are reversed.
+
+00:00:50.200 --> 00:00:55.031
+Independence means learning one event does not change the other's probability
+
+00:00:55.031 --> 00:01:02.057
+Here the observed overlap is one quarter, while multiplying the two unconditional probabilities gives three eighths
+
+00:01:02.057 --> 00:01:07.767
+They differ, so guitar and piano membership are not independent in this example.

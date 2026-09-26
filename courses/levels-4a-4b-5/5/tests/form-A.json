@@ -1,0 +1,133 @@
+{
+  "unit": "5",
+  "form": "A",
+  "instructions": "Independent work. No hints or answer key during testing. Ask for clarification; substantive teaching makes the item assisted and requires a fresh replacement. Three questions per batch. Calculator allowed for arithmetic after writing the exact setup; no solver or answer lookup.",
+  "items": [
+    {
+      "id": "5-TA-01",
+      "lesson_id": "5-01",
+      "objective": "Connect completing the square, vertex form, discriminant, and solving.",
+      "prompt": "Solve x\u00b2-6x+5=0 by completing the square or the formula, showing both roots.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-02",
+      "lesson_id": "5-01",
+      "objective": "Connect completing the square, vertex form, discriminant, and solving.",
+      "prompt": "For y=2x\u00b2+4x+3, determine the number of real zeros and explain.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-03",
+      "lesson_id": "5-02",
+      "objective": "Read degree, leading behavior, zeros, and repeated factors.",
+      "prompt": "For p(x)=(x-2)\u00b2(x+3), list zeros and multiplicities and whether the graph crosses or touches at each.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-04",
+      "lesson_id": "5-02",
+      "objective": "Read degree, leading behavior, zeros, and repeated factors.",
+      "prompt": "State the degree, leading coefficient, and end behavior of -3x\u2075+2x\u00b2.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-05",
+      "lesson_id": "5-03",
+      "objective": "Simplify with restrictions, distinguish holes from poles, and check solutions.",
+      "prompt": "Simplify (x\u00b2-16)/(x-4), state its restriction, and locate the hole.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-06",
+      "lesson_id": "5-03",
+      "objective": "Simplify with restrictions, distinguish holes from poles, and check solutions.",
+      "prompt": "Solve 2/(x-3)=4, checking your candidate.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-07",
+      "lesson_id": "5-04",
+      "objective": "Use principal roots, simplify radicals, and check squared equations.",
+      "prompt": "Simplify \u221a98 and explain the perfect-square factor used.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-08",
+      "lesson_id": "5-04",
+      "objective": "Use principal roots, simplify radicals, and check squared equations.",
+      "prompt": "Solve \u221a(x+6)=x, checking all candidates in the original equation.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-09",
+      "lesson_id": "5-05",
+      "objective": "Represent a+bi and perform addition and multiplication with i\u00b2=-1.",
+      "prompt": "Compute (3+2i)(1-i), showing use of i\u00b2=-1.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-10",
+      "lesson_id": "5-05",
+      "objective": "Represent a+bi and perform addition and multiplication with i\u00b2=-1.",
+      "prompt": "Represent -2+3i as a point, then multiply it by i and give the new point.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-11",
+      "lesson_id": "5-06",
+      "objective": "Distinguish repeated multiplication from addition and interpret growth factors.",
+      "prompt": "An amount starts at 120 and grows 25% per step. Write a model and find the amount after two steps.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-12",
+      "lesson_id": "5-06",
+      "objective": "Distinguish repeated multiplication from addition and interpret growth factors.",
+      "prompt": "A model is 300(0.6)^t. Interpret both constants and find the value at t=0.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-13",
+      "lesson_id": "5-07",
+      "objective": "Translate exponential/log forms, use log laws with valid domains, and solve.",
+      "prompt": "Solve log\u2083(x-1)=2 and check its real domain.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-14",
+      "lesson_id": "5-07",
+      "objective": "Translate exponential/log forms, use log laws with valid domains, and solve.",
+      "prompt": "A student claims log\u2082(8+4)=log\u20828+log\u20824. Explain the error with the product rule.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-15",
+      "lesson_id": "5-08",
+      "objective": "Use explicit and recursive rules with correct indexing.",
+      "prompt": "An arithmetic sequence has a\u2081=6 and d=-2. Find a\u2088 and an explicit rule.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-16",
+      "lesson_id": "5-08",
+      "objective": "Use explicit and recursive rules with correct indexing.",
+      "prompt": "A geometric sequence has a\u2081=5 and r=3. Find a\u2084 and give a recursion with its start.",
+      "points": 2
+    },
+    {
+      "id": "5-TA-17",
+      "lesson_id": "5-09",
+      "objective": "Distinguish terms and sums; use finite sums and basic geometric convergence.",
+      "prompt": "Find the sum of the first 10 terms of the arithmetic sequence 4,7,10,...",
+      "points": 2
+    },
+    {
+      "id": "5-TA-18",
+      "lesson_id": "5-09",
+      "objective": "Distinguish terms and sums; use finite sums and basic geometric convergence.",
+      "prompt": "Find 5+5/3+5/9+... to infinity and justify convergence.",
+      "points": 2
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "title": "Start with one idea",
+    "text": "Welcome to Catalyst. This walkthrough takes you from getting the software to a useful learning session. We will follow one idea: how changing a function changes its graph, and why algebraic steps work. Everything shown uses a separate demo learner.",
+    "start": 0,
+    "duration": 16.366666666666667,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "Get the open-source software",
+    "text": "Start with the Catalyst offline ZIP supplied with this project. It includes the app and all the rendered lesson videos. The smaller source ZIP contains the code, transcripts and exercises. Extract the archive into a normal folder before opening anything. Catalyst's original code and shared lessons use the included MIT license. The upstream repository is currently private, so use the provided archive rather than expecting a public GitHub download.",
+    "start": 16.366666666666667,
+    "duration": 32.1,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "Launch on your computer",
+    "text": "Install Python three point ten or newer from python dot org. On Windows, open the extracted Catalyst folder and double click Start Catalyst. If Python is not found, finish Python setup and check that the python command works. On Mac or Linux, open a terminal in that folder and run python three, space, start dot py. Keep the terminal open. In your browser, open the local address shown here. Stop the server with Control C when finished.",
+    "start": 48.46666666666667,
+    "duration": 27.6,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "Make your own learning space",
+    "text": "Choose the learner name to create your own learning space. Pick a starting path and how you like to work. These preferences choose your first activity; they do not give you a test score. Each learner has separate saved work on this computer. You can return without starting over.",
+    "start": 76.06666666666666,
+    "duration": 17.266666666666666,
+    "audio": "audio_parts/04.wav"
+  },
+  {
+    "title": "Find your starting point",
+    "text": "If you are unsure where to begin, choose Find my level. The assessment asks one question at a time and adapts across several areas. Say when you do not know. Its recommendation is a starting estimate, not a permanent label. You can also browse Courses directly, from number sense through college topics.",
+    "start": 93.33333333333333,
+    "duration": 20.333333333333332,
+    "audio": "audio_parts/05.wav"
+  },
+  {
+    "title": "Watch, then understand",
+    "text": "Open a topic and watch its short narrated animation. Pause, replay, or use captions and chapters. Then open the study guide when one is available. Read the worked example and ask what changed at each line, and why. Here, a function is a rule: changing the input changes the output. Prerequisite links help repair a missing step before you continue.",
+    "start": 113.66666666666666,
+    "duration": 23.1,
+    "audio": "audio_parts/06.wav"
+  },
+  {
+    "title": "Explore the math playground",
+    "text": "The playground now brings the interactive tools together. Free exploration lets you change a graph or diagram. Guided reasoning explains valid transformations. Applied models connect several ideas to a situation. In the function lab, predict what changing the coefficient will do. Adjust it, watch the graph move, and compare the result with your prediction. Change one thing at a time.",
+    "start": 136.76666666666665,
+    "duration": 25.633333333333333,
+    "audio": "audio_parts/07.wav"
+  },
+  {
+    "title": "Understand why a step works",
+    "text": "When a simplification feels like a jump, open Why this step. Reveal one transformation and its reason at a time. In the expression comparison, the quotient simplifies to a line everywhere except the excluded input. The missing point still matters. Matching graph shapes is a useful observation; factoring and the domain restriction explain why the expressions agree where both are defined.",
+    "start": 162.39999999999998,
+    "duration": 25.233333333333334,
+    "audio": "audio_parts/08.wav"
+  },
+  {
+    "title": "Try three problems",
+    "text": "Return to Practice and try the three questions. Start with Build the idea, then Connect the steps and Stretch and transfer. Write your method as well as your answer. If you are stuck, ask for a hint. Check the feedback, find the first uncertain step, and try another variation. Getting help is part of learning.",
+    "start": 187.63333333333333,
+    "duration": 20.0,
+    "audio": "audio_parts/09.wav"
+  },
+  {
+    "title": "Check independently",
+    "text": "When you can explain the method, take a fresh independent check. Hinted or previously exposed questions do not establish new independent readiness. A passed check is useful evidence, but one short session does not prove lasting mastery. Some written work needs a tutor's review. Watching a video alone never passes a lesson.",
+    "start": 207.63333333333333,
+    "duration": 21.866666666666667,
+    "audio": "audio_parts/10.wav"
+  },
+  {
+    "title": "Put ideas together",
+    "text": "Apply the math connects ideas in a real model. Choose an investigation, make a prediction, change a control, and explain what you observe. The motion model links position, time and rate of change. Worked examples prepare you for three practice questions and a larger written project. State your assumptions and units as you reason.",
+    "start": 229.5,
+    "duration": 22.1,
+    "audio": "audio_parts/11.wav"
+  },
+  {
+    "title": "Keep and improve your reasoning",
+    "text": "My homework brings your saved writing together. Review my reasoning helps you inspect assumptions, transformations, notation and conclusions. Save a revised explanation and say what changed. Earlier versions stay available. You can copy your work for a tutor, or open the optional tailoring workspace with your actual saved explanation.",
+    "start": 251.6,
+    "duration": 22.5,
+    "audio": "audio_parts/12.wav"
+  },
+  {
+    "title": "Review and make it personal",
+    "text": "Mixed review gives fresh three-question sets across supported skills and suggests later retrieval. An empty due list is normal before you have qualifying work to review. Tailor to my interests connects a topic with your goals. Its copyable tutor brief works without AI. An optional local Ollama model can offer unverified help; it does not grade you.",
+    "start": 274.1,
+    "duration": 23.3,
+    "audio": "audio_parts/13.wav"
+  },
+  {
+    "title": "A learning rhythm you control",
+    "text": "Keep this rhythm: understand, predict, explore, try, explain, and return later. Move quickly when the evidence supports it, and revisit foundations whenever a step feels unclear. Your progress stays on disk. Use the written getting-started guide for setup and backup instructions. Begin with one idea, and make it yours.",
+    "start": 297.40000000000003,
+    "duration": 21.466666666666665,
+    "audio": "audio_parts/14.wav"
+  }
+]

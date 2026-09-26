@@ -1,0 +1,184 @@
+{
+  "id": "calculus-1.implicit-differentiation",
+  "beats": [
+    {
+      "formula": "x^2+y^2=4",
+      "text": "Some curves are easier to describe by a relationship than by one output formula. This circle contains an upper and a lower branch. Near suitable points, y can still depend on x even when we do not explicitly solve for it.",
+      "visual": {
+        "kind": "circle",
+        "angle": 1.0471975512,
+        "radius": 2,
+        "triangle": false
+      }
+    },
+    {
+      "formula": "2x+2y y'=0",
+      "text": "Differentiate both sides with respect to x. The x squared term gives two x. Because y itself changes with x, the derivative of y squared is two y times y prime, an application of the chain rule.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          3
+        ],
+        "y": [
+          -3,
+          3
+        ],
+        "curves": [
+          {
+            "f": "sqrt(4-x*x)",
+            "color": "blue",
+            "domain": [
+              -2,
+              2
+            ]
+          },
+          {
+            "f": "-sqrt(4-x*x)",
+            "color": "blue",
+            "domain": [
+              -2,
+              2
+            ]
+          }
+        ],
+        "points": [
+          [
+            1,
+            1.7320508075688772
+          ]
+        ],
+        "equal": true
+      }
+    },
+    {
+      "formula": "y'=-frac(x,y), quad y != 0",
+      "text": "Subtract two x, then divide by two y where y is nonzero. At the point one, square root of three, the slope is negative one over square root of three. The tangent slopes downward on the upper-right branch.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          3
+        ],
+        "y": [
+          -3,
+          3
+        ],
+        "curves": [
+          {
+            "f": "sqrt(4-x*x)",
+            "color": "blue",
+            "domain": [
+              -2,
+              2
+            ]
+          },
+          {
+            "f": "-sqrt(4-x*x)",
+            "color": "blue",
+            "domain": [
+              -2,
+              2
+            ]
+          },
+          {
+            "f": "(4-x)/sqrt(3)",
+            "color": "gold",
+            "domain": [
+              -0.5,
+              2.5
+            ]
+          }
+        ],
+        "points": [
+          [
+            1,
+            1.7320508075688772
+          ]
+        ],
+        "equal": true
+      }
+    },
+    {
+      "formula": "y=0: quad \"do not divide by zero\"",
+      "text": "At either horizontal endpoint, y is zero, so this rearrangement cannot produce a finite slope. The circle has a vertical tangent there. A failed division is useful information about the geometry, not permission to discard the condition.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -3,
+          3
+        ],
+        "y": [
+          -3,
+          3
+        ],
+        "curves": [
+          {
+            "f": "sqrt(4-x*x)",
+            "color": "blue",
+            "domain": [
+              -2,
+              2
+            ]
+          },
+          {
+            "f": "-sqrt(4-x*x)",
+            "color": "blue",
+            "domain": [
+              -2,
+              2
+            ]
+          }
+        ],
+        "points": [
+          [
+            2,
+            0
+          ]
+        ],
+        "segments": [
+          [
+            [
+              2,
+              -2.5
+            ],
+            [
+              2,
+              2.5
+            ]
+          ]
+        ],
+        "equal": true
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For x²+y²=25, find dy/dx at (3,4). Show the chain-rule factor.",
+      "answer": "2x+2y y′=0, so y′=−x/y where y≠0. At (3,4), y′=−3/4.",
+      "id": "calculus-1.implicit-differentiation.video-practice-1"
+    },
+    {
+      "prompt": "For xy=6, differentiate implicitly and find the slope at (2,3).",
+      "answer": "Product rule gives y+x y′=0. Thus y′=−y/x, and the slope at (2,3) is −3/2.",
+      "id": "calculus-1.implicit-differentiation.video-practice-2"
+    },
+    {
+      "prompt": "Explain why differentiating y² with respect to x gives 2y y′ rather than just 2y. What assumption is needed before solving by division by y?",
+      "answer": "y is a function of x, so the chain rule contributes y′. Dividing by y requires y≠0; points where y=0 must be examined separately.",
+      "id": "calculus-1.implicit-differentiation.video-practice-3"
+    }
+  ],
+  "takeaway": "Treat y as a function of x, apply the chain rule, and justify every division when solving for the slope.",
+  "scope": "Implicit differentiation of a circle and interpretation of vertical tangents.",
+  "course": "Calculus I",
+  "course_id": "calculus-1",
+  "title": "Implicit differentiation",
+  "objective": "Differentiate relations while accounting for y as a function of x.",
+  "index": 6,
+  "total": 8,
+  "prerequisites": [
+    "calculus-1.chain-rule",
+    "calculus-1.product-quotient-rule"
+  ]
+}

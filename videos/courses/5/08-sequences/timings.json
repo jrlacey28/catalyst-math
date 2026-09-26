@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "A sequence is an ordered list, and its index tells us which term we mean. In this lesson the first term has index one. Writing a few terms is a useful check before trusting a formula.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "An arithmetic sequence adds a fixed difference. Starting at three and adding four gives three, seven, eleven, fifteen. To reach term n, take n minus one steps from the first term.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.0,
+    "duration": 17.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "A geometric sequence multiplies by a fixed ratio. Starting at three and doubling gives three, six, twelve, twenty four. Again there are n minus one steps, now multiplications rather than additions.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.0,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "An explicit rule gives a term directly from its index. A recursive rule gives a starting value and a way to get the next term from the previous one. A recursion without its initial value does not specify this sequence.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.0,
+    "duration": 17.0,
+    "audio": "audio_parts/04.wav"
+  }
+]

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:07.055
+An ordered pair gives two instructions: move horizontally to the first coordinate, then vertically to the second
+
+00:00:07.055 --> 00:00:12.926
+The point three, two lies three units right of the origin and two units up
+
+00:00:12.926 --> 00:00:15.667
+Reversing the order usually changes the point.
+
+00:00:16.967 --> 00:00:20.115
+Negative coordinates describe direction as well as size
+
+00:00:20.115 --> 00:00:24.837
+Negative two, one means move two units left, then one unit up
+
+00:00:24.837 --> 00:00:31.133
+Both coordinates refer to the same origin and the marked scale, not to the previous point.
+
+00:00:32.433 --> 00:00:35.865
+To compare the two points, subtract corresponding coordinates
+
+00:00:35.865 --> 00:00:43.586
+From negative two, one to three, two, the horizontal change is five and the vertical change is one
+
+00:00:43.586 --> 00:00:48.733
+Differences describe movement between points even though neither point is the origin.
+
+00:00:50.033 --> 00:00:55.686
+A horizontal line contains every point with the same vertical coordinate
+
+00:00:55.686 --> 00:01:02.881
+The equation y equals two therefore allows many x values while keeping height fixed
+
+00:01:02.881 --> 00:01:08.533
+Coordinates connect individual locations with entire geometric relationships described by equations.

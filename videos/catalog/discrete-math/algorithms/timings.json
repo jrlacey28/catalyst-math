@@ -1,0 +1,127 @@
+[
+  {
+    "formula": "2,4,6,8,10,12,14,16",
+    "text": "An algorithm is a precise sequence of steps for solving a class of problems. To find ten in this sorted list, binary search compares with a middle value instead of inspecting every entry from the beginning.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "labels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "10>8 quad arrow.r quad \"keep the right half\"",
+    "text": "Comparing ten with the lower middle value eight eliminates every entry up to eight. Sorted order justifies the elimination: none of those smaller values can be the target. The remaining candidates are ten, twelve, fourteen, and sixteen.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        10,
+        12,
+        14,
+        16
+      ],
+      "labels": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.0,
+    "duration": 17.3,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "10<12 quad arrow.r quad \"then test 10\"",
+    "text": "Comparing with twelve narrows the search again, leaving ten as the only candidate on its left. Each step preserves the invariant that a present target remains inside the candidate range. Shrinking that range ensures the procedure eventually terminates.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        10
+      ],
+      "labels": [
+        "found"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 32.3,
+    "duration": 17.966666666666665,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "T(n)=O(log(n))",
+    "text": "Repeated halving explains the logarithmic growth in comparisons. This efficiency depends on ordered data and a method for accessing middle entries. Without sorted order, discarding half could throw away the target, so speed cannot replace the algorithm's assumptions.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "sorted range",
+        "middle test",
+        "discard half",
+        "repeat"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "directed": true,
+      "active": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 50.266666666666666,
+    "duration": 18.633333333333333,
+    "audio": "audio_parts/04.wav"
+  }
+]

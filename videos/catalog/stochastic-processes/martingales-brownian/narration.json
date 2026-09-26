@@ -1,0 +1,115 @@
+[
+  {
+    "formula": "E[M_(n+1) | \"past through n\"]=M_n",
+    "text": "A martingale is a precise fair-prediction model. Its current value is determined by the information already observed, its expected absolute value is finite, and its conditional expected next value equals its current value. Fairness concerns conditional averages, not every individual path.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "current 2",
+        "next 1",
+        "next 3"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "weights": [
+        "0.5",
+        "0.5"
+      ],
+      "directed": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "frac(1,4)1+frac(3,4)3=2.5",
+    "text": "If a step rises by one with probability three quarters and falls with probability one quarter, its expected increase is one half. The position itself is no longer a martingale. Subtracting one half times the step count removes that predictable drift.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "current 2",
+        "next 1",
+        "next 3"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "weights": [
+        "0.25",
+        "0.75"
+      ],
+      "directed": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "E[B_t-B_s]=0, quad \"Var\"(B_t-B_s)=t-s",
+    "text": "Standard Brownian motion is a continuous-time example with independent normal increments, mean zero and variance equal to elapsed time. Independence from the past makes its conditional expected future value equal its present value. These connected sample points only approximate a possible path.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        0,
+        0.3,
+        -0.1,
+        0.5,
+        0.2,
+        0.8,
+        0.4,
+        0.7
+      ],
+      "connect": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "E[B_t | \"information at s\"]=B_s, quad s<=t",
+    "text": "Actual Brownian paths are continuous but almost surely nowhere differentiable. A polygonal drawing cannot demonstrate that theorem. Nor does the martingale condition justify every stopping strategy: results about stopping times need additional assumptions, such as bounded stopping or suitable integrability.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        0,
+        0.12,
+        0.3,
+        0.05,
+        -0.1,
+        0.15,
+        0.5,
+        0.35,
+        0.2,
+        0.6,
+        0.8,
+        0.55,
+        0.4,
+        0.9,
+        0.7
+      ],
+      "connect": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

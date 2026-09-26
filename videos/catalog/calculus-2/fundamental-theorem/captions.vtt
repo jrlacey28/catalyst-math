@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.473
+Let A record the area accumulated under the rate two t
+
+00:00:04.473 --> 00:00:08.916
+Increasing the upper endpoint by a tiny amount adds a thin strip
+
+00:00:08.916 --> 00:00:14.100
+Its width is the input change, and its height is approximately the current rate.
+
+00:00:15.400 --> 00:00:18.484
+The thin-strip reasoning connects accumulation with differentiation
+
+00:00:18.484 --> 00:00:24.211
+Here the area function is x squared, and its derivative returns two x
+
+00:00:24.211 --> 00:00:31.700
+At input two, the accumulated amount changes at rate four, matching the original rate at that endpoint.
+
+00:00:33.000 --> 00:00:36.877
+The other direction turns an integral into an endpoint subtraction
+
+00:00:36.877 --> 00:00:43.468
+Since x squared differentiates to two x, subtract its value at one from its value at three
+
+00:00:43.468 --> 00:00:47.733
+The change in accumulated area is nine minus one, or eight.
+
+00:00:49.033 --> 00:00:56.399
+The pointwise derivative statement requires suitable regularity: continuity of the rate at the point is enough
+
+00:00:56.399 --> 00:01:01.923
+At a jump, the accumulation can remain continuous but develop a corner
+
+00:01:01.923 --> 00:01:06.067
+The theorem's assumptions explain where this direct identification works.

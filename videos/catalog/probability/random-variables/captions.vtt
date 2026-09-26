@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.668
+A random variable assigns a number to each outcome of a random experiment
+
+00:00:05.668 --> 00:00:09.721
+For two independent fair coin tosses, let X count heads
+
+00:00:09.721 --> 00:00:15.800
+Different outcomes can receive the same numerical value: head-tail and tail-head both map to one.
+
+00:00:17.100 --> 00:00:24.379
+Each ordered coin outcome has probability one quarter, but the values of X are not equally likely
+
+00:00:24.379 --> 00:00:30.803
+Zero heads has one supporting outcome, one head has two, and two heads has one
+
+00:00:30.803 --> 00:00:33.800
+Grouping outcomes creates the variable's probability distribution.
+
+00:00:35.100 --> 00:00:38.580
+A new numerical rule creates another random variable
+
+00:00:38.580 --> 00:00:45.540
+If Y equals twice X minus one, its possible values are negative one, one, and three
+
+00:00:45.540 --> 00:00:52.500
+The mapping changes the numerical labels while preserving the probabilities attached to these three distinct groups.
+
+00:00:53.800 --> 00:00:59.556
+An event about a random variable corresponds to a collection of original outcomes
+
+00:00:59.556 --> 00:01:06.197
+At least one head includes head-head, head-tail, and tail-head, so its probability is three quarters
+
+00:01:06.197 --> 00:01:11.067
+Keep the outcome, its numerical value, and its probability conceptually separate.

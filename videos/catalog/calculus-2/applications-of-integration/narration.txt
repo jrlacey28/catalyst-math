@@ -1,0 +1,7 @@
+An application begins by identifying what one small piece contributes. Between the curves y equals x and y equals x squared on the unit interval, each vertical strip has height upper curve minus lower curve.
+
+Integrate that strip height over its width. The antiderivative is x squared over two minus x cubed over three, so the enclosed area is one sixth. Subtracting the curves first creates a new nonnegative height function.
+
+Rotate the region under y equals x, from zero to two, around the horizontal axis. Each thin slice is a disk with radius x, so its area is pi x squared. Integrating slice area produces volume in cubic units.
+
+The same accumulation logic computes mass from a varying linear density. A rod with density one plus x contributes density times a tiny length. Integrating from zero to two gives mass four, with units determined by the density.

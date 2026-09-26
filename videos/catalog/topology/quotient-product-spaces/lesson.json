@@ -1,0 +1,202 @@
+{
+  "id": "topology.quotient-product-spaces",
+  "beats": [
+    {
+      "formula": "[0,1] times [0,1]",
+      "text": "A product space records a choice from each of two spaces. Pair two unit intervals and obtain a square: the first coordinate is chosen independently of the second. Product topology makes small rectangles the basic neighborhoods in this familiar finite-dimensional example.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -0.2,
+          1.2
+        ],
+        "y": [
+          -0.2,
+          1.2
+        ],
+        "curves": [
+          {
+            "f": "1",
+            "color": "blue",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          1
+        ],
+        "segments": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        "equal": true
+      }
+    },
+    {
+      "formula": "(0.2,0.8) times (0.3,0.7)",
+      "text": "An open rectangle says both coordinate conditions must hold. Around an interior point, we can independently restrict the first and second coordinates. More complicated open sets are built as unions of these neighborhoods, connecting coordinate descriptions with the topology of the plane.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1
+        ],
+        "y": [
+          0,
+          1
+        ],
+        "curves": [],
+        "segments": [
+          [
+            [
+              0.2,
+              0.3
+            ],
+            [
+              0.8,
+              0.3
+            ]
+          ],
+          [
+            [
+              0.8,
+              0.3
+            ],
+            [
+              0.8,
+              0.7
+            ]
+          ],
+          [
+            [
+              0.8,
+              0.7
+            ],
+            [
+              0.2,
+              0.7
+            ]
+          ],
+          [
+            [
+              0.2,
+              0.7
+            ],
+            [
+              0.2,
+              0.3
+            ]
+          ]
+        ],
+        "points": [
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        "equal": true
+      }
+    },
+    {
+      "formula": "q(t)=(cos(2pi t),sin(2pi t)), quad q(0)=q(1)",
+      "text": "A quotient construction instead identifies selected points. Send the closed unit interval around the circle once. Its two endpoints land at the same point, while interior inputs remain distinct. Identifying just those endpoints produces a space homeomorphic to the circle.",
+      "visual": {
+        "kind": "circle",
+        "angle": 6.28318530718,
+        "radius": 1,
+        "arc": true
+      }
+    },
+    {
+      "formula": "U \" open in quotient\" \" exactly when \" q^(-1)(U) \" open in source\"",
+      "text": "The quotient topology specifies which sets count as open after gluing: exactly those whose full preimages are open in the source. Near the joined endpoint, the preimage includes neighborhoods near both zero and one. Drawing a loop illustrates this identification, not its proof.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "0=1",
+          "1/4",
+          "1/2",
+          "3/4"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Describe (−1,2)×(3,5) as coordinate inequalities and determine whether (0,4) belongs.",
+      "answer": "It is the set of pairs with −1<x<2 and 3<y<5. The point (0,4) satisfies both inequalities.",
+      "id": "topology.quotient-product-spaces.video-practice-1"
+    },
+    {
+      "prompt": "Under q(t)=(cos(2πt),sin(2πt)) on [0,1], compute q(0),q(1/2),q(1).",
+      "answer": "q(0)=(1,0), q(1/2)=(−1,0), and q(1)=(1,0). Only the endpoints among these share an image.",
+      "id": "topology.quotient-product-spaces.video-practice-2"
+    },
+    {
+      "prompt": "Why must an open neighborhood of the glued endpoint pull back to pieces near both endpoints of the interval?",
+      "answer": "The quotient identifies 0 and 1 as one point. The full preimage contains both representatives and, to be open in the interval's subspace topology, includes relative neighborhoods of both.",
+      "id": "topology.quotient-product-spaces.video-practice-3"
+    }
+  ],
+  "takeaway": "Products combine coordinates; quotients identify points and define openness through preimages.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Topology",
+  "course_id": "topology",
+  "title": "Product and quotient spaces",
+  "objective": "Build spaces from existing ones and apply the defining topologies.",
+  "index": 3,
+  "total": 3,
+  "prerequisites": [
+    "topology.metric-topological-spaces",
+    "proof-foundations.relations-functions"
+  ]
+}

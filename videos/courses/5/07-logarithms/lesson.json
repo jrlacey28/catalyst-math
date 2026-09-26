@@ -1,0 +1,17 @@
+{
+  "id": "5-07",
+  "unit": "5",
+  "course": "Algebra II",
+  "index": 7,
+  "total": 9,
+  "slug": "logarithms",
+  "title": "Logarithms: asking for the exponent",
+  "objective": "Translate exponential/log forms, use log laws with valid domains, and solve.",
+  "prerequisites": "Exponential functions and exponent laws.",
+  "formulas": [
+    "2^3=8 <=> log_2 8=3",
+    "b>0 quad b != 1 quad x>0",
+    "log_b(x y)=log_b x+log_b y",
+    "2^x=10 => x=(ln 10)/(ln 2)"
+  ]
+}

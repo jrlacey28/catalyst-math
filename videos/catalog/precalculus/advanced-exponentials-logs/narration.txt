@@ -1,0 +1,7 @@
+An exponential equation asks which input produces a target output. Six lies between the outputs four and eight, so the needed exponent lies between two and three. Graphing gives this estimate, while logarithms give an exact expression.
+
+A logarithm names the exponent rather than approximating by trial and error. Taking natural logarithms of both sides and using the power rule gives x times natural log of two equals natural log of six, leading to the change-of-base formula.
+
+Logarithm laws also depend on domains. Combining the sum into a product requires both original arguments to be positive, which means x is greater than one. Simplifying their product must not introduce negative inputs excluded by either original logarithm.
+
+Equating the combined logarithm with natural log of four gives x squared minus one equals four. Algebra suggests positive or negative square root of five, but the original condition x greater than one keeps only the positive candidate.

@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.841
+A double integral accumulates tiny contributions over a region in two input dimensions
+
+00:00:05.841 --> 00:00:15.467
+For the surface z equals x plus y above the unit square, each small base rectangle contributes its area times the surface height.
+
+00:00:16.767 --> 00:00:19.294
+Integrate one coordinate at a time
+
+00:00:19.294 --> 00:00:23.929
+During the inner integration with respect to x, y stays constant
+
+00:00:23.929 --> 00:00:31.933
+The result is one half plus y, representing the cross-sectional accumulation for each fixed value of the outer coordinate.
+
+00:00:33.233 --> 00:00:38.173
+Now add those cross-sectional accumulations over y from zero to one
+
+00:00:38.173 --> 00:00:43.113
+One half y plus one half y squared increases by one
+
+00:00:43.113 --> 00:00:49.400
+Continuity on this rectangle justifies the iterated integration and also permits reversing the order.
+
+00:00:50.700 --> 00:00:51.952
+Bounds encode geometry
+
+00:00:51.952 --> 00:00:59.467
+Over the triangle below y equals x in the unit square, the upper y bound depends on x
+
+00:00:59.467 --> 00:01:07.400
+Integrating one over that triangle returns its area, one half; using constant square bounds would describe a different region.

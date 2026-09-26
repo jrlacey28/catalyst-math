@@ -1,0 +1,7 @@
+Continuity means the output at an input matches the height approached nearby. Three things are needed: a defined value, an existing two-sided limit, and agreement between them. A graph without a break illustrates this relationship.
+
+Now keep the nearby line but move only the value at one up to five. The approaching outputs still converge to two. A single misplaced value makes the function discontinuous even though its nearby behavior is unchanged.
+
+Setting the value at one equal to two repairs this removable discontinuity. This works because both sides already have the same limit. Merely defining a value would not repair a jump with unequal one-sided limits.
+
+Continuity also respects the domain. The square root function accepts only nonnegative real inputs. At its endpoint zero, continuity uses approach from within that domain, so only the right-hand approach is relevant there.

@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4B-03",
+  "batches": [
+    [
+      {
+        "id": "4B-03-P1",
+        "prompt": "A population has variance 25 cm\u00b2. Find its standard deviation."
+      },
+      {
+        "id": "4B-03-P2",
+        "prompt": "A population has standard deviation 3. Find its variance."
+      },
+      {
+        "id": "4B-03-P3",
+        "prompt": "Find the population standard deviation of 1, 1, 5, 5."
+      }
+    ],
+    [
+      {
+        "id": "4B-03-P4",
+        "prompt": "Every value increases by 10. What happens to standard deviation?"
+      },
+      {
+        "id": "4B-03-P5",
+        "prompt": "Every value is multiplied by -2. What happens to standard deviation?"
+      },
+      {
+        "id": "4B-03-P6",
+        "prompt": "Does any data set have about 68% of its observations within one standard deviation? Explain."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

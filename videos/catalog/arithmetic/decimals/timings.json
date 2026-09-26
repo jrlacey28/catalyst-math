@@ -1,0 +1,86 @@
+[
+  {
+    "formula": "0.37=frac(3,10)+frac(7,100)=frac(37,100)",
+    "text": "Decimal places extend the same base-ten system to parts smaller than one. Three tenths occupy thirty hundredths, and seven more hundredths bring the shaded total to thirty seven hundredths, written as zero point three seven.",
+    "visual": {
+      "kind": "grid",
+      "rows": 10,
+      "cols": 10,
+      "filled": 30,
+      "secondary": 7
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.2,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "0.4=0.40=frac(40,100)",
+    "text": "A trailing zero changes the written precision, not the amount. Four tenths and forty hundredths shade exactly the same region. To compare decimals, compare corresponding place values instead of treating their digit strings as whole numbers.",
+    "visual": {
+      "kind": "grid",
+      "rows": 10,
+      "cols": 10,
+      "filled": 40
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.2,
+    "duration": 17.2,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "1.2+0.35=1.20+0.35=1.55",
+    "text": "When adding decimals, align their units. One point two becomes one point two zero so that tenths line up with tenths and hundredths with hundredths. The increase of thirty five hundredths reaches one point five five.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        2
+      ],
+      "points": [
+        1.2,
+        1.55
+      ],
+      "arrows": [
+        [
+          1.2,
+          1.55
+        ]
+      ],
+      "labels": [
+        "1.20",
+        "1.55"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 33.4,
+    "duration": 15.566666666666666,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "0.3 times 0.4=frac(3 times 4,100)=0.12",
+    "text": "For multiplication, think in fractions rather than shifting a point mechanically. Three tenths times four tenths is twelve hundredths. The product is smaller than either factor because we are taking only part of an amount below one.",
+    "visual": {
+      "kind": "grid",
+      "rows": 10,
+      "cols": 10,
+      "filled": 12
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 48.96666666666667,
+    "duration": 16.033333333333335,
+    "audio": "audio_parts/04.wav"
+  }
+]

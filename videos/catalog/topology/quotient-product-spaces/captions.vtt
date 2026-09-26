@@ -1,0 +1,40 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.247
+A product space records a choice from each of two spaces
+
+00:00:05.247 --> 00:00:12.738
+Pair two unit intervals and obtain a square: the first coordinate is chosen independently of the second
+
+00:00:12.738 --> 00:00:18.467
+Product topology makes small rectangles the basic neighborhoods in this familiar finite-dimensional example.
+
+00:00:19.767 --> 00:00:23.895
+An open rectangle says both coordinate conditions must hold
+
+00:00:23.895 --> 00:00:29.859
+Around an interior point, we can independently restrict the first and second coordinates
+
+00:00:29.859 --> 00:00:39.033
+More complicated open sets are built as unions of these neighborhoods, connecting coordinate descriptions with the topology of the plane.
+
+00:00:40.333 --> 00:00:43.442
+A quotient construction instead identifies selected points
+
+00:00:43.442 --> 00:00:47.440
+Send the closed unit interval around the circle once
+
+00:00:47.440 --> 00:00:53.214
+Its two endpoints land at the same point, while interior inputs remain distinct
+
+00:00:53.214 --> 00:00:58.100
+Identifying just those endpoints produces a space homeomorphic to the circle.
+
+00:00:59.400 --> 00:01:08.598
+The quotient topology specifies which sets count as open after gluing: exactly those whose full preimages are open in the source
+
+00:01:08.598 --> 00:01:14.291
+Near the joined endpoint, the preimage includes neighborhoods near both zero and one
+
+00:01:14.291 --> 00:01:18.233
+Drawing a loop illustrates this identification, not its proof.

@@ -1,0 +1,111 @@
+{
+  "id": "multivariable.surface-integrals",
+  "beats": [
+    {
+      "formula": "M=integral_S rho dif S",
+      "text": "A scalar surface integral adds density over a curved or tilted sheet. Each contribution is density times a small piece of actual surface area. On a flat unit square with density two, four quarter-square pieces together have mass two.",
+      "visual": {
+        "kind": "grid",
+        "rows": 2,
+        "cols": 2,
+        "filled": 4
+      }
+    },
+    {
+      "formula": "z=x+y: quad dif S=sqrt(3) dif x dif y",
+      "text": "Tilting the sheet changes area relative to its horizontal shadow. For z equals x plus y, the two tangent directions give an area scale of square root of three. This factor converts a small projected rectangle into its true surface area.",
+      "visual": {
+        "kind": "surface",
+        "mode": "plane"
+      }
+    },
+    {
+      "formula": "M=integral_0^1 integral_0^1 2sqrt(3) dif x dif y=2sqrt(3)",
+      "text": "Restrict the tilted plane to the patch projecting onto the unit square. With constant density two, its mass is two times square root of three. Forgetting the surface-area factor would incorrectly treat the tilted sheet as flat.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1.2
+        ],
+        "y": [
+          0,
+          1.2
+        ],
+        "curves": [
+          {
+            "f": "1",
+            "color": "blue",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          1
+        ],
+        "segments": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "\"upward flux\"=frac(2,sqrt(3))sqrt(3)=2",
+      "text": "Flux is different: it weights area by the vector field's normal component. For the upward field zero, zero, two, the upward unit normal gives component two over square root of three. The flux is two, and reversing orientation changes its sign.",
+      "visual": {
+        "kind": "surface",
+        "mode": "plane"
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "A flat surface of area 6 m² carries constant surface density 4 kg/m². Find its mass and identify the small quantity a surface integral adds.",
+      "answer": "Mass is 4·6=24 kg. Each small contribution is density times actual surface area, ρ dS.",
+      "id": "multivariable.surface-integrals.video-practice-1"
+    },
+    {
+      "prompt": "For the patch z=x+y above 0≤x≤2, 0≤y≤1, compute its surface area using dS=√3 dx dy.",
+      "answer": "The projected rectangle has area 2, so surface area=∫₀²∫₀¹√3 dy dx=2√3.",
+      "id": "multivariable.surface-integrals.video-practice-2"
+    },
+    {
+      "prompt": "For the same tilted patch above a unit square and constant field F=(0,0,3), compute upward flux. Explain the effect of choosing the downward normal.",
+      "answer": "The upward normal is (−1,−1,1)/√3, so F·n=3/√3. Multiplying by dS=√3 dxdy and integrating the unit square gives flux 3. Downward orientation gives −3.",
+      "id": "multivariable.surface-integrals.video-practice-3"
+    }
+  ],
+  "takeaway": "Surface integrals use actual surface area; vector flux additionally depends on an oriented normal component.",
+  "scope": "A tilted plane's area factor, constant-density mass, and upward versus downward flux.",
+  "course": "Multivariable calculus",
+  "course_id": "multivariable",
+  "title": "Surface integrals",
+  "objective": "Integrate over surfaces and connect flux with the divergence and Stokes theorems.",
+  "index": 7,
+  "total": 7,
+  "prerequisites": [
+    "multivariable.line-integrals",
+    "multivariable.multiple-integrals"
+  ]
+}

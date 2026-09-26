@@ -1,0 +1,11 @@
+phase_0
+A data set can be summarized in more than one useful way. These five values are one, two, two, three, and seven. Before choosing a summary, look at the shape of the data and the question you want to answer.
+
+phase_1
+The mean is a fair share: add the values and divide by how many there are. Redistribute the fifteen units evenly among five positions. Each gets three, so the mean is three.
+
+phase_2
+The median is the middle value after sorting. Here it is two. For an even number of values, average the two middle values. The mode is a most frequent value; here, two appears most often.
+
+phase_3
+Move the seven far to the right. The mean moves because it uses every value. The median remains two because the middle position stays the same. For skewed incomes or large outliers, the median often describes a typical value more usefully.

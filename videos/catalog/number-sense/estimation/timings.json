@@ -1,0 +1,114 @@
+[
+  {
+    "formula": "198+403 approx 200+400=600",
+    "text": "Estimation deliberately replaces awkward quantities with nearby convenient ones. One hundred ninety eight is close to two hundred, and four hundred three is close to four hundred, so their sum should be close to six hundred.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        198,
+        200,
+        403,
+        400
+      ],
+      "labels": [
+        "198",
+        "200",
+        "403",
+        "400"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.2,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "198+403=601",
+    "text": "The exact sum is six hundred one. Rounding the first number up by two and the second down by three changes the total by negative one, explaining why the estimate of six hundred is slightly low.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        590,
+        610
+      ],
+      "points": [
+        600,
+        601
+      ],
+      "arrows": [
+        [
+          600,
+          601
+        ]
+      ],
+      "labels": [
+        "estimate",
+        "exact"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.2,
+    "duration": 15.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "19 times 31 approx 20 times 30=600",
+    "text": "For multiplication, nearby round factors often give a useful scale. Nineteen groups of thirty one should be near twenty groups of thirty. An answer around sixty or six thousand would have the wrong size before detailed checking.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        589,
+        600
+      ],
+      "labels": [
+        "19×31",
+        "20×30"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 30.2,
+    "duration": 16.233333333333334,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "18 times 30 < 19 times 31 < 20 times 32",
+    "text": "When an estimate must be justified, use bounds. Replacing both positive factors by smaller numbers gives a lower bound, while larger factors give an upper bound. Here the true product lies strictly between five hundred forty and six hundred forty.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        520,
+        660
+      ],
+      "points": [
+        540,
+        589,
+        640
+      ],
+      "interval": [
+        540,
+        640
+      ],
+      "labels": [
+        "lower",
+        "exact",
+        "upper"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 46.43333333333334,
+    "duration": 17.366666666666667,
+    "audio": "audio_parts/04.wav"
+  }
+]

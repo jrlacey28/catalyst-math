@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:06.952
+A variable names a quantity so we can describe a relationship without choosing its value immediately
+
+00:00:06.952 --> 00:00:14.733
+If each notebook costs three dollars, n can count notebooks and c can describe the corresponding cost in dollars.
+
+00:00:16.033 --> 00:00:20.077
+Once an input is supplied, substitution makes the rule concrete
+
+00:00:20.077 --> 00:00:24.121
+Four notebooks means replace n with four everywhere it appears
+
+00:00:24.121 --> 00:00:31.400
+Three times four gives twelve dollars; the letter was a placeholder for the quantity, not an extra operation.
+
+00:00:32.700 --> 00:00:35.191
+Sometimes the output is known instead
+
+00:00:35.191 --> 00:00:41.418
+A bill of twenty one dollars creates an equation whose unknown is the notebook count
+
+00:00:41.418 --> 00:00:46.400
+Seven groups of three fill that total, so solving recovers seven notebooks.
+
+00:00:47.700 --> 00:00:50.701
+The situation restricts which values make sense
+
+00:00:50.701 --> 00:00:58.418
+A notebook count uses nonnegative whole numbers, even though the formula can be evaluated at other real inputs
+
+00:00:58.418 --> 00:01:03.133
+Naming a variable should include its meaning, units, and allowed values.

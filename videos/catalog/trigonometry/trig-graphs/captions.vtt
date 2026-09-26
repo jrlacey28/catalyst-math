@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.646
+Unwrap the unit-circle vertical coordinate as a function of angle
+
+00:00:04.646 --> 00:00:13.137
+Sine starts at zero, rises to one, returns through zero, reaches negative one, and completes its cycle at two pi
+
+00:00:13.137 --> 00:00:16.533
+The input axis here is measured in radians.
+
+00:00:17.833 --> 00:00:25.742
+Multiplying the output by two doubles every height without changing the input values where a cycle begins and ends
+
+00:00:25.742 --> 00:00:29.904
+The amplitude becomes two, while the period stays two pi
+
+00:00:29.904 --> 00:00:34.067
+Amplitude measures distance from the midline, not total peak-to-trough height.
+
+00:00:35.367 --> 00:00:40.669
+Multiplying the input by two makes the circular phase advance twice as quickly
+
+00:00:40.669 --> 00:00:48.011
+A full cycle now occurs while x advances only pi, so two cycles fit where one used to
+
+00:00:48.011 --> 00:00:50.867
+Input scaling changes period rather than amplitude.
+
+00:00:52.167 --> 00:00:56.844
+Adding one shifts every output upward, placing the midline at one
+
+00:00:56.844 --> 00:01:03.223
+The peaks are three and the troughs negative one, while amplitude and period stay unchanged
+
+00:01:03.223 --> 00:01:07.900
+Read vertical scale, input scale, and vertical shift as separate transformations.

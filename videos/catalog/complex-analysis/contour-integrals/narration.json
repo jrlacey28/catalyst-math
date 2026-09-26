@@ -1,0 +1,117 @@
+[
+  {
+    "formula": "integral_gamma f(z) d z=integral_a^b f(gamma(t))gamma'(t)d t",
+    "text": "A contour integral adds changes along a directed path. Parameterize the path by a real variable t. Multiply the function value by the complex velocity of the path, then integrate in t; both path shape and orientation are accounted for.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "0",
+        "1",
+        "1+i"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "directed": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "integral_0^(1+i) z d z=frac((1+i)^2,2)=i",
+    "text": "For the function z, an antiderivative is z squared divided by two. Every piecewise smooth path from zero to one plus i therefore gives i. The endpoint formula follows because this antiderivative exists throughout the region containing the path.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "points": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "z=e^(i t), quad frac(1,z)frac(d z,d t)=i",
+    "text": "Now travel counterclockwise around the unit circle while integrating one over z. The path velocity is i times z, so the product simplifies to i. Integrating from zero to two pi gives two pi i, not zero.",
+    "visual": {
+      "kind": "circle",
+      "angle": 6.28318530718,
+      "radius": 1,
+      "arc": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "integral_gamma frac(1,z)d z=2pi i",
+    "text": "There is no contradiction with Cauchy's theorem: one over z is undefined at the enclosed origin. A holomorphic function on an open region containing the whole disk has zero integral around its boundary. Enclosed singularities change the situation.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1.5,
+        1.5
+      ],
+      "y": [
+        -1.5,
+        1.5
+      ],
+      "curves": [
+        {
+          "f": "sqrt(1-x*x)",
+          "color": "blue",
+          "domain": [
+            -1,
+            1
+          ]
+        },
+        {
+          "f": "-sqrt(1-x*x)",
+          "color": "blue",
+          "domain": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          0
+        ]
+      ],
+      "labels": [
+        "singularity"
+      ],
+      "equal": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

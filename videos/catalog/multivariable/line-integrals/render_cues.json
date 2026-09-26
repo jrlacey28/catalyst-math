@@ -1,0 +1,54 @@
+[
+  {
+    "beat": 1,
+    "start": 0.0,
+    "duration": 17.96666666666665,
+    "formula": "W=integral_C F dot.op dif r",
+    "visual": "field",
+    "bounds": [
+      -2.7591543685901865,
+      2.7591543685901865,
+      -3.275,
+      2.275
+    ]
+  },
+  {
+    "beat": 2,
+    "start": 17.96666666666665,
+    "duration": 17.000000000000345,
+    "formula": "F=(-y,x), quad r=(2cos(t),2sin(t))",
+    "visual": "field",
+    "bounds": [
+      -2.7591543685901865,
+      2.7591543685901865,
+      -3.275,
+      2.275
+    ]
+  },
+  {
+    "beat": 3,
+    "start": 34.966666666666995,
+    "duration": 15.133333333332942,
+    "formula": "F=(x,y): quad integral_C F dot.op dif r=0",
+    "visual": "field",
+    "bounds": [
+      -2.7591543685901865,
+      2.7591543685901865,
+      -3.275,
+      2.275
+    ]
+  },
+  {
+    "beat": 4,
+    "start": 50.09999999999994,
+    "duration": 18.399999999999835,
+    "formula": "integral_(-C) F dot.op dif r=-integral_C F dot.op dif r",
+    "visual": "network",
+    "bounds": [
+      -1.2242383000000001,
+      1.2242383000000001,
+      -3.15,
+      2.15
+    ]
+  }
+]

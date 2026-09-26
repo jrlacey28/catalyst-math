@@ -1,0 +1,112 @@
+{
+  "id": "statistics.estimation",
+  "beats": [
+    {
+      "formula": "overline(x)=frac(8+10+12,3)=10",
+      "text": "An estimator is a rule that uses sample data to estimate a population quantity. The sample mean averages the observed values. For eight, ten, and twelve, the estimate is ten, but the unknown population mean need not equal that particular result.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          8,
+          10,
+          12
+        ],
+        "labels": [
+          "1",
+          "2",
+          "3"
+        ],
+        "mean": 10
+      }
+    },
+    {
+      "formula": "\"new sample\" arrow.r \"new estimate\"",
+      "text": "A different sample usually produces a different mean. This variation is part of the estimation problem, not necessarily a calculation mistake. We judge an estimator by how it behaves across repeated samples under a stated sampling model.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          9,
+          10,
+          11
+        ],
+        "labels": [
+          "sample A",
+          "sample B",
+          "sample C"
+        ],
+        "mean": 10
+      }
+    },
+    {
+      "formula": "\"SE\"(overline(X))=frac(sigma,sqrt(n))",
+      "text": "For independent observations with a common population variance, the sample mean's standard error is population standard deviation divided by square root of sample size. With standard deviation six, nine observations give standard error two, while thirty-six give standard error one.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          2,
+          1
+        ],
+        "labels": [
+          "n = 9",
+          "n = 36"
+        ]
+      }
+    },
+    {
+      "formula": "\"precision\" != \"lack of bias\"",
+      "text": "Precision and bias describe different features. Estimates can cluster tightly around the wrong target if the sampling method systematically favors certain observations. Increasing the sample size may shrink random error while leaving that systematic shift untouched; design must address the bias.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          7,
+          14
+        ],
+        "points": [
+          10,
+          11.8,
+          12,
+          12.2
+        ],
+        "labels": [
+          "target",
+          "estimate",
+          "estimate",
+          "estimate"
+        ],
+        "interval": [
+          11.7,
+          12.3
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find the sample mean of 5,9,13. Explain why this estimate is not guaranteed to be the population mean.",
+      "answer": "The sample mean is (5+9+13)/3=9. Samples vary, and the population may contain other values; the statistic estimates rather than guarantees the unknown parameter.",
+      "id": "statistics.estimation.video-practice-1"
+    },
+    {
+      "prompt": "For independent identically distributed observations with population standard deviation 8, compute the standard error of the mean for n=16 and n=64.",
+      "answer": "SE=8/√16=2 and 8/√64=1. Quadrupling n halves the standard error.",
+      "id": "statistics.estimation.video-practice-2"
+    },
+    {
+      "prompt": "Explain the difference between the standard deviation of individual observations and the standard error of a sample mean. Can an unbiased estimator still be inaccurate in one sample?",
+      "answer": "Observation standard deviation measures spread among individual values; standard error measures variation of the estimator across repeated samples. Unbiasedness concerns the estimator's average over samples, so a particular estimate can still miss the parameter.",
+      "id": "statistics.estimation.video-practice-3"
+    }
+  ],
+  "takeaway": "An estimate is sample-dependent; standard error measures its random variation while bias measures a systematic shift.",
+  "scope": "The sample mean, repeated-sample variation, standard error, and bias versus precision.",
+  "course": "Statistics and inference",
+  "course_id": "statistics",
+  "title": "Estimation",
+  "objective": "Use estimators and explain bias, variability, and sampling distributions.",
+  "index": 2,
+  "total": 6,
+  "prerequisites": [
+    "statistics.sampling",
+    "probability.expectation"
+  ]
+}

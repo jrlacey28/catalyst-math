@@ -1,0 +1,17 @@
+{
+  "id": "4A-08",
+  "unit": "4a",
+  "course": "Geometry",
+  "index": 8,
+  "total": 9,
+  "slug": "coordinate-geometry",
+  "title": "Geometry on the coordinate plane",
+  "objective": "Use coordinates for distance, midpoint, slope, and geometric claims.",
+  "prerequisites": "Signed numbers and Pythagorean theorem.",
+  "formulas": [
+    "Delta x=x_2-x_1 quad Delta y=y_2-y_1",
+    "d=sqrt((Delta x)^2+(Delta y)^2)",
+    "M=((x_1+x_2)/2,(y_1+y_2)/2)",
+    "m=(Delta y)/(Delta x)"
+  ]
+}

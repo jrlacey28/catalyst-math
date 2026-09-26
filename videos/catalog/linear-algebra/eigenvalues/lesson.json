@@ -1,0 +1,146 @@
+{
+  "id": "linear-algebra.eigenvalues",
+  "beats": [
+    {
+      "formula": "A=mat(2,0;0,frac(1,2)), quad A v=lambda v",
+      "text": "An eigenvalue describes how a transformation scales a special nonzero direction without turning it into a different line. This diagonal transformation doubles horizontal components and halves vertical ones, so the coordinate axes reveal two special behaviors.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0.5
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "A(1,0)=2(1,0), quad A(0,2)=frac(1,2)(0,2)",
+      "text": "The horizontal direction has eigenvalue two, while the vertical direction has eigenvalue one half. An ordinary diagonal vector has both components changed differently and usually turns. An eigenvalue belongs to a transformation together with an associated eigendirection.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            1,
+            1
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0.5
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "det(A-lambda I)=(2-lambda)(frac(1,2)-lambda)=0",
+      "text": "Rearranging the eigenvector equation gives A minus lambda times the identity acting on a nonzero vector to produce zero. That requires a singular matrix. Setting its determinant to zero finds the candidate eigenvalues two and one half.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          2.5
+        ],
+        "y": [
+          -1,
+          2
+        ],
+        "curves": [
+          {
+            "f": "(2-x)*(0.5-x)",
+            "color": "blue",
+            "domain": [
+              0,
+              2.5
+            ]
+          }
+        ],
+        "points": [
+          [
+            0.5,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "mat(2,0;0,0)(0,1)=0(0,1)",
+      "text": "Zero can also be an eigenvalue. A singular transformation collapses some nonzero vectors to zero, and those vectors satisfy the eigenvalue equation with lambda zero. The input eigenvector must be nonzero; the resulting output need not be.",
+      "visual": {
+        "kind": "plane",
+        "vectors": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "matrix": [
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find the eigenvalues of A=[[3,0],[0,−2]] by considering its action on the coordinate axes.",
+      "answer": "The eigenvalues are 3 and −2. The first axis is stretched by 3, and the second is scaled by −2, reversing direction and doubling length.",
+      "id": "linear-algebra.eigenvalues.video-practice-1"
+    },
+    {
+      "prompt": "For A=[[1,0],[0,0]], give a nonzero eigenvector with eigenvalue zero. Explain why the zero vector itself is not an eigenvector.",
+      "answer": "v=(0,1) satisfies Av=(0,0)=0v. The definition excludes v=0, which would otherwise satisfy Av=λv for every scalar and identify no direction.",
+      "id": "linear-algebra.eigenvalues.video-practice-2"
+    },
+    {
+      "prompt": "Find the eigenvalues of A=[[2,1],[0,2]] using det(A−λI). Must there be two different eigenvalues?",
+      "answer": "The determinant is (2−λ)², so λ=2 is the only distinct eigenvalue, with algebraic multiplicity two. A 2×2 matrix need not have two distinct eigenvalues.",
+      "id": "linear-algebra.eigenvalues.video-practice-3"
+    }
+  ],
+  "takeaway": "Eigenvalues are the scalings of nonzero eigenvectors; singularity of A−λI identifies the possible values.",
+  "scope": "Diagonal examples, the characteristic equation, and a zero eigenvalue.",
+  "course": "Linear algebra",
+  "course_id": "linear-algebra",
+  "title": "Eigenvalues",
+  "objective": "Find scalars associated with invariant directions and solve characteristic equations.",
+  "index": 5,
+  "total": 6,
+  "prerequisites": [
+    "linear-algebra.matrices",
+    "algebra-1.quadratics"
+  ]
+}

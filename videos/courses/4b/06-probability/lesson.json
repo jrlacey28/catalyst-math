@@ -1,0 +1,17 @@
+{
+  "id": "4B-06",
+  "unit": "4b",
+  "course": "Statistics Basics",
+  "index": 6,
+  "total": 6,
+  "slug": "probability",
+  "title": "Probability: outcomes and complements",
+  "objective": "Distinguish both, either, and at least one; use changing counts and complements.",
+  "prerequisites": "Fractions and multiplication.",
+  "formulas": [
+    "P(\"even\")=3/6=1/2",
+    "P(\"RR\")=(3/5)(2/4)=3/10",
+    "P(\"at least one R\")=1-(2/5)(1/4)=9/10",
+    "P(A union B)=P(A)+P(B)-P(A inter B)"
+  ]
+}

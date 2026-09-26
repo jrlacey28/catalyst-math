@@ -1,0 +1,147 @@
+[
+  {
+    "formula": "integral 2x(x^2+2)^3 dif x",
+    "text": "A useful integration technique recognizes the structure that differentiation would create. Here the outside is a power, the inside is x squared plus two, and the nearby factor two x is exactly the inside's derivative.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.2
+      ],
+      "y": [
+        0,
+        90
+      ],
+      "curves": [
+        {
+          "f": "2*x*(x*x+2)**3",
+          "color": "blue",
+          "domain": [
+            0,
+            1.2
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        1
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "u=x^2+2, quad dif u=2x dif x",
+    "text": "Name the inside u. The entire combination two x times d x becomes d u, so the integral becomes u cubed with respect to u. This substitution reverses the chain rule; it does not simply delete an inconvenient factor.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "x",
+        "u = x² + 2",
+        "u³"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "weights": [
+        "du = 2x dx",
+        "power"
+      ],
+      "directed": true,
+      "active": [
+        1,
+        2
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "integral 2x(x^2+2)^3 dif x=frac((x^2+2)^4,4)+C",
+    "text": "Integrating u cubed gives u to the fourth divided by four, plus a constant. Substitute the original inside back into the answer. Differentiating this result recreates both the outer cube and the required factor two x.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.2
+      ],
+      "y": [
+        0,
+        40
+      ],
+      "curves": [
+        {
+          "f": "((x*x+2)**4)/4",
+          "color": "gold",
+          "domain": [
+            0,
+            1.2
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          20.25
+        ]
+      ],
+      "sweep": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "integral x e^x dif x=x e^x-e^x+C",
+    "text": "Products may call for integration by parts, the reverse of the product rule. Choose u equal to x and d v equal to exponential x d x. Subtracting the remaining exponential integral gives an answer you can verify by differentiating.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        2
+      ],
+      "y": [
+        -2,
+        16
+      ],
+      "curves": [
+        {
+          "f": "x*exp(x)",
+          "color": "blue",
+          "domain": [
+            0,
+            2
+          ]
+        },
+        {
+          "f": "(x-1)*exp(x)",
+          "color": "gold",
+          "domain": [
+            0,
+            2
+          ]
+        }
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

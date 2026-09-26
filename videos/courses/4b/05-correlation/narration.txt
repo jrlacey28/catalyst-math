@@ -1,0 +1,11 @@
+phase_0
+A scatterplot places each pair of measurements at a point. If larger x values tend to go with larger y values, the association is positive. If larger x values go with smaller y values, it is negative.
+
+phase_1
+The correlation coefficient measures the direction and strength of linear association. Values near positive one or negative one indicate points close to a line. The sign gives direction, not whether the relationship is good or bad.
+
+phase_2
+A correlation near zero does not rule out a relationship. Points can form a strong curved pattern while having little linear correlation. Look at the scatterplot before reducing the pattern to a single number.
+
+phase_3
+Correlation alone does not establish causation. A third variable can influence both measurements, or other explanations may be possible. Also check for outliers: one distant point can greatly change a correlation.

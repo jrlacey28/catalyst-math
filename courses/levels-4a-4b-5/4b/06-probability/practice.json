@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4B-06",
+  "batches": [
+    [
+      {
+        "id": "4B-06-P1",
+        "prompt": "A fair die is rolled. Find P(number greater than 4)."
+      },
+      {
+        "id": "4B-06-P2",
+        "prompt": "A bag has 4 red and 2 blue balls. Without replacement, find P(two red)."
+      },
+      {
+        "id": "4B-06-P3",
+        "prompt": "For that bag, find P(two blue)."
+      }
+    ],
+    [
+      {
+        "id": "4B-06-P4",
+        "prompt": "For that bag, find P(at least one red in two draws)."
+      },
+      {
+        "id": "4B-06-P5",
+        "prompt": "Two fair coins are tossed. Find P(exactly one head)."
+      },
+      {
+        "id": "4B-06-P6",
+        "prompt": "Explain the difference between \u201cat least one head\u201d and \u201cexactly one head\u201d for two tosses."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

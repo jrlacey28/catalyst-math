@@ -1,0 +1,147 @@
+{
+  "id": "calculus-2.applications-of-integration",
+  "beats": [
+    {
+      "formula": "\"height between curves\"=x-x^2",
+      "text": "An application begins by identifying what one small piece contributes. Between the curves y equals x and y equals x squared on the unit interval, each vertical strip has height upper curve minus lower curve.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1.2
+        ],
+        "y": [
+          0,
+          1.3
+        ],
+        "curves": [
+          {
+            "f": "x",
+            "color": "gold",
+            "domain": [
+              0,
+              1
+            ]
+          },
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "segments": [
+          [
+            [
+              0.5,
+              0.25
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "integral_0^1 (x-x^2) dif x=frac(1,6)",
+      "text": "Integrate that strip height over its width. The antiderivative is x squared over two minus x cubed over three, so the enclosed area is one sixth. Subtracting the curves first creates a new nonnegative height function.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          1.2
+        ],
+        "y": [
+          0,
+          0.4
+        ],
+        "curves": [
+          {
+            "f": "x-x*x",
+            "color": "green",
+            "domain": [
+              0,
+              1
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "formula": "V=integral_0^2 pi x^2 dif x=frac(8pi,3)",
+      "text": "Rotate the region under y equals x, from zero to two, around the horizontal axis. Each thin slice is a disk with radius x, so its area is pi x squared. Integrating slice area produces volume in cubic units.",
+      "visual": {
+        "kind": "circle",
+        "angle": 6.283185307179586,
+        "radius": 2,
+        "arc": true
+      }
+    },
+    {
+      "formula": "M=integral_0^2 (1+x) dif x=4",
+      "text": "The same accumulation logic computes mass from a varying linear density. A rod with density one plus x contributes density times a tiny length. Integrating from zero to two gives mass four, with units determined by the density.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          2.5
+        ],
+        "y": [
+          0,
+          4
+        ],
+        "curves": [
+          {
+            "f": "1+x",
+            "color": "blue",
+            "domain": [
+              0,
+              2
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          2
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find the area between y=2x and y=x² on 0≤x≤2. Show which curve is above the other.",
+      "answer": "2x−x²=x(2−x)≥0 on [0,2], so area=∫₀²(2x−x²)dx=[x²−x³/3]₀²=4/3.",
+      "id": "calculus-2.applications-of-integration.video-practice-1"
+    },
+    {
+      "prompt": "Rotate the region under y=√x on 0≤x≤4 about the x-axis. Write the disk integral and compute the volume.",
+      "answer": "Disk radius is √x, so area is πx. V=∫₀⁴πx dx=8π cubic units.",
+      "id": "calculus-2.applications-of-integration.video-practice-2"
+    },
+    {
+      "prompt": "A 2 m rod has density 3x+1 kg/m at position x meters from one end. Find its mass and explain the units.",
+      "answer": "M=∫₀²(3x+1)dx=[3x²/2+x]₀²=8 kg. Density in kg/m multiplied by dx in meters gives kilograms.",
+      "id": "calculus-2.applications-of-integration.video-practice-3"
+    }
+  ],
+  "takeaway": "Identify the quantity contributed by one small slice before integrating: height, cross-sectional area, or density.",
+  "scope": "Area between curves, disk volume, and mass from a nonuniform density.",
+  "course": "Calculus II",
+  "course_id": "calculus-2",
+  "title": "Applications of integration",
+  "objective": "Build area, volume, work, and average-value integrals with correct bounds and units.",
+  "index": 4,
+  "total": 8,
+  "prerequisites": [
+    "calculus-2.fundamental-theorem",
+    "geometry.volume"
+  ]
+}

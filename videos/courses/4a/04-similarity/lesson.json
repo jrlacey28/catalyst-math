@@ -1,0 +1,17 @@
+{
+  "id": "4A-04",
+  "unit": "4a",
+  "course": "Geometry",
+  "index": 4,
+  "total": 9,
+  "slug": "similarity",
+  "title": "Similarity and scale",
+  "objective": "Use matching sides, scale factors, and area/volume scaling.",
+  "prerequisites": "Ratios and triangles.",
+  "formulas": [
+    "ell prime = k ell",
+    "6/3=8/4=2",
+    "A prime=k^2 A quad V prime=k^3 V",
+    "\"AA\""
+  ]
+}

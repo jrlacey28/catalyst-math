@@ -1,0 +1,202 @@
+[
+  {
+    "formula": "norm(f)_2=(integral_0^1 abs(f(x))^2 d x)^(1/2)",
+    "text": "An L two norm measures a function's size by integrating its squared magnitude and taking a square root. It treats the entire function as one vector. For the function x on the unit interval, the norm is one over square root three.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.1
+      ],
+      "y": [
+        0,
+        1.1
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        1
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "f=1 \" on \" [0,1/4], quad norm(f)_2=frac(1,2)",
+    "text": "A function equal to one on an interval of width one quarter and zero elsewhere has squared integral one quarter. Its L two norm is therefore one half. Both height and the measure of the supporting region determine the norm.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1
+      ],
+      "y": [
+        0,
+        1.2
+      ],
+      "curves": [
+        {
+          "f": "1",
+          "color": "gold",
+          "domain": [
+            0,
+            0.25
+          ]
+        },
+        {
+          "f": "0",
+          "color": "blue",
+          "domain": [
+            0.250001,
+            1
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        0.25
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "f_n=sqrt(n) \" on \" (0,1/n), quad norm(f_n)_2=1",
+    "text": "Shrinking support alone need not shrink the norm. Set the height to square root n on the open interval zero to one over n, and zero elsewhere. Squared area remains one, yet every fixed input eventually has value zero.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        0.5
+      ],
+      "y": [
+        0,
+        4.5
+      ],
+      "curves": [
+        {
+          "f": "2",
+          "color": "blue",
+          "domain": [
+            0,
+            0.25
+          ]
+        },
+        {
+          "f": "4",
+          "color": "pink",
+          "domain": [
+            0,
+            0.0625
+          ]
+        },
+        {
+          "f": "0",
+          "color": "blue",
+          "domain": [
+            0.25,
+            0.5
+          ]
+        },
+        {
+          "f": "0",
+          "color": "pink",
+          "domain": [
+            0.0625,
+            0.5
+          ]
+        }
+      ],
+      "holes": [
+        [
+          0,
+          2
+        ],
+        [
+          0.25,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0.0625,
+          4
+        ]
+      ],
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0.25,
+          0
+        ],
+        [
+          0.0625,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "f=g \" almost everywhere\" arrow.r norm(f-g)_2=0",
+    "text": "Functions that differ only on a measure-zero set have zero L two distance. The space therefore identifies them as the same vector. A spike at just one point changes a drawn value but not the corresponding equivalence class or norm.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1
+      ],
+      "y": [
+        0,
+        3.5
+      ],
+      "curves": [
+        {
+          "f": "0",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ],
+      "points": [
+        [
+          0.5,
+          3
+        ]
+      ],
+      "holes": [
+        [
+          0.5,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

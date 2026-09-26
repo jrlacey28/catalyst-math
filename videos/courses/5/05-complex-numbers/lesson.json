@@ -1,0 +1,17 @@
+{
+  "id": "5-05",
+  "unit": "5",
+  "course": "Algebra II",
+  "index": 5,
+  "total": 9,
+  "slug": "complex-numbers",
+  "title": "Complex numbers as points and rotations",
+  "objective": "Represent a+bi and perform addition and multiplication with i\u00b2=-1.",
+  "prerequisites": "Signed arithmetic, distribution, and coordinate plane.",
+  "formulas": [
+    "i^2=-1 quad z=a+b i",
+    "(2+i)+(1+2i)=3+3i",
+    "1 -> i -> -1 -> -i -> 1",
+    "(1+i)^2=2i"
+  ]
+}

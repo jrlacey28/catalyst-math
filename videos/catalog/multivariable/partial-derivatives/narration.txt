@@ -1,0 +1,7 @@
+A function of two inputs can change in more than one direction. A partial derivative asks what happens when one input moves while the other stays fixed. On this bowl, each coordinate direction gives its own local slope.
+
+Fix y equal to one and move only x. The cross-section becomes x squared plus one, so its slope is two x. At x equal to one, the partial slope is two; the frozen y contribution behaves like a constant.
+
+At the point one, negative one, increasing x initially raises the surface, while increasing y initially lowers it. The two partial derivatives are two and negative two. A single height does not determine how the surface tilts in every direction.
+
+If both coordinates move along a path, neither partial derivative alone is the full rate. Along x equals t and y equals two t, the height is five t squared. Its derivative is ten t, combining both coordinate contributions.

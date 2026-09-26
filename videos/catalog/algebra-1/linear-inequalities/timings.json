@@ -1,0 +1,118 @@
+[
+  {
+    "formula": "3x+2<=17 arrow.r x<=5",
+    "text": "A linear inequality can represent a limit on resources. If each item costs three dollars plus a fixed two-dollar charge, staying within seventeen dollars requires three x plus two at most seventeen. Solving gives at most five items.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        8
+      ],
+      "points": [
+        5
+      ],
+      "interval": [
+        0,
+        5
+      ],
+      "labels": [
+        "5"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 17.466666666666665,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "x>=2",
+    "text": "Now add another requirement: buy at least two items. This produces a second interval, extending rightward from two. Meeting one requirement is not sufficient; a valid purchase must satisfy the budget and the minimum quantity together.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        8
+      ],
+      "points": [
+        2
+      ],
+      "interval": [
+        2,
+        8
+      ],
+      "labels": [
+        "2"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 17.466666666666665,
+    "duration": 16.7,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "2<=x<=5",
+    "text": "The overlap of the two solution sets runs from two through five, including both endpoints. This compound inequality is an intersection: every value inside meets both restrictions, while a value outside fails at least one of them.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        8
+      ],
+      "points": [
+        2,
+        5
+      ],
+      "interval": [
+        2,
+        5
+      ],
+      "labels": [
+        "2",
+        "5"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 34.166666666666664,
+    "duration": 16.3,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "x in {2,3,4,5}",
+    "text": "Finally restore the context of whole items. Three and a half lies inside the real interval but is not a permitted whole-item count. The feasible answers are two, three, four, and five, after combining algebraic and contextual restrictions.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        7
+      ],
+      "points": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "labels": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 50.46666666666667,
+    "duration": 17.866666666666667,
+    "audio": "audio_parts/04.wav"
+  }
+]

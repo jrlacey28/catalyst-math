@@ -1,0 +1,7 @@
+An expression has structure before we calculate it. In two plus three times four, the multiplication describes one quantity: three groups of four. Add the separate two only after finding that product of twelve.
+
+Parentheses change which quantity acts as a factor. Two plus three now forms one five-object group, and four copies produce twenty. The same symbols can describe a different construction when their grouping changes.
+
+Multiplication and division have equal priority, so evaluate them from left to right unless grouping says otherwise. Eighteen divided by three gives six, then multiplying by two gives twelve; multiplying the denominator first would change the expression.
+
+Nested expressions are read from their inner structure outward. Square three to get nine, subtract four inside the parentheses to get five, then double the result. A fraction bar also groups its entire numerator and denominator.

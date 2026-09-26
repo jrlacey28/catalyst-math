@@ -1,0 +1,7 @@
+An algorithm is a precise sequence of steps for solving a class of problems. To find ten in this sorted list, binary search compares with a middle value instead of inspecting every entry from the beginning.
+
+Comparing ten with the lower middle value eight eliminates every entry up to eight. Sorted order justifies the elimination: none of those smaller values can be the target. The remaining candidates are ten, twelve, fourteen, and sixteen.
+
+Comparing with twelve narrows the search again, leaving ten as the only candidate on its left. Each step preserves the invariant that a present target remains inside the candidate range. Shrinking that range ensures the procedure eventually terminates.
+
+Repeated halving explains the logarithmic growth in comparisons. This efficiency depends on ordered data and a method for accessing middle entries. Without sorted order, discarding half could throw away the target, so speed cannot replace the algorithm's assumptions.

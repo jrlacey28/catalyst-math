@@ -1,0 +1,17 @@
+{
+  "id": "5-04",
+  "unit": "5",
+  "course": "Algebra II",
+  "index": 4,
+  "total": 9,
+  "slug": "radicals",
+  "title": "Radicals and extraneous solutions",
+  "objective": "Use principal roots, simplify radicals, and check squared equations.",
+  "prerequisites": "Squares, products, equations, and real-number domains.",
+  "formulas": [
+    "sqrt(9)=3 quad x^2=9 => x=plus.minus 3",
+    "sqrt(72)=sqrt(36 times 2)=6sqrt(2)",
+    "sqrt(x+1)=x-1",
+    "x=3"
+  ]
+}

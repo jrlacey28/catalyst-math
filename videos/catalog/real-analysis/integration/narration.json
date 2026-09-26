@@ -1,0 +1,111 @@
+[
+  {
+    "formula": "integral_0^1 x d x",
+    "text": "To define area rigorously, trap it between quantities already understood. Divide the interval into equal pieces. For an increasing function, the left endpoint gives a lower rectangle height and the right endpoint gives an upper height.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.1
+      ],
+      "y": [
+        0,
+        1.1
+      ],
+      "curves": [
+        {
+          "f": "x",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        1
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "L_4=frac(1,4)(0+frac(1,4)+frac(1,2)+frac(3,4))=frac(3,8)",
+    "text": "With four pieces, each rectangle has width one quarter. The four lower heights are zero, one quarter, one half, and three quarters. Their sum times the shared width gives three eighths as the lower estimate.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        0,
+        0.25,
+        0.5,
+        0.75
+      ],
+      "labels": [
+        "left 1",
+        "left 2",
+        "left 3",
+        "left 4"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "U_n=frac(n+1,2n), quad L_n=frac(n-1,2n)",
+    "text": "For n equal pieces, summing the endpoint heights gives these upper and lower expressions. Their difference is one over n. As the partition gets finer, the entire uncertainty shrinks to zero, trapping the integral at one half.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        1,
+        0.75,
+        0.666667,
+        0.625,
+        0.6,
+        0.583333
+      ],
+      "limit": 0.5
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "U_n-L_n=frac(1,n) arrow.r 0",
+    "text": "The finite pictures motivate the argument; the shrinking bound proves the result. More generally, a bounded function is Riemann integrable when partitions can make upper and lower sums arbitrarily close. Not every bounded function meets that condition.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.1
+      ],
+      "y": [
+        0,
+        1.1
+      ],
+      "curves": [
+        {
+          "f": "x",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        1
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

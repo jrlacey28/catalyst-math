@@ -1,0 +1,161 @@
+[
+  {
+    "formula": "f_n(x)=x^n, quad 0<=x<=1",
+    "text": "A sequence of functions changes an entire graph at each index. At any fixed input below one, repeated multiplication by that input drives the value toward zero. At input one, every function still equals one.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.05
+      ],
+      "y": [
+        0,
+        1.05
+      ],
+      "curves": [
+        {
+          "f": "x",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        },
+        {
+          "f": "x**4",
+          "color": "gold",
+          "domain": [
+            0,
+            1
+          ]
+        },
+        {
+          "f": "x**12",
+          "color": "pink",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "f(x)=0 \" for \" x<1, quad f(1)=1",
+    "text": "This is pointwise convergence: each fixed input gets its own eventual control. But the limit jumps at one. The increasingly steep graphs near that endpoint show why controlling each location separately is not the same as controlling every location simultaneously.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.05
+      ],
+      "y": [
+        0,
+        1.05
+      ],
+      "curves": [
+        {
+          "f": "0",
+          "color": "green",
+          "domain": [
+            0,
+            1
+          ]
+        },
+        {
+          "f": "x**20",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          1
+        ]
+      ],
+      "holes": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "g_n(x)=frac(x,n), quad sup abs(g_n(x))=frac(1,n)",
+    "text": "Compare x divided by n on the same interval. The error from zero is at most one over n for every input at once. A single index therefore works across the whole interval, establishing uniform convergence.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1.05
+      ],
+      "y": [
+        0,
+        1.05
+      ],
+      "curves": [
+        {
+          "f": "x",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        },
+        {
+          "f": "x/3",
+          "color": "gold",
+          "domain": [
+            0,
+            1
+          ]
+        },
+        {
+          "f": "x/8",
+          "color": "green",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "sup_(x in [0,1]) abs(g_n(x)-0) arrow.r 0",
+    "text": "Uniform limits of continuous functions remain continuous. Pointwise limits need not, as the power example demonstrates. Exchanging limits with other operations requires an appropriate theorem; a visually settling sequence alone does not justify exchanging derivatives or integrals.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        1,
+        0.5,
+        0.333333,
+        0.25,
+        0.2,
+        0.166667
+      ],
+      "limit": 0
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

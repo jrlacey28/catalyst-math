@@ -1,0 +1,160 @@
+[
+  {
+    "formula": "sqrt(25)=5",
+    "text": "A square root reverses squaring, with one important convention: the square-root symbol chooses the nonnegative answer. A square with twenty five unit cells has side length five, so the principal square root of twenty five is five.",
+    "visual": {
+      "kind": "grid",
+      "rows": 5,
+      "cols": 5,
+      "filled": 25
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.033333333333335,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "x^2=25 arrow.r x=5 \"or\" x=-5",
+    "text": "Solving a squared equation asks a different question. Both positive five and negative five produce twenty five when squared. The graph crosses the height twenty five twice, so the equation has two real solutions although the principal root has one value.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -6,
+        6
+      ],
+      "y": [
+        0,
+        30
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            -5.4,
+            5.4
+          ]
+        },
+        {
+          "f": "25",
+          "color": "gold",
+          "domain": [
+            -6,
+            6
+          ]
+        }
+      ],
+      "points": [
+        [
+          -5,
+          25
+        ],
+        [
+          5,
+          25
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.033333333333335,
+    "duration": 17.766666666666666,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "sqrt(18)=sqrt(9 times 2)=3sqrt(2)",
+    "text": "To simplify a radical, extract a perfect-square factor. Eighteen is nine times two, so its square root is three times the square root of two. Splitting a product this way is valid for nonnegative factors.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        5
+      ],
+      "y": [
+        0,
+        20
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            0,
+            4.4
+          ]
+        },
+        {
+          "f": "18",
+          "color": "gold",
+          "domain": [
+            0,
+            5
+          ]
+        }
+      ],
+      "points": [
+        [
+          4.242640687119285,
+          18
+        ]
+      ],
+      "labels": [
+        "3 sqrt(2)"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 33.8,
+    "duration": 15.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "sqrt(x^2)=abs(x)",
+    "text": "The principal root must stay nonnegative even when its input was formed by squaring a negative number. Therefore the square root of x squared is the absolute value of x, not always x itself. Negative radicands have no real square root.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -4,
+        4
+      ],
+      "y": [
+        -1,
+        5
+      ],
+      "curves": [
+        {
+          "f": "abs(x)",
+          "color": "blue",
+          "domain": [
+            -4,
+            4
+          ]
+        }
+      ],
+      "points": [
+        [
+          -3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 48.8,
+    "duration": 17.066666666666666,
+    "audio": "audio_parts/04.wav"
+  }
+]

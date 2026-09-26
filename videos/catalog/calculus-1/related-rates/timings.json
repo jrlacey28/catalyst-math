@@ -1,0 +1,166 @@
+[
+  {
+    "formula": "A=pi r^2",
+    "text": "Related rates connect quantities that change together in time. As a circular ripple expands, both radius and area change. Start with the geometric relationship between them before inserting the numerical information for one particular instant.",
+    "visual": {
+      "kind": "circle",
+      "angle": 6.283185307179586,
+      "radius": 2,
+      "arc": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 17.633333333333333,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "frac(dif A,dif t)=2pi r frac(dif r,dif t)",
+    "text": "Differentiate the area equation with respect to time. The chain rule contributes the radius's rate of change. When the radius is two and grows at half a unit per second, the area grows at two pi square units per second.",
+    "visual": {
+      "kind": "circle",
+      "angle": 6.283185307179586,
+      "radius": 2,
+      "arc": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 17.633333333333333,
+    "duration": 15.766666666666667,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "x^2+y^2=25 quad arrow.r quad x x'+y y'=0",
+    "text": "For a sliding ladder of length five, horizontal and vertical distances satisfy the Pythagorean theorem. Differentiate first, then cancel the nonzero constant two. One distance increasing can force the other to decrease because the ladder length stays fixed.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        5
+      ],
+      "y": [
+        0,
+        5
+      ],
+      "curves": [
+        {
+          "f": "4-4*x/3",
+          "color": "blue",
+          "domain": [
+            0,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "segments": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 33.4,
+    "duration": 18.666666666666668,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "x=3, y=4, x'=1 quad arrow.r quad y'=-frac(3,4)",
+    "text": "At horizontal distance three and height four, an outward speed of one gives a downward speed of three quarters. The negative sign describes direction. Substituting fixed positions before differentiating would incorrectly erase their time dependence.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        5
+      ],
+      "y": [
+        0,
+        5
+      ],
+      "curves": [
+        {
+          "f": "4-4*x/3",
+          "color": "blue",
+          "domain": [
+            0,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          4
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "segments": [
+        [
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            3.25
+          ]
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 52.06666666666666,
+    "duration": 17.633333333333333,
+    "audio": "audio_parts/04.wav"
+  }
+]

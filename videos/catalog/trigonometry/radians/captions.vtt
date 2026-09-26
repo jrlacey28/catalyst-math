@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.863
+Radians measure an angle by comparing its arc length with its radius
+
+00:00:04.863 --> 00:00:08.582
+An arc as long as one radius subtends one radian
+
+00:00:08.582 --> 00:00:14.533
+The units cancel in this ratio, making the angle independent of the size of the circle.
+
+00:00:15.833 --> 00:00:22.575
+For a radius of three units and an angle of two radians, the arc length is six units
+
+00:00:22.575 --> 00:00:30.067
+Multiplying the radius by the radian measure reconstructs the distance along the circle, rather than the straight chord between endpoints.
+
+00:00:31.367 --> 00:00:39.372
+A complete circumference has length two pi times the radius, so dividing by the radius gives two pi radians per turn
+
+00:00:39.372 --> 00:00:44.709
+Half a turn is pi radians and a quarter turn is pi over two
+
+00:00:44.709 --> 00:00:46.233
+These are exact relationships.
+
+00:00:47.533 --> 00:00:51.792
+Convert degrees by multiplying by pi over one hundred eighty
+
+00:00:51.792 --> 00:00:54.773
+Sixty degrees becomes pi over three radians
+
+00:00:54.773 --> 00:01:04.567
+The arc formula radius times angle requires radians; inserting sixty directly as though it were a radian measure would give the wrong length.

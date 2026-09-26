@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4A-06",
+  "batches": [
+    [
+      {
+        "id": "4A-06-P1",
+        "prompt": "Find the area of a rectangle 7 cm by 4 cm."
+      },
+      {
+        "id": "4A-06-P2",
+        "prompt": "A parallelogram has base 9 and perpendicular height 5. Find its area."
+      },
+      {
+        "id": "4A-06-P3",
+        "prompt": "A triangle has base 12 and perpendicular height 7. Find its area."
+      }
+    ],
+    [
+      {
+        "id": "4A-06-P4",
+        "prompt": "A trapezoid has parallel sides 4 and 10 and height 3. Find its area."
+      },
+      {
+        "id": "4A-06-P5",
+        "prompt": "A triangle has area 30 and base 10. Find its perpendicular height."
+      },
+      {
+        "id": "4A-06-P6",
+        "prompt": "Why can a slanted side not automatically be used as a parallelogram\u2019s height?"
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

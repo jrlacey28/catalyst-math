@@ -1,0 +1,127 @@
+[
+  {
+    "formula": "d(x,y)=abs(x-y)",
+    "text": "A metric measures distance and lets us define neighborhoods. On the real line, the distance between two points is their absolute difference. An open ball around a point consists of inputs closer than a chosen positive radius, excluding its boundary.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        2
+      ],
+      "interval": [
+        0.6,
+        1
+      ],
+      "points": [
+        0.6,
+        0.8,
+        1
+      ],
+      "open": [
+        0.6,
+        1
+      ],
+      "labels": [
+        "0.6",
+        "0.8",
+        "1"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "B(0.8,0.1)=(0.7,0.9)",
+    "text": "A set is open when every member has some positive-radius ball staying entirely inside the set. The point zero point eight has a small neighborhood inside the interval from zero to one. Points closer to the edge may require smaller radii.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        1.2
+      ],
+      "interval": [
+        0.7,
+        0.9
+      ],
+      "points": [
+        0,
+        0.7,
+        0.8,
+        0.9,
+        1
+      ],
+      "open": [
+        0,
+        0.7,
+        0.9,
+        1
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "0 in [0,1], quad B(0,r) \" reaches left for \" r>0",
+    "text": "The closed interval contains zero, but every full real-line ball around zero reaches negative values. Therefore that interval is not open as a subset of the real line. Openness depends on the ambient space and its topology.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        -0.5,
+        1.5
+      ],
+      "interval": [
+        0,
+        1
+      ],
+      "points": [
+        -0.2,
+        0,
+        0.2,
+        1
+      ],
+      "arrows": [
+        [
+          0,
+          -0.2
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "(0,1) union (0.5,2)=(0,2)",
+    "text": "Topology keeps the neighborhood idea through rules for open sets: arbitrary unions and finite intersections remain open. A metric supplies one way to obtain such a topology. The abstract definition also allows spaces where no particular distance function has been chosen.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        -0.2,
+        2.2
+      ],
+      "interval": [
+        0,
+        2
+      ],
+      "points": [
+        0,
+        0.5,
+        1,
+        2
+      ],
+      "open": [
+        0,
+        2
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

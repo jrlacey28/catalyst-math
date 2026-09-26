@@ -1,0 +1,7 @@
+A vector space is a collection where vector addition and scalar multiplication follow the usual rules and stay inside the collection. The line of all multiples of one, two is a simple subspace of the plane.
+
+Adding two points on this line keeps us on the line because their coefficients add. Scaling also keeps the same direction, and choosing coefficient zero supplies the zero vector. These closure facts work for arbitrary coefficients, not just a few drawn examples.
+
+A shifted line fails the subspace test. It does not contain the zero vector, and adding two of its vectors can leave the line. Similar-looking geometric sets can therefore have different algebraic structure; passing through the origin matters here.
+
+Vectors need not be arrows. Polynomials of degree at most one form a vector space because adding or scaling them stays within that collection. Their coefficients act like coordinates; the constant polynomial three is allowed, as is the zero polynomial.

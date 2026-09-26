@@ -1,0 +1,7 @@
+A constraint restricts which directions are available. To minimize squared distance from the origin while staying on the line x plus y equals three, we must search along that line, rather than move freely toward the origin.
+
+At a regular constrained extremum, the objective gradient is parallel to the constraint gradient. Otherwise a tangent direction would still decrease the objective. Here the gradient equations give x equals y; combining that with the constraint gives one and a half each.
+
+Lagrange multipliers produced a candidate. Substitution now proves it is the global minimum: the squared term is always nonnegative, and vanishes exactly at one and a half. The minimum squared distance is therefore four and a half.
+
+The usual multiplier condition needs regularity, such as a nonzero constraint gradient. The constraint x squared plus y squared equals zero has only one feasible point, where its gradient vanishes. That point is optimal even for objectives whose gradients are nonzero.

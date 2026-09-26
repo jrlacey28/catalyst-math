@@ -1,0 +1,140 @@
+{
+  "id": "arithmetic.negative-numbers",
+  "beats": [
+    {
+      "formula": "-4+7=3",
+      "text": "A signed number locates a position relative to zero. Starting at negative four and adding seven means moving seven units right, finishing at three. The sign tells direction, while the magnitude tells how far away the number is.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -6,
+          6
+        ],
+        "points": [
+          -4,
+          0,
+          3
+        ],
+        "arrows": [
+          [
+            -4,
+            3
+          ]
+        ],
+        "labels": [
+          "-4",
+          "0",
+          "3"
+        ]
+      }
+    },
+    {
+      "formula": "3-7=3+(-7)=-4",
+      "text": "Subtraction adds the opposite movement. Subtracting seven from three moves seven units left and returns to negative four. This rule works even when subtraction crosses zero; negative answers still describe meaningful positions.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -6,
+          6
+        ],
+        "points": [
+          3,
+          -4
+        ],
+        "arrows": [
+          [
+            3,
+            -4
+          ]
+        ],
+        "labels": [
+          "3",
+          "-4"
+        ]
+      }
+    },
+    {
+      "formula": "3-(-2)=3+2=5",
+      "text": "Subtracting a negative reverses a leftward movement, so it moves right. Three minus negative two becomes three plus two. Read which minus sign performs subtraction and which belongs to a signed number before combining them.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -2,
+          7
+        ],
+        "points": [
+          3,
+          5
+        ],
+        "arrows": [
+          [
+            3,
+            5
+          ]
+        ],
+        "labels": [
+          "3",
+          "5"
+        ]
+      }
+    },
+    {
+      "formula": "-2(3-3)=-6+6=0",
+      "text": "The sign rule for multiplication also preserves distribution. Negative two times the zero quantity three minus three must equal zero. Expanding gives negative six plus the product of negative two and negative three, forcing that second product to be positive six.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          -8,
+          8
+        ],
+        "points": [
+          0,
+          -6
+        ],
+        "arrows": [
+          [
+            0,
+            -6
+          ],
+          [
+            -6,
+            0
+          ]
+        ],
+        "labels": [
+          "0",
+          "-6"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Compute −5+12 and describe the motion.",
+      "answer": "Start at negative five and move twelve right, reaching seven.",
+      "id": "arithmetic.negative-numbers.video-practice-1"
+    },
+    {
+      "prompt": "Compute −9−(−6) and explain why.",
+      "answer": "Subtracting negative six adds six: −9+6=−3.",
+      "id": "arithmetic.negative-numbers.video-practice-2"
+    },
+    {
+      "prompt": "Compare −5² with (−5)² and explain the role of parentheses.",
+      "answer": "−5²=−25 because the square acts on five first; (−5)²=25 because the negative number is the base.",
+      "id": "arithmetic.negative-numbers.video-practice-3"
+    }
+  ],
+  "takeaway": "Addition follows signed movement; subtraction adds the opposite.",
+  "scope": "Signed positions, subtraction, distribution, and product signs.",
+  "course": "Arithmetic",
+  "course_id": "arithmetic",
+  "title": "Negative numbers",
+  "objective": "Interpret signed values, subtraction, products, and distances on a number line.",
+  "index": 6,
+  "total": 8,
+  "prerequisites": [
+    "number-sense.addition-subtraction",
+    "number-sense.multiplication-division"
+  ]
+}

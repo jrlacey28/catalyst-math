@@ -1,0 +1,136 @@
+[
+  {
+    "formula": "A e_1=2e_1, quad A e_2=e_2",
+    "text": "An eigenvector keeps its direction under a linear operator, changing only by a scalar eigenvalue. The diagonal matrix with entries two and one scales the coordinate directions separately. Decomposing a vector into those directions makes its transformation easy to compute.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "matrix": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 19.466666666666665,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "lambda in \"spectrum\" \" exactly when \" A-lambda I \"not invertible\"",
+    "text": "In finite dimensions, an eigenvalue is exactly a scalar for which subtracting that scalar times the identity makes the matrix noninvertible. At lambda equals two, the first coordinate direction collapses to zero, so the original input cannot be uniquely recovered.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 19.466666666666665,
+    "duration": 19.333333333333332,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "(T f)(x)=x f(x), quad f in L^2([0,1])",
+    "text": "Infinite dimensions require greater care. Multiplication by x on complex L two of the unit interval has no nonzero eigenfunction: an eigenfunction would need support only at one point, which represents the zero vector. Nevertheless, its spectrum is the entire interval from zero to one.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1
+      ],
+      "y": [
+        0,
+        1.1
+      ],
+      "curves": [
+        {
+          "f": "x",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ],
+      "points": [
+        [
+          0.5,
+          0.5
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 38.8,
+    "duration": 21.833333333333332,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "T e_n=frac(1,n)e_n",
+    "text": "Additional compactness and self-adjointness on a separable Hilbert space guarantee an orthonormal eigenbasis. The diagonal map sending basis vector n to one over n times itself illustrates this theorem. Its eigenvalues approach zero; it is a special structure, not a rule for every operator.",
+    "visual": {
+      "kind": "sequence",
+      "values": [
+        1,
+        0.5,
+        0.333333,
+        0.25,
+        0.2,
+        0.166667,
+        0.142857
+      ],
+      "limit": 0
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 60.633333333333326,
+    "duration": 21.8,
+    "audio": "audio_parts/04.wav"
+  }
+]

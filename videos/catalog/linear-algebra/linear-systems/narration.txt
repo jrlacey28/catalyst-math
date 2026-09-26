@@ -1,0 +1,7 @@
+A linear system asks for an input satisfying several constraints at once. Each equation here describes a line. Their shared solution is the intersection point, where both equations return the required values simultaneously.
+
+Adding the equations cancels y and produces two x equals four. Keep one original equation to recover y equal to one. These elimination steps preserve solutions because the equation replacements are reversible; we are not arbitrarily discarding a constraint.
+
+The matrix viewpoint asks which vector is transformed into the target vector. The determinant here is negative two, not zero, so the transformation is invertible. Every target has one preimage, matching the unique intersection we found.
+
+Dependent left-hand sides can produce a different outcome. Doubling the first equation would require the second right-hand side to be six, not eight. These parallel lines never meet; if it were six instead, the constraints would describe the same line.

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:02.274
+An integral accumulates small contributions
+
+00:00:02.274 --> 00:00:08.645
+If a rate stays at three units per second for two seconds, the total is six units
+
+00:00:08.645 --> 00:00:14.267
+The graph shows a rectangle whose height is rate and whose width is elapsed time.
+
+00:00:15.567 --> 00:00:21.606
+When the rate changes, narrow rectangles approximate the accumulation, and a limit gives the exact integral
+
+00:00:21.606 --> 00:00:29.533
+For a rate equal to time between zero and two, the region is a triangle with base two and height two.
+
+00:00:30.833 --> 00:00:32.849
+Integrals count signed accumulation
+
+00:00:32.849 --> 00:00:37.887
+This velocity is negative before time one and positive afterward
+
+00:00:37.887 --> 00:00:40.910
+Equal areas cancel, giving zero displacement
+
+00:00:40.910 --> 00:00:48.467
+Total distance instead adds their magnitudes, producing one unit rather than zero for this journey.
+
+00:00:49.767 --> 00:00:52.323
+An indefinite integral describes all antiderivatives
+
+00:00:52.323 --> 00:00:58.715
+Every vertical shift of x squared has derivative two x, so a constant must remain
+
+00:00:58.715 --> 00:01:05.533
+A definite integral is a number between bounds; an indefinite integral is a family of functions.

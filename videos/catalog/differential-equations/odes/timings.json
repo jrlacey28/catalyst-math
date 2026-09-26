@@ -1,0 +1,166 @@
+[
+  {
+    "formula": "y'=-2y, quad y(0)=3",
+    "text": "A differential equation specifies a rate in terms of the unknown quantity. Here the rate is negative twice the current value. Starting at three, a positive solution decreases quickly at first and more slowly as its value approaches zero.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3
+      ],
+      "y": [
+        0,
+        3.5
+      ],
+      "curves": [
+        {
+          "f": "3*exp(-2*x)",
+          "color": "blue",
+          "domain": [
+            0,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 16.9,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "frac(y',y)=-2 arrow.r log(y)=-2t+C",
+    "text": "For a positive candidate solution, divide by y and integrate. The derivative of the logarithm is y prime divided by y, so the logarithm equals negative twice time plus a constant. Positivity justifies this particular logarithm expression.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        2
+      ],
+      "y": [
+        -4,
+        2
+      ],
+      "curves": [
+        {
+          "f": "log(3)-2*x",
+          "color": "gold",
+          "domain": [
+            0,
+            2
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          1.09861228867
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 16.9,
+    "duration": 19.333333333333332,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "y(t)=3e^(-2t)",
+    "text": "Exponentiating gives a constant times the exponential. The initial value sets that constant to three. Differentiate the proposed formula to check the rate equation, and substitute time zero separately to check the initial condition. Both checks are necessary.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3
+      ],
+      "y": [
+        0,
+        3.5
+      ],
+      "curves": [
+        {
+          "f": "3*exp(-2*x)",
+          "color": "blue",
+          "domain": [
+            0,
+            3
+          ]
+        },
+        {
+          "f": "exp(-2*x)",
+          "color": "pink",
+          "domain": [
+            0,
+            3
+          ]
+        }
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 36.233333333333334,
+    "duration": 18.633333333333333,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "y(t)=y_0 e^(-2t)",
+    "text": "The final formula also works for negative initial values. The identically zero solution must be checked directly because dividing by y excluded it earlier. Every real initial value approaches the zero equilibrium, illustrating stability for this particular linear equation.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3
+      ],
+      "y": [
+        -2.5,
+        3.5
+      ],
+      "curves": [
+        {
+          "f": "3*exp(-2*x)",
+          "color": "blue",
+          "domain": [
+            0,
+            3
+          ]
+        },
+        {
+          "f": "-2*exp(-2*x)",
+          "color": "pink",
+          "domain": [
+            0,
+            3
+          ]
+        },
+        {
+          "f": "0",
+          "color": "green",
+          "domain": [
+            0,
+            3
+          ]
+        }
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 54.86666666666667,
+    "duration": 20.433333333333334,
+    "audio": "audio_parts/04.wav"
+  }
+]

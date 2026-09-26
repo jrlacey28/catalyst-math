@@ -1,0 +1,7 @@
+Taylor polynomials imitate a function near one point by matching its value and successive derivatives there. For exponential x at zero, every derivative equals one, so the coefficients are reciprocals of factorials. More matching derivatives improve the local shape.
+
+At one fifth, the cubic polynomial gives about one point two two one three three three. This is an approximation, not an exact finite identity. Taylor's remainder theorem controls the difference using a bound on the next derivative.
+
+On the interval from zero to one fifth, the fourth derivative is exponential x and is less than two. Therefore the cubic error is at most two times one fifth to the fourth, divided by twenty-four: about one ten-thousandth.
+
+A power series also has a convergence domain. The geometric expansion for one over one minus x works only when absolute x is less than one. Outside that interval its terms may not shrink, even though the original function remains defined.

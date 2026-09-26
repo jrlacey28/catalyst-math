@@ -1,0 +1,34 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.892
+A confidence interval adds an uncertainty range to an estimate
+
+00:00:04.892 --> 00:00:13.426
+Assume twenty-five independent observations from a normal population with known standard deviation two, and a sample mean of ten
+
+00:00:13.426 --> 00:00:18.367
+These assumptions determine the interval procedure we are about to use.
+
+00:00:19.667 --> 00:00:24.930
+The mean's standard error is two divided by five, or zero point four
+
+00:00:24.930 --> 00:00:32.623
+Multiplying by the normal cutoff, approximately one point nine six, gives a margin of zero point seven eight four
+
+00:00:32.623 --> 00:00:36.267
+Add and subtract that margin to find the endpoints.
+
+00:00:37.567 --> 00:00:42.281
+The ninety-five-percent confidence level describes repeated use of the method
+
+00:00:42.281 --> 00:00:50.767
+Across repeated samples under these assumptions, about ninety-five percent of the resulting intervals cover the fixed population mean
+
+00:00:50.767 --> 00:00:57.367
+It does not say that ninety-five percent of individual observations lie in this interval.
+
+00:00:58.667 --> 00:01:04.870
+With the same known variability and confidence level, quadrupling sample size halves the margin
+
+00:01:04.870 --> 00:01:16.833
+If the population standard deviation is estimated instead, use an appropriate method such as a t interval under its assumptions; do not automatically reuse the known-sigma formula.

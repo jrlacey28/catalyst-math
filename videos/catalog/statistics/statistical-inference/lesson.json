@@ -1,0 +1,136 @@
+{
+  "id": "statistics.statistical-inference",
+  "beats": [
+    {
+      "formula": "hat(p)=frac(30,50)=0.6",
+      "text": "Statistical inference uses sample evidence to learn beyond the observed data. If thirty of fifty sampled people support a proposal, the sample proportion is sixty percent. Whether that estimates a wider population depends on how those people entered the sample.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          30,
+          20
+        ],
+        "labels": [
+          "support",
+          "do not support"
+        ]
+      }
+    },
+    {
+      "formula": "\"estimated SE\" approx sqrt(frac(0.6(0.4),50))",
+      "text": "Under independent binary sampling with a common success probability, we can estimate how a sample proportion varies. Here the estimated standard error is about zero point zero six nine. The model supplies an uncertainty scale; the observed proportion alone cannot show its precision.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0.3,
+          0.9
+        ],
+        "y": [
+          0,
+          6.5
+        ],
+        "curves": [
+          {
+            "f": "exp(-((x-0.6)**2)/(2*0.0692820323**2))/(0.0692820323*sqrt(2*pi))",
+            "color": "blue",
+            "domain": [
+              0.3,
+              0.9
+            ]
+          }
+        ],
+        "points": [
+          [
+            0.6,
+            5.758235824751242
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "0.8-0.5=0.3 \"observed treatment difference\"",
+      "text": "Random assignment answers a different question from random sampling. Assigning volunteers randomly to treatments helps separate treatment effects from preexisting group differences. An observed success-rate difference of three tenths still carries sampling uncertainty; assignment does not eliminate random variation.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0.8,
+          0.5
+        ],
+        "labels": [
+          "treatment",
+          "comparison"
+        ]
+      }
+    },
+    {
+      "formula": "\"design\" + \"model\" + \"uncertainty\" arrow.r \"qualified conclusion\"",
+      "text": "Random sampling supports population generalization, while random assignment supports causal comparison under suitable implementation. Neither is replaced by a complicated formula. State the population, design, assumptions, effect estimate, and uncertainty so the conclusion remains matched to the evidence actually collected.",
+      "visual": {
+        "kind": "network",
+        "nodes": [
+          "design",
+          "data",
+          "model",
+          "uncertainty",
+          "conclusion"
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "directed": true,
+        "active": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "A random sample of 80 people contains 24 supporters. Estimate the population support proportion and explain what makes population inference plausible.",
+      "answer": "The estimate is 24/80=0.30. A suitable probability sample from the target population supports generalization, with uncertainty from sampling variation; nonresponse and coverage still need attention.",
+      "id": "statistics.statistical-inference.video-practice-1"
+    },
+    {
+      "prompt": "The same 30% support estimate comes from people who volunteered for an online poll. Why may its population interpretation change even though the arithmetic is identical?",
+      "answer": "Self-selection can make respondents systematically different from the target population. The arithmetic estimates the respondent proportion, but generalizing it requires additional justified assumptions or a better sampling design.",
+      "id": "statistics.statistical-inference.video-practice-2"
+    },
+    {
+      "prompt": "A study randomly assigns volunteers to two treatments but does not randomly sample the population. Distinguish the causal and population claims it can support.",
+      "answer": "Random assignment can support a causal comparison for the studied participants under proper implementation and analysis. Broad population generalization is a separate issue because volunteers may not represent that population.",
+      "id": "statistics.statistical-inference.video-practice-3"
+    }
+  ],
+  "takeaway": "Inference joins a study design, a probability model, and uncertainty; formulas alone do not authorize population or causal claims.",
+  "scope": "A sample proportion, its uncertainty model, and the distinct roles of sampling and treatment assignment.",
+  "course": "Statistics and inference",
+  "course_id": "statistics",
+  "title": "Statistical inference",
+  "objective": "Match a question, design, model, and uncertainty statement with its assumptions.",
+  "index": 6,
+  "total": 6,
+  "prerequisites": [
+    "statistics.hypothesis-testing",
+    "statistics.confidence-intervals",
+    "statistics.regression"
+  ]
+}

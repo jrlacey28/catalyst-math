@@ -1,0 +1,11 @@
+phase_0
+A distribution shows how observations are spread across possible values. In a histogram, each bar counts observations inside an interval. The horizontal axis gives values or bins; the vertical axis gives frequency.
+
+phase_1
+A symmetric distribution has similar left and right sides. A right-skewed distribution has a longer tail toward larger values. The tail names the direction of skew; it does not mean most observations are on that side.
+
+phase_2
+When describing a distribution, consider center, spread, shape, and unusual observations together. Two distributions with the same mean can have very different shapes. One number cannot describe everything.
+
+phase_3
+The counts in all bins add to the total number of observations. Dividing each count by that total gives relative frequency. Be careful when changing bin widths: a different display can suggest a different visual impression.

@@ -1,0 +1,17 @@
+{
+  "id": "5-01",
+  "unit": "5",
+  "course": "Algebra II",
+  "index": 1,
+  "total": 9,
+  "slug": "quadratics",
+  "title": "Quadratics: completing the square and roots",
+  "objective": "Connect completing the square, vertex form, discriminant, and solving.",
+  "prerequisites": "Function notation, distribution, binomial squares, basic factoring.",
+  "formulas": [
+    "y=x^2+6x+5",
+    "x^2+6x+5=(x+3)^2-4",
+    "(x+3)^2=4 => x=-1,-5",
+    "x=(-b plus.minus sqrt(b^2-4 a c))/(2a)"
+  ]
+}

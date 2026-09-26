@@ -1,0 +1,40 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.360
+A parametrized curve describes position as a parameter changes
+
+00:00:04.360 --> 00:00:07.880
+This formula traces a circle of radius two
+
+00:00:07.880 --> 00:00:18.000
+Differentiating gives the velocity vector; its length is two, so equal changes in the parameter correspond to twice that much traveled arc length.
+
+00:00:19.300 --> 00:00:24.010
+Speed depends on parameterization, while the geometric path remains the same
+
+00:00:24.010 --> 00:00:28.292
+Using arc length s as the parameter makes speed one
+
+00:00:28.292 --> 00:00:36.000
+The unit tangent then records direction alone, separating how the curve turns from how quickly it is traversed.
+
+00:00:37.300 --> 00:00:42.972
+Curvature measures the rate at which the unit tangent changes per unit arc length
+
+00:00:42.972 --> 00:00:48.238
+A radius-two circle has curvature one half; a larger circle turns less sharply
+
+00:00:48.238 --> 00:00:53.100
+This is curve curvature, not the Gaussian curvature assigned to a surface.
+
+00:00:54.400 --> 00:00:58.073
+A surface uses two parameters instead of one
+
+00:00:58.073 --> 00:01:03.583
+On this paraboloid, changing u or v gives two independent tangent directions
+
+00:01:03.583 --> 00:01:06.338
+Their span is the tangent plane
+
+00:01:06.338 --> 00:01:12.767
+Independence of these parameter derivatives is the regularity condition preventing a collapsed coordinate patch.

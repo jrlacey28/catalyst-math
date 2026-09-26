@@ -1,0 +1,190 @@
+{
+  "id": "pre-algebra.multi-step-equations",
+  "beats": [
+    {
+      "formula": "2(x+3)=x+11",
+      "text": "A multi-step equation still asks where two quantities agree. These two lines meet at one input. Rather than guessing from the picture, we will transform the equality through steps that preserve exactly the same solution.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          8
+        ],
+        "y": [
+          0,
+          22
+        ],
+        "curves": [
+          {
+            "f": "2*(x+3)",
+            "color": "blue",
+            "domain": [
+              0,
+              8
+            ]
+          },
+          {
+            "f": "x+11",
+            "color": "gold",
+            "domain": [
+              0,
+              8
+            ]
+          }
+        ],
+        "points": [
+          [
+            5,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "2x+6=x+11",
+      "text": "First distribute the factor two to every term in its parentheses. Two copies of x contribute two x and two copies of three contribute six. This rewrite changes only the notation, so the graphed relationship remains unchanged.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          8
+        ],
+        "y": [
+          0,
+          22
+        ],
+        "curves": [
+          {
+            "f": "2*x+6",
+            "color": "blue",
+            "domain": [
+              0,
+              8
+            ]
+          },
+          {
+            "f": "x+11",
+            "color": "gold",
+            "domain": [
+              0,
+              8
+            ]
+          }
+        ],
+        "points": [
+          [
+            5,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "x+6=11",
+      "text": "Now subtract x from both sides. One x remains on the left, while the right becomes eleven. Both graphs have changed, but their equality still occurs at the same horizontal position because the identical quantity was removed from each.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          8
+        ],
+        "y": [
+          0,
+          15
+        ],
+        "curves": [
+          {
+            "f": "x+6",
+            "color": "blue",
+            "domain": [
+              0,
+              8
+            ]
+          },
+          {
+            "f": "11",
+            "color": "gold",
+            "domain": [
+              0,
+              8
+            ]
+          }
+        ],
+        "points": [
+          [
+            5,
+            11
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "x=5 quad 2(5+3)=5+11=16",
+      "text": "Subtract six from both sides to isolate the input five, then check it in the original equation. Both original sides become sixteen. A term does not change sign by traveling; subtraction from both sides explains that familiar shortcut.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          8
+        ],
+        "y": [
+          0,
+          8
+        ],
+        "curves": [
+          {
+            "f": "x",
+            "color": "blue",
+            "domain": [
+              0,
+              8
+            ]
+          },
+          {
+            "f": "5",
+            "color": "gold",
+            "domain": [
+              0,
+              8
+            ]
+          }
+        ],
+        "points": [
+          [
+            5,
+            5
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Solve 3r+2=29, showing each operation on both sides.",
+      "answer": "Subtract two: 3r=27. Divide by three: r=9.",
+      "id": "pre-algebra.multi-step-equations.video-practice-1"
+    },
+    {
+      "prompt": "Solve 4(t+2)=2t+22 and check.",
+      "answer": "4t+8=2t+22; 2t=14; t=7. Both original sides equal36.",
+      "id": "pre-algebra.multi-step-equations.video-practice-2"
+    },
+    {
+      "prompt": "Explain why subtracting 2x from both sides is valid in 5x−1=2x+14, then solve it.",
+      "answer": "Subtracting equal quantities preserves equality: 3x−1=14, so x=5.",
+      "id": "pre-algebra.multi-step-equations.video-practice-3"
+    }
+  ],
+  "takeaway": "Each step rewrites a side or applies the same valid operation to both sides.",
+  "scope": "Distribution, collecting unknowns, inverse steps, and original-equation checks.",
+  "course": "Pre-algebra",
+  "course_id": "pre-algebra",
+  "title": "Multi-step equations",
+  "objective": "Distribute, combine, and solve while preserving both sides of an equation.",
+  "index": 4,
+  "total": 8,
+  "prerequisites": [
+    "pre-algebra.expressions",
+    "pre-algebra.one-step-equations"
+  ]
+}

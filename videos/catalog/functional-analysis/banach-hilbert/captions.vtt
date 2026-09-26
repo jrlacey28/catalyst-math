@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.322
+A norm assigns a vector a size, generalizing ordinary Euclidean length
+
+00:00:05.322 --> 00:00:12.930
+A Banach space is a normed vector space in which every Cauchy sequence converges within the space
+
+00:00:12.930 --> 00:00:18.300
+Completeness prevents sequences from approaching a missing point outside the chosen system.
+
+00:00:19.600 --> 00:00:23.365
+In the Euclidean plane, coordinatewise completeness gives this property
+
+00:00:23.365 --> 00:00:30.477
+These vectors approach the origin, and their distance from it is square root five divided by n
+
+00:00:30.477 --> 00:00:36.333
+That explicit bound proves convergence rather than relying on a few arrows becoming small.
+
+00:00:37.633 --> 00:00:44.544
+A Hilbert space also has an inner product generating its norm and is complete for that norm
+
+00:00:44.544 --> 00:00:50.235
+In real L two on the unit interval, inner products integrate products of functions
+
+00:00:50.235 --> 00:00:54.300
+This makes geometry such as orthogonality available for function vectors.
+
+00:00:55.600 --> 00:00:59.053
+Not every Banach norm comes from an inner product
+
+00:00:59.053 --> 00:01:07.879
+With the maximum-coordinate norm and the two coordinate unit vectors, the parallelogram identity gives two on the left and four on the right
+
+00:01:07.879 --> 00:01:12.100
+This complete normed plane is therefore not Hilbert under that norm.

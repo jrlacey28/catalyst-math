@@ -1,0 +1,170 @@
+{
+  "id": "numerical-analysis.approximation-integration",
+  "beats": [
+    {
+      "formula": "integral_0^2 x^2 d x=frac(8,3)",
+      "text": "Quadrature replaces an integral with a computable weighted sum. For the square function from zero to two, the exact area is eight thirds. We can use that known value to examine how a numerical approximation improves with refinement.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          2.2
+        ],
+        "y": [
+          0,
+          4.5
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              0,
+              2
+            ]
+          }
+        ],
+        "shade": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "formula": "T_1=frac(2,2)(0+4)=4",
+      "text": "One trapezoid joins the endpoint heights by a straight line. Its area is interval width times the average height, giving four. The chord lies above this convex graph, so the estimate is too large for a geometrically understandable reason.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          2.2
+        ],
+        "y": [
+          0,
+          4.5
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              0,
+              2
+            ]
+          }
+        ],
+        "segments": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "T_2=frac(1,2)(0+1)+frac(1,2)(1+4)=3",
+      "text": "Split the interval into two equal pieces. The smaller trapezoids give one half plus two and a half, totaling three. The approximation is closer, and we can measure the remaining error rather than assuming more pieces automatically make it negligible.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          2.2
+        ],
+        "y": [
+          0,
+          4.5
+        ],
+        "curves": [
+          {
+            "f": "x*x",
+            "color": "blue",
+            "domain": [
+              0,
+              2
+            ]
+          }
+        ],
+        "segments": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              4
+            ]
+          ]
+        ],
+        "points": [
+          [
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "T_n-frac(8,3)=frac(4,3n^2)",
+      "text": "For this quadratic and equal subdivisions, direct summation gives the exact error four divided by three n squared. Doubling the number of pieces quarters the error. General error bounds require assumptions such as bounded derivatives; this exact formula is specific to our example.",
+      "visual": {
+        "kind": "sequence",
+        "values": [
+          4,
+          3,
+          2.81481481481,
+          2.75,
+          2.72,
+          2.7037037037
+        ],
+        "limit": 2.66666666667
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Use one trapezoid to approximate the integral of x² from zero to three, then compare with its exact value.",
+      "answer": "The trapezoid gives 3(0+9)/2=13.5. The exact integral is[x³/3]0³=9, so the overestimate is 4.5.",
+      "id": "numerical-analysis.approximation-integration.video-practice-1"
+    },
+    {
+      "prompt": "Use two equal trapezoids for the integral of x² from zero to three.",
+      "answer": "Heights are 0,2.25,9 and width 1.5. The estimate is 0.75(0+2·2.25+9)=10.125.",
+      "id": "numerical-analysis.approximation-integration.video-practice-2"
+    },
+    {
+      "prompt": "For x² on [0,2], how many equal trapezoids ensure the exact error formula is below 0.01?",
+      "answer": "Need 4/(3n²)<0.01, so n²>400/3 and n>11.547…. The least integer is 12.",
+      "id": "numerical-analysis.approximation-integration.video-practice-3"
+    }
+  ],
+  "takeaway": "An approximation becomes reliable when its error is bounded, not merely when a plot looks close.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Numerical analysis",
+  "course_id": "numerical-analysis",
+  "title": "Approximation and quadrature",
+  "objective": "Approximate functions and integrals while estimating truncation and rounding error.",
+  "index": 3,
+  "total": 4,
+  "prerequisites": [
+    "numerical-analysis.error-stability",
+    "calculus-2.taylor-series",
+    "numerical-analysis.root-finding"
+  ]
+}

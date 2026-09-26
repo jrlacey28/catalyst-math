@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "A circle consists of points a fixed distance from its center. That distance is the radius. The diameter crosses the center and has twice the radius. Changing the radius changes the whole circle.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "Imagine unrolling the boundary into a straight length. The circumference is two pi times the radius. Pi is the constant ratio of circumference to diameter, so this is also pi times the diameter.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.0,
+    "duration": 17.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "An arc with central angle ninety degrees is one quarter of the boundary. For an angle measured in degrees, multiply the full circumference by the angle divided by three hundred sixty.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.0,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "The same fraction gives a sector of the disk. Use pi r squared for the whole area, then multiply by the angle fraction. Arc length uses length units; sector area uses square units.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.0,
+    "duration": 17.0,
+    "audio": "audio_parts/04.wav"
+  }
+]

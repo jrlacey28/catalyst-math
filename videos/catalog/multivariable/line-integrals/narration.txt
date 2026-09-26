@@ -1,0 +1,7 @@
+A force field does work only through the component aligned with movement. A line integral adds that contribution along a path. For the constant rightward field of magnitude one, moving from negative two to positive two along the axis gives work four.
+
+On a counterclockwise circle of radius two, the rotational field matches the direction of motion. Both the field vector and the parametrization's derivative have length two. Their dot product is four throughout the trip, so the work is eight pi.
+
+For the radial field on that same circle, every field arrow is perpendicular to the tangent direction. The dot product is zero at every point, so the line integral vanishes even though the field itself is not zero.
+
+Reversing a path reverses the direction of each displacement, so a vector line integral changes sign. This orientation rule differs from merely measuring path length. Always specify the direction and distinguish work from a scalar integral against distance.

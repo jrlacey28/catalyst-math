@@ -1,0 +1,124 @@
+[
+  {
+    "formula": "f(x,y)=x^2+y^2",
+    "text": "A function of two inputs can change in more than one direction. A partial derivative asks what happens when one input moves while the other stays fixed. On this bowl, each coordinate direction gives its own local slope.",
+    "visual": {
+      "kind": "surface",
+      "mode": "paraboloid"
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.533333333333333,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "y=1: quad f(x,1)=x^2+1, quad f_x=2x",
+    "text": "Fix y equal to one and move only x. The cross-section becomes x squared plus one, so its slope is two x. At x equal to one, the partial slope is two; the frozen y contribution behaves like a constant.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        2
+      ],
+      "y": [
+        -1,
+        6
+      ],
+      "curves": [
+        {
+          "f": "x*x+1",
+          "color": "blue",
+          "domain": [
+            -2,
+            2
+          ]
+        },
+        {
+          "f": "2*x",
+          "color": "gold",
+          "domain": [
+            -0.5,
+            2
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.533333333333333,
+    "duration": 15.933333333333334,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "f_x (1,-1)=2, quad f_y (1,-1)=-2",
+    "text": "At the point one, negative one, increasing x initially raises the surface, while increasing y initially lowers it. The two partial derivatives are two and negative two. A single height does not determine how the surface tilts in every direction.",
+    "visual": {
+      "kind": "surface",
+      "mode": "paraboloid"
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 31.46666666666667,
+    "duration": 17.866666666666667,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "x=t, y=2t: quad frac(dif f,dif t)=10t",
+    "text": "If both coordinates move along a path, neither partial derivative alone is the full rate. Along x equals t and y equals two t, the height is five t squared. Its derivative is ten t, combining both coordinate contributions.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1.5,
+        1.5
+      ],
+      "y": [
+        -1,
+        12
+      ],
+      "curves": [
+        {
+          "f": "5*x*x",
+          "color": "blue",
+          "domain": [
+            -1.5,
+            1.5
+          ]
+        },
+        {
+          "f": "10*x-5",
+          "color": "gold",
+          "domain": [
+            0.5,
+            1.5
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 49.333333333333336,
+    "duration": 17.266666666666666,
+    "audio": "audio_parts/04.wav"
+  }
+]

@@ -1,0 +1,24 @@
+.math-input-helper{display:inline-block;vertical-align:top;margin:3px 0 4px;max-width:100%;font-size:12px;color:#526859;min-width:0}
+.math-input-helper:has(.math-input-details[open]){display:block}
+.math-input-helper [hidden]{display:none!important}
+.math-input-details{width:fit-content;max-width:100%}
+.math-input-details>summary{padding:2px 0;cursor:pointer;color:#426c61;font-weight:500;font-size:11px;min-height:24px;list-style:revert}
+.math-input-details>summary:focus-visible{outline:3px solid #419b86;outline-offset:2px;border-radius:4px}
+.math-input-details[open]{width:min(100%,520px)}
+.math-input-body{padding:9px 11px 10px;margin-top:4px;border:1px solid #dce6dc;border-radius:9px;background:#fbfdf9}
+.math-input-symbols{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 7px}
+.math-input-symbols button{border:1px solid #ccddd7;background:#edf6f2;color:#284f47;border-radius:6px;min-width:36px;min-height:36px;padding:4px 9px;font-family:Cambria,Georgia,serif;font-size:17px}
+.math-input-symbols button:hover{background:#dceee6}
+.math-input-symbols button:focus-visible{outline:3px solid #419b86;outline-offset:2px}
+.math-input-guide{font-size:11px;line-height:1.5;margin:4px 0}
+.math-input-guide code{color:#294e47;background:#eef3ef;padding:1px 3px;border-radius:3px;overflow-wrap:anywhere}
+.math-input-preview{background:#fff;border:1px solid #e4ece2;border-radius:6px;padding:9px;margin:8px 0 4px;overflow:auto;max-width:100%;min-height:40px;font-size:19px;color:#274e45}
+.math-input-preview math{margin:0;min-width:0}
+.math-input-plaintext{white-space:pre-wrap;overflow-wrap:anywhere;font-family:ui-monospace,Consolas,monospace;font-size:12px;line-height:1.5;display:block}
+.math-input-preview-note,.math-input-status{font-size:11px;line-height:1.45;color:#5c7160}
+.math-input-status:not(:empty){margin-top:4px}
+.math-input-check-note{font-size:10px;color:#617363;margin:2px 0}
+.answer-input+.math-input-helper{margin-left:35px}
+.math-input-status:empty{display:none}
+@media(max-width:760px){.answer-input+.math-input-helper{margin-left:0}.math-input-symbols button{min-width:40px;min-height:40px}}
+@media(prefers-reduced-motion:reduce){.math-input-helper *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

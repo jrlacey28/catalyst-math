@@ -1,0 +1,74 @@
+[
+  {
+    "formula": "\"red : blue\"=2:3",
+    "text": "A ratio compares quantities multiplicatively. Two red dots for every three blue dots describes a mixture with five dots altogether. Red to blue is two to three, while red to total is two to five.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        2,
+        3
+      ],
+      "labels": [
+        "red",
+        "blue"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "2:3=4:6",
+    "text": "Doubling every ingredient produces four red and six blue dots. The total changes, but the relationship stays the same because both quantities share the same scale factor. Altering only one ingredient would create a different mixture.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        4,
+        6
+      ],
+      "labels": [
+        "red",
+        "blue"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "frac(6,4)=frac(3,2) quad \"blue per red\"",
+    "text": "An equivalent way to express this comparison is a unit rate: one and a half cups of blue per cup of red. Units and order matter, because reversing the comparison gives a different reciprocal rate.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        1,
+        1.5
+      ],
+      "labels": [
+        "red cups",
+        "blue cups"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "\"red fraction\"=frac(2,2+3)=frac(2,5)",
+    "text": "A part-to-part ratio is not already a fraction of the whole. To find the red fraction, combine both parts in the denominator. This distinction prevents using two thirds when the actual red share is two fifths.",
+    "visual": {
+      "kind": "grid",
+      "rows": 1,
+      "cols": 5,
+      "filled": 2,
+      "secondary": 3
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {deriveSkillTree} from '../skill-tree.js';
+const courses=[{id:'basics',title:'Basics',topics:[{id:'a',title:'A',existing_lesson_id:'old-a'},{id:'b',title:'B',lesson:{independent_check:[{}]}}]},{id:'advanced',title:'Advanced',prerequisites:['basics'],topics:[{id:'c',title:'C'}]}];
+let tree=deriveSkillTree(courses,{topics:{a:{video_seconds:100,last_practice:{passed:true}}}});
+assert.equal(tree[0].passed,0);assert.equal(tree[0].gold,false);assert.equal(tree[1].depth,1);assert.equal(tree[1].topics[0].checkAvailable,false);
+tree=deriveSkillTree(courses,{topics:{a:{check_passed:true}},lessons:{'old-a':{check_passed:true}}});
+assert.equal(tree[0].passed,1,'legacy and topic evidence must not double count');assert.equal(tree[0].gold,false);
+tree=deriveSkillTree(courses,{topics:{b:{check_passed:true}},lessons:{'old-a':{check_passed:true}}});
+assert.equal(tree[0].passed,2);assert.equal(tree[0].gold,true);assert.equal(tree[1].gold,false);
+assert.equal(deriveSkillTree([{id:'empty',topics:[]}])[0].gold,false);
+assert.equal(deriveSkillTree(courses,{unit_tests:{geometry:{passed:true}}})[0].gold,false,'unit pass must not invent topic passes');
+console.log('Skill tree: independent evidence, legacy deduplication, prerequisites, and incomplete coverage passed.');

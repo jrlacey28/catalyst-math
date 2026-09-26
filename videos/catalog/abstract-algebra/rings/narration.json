@@ -1,0 +1,105 @@
+[
+  {
+    "formula": "2(1+2)=2+4=6",
+    "text": "A ring supports addition, subtraction, and multiplication with distributive laws. The integers are a familiar example. Multiplication need not supply inverses for every nonzero element: dividing one by two leaves the integer system altogether.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        2,
+        4
+      ],
+      "labels": [
+        "2 times 1",
+        "2 times 2"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "2*3=0 \" (mod 6)\"",
+    "text": "Now calculate with remainders modulo six. Addition and multiplication still make a ring, but two times three becomes zero. Both factors were nonzero classes. Such factors are called zero divisors, and they prevent familiar cancellation arguments.",
+    "visual": {
+      "kind": "grid",
+      "rows": 2,
+      "cols": 3,
+      "filled": 6
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "2*1=2*4 \" (mod 6)\"",
+    "text": "For example, twice one and twice four both leave remainder two. Cancelling the common two would falsely say one equals four. Division by a factor requires an appropriate inverse or another justified cancellation property, not merely matching notation.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "1",
+        "4",
+        "2"
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "weights": [
+        "times 2",
+        "times 2"
+      ],
+      "directed": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "2u \" is never \" 1 \" (mod 6)\"",
+    "text": "The multiples of two modulo six are zero, two, and four, so two has no multiplicative inverse. A field is a nontrivial commutative ring with identity in which every nonzero element has a multiplicative inverse.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        0,
+        6
+      ],
+      "points": [
+        0,
+        2,
+        4
+      ],
+      "labels": [
+        "0",
+        "2",
+        "4"
+      ],
+      "arrows": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

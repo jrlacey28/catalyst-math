@@ -1,0 +1,7 @@
+A partial differential equation relates changes in several variables. In the heat equation, u is temperature departure, x is position, and t is time. The time rate equals spatial curvature in these chosen units, which describes the smoothing of temperature profiles.
+
+Try a sine-shaped profile whose amplitude decays exponentially. Differentiating with respect to time gives negative u. Differentiating twice with respect to position also gives negative u. The proposed formula therefore satisfies the equation at every interior position. The gold curve shows time one.
+
+Doubling the spatial frequency introduces a factor of negative four after two spatial derivatives. The amplitude must therefore decay as e to negative four t. At time one, the gold profile is nearly flat: finer temperature variations smooth away faster.
+
+An equation alone does not select a unique temperature history. Our sine solution also meets zero temperature departure at both ends and the specified initial profile. Always state the spatial region, boundary conditions, and initial data before claiming a model is solved.

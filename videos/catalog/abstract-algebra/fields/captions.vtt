@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:06.556
+A field permits addition, subtraction, multiplication, and division by every nonzero element
+
+00:00:06.556 --> 00:00:09.120
+Rational numbers have this property
+
+00:00:09.120 --> 00:00:18.867
+Zero remains excluded from division: multiplying zero by any candidate inverse still gives zero, never the required identity one.
+
+00:00:20.167 --> 00:00:22.208
+Finite fields are possible too
+
+00:00:22.208 --> 00:00:28.333
+Modulo the prime five, three has inverse two because their product six leaves remainder one
+
+00:00:28.333 --> 00:00:34.867
+To solve three x equals four modulo five, multiply by two and reduce eight to three.
+
+00:00:36.167 --> 00:00:41.151
+Check the result directly: three times three is nine, with remainder four
+
+00:00:41.151 --> 00:00:44.890
+Modulo a prime, every nonzero remainder has an inverse
+
+00:00:44.890 --> 00:00:52.367
+For composite moduli that statement can fail, so being a remainder system alone does not guarantee a field.
+
+00:00:53.667 --> 00:00:58.433
+A field also determines which polynomial equations have solutions within it
+
+00:00:58.433 --> 00:01:02.767
+The real numbers contain no square root of negative one
+
+00:01:02.767 --> 00:01:09.700
+Extending to complex numbers adds i and its negative as roots, while keeping valid field arithmetic.

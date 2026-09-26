@@ -1,0 +1,136 @@
+{
+  "id": "stochastic-processes.poisson-renewal",
+  "beats": [
+    {
+      "formula": "E[N(t)]=lambda t, quad lambda=2",
+      "text": "A Poisson process counts random arrivals at a constant rate with independent increments over disjoint time intervals. At rate two per hour, the expected count in one hour is two. This is an average, not a promise of exactly two events.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          2
+        ],
+        "points": [
+          0.2,
+          0.7,
+          1.4,
+          1.8
+        ],
+        "labels": [
+          "event",
+          "event",
+          "event",
+          "event"
+        ]
+      }
+    },
+    {
+      "formula": "P(N(1)=k)=e^(-2)frac(2^k,k!)",
+      "text": "The count in one hour has a Poisson distribution. Its first four probabilities correspond to zero, one, two, and three arrivals, with more possible counts beyond those shown. The chance of zero arrivals is e to the negative two.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0.135335283237,
+          0.270670566473,
+          0.270670566473,
+          0.180447044315
+        ],
+        "labels": [
+          "0 events",
+          "1 event",
+          "2 events",
+          "3 events"
+        ]
+      }
+    },
+    {
+      "formula": "P(T>t)=e^(-2t), quad E[T]=frac(1,2)",
+      "text": "The waiting time to the first arrival exceeds t exactly when no arrivals occur by t. That gives exponential survival and mean waiting time one half hour. Independent exponential interarrival times are one way to construct this Poisson process.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          2
+        ],
+        "y": [
+          0,
+          1.1
+        ],
+        "curves": [
+          {
+            "f": "exp(-2*x)",
+            "color": "blue",
+            "domain": [
+              0,
+              2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "formula": "P(T>s+t | T>s)=P(T>t)",
+      "text": "Exponential waiting is memoryless: elapsed waiting does not change the remaining-time distribution. A general renewal process only assumes identically distributed independent interarrival times. Fixed half-hour intervals have the same average rate but are not memoryless and do not form a Poisson process.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          2
+        ],
+        "points": [
+          0.5,
+          1,
+          1.5,
+          2
+        ],
+        "arrows": [
+          [
+            0,
+            0.5
+          ],
+          [
+            0.5,
+            1
+          ],
+          [
+            1,
+            1.5
+          ],
+          [
+            1.5,
+            2
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For a Poisson process with rate three per hour, find the expected count and probability of zero events in two hours.",
+      "answer": "The count has mean 3·2=6, and the probability of zero is e^(−6).",
+      "id": "stochastic-processes.poisson-renewal.video-practice-1"
+    },
+    {
+      "prompt": "For exponential waiting with rate four per hour, find the mean wait in minutes.",
+      "answer": "Mean wait is 1/4 hour, or 15 minutes.",
+      "id": "stochastic-processes.poisson-renewal.video-practice-2"
+    },
+    {
+      "prompt": "Events occur at fixed thirty-minute intervals. If twenty minutes have passed since the last event, how long remains, and why is this not memoryless?",
+      "answer": "Ten minutes remain. At a fresh start the wait is thirty minutes, so the remaining wait depends on elapsed time; it is not exponentially memoryless.",
+      "id": "stochastic-processes.poisson-renewal.video-practice-3"
+    }
+  ],
+  "takeaway": "Poisson arrivals have exponential memoryless waiting; a general renewal process need not.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Stochastic processes",
+  "course_id": "stochastic-processes",
+  "title": "Poisson and renewal processes",
+  "objective": "Model random event times and distinguish rates, waiting times, and increments.",
+  "index": 2,
+  "total": 3,
+  "prerequisites": [
+    "probability.distributions",
+    "calculus-2.integrals"
+  ]
+}

@@ -1,0 +1,7 @@
+An ordered pair gives two instructions: move horizontally to the first coordinate, then vertically to the second. The point three, two lies three units right of the origin and two units up. Reversing the order usually changes the point.
+
+Negative coordinates describe direction as well as size. Negative two, one means move two units left, then one unit up. Both coordinates refer to the same origin and the marked scale, not to the previous point.
+
+To compare the two points, subtract corresponding coordinates. From negative two, one to three, two, the horizontal change is five and the vertical change is one. Differences describe movement between points even though neither point is the origin.
+
+A horizontal line contains every point with the same vertical coordinate. The equation y equals two therefore allows many x values while keeping height fixed. Coordinates connect individual locations with entire geometric relationships described by equations.

@@ -1,0 +1,31 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:06.714
+A few odd-number sums suggest a square pattern, but examples cannot establish infinitely many cases
+
+00:00:06.714 --> 00:00:15.133
+Induction separates the job into a starting case and a rule that carries an arbitrary successful case to the next.
+
+00:00:16.433 --> 00:00:22.958
+For the sum of the first n positive odd integers, the first case is n equals one
+
+00:00:22.958 --> 00:00:24.493
+Both sides equal one
+
+00:00:24.493 --> 00:00:30.633
+This supplies an actual starting point; the later implication alone would not guarantee any case begins.
+
+00:00:31.933 --> 00:00:35.739
+Assume the first n odd integers sum to n squared
+
+00:00:35.739 --> 00:00:39.164
+The next odd integer is two n plus one
+
+00:00:39.164 --> 00:00:45.633
+Adding it gives n squared plus two n plus one, exactly the expansion of the next square.
+
+00:00:46.933 --> 00:00:52.873
+Because n was arbitrary, the step applies repeatedly from the verified first case
+
+00:00:52.873 --> 00:01:02.467
+The picture of sixteen squares illustrates n equals four; the algebraic implication proves the entire chain for every positive integer n.

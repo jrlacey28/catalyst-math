@@ -1,0 +1,99 @@
+{
+  "id": "number-sense.place-value",
+  "beats": [
+    {
+      "formula": "23=2 times 10+3",
+      "text": "Our number system bundles groups of ten. Twenty three contains two complete bundles of ten and three single units. The digit two counts tens, while the digit three counts ones; their positions determine their values.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          10,
+          10,
+          3
+        ],
+        "labels": [
+          "10",
+          "10",
+          "3"
+        ]
+      }
+    },
+    {
+      "formula": "23=1 times 10+13",
+      "text": "Trade one bundle of ten for ten loose units. We now have one ten and thirteen ones, still twenty three. Regrouping changes the representation while preserving the amount, which is why carrying and borrowing work.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          10,
+          13
+        ],
+        "labels": [
+          "10",
+          "13"
+        ]
+      }
+    },
+    {
+      "formula": "420=4 times 100+2 times 10+0",
+      "text": "The same bundling idea extends leftward. In four hundred twenty, four counts hundreds and two counts tens. These bars count bundles of different sizes, and the zero records that there are no loose ones.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          4,
+          2,
+          0
+        ],
+        "labels": [
+          "100s",
+          "10s",
+          "1s"
+        ]
+      }
+    },
+    {
+      "formula": "42 times 10=420",
+      "text": "Multiplying forty two by ten makes every unit ten times as large. Four tens become four hundreds, and two ones become two tens. The digits move one place left because every adjacent place differs by ten.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          4,
+          2,
+          0
+        ],
+        "labels": [
+          "100s",
+          "10s",
+          "1s"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "What is the value of the digit three in three hundred sixty eight? Explain using bundles.",
+      "answer": "Three hundreds, so its value is 300.",
+      "id": "number-sense.place-value.video-practice-1"
+    },
+    {
+      "prompt": "Represent fifty seven as four tens and some ones. How many ones are needed?",
+      "answer": "Seventeen ones: 40+17=57.",
+      "id": "number-sense.place-value.video-practice-2"
+    },
+    {
+      "prompt": "Why does multiplying 206 by ten give 2060? Describe what happens to each nonzero digit.",
+      "answer": "Two hundreds become two thousands and six ones become six tens; 206×10=2060.",
+      "id": "number-sense.place-value.video-practice-3"
+    }
+  ],
+  "takeaway": "Place value names the size of each counted bundle.",
+  "scope": "Base-ten positions, equivalent regrouping, and multiplication by ten.",
+  "course": "Number sense",
+  "course_id": "number-sense",
+  "title": "Place value",
+  "objective": "Build and regroup whole numbers using powers of ten.",
+  "index": 2,
+  "total": 6,
+  "prerequisites": [
+    "number-sense.counting"
+  ]
+}

@@ -1,0 +1,186 @@
+[
+  {
+    "formula": "[0,1] times [0,1]",
+    "text": "A product space records a choice from each of two spaces. Pair two unit intervals and obtain a square: the first coordinate is chosen independently of the second. Product topology makes small rectangles the basic neighborhoods in this familiar finite-dimensional example.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -0.2,
+        1.2
+      ],
+      "y": [
+        -0.2,
+        1.2
+      ],
+      "curves": [
+        {
+          "f": "1",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        1
+      ],
+      "segments": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "(0.2,0.8) times (0.3,0.7)",
+    "text": "An open rectangle says both coordinate conditions must hold. Around an interior point, we can independently restrict the first and second coordinates. More complicated open sets are built as unions of these neighborhoods, connecting coordinate descriptions with the topology of the plane.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1
+      ],
+      "y": [
+        0,
+        1
+      ],
+      "curves": [],
+      "segments": [
+        [
+          [
+            0.2,
+            0.3
+          ],
+          [
+            0.8,
+            0.3
+          ]
+        ],
+        [
+          [
+            0.8,
+            0.3
+          ],
+          [
+            0.8,
+            0.7
+          ]
+        ],
+        [
+          [
+            0.8,
+            0.7
+          ],
+          [
+            0.2,
+            0.7
+          ]
+        ],
+        [
+          [
+            0.2,
+            0.7
+          ],
+          [
+            0.2,
+            0.3
+          ]
+        ]
+      ],
+      "points": [
+        [
+          0.5,
+          0.5
+        ]
+      ],
+      "equal": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "q(t)=(cos(2pi t),sin(2pi t)), quad q(0)=q(1)",
+    "text": "A quotient construction instead identifies selected points. Send the closed unit interval around the circle once. Its two endpoints land at the same point, while interior inputs remain distinct. Identifying just those endpoints produces a space homeomorphic to the circle.",
+    "visual": {
+      "kind": "circle",
+      "angle": 6.28318530718,
+      "radius": 1,
+      "arc": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "U \" open in quotient\" \" exactly when \" q^(-1)(U) \" open in source\"",
+    "text": "The quotient topology specifies which sets count as open after gluing: exactly those whose full preimages are open in the source. Near the joined endpoint, the preimage includes neighborhoods near both zero and one. Drawing a loop illustrates this identification, not its proof.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "0=1",
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

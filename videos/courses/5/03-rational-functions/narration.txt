@@ -1,0 +1,11 @@
+phase_0
+A rational function is a ratio of polynomials. Its original denominator cannot equal zero. Write those excluded inputs before simplifying, because canceling a factor does not restore a value the original expression never had.
+
+phase_1
+Factor the numerator and cancel the common factor for allowed inputs. The graph follows the line x plus one, but the point at input one is missing. That missing point is a hole at one, two.
+
+phase_2
+An uncanceled denominator factor can produce a vertical asymptote instead. For two divided by x minus two, outputs become very large in magnitude as x approaches two from either side. The excluded input is two.
+
+phase_3
+When solving a rational equation, multiply only while retaining the original restrictions. Solving x over x minus one equals two gives x equals two. Check it in the original expression; excluded candidates can never be solutions.

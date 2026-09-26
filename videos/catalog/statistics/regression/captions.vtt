@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.674
+Regression models how a response tends to vary with an explanatory input
+
+00:00:05.674 --> 00:00:13.145
+A fitted line predicts a response for each input, while observations can sit above or below it
+
+00:00:13.145 --> 00:00:17.100
+Those vertical differences are residuals, not necessarily recording errors.
+
+00:00:18.400 --> 00:00:26.385
+For these points, the line one half plus one point five x predicts one half, two, and three point five
+
+00:00:26.385 --> 00:00:31.975
+Subtracting predictions from observed responses gives residuals one half, negative one, and one half
+
+00:00:31.975 --> 00:00:36.367
+Their signs record which side of the line each point occupies.
+
+00:00:37.667 --> 00:00:44.606
+Ordinary least squares chooses the intercept and slope that minimize the sum of squared residuals
+
+00:00:44.606 --> 00:00:50.157
+Squaring prevents positive and negative residuals from cancelling and emphasizes larger deviations
+
+00:00:50.157 --> 00:00:56.633
+For these three points, this line achieves the minimum total of one point five.
+
+00:00:57.933 --> 00:01:03.436
+Predicting at five extends beyond the observed input range of zero to two
+
+00:01:03.436 --> 00:01:09.361
+The line can produce that number without evidence that the relationship remains linear there
+
+00:01:09.361 --> 00:01:16.133
+A fitted association also does not establish that changing the input causes the response to change.

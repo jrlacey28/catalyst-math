@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.579
+A series adds the terms of a sequence
+
+00:00:03.579 --> 00:00:08.347
+Because we cannot finish infinitely many additions, study the partial sums instead
+
+00:00:08.347 --> 00:00:15.500
+For successive halves, the totals are one half, three quarters, seven eighths, and values increasingly close to one.
+
+00:00:16.800 --> 00:00:25.665
+The geometric sum formula makes the missing amount explicit: after N terms, the remaining gap is one over two to the N
+
+00:00:25.665 --> 00:00:30.500
+That gap tends to zero, so the infinite series converges to one.
+
+00:00:31.800 --> 00:00:34.957
+Terms approaching zero are necessary, but not sufficient
+
+00:00:34.957 --> 00:00:39.297
+Group the harmonic series into blocks ending at powers of two
+
+00:00:39.297 --> 00:00:46.400
+Each new block contributes at least one half, so the partial sums keep growing beyond every finite bound.
+
+00:00:47.700 --> 00:00:50.024
+Signs can change the conclusion
+
+00:00:50.024 --> 00:00:56.997
+For alternating one over n, decreasing term magnitudes tend to zero, so the series converges
+
+00:00:56.997 --> 00:01:02.111
+After N terms, its error is at most the next magnitude
+
+00:01:02.111 --> 00:01:04.900
+This bound requires those alternating-series conditions.

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.567
+Some curves are easier to describe by a relationship than by one output formula
+
+00:00:05.567 --> 00:00:08.889
+This circle contains an upper and a lower branch
+
+00:00:08.889 --> 00:00:15.533
+Near suitable points, y can still depend on x even when we do not explicitly solve for it.
+
+00:00:16.833 --> 00:00:19.469
+Differentiate both sides with respect to x
+
+00:00:19.469 --> 00:00:22.105
+The x squared term gives two x
+
+00:00:22.105 --> 00:00:30.767
+Because y itself changes with x, the derivative of y squared is two y times y prime, an application of the chain rule.
+
+00:00:32.067 --> 00:00:36.561
+Subtract two x, then divide by two y where y is nonzero
+
+00:00:36.561 --> 00:00:43.304
+At the point one, square root of three, the slope is negative one over square root of three
+
+00:00:43.304 --> 00:00:46.300
+The tangent slopes downward on the upper-right branch.
+
+00:00:47.600 --> 00:00:54.208
+At either horizontal endpoint, y is zero, so this rearrangement cannot produce a finite slope
+
+00:00:54.208 --> 00:00:57.292
+The circle has a vertical tangent there
+
+00:00:57.292 --> 00:01:03.900
+A failed division is useful information about the geometry, not permission to discard the condition.

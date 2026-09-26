@@ -1,0 +1,136 @@
+{
+  "id": "number-theory.divisibility",
+  "beats": [
+    {
+      "formula": "84=2*30+24",
+      "text": "The greatest common divisor is the largest positive integer dividing both inputs. The Euclidean algorithm repeatedly replaces a pair by the smaller number and the remainder. Subtracting a multiple preserves exactly the common divisors.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          90
+        ],
+        "points": [
+          0,
+          30,
+          60,
+          84
+        ],
+        "arrows": [
+          [
+            0,
+            30
+          ],
+          [
+            30,
+            60
+          ],
+          [
+            60,
+            84
+          ]
+        ],
+        "labels": [
+          "0",
+          "30",
+          "60",
+          "84"
+        ]
+      }
+    },
+    {
+      "formula": "30=24+6, quad 24=4*6",
+      "text": "After dividing eighty-four by thirty, the remainder is twenty-four. Dividing thirty by twenty-four leaves six; dividing twenty-four by six leaves zero. The last nonzero remainder is six, so the greatest common divisor is six.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          30,
+          24,
+          6
+        ],
+        "labels": [
+          "30",
+          "24",
+          "remainder 6"
+        ]
+      }
+    },
+    {
+      "formula": "6=30-24=3*30-84",
+      "text": "Reverse the substitutions to express the divisor as an integer combination of the original numbers. Six is thirty minus twenty-four, and twenty-four is eighty-four minus twice thirty. Combining these expressions gives three times thirty minus eighty-four.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          100
+        ],
+        "points": [
+          6,
+          84,
+          90
+        ],
+        "arrows": [
+          [
+            0,
+            90
+          ],
+          [
+            90,
+            6
+          ]
+        ],
+        "labels": [
+          "gcd",
+          "84",
+          "90"
+        ]
+      }
+    },
+    {
+      "formula": "d|84, d|30 arrow.r d|6",
+      "text": "Why does the combination matter? Every common divisor must divide every integer combination, including six. Since six itself divides both numbers, it is greatest. This is a proof of the answer, not merely an observed remainder pattern.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "labels": [
+          "30 as five groups of six"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Use the Euclidean algorithm to find gcd(66,42), showing each remainder.",
+      "answer": "66=42+24;42=24+18;24=18+6;18=3·6. The gcd is six.",
+      "id": "number-theory.divisibility.video-practice-1"
+    },
+    {
+      "prompt": "Express gcd(66,42) as an integer combination of 66 and 42.",
+      "answer": "6=24−18=2·24−42=2(66−42)−42=2·66−3·42.",
+      "id": "number-theory.divisibility.video-practice-2"
+    },
+    {
+      "prompt": "Prove that every integer dividing both 35 and 22 must divide one.",
+      "answer": "The Euclidean algorithm gives 1=8·22−5·35. Any common divisor divides that integer combination, hence divides one; the gcd is one.",
+      "id": "number-theory.divisibility.video-practice-3"
+    }
+  ],
+  "takeaway": "The Euclidean algorithm preserves common divisors and produces a checkable integer combination.",
+  "scope": "Focused first lesson with explicit assumptions and worked examples; not an exhaustive treatment or a substitute for subsequent proofs and independent practice.",
+  "course": "Number theory",
+  "course_id": "number-theory",
+  "title": "Divisibility and primes",
+  "objective": "Use the Euclidean algorithm, Bezout identities, and unique factorization.",
+  "index": 1,
+  "total": 3,
+  "prerequisites": [
+    "proof-foundations.proof-strategies",
+    "number-sense.multiplication-division"
+  ]
+}

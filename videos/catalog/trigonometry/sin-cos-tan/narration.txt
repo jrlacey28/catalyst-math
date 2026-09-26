@@ -1,0 +1,7 @@
+On a unit circle, cosine is the horizontal coordinate and sine is the vertical coordinate. The right triangle connects these coordinates to familiar side ratios because its hypotenuse has length one. Both functions therefore describe the same moving point.
+
+At an angle of thirty degrees, the vertical coordinate is one half and the horizontal coordinate is the square root of three over two. These values satisfy the circle equation: the sum of their squares equals one.
+
+Tangent compares vertical change with horizontal change, so it equals sine divided by cosine. For our thirty-degree angle, the ratio is one over the square root of three. Tangent records the slope of the radius when that slope is defined.
+
+As the radius approaches vertical, the horizontal coordinate approaches zero while the vertical coordinate approaches one. Dividing by that vanishing horizontal coordinate makes tangent unbounded nearby, and tangent is undefined exactly at ninety degrees because division by zero is invalid.

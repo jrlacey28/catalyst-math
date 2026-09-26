@@ -1,0 +1,108 @@
+[
+  {
+    "formula": "(x+1)^2=(x+1)(x+1)",
+    "text": "A polynomial is built from sums of constant multiples of nonnegative whole-number powers. When a sum is squared, the entire sum multiplies itself. This partitioned square lets us account for every product instead of relying on a memorized shortcut.",
+    "visual": {
+      "kind": "tiles",
+      "a": 2,
+      "b": 1,
+      "labels": [
+        "x^2",
+        "x",
+        "x",
+        "1"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 18.133333333333333,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "(x+1)^2=x^2+x+x+1=x^2+2x+1",
+    "text": "The large square contributes x squared, the two rectangular strips each contribute x, and the small corner contributes one. Both strips are necessary. Their combined area explains the middle term that disappears if we incorrectly square only the endpoints.",
+    "visual": {
+      "kind": "tiles",
+      "a": 2,
+      "b": 1,
+      "labels": [
+        "x^2",
+        "x",
+        "x",
+        "1"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 18.133333333333333,
+    "duration": 18.133333333333333,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "(x+h)^2=x^2+2x h+h^2",
+    "text": "Replace the small side one by a changing amount h. The same geometric partition gives two rectangles of area x times h and one square of area h squared. The identity remains algebraically valid for all real x and h.",
+    "visual": {
+      "kind": "tiles",
+      "a": 2,
+      "b": 0.7,
+      "labels": [
+        "x^2",
+        "x h",
+        "x h",
+        "h^2"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 36.266666666666666,
+    "duration": 17.733333333333334,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "frac((x+h)^2-x^2,h)=2x+h quad h!=0",
+    "text": "Subtracting x squared leaves the cross terms and the small square. Both remaining terms share a factor h, so dividing by nonzero h gives two x plus h. This exact rewrite becomes a key step in the calculus difference quotient.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -6,
+        7
+      ],
+      "curves": [
+        {
+          "f": "2*x+0.5",
+          "color": "blue",
+          "domain": [
+            -3,
+            3
+          ]
+        },
+        {
+          "f": "2*x+0.1",
+          "color": "gold",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 54.0,
+    "duration": 16.866666666666667,
+    "audio": "audio_parts/04.wav"
+  }
+]

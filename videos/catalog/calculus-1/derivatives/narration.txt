@@ -1,0 +1,7 @@
+A derivative begins with an average rate between two different inputs. For the square function, choose three and three plus h. The quotient measures vertical change divided by horizontal change, giving the secant line its slope.
+
+Expand the square to get nine plus six h plus h squared. Subtract nine, factor out h, and cancel it while h remains nonzero. Each algebra step exposes the nearby slope without dividing by zero.
+
+As the second input approaches three, the slope approaches six. The limiting secant becomes the tangent line. This instantaneous rate is defined by nearby changes, not by directly substituting zero into the original difference quotient.
+
+A derivative does not always exist. At the corner of absolute x, left-hand slopes approach negative one while right-hand slopes approach positive one. The function is continuous there, but no single tangent slope fits both approaches.

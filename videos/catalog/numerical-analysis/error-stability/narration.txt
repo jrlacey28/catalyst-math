@@ -1,0 +1,7 @@
+Numerical error has two different sources. Conditioning describes sensitivity built into the mathematical problem. Near input one, the reciprocal of x minus one changes sharply: moving from one point zero one to one point zero two halves the output.
+
+Algorithmic stability concerns additional error introduced by the computation. Subtracting nearly equal rounded values can erase meaningful digits. If this square root is first rounded to two decimal places, the subtraction becomes zero even though the true difference is positive.
+
+Multiplying by the conjugate gives an equivalent quotient with numerator one and denominator about two hundred. This avoids subtracting two nearly equal intermediate values. The rewrite changes the computational route while preserving the exact mathematical quantity being requested.
+
+Relative error compares the absolute error with the size of a nonzero true answer. A tiny absolute error can be enormous relative to a tiny result. Improving an algorithm cannot remove sensitivity intrinsic to uncertain input data.

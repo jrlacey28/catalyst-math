@@ -1,0 +1,7 @@
+An eigenvalue describes how a transformation scales a special nonzero direction without turning it into a different line. This diagonal transformation doubles horizontal components and halves vertical ones, so the coordinate axes reveal two special behaviors.
+
+The horizontal direction has eigenvalue two, while the vertical direction has eigenvalue one half. An ordinary diagonal vector has both components changed differently and usually turns. An eigenvalue belongs to a transformation together with an associated eigendirection.
+
+Rearranging the eigenvector equation gives A minus lambda times the identity acting on a nonzero vector to produce zero. That requires a singular matrix. Setting its determinant to zero finds the candidate eigenvalues two and one half.
+
+Zero can also be an eigenvalue. A singular transformation collapses some nonzero vectors to zero, and those vectors satisfy the eigenvalue equation with lambda zero. The input eigenvector must be nonzero; the resulting output need not be.

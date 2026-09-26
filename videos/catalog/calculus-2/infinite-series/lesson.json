@@ -1,0 +1,95 @@
+{
+  "id": "calculus-2.infinite-series",
+  "beats": [
+    {
+      "formula": "sum_(n=1)^infinity frac(1,2^n)",
+      "text": "A series adds the terms of a sequence. Because we cannot finish infinitely many additions, study the partial sums instead. For successive halves, the totals are one half, three quarters, seven eighths, and values increasingly close to one.",
+      "visual": {
+        "kind": "sequence",
+        "values": [
+          0.5,
+          0.75,
+          0.875,
+          0.9375,
+          0.96875,
+          0.984375
+        ],
+        "limit": 1
+      }
+    },
+    {
+      "formula": "S_N=1-frac(1,2^N), quad S_N arrow.r 1",
+      "text": "The geometric sum formula makes the missing amount explicit: after N terms, the remaining gap is one over two to the N. That gap tends to zero, so the infinite series converges to one.",
+      "visual": {
+        "kind": "grid",
+        "rows": 4,
+        "cols": 8,
+        "filled": 31
+      }
+    },
+    {
+      "formula": "sum_(n=1)^infinity frac(1,n) \"diverges\"",
+      "text": "Terms approaching zero are necessary, but not sufficient. Group the harmonic series into blocks ending at powers of two. Each new block contributes at least one half, so the partial sums keep growing beyond every finite bound.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          1,
+          0.5,
+          0.5833333333,
+          0.6345238095
+        ],
+        "labels": [
+          "1",
+          "2",
+          "3–4",
+          "5–8"
+        ]
+      }
+    },
+    {
+      "formula": "abs(\"alternating-series error\")<=frac(1,N+1)",
+      "text": "Signs can change the conclusion. For alternating one over n, decreasing term magnitudes tend to zero, so the series converges. After N terms, its error is at most the next magnitude. This bound requires those alternating-series conditions.",
+      "visual": {
+        "kind": "sequence",
+        "values": [
+          1,
+          0.5,
+          0.8333333333,
+          0.5833333333,
+          0.7833333333,
+          0.6166666667
+        ],
+        "limit": 0.69314718056
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find ∑ from n=0 to infinity of (1/3)^n. State the condition that permits the geometric sum formula.",
+      "answer": "The ratio is 1/3, whose absolute value is less than 1. The sum is 1/(1−1/3)=3/2.",
+      "id": "calculus-2.infinite-series.video-practice-1"
+    },
+    {
+      "prompt": "Does ∑ from n=1 to infinity of (2n+1)/(n+1) converge? Identify the quickest necessary-condition check.",
+      "answer": "The terms approach 2, not 0, so the series diverges by the term test.",
+      "id": "calculus-2.infinite-series.video-practice-2"
+    },
+    {
+      "prompt": "For 1−1/2+1/3−1/4+…, bound the magnitude of the error after ten terms. Explain why the bound applies.",
+      "answer": "The error is at most 1/11 because magnitudes decrease to zero and signs alternate. The next omitted term bounds the alternating-series error.",
+      "id": "calculus-2.infinite-series.video-practice-3"
+    }
+  ],
+  "takeaway": "A series converges when its partial sums converge; term size, signs, and valid error conditions all matter.",
+  "scope": "Geometric convergence, harmonic divergence, and a controlled alternating approximation.",
+  "course": "Calculus II",
+  "course_id": "calculus-2",
+  "title": "Infinite series",
+  "objective": "Use partial sums and convergence tests while distinguishing absolute and conditional convergence.",
+  "index": 7,
+  "total": 8,
+  "prerequisites": [
+    "calculus-2.infinite-sequences",
+    "calculus-2.improper-integrals"
+  ]
+}

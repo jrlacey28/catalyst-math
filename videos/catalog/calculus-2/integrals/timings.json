@@ -1,0 +1,165 @@
+[
+  {
+    "formula": "integral_0^2 3 dif t=6",
+    "text": "An integral accumulates small contributions. If a rate stays at three units per second for two seconds, the total is six units. The graph shows a rectangle whose height is rate and whose width is elapsed time.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3
+      ],
+      "y": [
+        -1,
+        4
+      ],
+      "curves": [
+        {
+          "f": "3",
+          "color": "blue",
+          "domain": [
+            0,
+            2
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        2
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.166666666666666,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "integral_0^2 t dif t=2",
+    "text": "When the rate changes, narrow rectangles approximate the accumulation, and a limit gives the exact integral. For a rate equal to time between zero and two, the region is a triangle with base two and height two.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        3
+      ],
+      "y": [
+        -1,
+        4
+      ],
+      "curves": [
+        {
+          "f": "x",
+          "color": "blue",
+          "domain": [
+            0,
+            2
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        2
+      ],
+      "sweep": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.166666666666666,
+    "duration": 15.266666666666667,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "integral_0^2 (t-1) dif t=0",
+    "text": "Integrals count signed accumulation. This velocity is negative before time one and positive afterward. Equal areas cancel, giving zero displacement. Total distance instead adds their magnitudes, producing one unit rather than zero for this journey.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        2.5
+      ],
+      "y": [
+        -1.5,
+        2
+      ],
+      "curves": [
+        {
+          "f": "x-1",
+          "color": "blue",
+          "domain": [
+            0,
+            2
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        2
+      ],
+      "points": [
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 30.433333333333334,
+    "duration": 18.933333333333334,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "integral 2x dif x=x^2+C",
+    "text": "An indefinite integral describes all antiderivatives. Every vertical shift of x squared has derivative two x, so a constant must remain. A definite integral is a number between bounds; an indefinite integral is a family of functions.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -2,
+        2
+      ],
+      "y": [
+        -2,
+        6
+      ],
+      "curves": [
+        {
+          "f": "x*x-1",
+          "color": "blue",
+          "domain": [
+            -2,
+            2
+          ]
+        },
+        {
+          "f": "x*x",
+          "color": "gold",
+          "domain": [
+            -2,
+            2
+          ]
+        },
+        {
+          "f": "x*x+1",
+          "color": "pink",
+          "domain": [
+            -2,
+            2
+          ]
+        }
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 49.36666666666667,
+    "duration": 17.066666666666666,
+    "audio": "audio_parts/04.wav"
+  }
+]

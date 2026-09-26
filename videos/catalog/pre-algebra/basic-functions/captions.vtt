@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.103
+A function pairs each allowed input with exactly one output
+
+00:00:04.103 --> 00:00:07.435
+This rule triples the input and then subtracts two
+
+00:00:07.435 --> 00:00:14.100
+The letter x marks an input position; it does not mean that we must solve for x immediately.
+
+00:00:15.400 --> 00:00:19.949
+Evaluating the function means supply an input and follow its rule
+
+00:00:19.949 --> 00:00:25.324
+Replacing x by two gives output four, represented by the point two, four
+
+00:00:25.324 --> 00:00:30.700
+The first coordinate records the supplied input and the second records the result.
+
+00:00:32.000 --> 00:00:35.207
+An entire expression can enter the input slot
+
+00:00:35.207 --> 00:00:41.620
+Replace every x with the whole quantity t plus one, using parentheses to protect its grouping
+
+00:00:41.620 --> 00:00:48.033
+Distributing three then gives three t plus one, an output expression rather than a solved input.
+
+00:00:49.333 --> 00:00:51.676
+Solving reverses what is known
+
+00:00:51.676 --> 00:00:58.235
+Specifying output seven asks which input reaches that height; here the input is three
+
+00:00:58.235 --> 00:01:06.200
+Evaluation, symbolic substitution, and solving are related tasks, but their requested answers are different kinds of objects.

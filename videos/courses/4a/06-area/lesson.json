@@ -1,0 +1,17 @@
+{
+  "id": "4A-06",
+  "unit": "4a",
+  "course": "Geometry",
+  "index": 6,
+  "total": 9,
+  "slug": "area",
+  "title": "Area by cutting and rearranging",
+  "objective": "Derive and use triangle, parallelogram, and trapezoid areas.",
+  "prerequisites": "Multiplication and perpendicular height.",
+  "formulas": [
+    "A=b h",
+    "A_(\"parallelogram\")=b h",
+    "A_(\"triangle\")=(b h)/2",
+    "A_(\"trapezoid\")=((a+b)h)/2"
+  ]
+}

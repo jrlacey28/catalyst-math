@@ -1,0 +1,7 @@
+A group records reversible operations and how they combine. Consider the four rotations of a square that preserve its position. Doing a quarter turn and then another quarter turn has the same effect as one half turn.
+
+Label those rotations zero, one, two, and three quarter turns. Composition becomes addition modulo four. Zero acts as the identity. Three quarter turns undo one quarter turn, because together they make a full turn back to the start.
+
+The group axioms require closure, an identity, inverses, and associativity. Associativity changes parentheses while keeping operation order. It follows here from composing rotations, or from integer addition before reducing the resulting remainder modulo four.
+
+A half turn is its own inverse. These four rotations also commute, but commutativity is not a general group axiom. Rotations and reflections together form a larger symmetry group where swapping operation order can change the result.

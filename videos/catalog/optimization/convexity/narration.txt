@@ -1,0 +1,7 @@
+A convex function lies at or below every chord joining two points on its graph. This is a statement about all mixtures of two inputs, not simply about a graph looking bowl shaped in a particular drawing.
+
+Take inputs negative one and three. Their midpoint is one, where the square function equals one. The midpoint of their two output values is five. The lower function value illustrates the convexity inequality for this particular pair.
+
+A convex feasible set contains the whole segment between any two of its points. An interval has this property. Keeping mixtures feasible is crucial when using a convex objective to compare a nearby candidate with a distant alternative.
+
+For a convex objective on a convex set, every local minimum is global. If a lower point existed, convexity would give lower values along the segment arbitrarily near the supposed minimum. That contradiction explains the conclusion; a plotted example alone would not.

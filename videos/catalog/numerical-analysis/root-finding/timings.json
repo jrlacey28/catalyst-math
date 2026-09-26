@@ -1,0 +1,168 @@
+[
+  {
+    "formula": "f(x)=x^2-3, quad f(1)<0<f(2)",
+    "text": "Bisection starts with a continuous function whose endpoint values have opposite signs. The intermediate value theorem guarantees at least one zero inside. For x squared minus three, inputs one and two provide such a certified bracket.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0.8,
+        2.2
+      ],
+      "y": [
+        -2.5,
+        2
+      ],
+      "curves": [
+        {
+          "f": "x*x-3",
+          "color": "blue",
+          "domain": [
+            0.8,
+            2.2
+          ]
+        }
+      ],
+      "points": [
+        [
+          1,
+          -2
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 17.233333333333334,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "f(1.5)=-0.75, quad f(1.75)=0.0625",
+    "text": "The midpoint one and a half has negative output, so retain the right half. The next midpoint, one and three quarters, has positive output, so retain the left portion. Each decision halves the interval while preserving the sign bracket.",
+    "visual": {
+      "kind": "numberline",
+      "range": [
+        1,
+        2
+      ],
+      "interval": [
+        1.5,
+        1.75
+      ],
+      "points": [
+        1,
+        1.5,
+        1.75,
+        2
+      ],
+      "labels": [
+        "old left",
+        "new left",
+        "new right",
+        "old right"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 17.233333333333334,
+    "duration": 15.933333333333334,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "x_(n+1)=frac(x_n+3/x_n,2)",
+    "text": "Newton's method instead follows a tangent line to its horizontal intercept. Starting at two gives one and three quarters in one step. It often converges rapidly near a simple root, but needs a nonzero derivative and a suitable starting point.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        1,
+        2.1
+      ],
+      "y": [
+        -2.2,
+        1.5
+      ],
+      "curves": [
+        {
+          "f": "x*x-3",
+          "color": "blue",
+          "domain": [
+            1,
+            2.1
+          ]
+        },
+        {
+          "f": "4*x-7",
+          "color": "gold",
+          "domain": [
+            1.3,
+            2.1
+          ]
+        }
+      ],
+      "points": [
+        [
+          2,
+          1
+        ],
+        [
+          1.75,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 33.16666666666667,
+    "duration": 17.466666666666665,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "f(x)=frac(1,x), quad -1<=x<=1",
+    "text": "Opposite endpoint signs without continuity do not guarantee a zero. One over x changes sign across its missing point but never equals zero. Root-finding guarantees depend on their hypotheses, not just on a pattern of numbers or a crossing-looking picture.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -1,
+        1
+      ],
+      "y": [
+        -10,
+        10
+      ],
+      "curves": [
+        {
+          "f": "1/x",
+          "color": "pink",
+          "domain": [
+            -1,
+            -0.1
+          ]
+        },
+        {
+          "f": "1/x",
+          "color": "pink",
+          "domain": [
+            0.1,
+            1
+          ]
+        }
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 50.63333333333334,
+    "duration": 18.933333333333334,
+    "audio": "audio_parts/04.wav"
+  }
+]

@@ -1,0 +1,7 @@
+A metric measures distance and lets us define neighborhoods. On the real line, the distance between two points is their absolute difference. An open ball around a point consists of inputs closer than a chosen positive radius, excluding its boundary.
+
+A set is open when every member has some positive-radius ball staying entirely inside the set. The point zero point eight has a small neighborhood inside the interval from zero to one. Points closer to the edge may require smaller radii.
+
+The closed interval contains zero, but every full real-line ball around zero reaches negative values. Therefore that interval is not open as a subset of the real line. Openness depends on the ambient space and its topology.
+
+Topology keeps the neighborhood idea through rules for open sets: arbitrary unions and finite intersections remain open. A metric supplies one way to obtain such a topology. The abstract definition also allows spaces where no particular distance function has been chosen.

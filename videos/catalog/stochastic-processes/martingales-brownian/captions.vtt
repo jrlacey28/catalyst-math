@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.695
+A martingale is a precise fair-prediction model
+
+00:00:03.695 --> 00:00:15.934
+Its current value is determined by the information already observed, its expected absolute value is finite, and its conditional expected next value equals its current value
+
+00:00:15.934 --> 00:00:19.700
+Fairness concerns conditional averages, not every individual path.
+
+00:00:21.000 --> 00:00:30.104
+If a step rises by one with probability three quarters and falls with probability one quarter, its expected increase is one half
+
+00:00:30.104 --> 00:00:33.415
+The position itself is no longer a martingale
+
+00:00:33.415 --> 00:00:37.967
+Subtracting one half times the step count removes that predictable drift.
+
+00:00:39.267 --> 00:00:48.329
+Standard Brownian motion is a continuous-time example with independent normal increments, mean zero and variance equal to elapsed time
+
+00:00:48.329 --> 00:00:55.007
+Independence from the past makes its conditional expected future value equal its present value
+
+00:00:55.007 --> 00:00:59.300
+These connected sample points only approximate a possible path.
+
+00:01:00.600 --> 00:01:05.833
+Actual Brownian paths are continuous but almost surely nowhere differentiable
+
+00:01:05.833 --> 00:01:09.497
+A polygonal drawing cannot demonstrate that theorem
+
+00:01:09.497 --> 00:01:21.533
+Nor does the martingale condition justify every stopping strategy: results about stopping times need additional assumptions, such as bounded stopping or suitable integrability.

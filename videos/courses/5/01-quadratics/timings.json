@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "A quadratic graph is a parabola. Its roots are the input values where its output is zero. Factoring works well for some quadratics, but completing the square gives a method that also reveals the turning point.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "Take x squared plus six x. Split the six x into two strips of width three. A three by three corner completes a square of side x plus three. Adding nine inside the expression requires subtracting nine to preserve its value.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.0,
+    "duration": 17.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "To solve, set this output to zero. The square equals four, so x plus three can be two or negative two. The roots are negative one and negative five. Both branches of the square root matter.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.0,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "The quadratic formula packages the same completing-the-square argument. For real coefficients, the discriminant b squared minus four a c tells us whether there are two, one repeated, or no real roots. The coefficient a must be nonzero.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.0,
+    "duration": 17.566666666666666,
+    "audio": "audio_parts/04.wav"
+  }
+]

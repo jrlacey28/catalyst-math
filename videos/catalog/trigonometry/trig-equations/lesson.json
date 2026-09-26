@@ -1,0 +1,168 @@
+{
+  "id": "trigonometry.trig-equations",
+  "beats": [
+    {
+      "formula": "sin(x)=frac(1,2)",
+      "text": "A trigonometric equation asks which angles produce a specified coordinate. On one full turn, the height one half occurs twice: once in the first quadrant and once in the second. Reading only the first crossing would miss another solution.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          6.283185307179586
+        ],
+        "y": [
+          -1.5,
+          1.5
+        ],
+        "curves": [
+          {
+            "f": "sin(x)",
+            "color": "blue",
+            "domain": [
+              0,
+              6.283185307179586
+            ]
+          },
+          {
+            "f": "0.5",
+            "color": "gold",
+            "domain": [
+              0,
+              6.283185307179586
+            ]
+          }
+        ],
+        "points": [
+          [
+            0.5235987755982988,
+            0.5
+          ],
+          [
+            2.6179938779914944,
+            0.5
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "x=frac(pi,6) \"or\" x=frac(5pi,6) quad 0<=x<2pi",
+      "text": "Within the interval from zero inclusive to two pi exclusive, the solutions are pi over six and five pi over six. The second angle shares the reference angle but lies in the second quadrant, where sine remains positive.",
+      "visual": {
+        "kind": "circle",
+        "angle": 2.6179938779914944,
+        "radius": 2.4,
+        "triangle": true,
+        "arc": true
+      }
+    },
+    {
+      "formula": "x=frac(pi,6)+2k pi \"or\" x=frac(5pi,6)+2k pi",
+      "text": "Without an interval restriction, full turns produce infinitely many solutions. Add any integer multiple of two pi to each base angle. The integer may be positive, zero, or negative, because turning backward also returns to the same coordinates.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -6.283185307179586,
+          12.566370614359172
+        ],
+        "y": [
+          -1.5,
+          1.5
+        ],
+        "curves": [
+          {
+            "f": "sin(x)",
+            "color": "blue",
+            "domain": [
+              -6.283185307179586,
+              12.566370614359172
+            ]
+          },
+          {
+            "f": "0.5",
+            "color": "gold",
+            "domain": [
+              -6.283185307179586,
+              12.566370614359172
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "formula": "sin(x)cos(x)=0",
+      "text": "Factoring a trigonometric equation can reveal several solution families. This product vanishes when sine is zero or cosine is zero. Dividing by one factor without checking when it vanishes would erase an entire family of valid solutions.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          6.283185307179586
+        ],
+        "y": [
+          -0.7,
+          0.7
+        ],
+        "curves": [
+          {
+            "f": "sin(x)*cos(x)",
+            "color": "pink",
+            "domain": [
+              0,
+              6.283185307179586
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            1.5707963267948966,
+            0
+          ],
+          [
+            3.141592653589793,
+            0
+          ],
+          [
+            4.71238898038469,
+            0
+          ],
+          [
+            6.283185307179586,
+            0
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Solve cos x=0 for 0≤x<2π.",
+      "answer": "x=π/2 or3π/2.",
+      "id": "trigonometry.trig-equations.video-practice-1"
+    },
+    {
+      "prompt": "Solve sin x=−√3/2 for 0≤x<2π, explaining the quadrants.",
+      "answer": "x=4π/3 or5π/3, in quadrants III and IV.",
+      "id": "trigonometry.trig-equations.video-practice-2"
+    },
+    {
+      "prompt": "Solve sin x(2cos x−1)=0 for 0≤x<2π without losing any factors.",
+      "answer": "sin x=0 gives0,π; cos x=1/2 givesπ/3,5π/3. The four solutions are0,π/3,π,5π/3.",
+      "id": "trigonometry.trig-equations.video-practice-3"
+    }
+  ],
+  "takeaway": "Respect the requested interval, include periodic families, and do not divide away zero factors.",
+  "scope": "Multiple angles per output, interval solutions, periodic families, and factor preservation.",
+  "course": "Trigonometry",
+  "course_id": "trigonometry",
+  "title": "Trigonometric equations",
+  "objective": "Find all solutions in a specified interval or describe the full periodic family.",
+  "index": 7,
+  "total": 7,
+  "prerequisites": [
+    "trigonometry.identities",
+    "trigonometry.trig-graphs"
+  ]
+}

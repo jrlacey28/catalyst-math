@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4A-03",
+  "batches": [
+    [
+      {
+        "id": "4A-03-P1",
+        "prompt": "If triangle ABC is \u2245 to triangle DEF, which side matches AC?"
+      },
+      {
+        "id": "4A-03-P2",
+        "prompt": "Two triangles have corresponding sides 4, 6, 7. Which congruence criterion applies?"
+      },
+      {
+        "id": "4A-03-P3",
+        "prompt": "Two triangles have sides 5 and 8 with the included angle 40\u00b0 in each. Which criterion applies?"
+      }
+    ],
+    [
+      {
+        "id": "4A-03-P4",
+        "prompt": "Does AAA prove congruence? Explain."
+      },
+      {
+        "id": "4A-03-P5",
+        "prompt": "Two triangles have angles 50\u00b0 and 60\u00b0 and equal included sides. Which criterion applies?"
+      },
+      {
+        "id": "4A-03-P6",
+        "prompt": "A triangle is reflected across a line. Is the image congruent? Explain."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

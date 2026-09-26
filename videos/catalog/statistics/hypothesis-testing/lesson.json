@@ -1,0 +1,120 @@
+{
+  "id": "statistics.hypothesis-testing",
+  "beats": [
+    {
+      "formula": "H_0:p=frac(1,2), quad H_1:p>frac(1,2)",
+      "text": "A hypothesis test compares data with a specified null model. Suppose ten independent tosses produce nine heads, and the planned alternative is a head probability greater than one half. The null model is a fair coin, not an assertion that the data must look exactly balanced.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          9,
+          1
+        ],
+        "labels": [
+          "heads",
+          "tails"
+        ]
+      }
+    },
+    {
+      "formula": "P(X>=9|H_0)=frac(10+1,1024)",
+      "text": "Under the fair-coin model, all one thousand twenty-four ordered sequences are equally likely. Ten have exactly nine heads and one has ten heads. This one-sided p-value counts results at least as extreme in the direction of the planned alternative.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          1,
+          10,
+          45,
+          120,
+          210,
+          252,
+          210,
+          120,
+          45,
+          10,
+          1
+        ],
+        "labels": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10"
+        ]
+      }
+    },
+    {
+      "formula": "\"p-value\" approx 0.0107<0.05",
+      "text": "The p-value is about one percent, below a preselected five-percent significance threshold, so this test rejects the fair-coin null. The threshold is part of a procedure for controlling false positives under the model, not proof that a rejection is always correct.",
+      "visual": {
+        "kind": "numberline",
+        "range": [
+          0,
+          0.1
+        ],
+        "points": [
+          0.0107421875,
+          0.05
+        ],
+        "labels": [
+          "p-value",
+          "threshold"
+        ],
+        "interval": [
+          0,
+          0.05
+        ]
+      }
+    },
+    {
+      "formula": "\"p-value\" != P(H_0 \"is true\")",
+      "text": "A p-value is not the probability that the null hypothesis is true. It also does not measure practical importance. Report the observed effect and its uncertainty, and keep the test's assumptions and chosen alternative visible when interpreting the result.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0.5,
+          0.9
+        ],
+        "labels": [
+          "null p",
+          "observed"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "For six independent fair-coin tosses, all six are heads. For the planned one-sided alternative p>1/2, calculate the exact p-value.",
+      "answer": "At least six heads means exactly six, with probability (1/2)⁶=1/64≈0.015625 under the null.",
+      "id": "statistics.hypothesis-testing.video-practice-1"
+    },
+    {
+      "prompt": "A planned test gives p=0.08 with significance level 0.05. State the decision and explain why it does not prove the null hypothesis.",
+      "answer": "Do not reject at 0.05 because 0.08>0.05. Insufficient evidence against the null is not proof that the null is true; the test may lack sensitivity.",
+      "id": "statistics.hypothesis-testing.video-practice-2"
+    },
+    {
+      "prompt": "A very large study finds a tiny difference with a very small p-value. What additional information is needed before calling the difference important?",
+      "answer": "Consider the effect size, its uncertainty, practical context, data quality, and study design. Statistical significance alone does not establish a meaningful effect or a causal explanation.",
+      "id": "statistics.hypothesis-testing.video-practice-3"
+    }
+  ],
+  "takeaway": "A p-value measures extremeness under a specified null model, not the probability the null is true or the importance of an effect.",
+  "scope": "An exact one-sided binomial test and careful interpretation of significance.",
+  "course": "Statistics and inference",
+  "course_id": "statistics",
+  "title": "Hypothesis testing",
+  "objective": "State hypotheses and interpret test statistics, p-values, and error types.",
+  "index": 3,
+  "total": 6,
+  "prerequisites": [
+    "statistics.estimation",
+    "probability.distributions"
+  ]
+}

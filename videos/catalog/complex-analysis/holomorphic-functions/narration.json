@@ -1,0 +1,116 @@
+[
+  {
+    "formula": "(1+i)^2=2i",
+    "text": "A complex input has two real directions. Squaring one plus i gives two i because the real terms cancel and the cross terms add. Complex differentiability asks for one limiting multiplier that works for changes approaching from every direction.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "frac((z+h)^2-z^2,h)=2z+h arrow.r 2z",
+    "text": "For a nonzero complex change h, expand the numerator and cancel its factor h. The quotient becomes two z plus h. Its limit is two z regardless of the direction of approach, so squaring is complex differentiable everywhere.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          0.5,
+          0
+        ],
+        [
+          0,
+          0.5
+        ]
+      ],
+      "matrix": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "frac(overline(h),h)=1 \" or \" -1",
+    "text": "Complex conjugation looks smooth as a real reflection, but fails this stronger derivative test. Along real changes, the quotient is one. Along purely imaginary changes, it is negative one. Different directional limits rule out a complex derivative.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "matrix": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "u_x=v_y, quad u_y=-v_x",
+    "text": "Writing the function as u plus i v produces the Cauchy Riemann equations. Continuous first partial derivatives satisfying these equations throughout an open region are sufficient for holomorphicity there. Checking equations at an isolated point without regularity is not enough.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "matrix": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

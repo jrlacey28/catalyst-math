@@ -1,0 +1,7 @@
+A scalar surface integral adds density over a curved or tilted sheet. Each contribution is density times a small piece of actual surface area. On a flat unit square with density two, four quarter-square pieces together have mass two.
+
+Tilting the sheet changes area relative to its horizontal shadow. For z equals x plus y, the two tangent directions give an area scale of square root of three. This factor converts a small projected rectangle into its true surface area.
+
+Restrict the tilted plane to the patch projecting onto the unit square. With constant density two, its mass is two times square root of three. Forgetting the surface-area factor would incorrectly treat the tilted sheet as flat.
+
+Flux is different: it weights area by the vector field's normal component. For the upward field zero, zero, two, the upward unit normal gives component two over square root of three. The flux is two, and reversing orientation changes its sign.

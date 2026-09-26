@@ -1,0 +1,38 @@
+[
+  {
+    "title": "phase_0",
+    "text": "A data set can be summarized in more than one useful way. These five values are one, two, two, three, and seven. Before choosing a summary, look at the shape of the data and the question you want to answer.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 0,
+    "duration": 17.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "phase_1",
+    "text": "The mean is a fair share: add the values and divide by how many there are. Redistribute the fifteen units evenly among five positions. Each gets three, so the mean is three.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 17.0,
+    "duration": 17.0,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "phase_2",
+    "text": "The median is the middle value after sorting. Here it is two. For an even number of values, average the two middle values. The mode is a most frequent value; here, two appears most often.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 34.0,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "phase_3",
+    "text": "Move the seven far to the right. The mean moves because it uses every value. The median remains two because the middle position stays the same. For skewed incomes or large outliers, the median often describes a typical value more usefully.",
+    "min_duration": 17,
+    "tail": 1.0,
+    "start": 51.0,
+    "duration": 17.4,
+    "audio": "audio_parts/04.wav"
+  }
+]

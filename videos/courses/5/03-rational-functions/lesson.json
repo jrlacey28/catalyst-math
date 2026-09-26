@@ -1,0 +1,17 @@
+{
+  "id": "5-03",
+  "unit": "5",
+  "course": "Algebra II",
+  "index": 3,
+  "total": 9,
+  "slug": "rational-functions",
+  "title": "Rational functions, holes, and asymptotes",
+  "objective": "Simplify with restrictions, distinguish holes from poles, and check solutions.",
+  "prerequisites": "Factoring, fractions, equations, function inputs.",
+  "formulas": [
+    "f(x)=(x^2-1)/(x-1) quad x != 1",
+    "f(x)=x+1 quad x != 1",
+    "g(x)=2/(x-2)",
+    "x/(x-1)=2 => x=2"
+  ]
+}

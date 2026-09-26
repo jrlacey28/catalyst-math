@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.643
+A function gives exactly one output for each allowed input
+
+00:00:04.643 --> 00:00:10.584
+Squaring is a function even though two different inputs can produce the same output
+
+00:00:10.584 --> 00:00:16.100
+Negative two and positive two both give four, without violating the one-output requirement.
+
+00:00:17.400 --> 00:00:22.653
+The domain lists allowed inputs, while the range lists outputs actually reached
+
+00:00:22.653 --> 00:00:29.218
+For the real squaring function, every real input is allowed, but no negative output occurs
+
+00:00:29.218 --> 00:00:34.033
+Reading the horizontal and vertical coverage keeps these two ideas distinct.
+
+00:00:35.333 --> 00:00:38.174
+A formula can restrict its own domain
+
+00:00:38.174 --> 00:00:42.638
+The reciprocal rule excludes input two because its denominator would vanish
+
+00:00:42.638 --> 00:00:51.567
+The two branches belong to one function, but there is no output at the excluded input, regardless of the visible graph window.
+
+00:00:52.867 --> 00:00:56.989
+Not every relation defines y as a function of x
+
+00:00:56.989 --> 00:01:02.761
+In this sideways parabola, input four is paired with both two and negative two
+
+00:01:02.761 --> 00:01:08.533
+A vertical line meets the relation twice, exposing the failure of the one-output condition.

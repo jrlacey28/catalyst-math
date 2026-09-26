@@ -1,0 +1,611 @@
+{
+  "version": 1,
+  "fields": [
+    {
+      "id": "physics",
+      "title": "Physics",
+      "subtitle": "Push a cart. Connect motion, rates and energy.",
+      "href": "#applications/physics",
+      "kind": "model",
+      "controls": {
+        "time": {
+          "label": "Elapsed time",
+          "min": 0,
+          "max": 8,
+          "step": 0.1,
+          "default": 4,
+          "unit": "s"
+        },
+        "speed": {
+          "label": "Starting speed",
+          "min": 0,
+          "max": 12,
+          "step": 0.5,
+          "default": 3,
+          "unit": "m/s"
+        },
+        "acceleration": {
+          "label": "Acceleration",
+          "min": 0,
+          "max": 4,
+          "step": 0.1,
+          "default": 1,
+          "unit": "m/s²"
+        },
+        "mass": {
+          "label": "Cart mass",
+          "min": 0.5,
+          "max": 10,
+          "step": 0.5,
+          "default": 2,
+          "unit": "kg"
+        }
+      },
+      "assumptions": [
+        "A point mass travels on a straight horizontal track with constant acceleration. Position starts at zero; speed and acceleration are nonnegative.",
+        "The first stage deliberately sets acceleration to zero. Later stages restore the chosen acceleration. Energy is translational kinetic energy; friction and rotation are omitted."
+      ],
+      "stages": [
+        {
+          "id": "distance",
+          "title": "Distance",
+          "headline": "How far does the cart go?",
+          "action": "Move time. Each extra second adds the same distance.",
+          "control": "time",
+          "topic_ids": [
+            "arithmetic.ratios",
+            "pre-algebra.basic-functions"
+          ],
+          "formula": "x = v₀t",
+          "why": "At constant speed, distance is the size of each one-second step multiplied by the number of steps. The graph slope has units m/s.",
+          "question": "Explain why doubling time doubles distance in this stage.",
+          "source_ids": [
+            "motion"
+          ]
+        },
+        {
+          "id": "velocity",
+          "title": "Velocity",
+          "headline": "Make the cart speed up.",
+          "action": "Raise acceleration. Watch the velocity graph tilt.",
+          "control": "acceleration",
+          "topic_ids": [
+            "algebra-1.slope",
+            "calculus-1.derivatives"
+          ],
+          "formula": "v(t) = v₀ + at; x(t) = v₀t + ½at²",
+          "why": "Acceleration adds the same amount to velocity each second. Differentiating position gives velocity; differentiating velocity gives acceleration.",
+          "question": "Why does position become quadratic even though velocity is a straight line?",
+          "source_ids": [
+            "motion"
+          ]
+        },
+        {
+          "id": "energy",
+          "title": "Energy",
+          "headline": "Speed has a squared cost.",
+          "action": "Change the starting speed. Compare the final speed and energy.",
+          "control": "speed",
+          "topic_ids": [
+            "arithmetic.exponents",
+            "algebra-1.quadratics"
+          ],
+          "formula": "K = ½mv², with v = v₀ + at",
+          "why": "Kinetic energy uses the final speed, not just the starting speed. Doubling final speed multiplies energy by four when mass stays fixed.",
+          "question": "Why does doubling the starting speed not necessarily quadruple the final energy when the same push continues?",
+          "source_ids": [
+            "kinetic"
+          ]
+        },
+        {
+          "id": "accumulation",
+          "title": "Area → distance",
+          "headline": "Read distance from velocity.",
+          "action": "Move time. The shaded area is the distance traveled.",
+          "control": "time",
+          "topic_ids": [
+            "geometry.area",
+            "calculus-2.integrals",
+            "calculus-2.fundamental-theorem"
+          ],
+          "formula": "x(t) = ∫₀ᵗ(v₀ + aτ)dτ = v₀t + ½at²",
+          "why": "The rectangle contributes v₀t and the triangle contributes ½at². Both multiply m/s by s, giving meters.",
+          "question": "Show how the rectangle and triangle together recover the position formula.",
+          "source_ids": [
+            "motion"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mechanical",
+      "title": "Mechanical engineering",
+      "subtitle": "Trade speed for torque. Store work in a spring.",
+      "href": "#applications/mechanical",
+      "kind": "model",
+      "controls": {
+        "drivenTeeth": {
+          "label": "Output gear teeth",
+          "min": 12,
+          "max": 60,
+          "step": 6,
+          "default": 36,
+          "unit": "teeth"
+        },
+        "inputSpeed": {
+          "label": "Input speed",
+          "min": 30,
+          "max": 240,
+          "step": 10,
+          "default": 120,
+          "unit": "rpm"
+        },
+        "inputTorque": {
+          "label": "Input torque",
+          "min": 0.5,
+          "max": 8,
+          "step": 0.5,
+          "default": 2,
+          "unit": "N·m"
+        },
+        "compression": {
+          "label": "Spring compression",
+          "min": 0,
+          "max": 0.3,
+          "step": 0.01,
+          "default": 0.12,
+          "unit": "m"
+        }
+      },
+      "assumptions": [
+        "The input gear has 12 teeth. Both gears share tooth size, do not slip, and have no losses. Reported speeds and torques are magnitudes; meshing external gears turn in opposite directions.",
+        "The spring is a separate ideal linear spring with stiffness 120 N/m. Compression stays within this assumed linear range; no real component rating is implied."
+      ],
+      "stages": [
+        {
+          "id": "gears",
+          "title": "Speed ratio",
+          "headline": "Make a slower, stronger gear pair.",
+          "action": "Add teeth to the output gear. Watch its speed fall.",
+          "control": "drivenTeeth",
+          "topic_ids": [
+            "arithmetic.ratios",
+            "arithmetic.proportions"
+          ],
+          "formula": "n_out = n_in · N_in / N_out",
+          "why": "The same number of teeth passes the contact each second. A gear with three times as many teeth needs three times as long for one revolution.",
+          "question": "If output speed halves, what changed about the gear ratio?",
+          "source_ids": [
+            "gears"
+          ]
+        },
+        {
+          "id": "torque",
+          "title": "Torque",
+          "headline": "Trade turning speed for turning force.",
+          "action": "Raise the input torque. Follow the output torque.",
+          "control": "inputTorque",
+          "topic_ids": [
+            "pre-algebra.one-step-equations",
+            "algebra-1.linear-equations"
+          ],
+          "formula": "T_out = T_in · N_out / N_in",
+          "why": "The same contact force acts at different pitch radii. A larger output radius produces more torque, while its angular speed is smaller.",
+          "question": "Why does extra output torque not mean the gear created extra power?",
+          "source_ids": [
+            "gears"
+          ]
+        },
+        {
+          "id": "power",
+          "title": "Power",
+          "headline": "Keep the energy accounting honest.",
+          "action": "Raise input rpm. Both power bars must stay equal.",
+          "control": "inputSpeed",
+          "topic_ids": [
+            "trigonometry.radians",
+            "precalculus.composite-functions"
+          ],
+          "formula": "P = Tω; ω = 2πn/60",
+          "why": "A revolution is 2π radians and a minute is 60 seconds. Converting rpm before multiplying by torque gives watts. Ideal input and output power agree.",
+          "question": "Explain why using rpm directly in P = Tω gives the wrong units and number.",
+          "source_ids": [
+            "gears"
+          ]
+        },
+        {
+          "id": "spring",
+          "title": "Spring work",
+          "headline": "Store energy by compressing a spring.",
+          "action": "Compress the spring. The shaded triangle is stored work.",
+          "control": "compression",
+          "topic_ids": [
+            "algebra-1.slope",
+            "calculus-2.integrals"
+          ],
+          "formula": "F = kx; W = ∫₀ˣks ds = ½kx²",
+          "why": "Force grows from zero to kx, so average force is half the final force. Work is the triangular area under the force graph.",
+          "question": "Why is the work ½kx² instead of kx²?",
+          "source_ids": [
+            "work"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electrical",
+      "title": "Electrical engineering",
+      "subtitle": "Control current. Charge a tiny energy store.",
+      "href": "#applications/electrical",
+      "kind": "model",
+      "controls": {
+        "voltage": {
+          "label": "Source voltage",
+          "min": 1,
+          "max": 12,
+          "step": 0.5,
+          "default": 6,
+          "unit": "V"
+        },
+        "resistance": {
+          "label": "Resistance",
+          "min": 100,
+          "max": 2000,
+          "step": 100,
+          "default": 1000,
+          "unit": "Ω"
+        },
+        "capacitance": {
+          "label": "Capacitance",
+          "min": 100,
+          "max": 2200,
+          "step": 100,
+          "default": 1000,
+          "unit": "µF"
+        },
+        "time": {
+          "label": "Charging time",
+          "min": 0,
+          "max": 10,
+          "step": 0.1,
+          "default": 1,
+          "unit": "s"
+        }
+      },
+      "assumptions": [
+        "An ideal DC source and constant resistor are used; temperature effects, wire resistance and component limits are omitted.",
+        "The RC stage starts with an uncharged ideal capacitor. Capacitance is entered in microfarads and converted to farads; resistance times capacitance is measured in seconds."
+      ],
+      "stages": [
+        {
+          "id": "current",
+          "title": "Current",
+          "headline": "Give charge a push.",
+          "action": "Raise voltage. Watch current grow through the resistor.",
+          "control": "voltage",
+          "topic_ids": [
+            "arithmetic.ratios",
+            "algebra-1.linear-equations"
+          ],
+          "formula": "I = V/R",
+          "why": "At fixed resistance, current is proportional to voltage. The readout converts amperes to milliamperes by multiplying by 1000.",
+          "question": "If voltage doubles while resistance stays fixed, what happens to current?",
+          "source_ids": [
+            "ohm"
+          ]
+        },
+        {
+          "id": "power",
+          "title": "Heating",
+          "headline": "Resistance changes the energy flow.",
+          "action": "Increase resistance while keeping source voltage fixed.",
+          "control": "resistance",
+          "topic_ids": [
+            "algebra-2.rational-functions",
+            "arithmetic.exponents"
+          ],
+          "formula": "P = VI = V²/R",
+          "why": "At fixed voltage, raising resistance reduces current and power. The statement would differ if a current source held current fixed.",
+          "question": "Why must you say what is held fixed before comparing resistor heating?",
+          "source_ids": [
+            "electric-power"
+          ]
+        },
+        {
+          "id": "charging",
+          "title": "Charging",
+          "headline": "A capacitor fills gradually.",
+          "action": "Move time. Compare capacitor voltage with the source.",
+          "control": "time",
+          "topic_ids": [
+            "algebra-2.exponentials",
+            "calculus-1.derivatives",
+            "differential-equations.odes"
+          ],
+          "formula": "V_C(t) = V(1 − e^(−t/RC))",
+          "why": "As the capacitor voltage grows, less voltage remains across the resistor, so charging slows. At one time constant RC, the capacitor reaches about 63.2% of source voltage.",
+          "question": "Why does this graph approach the source voltage instead of rising in a straight line forever?",
+          "source_ids": [
+            "rc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture & civil engineering",
+      "subtitle": "Span a gap. Balance loads. Explore stiffness.",
+      "href": "#applications/architecture",
+      "kind": "model",
+      "controls": {
+        "span": {
+          "label": "Beam span",
+          "min": 4,
+          "max": 8,
+          "step": 0.25,
+          "default": 4,
+          "unit": "m"
+        },
+        "load": {
+          "label": "Central load",
+          "min": 1,
+          "max": 10,
+          "step": 0.5,
+          "default": 5,
+          "unit": "kN"
+        },
+        "depth": {
+          "label": "Beam depth",
+          "min": 0.2,
+          "max": 0.4,
+          "step": 0.025,
+          "default": 0.3,
+          "unit": "m"
+        },
+        "width": {
+          "label": "Beam width",
+          "min": 0.2,
+          "max": 0.4,
+          "step": 0.025,
+          "default": 0.2,
+          "unit": "m"
+        }
+      },
+      "assumptions": [
+        "A uniform rectangular beam is simply supported at both ends and loaded at its center. The illustrative elastic modulus is fixed at 11 GPa.",
+        "The bending model assumes small deflection, linear elasticity and negligible shear deformation. Beam self-weight and capacity checks are omitted. Deflection is visually exaggerated and is not a structural design or safety assessment."
+      ],
+      "stages": [
+        {
+          "id": "volume",
+          "title": "Materials",
+          "headline": "How much material spans the gap?",
+          "action": "Lengthen the beam. Track its material volume.",
+          "control": "span",
+          "topic_ids": [
+            "geometry.volume",
+            "arithmetic.proportions"
+          ],
+          "formula": "Volume = width × depth × span",
+          "why": "The cross-sectional area is fixed in this stage. Each extra meter adds one more identical slice of material.",
+          "question": "Which dimensions must stay fixed for volume to be proportional to span?",
+          "source_ids": [
+            "beam"
+          ]
+        },
+        {
+          "id": "balance",
+          "title": "Balance",
+          "headline": "Share the load between supports.",
+          "action": "Increase the central load. Watch both reactions grow.",
+          "control": "load",
+          "topic_ids": [
+            "pre-algebra.one-step-equations",
+            "algebra-1.systems"
+          ],
+          "formula": "R_left + R_right = F; R_left = R_right = F/2",
+          "why": "Vertical force balance gives the sum. Symmetry, or a moment equation about one end, gives equal shares for a central load.",
+          "question": "Why would moving the load away from the center destroy the equal split?",
+          "source_ids": [
+            "beam"
+          ]
+        },
+        {
+          "id": "stiffness",
+          "title": "Stiffness",
+          "headline": "Depth is more powerful than it looks.",
+          "action": "Increase beam depth. Watch the predicted bend shrink.",
+          "control": "depth",
+          "topic_ids": [
+            "arithmetic.exponents",
+            "algebra-2.rational-functions",
+            "calculus-1.derivatives"
+          ],
+          "formula": "I = bh³/12; δ = FL³/(48EI)",
+          "why": "Depth appears cubed in the second moment of area. With load, width and span fixed, doubling depth divides this model’s deflection by eight.",
+          "question": "Compare doubling depth with doubling width: why do their effects differ?",
+          "source_ids": [
+            "beam"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "title": "Finance",
+      "subtitle": "Grow a savings plan. Separate dollars from buying power.",
+      "href": "#applications/finance",
+      "kind": "model",
+      "controls": {
+        "years": {
+          "label": "Years",
+          "min": 1,
+          "max": 30,
+          "step": 1,
+          "default": 10,
+          "unit": "years"
+        },
+        "rate": {
+          "label": "Illustrative annual rate",
+          "min": 0,
+          "max": 10,
+          "step": 0.25,
+          "default": 5,
+          "unit": "%"
+        },
+        "contribution": {
+          "label": "Year-end contribution",
+          "min": 0,
+          "max": 1000,
+          "step": 25,
+          "default": 200,
+          "unit": "$"
+        },
+        "inflation": {
+          "label": "Annual inflation",
+          "min": 0,
+          "max": 6,
+          "step": 0.25,
+          "default": 2,
+          "unit": "%"
+        }
+      },
+      "assumptions": [
+        "The initial balance is $1000. Interest compounds once per year at a constant hypothetical rate; contributions arrive at each year’s end.",
+        "Taxes, fees and changing returns are omitted. Purchasing power divides the future balance by a constant price-growth factor; this is an arithmetic scenario, not a forecast or recommendation."
+      ],
+      "stages": [
+        {
+          "id": "time",
+          "title": "Time",
+          "headline": "Give growth more years.",
+          "action": "Extend the timeline. Compare growth with the money added.",
+          "control": "years",
+          "topic_ids": [
+            "arithmetic.percentages",
+            "algebra-1.exponential-functions"
+          ],
+          "formula": "Bₙ = (1+r)Bₙ₋₁ + C; B₀ = 1000",
+          "why": "Each year, interest applies to the existing balance before that year’s contribution is added. The lower reference line shows only the money put in.",
+          "question": "Why does the balance curve bend while the contribution-only line stays straight?",
+          "source_ids": [
+            "compound"
+          ]
+        },
+        {
+          "id": "rate",
+          "title": "Rate",
+          "headline": "A percentage acts on a changing base.",
+          "action": "Change the annual rate. Watch repeated growth compound.",
+          "control": "rate",
+          "topic_ids": [
+            "algebra-2.exponentials",
+            "algebra-2.sequences"
+          ],
+          "formula": "No contributions: Bₙ = B₀(1+r)ⁿ",
+          "why": "Repeated multiplication acts on the whole previous balance. The plotted scenario also includes your chosen year-end contributions; the no-contribution formula isolates the growth mechanism.",
+          "question": "How is compounding different from adding the same interest amount every year?",
+          "source_ids": [
+            "compound"
+          ]
+        },
+        {
+          "id": "contributions",
+          "title": "Contributions",
+          "headline": "Build the plan one deposit at a time.",
+          "action": "Increase the yearly deposit. Earlier deposits have longer to grow.",
+          "control": "contribution",
+          "topic_ids": [
+            "algebra-2.series",
+            "precalculus.sequences-series"
+          ],
+          "formula": "Bₙ = B₀(1+r)ⁿ + C Σⱼ₌₀ⁿ⁻¹(1+r)ʲ",
+          "why": "The last deposit gets no interest yet; the first gets n−1 years. At a zero rate, the geometric sum becomes n, so the balance is simply B₀+nC.",
+          "question": "Explain why the deposit sum ends at exponent n−1, not n.",
+          "source_ids": [
+            "compound"
+          ]
+        },
+        {
+          "id": "buying-power",
+          "title": "Buying power",
+          "headline": "The same dollars may buy less.",
+          "action": "Raise inflation. Compare future dollars with today’s buying power.",
+          "control": "inflation",
+          "topic_ids": [
+            "arithmetic.percentages",
+            "precalculus.composite-functions"
+          ],
+          "formula": "Today’s dollars = Bₙ/(1+i)ⁿ",
+          "why": "The future balance and the price level both grow. Dividing by the price multiplier converts the entire future balance into current purchasing units.",
+          "question": "Why is subtracting i dollars from the balance not an inflation adjustment?",
+          "source_ids": [
+            "purchasing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ai-ml",
+      "title": "AI & machine learning",
+      "subtitle": "Train a tiny model. Follow the mathematics inside.",
+      "href": "#ai-math",
+      "kind": "link",
+      "controls": {},
+      "stages": [],
+      "assumptions": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "motion",
+      "title": "OpenStax: motion with constant acceleration",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/3-4-motion-with-constant-acceleration"
+    },
+    {
+      "id": "kinetic",
+      "title": "OpenStax: kinetic energy",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/7-2-kinetic-energy"
+    },
+    {
+      "id": "work",
+      "title": "OpenStax: work and a spring force",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/7-1-work"
+    },
+    {
+      "id": "gears",
+      "title": "MIT: gear transmission ratios and power",
+      "url": "https://ocw.mit.edu/courses/2-72-elements-of-mechanical-design-spring-2009/83d81a6f63d1c6f0fb775c08b207bc51_MIT2_72s09_lec12.pdf"
+    },
+    {
+      "id": "ohm",
+      "title": "OpenStax: Ohm’s law",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-4-ohms-law"
+    },
+    {
+      "id": "rc",
+      "title": "OpenStax: RC circuits",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-5-rc-circuits"
+    },
+    {
+      "id": "beam",
+      "title": "MIT: three-point beam bending",
+      "url": "https://ocw.mit.edu/courses/3-054-cellular-solids-structure-properties-and-applications-spring-2015/f6e2d069cbeff55c12152c92f92a5853_4zpQwirFsbk.pdf"
+    },
+    {
+      "id": "compound",
+      "title": "Investor.gov: compound interest calculator",
+      "url": "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator"
+    },
+    {
+      "id": "purchasing",
+      "title": "Investor.gov: purchasing power",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/glossary/purchasing-power"
+    },
+    {
+      "id": "electric-power",
+      "title": "OpenStax: electrical energy and power",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-5-electrical-energy-and-power"
+    }
+  ]
+}

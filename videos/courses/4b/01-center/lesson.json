@@ -1,0 +1,17 @@
+{
+  "id": "4B-01",
+  "unit": "4b",
+  "course": "Statistics Basics",
+  "index": 1,
+  "total": 6,
+  "slug": "center",
+  "title": "Mean, median, and mode",
+  "objective": "Choose and calculate measures of center; explain outlier sensitivity.",
+  "prerequisites": "Addition, division, and ordering numbers.",
+  "formulas": [
+    "1,2,2,3,7",
+    "overline(x)=15/5=3",
+    "\"median\"=2 quad \"mode\"=2",
+    "\"mean: values\" quad \"median: order\""
+  ]
+}

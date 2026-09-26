@@ -1,0 +1,34 @@
+{
+  "lesson_id": "5-03",
+  "batches": [
+    [
+      {
+        "id": "5-03-P1",
+        "prompt": "State the domain restriction for 5/(x+4)."
+      },
+      {
+        "id": "5-03-P2",
+        "prompt": "Simplify (x\u00b2-9)/(x-3), keeping the restriction."
+      },
+      {
+        "id": "5-03-P3",
+        "prompt": "Locate the hole of (x\u00b2-9)/(x-3)."
+      }
+    ],
+    [
+      {
+        "id": "5-03-P4",
+        "prompt": "Give the vertical and horizontal asymptotes of 1/(x+2)."
+      },
+      {
+        "id": "5-03-P5",
+        "prompt": "Solve 3/(x-1)=1 and check the domain."
+      },
+      {
+        "id": "5-03-P6",
+        "prompt": "Why is a canceled denominator value still excluded?"
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

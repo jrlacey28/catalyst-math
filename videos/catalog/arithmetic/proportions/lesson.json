@@ -1,0 +1,167 @@
+{
+  "id": "arithmetic.proportions",
+  "beats": [
+    {
+      "formula": "frac(3,2)=frac(9,6)",
+      "text": "A proportion states that two ratios are equal. Three dollars for two notebooks and nine dollars for six notebooks describe the same price per notebook. Both the number of notebooks and the cost have tripled.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          8
+        ],
+        "y": [
+          0,
+          12
+        ],
+        "curves": [
+          {
+            "f": "1.5*x",
+            "color": "blue",
+            "domain": [
+              0,
+              8
+            ]
+          }
+        ],
+        "points": [
+          [
+            2,
+            3
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "labels": [
+          "2,3",
+          "6,9"
+        ]
+      }
+    },
+    {
+      "formula": "frac(3,2)=frac(c,10)",
+      "text": "To price ten notebooks at the same rate, multiply the original two-notebook purchase by five. The cost also multiplies by five, giving fifteen dollars. This scaling method explains the proportion before any cross multiplication is introduced.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          2,
+          10,
+          3,
+          15
+        ],
+        "labels": [
+          "books",
+          "books",
+          "cost",
+          "cost"
+        ]
+      }
+    },
+    {
+      "formula": "2c=30 arrow.r c=15",
+      "text": "Cross multiplication is shorthand for clearing two nonzero denominators. Multiplying both sides by twenty converts the original fractions into an equivalent equation. Solving that equation gives the same fifteen dollars as our scaling argument.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          12
+        ],
+        "y": [
+          0,
+          20
+        ],
+        "curves": [
+          {
+            "f": "1.5*x",
+            "color": "blue",
+            "domain": [
+              0,
+              12
+            ]
+          }
+        ],
+        "points": [
+          [
+            10,
+            15
+          ]
+        ],
+        "labels": [
+          "10,15"
+        ]
+      }
+    },
+    {
+      "formula": "c=1.5n+4",
+      "text": "A fixed fee breaks this proportional model. Adding a four-dollar service charge produces a line that does not pass through the origin, and the total cost per notebook is no longer constant. Check the situation before assuming proportionality.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          0,
+          10
+        ],
+        "y": [
+          0,
+          20
+        ],
+        "curves": [
+          {
+            "f": "1.5*x",
+            "color": "blue",
+            "domain": [
+              0,
+              10
+            ]
+          },
+          {
+            "f": "1.5*x+4",
+            "color": "gold",
+            "domain": [
+              0,
+              10
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            4
+          ]
+        ],
+        "labels": [
+          "fee"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Five meters of fabric cost twenty dollars. At the same rate, what do eight meters cost?",
+      "answer": "The unit rate is four dollars per meter, so eight meters cost thirty two dollars.",
+      "id": "arithmetic.proportions.video-practice-1"
+    },
+    {
+      "prompt": "Solve 7/3=x/12 and justify the scaling.",
+      "answer": "The denominator multiplies by four, so x=28.",
+      "id": "arithmetic.proportions.video-practice-2"
+    },
+    {
+      "prompt": "A taxi charges three dollars plus two dollars per mile. Is total cost proportional to distance? Explain.",
+      "answer": "No. The fixed charge means zero miles still costs three dollars and cost per mile is not constant.",
+      "id": "arithmetic.proportions.video-practice-3"
+    }
+  ],
+  "takeaway": "Proportional relationships have a constant ratio and scale together.",
+  "scope": "Scaling, denominator clearing, and recognizing nonproportional fees.",
+  "course": "Arithmetic",
+  "course_id": "arithmetic",
+  "title": "Proportions",
+  "objective": "Use equivalent ratios and units to solve scaling problems.",
+  "index": 5,
+  "total": 8,
+  "prerequisites": [
+    "arithmetic.ratios"
+  ]
+}

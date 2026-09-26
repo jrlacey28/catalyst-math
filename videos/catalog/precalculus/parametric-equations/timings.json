@@ -1,0 +1,138 @@
+[
+  {
+    "formula": "x=t quad y=t^2",
+    "text": "Parametric equations give both coordinates in terms of a shared parameter. Let the horizontal coordinate equal t and the vertical coordinate equal t squared. As t varies, these paired outputs trace the familiar parabola while retaining an order of travel.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -1,
+        9
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          -2,
+          4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "sweep": true,
+      "equal": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 18.566666666666666,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "t=-2,0,2 arrow.r (-2,4),(0,0),(2,4)",
+    "text": "Evaluate both rules at the same parameter value. Negative two gives negative two, four; zero gives the origin; and positive two gives two, four. Mixing coordinates from different parameter values would create a point that the motion never actually visits at that time.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        3
+      ],
+      "y": [
+        -1,
+        9
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          -2,
+          4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "labels": [
+        "t=-2",
+        "t=0",
+        "t=2"
+      ],
+      "equal": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 18.566666666666666,
+    "duration": 19.333333333333332,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "x=cos(t) quad y=sin(t)",
+    "text": "A different pair of rules traces a circle. Cosine and sine automatically satisfy x squared plus y squared equals one. As the parameter increases from zero to two pi, the point travels counterclockwise through one complete turn.",
+    "visual": {
+      "kind": "circle",
+      "angle": 2.356194490192345,
+      "radius": 2.4,
+      "triangle": true,
+      "arc": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 37.9,
+    "duration": 17.0,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "x=cos(2t) quad y=sin(2t)",
+    "text": "Doubling the parameter inside both functions traces the same geometric circle twice as quickly. Eliminating the parameter reveals the circle equation but loses this timing information. A curve can therefore have many parametrizations with different directions, speeds, or numbers of traversals.",
+    "visual": {
+      "kind": "circle",
+      "angle": 4.71238898038469,
+      "radius": 2.4,
+      "triangle": true,
+      "arc": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 54.9,
+    "duration": 20.9,
+    "audio": "audio_parts/04.wav"
+  }
+]

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.487
+A Markov chain models changes between states
+
+00:00:03.487 --> 00:00:09.221
+The next-state distribution depends on the present state, conditional on the observed past
+
+00:00:09.221 --> 00:00:17.600
+Suppose sunny weather stays sunny with probability point eight, while rainy weather changes to sunny with probability point four.
+
+00:00:18.900 --> 00:00:27.307
+Starting sunny, sunshine two steps later can arise by two disjoint paths: sunny then sunny, or rainy then sunny
+
+00:00:27.307 --> 00:00:32.175
+Multiply conditional probabilities along each path and add across the alternatives
+
+00:00:32.175 --> 00:00:36.600
+That gives point seven two, not simply point eight squared.
+
+00:00:37.900 --> 00:00:41.059
+A stationary distribution is unchanged by a transition
+
+00:00:41.059 --> 00:00:49.746
+If its sunny probability is p, then the next sunny probability is point eight p plus point four times one minus p
+
+00:00:49.746 --> 00:00:53.300
+Solving gives two thirds sunny and one third rainy.
+
+00:00:54.600 --> 00:01:01.215
+Stationary does not mean the weather stops changing; it means the distribution remains unchanged
+
+00:01:01.215 --> 00:01:08.303
+This finite chain has positive transition probabilities, so it converges to its unique stationary distribution
+
+00:01:08.303 --> 00:01:13.500
+Other chains can be periodic or disconnected, and need separate analysis.

@@ -1,0 +1,79 @@
+{
+  "id": "discrete-math.proofs",
+  "beats": [
+    {
+      "formula": "\"even\"+\"even\"=\"even\"",
+      "text": "A proof explains why a claim holds for every object meeting its assumptions. Four plus six equals ten is evidence for the even-plus-even claim, but testing examples can never cover all integers. We need a general reason.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          4,
+          6
+        ],
+        "labels": [
+          "even",
+          "even"
+        ]
+      }
+    },
+    {
+      "formula": "2a+2b=2(a+b)",
+      "text": "Represent arbitrary even integers as two a and two b, where a and b are integers. Their sum factors as two times the integer a plus b. That matches the definition of even and completes a direct proof.",
+      "visual": {
+        "kind": "grid",
+        "rows": 2,
+        "cols": 5,
+        "filled": 10
+      }
+    },
+    {
+      "formula": "1=frac(1(1+1),2)",
+      "text": "Mathematical induction uses a different structure: a starting case and a step that passes truth forward. For the sum of the first n positive integers, the claimed formula works at n equal to one, establishing the base case.",
+      "visual": {
+        "kind": "grid",
+        "rows": 1,
+        "cols": 2,
+        "filled": 1
+      }
+    },
+    {
+      "formula": "frac(n(n+1),2)+(n+1)=frac((n+1)(n+2),2)",
+      "text": "Assume the formula holds for a particular positive integer n, then add the next term. Factoring n plus one produces exactly the formula for n plus one. Combined with the base case, this implication establishes every positive integer case.",
+      "visual": {
+        "kind": "grid",
+        "rows": 4,
+        "cols": 5,
+        "filled": 10
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Prove that the sum of two odd integers is even, using arbitrary integer variables.",
+      "answer": "Write the odd integers as 2a+1 and 2b+1. Their sum is 2(a+b+1), which is even because a+b+1 is an integer.",
+      "id": "discrete-math.proofs.video-practice-1"
+    },
+    {
+      "prompt": "Disprove the claim 'Every prime number is odd.' Explain why one example is sufficient here but not sufficient to prove a universal claim.",
+      "answer": "2 is prime and even, so it contradicts the universal claim. A universal claim fails if even one allowed object violates it; finitely many positive examples do not establish all cases.",
+      "id": "discrete-math.proofs.video-practice-2"
+    },
+    {
+      "prompt": "Prove 1+3+…+(2n−1)=n² by induction. State both the base case and the induction step.",
+      "answer": "At n=1, 1=1². If the sum through 2n−1 is n², adding the next odd number 2n+1 gives n²+2n+1=(n+1)². Thus the claim holds for all positive integers.",
+      "id": "discrete-math.proofs.video-practice-3"
+    }
+  ],
+  "takeaway": "A proof uses general reasoning under stated assumptions; induction needs both a base case and a valid forward step.",
+  "scope": "A direct parity proof, counterexamples, and one induction argument.",
+  "course": "Discrete mathematics",
+  "course_id": "discrete-math",
+  "title": "Proofs",
+  "objective": "Build direct, contrapositive, contradiction, and induction arguments.",
+  "index": 3,
+  "total": 6,
+  "prerequisites": [
+    "discrete-math.logic",
+    "discrete-math.sets"
+  ]
+}

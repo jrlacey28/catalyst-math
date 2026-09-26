@@ -1,0 +1,100 @@
+[
+  {
+    "formula": "\"divisible by 4\" arrow.r \"even\"",
+    "text": "An implication says that whenever its premise is true, its conclusion must also be true. For integers, being divisible by four implies being even. The arrow is a logical guarantee, not a claim that the two properties are identical.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "divisible by 4",
+        "even"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "weights": [
+        "implies"
+      ],
+      "directed": true,
+      "active": [
+        0,
+        1
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "n=4k=2(2k)",
+    "text": "The algebra explains the guarantee for every integer k. A multiple of four can be written as two times the integer two k, which is the definition of even. The example eight illustrates this reasoning but does not replace the general argument.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        4,
+        4
+      ],
+      "labels": [
+        "4",
+        "4"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "6 \"is even but not divisible by 4\"",
+    "text": "Reversing an implication produces its converse, which may fail. Six is even, yet not divisible by four. One counterexample is enough to disprove the converse because the proposed rule claimed to work for every integer.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        2,
+        2,
+        2
+      ],
+      "labels": [
+        "pair",
+        "pair",
+        "pair"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "\"not even\" arrow.r \"not divisible by 4\"",
+    "text": "The contrapositive reverses the arrow and negates both properties. It is logically equivalent to the original implication. If an integer is not even, it cannot be divisible by four, because divisibility by four would force evenness.",
+    "visual": {
+      "kind": "network",
+      "nodes": [
+        "not even",
+        "not divisible by 4"
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "weights": [
+        "contrapositive"
+      ],
+      "directed": true,
+      "active": [
+        0,
+        1
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

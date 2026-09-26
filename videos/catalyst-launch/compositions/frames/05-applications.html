@@ -1,0 +1,199 @@
+<template>
+  <style>
+    #root {
+      position: relative;
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      container-type: size;
+      color: #243e34;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      font-weight: 400;
+    }
+    #launch-05-background {
+      position: absolute;
+      inset: 0;
+      background: #f6f7f0;
+    }
+    #launch-05-topbar {
+      position: absolute;
+      left: 5cqw;
+      top: 4.8cqh;
+      width: 90cqw;
+      height: 6.2cqh;
+      box-sizing: border-box;
+      border-bottom: 2px solid #315c47;
+    }
+    .launch-05-header-state {
+      position: absolute;
+      inset: 0;
+    }
+    .launch-05-field {
+      position: absolute;
+      left: 0;
+      top: 1.1cqh;
+      margin: 0;
+      font-family: Consolas, monospace;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #315c47;
+    }
+    #launch-05-counter {
+      position: absolute;
+      right: 0;
+      top: 1.1cqh;
+      margin: 0;
+      font-family: Consolas, monospace;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: .14em;
+      color: #315c47;
+    }
+    .launch-05-result {
+      position: absolute;
+      right: 5cqw;
+      top: -.35cqh;
+      margin: 0;
+      font-size: 2.9cqw;
+      font-weight: 500;
+      line-height: 1.05;
+      letter-spacing: -.01em;
+      white-space: nowrap;
+      color: #315c47;
+    }
+    .launch-05-result-label {
+      display: inline-block;
+      margin-right: .8cqw;
+      font-family: Consolas, monospace;
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .launch-05-ai-result {
+      font-size: 2.3cqw;
+      top: .15cqh;
+    }
+    #launch-05-screen {
+      position: absolute;
+      left: 11.45833333cqw;
+      top: 12.59259259cqh;
+      width: 77.08333333cqw;
+      height: 69.44444444cqh;
+      box-sizing: border-box;
+      overflow: hidden;
+      border: 2px solid #315c47;
+      border-radius: 6px;
+      background: #f6f7f0;
+    }
+    .launch-05-camera {
+      position: absolute;
+      inset: 0;
+    }
+    .launch-05-shot {
+      position: absolute;
+      display: block;
+      height: auto;
+      max-width: none;
+      pointer-events: none;
+    }
+    /* Exact crops of the supplied 1264px-wide full-page captures.
+       Orbit: source x=95, y=268, scale=2. No model element is redrawn. */
+    .launch-05-orbit-shot {
+      left: -9.89583333cqw;
+      top: -49.62962963cqh;
+      width: 131.66666667cqw;
+    }
+    /* Gears: source x=41, y=240, scale=1480/760. */
+    .launch-05-gears-shot {
+      left: -4.15844298cqw;
+      top: -43.27485380cqh;
+      width: 128.20175439cqw;
+    }
+    /* AI: source x=89, y=315, scale=1480/665. The later camera pan
+       moves this entire captured page, never the plotted point by itself. */
+    .launch-05-ai-shot {
+      left: -10.31641604cqw;
+      top: -64.91228070cqh;
+      width: 146.51629073cqw;
+    }
+  </style>
+
+  <div id="root" data-composition-id="launch-05" data-width="1920" data-height="1080">
+    <div id="launch-05-background" class="clip" data-start="0" data-duration="9.06666667" data-track-index="0"></div>
+
+    <header id="launch-05-topbar" class="clip" data-start="0" data-duration="9.06666667" data-track-index="1">
+      <div id="launch-05-orbit-header" class="clip launch-05-header-state" data-start="0" data-duration="2.58" data-track-index="2">
+        <h2 class="launch-05-field">Orbit</h2>
+        <p id="clip-05-applications-clip-1" class="clip launch-05-result" data-start="0" data-duration="1.6" data-track-index="3">1.7 km/s</p>
+        <p id="launch-05-orbit-result" class="clip launch-05-result" data-start="1.6" data-duration="0.98" data-track-index="3">1.7 → 2 km/s</p>
+      </div>
+      <div id="launch-05-gears-header" class="clip launch-05-header-state" data-start="2.58" data-duration="1.33" data-track-index="2">
+        <h2 class="launch-05-field">Gear ratio</h2>
+        <p id="clip-05-applications-clip-2" class="clip launch-05-result" data-start="2.58" data-duration="0.54" data-track-index="3">40 rpm</p>
+        <p id="launch-05-gears-result" class="clip launch-05-result" data-start="3.12" data-duration="0.79" data-track-index="3">40 → 26.67 rpm</p>
+      </div>
+      <div id="launch-05-ai-header" class="clip launch-05-header-state" data-start="3.91" data-duration="5.15666667" data-track-index="2">
+        <h2 class="launch-05-field">Train a tiny model</h2>
+        <p id="clip-05-applications-clip-3" class="clip launch-05-result launch-05-ai-result" data-start="3.91" data-duration="1.29" data-track-index="3"><span class="launch-05-result-label">MSE</span>0.26715</p>
+        <p id="launch-05-ai-result" class="clip launch-05-result launch-05-ai-result" data-start="5.20" data-duration="3.86666667" data-track-index="3"><span class="launch-05-result-label">1 update · MSE</span>0.26715 → 0.20006</p>
+      </div>
+      <p id="launch-05-counter">05</p>
+    </header>
+
+    <div id="launch-05-screen" class="clip" data-start="0" data-duration="9.06666667" data-track-index="4">
+      <div id="launch-05-orbit-camera" class="launch-05-camera">
+        <img id="launch-05-orbit-before" class="clip launch-05-shot launch-05-orbit-shot" data-start="0" data-duration="1.6" data-track-index="5" src="assets/orbit-before.png" alt="Actual orbital model at a tangential starting speed of 1.7 kilometers per second.">
+        <img id="launch-05-orbit-after" class="clip launch-05-shot launch-05-orbit-shot" data-start="1.6" data-duration="0.98" data-track-index="5" src="assets/orbit-after.png" alt="Actual orbital model after changing the starting speed to 2 kilometers per second.">
+      </div>
+      <div id="launch-05-gears-camera" class="launch-05-camera">
+        <img id="launch-05-gears-before" class="clip launch-05-shot launch-05-gears-shot" data-start="2.58" data-duration="0.54" data-track-index="6" src="assets/gears-before.png" alt="Actual gear model with 36 output teeth and output speed 40 rpm.">
+        <img id="launch-05-gears-after" class="clip launch-05-shot launch-05-gears-shot" data-start="3.12" data-duration="0.79" data-track-index="6" src="assets/gears-after.png" alt="Actual gear model with 54 output teeth and output speed 26.67 rpm.">
+      </div>
+      <div id="launch-05-ai-camera" class="launch-05-camera">
+        <img id="launch-05-ai-before" class="clip launch-05-shot launch-05-ai-shot" data-start="3.91" data-duration="1.29" data-track-index="7" src="assets/ai-before.png" alt="Actual AI walkthrough before training: mean squared error 0.26715 and zero parameter updates.">
+        <img id="launch-05-ai-after" class="clip launch-05-shot launch-05-ai-shot" data-start="5.20" data-duration="3.86666667" data-track-index="7" src="assets/ai-after.png" alt="Actual AI walkthrough after one parameter update: mean squared error 0.20006. The full captured page includes the Train one step control.">
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/gsap.min.js"></script>
+  <script>
+    window.__timelines = window.__timelines || {};
+    const launch05Timeline = gsap.timeline({ paused: true });
+
+    launch05Timeline.fromTo('#launch-05-orbit-camera',
+      { opacity: 0, y: 18 },
+      { opacity: 1, y: 0, duration: 0.32, ease: 'power2.out' }, 0);
+    launch05Timeline.fromTo('#launch-05-orbit-result',
+      { opacity: 0, y: 8 },
+      { opacity: 1, y: 0, duration: 0.18, ease: 'power2.out' }, 1.6);
+
+    launch05Timeline.fromTo('#launch-05-gears-camera',
+      { opacity: 0, y: 16 },
+      { opacity: 1, y: 0, duration: 0.27, ease: 'power2.out' }, 2.58);
+    launch05Timeline.fromTo('#launch-05-gears-result',
+      { opacity: 0, y: 8 },
+      { opacity: 1, y: 0, duration: 0.18, ease: 'power2.out' }, 3.12);
+
+    launch05Timeline.fromTo('#launch-05-ai-camera',
+      { opacity: 0, y: 16 },
+      { opacity: 1, y: 0, duration: 0.3, ease: 'power2.out' }, 3.91);
+    launch05Timeline.fromTo('#launch-05-ai-result',
+      { opacity: 0, y: 8 },
+      { opacity: 1, y: 0, duration: 0.2, ease: 'power2.out' }, 5.20);
+
+    // An editorial pan down the unchanged after-capture reveals the real
+    // weight slider and Train one step button. It does not simulate training,
+    // interpolate a loss value, or move a plotted data point independently.
+    launch05Timeline.to('#launch-05-ai-camera',
+      { y: -260 * (1480 / 665), duration: 1, ease: 'power2.inOut' }, 7.25);
+    launch05Timeline.set('#launch-05-ai-camera', { opacity: 1 }, 9.06666667);
+
+    window.__timelines['launch-05'] = launch05Timeline;
+  </script>
+</template>

@@ -1,0 +1,11 @@
+phase_0
+Area measures how many unit squares cover a region. A rectangle has base times height square units. Cutting a shape apart and moving the pieces preserves area, provided pieces do not overlap or leave gaps.
+
+phase_1
+Cut the triangular end from a parallelogram and move it to the other side. We get a rectangle with the same base and perpendicular height. The slanted side is not the height.
+
+phase_2
+Two copies of any triangle fit into a parallelogram. One triangle therefore has half its area. The height must be perpendicular to the chosen base, even when its foot lies outside the triangle.
+
+phase_3
+Two congruent trapezoids make a parallelogram whose base is the sum of the parallel sides. Divide its area by two. Area reasoning works even when the drawing is rotated.

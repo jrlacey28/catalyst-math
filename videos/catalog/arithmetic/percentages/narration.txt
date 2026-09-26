@@ -1,0 +1,7 @@
+Percent means per hundred, so thirty five percent shades thirty five of these hundred equal cells. The percentage alone is a relative amount. Its actual size depends on the whole to which it refers.
+
+To find thirty five percent of sixty, multiply the whole sixty by the fraction thirty five hundredths. The result is twenty one. Keep track of which quantity is the whole and which quantity is the part.
+
+A twenty five percent increase keeps the original whole and adds a quarter of it. The combined factor is one point two five, taking sixty to seventy five. This factor form makes repeated percentage changes easier to track.
+
+Dropping from seventy five back to sixty is a twenty percent decrease, because the new comparison whole is seventy five. Equal absolute changes can have different percentages; always name the starting amount used as the denominator.

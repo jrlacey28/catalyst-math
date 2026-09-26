@@ -1,0 +1,7 @@
+Conditioning restricts attention to the outcomes where the given event happened. Among eight people, six play guitar, four play piano, and two play both. Knowing someone plays guitar changes the comparison group from eight people to six.
+
+Within the guitar group, only the two people in the overlap play piano. Therefore the conditional probability is two divided by six. The numerator describes both events, while the denominator describes the event we are already assuming.
+
+Reversing the condition changes the denominator. Among the four piano players, two also play guitar, giving one half instead of one third. Conditional probabilities with the same two events are generally different when their roles are reversed.
+
+Independence means learning one event does not change the other's probability. Here the observed overlap is one quarter, while multiplying the two unconditional probabilities gives three eighths. They differ, so guitar and piano membership are not independent in this example.

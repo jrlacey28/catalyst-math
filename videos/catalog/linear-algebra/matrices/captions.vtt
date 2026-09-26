@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.326
+A matrix can describe a linear transformation
+
+00:00:03.326 --> 00:00:07.506
+Its columns tell us where the standard basis vectors go
+
+00:00:07.506 --> 00:00:15.867
+This matrix leaves the horizontal basis vector fixed and sends the vertical basis vector to one, one, producing a shear.
+
+00:00:17.167 --> 00:00:24.767
+Any vector is a combination of the basis vectors, so its image is the same combination of their images
+
+00:00:24.767 --> 00:00:30.767
+One copy of the first column plus two copies of the second gives three, two
+
+00:00:30.767 --> 00:00:33.167
+Matrix multiplication encodes this geometric rule.
+
+00:00:34.467 --> 00:00:38.719
+A product of matrices composes transformations from right to left
+
+00:00:38.719 --> 00:00:43.822
+First B doubles the horizontal coordinate, sending one, one to two, one
+
+00:00:43.822 --> 00:00:48.500
+Then the shear A sends that intermediate vector to three, one.
+
+00:00:49.800 --> 00:00:52.997
+Reversing the order gives a different result
+
+00:00:52.997 --> 00:00:59.849
+Shearing first sends one, one to two, one, and doubling horizontally afterward gives four, one
+
+00:00:59.849 --> 00:01:06.700
+Matrix products generally do not commute, and their dimensions must also be compatible before multiplication.

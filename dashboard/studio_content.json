@@ -1,0 +1,2488 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "id": "recipe",
+      "title": "Scale a recipe without changing its balance",
+      "subtitle": "Fractions, ratios and units become one practical decision.",
+      "level": "basics",
+      "interests": [
+        "everyday",
+        "science"
+      ],
+      "topic_ids": [
+        "arithmetic.fractions",
+        "arithmetic.ratios",
+        "arithmetic.proportions",
+        "pre-algebra.word-problems"
+      ],
+      "prerequisite_ids": [
+        "number-sense.multiplication-division"
+      ],
+      "decision": "Make the requested number of servings while preserving the ingredient ratio and respecting the available supplies.",
+      "context": "A practice recipe makes four servings from 1½ cups of flour and 1 cup of water. Plan a different serving count, then check whether the cupboard can supply it. This is a proportional model of ingredient amounts, not a promise that cooking time scales the same way.",
+      "quantities": [
+        {
+          "symbol": "b",
+          "meaning": "servings made by the base recipe",
+          "unit": "servings"
+        },
+        {
+          "symbol": "s",
+          "meaning": "requested servings",
+          "unit": "servings"
+        },
+        {
+          "symbol": "k=s/b",
+          "meaning": "scale factor",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "F, W",
+          "meaning": "flour and water amounts",
+          "unit": "cups"
+        }
+      ],
+      "assumptions": [
+        "The base serving count is positive; requested servings and ingredient amounts are nonnegative.",
+        "Every ingredient scales by the same factor if the recipe is to keep the same balance.",
+        "In examples that convert volume, one chosen measuring cup is 240 mL. Cup conventions vary, so the conversion is stated explicitly.",
+        "A cup is a volume unit. Converting flour volume to mass would additionally require a justified density or measured mass.",
+        "The model ignores cooking losses and permits fractional batches. Whole servings or complete batches require an explicit rounding decision."
+      ],
+      "why": [
+        {
+          "title": "A fraction can be a multiplier",
+          "text": "The factor 6/4 does not describe a new ingredient. It compares a desired six servings with the original four. Multiplying every amount by that dimensionless factor preserves the recipe while changing its size."
+        },
+        {
+          "title": "The ratio is the invariant",
+          "text": "The original flour-to-water ratio is 1.5:1. Doubling both produces 3:2, the same ratio. Adding one cup to each produces 2.5:2, a different mixture. Scale by multiplication when the quantities must grow proportionally."
+        },
+        {
+          "title": "Units explain which way to divide",
+          "text": "An amount per serving has units cups/serving. Multiplying it by servings returns cups. When supplies limit production, dividing available cups by cups/serving returns the number of servings that ingredient can support."
+        },
+        {
+          "title": "The limiting ingredient decides",
+          "text": "Compute the serving capacity of each ingredient, then take the smaller capacity. A large flour supply cannot replace missing water while keeping the ratio. Round down only if the task requires complete servings or batches."
+        }
+      ],
+      "examples": [
+        {
+          "title": "From four servings to six",
+          "prompt": "The base recipe uses 1½ cups flour and 1 cup water for four servings. How much is needed for six servings?",
+          "steps": [
+            {
+              "math": "k = 6/4 = 3/2",
+              "why": "Compare the requested count with the base count; the serving units cancel.",
+              "restriction": "The base count cannot be zero."
+            },
+            {
+              "math": "F = (3/2) × (3/2) = 9/4 cups",
+              "why": "The original flour amount and the scale factor are both 3/2; multiplying gives 2¼ cups."
+            },
+            {
+              "math": "W = 1 × (3/2) = 3/2 cups",
+              "why": "Water uses exactly the same scale factor."
+            },
+            {
+              "math": "(9/4)/(3/2) = 3/2",
+              "why": "Checking the flour-to-water ratio confirms that the recipe balance is unchanged."
+            }
+          ],
+          "conclusion": "Use 2¼ cups flour and 1½ cups water. Scaling does not justify multiplying the cooking time by 1½."
+        },
+        {
+          "title": "Let supplies constrain the plan",
+          "prompt": "For the same recipe, the cupboard has 3 cups flour and 1½ cups water. What is the greatest number of whole servings it can support, and what remains?",
+          "steps": [
+            {
+              "math": "Flour per serving = (3/2)/4 = 3/8 cup",
+              "why": "Find the amount required by one serving before comparing with the cupboard."
+            },
+            {
+              "math": "Water per serving = 1/4 cup",
+              "why": "The base water amount is shared proportionally across four servings."
+            },
+            {
+              "math": "Flour capacity = 3 ÷ (3/8) = 8 servings",
+              "why": "Available flour divided by flour per serving gives its capacity."
+            },
+            {
+              "math": "Water capacity = (3/2) ÷ (1/4) = 6 servings",
+              "why": "Water supports fewer servings, so it is the limiting ingredient."
+            },
+            {
+              "math": "s = min(8, 6) = 6; flour left = 3 − 6(3/8) = 3/4 cup",
+              "why": "Six whole servings use all the water and only 2¼ cups flour.",
+              "restriction": "This conclusion assumes the stated recipe and no ingredient losses."
+            }
+          ],
+          "conclusion": "Make six servings and retain ¾ cup flour. Choosing eight because flour permits it would ignore the water constraint."
+        }
+      ],
+      "misconception": {
+        "claim": "To increase a recipe, add the same amount to every ingredient.",
+        "why": "Equal additions preserve differences, not ratios. A proportional recipe requires the same multiplier.",
+        "counterexample": "Starting with 1.5 cups flour and 1 cup water, adding 1 cup to each changes the ratio from 1.5 to 2.5/2 = 1.25."
+      },
+      "prediction": {
+        "prompt": "If the requested servings double while the base recipe stays fixed, what preserves the recipe balance?",
+        "options": [
+          "Double every ingredient amount",
+          "Add one cup to every ingredient",
+          "Double only the largest ingredient"
+        ],
+        "answer": "Double every ingredient amount",
+        "explanation": "The serving scale factor doubles. Applying that factor to every ingredient preserves all ingredient ratios."
+      },
+      "challenges": [
+        {
+          "id": "budget",
+          "prompt": "Plan ten servings of the base recipe. A shop sells flour in 2-cup packages and water is available separately. State the flour and water required, the minimum flour packages to buy, and the unused flour. Explain why purchasing and ingredient scaling use different rounding rules."
+        },
+        {
+          "id": "limit",
+          "prompt": "You have 4 cups flour and 2 cups water for the base recipe. Find the limiting ingredient and maximum whole servings. Then explain how your answer changes if you reserve ¼ cup water for cleanup."
+        },
+        {
+          "id": "compare",
+          "prompt": "One cook scales six servings correctly; another adds ½ cup to both original ingredients. Compare the resulting ratios, decide whether either matches the requested serving count and balance, and show a table or diagram that supports your decision."
+        }
+      ],
+      "rubric": [
+        "Defines the base and target quantities and computes the common scale factor.",
+        "Uses compatible units and states any conversion convention.",
+        "Checks every resource constraint rather than only the largest-looking quantity.",
+        "Justifies rounding using whole purchases, servings or batches, while retaining exact ingredient amounts.",
+        "Explains why the final ratio is preserved or changed; a numerical total alone is insufficient."
+      ],
+      "transfer": {
+        "prompt": "A model car uses a 1:20 length scale. Explain how changing its size is like scaling the recipe, and why its surface area does not use the same scale factor as its length.",
+        "connection": "Both preserve a multiplicative relation. A length scales once, while area combines two scaled lengths and therefore uses the square of the factor."
+      },
+      "questions": [
+        {
+          "id": "recipe.build-1",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A four-serving recipe uses 1½ cups flour. How many cups are needed for eight servings?",
+          "answer": 3,
+          "explanation": "Eight is twice four, so multiply 1½ by 2 to get 3 cups. The same multiplier must apply to the other ingredients.",
+          "hint": "Find requested servings divided by base servings, then multiply the flour amount.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "recipe.build-2",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A four-serving recipe uses 1 cup water. How many cups are needed for ten servings?",
+          "answer": 2.5,
+          "explanation": "The target is 10/4 = 2.5 times the original number of servings. Multiply the original 1 cup of water by that same factor: 1 × 2.5 = 2.5 cups. Adding 6 cups would confuse extra servings with extra ingredient volume.",
+          "hint": "Express the original water amount per serving or use the factor 10/4.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "recipe.build-3",
+          "stage": "build",
+          "kind": "choice",
+          "prompt": "Which change preserves the ratio of 3 parts flour to 2 parts water?",
+          "answer": "Multiply both amounts by 5",
+          "explanation": "Multiplying gives 15:10, and 15/10 = 3/2. Adding an equal amount generally changes a ratio.",
+          "hint": "Compare each proposed new flour amount divided by its water amount.",
+          "options": [
+            "Multiply both amounts by 5",
+            "Add 5 parts to both amounts",
+            "Multiply only the flour amount by 5"
+          ]
+        },
+        {
+          "id": "recipe.connect-1",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "A recipe needs 3¾ cups flour. Each level scoop holds ¼ cup. How many scoops supply exactly that amount?",
+          "answer": 15,
+          "explanation": "The number of scoops is (15/4) ÷ (1/4) = 15. Dividing cups by cups per scoop leaves scoops.",
+          "hint": "Ask how many quarter-cup units fit into 3¾ cups.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "recipe.connect-2",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "A four-serving recipe uses 1½ cups flour and 1 cup water. With 4½ cups flour and 2½ cups water, what is the maximum number of whole servings?",
+          "answer": 10,
+          "explanation": "Flour supports (4.5/1.5) × 4 = 12 servings. Water supports 2.5 × 4 = 10. Both constraints must hold, so the maximum is 10.",
+          "hint": "Compute a serving capacity for each ingredient, then choose the smaller.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "recipe.connect-3",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "For this problem one cup is 240 mL. Convert ¾ cup water to milliliters.",
+          "answer": 180,
+          "explanation": "Multiply 3/4 cup by 240 mL/cup. The cup units cancel and the result is 180 mL.",
+          "hint": "The conversion factor has milliliters in the numerator and cups in the denominator.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "recipe.transfer-1",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "A paint mixture uses blue:red in the ratio 3:2. To make 2.5 liters total, how many liters must be blue?",
+          "answer": 1.5,
+          "explanation": "The total has 5 equal parts, and blue occupies 3/5. Thus blue volume is (3/5) × 2.5 = 1.5 liters.",
+          "hint": "First find what fraction of the total is blue; 3:2 is not 3/2 of the total.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "recipe.transfer-2",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "A car is 4.2 meters long. At a 1:20 length scale, what is the model length in centimeters?",
+          "answer": 21,
+          "explanation": "Convert 4.2 m to 420 cm, then divide by 20 to obtain 21 cm. This is a length ratio, not an area ratio.",
+          "hint": "Convert the units before applying the length scale, or convert consistently afterward.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "recipe.transfer-3",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "You have 2¾ cups flour. Each complete small batch needs ¾ cup. How many complete batches can you make?",
+          "answer": 3,
+          "explanation": "The quotient is (11/4)/(3/4) = 11/3 = 3⅔. Only 3 complete batches fit; ½ cup remains.",
+          "hint": "Compute the quotient, then use the word complete to decide how to round.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "recipe.review-1",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A six-serving dough uses 2¼ cups flour. How many cups are needed for ten servings?",
+          "answer": 3.75,
+          "explanation": "The factor is 10/6 = 5/3. Multiplying 9/4 by 5/3 gives 15/4 = 3.75 cups.",
+          "hint": "Use one scale factor for the whole recipe and simplify common factors in the product.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "recipe.review-2",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A drink uses concentrate:water in the ratio 1:3. With 750 mL concentrate, how many milliliters of water preserve the ratio?",
+          "answer": 2250,
+          "explanation": "Each unit of concentrate pairs with 3 equal units of water, so water is 3 × 750 = 2250 mL. The total drink volume would be 3000 mL.",
+          "hint": "Distinguish the amount of water from the total drink volume.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "recipe.review-3",
+          "stage": "review",
+          "kind": "choice",
+          "prompt": "You need fractional ingredient amounts but must buy whole packages. Which plan preserves the recipe?",
+          "answer": "Buy enough whole packages, then measure the exact ingredient amounts",
+          "explanation": "Round purchases up to obtain enough supplies, but use the calculated recipe amounts. Rounding each ingredient separately can change the mixture.",
+          "hint": "Buying an amount and using an amount are different decisions.",
+          "options": [
+            "Round every ingredient amount upward and use all of it",
+            "Buy enough whole packages, then measure the exact ingredient amounts",
+            "Round all ingredient amounts down regardless of the target"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plans",
+      "title": "Choose a plan when the fixed fee and rate compete",
+      "subtitle": "A graph becomes a decision rule, with an honest boundary.",
+      "level": "foundations",
+      "interests": [
+        "everyday",
+        "business",
+        "data"
+      ],
+      "topic_ids": [
+        "algebra-1.linear-equations",
+        "algebra-1.systems",
+        "algebra-1.slope",
+        "pre-algebra.inequalities"
+      ],
+      "prerequisite_ids": [
+        "pre-algebra.expressions",
+        "pre-algebra.multi-step-equations"
+      ],
+      "decision": "Choose the lower-cost workshop plan for the hours you expect to use, and identify when that choice would change.",
+      "context": "A community workshop offers Plan A for an $8 access fee plus $3 per hour and Plan B for a $20 access fee plus $1 per hour. The larger fixed fee buys a smaller charge for each additional hour.",
+      "quantities": [
+        {
+          "symbol": "h",
+          "meaning": "Workshop time used",
+          "unit": "hours"
+        },
+        {
+          "symbol": "A(h)",
+          "meaning": "Total charge under Plan A",
+          "unit": "dollars"
+        },
+        {
+          "symbol": "B(h)",
+          "meaning": "Total charge under Plan B",
+          "unit": "dollars"
+        },
+        {
+          "symbol": "A(h) − B(h)",
+          "meaning": "Extra cost of choosing A instead of B",
+          "unit": "dollars"
+        }
+      ],
+      "assumptions": [
+        "Hours are nonnegative and may be fractional; charges are proportional to the exact time used.",
+        "The access fee is charged once for the period, even if no hours are used.",
+        "Both plans offer the same service and have no tax, caps, discounts or cancellation fee in this model.",
+        "The plan must be selected for the billing period; switching mid-period is not included."
+      ],
+      "why": [
+        {
+          "title": "A total is a fixed part plus a changing part",
+          "text": "In A(h) = 8 + 3h, 8 is already owed before time is used. The rate 3 has units dollars per hour, so multiplying it by h hours produces dollars. Adding 8 hours to 3 dollars would mix quantities that cannot be added."
+        },
+        {
+          "title": "The intersection is a boundary, not the whole decision",
+          "text": "Solving A(h) = B(h) locates the one usage level where both plans cost the same. To choose a plan you must also determine which total is smaller on each side. The sign of A(h) − B(h) answers exactly that question."
+        },
+        {
+          "title": "Subtracting two totals isolates the tradeoff",
+          "text": "A(h) − B(h) = 2h − 12. Plan A starts $12 cheaper but becomes $2 more expensive relative to B for each hour used. The expression is a savings comparison, not an additional fee charged to the customer."
+        },
+        {
+          "title": "A prediction needs a stated criterion",
+          "text": "If future hours are uncertain, the cheapest plan is not determined by an interval alone. You could minimize the largest possible bill, use a probability model to compare expected bills, or value flexibility. State the decision rule before interpreting the graph."
+        }
+      ],
+      "examples": [
+        {
+          "title": "Compute both totals before comparing",
+          "prompt": "You know you will use the workshop for 4 hours. Which plan costs less?",
+          "steps": [
+            {
+              "math": "A(4) = 8 + 3·4",
+              "why": "Replace the input h with 4 and retain both the fixed fee and the hourly term.",
+              "restriction": "h ≥ 0; time is billed proportionally."
+            },
+            {
+              "math": "A(4) = 8 + 12 = 20",
+              "why": "Four hours at $3 per hour adds $12 to the $8 fee."
+            },
+            {
+              "math": "B(4) = 20 + 1·4 = 24",
+              "why": "Use the same 4-hour input so the comparison is fair."
+            },
+            {
+              "math": "B(4) − A(4) = 24 − 20 = 4",
+              "why": "The positive difference says B costs $4 more at this usage."
+            }
+          ],
+          "conclusion": "Choose A for 4 hours: its $20 total is $4 less than B. A lower hourly rate alone does not guarantee a lower bill."
+        },
+        {
+          "title": "Build a rule that works for any allowed number of hours",
+          "prompt": "Find the break-even usage, then choose a plan for 8 hours and describe the whole decision boundary.",
+          "steps": [
+            {
+              "math": "8 + 3h = 20 + h",
+              "why": "At break-even, both plans must assign the same total cost to the same input."
+            },
+            {
+              "math": "2h = 12, so h = 6",
+              "why": "Subtract h and 8 from both sides, then divide both sides by the nonzero coefficient 2."
+            },
+            {
+              "math": "A(6) = B(6) = 26",
+              "why": "Substituting into both original models verifies the intersection in dollars."
+            },
+            {
+              "math": "A(h) − B(h) = 2h − 12 = 2(h − 6)",
+              "why": "Factoring makes the sign comparison visible: the positive factor 2 preserves the sign of h − 6.",
+              "restriction": "For this decision, h ≥ 0."
+            },
+            {
+              "math": "A(8) = 32; B(8) = 28; A(8) − B(8) = 4",
+              "why": "Eight is above the boundary, so B is cheaper; the computed totals quantify the saving."
+            }
+          ],
+          "conclusion": "A is cheaper for 0 ≤ h < 6; the plans tie at 6 hours; B is cheaper for h > 6. For 8 hours choose B and save $4."
+        }
+      ],
+      "misconception": {
+        "claim": "The plan with the lower hourly rate is always cheaper.",
+        "why": "A rate describes the change in cost, not the entire cost. A higher fixed fee can dominate when few hours are used.",
+        "counterexample": "At 1 hour, A costs $11 and B costs $21, even though B has the lower hourly rate."
+      },
+      "prediction": {
+        "prompt": "Starting from the default plans, you increase usage from 6 to 8 hours. What happens to A compared with B?",
+        "options": [
+          "B becomes $4 more expensive than A.",
+          "A becomes $4 more expensive than B.",
+          "They remain equal because they met at 6 hours."
+        ],
+        "answer": "A becomes $4 more expensive than B.",
+        "explanation": "Both cost $26 at 6 hours. Two extra hours add $6 to A and $2 to B, so A ends $4 higher."
+      },
+      "challenges": [
+        {
+          "id": "uncertain-hours",
+          "prompt": "You may use between 4 and 9 hours. First choose the plan that minimizes the largest possible bill. Then explain why that answer need not minimize your expected bill unless you also describe how likely each usage level is. Include both endpoint bills."
+        },
+        {
+          "id": "design-a-middle-plan",
+          "prompt": "A proposed Plan C charges $12 plus $2 per hour. Find every interval where C is at least as cheap as both original plans. Include ties and explain the role of its fixed fee and hourly rate."
+        },
+        {
+          "id": "budget-boundary",
+          "prompt": "Your workshop budget is $32. Find the maximum allowed hours under each original plan, then choose a plan if your goal is to buy as much workshop time as possible. Explain how the result would change if only whole hours could be booked."
+        }
+      ],
+      "rubric": [
+        "Define the input and keep hours separate from dollars.",
+        "Write and evaluate complete cost models with fixed fees.",
+        "Verify intersection points in both original models.",
+        "Interpret inequalities and ties within the permitted domain.",
+        "Explain the decision criterion and how uncertainty or changed billing assumptions affect the choice."
+      ],
+      "transfer": {
+        "prompt": "Two printing shops charge a setup fee plus a price per poster. How does the workshop comparison transfer, and which part of the domain changes?",
+        "connection": "The affine form fixed fee + rate·quantity is the same. Poster counts are whole numbers, so a non-integer intersection becomes a threshold between feasible counts rather than an available purchase."
+      },
+      "questions": [
+        {
+          "id": "plans.build-1",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A rental costs $9 plus $2.50 per hour. What is the total cost for 4 hours, in dollars?",
+          "answer": 19,
+          "explanation": "The hourly charge is 2.50·4 = 10 dollars. Add the one-time $9 fee to get $19. The fixed fee is not multiplied by 4.",
+          "hint": "Write total = fixed fee + (dollars per hour)·hours. Compute the changing part before adding the fee.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "plans.build-2",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A studio charges $12 plus $4 per hour. How many extra dollars does using 7 hours instead of 5 hours cost?",
+          "answer": 8,
+          "explanation": "The same $12 fee appears in both totals and cancels in the difference. Two additional hours at $4 each cost $8.",
+          "hint": "Compare the extra hours, not the whole bills. The fixed fee is unchanged.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "plans.build-3",
+          "stage": "build",
+          "kind": "choice",
+          "prompt": "For C(h) = 15 + 2h dollars, what does 15 represent?",
+          "answer": "The cost when h = 0.",
+          "explanation": "Substituting h = 0 leaves C(0) = 15 dollars. The coefficient 2, not 15, is the cost per additional hour.",
+          "hint": "Set h to zero and notice which term remains.",
+          "options": [
+            "The cost per additional hour.",
+            "The number of hours included for free.",
+            "The cost when h = 0."
+          ]
+        },
+        {
+          "id": "plans.connect-1",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "Plans A(h) = 6 + 4h and B(h) = 18 + 2h charge dollars for h hours. At how many hours do their total costs match?",
+          "answer": 6,
+          "explanation": "Set 6 + 4h = 18 + 2h. Subtract 2h and 6 to get 2h = 12, hence h = 6. Both totals are $30.",
+          "hint": "Set the totals equal, then collect the h terms on one side and constants on the other.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "plans.connect-2",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "Using A(h) = 6 + 4h and B(h) = 18 + 2h, how many dollars does choosing B save at 10 hours?",
+          "answer": 8,
+          "explanation": "A(10) = 46 and B(10) = 38. The saving from choosing B is A(10) − B(10) = 8 dollars.",
+          "hint": "Evaluate both complete totals at h = 10, then subtract the smaller from the larger.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "plans.connect-3",
+          "stage": "connect",
+          "kind": "choice",
+          "prompt": "Plans C(h) = 5 + 2h and D(h) = 11 + 2h apply for h ≥ 0. Which statement is correct?",
+          "answer": "C is always $6 cheaper; there is no break-even input.",
+          "explanation": "C(h) − D(h) = −6 for every h. Equal rates make parallel cost graphs, and the unequal fixed fees keep them apart.",
+          "hint": "Subtract D(h) from C(h) and check whether an h term remains.",
+          "options": [
+            "C is always $6 cheaper; there is no break-even input.",
+            "The plans break even at 3 hours.",
+            "D becomes cheaper after enough hours."
+          ]
+        },
+        {
+          "id": "plans.transfer-1",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "A taxi costs a $4 starting fee plus $2 per kilometer. With a $25 budget, what is the greatest distance in kilometers you can afford? Fractional kilometers are billed proportionally.",
+          "answer": 10.5,
+          "explanation": "The budget condition is 4 + 2d ≤ 25. Subtract 4 and divide by positive 2 to obtain d ≤ 10.5 kilometers. The maximum permitted distance is 10.5.",
+          "hint": "Turn the budget into an inequality. Remove the fixed fee before dividing by the rate.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "plans.transfer-2",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "Printing A costs $7 plus $0.50 per poster; Printing B costs $16 plus $0.20 per poster. At what whole-number poster count do they tie?",
+          "answer": 30,
+          "explanation": "Set 7 + 0.50n = 16 + 0.20n. Then 0.30n = 9, so n = 30. Both costs equal $22; this intersection is a feasible whole count.",
+          "hint": "The extra setup cost is $9. Determine how many $0.30 per-poster savings are needed to recover it.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "plans.transfer-3",
+          "stage": "transfer",
+          "kind": "choice",
+          "prompt": "A cheaper high-volume printing plan becomes strictly cheaper only when n > 12.4 posters. What is the smallest feasible count where it is strictly cheaper?",
+          "answer": "13 posters.",
+          "explanation": "Poster counts are integers. The least integer strictly greater than 12.4 is 13, so 12 posters does not cross the boundary.",
+          "hint": "List the whole numbers immediately below and above 12.4, and apply the strict inequality.",
+          "options": [
+            "12 posters.",
+            "13 posters.",
+            "12.4 posters."
+          ]
+        },
+        {
+          "id": "plans.review-1",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A bike pass costs $10 plus $1.50 per hour. A second pass costs $22 plus $0.50 per hour. Find the break-even number of hours.",
+          "answer": 12,
+          "explanation": "Equating 10 + 1.5h and 22 + 0.5h gives h = 12. Substitution gives $28 under both passes.",
+          "hint": "Compare the extra fixed cost with the saving per hour, or set the two totals equal.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "plans.review-2",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A makerspace plan costs $14 plus $2 per hour. You have a $39 budget and can book whole hours only. What is the greatest number of hours you can book?",
+          "answer": 12,
+          "explanation": "The continuous bound is h ≤ (39 − 14)/2 = 12.5. Whole-hour bookings must be integers, so the greatest feasible value is 12. It costs $38; 13 hours would cost $40.",
+          "hint": "Solve the budget inequality, then use the whole-hour restriction and check the neighboring integer.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "plans.review-3",
+          "stage": "review",
+          "kind": "choice",
+          "prompt": "For two new plans, A(h) − B(h) = 3(h − 5) dollars. Which conclusion is valid for nonnegative hours?",
+          "answer": "A is cheaper below 5 hours and B is cheaper above 5 hours.",
+          "explanation": "The positive factor 3 preserves the sign of h − 5. A − B is negative below 5, zero at 5 and positive above 5.",
+          "hint": "A negative value of A − B means A has the smaller total. Test an input on each side of 5.",
+          "options": [
+            "B is cheaper below 5 hours and A is cheaper above 5 hours.",
+            "A is always more expensive because 3 is positive.",
+            "A is cheaper below 5 hours and B is cheaper above 5 hours."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "garden",
+      "title": "Design the most useful garden from a fixed fence",
+      "subtitle": "A geometric constraint becomes a quadratic you can explain.",
+      "level": "foundations",
+      "interests": [
+        "everyday",
+        "design",
+        "engineering"
+      ],
+      "topic_ids": [
+        "geometry.area",
+        "algebra-1.quadratics",
+        "algebra-1.polynomials",
+        "calculus-1.optimization"
+      ],
+      "prerequisite_ids": [
+        "pre-algebra.expressions",
+        "pre-algebra.multi-step-equations"
+      ],
+      "decision": "Choose rectangular dimensions that use a fixed fence budget while giving the largest possible growing area.",
+      "context": "A rectangular garden has 24 meters of fence around all four sides. Increasing the width forces the length to shrink; the two dimensions cannot be chosen independently.",
+      "quantities": [
+        {
+          "symbol": "P",
+          "meaning": "Total fence perimeter",
+          "unit": "meters"
+        },
+        {
+          "symbol": "w",
+          "meaning": "Width",
+          "unit": "meters"
+        },
+        {
+          "symbol": "L",
+          "meaning": "Length",
+          "unit": "meters"
+        },
+        {
+          "symbol": "A",
+          "meaning": "Enclosed area",
+          "unit": "square meters"
+        }
+      ],
+      "assumptions": [
+        "The garden is rectangular, all four sides need fencing and the entire available fence is used.",
+        "Fence thickness, gates, posts, obstacles and construction losses are ignored.",
+        "P > 0 and a nondegenerate garden has 0 < w < P/2; endpoint slider states have zero area and are limiting cases, not useful gardens.",
+        "Dimensions may be real-valued. Whole-meter cuts or a wall would require a changed feasible set or a changed constraint."
+      ],
+      "why": [
+        {
+          "title": "The constraint ties the dimensions together",
+          "text": "Perimeter counts two widths and two lengths: 2w + 2L = P. Solving for L gives L = P/2 − w. This replacement is justified by the fence constraint; it reduces a two-variable area formula to a one-variable problem."
+        },
+        {
+          "title": "Area combines gain with loss",
+          "text": "A(w) = w(P/2 − w) has one factor that grows and another that shrinks. Width alone cannot predict the outcome. The negative w² term records the penalty from making the rectangle increasingly unbalanced."
+        },
+        {
+          "title": "A square gives a visible upper bound",
+          "text": "For P = 24, A = 12w − w² = 36 − (w − 6)². A real square is nonnegative, so subtracting it can never give more than 36. Equality requires w = 6, which also makes L = 6. This proves the maximum instead of relying on a few plotted points."
+        },
+        {
+          "title": "Equivalent expressions answer different questions",
+          "text": "The product w(12 − w) shows the two side lengths and the zero-area endpoints. The expanded form 12w − w² helps compare polynomial terms. The form 36 − (w − 6)² reveals the maximum and how much area is lost when width moves away from 6."
+        },
+        {
+          "title": "The result belongs to this model",
+          "text": "A square is optimal among rectangles with a fixed four-sided perimeter. A garden along an existing wall uses fence on only three sides; its equation changes. A conclusion cannot be transferred until its constraint is checked."
+        }
+      ],
+      "examples": [
+        {
+          "title": "Translate a fence measurement into an area",
+          "prompt": "A four-sided rectangular garden has 20 meters of fence and a width of 3 meters. Find the length and area.",
+          "steps": [
+            {
+              "math": "2w + 2L = 20",
+              "why": "The boundary contains two copies of each side length."
+            },
+            {
+              "math": "2·3 + 2L = 20, so 2L = 14",
+              "why": "Substitute the given width and subtract the 6 meters used by the two width sides."
+            },
+            {
+              "math": "L = 7 m",
+              "why": "The remaining 14 meters are divided between two equal length sides.",
+              "restriction": "The length must be positive."
+            },
+            {
+              "math": "A = wL = 3·7 = 21 m²",
+              "why": "Area measures the number of unit squares in the rectangle; multiplying meters by meters gives square meters."
+            }
+          ],
+          "conclusion": "The garden is 3 m by 7 m and encloses 21 m². Its 20 m perimeter and 21 m² area describe different quantities."
+        },
+        {
+          "title": "Find the maximum and a useful tolerance around it",
+          "prompt": "With P = 24 m, maximize the area and find every width that still gives at least 32 m².",
+          "steps": [
+            {
+              "math": "L = 12 − w; A(w) = w(12 − w)",
+              "why": "Divide the perimeter equation by 2, isolate L and substitute into A = wL.",
+              "restriction": "0 < w < 12."
+            },
+            {
+              "math": "A(w) = 12w − w² = 36 − (w − 6)²",
+              "why": "Expanding (w − 6)² gives w² − 12w + 36, so the rewritten form is equal to the original expression."
+            },
+            {
+              "math": "(w − 6)² ≥ 0, so A(w) ≤ 36",
+              "why": "A nonnegative squared deviation can only reduce the area from 36."
+            },
+            {
+              "math": "A(6) = 36; L = 6",
+              "why": "At zero deviation the upper bound is reached, proving that the 6 m square is optimal."
+            },
+            {
+              "math": "A(w) ≥ 32 ⇔ (w − 6)² ≤ 4 ⇔ 4 ≤ w ≤ 8",
+              "why": "An area loss of at most 4 means the width is at most 2 meters from 6. All these widths lie within the permitted domain."
+            }
+          ],
+          "conclusion": "The maximum is 36 m² at 6 m by 6 m. Widths from 4 through 8 meters still give at least 32 m²; both endpoint widths give exactly 32 m²."
+        }
+      ],
+      "misconception": {
+        "claim": "Making the width larger always makes the area larger.",
+        "why": "At fixed perimeter, the length must decrease by the same amount that the width increases. Area depends on the product, not on one side alone.",
+        "counterexample": "With P = 24, width 6 gives length 6 and area 36. Increasing width to 8 leaves length 4 and decreases the area to 32."
+      },
+      "prediction": {
+        "prompt": "With the default P = 24 m, increase width from 4 m to 5 m. What happens to the area?",
+        "options": [
+          "It stays at 32 m² because the perimeter is fixed.",
+          "It decreases from 32 m² to 25 m².",
+          "It increases from 32 m² to 35 m²."
+        ],
+        "answer": "It increases from 32 m² to 35 m².",
+        "explanation": "The length changes from 8 to 7 meters. Thus the areas are 4·8 = 32 and 5·7 = 35. Moving closer to equal side lengths reduces the squared deviation from the maximum."
+      },
+      "challenges": [
+        {
+          "id": "usable-range",
+          "prompt": "Design a 24 m four-sided fence garden with at least 35 m² of area. Find the complete allowed width interval, choose one design in it, and verify both perimeter and area. Explain why trying a few widths is not a proof that your interval is complete."
+        },
+        {
+          "id": "wall-changes-model",
+          "prompt": "Now one side can lie against an existing wall, so only two widths and one length need fence. Use the same 24 m of fence. Write the new constraint, find the best dimensions and compare its maximum area with the four-sided case. Explain why the old square rule cannot simply be copied."
+        },
+        {
+          "id": "cut-lengths",
+          "prompt": "Fence sections can now make side lengths only in whole meters. With P = 22 m, determine every maximizing rectangle up to swapping its side names. Compare the best feasible area with the continuous optimum and quantify the loss."
+        }
+      ],
+      "rubric": [
+        "State which sides consume the fence and write the matching constraint.",
+        "Track meters and square meters correctly.",
+        "Give a valid domain and exclude degenerate designs when choosing a real garden.",
+        "Justify the optimum with a nonnegative square, a valid derivative argument or a complete finite comparison.",
+        "Recheck the model when a wall, cut restriction or area target changes."
+      ],
+      "transfer": {
+        "prompt": "A rectangular screen has a fixed diagonal rather than a fixed perimeter. Would L = P/2 − w still describe it? Propose the correct constraint before considering the largest area.",
+        "connection": "The modeling cycle is the same, but Pythagoras gives w² + L² = d². A constraint is a mathematical statement about the resource that is actually fixed; different resources lead to different substitutions."
+      },
+      "questions": [
+        {
+          "id": "garden.build-1",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A four-sided rectangle has perimeter 30 m and width 5 m. What is its length in meters?",
+          "answer": 10,
+          "explanation": "Divide 2w + 2L = 30 by 2 to obtain w + L = 15. With w = 5, the length is 10 m.",
+          "hint": "The perimeter includes two lengths and two widths. First find half the perimeter.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "garden.build-2",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "The same rectangle is 5 m wide and 10 m long. What is its area in square meters?",
+          "answer": 50,
+          "explanation": "Area is width times length: 5·10 = 50 m². Adding side lengths would measure a boundary, not the enclosed area.",
+          "hint": "Use A = wL and multiply the two measurements, including their units.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "garden.build-3",
+          "stage": "build",
+          "kind": "choice",
+          "prompt": "For a rectangle using all P meters of fence on four sides, which replacement for L is correct?",
+          "answer": "L = P/2 − w.",
+          "explanation": "Starting with 2w + 2L = P, divide both sides by 2 and then subtract w. This equality uses the four-sided fence constraint.",
+          "hint": "Write the perimeter equation before isolating the length.",
+          "options": [
+            "L = P/2 − w.",
+            "L = P − w.",
+            "L = P/2 + w."
+          ]
+        },
+        {
+          "id": "garden.connect-1",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "For P = 28 m, the area is A(w) = 49 − (w − 7)². What is the greatest area, in square meters?",
+          "answer": 49,
+          "explanation": "The square is at least zero, so A cannot exceed 49. Width 7 makes the square zero and is feasible; the maximum 49 m² is attained.",
+          "hint": "A squared real number cannot be negative. Determine when the subtracted square equals zero.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "garden.connect-2",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "For P = 24 m, A(w) = 36 − (w − 6)². At width 8 m, how many square meters below the maximum is the area?",
+          "answer": 4,
+          "explanation": "The loss from the maximum is (8 − 6)² = 4 m². The actual area is 32 m², while the maximum is 36 m².",
+          "hint": "The squared-deviation term is exactly the amount subtracted from the maximum.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "garden.connect-3",
+          "stage": "connect",
+          "kind": "choice",
+          "prompt": "For P = 24 m, which widths give area at least 35 m²?",
+          "answer": "5 ≤ w ≤ 7 meters.",
+          "explanation": "36 − (w − 6)² ≥ 35 is equivalent to (w − 6)² ≤ 1, so the distance from 6 is at most 1. Both boundary widths are included.",
+          "hint": "Rearrange so a square is bounded above, then express the allowed distance from 6.",
+          "options": [
+            "0 < w < 12 meters.",
+            "5 ≤ w ≤ 7 meters.",
+            "w ≤ 5 or w ≥ 7 meters."
+          ]
+        },
+        {
+          "id": "garden.transfer-1",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "A garden against a wall uses 20 m of fence for two widths x and one length L. At x = 4 m, what is its area in square meters?",
+          "answer": 48,
+          "explanation": "The three fenced sides give 2x + L = 20, so L = 12 m when x = 4. The area is 4·12 = 48 m².",
+          "hint": "The wall side consumes no fence. Use 2x + L = 20 before multiplying x by L.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "garden.transfer-2",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "For that three-sided 20 m fence model, A(x) = x(20 − 2x) = 50 − 2(x − 5)². What width x maximizes the area, in meters?",
+          "answer": 5,
+          "explanation": "The term 2(x − 5)² is nonnegative and is zero at x = 5. This gives length 10 m and maximum area 50 m²; the width is 5 m.",
+          "hint": "Locate the input where the squared deviation vanishes. Check that the remaining length is positive.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "garden.transfer-3",
+          "stage": "transfer",
+          "kind": "choice",
+          "prompt": "A four-sided rectangle has perimeter 18 m, but each side must be a whole number of meters. Which dimensions maximize area?",
+          "answer": "4 m by 5 m.",
+          "explanation": "The continuous optimum has sides 4.5 and 4.5. Feasible integer side pairs sum to 9; 4 and 5 are closest to equal and give area 20, larger than 3·6, 2·7 or 1·8.",
+          "hint": "Use w + L = 9 and compare the feasible integer pair nearest the equal-side ideal.",
+          "options": [
+            "3 m by 6 m.",
+            "4.5 m by 4.5 m.",
+            "4 m by 5 m."
+          ]
+        },
+        {
+          "id": "garden.review-1",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A four-sided display rectangle has 32 cm of border and width 6 cm. What is its enclosed area in square centimeters?",
+          "answer": 60,
+          "explanation": "Half the border length is 16 cm, so the other side is 16 − 6 = 10 cm. Area is 6·10 = 60 cm².",
+          "hint": "Use the border constraint to find the missing side before computing area.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "garden.review-2",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "With a fixed 40 m perimeter, a rectangle has area A(w) = 100 − (w − 10)². How much area is lost from the maximum when w = 13 m? Give square meters.",
+          "answer": 9,
+          "explanation": "The loss is the subtracted squared deviation: (13 − 10)² = 9 m². The rectangle has area 91 m² rather than the maximum 100 m².",
+          "hint": "Distinguish the loss from the actual area. The completed-square expression displays both.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "garden.review-3",
+          "stage": "review",
+          "kind": "choice",
+          "prompt": "A square maximized area for the four-sided fixed-perimeter garden. You add the requirement that the length must be exactly three times the width. What must you do?",
+          "answer": "Solve the new constraint together with the perimeter; the square is no longer feasible.",
+          "explanation": "The new condition L = 3w conflicts with L = w for any positive width. Feasibility comes before optimization: substitute 3w into 2w + 2L = P.",
+          "hint": "Check whether the earlier optimizing shape satisfies the new requirement.",
+          "options": [
+            "Solve the new constraint together with the perimeter; the square is no longer feasible.",
+            "Keep the square because it was already proved optimal.",
+            "Double the square area because there are now two constraints."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "motion",
+      "title": "Distinguish where you are from how far you traveled",
+      "subtitle": "Position, velocity, signed area and distance tell different stories.",
+      "level": "college",
+      "interests": [
+        "science",
+        "engineering",
+        "everyday"
+      ],
+      "topic_ids": [
+        "calculus-1.derivatives",
+        "calculus-2.integrals",
+        "calculus-2.fundamental-theorem",
+        "calculus-2.applications-of-integration"
+      ],
+      "prerequisite_ids": [
+        "algebra-1.functions",
+        "algebra-1.quadratics",
+        "arithmetic.negative-numbers"
+      ],
+      "decision": "Use a motion model to report both the final change in position and the total distance traveled, including any reversal.",
+      "context": "A robot moves along a straight track. Its signed position, in meters from a marked origin, is s(t) = t² − 4t + 3 for 0 ≤ t ≤ 3 seconds. A negative position is a location on the other side of the origin, not a negative distance traveled.",
+      "quantities": [
+        {
+          "symbol": "t",
+          "meaning": "Elapsed time",
+          "unit": "seconds"
+        },
+        {
+          "symbol": "s(t)",
+          "meaning": "Signed position on the track",
+          "unit": "meters"
+        },
+        {
+          "symbol": "v(t)",
+          "meaning": "Instantaneous signed velocity",
+          "unit": "meters per second"
+        },
+        {
+          "symbol": "Δs",
+          "meaning": "Final position minus initial position",
+          "unit": "meters"
+        },
+        {
+          "symbol": "D",
+          "meaning": "Total distance traveled",
+          "unit": "meters"
+        }
+      ],
+      "assumptions": [
+        "Motion is one-dimensional and the polynomial position model applies only on 0 ≤ t ≤ 3 seconds in the interactive scenario.",
+        "Positive and negative directions are fixed by the coordinate system. The origin need not be the starting position.",
+        "The model is differentiable; no jumps, impacts or sensor uncertainty are included.",
+        "Distance must account for every direction change. A zero velocity is only a candidate turning time until the sign on each side is checked."
+      ],
+      "why": [
+        {
+          "title": "Position is a state; displacement compares two states",
+          "text": "s(3) is a coordinate, while s(3) − s(0) is a change in coordinate. Neither automatically equals total distance. You can return to your starting point with zero displacement after traveling a long way."
+        },
+        {
+          "title": "Velocity comes from shrinking a time interval",
+          "text": "The average velocity is [s(t + h) − s(t)]/h for a nonzero elapsed-time increment h. Here the numerator expands to (2t − 4)h + h², so the quotient is 2t − 4 + h. Its limit as h approaches zero is v(t) = 2t − 4, provided the compared times stay in the modeled interval."
+        },
+        {
+          "title": "A negative velocity gives direction, not negative speed",
+          "text": "The sign of v tells which direction the robot moves. Speed is |v| and is never negative. A robot with velocity −4 m/s travels just as much distance each second as one with velocity +4 m/s, but in the opposite direction."
+        },
+        {
+          "title": "Signed areas can cancel; traveled distances cannot",
+          "text": "Integrating v over time sums signed changes in position. Integrating |v| sums nonnegative traveled amounts. Splitting the interval at a true reversal lets you compute the same distance from absolute position changes on the separate monotone pieces."
+        },
+        {
+          "title": "A flat tangent is not enough to prove a turn",
+          "text": "For the robot, v is negative before t = 2 and positive afterward, so it really reverses. A different motion s(t) = t³ has v(t) = 3t²: its velocity is zero at t = 0 but positive on both sides. Check direction, not only a zero."
+        }
+      ],
+      "examples": [
+        {
+          "title": "Keep the initial position in a constant-speed model",
+          "prompt": "A cart starts at position 2 m and moves at a constant velocity of +3 m/s for 4 s. Find its displacement and final position.",
+          "steps": [
+            {
+              "math": "Δs = v·Δt = 3·4 = 12 m",
+              "why": "A constant signed rate multiplied by elapsed time gives signed displacement."
+            },
+            {
+              "math": "s(t) = 2 + 3t",
+              "why": "The initial coordinate contributes the fixed 2; the changing term accumulates displacement.",
+              "restriction": "0 ≤ t ≤ 4 seconds for this stated trip."
+            },
+            {
+              "math": "s(4) = 2 + 12 = 14 m",
+              "why": "The final position is the initial position plus the change."
+            },
+            {
+              "math": "D = |3|·4 = 12 m",
+              "why": "The cart never reverses, so distance equals the magnitude of its displacement."
+            }
+          ],
+          "conclusion": "The final position is 14 m, the displacement is +12 m and the distance traveled is 12 m. These quantities coincide only in special circumstances."
+        },
+        {
+          "title": "Handle a reversal before adding traveled amounts",
+          "prompt": "For s(t) = t² − 4t + 3 on 0 ≤ t ≤ 3, find displacement and total distance.",
+          "steps": [
+            {
+              "math": "v(t) = s′(t) = 2t − 4",
+              "why": "Differentiate each term of the position polynomial. Time is measured in seconds, so velocity has units m/s."
+            },
+            {
+              "math": "v(2) = 0; v < 0 on (0,2); v > 0 on (2,3)",
+              "why": "Solving the zero identifies a candidate turn, and the sign check confirms an actual reversal."
+            },
+            {
+              "math": "s(0) = 3; s(2) = −1; s(3) = 0",
+              "why": "Evaluate position at the endpoints and at the turning time."
+            },
+            {
+              "math": "Δs = s(3) − s(0) = 0 − 3 = −3 m",
+              "why": "Displacement compares only the final and initial states; intermediate movement can cancel."
+            },
+            {
+              "math": "D = |−1 − 3| + |0 − (−1)| = 4 + 1 = 5 m",
+              "why": "Each interval has one direction of motion. Add the magnitudes of their position changes rather than letting them cancel."
+            },
+            {
+              "math": "∫₀³ v(t) dt = −3; ∫₀³ |v(t)| dt = 5",
+              "why": "The accumulation view gives the same two results: signed velocity area for displacement, absolute velocity area for distance."
+            }
+          ],
+          "conclusion": "The robot ends 3 m in the negative direction from its starting point, but it has traveled 5 m: 4 m backward and 1 m forward."
+        }
+      ],
+      "misconception": {
+        "claim": "Total distance is always the absolute value of final position minus initial position.",
+        "why": "That formula discards any out-and-back travel. It works on a single interval without a direction reversal, not automatically over an entire trip.",
+        "counterexample": "The default robot has |s(3) − s(0)| = 3 m but travels 5 m because it reverses at t = 2 s."
+      },
+      "prediction": {
+        "prompt": "For the default robot, extend the observation endpoint from t = 2 s to t = 3 s. What happens?",
+        "options": [
+          "Total distance increases while the magnitude of displacement decreases.",
+          "Both total distance and the magnitude of displacement decrease.",
+          "Total distance stays fixed because the robot returns toward its start."
+        ],
+        "answer": "Total distance increases while the magnitude of displacement decreases.",
+        "explanation": "At t = 2 the robot has traveled 4 m with displacement −4 m. By t = 3 it has traveled another 1 m forward, so distance is 5 m and displacement is −3 m."
+      },
+      "challenges": [
+        {
+          "id": "two-reports",
+          "prompt": "Write two short reports for the default robot at t = 3: one for someone who needs its location relative to the origin, and one for someone estimating wear from distance traveled. Include units and explain why neither report can be reconstructed from the other number alone."
+        },
+        {
+          "id": "reconstruct-motion",
+          "prompt": "Design a two-part constant-velocity trip lasting 4 s that starts at position 0, ends at position 2 m and travels exactly 6 m. State both time intervals and velocities, then verify the displacement and distance separately."
+        },
+        {
+          "id": "turning-evidence",
+          "prompt": "Compare s(t) = t² and s(t) = t³ on −1 ≤ t ≤ 1. Both have zero velocity at t = 0. Use velocity signs and positions to decide which motion reverses there, and explain what a zero derivative does and does not establish."
+        }
+      ],
+      "rubric": [
+        "Distinguish position, displacement, velocity, speed and total distance.",
+        "State the interval and include units on every physical quantity.",
+        "Find candidate turning times and confirm direction changes by signs.",
+        "Split distance accumulation at every reversal and use nonnegative segment lengths.",
+        "Connect endpoint differences with signed integrals and explain any cancellation."
+      ],
+      "transfer": {
+        "prompt": "A tank has a signed net flow rate: positive when liquid enters and negative when it leaves. Which motion ideas transfer to final volume, and what would integrating the absolute net flow measure?",
+        "connection": "Initial volume plus the integral of net flow gives final volume. The integral of absolute net flow measures total volume change in either direction; it is not the final amount in the tank. If simultaneous inflow and outflow are possible, net flow alone does not reveal their combined throughput."
+      },
+      "questions": [
+        {
+          "id": "motion.build-1",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A cart moves at constant velocity −2 m/s for 3 s. What is its signed displacement, in meters?",
+          "answer": -6,
+          "explanation": "Displacement is velocity times duration: (−2)·3 = −6 m. The minus sign means movement in the negative coordinate direction.",
+          "hint": "Keep the velocity sign when multiplying by elapsed time. Distance and signed displacement are different quantities.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "motion.build-2",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A cart starts at position 5 m and moves at +3 m/s for 4 s. What is its final position, in meters?",
+          "answer": 17,
+          "explanation": "The displacement is 3·4 = 12 m. Add it to the initial coordinate 5 m to obtain final position 17 m.",
+          "hint": "First compute the change in position, then add the starting position.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "motion.build-3",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "At one instant a robot has velocity −4 m/s. What is its speed in meters per second?",
+          "answer": 4,
+          "explanation": "Speed is the magnitude of velocity: |−4| = 4 m/s. The velocity sign describes direction, not a negative travel rate.",
+          "hint": "Use the absolute value of the signed velocity.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "motion.connect-1",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "A different robot has position p(t) = t² − 6t + 5 meters. What is its velocity at t = 4 seconds, in m/s?",
+          "answer": 2,
+          "explanation": "Differentiate to obtain p′(t) = 2t − 6. At t = 4, the velocity is 8 − 6 = 2 m/s.",
+          "hint": "Find the rate of change of the position polynomial before substituting the time.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "motion.connect-2",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "For p(t) = t² − 6t + 5 meters on 0 ≤ t ≤ 4 seconds, what total distance is traveled, in meters?",
+          "answer": 10,
+          "explanation": "Velocity 2t − 6 changes from negative to positive at t = 3. Positions are p(0) = 5, p(3) = −4 and p(4) = −3. Distance is |−4 − 5| + |−3 − (−4)| = 9 + 1 = 10 m.",
+          "hint": "Find a possible reversal from p′(t) = 0. Check signs, then add the magnitudes of the position changes on the two pieces.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "motion.connect-3",
+          "stage": "connect",
+          "kind": "choice",
+          "prompt": "For p(t) = t² − 6t + 5, velocity at t = 2 is −2 m/s. Which interpretation is correct?",
+          "answer": "It moves in the negative direction at speed 2 m/s.",
+          "explanation": "The negative sign gives the direction in the chosen coordinates. The speed is the absolute value, 2 m/s; position and acceleration are separate quantities.",
+          "hint": "Separate the sign of a rate from its magnitude.",
+          "options": [
+            "Its position must be −2 m.",
+            "It moves in the negative direction at speed 2 m/s.",
+            "It travels a negative amount of distance each second."
+          ]
+        },
+        {
+          "id": "motion.transfer-1",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "A tank starts with 5 liters. Its net flow is q(t) = 2t − 2 liters/minute for 0 ≤ t ≤ 3 minutes. What is the final volume, in liters?",
+          "answer": 8,
+          "explanation": "The net accumulated change is ∫₀³(2t − 2)dt = [t² − 2t]₀³ = 3 liters. Add the initial 5 liters to get 8. The volume stays nonnegative throughout this model.",
+          "hint": "Integrate the signed net flow over the interval, then add the initial amount.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "motion.transfer-2",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "An elevator rises 8 m and then descends 3 m. What is its total distance traveled, in meters?",
+          "answer": 11,
+          "explanation": "Both path segments contribute positive traveled amounts, so distance is 8 + 3 = 11 m. The signed displacement would be 8 − 3 = 5 m upward.",
+          "hint": "Ask how much path was covered on each segment, even when the direction changes.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "motion.transfer-3",
+          "stage": "transfer",
+          "kind": "choice",
+          "prompt": "A robot moves away from its start and later returns to that same position. What must be true?",
+          "answer": "Its net displacement is zero, while its total distance is positive.",
+          "explanation": "Equal final and initial positions imply zero displacement. Because it actually moved away and returned, the path contains positive length.",
+          "hint": "Compare what endpoint subtraction measures with what adding traveled lengths measures.",
+          "options": [
+            "Its total distance is zero because it finished where it began.",
+            "Its velocity was zero throughout the trip.",
+            "Its net displacement is zero, while its total distance is positive."
+          ]
+        },
+        {
+          "id": "motion.review-1",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A new motion model is z(t) = t² − 8t + 6 meters. Find its signed velocity at t = 3 seconds, in m/s.",
+          "answer": -2,
+          "explanation": "The derivative is z′(t) = 2t − 8. Substituting t = 3 gives −2 m/s, indicating the negative direction.",
+          "hint": "Differentiate the position model and then evaluate the derivative at the requested time.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "motion.review-2",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "For z(t) = t² − 8t + 6 meters on 0 ≤ t ≤ 5 seconds, what is the total distance traveled, in meters?",
+          "answer": 17,
+          "explanation": "Velocity 2t − 8 reverses sign at t = 4. The positions are z(0) = 6, z(4) = −10 and z(5) = −9. The two traveled lengths are 16 m and 1 m, totaling 17 m.",
+          "hint": "A single endpoint difference may hide a reversal. Use the zero and signs of velocity to divide the interval.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "motion.review-3",
+          "stage": "review",
+          "kind": "choice",
+          "prompt": "You know only that a differentiable position function has velocity zero at t = 2. Which conclusion is justified?",
+          "answer": "Its instantaneous velocity is zero; more information is needed to know whether it reverses.",
+          "explanation": "A zero derivative identifies a stationary instant, but the velocity may change sign or keep the same sign around it. A direction reversal requires the sign change.",
+          "hint": "Think of both a bowl-shaped position graph and a flattened increasing cubic graph.",
+          "options": [
+            "Its instantaneous velocity is zero; more information is needed to know whether it reverses.",
+            "It definitely reverses direction at t = 2.",
+            "It remains stationary for a whole second."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain",
+      "title": "Control a growing circle through its radius",
+      "subtitle": "Connect algebraic expansion, a limiting rate and the chain rule.",
+      "level": "college",
+      "interests": [
+        "science",
+        "engineering",
+        "design"
+      ],
+      "topic_ids": [
+        "calculus-1.chain-rule",
+        "calculus-1.limits",
+        "calculus-1.related-rates",
+        "geometry.area",
+        "algebra-1.polynomials"
+      ],
+      "prerequisite_ids": [
+        "algebra-1.functions",
+        "arithmetic.exponents",
+        "calculus-1.derivatives"
+      ],
+      "decision": "Predict how quickly the area grows when you can directly control only the radius.",
+      "context": "A circular graphic expands with radius r(t) = at + b centimeters. The default settings are a = 2 cm/s and b = 1 cm, so at t = 3 s the radius is 7 cm. The visible area is A(t) = π[r(t)]², measured in square centimeters.",
+      "quantities": [
+        {
+          "symbol": "t",
+          "meaning": "Elapsed time",
+          "unit": "seconds"
+        },
+        {
+          "symbol": "a",
+          "meaning": "Constant radius growth rate",
+          "unit": "centimeters per second"
+        },
+        {
+          "symbol": "b",
+          "meaning": "Initial radius",
+          "unit": "centimeters"
+        },
+        {
+          "symbol": "r(t)",
+          "meaning": "Radius at time t",
+          "unit": "centimeters"
+        },
+        {
+          "symbol": "A(t)",
+          "meaning": "Circle area at time t",
+          "unit": "square centimeters"
+        },
+        {
+          "symbol": "dA/dt",
+          "meaning": "Instantaneous area growth rate",
+          "unit": "square centimeters per second"
+        }
+      ],
+      "assumptions": [
+        "The graphic remains a circle and the radius follows r(t) = at + b exactly.",
+        "The interactive growing-circle model uses a ≥ 0, b ≥ 0 and t ≥ 0. A shrinking-circle transfer model must explicitly stop before the radius becomes negative.",
+        "A comparison increment h is nonzero in a difference quotient, and both compared times must stay in the model domain.",
+        "π is exact in symbolic expressions. Questions asking for the coefficient of π require just that number, not an approximation to the full quantity."
+      ],
+      "why": [
+        {
+          "title": "The output of one relationship is the input of another",
+          "text": "Time first determines radius through r(t), then radius determines area through A(r) = πr². The chain rule preserves that order: dA/dt = (dA/dr)(dr/dt). Evaluating only one derivative would omit one link in how time changes area."
+        },
+        {
+          "title": "The units explain why the rates multiply",
+          "text": "dA/dr has units cm² per cm, while dr/dt has units cm per second. Their product has units cm² per second, the rate being requested. At a larger radius, the same added radial thickness sweeps out a larger surrounding ring."
+        },
+        {
+          "title": "Expanding a square keeps both cross terms",
+          "text": "(r + Δr)² = r² + 2rΔr + (Δr)². One cross term comes from r·Δr and the other from Δr·r. Omitting the middle term erases most of the area change when Δr is small."
+        },
+        {
+          "title": "Factoring justifies cancellation",
+          "text": "For the default radius at t = 3, the area change over h seconds is 28πh + 4πh² = h(28π + 4πh). Division by h is valid only when h ≠ 0. The simplified expression then has a well-defined limit as h approaches zero; the original quotient is never evaluated by dividing by zero."
+        },
+        {
+          "title": "An instantaneous rate is not every finite-interval average",
+          "text": "Here the rate changes as the circle grows. At t = 3 it is 28π cm²/s, but over the following half-second the average is 30π cm²/s. The linear prediction uses the starting rate; the quadratic term accounts for the additional growth during the interval."
+        }
+      ],
+      "examples": [
+        {
+          "title": "Follow the two links and their units",
+          "prompt": "With r(t) = 2t + 1 cm, find the instantaneous area growth rate at t = 1 s.",
+          "steps": [
+            {
+              "math": "r(1) = 2·1 + 1 = 3 cm",
+              "why": "Evaluate the inner radius function at the requested time."
+            },
+            {
+              "math": "dA/dr = 2πr",
+              "why": "Differentiating A(r) = πr² measures area change per centimeter of radius.",
+              "restriction": "Use the nonnegative physical radius."
+            },
+            {
+              "math": "dr/dt = 2 cm/s",
+              "why": "The radius is linear in time and has constant slope 2."
+            },
+            {
+              "math": "dA/dt = (2πr)·2",
+              "why": "Multiply the outer change per radius by the radius change per time."
+            },
+            {
+              "math": "At t = 1: dA/dt = 2π·3·2 = 12π cm²/s",
+              "why": "Substitute the radius belonging to this time, not the time itself, into the outer derivative."
+            }
+          ],
+          "conclusion": "The area grows at 12π cm²/s at t = 1 s. The rate depends on both the current radius and its growth rate."
+        },
+        {
+          "title": "See the chain rule emerge from legal algebra",
+          "prompt": "At t = 3 s, compare the exact average area growth over a nonzero increment h with the instantaneous rate.",
+          "steps": [
+            {
+              "math": "r(3) = 7; r(3 + h) = 7 + 2h",
+              "why": "The radius grows by 2h centimeters over h seconds.",
+              "restriction": "h ≠ 0 and 3 + h ≥ 0."
+            },
+            {
+              "math": "ΔA = π[(7 + 2h)² − 49]",
+              "why": "Subtract the starting area from the ending area using the same area formula at both times."
+            },
+            {
+              "math": "ΔA = 28πh + 4πh² = h(28π + 4πh)",
+              "why": "Expand all terms: 49 + 28h + 4h², subtract 49, then factor the common h."
+            },
+            {
+              "math": "ΔA/h = 28π + 4πh",
+              "why": "Cancel the common nonzero factor h from numerator and denominator.",
+              "restriction": "This quotient equality requires h ≠ 0."
+            },
+            {
+              "math": "lim as h → 0 of ΔA/h = 28π cm²/s",
+              "why": "The remaining correction 4πh approaches zero, giving the local area growth rate."
+            },
+            {
+              "math": "For h = 0.5: ΔA = 15π cm² and ΔA/h = 30π cm²/s",
+              "why": "A finite interval includes extra area growth while the radius increases. Its average need not equal the rate at the beginning."
+            }
+          ],
+          "conclusion": "The exact instantaneous result 28π agrees with 2πr·r′ = 2π·7·2. The finite half-second average is larger because the area growth accelerates."
+        }
+      ],
+      "misconception": {
+        "claim": "Because r grows at 2 cm/s, the circle area must grow at 2 cm²/s.",
+        "why": "Radius and area are different quantities related by a square. A constant radius rate produces an area rate proportional to the current radius.",
+        "counterexample": "At radius 3 cm the default area rate is 12π cm²/s; at radius 7 cm it is 28π cm²/s, even though the radius rate remains 2 cm/s."
+      },
+      "prediction": {
+        "prompt": "Keep the positive radius growth rate a fixed and compare two positive radii, one twice the other. What happens to the instantaneous area growth rate?",
+        "options": [
+          "It quadruples.",
+          "It doubles.",
+          "It stays unchanged."
+        ],
+        "answer": "It doubles.",
+        "explanation": "dA/dt = 2πra is proportional to r when a is fixed, so doubling r doubles this rate. The area itself, πr², quadruples; area and area growth rate are different outputs."
+      },
+      "challenges": [
+        {
+          "id": "time-to-capacity",
+          "prompt": "For r(t) = 2t + 1, the graphic must never exceed area 81π cm². Find the complete allowed time interval starting at t = 0. Explain why taking a square root requires the radius domain, and report the area growth rate at the boundary."
+        },
+        {
+          "id": "same-area-different-rate",
+          "prompt": "Compare two circles with radii r₁(t) = 2t + 1 and r₂(t) = t + 4, in centimeters. At t = 3 they have the same area. Show whether they have the same area growth rate and explain what additional information is needed beyond a still image."
+        },
+        {
+          "id": "linear-prediction-error",
+          "prompt": "Starting at t = 3 for the default model, predict the area increase over h = 0.5 s using the instantaneous rate. Compare with the exact increase. Repeat with h = 0.25 s and determine how halving h changes the absolute error. Explain the role of the h² term."
+        }
+      ],
+      "rubric": [
+        "Identify the inner radius function and the outer area function.",
+        "Explain each multiplication or cancellation and retain its domain restrictions.",
+        "Keep area, radius rate and area rate units distinct.",
+        "Distinguish an exact finite change, an average rate and an instantaneous rate.",
+        "Verify a result using both a composed derivative and a legal algebraic difference quotient when requested."
+      ],
+      "transfer": {
+        "prompt": "A spherical bubble has volume V = (4/3)πr³ and a changing radius. Predict the factors in dV/dt and explain how the dimensions change.",
+        "connection": "The same composition gives dV/dt = 4πr²·dr/dt. Surface area appears as the outer derivative, multiplying radial growth to produce cubic units per time. A new outer function changes the derivative; the composition principle remains."
+      },
+      "questions": [
+        {
+          "id": "chain.build-1",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A circle has radius r(t) = 3t + 2 cm. What is its radius at t = 2 s, in centimeters?",
+          "answer": 8,
+          "explanation": "Substitute t = 2 into the inner function: r(2) = 3·2 + 2 = 8 cm. This is a radius, not yet an area.",
+          "hint": "Evaluate the time-to-radius relationship before applying any area formula.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "chain.build-2",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A circle has radius 5 cm. Its area is kπ cm². What is k?",
+          "answer": 25,
+          "explanation": "Area is π times the square of the radius, so A = π·5² = 25π cm². The requested coefficient k is 25; multiplying by a decimal approximation to π would instead give the approximate entire area.",
+          "hint": "Square the radius. The prompt requests the coefficient multiplying π, not a decimal approximation to the whole area.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "chain.build-3",
+          "stage": "build",
+          "kind": "choice",
+          "prompt": "Which units should (dA/dr)(dr/dt) have when radius is in cm and time is in seconds?",
+          "answer": "cm²/s.",
+          "explanation": "Area per radius has units cm²/cm. Multiplying by cm/s cancels the radius unit, leaving cm²/s.",
+          "hint": "Write the units as fractions and cancel the repeated centimeter factor.",
+          "options": [
+            "cm/s.",
+            "cm²/s.",
+            "cm³/s."
+          ]
+        },
+        {
+          "id": "chain.connect-1",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "For r(t) = 3t + 2 cm at t = 2 s, dA/dt = kπ cm²/s. What is k?",
+          "answer": 48,
+          "explanation": "At t = 2, r = 8 cm and r′ = 3 cm/s. The chain rule gives 2πr·r′ = 2π·8·3 = 48π cm²/s.",
+          "hint": "Find the current radius and its rate separately, then multiply 2πr by the radius rate.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "chain.connect-2",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "Continue the linear radius model r(t) = 3t + 2 cm. Starting at t = 2 s, when r = 8 cm, what is the exact area increase over the next 1 second, as a coefficient of π in cm²?",
+          "answer": 57,
+          "explanation": "The new radius is 8 + 3·1 = 11 cm. The exact change is π(11² − 8²) = 57π cm². The starting instantaneous-rate estimate would be 48π, missing the extra 9π term.",
+          "hint": "Compute the two areas and subtract. A finite interval is not automatically represented exactly by the starting derivative.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "chain.connect-3",
+          "stage": "connect",
+          "kind": "choice",
+          "prompt": "Why can h be canceled in h(10 + 2h)/h during a derivative calculation?",
+          "answer": "For h ≠ 0 it is a common factor of the whole numerator and denominator.",
+          "explanation": "Cancellation divides numerator and denominator by the same nonzero factor. It does not justify division by zero; the limit is considered after this equality is established on nonzero increments.",
+          "hint": "Distinguish a common factor from a term, and remember the domain of the original quotient.",
+          "options": [
+            "Because h equals zero in every derivative calculation.",
+            "Because matching symbols may always be removed from sums.",
+            "For h ≠ 0 it is a common factor of the whole numerator and denominator."
+          ]
+        },
+        {
+          "id": "chain.transfer-1",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "A sphere has V = (4/3)πr³ cm³. At r = 2 cm, its radius grows at 3 cm/s. Write dV/dt = kπ cm³/s. What is k?",
+          "answer": 48,
+          "explanation": "Differentiate with respect to radius to get 4πr², then multiply by r′ = 3. Thus dV/dt = 4π·2²·3 = 48π cm³/s.",
+          "hint": "Use the outer derivative of volume with respect to radius, then include the inner radius rate.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "chain.transfer-2",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "A shrinking circle has r(t) = 10 − t cm for 0 ≤ t ≤ 10 s. At t = 4 s, write dA/dt = kπ cm²/s. What is the signed coefficient k?",
+          "answer": -12,
+          "explanation": "At t = 4 the radius is 6 cm and r′ = −1 cm/s. Thus A′ = 2π·6·(−1) = −12π cm²/s. Area is decreasing while the radius remains physically valid.",
+          "hint": "The radius rate is negative. Retain that sign when multiplying it by 2π times the current radius.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "chain.transfer-3",
+          "stage": "transfer",
+          "kind": "choice",
+          "prompt": "Two growing circles have the same positive radius but different positive radius growth rates. Which statement follows?",
+          "answer": "The circle with the larger radius growth rate has the larger area growth rate.",
+          "explanation": "At the same positive radius, both outer factors 2πr are equal and positive. Multiplication by the larger positive r′ produces the larger area rate. At radius zero both area rates would instead be zero.",
+          "hint": "Compare A′ = 2πrr′ and identify which factors are shared.",
+          "options": [
+            "The circle with the larger radius growth rate has the larger area growth rate.",
+            "Their area growth rates must match because their areas match.",
+            "The circle with smaller radius growth rate has the larger area growth rate."
+          ]
+        },
+        {
+          "id": "chain.review-1",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A new circular display has r(t) = 4t + 3 cm. At t = 1 s, write its area growth rate as kπ cm²/s. What is k?",
+          "answer": 56,
+          "explanation": "The current radius is 7 cm and r′ = 4 cm/s. Therefore A′ = 2π·7·4 = 56π cm²/s.",
+          "hint": "Trace time to radius, then multiply the outer area derivative by the radius rate.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "chain.review-2",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A circle expands from radius 6 cm to radius 8 cm in exactly 1 second. Its average area growth rate over that second is kπ cm²/s. What is k?",
+          "answer": 28,
+          "explanation": "The exact area change is π(8² − 6²) = 28π cm². Divide by 1 second to obtain average rate 28π cm²/s; no particular intermediate radius law is needed for this average.",
+          "hint": "Average change uses the endpoint areas divided by elapsed time. Do not substitute a radius growth rate into the area formula.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "chain.review-3",
+          "stage": "review",
+          "kind": "choice",
+          "prompt": "For a radius r(t) = at + b with a > 0, the exact area increment is 2πr(t)ah + πa²h². What does the second term explain?",
+          "answer": "The finite increase differs from the starting instantaneous-rate prediction.",
+          "explanation": "The first term is A′(t)h, the local linear prediction. The second term is the remaining exact correction for this model, and its absolute size scales as h².",
+          "hint": "Identify which term equals rate at the start multiplied by elapsed time.",
+          "options": [
+            "The chain rule fails whenever h is not zero.",
+            "The finite increase differs from the starting instantaneous-rate prediction.",
+            "The circle must have a negative radius."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bayes",
+      "title": "Understand what a factory warning actually tells you",
+      "subtitle": "Conditional probability becomes a transparent count of possible cases.",
+      "level": "college",
+      "interests": [
+        "engineering",
+        "business",
+        "data"
+      ],
+      "topic_ids": [
+        "probability.conditional-probability",
+        "probability.bayes-theorem",
+        "probability.expectation",
+        "statistics-basics.basic-probability"
+      ],
+      "prerequisite_ids": [
+        "arithmetic.fractions",
+        "arithmetic.percentages",
+        "statistics-basics.basic-probability"
+      ],
+      "decision": "Estimate what fraction of flagged items are actually defective, then explain which changes would make an inspection queue more useful.",
+      "context": "A factory screen flags products for inspection. In the default model, 10% of items are defective, the screen flags 80% of defective items, and it also flags 10% of acceptable items. Consider 1,000 modeled items so each conditional group can be counted.",
+      "quantities": [
+        {
+          "symbol": "N",
+          "meaning": "Number of modeled items",
+          "unit": "items"
+        },
+        {
+          "symbol": "p",
+          "meaning": "Defective fraction before screening",
+          "unit": "probability"
+        },
+        {
+          "symbol": "s",
+          "meaning": "Flag probability among defective items",
+          "unit": "probability"
+        },
+        {
+          "symbol": "f",
+          "meaning": "Flag probability among acceptable items",
+          "unit": "probability"
+        },
+        {
+          "symbol": "P(D | F)",
+          "meaning": "Defective probability among flagged items",
+          "unit": "probability"
+        }
+      ],
+      "assumptions": [
+        "D means defective and F means flagged. Every item belongs to exactly one of the defective or acceptable groups.",
+        "The quoted screen rates are conditional within the correct group: s = P(F | D) and f = P(F | not D).",
+        "Population counts computed from probabilities are expected counts, not a guarantee for any real batch. The model treats the input rates as known.",
+        "All probabilities lie from 0 to 1. P(D | F) is defined only when P(F) = ps + (1 − p)f is positive.",
+        "No assumption about independence between repeated screens is given. Two flags cannot automatically be treated as two independent pieces of evidence."
+      ],
+      "why": [
+        {
+          "title": "Read the condition as a restriction on the group",
+          "text": "P(D | F) asks you to look only inside the flagged group, then find its defective fraction. P(F | D) instead looks only inside the defective group. Swapping the order changes the denominator and usually changes the value."
+        },
+        {
+          "title": "Counts reveal the competition between two sources of flags",
+          "text": "Flags can come from defective items, Nps, or acceptable items, N(1 − p)f. Add those sources to get the whole flagged group. The desired fraction is Nps divided by that sum; N cancels, leaving ps/[ps + (1 − p)f]."
+        },
+        {
+          "title": "A small false-flag rate can still produce many false flags",
+          "text": "When acceptable products greatly outnumber defective ones, a small fraction of the large acceptable group can rival a large fraction of the small defective group. The starting prevalence p matters even if the screen itself has not changed."
+        },
+        {
+          "title": "A rate does not certify one item",
+          "text": "A posterior probability describes uncertainty under a model, not a guaranteed label for each flagged product. Expected counts may be fractional when controls change; actual observed counts are integers and vary from batch to batch."
+        },
+        {
+          "title": "A useful decision includes consequences",
+          "text": "A screen can catch more defects by also flagging more acceptable items. Whether that tradeoff is worthwhile depends on inspection effort, the cost of missed defects and the decision being made. One accuracy percentage does not fully specify those consequences."
+        }
+      ],
+      "examples": [
+        {
+          "title": "Build the flagged group from its two sources",
+          "prompt": "With N = 1,000, p = 10%, s = 80% and f = 10%, estimate the defective fraction among flagged items.",
+          "steps": [
+            {
+              "math": "Expected defective = 1000·0.10 = 100; acceptable = 900",
+              "why": "Split the population by actual status before applying the two different conditional screen rates."
+            },
+            {
+              "math": "Flagged defective = 100·0.80 = 80",
+              "why": "Sensitivity acts within the 100 defective items, not within the whole population."
+            },
+            {
+              "math": "Flagged acceptable = 900·0.10 = 90",
+              "why": "The false-flag rate acts within the 900 acceptable items."
+            },
+            {
+              "math": "All flagged = 80 + 90 = 170",
+              "why": "These are disjoint sources of a flag, so their expected counts add."
+            },
+            {
+              "math": "P(D | F) = 80/170 = 8/17 ≈ 47.1%",
+              "why": "Conditioning on a flag restricts the denominator to the flagged group.",
+              "restriction": "There must be a positive probability of a flag."
+            }
+          ],
+          "conclusion": "About 47.1% of flagged items are defective under this model. The 80% sensitivity is a different conditional probability; it does not mean 80% of flags indicate a defect."
+        },
+        {
+          "title": "Change the base rate while keeping the screen fixed",
+          "prompt": "A cleaner production line has only 1% defective items. Keep N = 1,000, s = 80% and f = 10%. How informative is a flag now?",
+          "steps": [
+            {
+              "math": "Expected defective = 10; acceptable = 990",
+              "why": "Changing prevalence changes the sizes of the groups to which the screen rates are applied."
+            },
+            {
+              "math": "Flagged defective = 10·0.80 = 8",
+              "why": "The same sensitivity now acts on a much smaller defective group."
+            },
+            {
+              "math": "Flagged acceptable = 990·0.10 = 99",
+              "why": "The unchanged false-flag rate acts on a slightly larger acceptable group."
+            },
+            {
+              "math": "All flagged = 8 + 99 = 107",
+              "why": "Count both ways an item can enter the inspection queue."
+            },
+            {
+              "math": "P(D | F) = 8/107 ≈ 7.48%",
+              "why": "Only 8 of the 107 expected flags come from defective products. The screen rates are unchanged, but the flag has a different interpretation in this population."
+            }
+          ],
+          "conclusion": "The modeled defective fraction among flags falls to about 7.48%. Fewer underlying defects can make a flag less predictive even when sensitivity and false-flag rate stay fixed."
+        }
+      ],
+      "misconception": {
+        "claim": "If a screen catches 80% of defects, any flagged product has an 80% chance of being defective.",
+        "why": "Catching 80% describes P(F | D). The desired probability P(D | F) also depends on how often defects occur and how often acceptable products are flagged.",
+        "counterexample": "In the default 1,000-item model, 80 defective and 90 acceptable items are flagged. The defective fraction among flags is 80/170, not 80/100."
+      },
+      "prediction": {
+        "prompt": "Keep prevalence at 10% and sensitivity at 80%, but lower the false-flag rate from 10% to 5%. What happens to the inspection queue?",
+        "options": [
+          "It contains twice as many caught defects.",
+          "Its defective fraction must fall because fewer items are flagged.",
+          "It has fewer false flags and a larger defective fraction."
+        ],
+        "answer": "It has fewer false flags and a larger defective fraction.",
+        "explanation": "Expected caught defects stay at 80. False flags fall from 90 to 45, so the flagged queue shrinks from 170 to 125 and the defective fraction rises from 80/170 to 80/125 = 64%."
+      },
+      "challenges": [
+        {
+          "id": "improve-the-queue",
+          "prompt": "At prevalence 10% in 1,000 modeled items, compare the default screen with one having the same 80% sensitivity but a 5% false-flag rate. Report caught defects, missed defects, acceptable items sent to inspection and defective fraction among flags. Explain which quantities improve and which stay fixed."
+        },
+        {
+          "id": "cost-of-errors",
+          "prompt": "Compare Screen A with sensitivity 80% and false-flag rate 10% against Screen B with sensitivity 90% and false-flag rate 20%, using prevalence 10% and 1,000 items. Assign a cost of 10 units per missed defect and 1 per false flag. Choose the lower expected-cost screen. Then raise the false-flag cost to 2 and check whether your choice changes."
+        },
+        {
+          "id": "two-flags",
+          "prompt": "Someone wants to run the default screen twice and multiply its rates. Explain what conditional independence assumption would make that legitimate and why repeating the exact same deterministic inspection need not provide independent evidence. Under that stated assumption, calculate the defective fraction among items flagged both times."
+        }
+      ],
+      "rubric": [
+        "Name the condition and the group used as the denominator.",
+        "Apply sensitivity to defective items and false-flag rate to acceptable items.",
+        "Separate expected counts from observed integer counts and certainty about individuals.",
+        "Include both sources of a flag and check that the conditioning event has positive probability.",
+        "State any assumptions about repeated screens and evaluate decisions using explicit error costs."
+      ],
+      "transfer": {
+        "prompt": "A search system marks documents as relevant. Translate defect prevalence, sensitivity and false-flag rate into document terms, then explain why a search over a mostly irrelevant collection may return many irrelevant results.",
+        "connection": "The same two-source count applies: marked relevant documents may be truly relevant or false matches. The relevant fraction among returned results depends on both the classifier rates and how common relevant documents are in the searched collection."
+      },
+      "questions": [
+        {
+          "id": "bayes.build-1",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A model of 2,000 factory items assumes 5% are defective. What is the expected number of defective items?",
+          "answer": 100,
+          "explanation": "Five percent is 0.05, so the expected defective count is 2000·0.05 = 100. This is the group size before screening.",
+          "hint": "Convert the percentage to a fraction or decimal and apply it to all modeled items.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "bayes.build-2",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "There are 900 acceptable items in a modeled batch. A screen falsely flags 4% of acceptable items. What is the expected false-flag count?",
+          "answer": 36,
+          "explanation": "The rate applies to the acceptable group: 900·0.04 = 36. Using the whole batch would give the wrong conditional base.",
+          "hint": "Identify the group named after “of” in the stated percentage.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "bayes.build-3",
+          "stage": "build",
+          "kind": "choice",
+          "prompt": "A screen has sensitivity 90%. What does that mean?",
+          "answer": "Among defective items, 90% are flagged.",
+          "explanation": "Sensitivity is P(flag | defective). It conditions on actual defective status and does not specify the defective fraction among all flags.",
+          "hint": "Read the condition as the group in which the percentage is measured.",
+          "options": [
+            "Among flagged items, 90% are defective.",
+            "Exactly 90% of all items are defective.",
+            "Among defective items, 90% are flagged."
+          ]
+        },
+        {
+          "id": "bayes.connect-1",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "A 1,000-item model has 20% defects, sensitivity 75% and false-flag rate 10%. How many items are expected to be flagged in total?",
+          "answer": 230,
+          "explanation": "There are 200 defective items, yielding 200·0.75 = 150 true flags. The 800 acceptable items yield 800·0.10 = 80 false flags. Total expected flags = 150 + 80 = 230.",
+          "hint": "Split by status, apply the correct rate to each group and add the two sources of a flag.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "bayes.connect-2",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "A synthetic inspection record contains 80 flagged defective items and 120 flagged acceptable items. What percent of the flagged group is defective? Enter a percentage from 0 to 100.",
+          "answer": 40,
+          "explanation": "The flagged group contains 80 + 120 = 200 items. The defective fraction within it is 80/200 = 0.4 = 40%.",
+          "hint": "Use only the flagged group in the denominator, including both actual statuses.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "bayes.connect-3",
+          "stage": "connect",
+          "kind": "choice",
+          "prompt": "Sensitivity stays 80% and false-flag rate stays 10%. Defect prevalence falls from 10% to 1%. What happens to the defective fraction among flags?",
+          "answer": "It decreases because true flags become rarer relative to false flags.",
+          "explanation": "With lower prevalence, fewer defective items generate true flags while more acceptable items can generate false flags. The posterior changes from 80/170 to 8/107 in a 1,000-item model.",
+          "hint": "Compare the sizes of the defective and acceptable groups before applying the unchanged rates.",
+          "options": [
+            "It decreases because true flags become rarer relative to false flags.",
+            "It stays at 80% because sensitivity is unchanged.",
+            "It becomes 100% because defects are rare."
+          ]
+        },
+        {
+          "id": "bayes.transfer-1",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "A document filter returns 60 truly relevant documents and 90 irrelevant documents. What percentage of returned documents is relevant?",
+          "answer": 40,
+          "explanation": "The returned set contains 150 documents, of which 60 are relevant. The conditional percentage is 60/150·100 = 40%.",
+          "hint": "Restrict the denominator to all returned documents, not all documents in the original collection.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "bayes.transfer-2",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "An observed batch contains 30 defective items. The screen flags 20 of those defective items and also flags 17 acceptable items. How many defects were missed?",
+          "answer": 10,
+          "explanation": "Of the 30 actual defects, 20 were flagged, leaving 30 − 20 = 10 missed. The 17 acceptable flags concern a different error type.",
+          "hint": "Stay within the defective group and subtract those caught from its total.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "bayes.transfer-3",
+          "stage": "transfer",
+          "kind": "choice",
+          "prompt": "An item is flagged by two screens. May you multiply the two sensitivities to get the probability of two flags given a defect?",
+          "answer": "Only if the two flag events are conditionally independent given a defect.",
+          "explanation": "The required probability is P(F₁ and F₂ | D). It equals P(F₁ | D)P(F₂ | D) only if the flags are conditionally independent given D. Similar dependence must be considered within acceptable items when computing the posterior.",
+          "hint": "Repeated measurements can share the same cause or error. Identify the assumption behind multiplying probabilities.",
+          "options": [
+            "Always, because there are two screens.",
+            "Only if the two flag events are conditionally independent given a defect.",
+            "Never, even if conditional independence is stated."
+          ]
+        },
+        {
+          "id": "bayes.review-1",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A new factory model has 5,000 items, a 4% defect rate and a screen sensitivity of 90%. What is the expected number of flagged defective items?",
+          "answer": 180,
+          "explanation": "Expected defective items = 5000·0.04 = 200. Sensitivity applies within that group, giving 200·0.90 = 180 true flags.",
+          "hint": "First find the defective group; then apply the probability of a flag within that group.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "bayes.review-2",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A new observed inspection queue contains 45 defective items and 15 acceptable items. What percent of the queue is defective?",
+          "answer": 75,
+          "explanation": "There are 60 flagged items altogether. The defective proportion is 45/60 = 0.75, which is 75%.",
+          "hint": "Condition on queue membership and count all queue members in the denominator.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "bayes.review-3",
+          "stage": "review",
+          "kind": "choice",
+          "prompt": "You want P(defective | flagged). Which count ratio estimates it from a complete observed batch with at least one flag?",
+          "answer": "Flagged defective items divided by all flagged items.",
+          "explanation": "The condition restricts attention to flagged items. Within that group, the numerator counts those that are also defective. All defective items would be the denominator for the reversed conditional probability.",
+          "hint": "Translate “defective given flagged” into “defective among the flagged group.”",
+          "options": [
+            "Flagged defective items divided by all defective items.",
+            "All flagged items divided by all acceptable items.",
+            "Flagged defective items divided by all flagged items."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "graphics",
+      "title": "Build a graphic by composing transformations",
+      "subtitle": "Matrix columns, vectors and order become visible geometric operations.",
+      "level": "college",
+      "interests": [
+        "design",
+        "engineering",
+        "science"
+      ],
+      "topic_ids": [
+        "linear-algebra.vectors",
+        "linear-algebra.matrices",
+        "linear-algebra.linear-systems",
+        "geometry.coordinate-geometry"
+      ],
+      "prerequisite_ids": [
+        "pre-algebra.coordinate-plane",
+        "pre-algebra.expressions",
+        "arithmetic.negative-numbers"
+      ],
+      "decision": "Choose the order of a stretch and a rotation to place a graphic at a target position, and explain how the same operations affect its shape.",
+      "context": "Represent a point by a column vector v = (x, y). The default stretch is A = [[2,0],[0,1]], the rotation R turns 90 degrees counterclockwise, and the starting point is v = (1,2). Compare RAv, which stretches first, with ARv, which rotates first.",
+      "quantities": [
+        {
+          "symbol": "v = (x, y)",
+          "meaning": "Original point or displacement as a column vector",
+          "unit": "coordinate units"
+        },
+        {
+          "symbol": "sₓ, sᵧ",
+          "meaning": "Horizontal and vertical stretch factors",
+          "unit": "dimensionless"
+        },
+        {
+          "symbol": "θ",
+          "meaning": "Counterclockwise rotation angle in the controls",
+          "unit": "degrees"
+        },
+        {
+          "symbol": "Av, Rv",
+          "meaning": "Transformed vectors",
+          "unit": "coordinate units"
+        },
+        {
+          "symbol": "det(A)",
+          "meaning": "Signed area scale of the stretch",
+          "unit": "dimensionless"
+        }
+      ],
+      "assumptions": [
+        "Vectors are columns and matrices act on their left; therefore the rightmost matrix acts first.",
+        "All transformations are linear about the origin. Translation is not included in a 2×2 matrix alone.",
+        "The x and y axes use the same length unit and equal geometric scale; a mathematical rotation preserves Euclidean lengths and angles.",
+        "The default stretch factors are positive. A zero scale collapses a dimension; negative factors would introduce reflections and require signed-area interpretation.",
+        "The examples use exact 90-degree rotation, R = [[0,−1],[1,0]], so no rounding of trigonometric values is needed."
+      ],
+      "why": [
+        {
+          "title": "A vector is built from the coordinate directions",
+          "text": "The point (x,y) equals x(1,0) + y(0,1). A linear transformation distributes across this combination. Once you know where the two coordinate basis vectors go, you can reconstruct the image of every vector."
+        },
+        {
+          "title": "Matrix columns are images of the basis",
+          "text": "The first column of a matrix is the image of (1,0); the second is the image of (0,1). Multiplying by (x,y) forms x times the first column plus y times the second. This gives the row-by-column arithmetic a geometric reason."
+        },
+        {
+          "title": "Composition reads from the input outward",
+          "text": "In RAv, the vector first becomes Av and then R(Av). A horizontal stretch refers to the original fixed x direction, so stretching before a rotation generally acts on different components than stretching afterward."
+        },
+        {
+          "title": "Equal ingredients do not imply equal operations",
+          "text": "A nonuniform stretch and a rotation usually do not commute. The intermediate coordinate directions matter. Uniform scaling is a special case: a scalar multiple of the identity commutes with every rotation, but that does not establish commutativity for all matrices."
+        },
+        {
+          "title": "Area scaling and length scaling are different",
+          "text": "The default A doubles the horizontal side of a unit square and keeps the vertical side, so its area doubles. A rotation preserves area. Both orders therefore have area scale 2, yet they can send a particular point to different places and produce different final shapes."
+        }
+      ],
+      "examples": [
+        {
+          "title": "Explain a quarter-turn through the basis",
+          "prompt": "Rotate v = (1,2) by 90 degrees counterclockwise about the origin.",
+          "steps": [
+            {
+              "math": "v = 1(1,0) + 2(0,1)",
+              "why": "Decompose the point into horizontal and vertical basis components."
+            },
+            {
+              "math": "R(1,0) = (0,1); R(0,1) = (−1,0)",
+              "why": "A counterclockwise quarter-turn sends the positive x direction upward and the positive y direction left."
+            },
+            {
+              "math": "Rv = 1(0,1) + 2(−1,0) = (−2,1)",
+              "why": "Linearity preserves the coefficients and combines the two transformed basis directions."
+            },
+            {
+              "math": "R = [[0,−1],[1,0]]; R(x,y) = (−y,x)",
+              "why": "The transformed basis vectors become the two columns, producing the coordinate rule."
+            },
+            {
+              "math": "1² + 2² = (−2)² + 1² = 5",
+              "why": "Equal squared lengths verify that this rotation preserves the vector length."
+            }
+          ],
+          "conclusion": "The rotated point is (−2,1). The rule comes from turning coordinate directions, not from arbitrarily changing signs."
+        },
+        {
+          "title": "Follow both orders and compare more than one output",
+          "prompt": "Apply A = [[2,0],[0,1]] and the quarter-turn R to v = (1,2) in both orders.",
+          "steps": [
+            {
+              "math": "Av = (2,2)",
+              "why": "A doubles the x coordinate while preserving the y coordinate."
+            },
+            {
+              "math": "RAv = R(2,2) = (−2,2)",
+              "why": "In RA, the rightmost transformation A acts first; R then rotates its output."
+            },
+            {
+              "math": "Rv = (−2,1); ARv = A(−2,1) = (−4,1)",
+              "why": "Changing the order makes A stretch the already-rotated horizontal component."
+            },
+            {
+              "math": "RA = [[0,−1],[2,0]]; AR = [[0,−2],[1,0]]",
+              "why": "The two composed coordinate rules are (−y,2x) and (−2y,x), so the matrices differ."
+            },
+            {
+              "math": "det(RA) = det(AR) = 2",
+              "why": "Both operations contain one area-preserving rotation and one area-doubling stretch. Equal area scales do not imply equal transformations."
+            }
+          ],
+          "conclusion": "Stretch then rotate gives (−2,2), while rotate then stretch gives (−4,1). Order changes the point even though both compositions double all two-dimensional areas."
+        }
+      ],
+      "misconception": {
+        "claim": "AB and BA must be equal because ordinary numbers can be multiplied in either order.",
+        "why": "Matrices describe operations whose inputs are changed by prior operations. Scalar multiplication is commutative, but composition of different geometric operations generally is not.",
+        "counterexample": "For the default A, R and v, RAv = (−2,2) while ARv = (−4,1). A single vector with different images is enough to prove the two transformations are not equal."
+      },
+      "prediction": {
+        "prompt": "Keep the quarter-turn rotation but change the stretch so both x and y are multiplied by 2. What happens to the two orders?",
+        "options": [
+          "They give the same result for every vector.",
+          "They can never give the same result.",
+          "They agree only for the default starting point."
+        ],
+        "answer": "They give the same result for every vector.",
+        "explanation": "Uniform scaling is A = 2I. By linearity, R(2v) = 2R(v), so RA = AR. This special case does not make all matrix multiplication commutative."
+      },
+      "challenges": [
+        {
+          "id": "target-order",
+          "prompt": "For the default v = (1,2), A = diag(2,1) and 90-degree counterclockwise R, a designer wants the final point (−4,1). Choose an order, show the intermediate point and explain why the other order misses the target."
+        },
+        {
+          "id": "shape-not-one-point",
+          "prompt": "Apply both default orders to the four vertices of the unit square. List the new vertices and compare the two shapes, their areas and their horizontal/vertical extents. Explain why testing just the origin would fail to detect the different transformations."
+        },
+        {
+          "id": "find-when-order-does-not-matter",
+          "prompt": "Keep a 90-degree counterclockwise rotation and let A = diag(sₓ,sᵧ). Derive RA and AR and find the condition on the two scale factors that makes them equal for every vector. Distinguish that requirement from accidental equality for one particular vector."
+        }
+      ],
+      "rubric": [
+        "State the column-vector convention and act with the rightmost matrix first.",
+        "Use transformed basis vectors to explain a matrix product or coordinate rule.",
+        "Record intermediate points so an order error can be located.",
+        "Distinguish equality on one vector from equality of transformations.",
+        "Keep length, angle, orientation and area effects separate."
+      ],
+      "transfer": {
+        "prompt": "A game character is translated as well as rotated. Explain why the translation cannot be represented by an ordinary 2×2 linear matrix acting on (x,y) alone, and describe one way to extend the model.",
+        "connection": "Every 2×2 linear map sends the zero vector to zero, but a nonzero translation moves the origin. You can add a translation vector after the matrix, or use homogeneous coordinates with a 3×3 matrix. The order of operations still matters."
+      },
+      "questions": [
+        {
+          "id": "graphics.build-1",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A = [[3,0],[0,1]] acts on column vector (2,−1). What is the x coordinate of the result?",
+          "answer": 6,
+          "explanation": "The transformation triples x and preserves y, so the image is (6,−1). The requested x component is 6.",
+          "hint": "Multiply the first matrix row by the vector, or track the horizontal stretch.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "graphics.build-2",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A 90-degree counterclockwise rotation sends (3,4) to (−4,3). What is the y coordinate of that image?",
+          "answer": 3,
+          "explanation": "The quarter-turn rule is (x,y) → (−y,x). The new y coordinate is the original x coordinate, 3.",
+          "hint": "Follow where the positive x direction rotates, then apply the coordinate rule.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "graphics.build-3",
+          "stage": "build",
+          "kind": "choice",
+          "prompt": "For a matrix acting on column vectors, what does its first column represent?",
+          "answer": "The image of the basis vector (1,0).",
+          "explanation": "Multiplication by (1,0) selects one times the first column plus zero times the second. Thus the first column records the transformed horizontal basis direction.",
+          "hint": "Write the matrix-vector product with input (1,0).",
+          "options": [
+            "The image of the basis vector (1,0).",
+            "The original coordinates of every point.",
+            "The image of the basis vector (0,1)."
+          ]
+        },
+        {
+          "id": "graphics.connect-1",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "Let A stretch x by 3 and keep y fixed, and let R rotate 90 degrees counterclockwise. For v = (2,1), what is the y coordinate of RAv?",
+          "answer": 6,
+          "explanation": "First Av = (6,1). Then R(6,1) = (−1,6), so the final y coordinate is 6. The rightmost operation acts first.",
+          "hint": "Compute the intermediate stretched vector before applying the quarter-turn.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "graphics.connect-2",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "With the same A, R and v = (2,1), what is the x coordinate of ARv?",
+          "answer": -3,
+          "explanation": "First Rv = (−1,2). Then A multiplies that x component by 3, giving (−3,2). The requested x coordinate is −3.",
+          "hint": "This order rotates first. Write the intermediate vector so its new horizontal component is clear.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "graphics.connect-3",
+          "stage": "connect",
+          "kind": "choice",
+          "prompt": "Two transformations both double every planar area. Must they send every vector to the same point?",
+          "answer": "No; equal area scale does not determine the whole transformation.",
+          "explanation": "A determinant provides one signed area scale. Many different matrices share it, including the distinct default RA and AR, so equality of determinants is insufficient.",
+          "hint": "Compare what one number about area can reveal with all the coordinate information in a matrix.",
+          "options": [
+            "Yes; area scale uniquely determines every coordinate.",
+            "No; equal area scale does not determine the whole transformation.",
+            "Yes, provided both transformations leave the origin fixed."
+          ]
+        },
+        {
+          "id": "graphics.transfer-1",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "A rectangular icon has area 12 square units. A linear map stretches x by 2 and y by 3. What is the new area in square units?",
+          "answer": 72,
+          "explanation": "The area scale is 2·3 = 6. Multiplying the original area 12 by 6 gives 72 square units. Length factors along independent directions multiply for area.",
+          "hint": "Determine the scale factor for a unit rectangle, then apply it to the original area.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "graphics.transfer-2",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "A horizontal shear S = [[1,2],[0,1]] acts on v = (3,1). What is the new x coordinate?",
+          "answer": 5,
+          "explanation": "The first row gives x′ = 1·3 + 2·1 = 5. The second coordinate stays 1; the shear adds twice the vertical component to x.",
+          "hint": "Use the row-by-column rule or combine the transformed basis vectors.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "graphics.transfer-3",
+          "stage": "transfer",
+          "kind": "choice",
+          "prompt": "Which observation proves a nonzero translation cannot be represented by a 2×2 linear matrix alone?",
+          "answer": "Every linear matrix sends (0,0) to (0,0), but a nonzero translation does not.",
+          "explanation": "Multiplying any 2×2 matrix by the zero vector gives zero. A nonzero translation sends the origin to its translation vector, contradicting that property.",
+          "hint": "Test the simplest input: the origin.",
+          "options": [
+            "Every translation changes the area of a shape.",
+            "A 2×2 matrix can only rotate and never stretch.",
+            "Every linear matrix sends (0,0) to (0,0), but a nonzero translation does not."
+          ]
+        },
+        {
+          "id": "graphics.review-1",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A new stretch A multiplies x by 4 and y by 2. Apply A to v = (1,3), then rotate 90 degrees counterclockwise. What is the final x coordinate?",
+          "answer": -6,
+          "explanation": "The stretched vector is (4,6). A counterclockwise quarter-turn gives (−6,4), so x is −6.",
+          "hint": "Respect the stated order and keep the intermediate vector visible.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "graphics.review-2",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A linear map has matrix [[2,1],[0,3]]. By what positive factor does it scale area?",
+          "answer": 6,
+          "explanation": "Its determinant is 2·3 − 1·0 = 6. For planar area, use the absolute determinant, so the area scale is 6. The off-diagonal shear term does not change this value here.",
+          "hint": "Compute the 2×2 determinant ad − bc, then use its magnitude for ordinary area.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "graphics.review-3",
+          "stage": "review",
+          "kind": "choice",
+          "prompt": "U scales both coordinates by the same factor 3, and R is any rotation about the origin. Which statement is true?",
+          "answer": "RUv = URv for every vector v.",
+          "explanation": "U = 3I. Since rotations are linear, R(3v) = 3R(v), which is exactly equality of the two orders for every vector.",
+          "hint": "Uniform scaling multiplies the entire vector by one scalar; use linearity of rotation.",
+          "options": [
+            "RUv = URv for every vector v.",
+            "The orders agree only when v is the zero vector.",
+            "No scaling can commute with a rotation."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sampling",
+      "title": "Compare averages without confusing a sample with the whole",
+      "subtitle": "Explore sample variation, fair selection and weighted comparisons.",
+      "level": "college",
+      "interests": [
+        "data",
+        "business",
+        "science"
+      ],
+      "topic_ids": [
+        "statistics-basics.center",
+        "statistics-basics.distributions",
+        "statistics.sampling",
+        "statistics.estimation",
+        "statistics.statistical-inference"
+      ],
+      "prerequisite_ids": [
+        "arithmetic.fractions",
+        "arithmetic.ratios",
+        "statistics-basics.center"
+      ],
+      "decision": "Choose and interpret a sample-based estimate while explaining how selection and natural sample variation limit the conclusion.",
+      "context": "A tiny synthetic population contains six task times: A = 2, B = 4, C = 4, D = 6, E = 8 and F = 12 minutes. Its known population mean is 6 minutes. The lab enumerates subsets so you can see exactly how a sample mean changes; these are invented data for reasoning, not measured claims about a real workplace.",
+      "quantities": [
+        {
+          "symbol": "N",
+          "meaning": "Number of units in the finite synthetic population",
+          "unit": "tasks"
+        },
+        {
+          "symbol": "n",
+          "meaning": "Number of distinct units selected without replacement",
+          "unit": "tasks"
+        },
+        {
+          "symbol": "μ",
+          "meaning": "Mean of the full population",
+          "unit": "minutes"
+        },
+        {
+          "symbol": "x̄",
+          "meaning": "Mean of the selected sample",
+          "unit": "minutes"
+        },
+        {
+          "symbol": "x̄ − μ",
+          "meaning": "Signed error of the sample mean in this known-population demonstration",
+          "unit": "minutes"
+        }
+      ],
+      "assumptions": [
+        "The six labeled tasks are the entire synthetic population. The two tasks taking 4 minutes remain distinct units.",
+        "A sample contains n distinct units, with 1 ≤ n ≤ 6; sampling is without replacement.",
+        "The sample-index control enumerates possible subsets deterministically. It is not a random draw.",
+        "Only under simple random sampling of size n is each subset of n labeled units equally likely. The expectation statements explicitly use that design.",
+        "The real population mean is known here only to inspect sampling error. In a real estimation problem it is usually unknown. No confidence interval or empirical reliability claim is inferred from a single selected subset."
+      ],
+      "why": [
+        {
+          "title": "A mean balances a total across observations",
+          "text": "The arithmetic mean divides the total measured time by the number of tasks, giving minutes per task. It is a center summary, not a claim that every task takes that long or that all samples must have that mean."
+        },
+        {
+          "title": "Different subsets can give different answers without arithmetic errors",
+          "text": "The first three values have mean 10/3 minutes, while the last three have mean 26/3 minutes. Both calculations are correct. What they estimate, and whether they tend to favor particular values, depends on how those subsets were selected."
+        },
+        {
+          "title": "Random sampling concerns the selection procedure",
+          "text": "Under simple random sampling, every allowed subset of the same size has equal probability. Picking the first few convenient cases or dragging a control to a favorable sample is not that procedure. A sample that happens to match the population mean does not prove its selection method was unbiased."
+        },
+        {
+          "title": "Variation of the data differs from variation of an estimate",
+          "text": "Task times differ within the population. Sample means also differ across repeated selections. Larger simple random samples from this fixed population have less sampling variance, reaching zero when n = N; this does not guarantee that every particular larger sample is closer to μ."
+        },
+        {
+          "title": "Averaging group means requires their weights",
+          "text": "If two groups have different sizes, their overall mean is not generally the average of their two means. Reconstruct each group total as count times mean, add the totals, and divide by the combined count. Changing group composition can even reverse an apparent comparison."
+        }
+      ],
+      "examples": [
+        {
+          "title": "Calculate an estimate and inspect its actual error",
+          "prompt": "Find the full population mean, then compare the first-three and last-three subset means.",
+          "steps": [
+            {
+              "math": "Population total = 2 + 4 + 4 + 6 + 8 + 12 = 36 minutes",
+              "why": "Include each labeled task exactly once, including both distinct tasks with time 4."
+            },
+            {
+              "math": "μ = 36/6 = 6 minutes",
+              "why": "Divide the total by the number of units in the whole population."
+            },
+            {
+              "math": "Mean of A,B,C = (2 + 4 + 4)/3 = 10/3 minutes",
+              "why": "This selected sample has three units, so its own total is divided by 3."
+            },
+            {
+              "math": "Mean of D,E,F = (6 + 8 + 12)/3 = 26/3 minutes",
+              "why": "A different equally sized subset uses a different total."
+            },
+            {
+              "math": "10/3 − 6 = −8/3; 26/3 − 6 = 8/3 minutes",
+              "why": "Subtract the known population mean to quantify the signed errors. This comparison is possible because the complete synthetic population is visible."
+            }
+          ],
+          "conclusion": "Equal sample sizes do not ensure equal estimates. These two deliberately chosen subsets miss the population mean in opposite directions; neither deterministic choice is a random sample."
+        },
+        {
+          "title": "Explain what unbiased means without promising a perfect draw",
+          "prompt": "If every three-unit subset is equally likely, why is the expected sample mean 6 even though individual sample means vary?",
+          "steps": [
+            {
+              "math": "Number of three-unit subsets = (6·5·4)/(3·2·1) = 20",
+              "why": "Count ordered choices of three different units, then divide by the 3! orders representing the same subset."
+            },
+            {
+              "math": "Each labeled unit belongs to (5·4)/(2·1) = 10 subsets",
+              "why": "After including one particular unit, choose its two partners from the other five."
+            },
+            {
+              "math": "Sum of all 20 sample means = (10/3)·36 = 120 minutes",
+              "why": "Across all subsets each population value appears 10 times, and each subset mean divides its sum by 3."
+            },
+            {
+              "math": "Expected sample mean = 120/20 = 6 minutes",
+              "why": "Equal probabilities make the expectation the ordinary average over the 20 possible sample means.",
+              "restriction": "This step requires simple random sampling, with all 20 labeled subsets equally likely."
+            },
+            {
+              "math": "Smallest possible mean = 10/3; largest = 26/3 minutes",
+              "why": "The three smallest and three largest values supply the extremes, so one random sample can still be far from the expectation."
+            }
+          ],
+          "conclusion": "Unbiased means the selection procedure averages to the population mean across its possible draws. It does not mean every draw is accurate, representative in every respect or certain to include extreme values."
+        }
+      ],
+      "misconception": {
+        "claim": "A larger sample must give an estimate closer to the true mean on every individual attempt.",
+        "why": "A larger simple random sample reduces sampling variance in this finite population, but particular samples can still fall in different places. Selection bias also is not automatically removed by collecting more cases the same biased way.",
+        "counterexample": "The two-unit subset {B = 4, E = 8} has mean 6, exactly the population mean. The larger three-unit subset {A = 2, B = 4, E = 8} has mean 14/3, farther from 6."
+      },
+      "prediction": {
+        "prompt": "Keep the synthetic population fixed and compare all simple random samples of size 3 with all samples of size 6. What changes?",
+        "options": [
+          "At size 6 the individual task times all become 6.",
+          "At size 6 there is only the full population, so every sample mean is 6.",
+          "At size 6 the mean doubles because the sample is twice as large."
+        ],
+        "answer": "At size 6 there is only the full population, so every sample mean is 6.",
+        "explanation": "Sampling all six distinct units without replacement leaves only one possible subset. Its mean equals μ = 6, so sampling variability of the mean is zero. The six individual task times retain their original spread."
+      },
+      "challenges": [
+        {
+          "id": "enumerate-uncertainty",
+          "prompt": "Use the subset control to inspect all 20 samples of size 3. Record their means, find the minimum and maximum, and count how many are within 1 minute of μ = 6, including the boundaries. Explain why that fraction is a sampling probability only under an equal-probability selection design."
+        },
+        {
+          "id": "weighted-comparison",
+          "prompt": "Two synthetic teams handle different mixes of tasks. Team A: 2 morning tasks averaging 4 minutes and 6 evening tasks averaging 8. Team B: 6 morning tasks averaging 5 minutes and 2 evening tasks averaging 9. Compute each overall mean, then compare within morning and within evening. Explain why the aggregate ranking reverses and why it does not alone establish which team causes faster work."
+        },
+        {
+          "id": "design-a-fair-sample",
+          "prompt": "Design a survey of task times across a full week. State the population, the selection procedure, how you would include different shifts, and what you would report besides one mean. Identify a source of bias that a large sample would not automatically fix, and explain what evidence would be needed for a reliable comparison."
+        }
+      ],
+      "rubric": [
+        "Define the population, sample and quantity being estimated.",
+        "Use the correct denominator and retain duplicate-valued but distinct units.",
+        "Distinguish deterministic subset exploration from a random selection procedure.",
+        "Describe both variation and possible selection bias without guaranteeing accuracy from sample size.",
+        "Weight group means by their counts and avoid turning association into a causal claim."
+      ],
+      "transfer": {
+        "prompt": "A website compares the average completion time of two page designs. What must be checked before concluding that one design makes people faster?",
+        "connection": "The weighted-mean issue transfers to mixtures of novice and experienced visitors. Comparable assignment, consistent outcome definitions, sampling variation and missing data matter. Random assignment helps support a causal comparison; random sampling addresses representation, which is a different question."
+      },
+      "questions": [
+        {
+          "id": "sampling.build-1",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "Four synthetic task times are 3, 5, 7 and 9 minutes. What is their arithmetic mean, in minutes?",
+          "answer": 6,
+          "explanation": "The total is 24 minutes across four tasks. Dividing 24 by 4 gives a mean of 6 minutes.",
+          "hint": "Add all four times, then divide by the number of tasks rather than by the number of different values.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "sampling.build-2",
+          "stage": "build",
+          "kind": "number",
+          "prompt": "A selected sample contains times 2, 4 and 12 minutes. What is its mean, in minutes?",
+          "answer": 6,
+          "explanation": "The sample total is 18 minutes and the sample size is 3, so its mean is 18/3 = 6 minutes. A correct mean alone does not identify the selection procedure.",
+          "hint": "Use the sample total and the sample count, including every selected unit.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "sampling.build-3",
+          "stage": "build",
+          "kind": "choice",
+          "prompt": "Two task-time datasets have the same mean. What can you conclude from that fact alone?",
+          "answer": "Their centers by the arithmetic-mean measure match, but their spreads may differ.",
+          "explanation": "A mean summarizes total divided by count. It does not determine the individual values, range, shape or variability, so those may be different.",
+          "hint": "Compare the pairs {5,5} and {0,10}: their means agree but their values are spread differently.",
+          "options": [
+            "Every corresponding task time must be equal.",
+            "Their centers by the arithmetic-mean measure match, but their spreads may differ.",
+            "Both datasets must have zero variability."
+          ]
+        },
+        {
+          "id": "sampling.connect-1",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "From six labeled tasks, how many different unordered samples of three distinct tasks are possible without replacement?",
+          "answer": 20,
+          "explanation": "There are 6·5·4 ordered triples. Each unordered subset is counted in 3·2·1 orders, so the number of subsets is 120/6 = 20. Identical measured values do not make distinct labeled tasks the same unit.",
+          "hint": "Count ordered selections first, then remove the multiple orders of each three-unit subset.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "sampling.connect-2",
+          "stage": "connect",
+          "kind": "number",
+          "prompt": "In a known synthetic population the true mean is 7 minutes. One selected sample has mean 9 minutes. What is its signed estimation error x̄ − μ, in minutes?",
+          "answer": 2,
+          "explanation": "Signed error is sample estimate minus population value: 9 − 7 = +2 minutes. The estimate is 2 minutes too high.",
+          "hint": "Follow the subtraction order specified in x̄ − μ; do not take an absolute value unless asked.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "sampling.connect-3",
+          "stage": "connect",
+          "kind": "choice",
+          "prompt": "Two different labeled tasks both take 4 minutes. In simple random sampling of labeled tasks, how should they be treated?",
+          "answer": "As two distinct eligible units, even though their measured values match.",
+          "explanation": "Sampling units are the tasks, not the set of unique numerical values. Removing one repeated value changes the population and the probabilities.",
+          "hint": "Separate the identity of an observation from its measured value.",
+          "options": [
+            "As one unit because repeated measurements never count twice.",
+            "As units that cannot appear in the same sample.",
+            "As two distinct eligible units, even though their measured values match."
+          ]
+        },
+        {
+          "id": "sampling.transfer-1",
+          "stage": "transfer",
+          "kind": "number",
+          "prompt": "One group has 2 tasks with mean 4 minutes. A second group has 6 tasks with mean 8 minutes. What is the combined mean, in minutes?",
+          "answer": 7,
+          "explanation": "Reconstruct totals: 2·4 = 8 and 6·8 = 48 minutes. The combined total is 56 across 8 tasks, giving 7 minutes. Averaging 4 and 8 equally would ignore the unequal group sizes.",
+          "hint": "Multiply each group mean by its count, add those totals and divide by the combined count.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "sampling.transfer-2",
+          "stage": "transfer",
+          "kind": "choice",
+          "prompt": "A survey of service speed includes only customers served during the quietest shift. What should be addressed before generalizing to all shifts?",
+          "answer": "The selection procedure may omit systematically slower or busier conditions.",
+          "explanation": "A sample from one selected shift need not represent the target population across all shifts. Collecting more observations only from that shift does not automatically remove the selection problem.",
+          "hint": "Ask which members of the intended population had a chance to be included.",
+          "options": [
+            "The selection procedure may omit systematically slower or busier conditions.",
+            "No issue remains once the sample contains 100 observations.",
+            "The arithmetic mean is invalid for any service-time data."
+          ]
+        },
+        {
+          "id": "sampling.transfer-3",
+          "stage": "transfer",
+          "kind": "choice",
+          "prompt": "Page Design A has a lower observed mean time than B, but A was used mainly by experts and B mainly by beginners. Which conclusion is justified?",
+          "answer": "The aggregate difference alone does not establish that design caused the time difference.",
+          "explanation": "Visitor experience is mixed differently across the designs and may affect completion time. A fair causal comparison needs comparable assignment and other relevant checks, not only two means.",
+          "hint": "Look for a difference between the groups besides the design being studied.",
+          "options": [
+            "Design A has been proved faster for every user.",
+            "The aggregate difference alone does not establish that design caused the time difference.",
+            "The lower mean guarantees less variation in times."
+          ]
+        },
+        {
+          "id": "sampling.review-1",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A new synthetic sample has task times 1, 3, 5 and 11 minutes. What is its mean, in minutes?",
+          "answer": 5,
+          "explanation": "The total is 20 minutes and there are four observations, so the mean is 20/4 = 5 minutes. The large value 11 contributes to the total just like each other observation.",
+          "hint": "Compute the full sum before dividing by the sample size.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "sampling.review-2",
+          "stage": "review",
+          "kind": "number",
+          "prompt": "A new report combines 3 tasks averaging 10 minutes with 5 tasks averaging 6 minutes. What is the combined mean, in minutes?",
+          "answer": 7.5,
+          "explanation": "The group totals are 30 and 30 minutes. Together there are 60 minutes across 8 tasks, yielding 60/8 = 7.5 minutes. Equal totals do not mean equal group sizes.",
+          "hint": "Recover the totals from count times mean, then divide the overall total by the overall count.",
+          "tolerance": 1e-05
+        },
+        {
+          "id": "sampling.review-3",
+          "stage": "review",
+          "kind": "choice",
+          "prompt": "For a fixed finite population with nonzero variation, simple random sampling without replacement uses n units. What happens as n increases toward the full population size?",
+          "answer": "The sampling variance of the mean decreases, but each particular draw is not guaranteed to be closer to the true mean.",
+          "explanation": "The random-selection procedure becomes less variable in aggregate and has zero sampling variance at a census. That property of the distribution of estimates is not a guarantee about any one realized sample.",
+          "hint": "Distinguish average behavior across all possible samples from a promise about a particular selected subset.",
+          "options": [
+            "Every individual task time moves closer to the population mean.",
+            "Every larger selected sample is guaranteed to give a more accurate mean than every smaller sample.",
+            "The sampling variance of the mean decreases, but each particular draw is not guaranteed to be closer to the true mean."
+          ]
+        }
+      ]
+    }
+  ]
+}

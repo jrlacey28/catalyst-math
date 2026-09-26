@@ -1,0 +1,82 @@
+[
+  {
+    "formula": "\"population\" arrow.r \"sample\" arrow.r \"estimate\"",
+    "text": "A sample is a smaller group used to learn about a population. First define who belongs to that population and how they can enter the sample. These three groups contain ten members each; omitting a group changes whom our evidence can represent.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        10,
+        10,
+        10
+      ],
+      "labels": [
+        "group A",
+        "group B",
+        "group C"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "\"simple random sample: each size-6 subset is equally likely\"",
+    "text": "In a simple random sample of six, every subset of six population members has the same chance of selection. Random selection does not guarantee a perfectly representative individual sample, but it gives a defensible probability model for sampling variation.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        6
+      ],
+      "labels": [
+        "sample of six"
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "\"equal-sized strata: sample two from each\"",
+    "text": "Stratified sampling randomly samples within predefined groups. Taking two from each of our equal-sized groups ensures all are represented. When groups have different population sizes, analysis generally needs their population-size weights rather than blindly giving every sampled group equal influence.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        2,
+        2,
+        2
+      ],
+      "labels": [
+        "A sample",
+        "B sample",
+        "C sample"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "\"larger sample\" != \"less selection bias\"",
+    "text": "A large convenience sample can still systematically miss parts of the population. Surveying only one group gives no direct evidence about the others, however carefully we average the responses. Sample size reduces random variation more readily than it repairs selection bias.",
+    "visual": {
+      "kind": "bars",
+      "values": [
+        10,
+        0,
+        0
+      ],
+      "labels": [
+        "A sampled",
+        "B sampled",
+        "C sampled"
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

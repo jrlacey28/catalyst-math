@@ -1,0 +1,7 @@
+A measure assigns nonnegative size to allowed sets and assigns zero to the empty set. The allowed sets form a sigma algebra, closed under complements and countable unions. This specifies which events or regions can be measured consistently.
+
+For disjoint measurable sets, sizes add. With four equally likely outcomes, a two-outcome event has probability one half and its two-outcome complement has probability one half. Their union has probability one. Probability is a measure with total size one.
+
+Different measures describe different notions of size. Lebesgue measure on the line agrees with interval length. A singleton has length zero even though it is not empty. Counting measure, by contrast, assigns that singleton size one.
+
+Countable additivity implies that a countable union of zero-length singletons still has measure zero. The rational numbers therefore have Lebesgue measure zero, although they are dense. The few rational points drawn are only an illustration of that countable-set argument.

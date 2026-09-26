@@ -1,0 +1,7 @@
+A trigonometric equation asks which angles produce a specified coordinate. On one full turn, the height one half occurs twice: once in the first quadrant and once in the second. Reading only the first crossing would miss another solution.
+
+Within the interval from zero inclusive to two pi exclusive, the solutions are pi over six and five pi over six. The second angle shares the reference angle but lies in the second quadrant, where sine remains positive.
+
+Without an interval restriction, full turns produce infinitely many solutions. Add any integer multiple of two pi to each base angle. The integer may be positive, zero, or negative, because turning backward also returns to the same coordinates.
+
+Factoring a trigonometric equation can reveal several solution families. This product vanishes when sine is zero or cosine is zero. Dividing by one factor without checking when it vanishes would erase an entire family of valid solutions.

@@ -1,0 +1,17 @@
+.answer-visual{--av-user:#aa5a0b;--av-checked:#186b56;margin:10px 0;padding:12px;background:#f7fafc;border:1px solid #dce5ed;border-radius:12px;color:#23354b;min-width:0;overflow-wrap:anywhere}
+.av-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px;font-size:.92rem;line-height:1.4}
+.av-status{font-size:.71rem;white-space:nowrap;border-radius:12px;padding:3px 8px;background:#edf1f5;color:#52657a;font-weight:650}
+.av-match{background:#e1f2e9;color:#1a6b50}.av-revisit{background:#fff0dd;color:#955114}
+.av-svg{display:block;width:100%;height:auto;max-height:370px;overflow:visible;font-family:inherit}
+.av-svg text{font-family:inherit}.av-values,.av-choice-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin-top:10px}
+.av-values>div,.av-choice-columns>div{padding:11px 13px;border-radius:10px;background:#fff;border:1px solid #e1e8ee;min-width:0}
+.av-values b,.av-choice-columns b{display:block;font-size:.75rem;margin-bottom:5px}
+.av-your b{color:var(--av-user)}.av-checked b{color:var(--av-checked)}
+.av-values span{display:block;font-variant-numeric:tabular-nums;font-size:.98rem;overflow-wrap:anywhere}
+.av-choice-columns p{margin:0;line-height:1.5;font-size:.88rem;white-space:pre-wrap}
+.av-note,.av-unavailable{margin:10px 0 0;font-size:.77rem;line-height:1.5;color:#52657a}
+.av-formula{margin:8px 0;font-size:.86rem;line-height:1.6;font-variant-numeric:tabular-nums;color:#32475e}
+.av-choice-map{display:flex;gap:10px;align-items:center;justify-content:space-between;margin:15px 0}
+.av-choice-map span{flex:1;background:#eaf0f6;border-radius:10px;padding:13px 9px;text-align:center;font-size:.78rem}.av-choice-map b{color:#8799ac}
+@media(max-width:520px){.answer-visual{padding:12px}.av-heading{flex-wrap:wrap}.av-values,.av-choice-columns{grid-template-columns:1fr}.av-svg{min-height:100px}.av-choice-map{gap:5px}.av-choice-map span{font-size:.7rem;padding:11px 5px}.av-note{font-size:.75rem}}
+@media(prefers-reduced-motion:reduce){.answer-visual *{animation:none!important;transition:none!important}}

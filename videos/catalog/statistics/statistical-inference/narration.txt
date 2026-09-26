@@ -1,0 +1,7 @@
+Statistical inference uses sample evidence to learn beyond the observed data. If thirty of fifty sampled people support a proposal, the sample proportion is sixty percent. Whether that estimates a wider population depends on how those people entered the sample.
+
+Under independent binary sampling with a common success probability, we can estimate how a sample proportion varies. Here the estimated standard error is about zero point zero six nine. The model supplies an uncertainty scale; the observed proportion alone cannot show its precision.
+
+Random assignment answers a different question from random sampling. Assigning volunteers randomly to treatments helps separate treatment effects from preexisting group differences. An observed success-rate difference of three tenths still carries sampling uncertainty; assignment does not eliminate random variation.
+
+Random sampling supports population generalization, while random assignment supports causal comparison under suitable implementation. Neither is replaced by a complicated formula. State the population, design, assumptions, effect estimate, and uncertainty so the conclusion remains matched to the evidence actually collected.

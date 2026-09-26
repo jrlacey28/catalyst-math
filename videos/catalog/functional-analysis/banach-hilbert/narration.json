@@ -1,0 +1,124 @@
+[
+  {
+    "formula": "norm((3,2))_2=sqrt(13)",
+    "text": "A norm assigns a vector a size, generalizing ordinary Euclidean length. A Banach space is a normed vector space in which every Cauchy sequence converges within the space. Completeness prevents sequences from approaching a missing point outside the chosen system.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "v_n=(frac(1,n),frac(2,n)) arrow.r (0,0)",
+    "text": "In the Euclidean plane, coordinatewise completeness gives this property. These vectors approach the origin, and their distance from it is square root five divided by n. That explicit bound proves convergence rather than relying on a few arrows becoming small.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          2
+        ],
+        [
+          0.5,
+          1
+        ]
+      ],
+      "points": [
+        [
+          0.25,
+          0.5
+        ],
+        [
+          0.125,
+          0.25
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "⟨f,g⟩=integral_0^1 f(x)g(x)d x",
+    "text": "A Hilbert space also has an inner product generating its norm and is complete for that norm. In real L two on the unit interval, inner products integrate products of functions. This makes geometry such as orthogonality available for function vectors.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        1
+      ],
+      "y": [
+        0,
+        1.1
+      ],
+      "curves": [
+        {
+          "f": "x",
+          "color": "blue",
+          "domain": [
+            0,
+            1
+          ]
+        },
+        {
+          "f": "1",
+          "color": "gold",
+          "domain": [
+            0,
+            1
+          ]
+        }
+      ],
+      "shade": [
+        0,
+        1
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "norm(u+v)^2+norm(u-v)^2 != 2norm(u)^2+2norm(v)^2",
+    "text": "Not every Banach norm comes from an inner product. With the maximum-coordinate norm and the two coordinate unit vectors, the parallelogram identity gives two on the left and four on the right. This complete normed plane is therefore not Hilbert under that norm.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

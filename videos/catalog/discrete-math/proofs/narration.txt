@@ -1,0 +1,7 @@
+A proof explains why a claim holds for every object meeting its assumptions. Four plus six equals ten is evidence for the even-plus-even claim, but testing examples can never cover all integers. We need a general reason.
+
+Represent arbitrary even integers as two a and two b, where a and b are integers. Their sum factors as two times the integer a plus b. That matches the definition of even and completes a direct proof.
+
+Mathematical induction uses a different structure: a starting case and a step that passes truth forward. For the sum of the first n positive integers, the claimed formula works at n equal to one, establishing the base case.
+
+Assume the formula holds for a particular positive integer n, then add the next term. Factoring n plus one produces exactly the formula for n plus one. Combined with the base case, this implication establishes every positive integer case.

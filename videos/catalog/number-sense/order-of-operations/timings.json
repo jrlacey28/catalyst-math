@@ -1,0 +1,85 @@
+[
+  {
+    "formula": "2+3 times 4=14",
+    "text": "An expression has structure before we calculate it. In two plus three times four, the multiplication describes one quantity: three groups of four. Add the separate two only after finding that product of twelve.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        2,
+        4,
+        4,
+        4
+      ],
+      "labels": [
+        "2",
+        "4",
+        "4",
+        "4"
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 15.0,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "(2+3) times 4=20",
+    "text": "Parentheses change which quantity acts as a factor. Two plus three now forms one five-object group, and four copies produce twenty. The same symbols can describe a different construction when their grouping changes.",
+    "visual": {
+      "kind": "grid",
+      "rows": 4,
+      "cols": 5,
+      "filled": 20
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 15.0,
+    "duration": 15.1,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "18 div 3 times 2=6 times 2=12",
+    "text": "Multiplication and division have equal priority, so evaluate them from left to right unless grouping says otherwise. Eighteen divided by three gives six, then multiplying by two gives twelve; multiplying the denominator first would change the expression.",
+    "visual": {
+      "kind": "dots",
+      "groups": [
+        6,
+        6
+      ],
+      "labels": [
+        "6",
+        "6"
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 30.1,
+    "duration": 18.133333333333333,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "2 times (3^2-4)=10",
+    "text": "Nested expressions are read from their inner structure outward. Square three to get nine, subtract four inside the parentheses to get five, then double the result. A fraction bar also groups its entire numerator and denominator.",
+    "visual": {
+      "kind": "grid",
+      "rows": 3,
+      "cols": 3,
+      "filled": 5,
+      "secondary": 4
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 48.233333333333334,
+    "duration": 16.3,
+    "audio": "audio_parts/04.wav"
+  }
+]

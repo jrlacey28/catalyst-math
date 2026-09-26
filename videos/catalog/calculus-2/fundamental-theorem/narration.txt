@@ -1,0 +1,7 @@
+Let A record the area accumulated under the rate two t. Increasing the upper endpoint by a tiny amount adds a thin strip. Its width is the input change, and its height is approximately the current rate.
+
+The thin-strip reasoning connects accumulation with differentiation. Here the area function is x squared, and its derivative returns two x. At input two, the accumulated amount changes at rate four, matching the original rate at that endpoint.
+
+The other direction turns an integral into an endpoint subtraction. Since x squared differentiates to two x, subtract its value at one from its value at three. The change in accumulated area is nine minus one, or eight.
+
+The pointwise derivative statement requires suitable regularity: continuity of the rate at the point is enough. At a jump, the accumulation can remain continuous but develop a corner. The theorem's assumptions explain where this direct identification works.

@@ -1,0 +1,40 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.868
+An eigenvector is a nonzero vector whose image is a scalar multiple of itself
+
+00:00:05.868 --> 00:00:08.993
+For this matrix, one, one becomes three, three
+
+00:00:08.993 --> 00:00:15.633
+The arrow grows but stays on the same line, so it is an eigenvector with eigenvalue three.
+
+00:00:16.933 --> 00:00:25.595
+To find every eigenvector for eigenvalue three, solve the homogeneous system formed by A minus three times the identity
+
+00:00:25.595 --> 00:00:28.786
+Both equations reduce to y equals x
+
+00:00:28.786 --> 00:00:33.800
+Therefore every nonzero multiple of one, one belongs to this eigendirection.
+
+00:00:35.100 --> 00:00:41.349
+There is another eigendirection: one, negative one remains unchanged, giving eigenvalue one
+
+00:00:41.349 --> 00:00:46.035
+Two independent eigenvectors form a useful coordinate system here
+
+00:00:46.035 --> 00:00:54.367
+Along these directions the same transformation acts by separate scalar multipliers rather than mixed coordinate formulas.
+
+00:00:55.667 --> 00:00:59.882
+Decompose two, zero into one copy of each eigendirection
+
+00:00:59.882 --> 00:01:04.567
+Linearity lets us transform those pieces separately, then recombine them
+
+00:01:04.567 --> 00:01:06.909
+The result is four, two
+
+00:01:06.909 --> 00:01:13.467
+This simplification explains why an eigenvector basis is powerful when such a basis exists.

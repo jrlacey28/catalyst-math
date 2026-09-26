@@ -1,0 +1,7 @@
+Expectation is a probability-weighted average, not a promise about one trial. Suppose the possible payoffs are zero, four, and ten with probabilities one half, three tenths, and one fifth. More likely values receive more weight in the average.
+
+Multiply each payoff by its probability, then add the contributions. The result is three point two, even though that value is not a possible payoff. For repeated independent trials of this model, sample averages settle near this expected value in the long run.
+
+Expectation respects addition and scaling when the relevant expectations exist. Doubling every payoff and adding one therefore doubles the old expectation and adds one. This linearity does not require independence between quantities; even adding X to itself follows the rule.
+
+Paying three point two to play gives zero expected net payoff, but an individual outcome can still lose or gain money. Expected value summarizes an average; it does not describe variability, guarantee fairness in every trial, or eliminate the possibility of a loss.

@@ -1,0 +1,7 @@
+A variable names a quantity so we can describe a relationship without choosing its value immediately. If each notebook costs three dollars, n can count notebooks and c can describe the corresponding cost in dollars.
+
+Once an input is supplied, substitution makes the rule concrete. Four notebooks means replace n with four everywhere it appears. Three times four gives twelve dollars; the letter was a placeholder for the quantity, not an extra operation.
+
+Sometimes the output is known instead. A bill of twenty one dollars creates an equation whose unknown is the notebook count. Seven groups of three fill that total, so solving recovers seven notebooks.
+
+The situation restricts which values make sense. A notebook count uses nonnegative whole numbers, even though the formula can be evaluated at other real inputs. Naming a variable should include its meaning, units, and allowed values.

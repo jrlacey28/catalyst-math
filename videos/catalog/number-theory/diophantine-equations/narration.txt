@@ -1,0 +1,7 @@
+A Diophantine equation asks for integer solutions, not merely points on a continuous curve. Six x plus nine y equals fifteen draws a line, but only the points with integer coordinates meet the arithmetic requirement.
+
+Both coefficients and the target share a factor of three, so divide the entire equation by three. The simpler equation has the solution one, one. This legal division preserves every solution because it divides an equality by a nonzero constant.
+
+Increasing x by three adds six to twice x, while decreasing y by two subtracts six from three y. The changes cancel. Every integer t therefore gives a solution, and subtracting two solutions shows this parameterization captures them all.
+
+Changing the target to fourteen destroys solvability: the left side is always divisible by three, while fourteen is not. More generally, an integer linear equation has integer solutions exactly when the greatest common divisor of its coefficients divides its target.

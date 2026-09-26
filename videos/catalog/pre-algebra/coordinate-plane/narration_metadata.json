@@ -1,0 +1,8 @@
+{
+  "engine": "kokoro-onnx",
+  "voice": "af_heart",
+  "speed": 0.95,
+  "sample_rate": 24000,
+  "duration": 69.43333333333334,
+  "source_sha256": "9896b8dc441e64b020c5e78fc58859224595d59477c27c12c53613e29849cbf5"
+}

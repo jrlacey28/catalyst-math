@@ -1,0 +1,256 @@
+{
+  "id": "algebra-1.slope",
+  "beats": [
+    {
+      "formula": "m=frac(Delta y,Delta x)",
+      "text": "Slope measures output change per unit input change along a nonvertical line. Choose two distinct points, compare their vertical coordinates, and divide by their horizontal separation. The order of subtraction must stay consistent in numerator and denominator.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          4
+        ],
+        "y": [
+          0,
+          10
+        ],
+        "curves": [
+          {
+            "f": "2*x+3",
+            "color": "blue",
+            "domain": [
+              -1.5,
+              3.5
+            ]
+          }
+        ],
+        "points": [
+          [
+            -1,
+            1
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "segments": [
+          [
+            [
+              -1,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              9
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "m=frac(9-1,3-(-1))=frac(8,4)=2",
+      "text": "From negative one, one to three, nine, the horizontal change is four and the vertical change is eight. Eight divided by four gives slope two: each step right corresponds to a rise of two on this line.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -2,
+          4
+        ],
+        "y": [
+          0,
+          10
+        ],
+        "curves": [
+          {
+            "f": "2*x+3",
+            "color": "blue",
+            "domain": [
+              -1.5,
+              3.5
+            ]
+          }
+        ],
+        "points": [
+          [
+            -1,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "segments": [
+          [
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "m=frac(-1-3,2-0)=-2",
+      "text": "A downward trend gives a negative slope. Moving from zero, three to two, negative one changes height by negative four across a positive run of two. The sign records direction, while the magnitude records steepness relative to the axis units.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          3
+        ],
+        "y": [
+          -3,
+          5
+        ],
+        "curves": [
+          {
+            "f": "-2*x+3",
+            "color": "pink",
+            "domain": [
+              -1,
+              3
+            ]
+          }
+        ],
+        "points": [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            -1
+          ]
+        ],
+        "segments": [
+          [
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          [
+            [
+              2,
+              3
+            ],
+            [
+              2,
+              -1
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "formula": "Delta x=0 quad \"slope undefined\"",
+      "text": "A vertical line has zero horizontal change, so its slope quotient would divide by zero. That slope is undefined, not zero. Zero slope belongs to a horizontal line, where the height remains unchanged across a nonzero horizontal movement.",
+      "visual": {
+        "kind": "graph",
+        "x": [
+          -1,
+          4
+        ],
+        "y": [
+          -3,
+          5
+        ],
+        "curves": [
+          {
+            "f": "1",
+            "color": "gold",
+            "domain": [
+              -1,
+              4
+            ]
+          }
+        ],
+        "segments": [
+          [
+            [
+              2,
+              -3
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        ],
+        "points": [
+          [
+            2,
+            -2
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Find the slope through (1,2) and (5,14), showing both changes.",
+      "answer": "Δy=12, Δx=4, so slope3.",
+      "id": "algebra-1.slope.video-practice-1"
+    },
+    {
+      "prompt": "Find the slope through (−2,6) and (4,0).",
+      "answer": "(0−6)/(4−(−2))=−6/6=−1.",
+      "id": "algebra-1.slope.video-practice-2"
+    },
+    {
+      "prompt": "A graph shows meters vertically and seconds horizontally. Explain the units of slope and the difference between zero and undefined slope.",
+      "answer": "Slope has meters per second. Zero slope means no vertical change; undefined slope occurs for zero horizontal change with distinct points.",
+      "id": "algebra-1.slope.video-practice-3"
+    }
+  ],
+  "takeaway": "Slope is a signed rate, with a nonzero horizontal change and meaningful units.",
+  "scope": "Rate, consistent subtraction, negative slope, and vertical/horizontal distinctions.",
+  "course": "Algebra I",
+  "course_id": "algebra-1",
+  "title": "Slope",
+  "objective": "Interpret rise over run as a signed rate with meaningful units.",
+  "index": 5,
+  "total": 10,
+  "prerequisites": [
+    "pre-algebra.coordinate-plane",
+    "arithmetic.ratios"
+  ]
+}

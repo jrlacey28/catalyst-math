@@ -1,0 +1,7 @@
+A ratio compares quantities multiplicatively. Two red dots for every three blue dots describes a mixture with five dots altogether. Red to blue is two to three, while red to total is two to five.
+
+Doubling every ingredient produces four red and six blue dots. The total changes, but the relationship stays the same because both quantities share the same scale factor. Altering only one ingredient would create a different mixture.
+
+An equivalent way to express this comparison is a unit rate: one and a half cups of blue per cup of red. Units and order matter, because reversing the comparison gives a different reciprocal rate.
+
+A part-to-part ratio is not already a fraction of the whole. To find the red fraction, combine both parts in the denominator. This distinction prevents using two thirds when the actual red share is two fifths.

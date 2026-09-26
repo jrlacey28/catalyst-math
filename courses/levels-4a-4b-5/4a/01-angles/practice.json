@@ -1,0 +1,34 @@
+{
+  "lesson_id": "4A-01",
+  "batches": [
+    [
+      {
+        "id": "4A-01-P1",
+        "prompt": "One angle of a linear pair is 38\u00b0. Find the other."
+      },
+      {
+        "id": "4A-01-P2",
+        "prompt": "Two lines cross. One angle is 67\u00b0. Find its vertical opposite."
+      },
+      {
+        "id": "4A-01-P3",
+        "prompt": "A right angle is split into x\u00b0 and 26\u00b0. Find x."
+      }
+    ],
+    [
+      {
+        "id": "4A-01-P4",
+        "prompt": "Parallel lines are cut by a transversal. One corresponding angle is 112\u00b0. Find the matching angle."
+      },
+      {
+        "id": "4A-01-P5",
+        "prompt": "A linear pair is labeled (3x+10)\u00b0 and (2x+20)\u00b0. Find x and both angles."
+      },
+      {
+        "id": "4A-01-P6",
+        "prompt": "Explain why vertical angles are equal using a straight angle."
+      }
+    ]
+  ],
+  "help": "Ask for help whenever stuck. Record any hints; do not count assisted answers as independent."
+}

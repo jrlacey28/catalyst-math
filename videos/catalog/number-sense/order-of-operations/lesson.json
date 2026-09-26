@@ -1,0 +1,88 @@
+{
+  "id": "number-sense.order-of-operations",
+  "beats": [
+    {
+      "formula": "2+3 times 4=14",
+      "text": "An expression has structure before we calculate it. In two plus three times four, the multiplication describes one quantity: three groups of four. Add the separate two only after finding that product of twelve.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          2,
+          4,
+          4,
+          4
+        ],
+        "labels": [
+          "2",
+          "4",
+          "4",
+          "4"
+        ]
+      }
+    },
+    {
+      "formula": "(2+3) times 4=20",
+      "text": "Parentheses change which quantity acts as a factor. Two plus three now forms one five-object group, and four copies produce twenty. The same symbols can describe a different construction when their grouping changes.",
+      "visual": {
+        "kind": "grid",
+        "rows": 4,
+        "cols": 5,
+        "filled": 20
+      }
+    },
+    {
+      "formula": "18 div 3 times 2=6 times 2=12",
+      "text": "Multiplication and division have equal priority, so evaluate them from left to right unless grouping says otherwise. Eighteen divided by three gives six, then multiplying by two gives twelve; multiplying the denominator first would change the expression.",
+      "visual": {
+        "kind": "dots",
+        "groups": [
+          6,
+          6
+        ],
+        "labels": [
+          "6",
+          "6"
+        ]
+      }
+    },
+    {
+      "formula": "2 times (3^2-4)=10",
+      "text": "Nested expressions are read from their inner structure outward. Square three to get nine, subtract four inside the parentheses to get five, then double the result. A fraction bar also groups its entire numerator and denominator.",
+      "visual": {
+        "kind": "grid",
+        "rows": 3,
+        "cols": 3,
+        "filled": 5,
+        "secondary": 4
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Evaluate 7+4×3 and explain the first operation.",
+      "answer": "Multiplication first: 4×3=12, then 7+12=19.",
+      "id": "number-sense.order-of-operations.video-practice-1"
+    },
+    {
+      "prompt": "Evaluate 42÷7×3 using the equal-priority rule.",
+      "answer": "Left to right: 42÷7=6, then 6×3=18.",
+      "id": "number-sense.order-of-operations.video-practice-2"
+    },
+    {
+      "prompt": "Insert parentheses into 6+2×5 to make its value forty. Explain the new grouping.",
+      "answer": "(6+2)×5=40; the sum of eight is now the factor multiplied by five.",
+      "id": "number-sense.order-of-operations.video-practice-3"
+    }
+  ],
+  "takeaway": "Grouping determines meaning; equal-priority operations proceed left to right.",
+  "scope": "Expression structure, parentheses, powers, and equal-priority operations.",
+  "course": "Number sense",
+  "course_id": "number-sense",
+  "title": "Order of operations",
+  "objective": "Read expression structure and evaluate grouped operations consistently.",
+  "index": 5,
+  "total": 6,
+  "prerequisites": [
+    "number-sense.multiplication-division"
+  ]
+}

@@ -1,0 +1,7 @@
+Factoring reverses distribution by recognizing a common multiplicative structure. Both terms contain x, so x squared plus four x becomes x times x plus four. Expanding the product again verifies that the original expression has been preserved.
+
+For a monic quadratic, look for two numbers with the required sum and product. One and four add to five and multiply to four, so they produce the middle and constant terms when these binomials are expanded.
+
+A factored equation equal to zero splits into simpler cases. A product of real numbers is zero only if at least one factor is zero, yielding inputs negative one and negative four. This step is not valid for a sum merely equal to zero.
+
+Factoring also reveals cancellable factors in a quotient. The difference of squares contains x minus two in its entire numerator, so it cancels for nonzero x minus two. The original exclusion remains, leaving a hole at input two.

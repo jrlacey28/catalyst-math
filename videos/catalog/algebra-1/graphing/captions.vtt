@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:03.969
+A graph collects all input-output pairs of a rule
+
+00:00:03.969 --> 00:00:09.521
+Begin with a few easy inputs for y equals negative two x plus three
+
+00:00:09.521 --> 00:00:15.867
+When x is zero, one, and two, the corresponding outputs are three, one, and negative one.
+
+00:00:17.167 --> 00:00:21.844
+The constant rate shows that these points belong to one straight line
+
+00:00:21.844 --> 00:00:26.912
+Starting at the vertical intercept three, each step right goes two units down
+
+00:00:26.912 --> 00:00:31.200
+Drawing the line extends the relationship beyond the few sampled inputs.
+
+00:00:32.500 --> 00:00:39.438
+The horizontal intercept is found by setting the output to zero, not by guessing a plotted point
+
+00:00:39.438 --> 00:00:41.478
+Solving gives input three halves
+
+00:00:41.478 --> 00:00:47.600
+This is where the line crosses the horizontal axis, while its vertical intercept remains three.
+
+00:00:48.900 --> 00:00:51.331
+Graphing from samples also has limits
+
+00:00:51.331 --> 00:00:59.433
+These values come from a quadratic rule, so connecting them with a single straight line would invent a different relationship
+
+00:00:59.433 --> 00:01:04.700
+Use the formula, its structure, and enough points to determine the appropriate shape.

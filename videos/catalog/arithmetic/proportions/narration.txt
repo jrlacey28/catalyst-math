@@ -1,0 +1,7 @@
+A proportion states that two ratios are equal. Three dollars for two notebooks and nine dollars for six notebooks describe the same price per notebook. Both the number of notebooks and the cost have tripled.
+
+To price ten notebooks at the same rate, multiply the original two-notebook purchase by five. The cost also multiplies by five, giving fifteen dollars. This scaling method explains the proportion before any cross multiplication is introduced.
+
+Cross multiplication is shorthand for clearing two nonzero denominators. Multiplying both sides by twenty converts the original fractions into an equivalent equation. Solving that equation gives the same fifteen dollars as our scaling argument.
+
+A fixed fee breaks this proportional model. Adding a four-dollar service charge produces a line that does not pass through the origin, and the total cost per notebook is no longer constant. Check the situation before assuming proportionality.

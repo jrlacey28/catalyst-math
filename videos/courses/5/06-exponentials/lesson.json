@@ -1,0 +1,17 @@
+{
+  "id": "5-06",
+  "unit": "5",
+  "course": "Algebra II",
+  "index": 6,
+  "total": 9,
+  "slug": "exponentials",
+  "title": "Exponential growth and decay",
+  "objective": "Distinguish repeated multiplication from addition and interpret growth factors.",
+  "prerequisites": "Exponents, percentages, and function notation.",
+  "formulas": [
+    "y=2(1.5)^t",
+    "y=a b^t",
+    "y=8(1/2)^t",
+    "b=1+r quad b=1-r"
+  ]
+}

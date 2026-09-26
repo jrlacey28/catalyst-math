@@ -1,0 +1,108 @@
+{
+  "id": "probability.conditional-probability",
+  "beats": [
+    {
+      "formula": "P(B|A)=frac(P(A ∩ B),P(A)), quad P(A)>0",
+      "text": "Conditioning restricts attention to the outcomes where the given event happened. Among eight people, six play guitar, four play piano, and two play both. Knowing someone plays guitar changes the comparison group from eight people to six.",
+      "visual": {
+        "kind": "sets",
+        "left": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "right": [
+          "G",
+          "H"
+        ],
+        "both": [
+          "E",
+          "F"
+        ],
+        "highlight": "left"
+      }
+    },
+    {
+      "formula": "P(\"piano\"|\"guitar\")=frac(2,6)=frac(1,3)",
+      "text": "Within the guitar group, only the two people in the overlap play piano. Therefore the conditional probability is two divided by six. The numerator describes both events, while the denominator describes the event we are already assuming.",
+      "visual": {
+        "kind": "sets",
+        "left": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "right": [
+          "G",
+          "H"
+        ],
+        "both": [
+          "E",
+          "F"
+        ],
+        "highlight": "intersection"
+      }
+    },
+    {
+      "formula": "P(\"guitar\"|\"piano\")=frac(2,4)=frac(1,2)",
+      "text": "Reversing the condition changes the denominator. Among the four piano players, two also play guitar, giving one half instead of one third. Conditional probabilities with the same two events are generally different when their roles are reversed.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          2,
+          2
+        ],
+        "labels": [
+          "both",
+          "piano only"
+        ]
+      }
+    },
+    {
+      "formula": "frac(2,8) != frac(6,8)frac(4,8)",
+      "text": "Independence means learning one event does not change the other's probability. Here the observed overlap is one quarter, while multiplying the two unconditional probabilities gives three eighths. They differ, so guitar and piano membership are not independent in this example.",
+      "visual": {
+        "kind": "bars",
+        "values": [
+          0.25,
+          0.375
+        ],
+        "labels": [
+          "actual",
+          "if independent"
+        ]
+      }
+    }
+  ],
+  "practice": [
+    {
+      "prompt": "Among 20 students, 12 walk to school, 8 cycle, and 3 sometimes do both. Find P(cycle|walk) and P(walk|cycle).",
+      "answer": "P(cycle|walk)=3/12=1/4. P(walk|cycle)=3/8. The different conditioning groups give different denominators.",
+      "id": "probability.conditional-probability.video-practice-1"
+    },
+    {
+      "prompt": "A bag has two green and three purple objects. Given that the first draw was green and was not replaced, find the probability the next draw is green.",
+      "answer": "One green remains among four objects, so the conditional probability is 1/4.",
+      "id": "probability.conditional-probability.video-practice-2"
+    },
+    {
+      "prompt": "Suppose P(A)=0.4, P(B)=0.5, and P(A∩B)=0.2. Are A and B independent? Verify with a conditional probability.",
+      "answer": "Yes: P(A)P(B)=0.2 equals the overlap. Also P(B|A)=0.2/0.4=0.5=P(B), with P(A)>0.",
+      "id": "probability.conditional-probability.video-practice-3"
+    }
+  ],
+  "takeaway": "Condition on the correct group, and test independence instead of assuming probabilities can always be multiplied.",
+  "scope": "Conditional denominators, reversed conditions, and the independence criterion.",
+  "course": "Probability",
+  "course_id": "probability",
+  "title": "Conditional probability",
+  "objective": "Restrict the sample space and distinguish conditional probability from independence.",
+  "index": 2,
+  "total": 6,
+  "prerequisites": [
+    "statistics-basics.basic-probability",
+    "arithmetic.fractions"
+  ]
+}

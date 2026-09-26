@@ -1,0 +1,7 @@
+A sequence lists individual terms in an indexed order. Here the terms are one half, one fourth, one eighth, and so on, with each term half the previous one. Their values approach zero as the index grows.
+
+A series instead adds terms, and its partial sums form another sequence. The first sums are one half, three fourths, and seven eighths. Those sums increase even while the individual terms decrease, because each newly added term is positive.
+
+The gap from the partial sum to one halves each time. After n terms that gap is one over two to the n, giving this exact finite-sum formula. Since the gap approaches zero, the infinite geometric series converges to one.
+
+The harmonic terms also approach zero, but their sum diverges. Four terms from one fifth through one eighth each exceed or equal one eighth, totaling at least one half. Every doubled block repeats this lower bound, forcing unbounded partial sums.

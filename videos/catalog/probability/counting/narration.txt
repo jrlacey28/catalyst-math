@@ -1,0 +1,7 @@
+Counting gives probabilities only after we identify equally likely outcomes. Two independent fair dice produce thirty-six ordered face pairs. The first die and second die have separate positions, so a two followed by a five differs from a five followed by a two.
+
+Six ordered pairs add to seven: one and six, two and five, three and four, and their reversals. Divide those six favorable outcomes by the thirty-six equally likely pairs. We count the underlying outcomes before grouping them by their sum.
+
+The possible sums themselves are not equally likely. Only one ordered pair produces two, while six produce seven. This histogram shows how many pairs belong to each sum, preventing the mistake of assigning every possible sum the same probability.
+
+Without replacement, later counts change. From four marked objects and two plain objects, the probability of two marked draws is four sixths times three fifths. After the first marked object stays out, only three marked objects remain among five.

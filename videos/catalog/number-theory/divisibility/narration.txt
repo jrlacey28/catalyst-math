@@ -1,0 +1,7 @@
+The greatest common divisor is the largest positive integer dividing both inputs. The Euclidean algorithm repeatedly replaces a pair by the smaller number and the remainder. Subtracting a multiple preserves exactly the common divisors.
+
+After dividing eighty-four by thirty, the remainder is twenty-four. Dividing thirty by twenty-four leaves six; dividing twenty-four by six leaves zero. The last nonzero remainder is six, so the greatest common divisor is six.
+
+Reverse the substitutions to express the divisor as an integer combination of the original numbers. Six is thirty minus twenty-four, and twenty-four is eighty-four minus twice thirty. Combining these expressions gives three times thirty minus eighty-four.
+
+Why does the combination matter? Every common divisor must divide every integer combination, including six. Since six itself divides both numbers, it is greatest. This is a proof of the answer, not merely an observed remainder pattern.

@@ -1,0 +1,7 @@
+A linear equation connects two coordinates through a constant rate. Here the output begins at one when the input is zero, then grows by two for each additional input unit. Every point on this straight line satisfies the equation.
+
+Moving all variable terms to one side creates another form of the same equation. Subtract y and subtract one from both sides of the original equality. No points are gained or lost, so the graph stays exactly the same.
+
+If the output is fixed at seven, the equation becomes a one-variable problem. Subtract one and divide by two to get input three. Geometrically, we are finding where our line meets the horizontal level seven.
+
+Some linear equations do not depend on both coordinates. Two y equals six gives the horizontal line y equals three, allowing every x. A linear equation describes all satisfying pairs unless another condition selects a particular point.

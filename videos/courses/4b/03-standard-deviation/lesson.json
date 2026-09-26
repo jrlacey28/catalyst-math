@@ -1,0 +1,17 @@
+{
+  "id": "4B-03",
+  "unit": "4b",
+  "course": "Statistics Basics",
+  "index": 3,
+  "total": 6,
+  "slug": "standard-deviation",
+  "title": "Standard deviation and units",
+  "objective": "Recover the data\u2019s units and interpret spread without assuming normality.",
+  "prerequisites": "Variance and square roots.",
+  "formulas": [
+    "sigma=sqrt(sigma^2)",
+    "mu=4 quad sigma^2=4 quad sigma=2",
+    "sigma_(a X+b)=abs(a) sigma_X",
+    "\"spread\" != \"shape\""
+  ]
+}

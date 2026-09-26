@@ -1,0 +1,166 @@
+[
+  {
+    "formula": "f(x)=x^2",
+    "text": "Function transformations change inputs or outputs in controlled ways. Start with the squaring graph, whose vertex is at the origin. Keeping track of a recognizable point, such as this vertex, makes each later change easier to explain and verify.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        5
+      ],
+      "y": [
+        -4,
+        10
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            -3,
+            3
+          ]
+        }
+      ],
+      "points": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "f(x-2)=(x-2)^2",
+    "text": "Replacing the input by x minus two shifts the graph right by two. To deliver the old input zero into the rule, the new x must be two. This input-solving explanation is more reliable than memorizing that inside signs look reversed.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        5
+      ],
+      "y": [
+        -4,
+        10
+      ],
+      "curves": [
+        {
+          "f": "x*x",
+          "color": "blue",
+          "domain": [
+            -3,
+            3
+          ]
+        },
+        {
+          "f": "(x-2)**2",
+          "color": "gold",
+          "domain": [
+            -1,
+            5
+          ]
+        }
+      ],
+      "points": [
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "2f(x-2)=2(x-2)^2",
+    "text": "Multiplying outside the function doubles its outputs while leaving inputs fixed. The vertex remains at two, zero, but a point one unit from the vertex now has height two instead of one. This is a vertical stretch.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        5
+      ],
+      "y": [
+        -4,
+        10
+      ],
+      "curves": [
+        {
+          "f": "(x-2)**2",
+          "color": "blue",
+          "domain": [
+            -1,
+            5
+          ]
+        },
+        {
+          "f": "2*(x-2)**2",
+          "color": "gold",
+          "domain": [
+            0,
+            4
+          ]
+        }
+      ],
+      "points": [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "y=2(x-2)^2-3",
+    "text": "Subtracting three after the function evaluation shifts every output down three. The vertex becomes two, negative three, and the point at input three drops to negative one. Read the operations in their actual order to combine transformations correctly.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        -3,
+        5
+      ],
+      "y": [
+        -4,
+        10
+      ],
+      "curves": [
+        {
+          "f": "2*(x-2)**2-3",
+          "color": "gold",
+          "domain": [
+            -0.5,
+            4.5
+          ]
+        }
+      ],
+      "points": [
+        [
+          2,
+          -3
+        ],
+        [
+          3,
+          -1
+        ]
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:06.562
+A limit describes what nearby outputs approach, even when the target input itself is missing
+
+00:00:06.562 --> 00:00:11.492
+This fraction is undefined at input one because its denominator is zero
+
+00:00:11.492 --> 00:00:16.833
+We can still investigate values taken just to either side of that input.
+
+00:00:18.133 --> 00:00:22.891
+Factor the numerator into x minus one times x plus one
+
+00:00:22.891 --> 00:00:30.243
+At every allowed nearby input, the common nonzero factor cancels and the output equals x plus one
+
+00:00:30.243 --> 00:00:35.433
+The simplified expression reveals a line with its original missing point retained.
+
+00:00:36.733 --> 00:00:41.399
+As inputs approach one from either direction, these outputs approach two
+
+00:00:41.399 --> 00:00:48.186
+That statement does not fill the hole or claim the original function equals two at one
+
+00:00:48.186 --> 00:00:53.700
+A limit concerns nearby behavior; a function value concerns a particular allowed input.
+
+00:00:55.000 --> 00:00:58.282
+Both directions must agree for a two-sided limit
+
+00:00:58.282 --> 00:01:06.077
+Absolute x divided by x equals negative one to the left of zero and positive one to the right
+
+00:01:06.077 --> 00:01:11.000
+Because those approaches disagree, there is no single two-sided limit at zero.

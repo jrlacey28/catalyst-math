@@ -1,0 +1,62 @@
+[
+  {
+    "formula": "cos(theta)^2+sin(theta)^2=1",
+    "text": "The unit circle extends trigonometry beyond acute triangle angles. A point reached by turning through an angle has coordinates cosine and sine. Because its distance from the origin is one, the coordinate squares always add to one.",
+    "visual": {
+      "kind": "circle",
+      "angle": 0.7853981633974483,
+      "radius": 2.4,
+      "triangle": true,
+      "arc": true
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "theta=frac(2pi,3) quad (x,y)=(-frac(1,2),frac(sqrt(3),2))",
+    "text": "Turn into the second quadrant. At one hundred twenty degrees, the horizontal coordinate is negative one half and the vertical coordinate is positive square root of three over two. Quadrant signs come from actual coordinate directions, not memorized exceptions.",
+    "visual": {
+      "kind": "circle",
+      "angle": 2.0943951023931953,
+      "radius": 2.4,
+      "triangle": true,
+      "arc": true
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "theta=frac(4pi,3) quad (x,y)=(-frac(1,2),-frac(sqrt(3),2))",
+    "text": "Continuing to two hundred forty degrees keeps the horizontal coordinate negative but moves the point below the horizontal axis. Sine is now negative as well. A related reference triangle gives the magnitudes, while the quadrant supplies each sign.",
+    "visual": {
+      "kind": "circle",
+      "angle": 4.1887902047863905,
+      "radius": 2.4,
+      "triangle": true,
+      "arc": true
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  },
+  {
+    "formula": "cos(theta+2pi)=cos(theta) quad sin(theta+2pi)=sin(theta)",
+    "text": "One full additional turn returns to the same point. Sine and cosine therefore repeat after two pi radians, and many angles can share the same coordinates. Angle size records the turning history, while the point records its final position.",
+    "visual": {
+      "kind": "circle",
+      "angle": 8.377580409572781,
+      "radius": 2.4,
+      "triangle": true,
+      "arc": true
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15
+  }
+]

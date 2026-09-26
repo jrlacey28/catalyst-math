@@ -1,0 +1,136 @@
+[
+  {
+    "formula": "T(a u+b v)=a T(u)+b T(v)",
+    "text": "A linear operator preserves addition and scalar multiplication. On the plane, stretching the first coordinate by two while leaving the second unchanged is linear. The operator norm measures the largest possible output size for an input of norm at most one.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "matrix": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "title": "Idea 1",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 0,
+    "duration": 18.366666666666667,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "formula": "T(x,y)=(2x,y), quad norm(T)=2",
+    "text": "For Euclidean length, this transformation enlarges no vector by more than a factor of two. The first coordinate unit vector achieves exactly that factor, so the operator norm is two. A single successful vector supplies the lower bound, not the upper bound.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "matrix": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "title": "Idea 2",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 18.366666666666667,
+    "duration": 18.3,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "formula": "phi(x,y)=x+2y, quad norm(phi)=sqrt(5)",
+    "text": "A continuous linear functional outputs a scalar and belongs to the dual space. This functional is the dot product with one, two. Cauchy Schwarz bounds its magnitude by square root five times the input norm, and a parallel unit vector attains equality.",
+    "visual": {
+      "kind": "plane",
+      "vectors": [
+        [
+          1,
+          2
+        ]
+      ],
+      "points": [
+        [
+          0.4472135955,
+          0.894427191
+        ]
+      ]
+    },
+    "title": "Idea 3",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 36.66666666666667,
+    "duration": 18.4,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "formula": "f_n(x)=frac(sin(n x),n), quad f_n'(x)=cos(n x)",
+    "text": "Linearity alone does not imply boundedness. On continuously differentiable functions over zero to two pi, using the uniform norm for inputs and outputs, differentiation sends these shrinking functions to derivatives of size one. No fixed amplification bound can work for every n.",
+    "visual": {
+      "kind": "graph",
+      "x": [
+        0,
+        6.28318530718
+      ],
+      "y": [
+        -1.1,
+        1.1
+      ],
+      "curves": [
+        {
+          "f": "sin(6*x)/6",
+          "color": "blue",
+          "domain": [
+            0,
+            6.28318530718
+          ]
+        },
+        {
+          "f": "cos(6*x)",
+          "color": "pink",
+          "domain": [
+            0,
+            6.28318530718
+          ]
+        }
+      ]
+    },
+    "title": "Idea 4",
+    "lead": 0.4,
+    "tail": 0.9,
+    "min_duration": 15,
+    "start": 55.06666666666667,
+    "duration": 20.4,
+    "audio": "audio_parts/04.wav"
+  }
+]

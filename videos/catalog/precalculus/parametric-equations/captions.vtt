@@ -1,0 +1,37 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:05.148
+Parametric equations give both coordinates in terms of a shared parameter
+
+00:00:05.148 --> 00:00:10.760
+Let the horizontal coordinate equal t and the vertical coordinate equal t squared
+
+00:00:10.760 --> 00:00:17.667
+As t varies, these paired outputs trace the familiar parabola while retaining an order of travel.
+
+00:00:18.967 --> 00:00:22.322
+Evaluate both rules at the same parameter value
+
+00:00:22.322 --> 00:00:29.032
+Negative two gives negative two, four; zero gives the origin; and positive two gives two, four
+
+00:00:29.032 --> 00:00:37.000
+Mixing coordinates from different parameter values would create a point that the motion never actually visits at that time.
+
+00:00:38.300 --> 00:00:41.695
+A different pair of rules traces a circle
+
+00:00:41.695 --> 00:00:46.786
+Cosine and sine automatically satisfy x squared plus y squared equals one
+
+00:00:46.786 --> 00:00:54.000
+As the parameter increases from zero to two pi, the point travels counterclockwise through one complete turn.
+
+00:00:55.300 --> 00:01:01.993
+Doubling the parameter inside both functions traces the same geometric circle twice as quickly
+
+00:01:01.993 --> 00:01:07.729
+Eliminating the parameter reveals the circle equation but loses this timing information
+
+00:01:07.729 --> 00:01:14.900
+A curve can therefore have many parametrizations with different directions, speeds, or numbers of traversals.

@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Make it click",
+    "text": "What if math stopped feeling like a wall of symbols? Meet Catalyst. See the idea. Try it. Make it click.",
+    "lead": 0.3,
+    "tail": 0.4,
+    "start": 0,
+    "duration": 7.2,
+    "audio": "audio_parts/01.wav"
+  },
+  {
+    "title": "Start your copy",
+    "text": "Install Python, extract the offline ZIP, and open Start Catalyst on Windows. On Mac or Linux, run python three start dot py. Open the local address in your browser.",
+    "lead": 0.25,
+    "tail": 0.5,
+    "start": 7.2,
+    "duration": 12.466666666666667,
+    "audio": "audio_parts/02.wav"
+  },
+  {
+    "title": "Find your starting point",
+    "text": "Start with a placement check, or choose a course. Explore narrated lessons from counting to college mathematics, one idea at a time.",
+    "lead": 0.25,
+    "tail": 0.5,
+    "start": 19.666666666666668,
+    "duration": 8.833333333333334,
+    "audio": "audio_parts/03.wav"
+  },
+  {
+    "title": "Learn by doing",
+    "text": "Watch, then try three problems right below. Stuck? See an example, reveal why a step works, or open the calculator.",
+    "lead": 0.25,
+    "tail": 0.5,
+    "start": 28.5,
+    "duration": 8.1,
+    "audio": "audio_parts/04.wav"
+  },
+  {
+    "title": "Make it real",
+    "text": "Now make it real. Change an orbit. Test a gear ratio. Train a tiny model. Move the controls and see what your math actually does.",
+    "lead": 0.25,
+    "tail": 0.5,
+    "start": 36.6,
+    "duration": 9.066666666666666,
+    "audio": "audio_parts/05.wav"
+  },
+  {
+    "title": "Keep your progress",
+    "text": "Fresh independent checks earn stars on your skill tree. Your work saves automatically. Come back, review, and keep growing.",
+    "lead": 0.25,
+    "tail": 0.5,
+    "start": 45.66666666666667,
+    "duration": 8.133333333333333,
+    "audio": "audio_parts/06.wav"
+  },
+  {
+    "title": "Start one idea",
+    "text": "Free, open source, and yours to explore. Start with one idea. Build from there. Catalyst.",
+    "lead": 0.25,
+    "tail": 1.1,
+    "start": 53.800000000000004,
+    "duration": 7.3,
+    "audio": "audio_parts/07.wav"
+  }
+]
